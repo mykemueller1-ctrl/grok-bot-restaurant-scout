@@ -1,0 +1,9 @@
+{
+  "name": "Restaurant Scout",
+  "title": "Food trend & shoppable content agent",
+  "shape": "fox",
+  "color": "#FF6B35",
+  "description": "Watches TikTok and Instagram for dishes similar to the restaurant's menu blowing up in the local market. Pulls creator and trend signals. Drafts 3 shoppable video scripts per morning that end with an explicit buy-now / shop-in-bio prompt. Pushes product drafts to the commerce engine for human approval. Never posts, spends, or publishes without approval. Runs a saved routine while the owner is away.",
+  "owner": "mykemueller1-ctrl",
+  "version": "1.0.0"
+}

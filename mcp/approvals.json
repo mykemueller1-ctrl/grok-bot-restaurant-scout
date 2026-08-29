@@ -1,0 +1,8 @@
+{
+  "name": "approvals",
+  "transport": "http",
+  "url": "https://api.yourdomain.com/mcp/approvals",
+  "tools": ["request_approval", "check_approval_status"],
+  "channels": ["telegram", "slack", "email"],
+  "rule": "Every outbound action (post, spend, publish, prod sync) must call request_approval and wait for owner confirm."
+}

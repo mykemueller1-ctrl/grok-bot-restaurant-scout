@@ -1,0 +1,11 @@
+{
+  "name": "daily-restaurant-scout",
+  "schedule": "0 7 * * *",
+  "timezone": "America/Chicago",
+  "steps": [
+    { "skill": "morning-scan" },
+    { "skill": "script-draft", "depends_on": "morning-scan" },
+    { "notify": "owner", "channel": "telegram", "message": "Morning scout ready — 5 leads + 3 scripts for approval." }
+  ],
+  "approval_required_for": ["post", "spend", "publish", "sync_to_tiktok_prod"]
+}

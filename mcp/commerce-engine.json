@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-commerce-engine",
+  "transport": "http",
+  "url": "https://api.yourdomain.com/mcp",
+  "auth": "bearer:${COMMERCE_ENGINE_TOKEN}",
+  "tools": [
+    "list_menu_items",
+    "create_tiktok_product_draft",
+    "get_order_summary",
+    "save_creator_lead",
+    "save_content_draft",
+    "approve_draft"
+  ],
+  "notes": "Points at the restaurant-social-commerce-engine API. Token in Grok Bot secret store, never in chat."
+}

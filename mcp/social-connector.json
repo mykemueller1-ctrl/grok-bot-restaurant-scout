@@ -1,0 +1,9 @@
+{
+  "name": "social-trends",
+  "transport": "http",
+  "url": "https://mcp.omnisocials.com/v1",
+  "auth": "bearer:${SOCIAL_CONNECTOR_TOKEN}",
+  "tools": ["search_trending_videos", "get_creator_profile", "schedule_post", "pull_analytics"],
+  "alternatives": ["blotato", "zernio"],
+  "notes": "Read trends + schedule. Posting still gated by approval."
+}
