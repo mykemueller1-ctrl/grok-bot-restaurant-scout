@@ -1,0 +1,39 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/skill.schema.json",
+  "id": "approval-gate",
+  "name": "Approval gate",
+  "description": "Enforces that every outbound action (publish, spend, product create, order action) requires explicit owner confirmation via Telegram/Slack/email before it is executed. This skill is invoked by any other skill that attempts an outbound action.",
+  "trigger": {
+    "type": "invoked_by_other_skills"
+  },
+  "requires_approval": true,
+  "connectors": ["mcp/notifications.mcp.json"],
+  "inputs": {
+    "action_type": "string, one of [publish, schedule_post, spend, product_create, product_update, order_action]",
+    "action_payload": "object, the exact payload that would be sent if approved",
+    "requested_by_skill": "string"
+  },
+  "steps": [
+    "Reject immediately if action_type is not in the agent's requires_human_approval_for list -- this skill only guards outbound actions.",
+    "Compose a human-readable summary of action_payload (what will be created/published/spent, and where).",
+    "Send an approval ping to the configured notifications channel (Telegram, Slack, or email) with Approve / Reject buttons or reply keywords.",
+    "Wait for a response up to the configured timeout (default 24 hours).",
+    "If approved: generate a signed approval_token bound to the exact action_payload hash, and return it to the requesting skill.",
+    "If rejected or timed out: return a denial result and do not generate a token. Log the outcome for the weekly report.",
+    "Never execute the action itself -- this skill only issues or withholds the approval_token."
+  ],
+  "output": {
+    "type": "approval_result",
+    "schema": {
+      "action_type": "string",
+      "decision": "string, one of [approved, rejected, timed_out]",
+      "approval_token": "string or null",
+      "decided_by": "string",
+      "decided_at": "string (ISO 8601)"
+    }
+  },
+  "config": {
+    "approval_timeout_hours": 24,
+    "escalation": "Re-ping once at half the timeout if no response."
+  }
+}

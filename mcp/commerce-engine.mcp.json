@@ -1,0 +1,69 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/mcp-connector.schema.json",
+  "id": "commerce-engine",
+  "name": "Restaurant Social Commerce Engine",
+  "type": "mcp",
+  "description": "Custom MCP server pointing at the restaurant-social-commerce-engine API. Supports product draft creation and order reads. All write capabilities require an approval_token minted by skills/approval-gate.skill.json.",
+  "server": {
+    "transport": "http",
+    "base_url": "REPLACE_WITH_COMMERCE_ENGINE_BASE_URL",
+    "mcp_endpoint": "/mcp",
+    "auth": {
+      "type": "bearer",
+      "secret_ref": "COMMERCE_ENGINE_API_KEY"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "product.create",
+      "description": "Create a TikTok Shop product draft (title, description, images, price, category). Always created in 'draft' status, never published.",
+      "scope": "write",
+      "requires_approval_token": true,
+      "input_schema": {
+        "title": "string",
+        "description": "string",
+        "images": "array<string> (URLs or asset refs)",
+        "price": "number",
+        "currency": "string (ISO 4217, default USD)",
+        "category": "string",
+        "status": "string, fixed to 'draft'",
+        "approval_token": "string"
+      }
+    },
+    {
+      "name": "product.update",
+      "description": "Update an existing product draft.",
+      "scope": "write",
+      "requires_approval_token": true
+    },
+    {
+      "name": "product.publish",
+      "description": "Move a product draft to live/published status.",
+      "scope": "write",
+      "requires_approval_token": true,
+      "notes": "Not called by any current skill. Reserved for explicit owner-initiated publish actions outside the automated routine."
+    },
+    {
+      "name": "orders.read",
+      "description": "Read order history and conversion data for reporting.",
+      "scope": "read"
+    },
+    {
+      "name": "payments.charge",
+      "description": "Not used by this agent. Present only for completeness of the commerce engine API surface; must remain disabled unless explicitly enabled by the owner.",
+      "scope": "write",
+      "requires_approval_token": true,
+      "enabled": false
+    }
+  ],
+  "payment_processor": {
+    "provider": "Stripe",
+    "secret_ref": "STRIPE_API_KEY",
+    "notes": "Only referenced by the commerce engine for existing checkout flows; this agent never initiates charges."
+  },
+  "sandbox_mode": {
+    "enabled_for_testing": true,
+    "sandbox_base_url": "REPLACE_WITH_COMMERCE_ENGINE_SANDBOX_URL",
+    "notes": "Use sandbox_base_url when validating the end-to-end approval flow (draft -> ping -> approve -> product created) before pointing at production."
+  }
+}

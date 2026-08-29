@@ -1,0 +1,40 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/skill.schema.json",
+  "id": "script-drafting",
+  "name": "Script drafting",
+  "description": "Drafts 3 shoppable video scripts per morning based on the trend signals from the morning scan, each ending with an explicit buy-now / shop-in-bio CTA.",
+  "trigger": {
+    "type": "chained",
+    "after_skill": "skills/morning-scan.skill.json"
+  },
+  "requires_approval": false,
+  "inputs": {
+    "morning_scan_output": "{{skills.morning-scan.output}}",
+    "menu_reference": "{{agent.config.menu_reference}}",
+    "script_count": 3
+  },
+  "steps": [
+    "Match the top morning-scan trends against the restaurant menu to find the closest matching dish for each script.",
+    "For each of the 3 scripts, write a first-2-second hook line designed to stop the scroll.",
+    "Write a short demo section describing the on-camera action/visual for the dish.",
+    "Add a price/scarcity line (e.g. limited daily quantity, today-only price, bundle deal).",
+    "Add an explicit CTA that names the TikTok Shop product and tells the viewer to tap 'shop now' / check the shop tab in bio.",
+    "Tag each script with the TikTok Shop product it should link to (existing product ID or 'NEW_PRODUCT_DRAFT_REQUIRED')."
+  ],
+  "output": {
+    "type": "script_list",
+    "schema": {
+      "script_id": "string",
+      "based_on_trend": "string",
+      "hook": "string",
+      "demo": "string",
+      "price_scarcity": "string",
+      "cta": "string",
+      "linked_product": "string"
+    },
+    "max_items": 3
+  },
+  "next": {
+    "on_owner_approval": "skills/catalog-sync.skill.json"
+  }
+}

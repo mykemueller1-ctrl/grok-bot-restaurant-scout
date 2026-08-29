@@ -1,0 +1,39 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/skill.schema.json",
+  "id": "morning-scan",
+  "name": "Morning scan",
+  "description": "Scans TikTok and Instagram each morning for the top trending food videos and creators in the configured city and cuisine tags.",
+  "trigger": {
+    "type": "routine",
+    "routine_ref": "routines/daily-scout.routine.json"
+  },
+  "requires_approval": false,
+  "connectors": ["mcp/social-connector.mcp.json"],
+  "inputs": {
+    "city": "{{agent.config.city}}",
+    "cuisine_tags": "{{agent.config.cuisine_tags}}",
+    "lookback_hours": 24,
+    "result_count": 5
+  },
+  "steps": [
+    "Query the social connector for trending food videos matching cuisine_tags within city over lookback_hours.",
+    "Rank results by a composite score of view velocity, engagement rate, and recency.",
+    "Select the top 5 videos/creators.",
+    "For each result, extract: creator handle, video URL, view count, engagement rate, and the dish or trend shown.",
+    "Write a one-line 'why it works' explanation per result (hook style, sound, visual pattern, price angle, etc.)."
+  ],
+  "output": {
+    "type": "ranked_list",
+    "schema": {
+      "rank": "number",
+      "creator": "string",
+      "video_url": "string",
+      "dish_or_trend": "string",
+      "views": "number",
+      "engagement_rate": "number",
+      "why_it_works": "string"
+    },
+    "max_items": 5
+  },
+  "acceptance_check": "Produces a verifiable ranked list of exactly 5 creators/videos with populated fields within 30 minutes of routine start."
+}

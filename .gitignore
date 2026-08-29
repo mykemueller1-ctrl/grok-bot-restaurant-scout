@@ -1,0 +1,7 @@
+# Secrets and local artifacts — never commit these
+.env
+.env.*
+*.secret
+*.secrets.json
+secrets/
+.DS_Store

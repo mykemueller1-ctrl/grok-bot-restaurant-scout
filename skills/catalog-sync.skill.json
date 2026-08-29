@@ -1,0 +1,37 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/skill.schema.json",
+  "id": "catalog-sync",
+  "name": "Catalog sync",
+  "description": "Converts owner-approved scripts into TikTok Shop product drafts and sends them to the restaurant-social-commerce-engine API. Never creates or modifies live products without an approval token.",
+  "trigger": {
+    "type": "manual_or_chained",
+    "after_skill": "skills/script-drafting.skill.json",
+    "requires_prior_gate": "skills/approval-gate.skill.json"
+  },
+  "requires_approval": true,
+  "connectors": ["mcp/commerce-engine.mcp.json"],
+  "inputs": {
+    "approved_scripts": "{{skills.script-drafting.output | filter: approved == true}}"
+  },
+  "steps": [
+    "For each approved script, build a product draft: title, description, price, category, and image references derived from the script's demo section.",
+    "Validate the draft against the commerce engine schema (required fields, price format, category enum).",
+    "Call commerce-engine MCP 'product.create' in DRAFT (not published) status only.",
+    "Attach the approval_token from the approval-gate skill to the request so the commerce engine can audit who approved it.",
+    "Return the created draft IDs and a status summary to the owner."
+  ],
+  "output": {
+    "type": "product_draft_list",
+    "schema": {
+      "script_id": "string",
+      "draft_product_id": "string",
+      "status": "string",
+      "commerce_engine_response": "object"
+    }
+  },
+  "guardrails": {
+    "blocked_without_approval_token": true,
+    "publish_status_allowed": ["draft"],
+    "publish_status_blocked": ["live", "scheduled", "published"]
+  }
+}

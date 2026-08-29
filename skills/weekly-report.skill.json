@@ -1,0 +1,37 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/skill.schema.json",
+  "id": "weekly-report",
+  "name": "Weekly report",
+  "description": "Summarizes what trended, what converted, and what to double down on for the past week, using morning-scan history, script approvals, catalog-sync results, and commerce engine order/analytics data.",
+  "trigger": {
+    "type": "routine",
+    "routine_ref": "routines/daily-scout.routine.json",
+    "cron_override": "0 8 * * 1"
+  },
+  "requires_approval": false,
+  "connectors": ["mcp/social-connector.mcp.json", "mcp/commerce-engine.mcp.json"],
+  "inputs": {
+    "lookback_days": 7,
+    "morning_scan_history": "{{skills.morning-scan.history}}",
+    "catalog_sync_history": "{{skills.catalog-sync.history}}"
+  },
+  "steps": [
+    "Aggregate the past 7 days of morning-scan trend results and note recurring dishes/creators/hooks.",
+    "Pull order and analytics data from the commerce engine for products created during the period.",
+    "Compute conversion signals: views -> shop taps -> orders per product draft that was approved and published.",
+    "Identify the top 3 trends that converted best and the top 3 that fizzled.",
+    "Draft 'double down on' recommendations for the coming week (menu items to feature, hooks to reuse, creators to collaborate with).",
+    "Send the report through the notifications connector; do not take any further action without a new approval."
+  ],
+  "output": {
+    "type": "report",
+    "schema": {
+      "period_start": "string (ISO 8601 date)",
+      "period_end": "string (ISO 8601 date)",
+      "top_trends": "array",
+      "top_converting_products": "array",
+      "underperforming_products": "array",
+      "recommendations": "array"
+    }
+  }
+}

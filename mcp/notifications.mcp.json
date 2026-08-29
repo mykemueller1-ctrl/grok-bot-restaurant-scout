@@ -1,0 +1,35 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/mcp-connector.schema.json",
+  "id": "notifications",
+  "name": "Owner Notifications",
+  "type": "mcp",
+  "description": "Sends approval pings and reports to the owner via Slack or Telegram (choose one at setup) and optionally email.",
+  "provider_options": [
+    {
+      "provider": "Slack",
+      "webhook_url_secret_ref": "NOTIFICATIONS_WEBHOOK_URL",
+      "channel": "REPLACE_WITH_SLACK_CHANNEL"
+    },
+    {
+      "provider": "Telegram",
+      "bot_token_secret_ref": "NOTIFICATIONS_WEBHOOK_URL",
+      "chat_id": "REPLACE_WITH_TELEGRAM_CHAT_ID"
+    }
+  ],
+  "email_fallback": {
+    "enabled": false,
+    "to": "REPLACE_WITH_OWNER_EMAIL"
+  },
+  "capabilities": [
+    {
+      "name": "approval.request",
+      "description": "Send an approve/reject prompt for a pending action and await a response.",
+      "scope": "write"
+    },
+    {
+      "name": "report.send",
+      "description": "Send a read-only report (weekly report, run summary, error alert).",
+      "scope": "write"
+    }
+  ]
+}

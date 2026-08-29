@@ -1,0 +1,69 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/mcp-connector.schema.json",
+  "id": "social-connector",
+  "name": "Social Trends Connector",
+  "type": "mcp",
+  "description": "Read-only trend/analytics access to TikTok and Instagram, plus optional scheduling, via one of OmniSocials, Blotato, or Zernio. Pick one implementation at setup time.",
+  "provider_options": [
+    {
+      "provider": "OmniSocials",
+      "server_url": "REPLACE_WITH_OMNISOCIALS_MCP_URL",
+      "auth": {
+        "type": "api_key",
+        "secret_ref": "SOCIAL_CONNECTOR_API_KEY"
+      }
+    },
+    {
+      "provider": "Blotato",
+      "server_url": "REPLACE_WITH_BLOTATO_MCP_URL",
+      "auth": {
+        "type": "api_key",
+        "secret_ref": "SOCIAL_CONNECTOR_API_KEY"
+      }
+    },
+    {
+      "provider": "Zernio",
+      "server_url": "REPLACE_WITH_ZERNIO_MCP_URL",
+      "auth": {
+        "type": "api_key",
+        "secret_ref": "SOCIAL_CONNECTOR_API_KEY"
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "trends.search",
+      "description": "Search trending videos by platform, city/geo, and hashtag/cuisine tags.",
+      "scope": "read"
+    },
+    {
+      "name": "creators.lookup",
+      "description": "Fetch creator profile and engagement stats for a given handle.",
+      "scope": "read"
+    },
+    {
+      "name": "analytics.get",
+      "description": "Fetch post/video analytics (views, engagement rate, shares) for a date range.",
+      "scope": "read"
+    },
+    {
+      "name": "posts.schedule",
+      "description": "Schedule a post for publishing. GUARDED: only callable with a valid approval_token from skills/approval-gate.skill.json.",
+      "scope": "write",
+      "requires_approval_token": true
+    }
+  ],
+  "platform_auth": {
+    "tiktok": {
+      "app_key_secret_ref": "TIKTOK_APP_KEY",
+      "app_secret_secret_ref": "TIKTOK_APP_SECRET"
+    },
+    "instagram": {
+      "meta_token_secret_ref": "META_ACCESS_TOKEN"
+    }
+  },
+  "browser_takeover_fallback": {
+    "enabled": true,
+    "notes": "If the chosen provider does not support a needed read (e.g. a platform surface without a plugin), fall back to Grok Bot browser takeover using the owner's persisted TikTok/Instagram session."
+  }
+}

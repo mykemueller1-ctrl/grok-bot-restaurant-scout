@@ -1,0 +1,48 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/routine.schema.json",
+  "id": "daily-scout",
+  "name": "Daily Scout Routine",
+  "description": "Runs the full scan-to-draft pipeline every morning while the owner is away, and a weekly rollup report every Monday. Every outbound step is gated by the approval-gate skill.",
+  "schedule": {
+    "cron": "0 6 * * *",
+    "timezone": "{{agent.config.timezone}}",
+    "run_while_owner_away": true
+  },
+  "steps": [
+    {
+      "order": 1,
+      "skill": "skills/morning-scan.skill.json",
+      "on_failure": "notify_owner_and_stop"
+    },
+    {
+      "order": 2,
+      "skill": "skills/script-drafting.skill.json",
+      "on_failure": "notify_owner_and_stop"
+    },
+    {
+      "order": 3,
+      "skill": "skills/approval-gate.skill.json",
+      "action_type": "product_create",
+      "gate_for": "skills/catalog-sync.skill.json",
+      "on_failure": "notify_owner_and_stop",
+      "on_reject": "log_and_stop",
+      "on_timeout": "log_and_stop"
+    },
+    {
+      "order": 4,
+      "skill": "skills/catalog-sync.skill.json",
+      "condition": "approval_gate.decision == 'approved'",
+      "on_failure": "notify_owner_and_stop"
+    }
+  ],
+  "weekly_addon": {
+    "cron": "0 8 * * 1",
+    "skill": "skills/weekly-report.skill.json"
+  },
+  "notifications": {
+    "on_start": false,
+    "on_complete": true,
+    "on_error": true,
+    "channel": "mcp/notifications.mcp.json"
+  }
+}

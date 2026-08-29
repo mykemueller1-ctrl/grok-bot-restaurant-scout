@@ -1,0 +1,69 @@
+{
+  "$schema": "https://cursor.com/help/grok-bot/schemas/agent.schema.json",
+  "name": "Restaurant Scout",
+  "title": "Food trend & shoppable content agent",
+  "owner": "restaurant-owner",
+  "description": "Watches TikTok and Instagram for dishes similar to the restaurant's menu blowing up in the local market. Pulls creator and trend signals. Drafts 3 shoppable video scripts per morning that end with an explicit buy-now / shop-in-bio prompt. Pushes product drafts to the commerce engine for human approval. Never posts, spends, or publishes without approval. Runs a saved routine while the owner is away.",
+  "config": {
+    "city": "REPLACE_WITH_CITY",
+    "cuisine_tags": ["REPLACE_WITH_CUISINE_TAG_1", "REPLACE_WITH_CUISINE_TAG_2"],
+    "menu_reference": "REPLACE_WITH_MENU_URL_OR_DOC_ID",
+    "timezone": "REPLACE_WITH_IANA_TIMEZONE"
+  },
+  "guardrails": {
+    "requires_human_approval_for": [
+      "publish",
+      "schedule_post",
+      "spend",
+      "product_create",
+      "product_update",
+      "order_action"
+    ],
+    "autonomous_actions_allowed": [
+      "trend_scan",
+      "read_analytics",
+      "draft_script",
+      "draft_product",
+      "generate_report"
+    ],
+    "never": [
+      "post without approval",
+      "spend without approval",
+      "publish without approval",
+      "modify secrets store",
+      "share secrets in chat output"
+    ]
+  },
+  "skills": [
+    "skills/morning-scan.skill.json",
+    "skills/script-drafting.skill.json",
+    "skills/catalog-sync.skill.json",
+    "skills/approval-gate.skill.json",
+    "skills/weekly-report.skill.json"
+  ],
+  "routines": [
+    "routines/daily-scout.routine.json"
+  ],
+  "connectors": [
+    "mcp/social-connector.mcp.json",
+    "mcp/commerce-engine.mcp.json",
+    "mcp/notifications.mcp.json"
+  ],
+  "browser_takeover": {
+    "enabled": true,
+    "targets": ["tiktok.com", "instagram.com"],
+    "session_persistence": true,
+    "notes": "Owner signs in once per platform via the Grok Bot browser takeover window. The session cookie is stored securely by Grok Bot and reused for subsequent scans. Re-authentication is only required if the session expires or is revoked."
+  },
+  "secrets_required": [
+    "TIKTOK_APP_KEY",
+    "TIKTOK_APP_SECRET",
+    "META_ACCESS_TOKEN",
+    "STRIPE_API_KEY",
+    "SOCIAL_CONNECTOR_API_KEY",
+    "XAI_API_KEY",
+    "OPENAI_API_KEY",
+    "COMMERCE_ENGINE_API_KEY",
+    "NOTIFICATIONS_WEBHOOK_URL"
+  ]
+}
