@@ -5,7 +5,7 @@
   "steps": [
     { "skill": "morning-scan" },
     { "skill": "script-draft", "depends_on": "morning-scan" },
-    { "notify": "owner", "channel": "telegram", "message": "Morning scout ready — 5 leads + 3 scripts for approval." }
+    { "notify": "owner", "channel": "telegram", "message": "Morning scout ready — 5 love-proven chef brands + 3 Never86 buy-now scripts for approval." }
   ],
   "approval_required_for": ["post", "spend", "publish", "sync_to_tiktok_prod"]
 }

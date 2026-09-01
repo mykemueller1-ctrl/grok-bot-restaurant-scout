@@ -2,6 +2,8 @@
 
 Agent configs, skills, routines, and MCP connectors for **Never86**.
 
+**Restaurant Scout job:** find food brands people already love (UGC / chef-driven), onboard them onto Never86, and sell via TikTok/Instagram buy-now — not DoorDash-style marketplaces.
+
 ## Restaurant Scout
 
 Shoppable content scout — love-proven food brands → buy-now scripts.
@@ -28,7 +30,7 @@ Shoppable content scout — love-proven food brands → buy-now scripts.
 
 Top POS priority still ranked 1–10 (Toast → SkyTab); the other 40 POS agents cover Revel, Qu, Heartland, Aloha-adjacent legacy, kiosk, international, etc.
 
-Silos include what you called out — **7shifts, Restaurant365, MarginEdge, xtraCHEF, Crunchtime, MarketMan** — plus HotSchedules, Harri, Olo, ChowNow, Otter, Punchh, OpenTable, Resy, and dozens more.
+Silos include **7shifts, Restaurant365, MarginEdge, xtraCHEF, Crunchtime, MarketMan** — plus HotSchedules, Harri, Olo, ChowNow, Otter, Punchh, OpenTable, Resy, and dozens more.
 
 ### Source of truth + codegen
 
@@ -53,3 +55,5 @@ Routine: `routines/pain-shoppers-daily.json`
 ## Setup
 
 See `SETUP.md`.
+
+Sibling repo: `restaurant-social-commerce-engine` (the API + dashboard the bot talks to).
