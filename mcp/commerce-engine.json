@@ -1,7 +1,7 @@
 {
   "name": "restaurant-commerce-engine",
   "transport": "http",
-  "url": "https://api.yourdomain.com/mcp",
+  "url": "${COMMERCE_ENGINE_URL}/mcp",
   "auth": "bearer:${COMMERCE_ENGINE_TOKEN}",
   "tools": [
     "list_menu_items",

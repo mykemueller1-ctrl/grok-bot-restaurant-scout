@@ -1,7 +1,7 @@
 {
   "name": "complaint-sources",
   "transport": "http",
-  "url": "https://api.yourdomain.com/mcp/sources",
+  "url": "${COMMERCE_ENGINE_URL}/mcp/sources",
   "auth": "bearer:${COMPLAINT_SOURCES_TOKEN}",
   "tools": [
     "search_tiktok",
