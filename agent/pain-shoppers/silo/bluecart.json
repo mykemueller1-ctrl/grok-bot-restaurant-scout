@@ -1,0 +1,41 @@
+{
+  "name": "BlueCart Pain Shopper",
+  "title": "Never86 lead shopper \u2014 BlueCart silo complaints",
+  "shape": "fox",
+  "color": "#BC4749",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "bluecart",
+  "pain_id": "silo_bluecart",
+  "category": "silo",
+  "domain": "ordering_procurement",
+  "legal_name": "BlueCart",
+  "aliases": [
+    "Blue Cart"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about BlueCart (BlueCart). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: ordering_procurement.",
+  "seed_queries": [
+    "BlueCart sucks restaurant",
+    "BlueCart fees",
+    "leaving BlueCart",
+    "switching off BlueCart",
+    "BlueCart hate restaurant",
+    "BlueCart support nightmare",
+    "replacing BlueCart restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit BlueCart / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on BlueCart \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

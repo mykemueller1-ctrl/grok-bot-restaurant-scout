@@ -1,0 +1,34 @@
+{
+  "$schema_name": "SalesLead",
+  "description": "Never86 sales lead after shop + teach. Vendor displace fields for POS/silo.",
+  "required": ["pain_id", "account_name", "complaint_thesis", "why_never86_now", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "pain_id": { "type": "string" },
+    "vendor_id": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["pos", "silo", "thematic"]
+    },
+    "pain_lead_id": { "type": "string" },
+    "account_name": { "type": "string" },
+    "contact_name": { "type": "string" },
+    "role": { "type": "string" },
+    "handles": { "type": "object" },
+    "city": { "type": "string" },
+    "market": { "type": "string" },
+    "complaint_thesis": { "type": "string" },
+    "quotes": { "type": "array", "items": { "type": "string" } },
+    "primary_vendor": { "type": "string" },
+    "vendors_to_displace": { "type": "array", "items": { "type": "string" } },
+    "stack_guess": { "type": "array", "items": { "type": "string" } },
+    "why_never86_now": { "type": "string" },
+    "suggested_angle": { "type": "string" },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "confidence": { "type": "number" },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "QUALIFIED", "IN_OUTREACH", "WON", "LOST", "DISQUALIFIED"]
+    }
+  }
+}

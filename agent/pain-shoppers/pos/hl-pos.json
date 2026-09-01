@@ -1,0 +1,41 @@
+{
+  "name": "H&L POS Pain Shopper",
+  "title": "Never86 lead shopper \u2014 H&L POS POS complaints",
+  "shape": "fox",
+  "color": "#9B2226",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "hl-pos",
+  "pain_id": "pos_hl-pos",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "H&L Australia",
+  "aliases": [
+    "H&L POS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about H&L POS (H&L Australia). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "H&L POS sucks restaurant",
+    "H&L POS fees",
+    "leaving H&L POS",
+    "switching off H&L POS",
+    "H&L POS hate restaurant",
+    "H&L POS support nightmare",
+    "replacing H&L POS restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit H&L POS / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on H&L POS \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

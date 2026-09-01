@@ -1,0 +1,41 @@
+{
+  "name": "Crunchtime Inventory Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Crunchtime Inventory silo complaints",
+  "shape": "fox",
+  "color": "#80B918",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "crunchtime-inventory",
+  "pain_id": "silo_crunchtime-inventory",
+  "category": "silo",
+  "domain": "enterprise_ops",
+  "legal_name": "Crunchtime Inventory",
+  "aliases": [
+    "Crunchtime Inventory"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Crunchtime Inventory (Crunchtime Inventory). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: enterprise_ops.",
+  "seed_queries": [
+    "Crunchtime Inventory sucks restaurant",
+    "Crunchtime Inventory fees",
+    "leaving Crunchtime Inventory",
+    "switching off Crunchtime Inventory",
+    "Crunchtime Inventory hate restaurant",
+    "Crunchtime Inventory support nightmare",
+    "replacing Crunchtime Inventory restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Crunchtime Inventory / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Crunchtime Inventory \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

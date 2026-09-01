@@ -1,0 +1,41 @@
+{
+  "name": "Clover Dining Online Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Clover Dining Online ordering pain",
+  "shape": "fox",
+  "color": "#90E0EF",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "clover-online",
+  "pain_id": "ordering_clover-online",
+  "category": "ordering",
+  "domain": "first_party_ordering",
+  "legal_name": "Clover Dining Online",
+  "aliases": [
+    "Clover Dining Online"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Clover Dining Online (Clover Dining Online). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: first_party_ordering.",
+  "seed_queries": [
+    "Clover Dining Online sucks restaurant",
+    "Clover Dining Online fees",
+    "leaving Clover Dining Online",
+    "switching off Clover Dining Online",
+    "Clover Dining Online hate restaurant",
+    "Clover Dining Online support nightmare",
+    "replacing Clover Dining Online restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Clover Dining Online / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Clover Dining Online \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Marketplace 3P Pain Shopper",
+  "title": "Never86 lead shopper \u2014 DoorDash / Grubhub / Uber Eats",
+  "shape": "fox",
+  "color": "#9B2226",
+  "family": "never86-pain-shoppers",
+  "pain_id": "marketplace_3p",
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for hate on the big three marketplaces \u2014 DoorDash, Grubhub, Uber Eats. Captures commission rage, ranking games, fake customers, chargebacks, brand control loss, 'we're just a listing'. Shops each lead hard, teach/label with Myke, recurse-learn 3P-pain signals, automate Never86 sales leads positioned as social buy-now instead of marketplace rent. Never outreaches without approval.",
+  "seed_queries": [
+    "DoorDash commission too high",
+    "leaving DoorDash",
+    "Uber Eats fees killing us",
+    "Grubhub not worth it",
+    "third party delivery scam",
+    "marketplace taking 30 percent",
+    "own online ordering vs DoorDash",
+    "tired of DoorDash Grubhub Uber"
+  ],
+  "icp_hints": [
+    "owners citing commission %",
+    "want direct ordering / owned channel",
+    "fit for Never86 TikTok/IG buy-now alternative to 3P"
+  ],
+  "category": "thematic",
+  "swarm": true
+}

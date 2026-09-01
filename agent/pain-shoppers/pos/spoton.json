@@ -1,0 +1,42 @@
+{
+  "name": "SpotOn Pain Shopper",
+  "title": "Never86 lead shopper \u2014 SpotOn POS complaints",
+  "shape": "fox",
+  "color": "#9B2226",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "spoton",
+  "pain_id": "pos_spoton",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "SpotOn Transact",
+  "aliases": [
+    "Spot On POS",
+    "SpotOn POS"
+  ],
+  "rank": 7,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about SpotOn (SpotOn Transact). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "SpotOn sucks restaurant",
+    "SpotOn fees",
+    "leaving SpotOn",
+    "switching off SpotOn",
+    "SpotOn hate restaurant",
+    "SpotOn support nightmare",
+    "replacing SpotOn restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit SpotOn / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on SpotOn \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

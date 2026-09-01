@@ -1,11 +1,51 @@
-# Grok Bot — Restaurant Scout Setup
+# Grok Bot — Never86 Setup
+
+## Shared
 
 1. Download Grok Bot desktop app, sign in with your Cursor account.
-2. New agent → import `agent/restaurant-scout.json` (or paste the description).
-3. Settings → Plugins → connect `social-trends` (OmniSocials/Blotato/Zernio) + `restaurant-commerce-engine` + `approvals`.
-4. Agent Computer → browser takeover → sign into TikTok + Instagram once. Session persists.
-5. Secrets → store all tokens in the secret store (never chat).
-6. Routines → import `routines/daily.json`. Test once manually, then enable.
-7. First run: confirm 5 leads arrive within 30 min. Then approve a draft end-to-end.
+2. Secrets → commerce, social, lead-shop, complaint-sources, approvals.
+3. Agent Computer → browser takeover → TikTok + Instagram (+ Reddit / Facebook).
 
-Reference: https://cursor.com/help/grok-bot/getting-started
+## Restaurant Scout
+
+1. Import `agent/restaurant-scout.json`.
+2. Plugins → social-trends + restaurant-commerce-engine + approvals.
+3. Import `routines/daily.json`.
+
+## Pain Shoppers — SWARM (~238 agents)
+
+### Regenerate anytime
+
+```bash
+python3 agent/pain-shoppers/build_swarm.py
+```
+
+### Import strategy (hit everyone hard)
+
+1. **Priority wave (day 1):** top-10 POS + DoorDash/Uber Eats/Grubhub + 7shifts/R365/MarginEdge/xtraCHEF/Crunchtime/MarketMan + thematic.
+2. **Wave 2:** remaining POS + labor/inventory/accounting silos.
+3. **Wave 3:** ordering, loyalty, reservations, payments, reputation.
+
+Or import **all** JSON under:
+
+- `agent/pain-shoppers/pos/`
+- `agent/pain-shoppers/silo/`
+- `agent/pain-shoppers/marketplace/`
+- `agent/pain-shoppers/ordering/`
+- `agent/pain-shoppers/loyalty/`
+- `agent/pain-shoppers/reservations/`
+- `agent/pain-shoppers/payments/`
+- `agent/pain-shoppers/reputation/`
+- `agent/pain-shoppers/thematic/`
+
+Plugins on each → `complaint-sources` + `social-trends` + `lead-shop` + `approvals`.  
+Skills → `pain-complaint-scan`, `lead-shop-enrich`, `teach-label`, `vendor-complaint-learn`, `recurse-learn`, `sales-lead-form`.  
+Routine → `routines/pain-shoppers-daily.json`.
+
+### Teach → swarm learning
+
+Label keep/reject/wrong_pain per vendor. That builds phrase banks so the swarm gets sharper and fills `SalesLead` forms faster. Outreach still approval-gated.
+
+### Add more vendors
+
+Edit `build_swarm.py` vendor lists (or catalog) → rerun `build_swarm.py` → import new JSON. You have headroom for millions; this pack is the immediate buyer-hunting army.

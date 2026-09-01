@@ -1,0 +1,41 @@
+{
+  "name": "Square Online Dining Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Square Online Dining ordering pain",
+  "shape": "fox",
+  "color": "#00B4D8",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "square-online",
+  "pain_id": "ordering_square-online",
+  "category": "ordering",
+  "domain": "first_party_ordering",
+  "legal_name": "Square Online Dining",
+  "aliases": [
+    "Square Online Dining"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Square Online Dining (Square Online Dining). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: first_party_ordering.",
+  "seed_queries": [
+    "Square Online Dining sucks restaurant",
+    "Square Online Dining fees",
+    "leaving Square Online Dining",
+    "switching off Square Online Dining",
+    "Square Online Dining hate restaurant",
+    "Square Online Dining support nightmare",
+    "replacing Square Online Dining restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Square Online Dining / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Square Online Dining \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

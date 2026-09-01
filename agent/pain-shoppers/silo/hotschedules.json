@@ -1,0 +1,42 @@
+{
+  "name": "HotSchedules Pain Shopper",
+  "title": "Never86 lead shopper \u2014 HotSchedules silo complaints",
+  "shape": "fox",
+  "color": "#F77F00",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "hotschedules",
+  "pain_id": "silo_hotschedules",
+  "category": "silo",
+  "domain": "scheduling_labor",
+  "legal_name": "HotSchedules",
+  "aliases": [
+    "Hot Schedules",
+    "Fourth HotSchedules"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about HotSchedules (HotSchedules). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: scheduling_labor.",
+  "seed_queries": [
+    "HotSchedules sucks restaurant",
+    "HotSchedules fees",
+    "leaving HotSchedules",
+    "switching off HotSchedules",
+    "HotSchedules hate restaurant",
+    "HotSchedules support nightmare",
+    "replacing HotSchedules restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit HotSchedules / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on HotSchedules \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

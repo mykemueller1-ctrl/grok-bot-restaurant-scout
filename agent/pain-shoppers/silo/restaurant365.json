@@ -1,0 +1,42 @@
+{
+  "name": "Restaurant365 Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Restaurant365 silo complaints",
+  "shape": "fox",
+  "color": "#669BBC",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "restaurant365",
+  "pain_id": "silo_restaurant365",
+  "category": "silo",
+  "domain": "accounting_ops",
+  "legal_name": "Restaurant365",
+  "aliases": [
+    "R365",
+    "Restaurant 365"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Restaurant365 (Restaurant365). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: accounting_ops.",
+  "seed_queries": [
+    "Restaurant365 sucks restaurant",
+    "Restaurant365 fees",
+    "leaving Restaurant365",
+    "switching off Restaurant365",
+    "Restaurant365 hate restaurant",
+    "Restaurant365 support nightmare",
+    "replacing Restaurant365 restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Restaurant365 / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Restaurant365 \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

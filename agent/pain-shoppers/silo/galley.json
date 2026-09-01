@@ -1,0 +1,41 @@
+{
+  "name": "Galley Solutions Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Galley Solutions silo complaints",
+  "shape": "fox",
+  "color": "#D62828",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "galley",
+  "pain_id": "silo_galley",
+  "category": "silo",
+  "domain": "recipe_ops",
+  "legal_name": "Galley Solutions",
+  "aliases": [
+    "Galley Solutions"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Galley Solutions (Galley Solutions). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: recipe_ops.",
+  "seed_queries": [
+    "Galley Solutions sucks restaurant",
+    "Galley Solutions fees",
+    "leaving Galley Solutions",
+    "switching off Galley Solutions",
+    "Galley Solutions hate restaurant",
+    "Galley Solutions support nightmare",
+    "replacing Galley Solutions restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Galley Solutions / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Galley Solutions \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

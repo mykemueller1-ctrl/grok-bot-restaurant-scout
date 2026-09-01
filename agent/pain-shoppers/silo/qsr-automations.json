@@ -1,0 +1,41 @@
+{
+  "name": "QSR Automations Pain Shopper",
+  "title": "Never86 lead shopper \u2014 QSR Automations silo complaints",
+  "shape": "fox",
+  "color": "#5C4D7D",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "qsr-automations",
+  "pain_id": "silo_qsr-automations",
+  "category": "silo",
+  "domain": "kds",
+  "legal_name": "QSR Automations",
+  "aliases": [
+    "QSR Automations"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about QSR Automations (QSR Automations). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: kds.",
+  "seed_queries": [
+    "QSR Automations sucks restaurant",
+    "QSR Automations fees",
+    "leaving QSR Automations",
+    "switching off QSR Automations",
+    "QSR Automations hate restaurant",
+    "QSR Automations support nightmare",
+    "replacing QSR Automations restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit QSR Automations / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on QSR Automations \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

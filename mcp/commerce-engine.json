@@ -11,5 +11,5 @@
     "save_content_draft",
     "approve_draft"
   ],
-  "notes": "Points at the restaurant-social-commerce-engine API. Token in Grok Bot secret store, never in chat."
+  "notes": "Points at the restaurant-social-commerce-engine API. Token in Grok Bot secret store, never in chat. Pain-shopper leads live on lead-shop MCP, not here."
 }

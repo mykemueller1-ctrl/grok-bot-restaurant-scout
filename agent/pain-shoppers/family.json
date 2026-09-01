@@ -1,0 +1,1934 @@
+{
+  "family": "never86-pain-shoppers",
+  "platform": "Never86",
+  "version": "2.0.0",
+  "swarm_mode": true,
+  "purpose": "SWARM: shop Never86 buyers by hunting operator complaints across every major POS, silo, marketplace, ordering, loyalty, reservations, payments, and reputation vendor.",
+  "shop_means": "Collect identity + complaint context. Owner teaches per vendor; agents recurse and auto-fill sales forms. Outreach stays approval-gated.",
+  "vendor_catalog": "vendors/catalog.json",
+  "agent_count": 238,
+  "sources": [
+    "tiktok",
+    "instagram",
+    "reddit",
+    "facebook_groups",
+    "x",
+    "forums",
+    "discord",
+    "linkedin"
+  ],
+  "shared_skills": [
+    "pain-complaint-scan",
+    "lead-shop-enrich",
+    "teach-label",
+    "recurse-learn",
+    "sales-lead-form",
+    "vendor-complaint-learn"
+  ],
+  "pos_agents": [
+    {
+      "id": "toast",
+      "file": "pos/toast.json",
+      "pain": "pos_toast",
+      "label": "Toast",
+      "domain": null,
+      "rank": 1
+    },
+    {
+      "id": "square",
+      "file": "pos/square.json",
+      "pain": "pos_square",
+      "label": "Square for Restaurants",
+      "domain": null,
+      "rank": 2
+    },
+    {
+      "id": "clover",
+      "file": "pos/clover.json",
+      "pain": "pos_clover",
+      "label": "Clover",
+      "domain": null,
+      "rank": 3
+    },
+    {
+      "id": "lightspeed",
+      "file": "pos/lightspeed.json",
+      "pain": "pos_lightspeed",
+      "label": "Lightspeed Restaurant",
+      "domain": null,
+      "rank": 4
+    },
+    {
+      "id": "aloha",
+      "file": "pos/aloha.json",
+      "pain": "pos_aloha",
+      "label": "NCR Aloha",
+      "domain": null,
+      "rank": 5
+    },
+    {
+      "id": "touchbistro",
+      "file": "pos/touchbistro.json",
+      "pain": "pos_touchbistro",
+      "label": "TouchBistro",
+      "domain": null,
+      "rank": 6
+    },
+    {
+      "id": "spoton",
+      "file": "pos/spoton.json",
+      "pain": "pos_spoton",
+      "label": "SpotOn",
+      "domain": null,
+      "rank": 7
+    },
+    {
+      "id": "par-brink",
+      "file": "pos/par-brink.json",
+      "pain": "pos_par-brink",
+      "label": "PAR Brink",
+      "domain": null,
+      "rank": 8
+    },
+    {
+      "id": "oracle-micros",
+      "file": "pos/oracle-micros.json",
+      "pain": "pos_oracle-micros",
+      "label": "Oracle MICROS / Simphony",
+      "domain": null,
+      "rank": 9
+    },
+    {
+      "id": "skytab",
+      "file": "pos/skytab.json",
+      "pain": "pos_skytab",
+      "label": "SkyTab",
+      "domain": null,
+      "rank": 10
+    },
+    {
+      "id": "revel",
+      "file": "pos/revel.json",
+      "pain": "pos_revel",
+      "label": "Revel Systems",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "heartland",
+      "file": "pos/heartland.json",
+      "pain": "pos_heartland",
+      "label": "Heartland Restaurant",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "qu",
+      "file": "pos/qu.json",
+      "pain": "pos_qu",
+      "label": "Qu Beyond",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "lavu",
+      "file": "pos/lavu.json",
+      "pain": "pos_lavu",
+      "label": "Lavu",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "shopkeep",
+      "file": "pos/shopkeep.json",
+      "pain": "pos_shopkeep",
+      "label": "ShopKeep",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "talech",
+      "file": "pos/talech.json",
+      "pain": "pos_talech",
+      "label": "Talech",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "ncr-silver",
+      "file": "pos/ncr-silver.json",
+      "pain": "pos_ncr-silver",
+      "label": "NCR Silver",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "squirrel",
+      "file": "pos/squirrel.json",
+      "pain": "pos_squirrel",
+      "label": "Squirrel Systems",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "positouch",
+      "file": "pos/positouch.json",
+      "pain": "pos_positouch",
+      "label": "POSitouch",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "dinerware",
+      "file": "pos/dinerware.json",
+      "pain": "pos_dinerware",
+      "label": "Dinerware",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "focus-pos",
+      "file": "pos/focus-pos.json",
+      "pain": "pos_focus-pos",
+      "label": "Focus POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "hungerrush",
+      "file": "pos/hungerrush.json",
+      "pain": "pos_hungerrush",
+      "label": "HungerRush",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "xenial",
+      "file": "pos/xenial.json",
+      "pain": "pos_xenial",
+      "label": "Xenial",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "accupos",
+      "file": "pos/accupos.json",
+      "pain": "pos_accupos",
+      "label": "AccuPOS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "upserve-pos",
+      "file": "pos/upserve-pos.json",
+      "pain": "pos_upserve-pos",
+      "label": "Upserve POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "aldelo",
+      "file": "pos/aldelo.json",
+      "pain": "pos_aldelo",
+      "label": "Aldelo",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "harbortouch",
+      "file": "pos/harbortouch.json",
+      "pain": "pos_harbortouch",
+      "label": "Harbortouch",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "bentro",
+      "file": "pos/bentro.json",
+      "pain": "pos_bentro",
+      "label": "Bentro",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "epos-now",
+      "file": "pos/epos-now.json",
+      "pain": "pos_epos-now",
+      "label": "Epos Now",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "sumup",
+      "file": "pos/sumup.json",
+      "pain": "pos_sumup",
+      "label": "SumUp POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "zettle",
+      "file": "pos/zettle.json",
+      "pain": "pos_zettle",
+      "label": "PayPal Zettle",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "future-pos",
+      "file": "pos/future-pos.json",
+      "pain": "pos_future-pos",
+      "label": "Future POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "pixelpoint",
+      "file": "pos/pixelpoint.json",
+      "pain": "pos_pixelpoint",
+      "label": "PixelPoint",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "infogenesis",
+      "file": "pos/infogenesis.json",
+      "pain": "pos_infogenesis",
+      "label": "InfoGenesis",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "maitred",
+      "file": "pos/maitred.json",
+      "pain": "pos_maitred",
+      "label": "Maitre'D",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "rpower",
+      "file": "pos/rpower.json",
+      "pain": "pos_rpower",
+      "label": "RPower",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "tabit",
+      "file": "pos/tabit.json",
+      "pain": "pos_tabit",
+      "label": "Tabit",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "cake-pos",
+      "file": "pos/cake-pos.json",
+      "pain": "pos_cake-pos",
+      "label": "Cake POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "tillster",
+      "file": "pos/tillster.json",
+      "pain": "pos_tillster",
+      "label": "Tillster",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "nextep",
+      "file": "pos/nextep.json",
+      "pain": "pos_nextep",
+      "label": "Nextep",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "silverware",
+      "file": "pos/silverware.json",
+      "pain": "pos_silverware",
+      "label": "Silverware POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "thrive",
+      "file": "pos/thrive.json",
+      "pain": "pos_thrive",
+      "label": "Thrive POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "union-pos",
+      "file": "pos/union-pos.json",
+      "pain": "pos_union-pos",
+      "label": "Union POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "omnivore",
+      "file": "pos/omnivore.json",
+      "pain": "pos_omnivore",
+      "label": "Omnivore",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "salido",
+      "file": "pos/salido.json",
+      "pain": "pos_salido",
+      "label": "Salido",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "toast-now",
+      "file": "pos/toast-now.json",
+      "pain": "pos_toast-now",
+      "label": "Toast Now",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "hl-pos",
+      "file": "pos/hl-pos.json",
+      "pain": "pos_hl-pos",
+      "label": "H&L POS",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "idealpos",
+      "file": "pos/idealpos.json",
+      "pain": "pos_idealpos",
+      "label": "Idealpos",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "impos",
+      "file": "pos/impos.json",
+      "pain": "pos_impos",
+      "label": "Impos",
+      "domain": null,
+      "rank": null
+    },
+    {
+      "id": "kounta",
+      "file": "pos/kounta.json",
+      "pain": "pos_kounta",
+      "label": "Kounta",
+      "domain": null,
+      "rank": null
+    }
+  ],
+  "silo_agents": [
+    {
+      "id": "7shifts",
+      "file": "silo/7shifts.json",
+      "pain": "silo_7shifts",
+      "label": "7shifts",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "hotschedules",
+      "file": "silo/hotschedules.json",
+      "pain": "silo_hotschedules",
+      "label": "HotSchedules",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "harri",
+      "file": "silo/harri.json",
+      "pain": "silo_harri",
+      "label": "Harri",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "homebase",
+      "file": "silo/homebase.json",
+      "pain": "silo_homebase",
+      "label": "Homebase",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "wheniwork",
+      "file": "silo/wheniwork.json",
+      "pain": "silo_wheniwork",
+      "label": "When I Work",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "deputy",
+      "file": "silo/deputy.json",
+      "pain": "silo_deputy",
+      "label": "Deputy",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "sling",
+      "file": "silo/sling.json",
+      "pain": "silo_sling",
+      "label": "Sling",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "fourth",
+      "file": "silo/fourth.json",
+      "pain": "silo_fourth",
+      "label": "Fourth",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "synergysuite",
+      "file": "silo/synergysuite.json",
+      "pain": "silo_synergysuite",
+      "label": "SynergySuite",
+      "domain": "ops_suite",
+      "rank": null
+    },
+    {
+      "id": "humanity",
+      "file": "silo/humanity.json",
+      "pain": "silo_humanity",
+      "label": "Humanity",
+      "domain": "scheduling_labor",
+      "rank": null
+    },
+    {
+      "id": "toast-payroll",
+      "file": "silo/toast-payroll.json",
+      "pain": "silo_toast-payroll",
+      "label": "Toast Payroll",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "gusto",
+      "file": "silo/gusto.json",
+      "pain": "silo_gusto",
+      "label": "Gusto",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "adp-run",
+      "file": "silo/adp-run.json",
+      "pain": "silo_adp-run",
+      "label": "ADP RUN",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "paychex",
+      "file": "silo/paychex.json",
+      "pain": "silo_paychex",
+      "label": "Paychex",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "restaurant365",
+      "file": "silo/restaurant365.json",
+      "pain": "silo_restaurant365",
+      "label": "Restaurant365",
+      "domain": "accounting_ops",
+      "rank": null
+    },
+    {
+      "id": "compeat",
+      "file": "silo/compeat.json",
+      "pain": "silo_compeat",
+      "label": "Compeat",
+      "domain": "accounting_ops",
+      "rank": null
+    },
+    {
+      "id": "quickbooks",
+      "file": "silo/quickbooks.json",
+      "pain": "silo_quickbooks",
+      "label": "QuickBooks Restaurant",
+      "domain": "accounting_ops",
+      "rank": null
+    },
+    {
+      "id": "xero",
+      "file": "silo/xero.json",
+      "pain": "silo_xero",
+      "label": "Xero Restaurant",
+      "domain": "accounting_ops",
+      "rank": null
+    },
+    {
+      "id": "plateiq",
+      "file": "silo/plateiq.json",
+      "pain": "silo_plateiq",
+      "label": "Plate IQ",
+      "domain": "ap_automation",
+      "rank": null
+    },
+    {
+      "id": "bill-com",
+      "file": "silo/bill-com.json",
+      "pain": "silo_bill-com",
+      "label": "Bill.com Restaurant",
+      "domain": "ap_automation",
+      "rank": null
+    },
+    {
+      "id": "marginedge",
+      "file": "silo/marginedge.json",
+      "pain": "silo_marginedge",
+      "label": "MarginEdge",
+      "domain": "cogs_ap",
+      "rank": null
+    },
+    {
+      "id": "extrachef",
+      "file": "silo/extrachef.json",
+      "pain": "silo_extrachef",
+      "label": "xtraCHEF",
+      "domain": "cogs_ap",
+      "rank": null
+    },
+    {
+      "id": "crunchtime",
+      "file": "silo/crunchtime.json",
+      "pain": "silo_crunchtime",
+      "label": "Crunchtime",
+      "domain": "enterprise_ops",
+      "rank": null
+    },
+    {
+      "id": "marketman",
+      "file": "silo/marketman.json",
+      "pain": "silo_marketman",
+      "label": "MarketMan",
+      "domain": "inventory",
+      "rank": null
+    },
+    {
+      "id": "ctuit",
+      "file": "silo/ctuit.json",
+      "pain": "silo_ctuit",
+      "label": "CTUIT",
+      "domain": "inventory",
+      "rank": null
+    },
+    {
+      "id": "orderly",
+      "file": "silo/orderly.json",
+      "pain": "silo_orderly",
+      "label": "Orderly",
+      "domain": "inventory",
+      "rank": null
+    },
+    {
+      "id": "bevspot",
+      "file": "silo/bevspot.json",
+      "pain": "silo_bevspot",
+      "label": "BevSpot",
+      "domain": "beverage_inventory",
+      "rank": null
+    },
+    {
+      "id": "bluecart",
+      "file": "silo/bluecart.json",
+      "pain": "silo_bluecart",
+      "label": "BlueCart",
+      "domain": "ordering_procurement",
+      "rank": null
+    },
+    {
+      "id": "craftable",
+      "file": "silo/craftable.json",
+      "pain": "silo_craftable",
+      "label": "Craftable",
+      "domain": "inventory",
+      "rank": null
+    },
+    {
+      "id": "wisk",
+      "file": "silo/wisk.json",
+      "pain": "silo_wisk",
+      "label": "WISK.ai",
+      "domain": "inventory",
+      "rank": null
+    },
+    {
+      "id": "galley",
+      "file": "silo/galley.json",
+      "pain": "silo_galley",
+      "label": "Galley Solutions",
+      "domain": "recipe_ops",
+      "rank": null
+    },
+    {
+      "id": "clearcogs",
+      "file": "silo/clearcogs.json",
+      "pain": "silo_clearcogs",
+      "label": "ClearCOGS",
+      "domain": "cogs_ap",
+      "rank": null
+    },
+    {
+      "id": "partender",
+      "file": "silo/partender.json",
+      "pain": "silo_partender",
+      "label": "Partender",
+      "domain": "beverage_inventory",
+      "rank": null
+    },
+    {
+      "id": "cut-dry",
+      "file": "silo/cut-dry.json",
+      "pain": "silo_cut-dry",
+      "label": "Cut+Dry",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "olo",
+      "file": "silo/olo.json",
+      "pain": "silo_olo",
+      "label": "Olo",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "chownow",
+      "file": "silo/chownow.json",
+      "pain": "silo_chownow",
+      "label": "ChowNow",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "chowly",
+      "file": "silo/chowly.json",
+      "pain": "silo_chowly",
+      "label": "Chowly",
+      "domain": "online_ordering_middleware",
+      "rank": null
+    },
+    {
+      "id": "otter",
+      "file": "silo/otter.json",
+      "pain": "silo_otter",
+      "label": "Otter",
+      "domain": "delivery_ops",
+      "rank": null
+    },
+    {
+      "id": "checkmate",
+      "file": "silo/checkmate.json",
+      "pain": "silo_checkmate",
+      "label": "ItsaCheckmate",
+      "domain": "delivery_ops",
+      "rank": null
+    },
+    {
+      "id": "deliverect",
+      "file": "silo/deliverect.json",
+      "pain": "silo_deliverect",
+      "label": "Deliverect",
+      "domain": "delivery_ops",
+      "rank": null
+    },
+    {
+      "id": "gloriafood",
+      "file": "silo/gloriafood.json",
+      "pain": "silo_gloriafood",
+      "label": "GloriaFood",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "menudrive",
+      "file": "silo/menudrive.json",
+      "pain": "silo_menudrive",
+      "label": "MenuDrive",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "owner-com",
+      "file": "silo/owner-com.json",
+      "pain": "silo_owner-com",
+      "label": "Owner.com",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "slice",
+      "file": "silo/slice.json",
+      "pain": "silo_slice",
+      "label": "Slice",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "ritual",
+      "file": "silo/ritual.json",
+      "pain": "silo_ritual",
+      "label": "Ritual",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "lunchbox",
+      "file": "silo/lunchbox.json",
+      "pain": "silo_lunchbox",
+      "label": "Lunchbox",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "bbot",
+      "file": "silo/bbot.json",
+      "pain": "silo_bbot",
+      "label": "Bbot",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "punchh",
+      "file": "silo/punchh.json",
+      "pain": "silo_punchh",
+      "label": "Punchh",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "thanx",
+      "file": "silo/thanx.json",
+      "pain": "silo_thanx",
+      "label": "Thanx",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "paytronix",
+      "file": "silo/paytronix.json",
+      "pain": "silo_paytronix",
+      "label": "Paytronix",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "fishbowl",
+      "file": "silo/fishbowl.json",
+      "pain": "silo_fishbowl",
+      "label": "Fishbowl",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "fivestars",
+      "file": "silo/fivestars.json",
+      "pain": "silo_fivestars",
+      "label": "FiveStars",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "spendgo",
+      "file": "silo/spendgo.json",
+      "pain": "silo_spendgo",
+      "label": "Spendgo",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "levelup",
+      "file": "silo/levelup.json",
+      "pain": "silo_levelup",
+      "label": "LevelUp",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "toast-loyalty",
+      "file": "silo/toast-loyalty.json",
+      "pain": "silo_toast-loyalty",
+      "label": "Toast Loyalty",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "square-loyalty",
+      "file": "silo/square-loyalty.json",
+      "pain": "silo_square-loyalty",
+      "label": "Square Loyalty",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "klaviyo",
+      "file": "silo/klaviyo.json",
+      "pain": "silo_klaviyo",
+      "label": "Klaviyo Restaurant",
+      "domain": "marketing",
+      "rank": null
+    },
+    {
+      "id": "popmenu",
+      "file": "silo/popmenu.json",
+      "pain": "silo_popmenu",
+      "label": "Popmenu",
+      "domain": "marketing_web",
+      "rank": null
+    },
+    {
+      "id": "opentable",
+      "file": "silo/opentable.json",
+      "pain": "silo_opentable",
+      "label": "OpenTable",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "resy",
+      "file": "silo/resy.json",
+      "pain": "silo_resy",
+      "label": "Resy",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "sevenrooms",
+      "file": "silo/sevenrooms.json",
+      "pain": "silo_sevenrooms",
+      "label": "SevenRooms",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "tock",
+      "file": "silo/tock.json",
+      "pain": "silo_tock",
+      "label": "Tock",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "yelp-guest-manager",
+      "file": "silo/yelp-guest-manager.json",
+      "pain": "silo_yelp-guest-manager",
+      "label": "Yelp Guest Manager",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "waitlistme",
+      "file": "silo/waitlistme.json",
+      "pain": "silo_waitlistme",
+      "label": "Waitlist Me",
+      "domain": "waitlist",
+      "rank": null
+    },
+    {
+      "id": "hostme",
+      "file": "silo/hostme.json",
+      "pain": "silo_hostme",
+      "label": "Hostme",
+      "domain": "waitlist",
+      "rank": null
+    },
+    {
+      "id": "fresh-kds",
+      "file": "silo/fresh-kds.json",
+      "pain": "silo_fresh-kds",
+      "label": "Fresh KDS",
+      "domain": "kds",
+      "rank": null
+    },
+    {
+      "id": "qsr-automations",
+      "file": "silo/qsr-automations.json",
+      "pain": "silo_qsr-automations",
+      "label": "QSR Automations",
+      "domain": "kds",
+      "rank": null
+    },
+    {
+      "id": "toast-kds",
+      "file": "silo/toast-kds.json",
+      "pain": "silo_toast-kds",
+      "label": "Toast KDS",
+      "domain": "kds",
+      "rank": null
+    },
+    {
+      "id": "givex",
+      "file": "silo/givex.json",
+      "pain": "silo_givex",
+      "label": "GiveX",
+      "domain": "gift_cards",
+      "rank": null
+    },
+    {
+      "id": "freedompay",
+      "file": "silo/freedompay.json",
+      "pain": "silo_freedompay",
+      "label": "FreedomPay",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "birdeye",
+      "file": "silo/birdeye.json",
+      "pain": "silo_birdeye",
+      "label": "Birdeye",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "yext",
+      "file": "silo/yext.json",
+      "pain": "silo_yext",
+      "label": "Yext",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "podium",
+      "file": "silo/podium.json",
+      "pain": "silo_podium",
+      "label": "Podium",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "ovation",
+      "file": "silo/ovation.json",
+      "pain": "silo_ovation",
+      "label": "Ovation",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "jolt",
+      "file": "silo/jolt.json",
+      "pain": "silo_jolt",
+      "label": "Jolt",
+      "domain": "ops_checklists",
+      "rank": null
+    },
+    {
+      "id": "avero",
+      "file": "silo/avero.json",
+      "pain": "silo_avero",
+      "label": "Avero",
+      "domain": "analytics",
+      "rank": null
+    },
+    {
+      "id": "upserve",
+      "file": "silo/upserve.json",
+      "pain": "silo_upserve",
+      "label": "Upserve",
+      "domain": "legacy_ops",
+      "rank": null
+    },
+    {
+      "id": "profitsword",
+      "file": "silo/profitsword.json",
+      "pain": "silo_profitsword",
+      "label": "ProfitSword",
+      "domain": "analytics",
+      "rank": null
+    },
+    {
+      "id": "mashgin",
+      "file": "silo/mashgin.json",
+      "pain": "silo_mashgin",
+      "label": "Mashgin",
+      "domain": "checkout_ai",
+      "rank": null
+    },
+    {
+      "id": "presto",
+      "file": "silo/presto.json",
+      "pain": "silo_presto",
+      "label": "Presto",
+      "domain": "ai_voice_ordering",
+      "rank": null
+    },
+    {
+      "id": "hi-auto",
+      "file": "silo/hi-auto.json",
+      "pain": "silo_hi-auto",
+      "label": "Hi Auto",
+      "domain": "ai_voice_ordering",
+      "rank": null
+    },
+    {
+      "id": "keel",
+      "file": "silo/keel.json",
+      "pain": "silo_keel",
+      "label": "Keel",
+      "domain": "delivery_ops",
+      "rank": null
+    },
+    {
+      "id": "urbanpiper",
+      "file": "silo/urbanpiper.json",
+      "pain": "silo_urbanpiper",
+      "label": "UrbanPiper",
+      "domain": "delivery_ops",
+      "rank": null
+    },
+    {
+      "id": "foodconnex",
+      "file": "silo/foodconnex.json",
+      "pain": "silo_foodconnex",
+      "label": "FoodConnex",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "opsanalitica",
+      "file": "silo/opsanalitica.json",
+      "pain": "silo_opsanalitica",
+      "label": "OpsAnalitica",
+      "domain": "ops_checklists",
+      "rank": null
+    },
+    {
+      "id": "reviewtrackers",
+      "file": "silo/reviewtrackers.json",
+      "pain": "silo_reviewtrackers",
+      "label": "ReviewTrackers",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "toast-online-ordering",
+      "file": "silo/toast-online-ordering.json",
+      "pain": "silo_toast-online-ordering",
+      "label": "Toast Online Ordering",
+      "domain": "online_ordering",
+      "rank": null
+    },
+    {
+      "id": "7shifts-payroll",
+      "file": "silo/7shifts-payroll.json",
+      "pain": "silo_7shifts-payroll",
+      "label": "7shifts Payroll",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "homebase-payroll",
+      "file": "silo/homebase-payroll.json",
+      "pain": "silo_homebase-payroll",
+      "label": "Homebase Payroll",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "4p-foods",
+      "file": "silo/4p-foods.json",
+      "pain": "silo_4p-foods",
+      "label": "4P Foods Ops",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "restaurant-depot",
+      "file": "silo/restaurant-depot.json",
+      "pain": "silo_restaurant-depot",
+      "label": "Restaurant Depot Portal",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "sysco-market",
+      "file": "silo/sysco-market.json",
+      "pain": "silo_sysco-market",
+      "label": "Sysco Market",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "us-foods",
+      "file": "silo/us-foods.json",
+      "pain": "silo_us-foods",
+      "label": "US Foods Online",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "chefstore",
+      "file": "silo/chefstore.json",
+      "pain": "silo_chefstore",
+      "label": "ChefStore",
+      "domain": "procurement",
+      "rank": null
+    },
+    {
+      "id": "marginedge-invoice",
+      "file": "silo/marginedge-invoice.json",
+      "pain": "silo_marginedge-invoice",
+      "label": "Marginedge Invoice",
+      "domain": "cogs_ap",
+      "rank": null
+    },
+    {
+      "id": "crunchtime-inventory",
+      "file": "silo/crunchtime-inventory.json",
+      "pain": "silo_crunchtime-inventory",
+      "label": "Crunchtime Inventory",
+      "domain": "enterprise_ops",
+      "rank": null
+    },
+    {
+      "id": "harri-hiring",
+      "file": "silo/harri-hiring.json",
+      "pain": "silo_harri-hiring",
+      "label": "Harri Hiring",
+      "domain": "hiring",
+      "rank": null
+    },
+    {
+      "id": "snagajob",
+      "file": "silo/snagajob.json",
+      "pain": "silo_snagajob",
+      "label": "Snagajob Restaurant",
+      "domain": "hiring",
+      "rank": null
+    },
+    {
+      "id": "indeed-hiring",
+      "file": "silo/indeed-hiring.json",
+      "pain": "silo_indeed-hiring",
+      "label": "Indeed Restaurant Hiring",
+      "domain": "hiring",
+      "rank": null
+    },
+    {
+      "id": "ziprecruiter",
+      "file": "silo/ziprecruiter.json",
+      "pain": "silo_ziprecruiter",
+      "label": "ZipRecruiter Restaurant",
+      "domain": "hiring",
+      "rank": null
+    },
+    {
+      "id": "toast-tips",
+      "file": "silo/toast-tips.json",
+      "pain": "silo_toast-tips",
+      "label": "Toast Tips Manager",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "7shifts-tips",
+      "file": "silo/7shifts-tips.json",
+      "pain": "silo_7shifts-tips",
+      "label": "7shifts Tip Pooling",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "push-operations",
+      "file": "silo/push-operations.json",
+      "pain": "silo_push-operations",
+      "label": "Push Operations",
+      "domain": "payroll",
+      "rank": null
+    },
+    {
+      "id": "4dayweek",
+      "file": "silo/4dayweek.json",
+      "pain": "silo_4dayweek",
+      "label": "4dayweek Ops",
+      "domain": "scheduling_labor",
+      "rank": null
+    }
+  ],
+  "marketplace_agents": [
+    {
+      "id": "doordash",
+      "file": "marketplace/doordash.json",
+      "pain": "marketplace_doordash",
+      "label": "DoorDash",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "uber-eats",
+      "file": "marketplace/uber-eats.json",
+      "pain": "marketplace_uber-eats",
+      "label": "Uber Eats",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "grubhub",
+      "file": "marketplace/grubhub.json",
+      "pain": "marketplace_grubhub",
+      "label": "Grubhub",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "postmates",
+      "file": "marketplace/postmates.json",
+      "pain": "marketplace_postmates",
+      "label": "Postmates",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "ezcater",
+      "file": "marketplace/ezcater.json",
+      "pain": "marketplace_ezcater",
+      "label": "EzCater",
+      "domain": "catering_marketplace",
+      "rank": null
+    },
+    {
+      "id": "tgtg",
+      "file": "marketplace/tgtg.json",
+      "pain": "marketplace_tgtg",
+      "label": "Too Good To Go",
+      "domain": "surplus_marketplace",
+      "rank": null
+    },
+    {
+      "id": "hungrypanda",
+      "file": "marketplace/hungrypanda.json",
+      "pain": "marketplace_hungrypanda",
+      "label": "HungryPanda",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "fantuan",
+      "file": "marketplace/fantuan.json",
+      "pain": "marketplace_fantuan",
+      "label": "Fantuan",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "chowbus",
+      "file": "marketplace/chowbus.json",
+      "pain": "marketplace_chowbus",
+      "label": "Chowbus",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "deliveroo",
+      "file": "marketplace/deliveroo.json",
+      "pain": "marketplace_deliveroo",
+      "label": "Deliveroo",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "just-eat",
+      "file": "marketplace/just-eat.json",
+      "pain": "marketplace_just-eat",
+      "label": "Just Eat",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "skip",
+      "file": "marketplace/skip.json",
+      "pain": "marketplace_skip",
+      "label": "SkipTheDishes",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "doordash-drive",
+      "file": "marketplace/doordash-drive.json",
+      "pain": "marketplace_doordash-drive",
+      "label": "DoorDash Drive",
+      "domain": "delivery_logistics",
+      "rank": null
+    },
+    {
+      "id": "uber-direct",
+      "file": "marketplace/uber-direct.json",
+      "pain": "marketplace_uber-direct",
+      "label": "Uber Direct",
+      "domain": "delivery_logistics",
+      "rank": null
+    },
+    {
+      "id": "relay",
+      "file": "marketplace/relay.json",
+      "pain": "marketplace_relay",
+      "label": "Relay Delivery",
+      "domain": "delivery_logistics",
+      "rank": null
+    },
+    {
+      "id": "doordash-storefront",
+      "file": "marketplace/doordash-storefront.json",
+      "pain": "marketplace_doordash-storefront",
+      "label": "DoorDash Storefront",
+      "domain": "marketplace_storefront",
+      "rank": null
+    },
+    {
+      "id": "grubhub-direct",
+      "file": "marketplace/grubhub-direct.json",
+      "pain": "marketplace_grubhub-direct",
+      "label": "Grubhub Direct",
+      "domain": "marketplace_storefront",
+      "rank": null
+    },
+    {
+      "id": "caviar",
+      "file": "marketplace/caviar.json",
+      "pain": "marketplace_caviar",
+      "label": "Caviar",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "seamless",
+      "file": "marketplace/seamless.json",
+      "pain": "marketplace_seamless",
+      "label": "Seamless",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "uber-eats-manager",
+      "file": "marketplace/uber-eats-manager.json",
+      "pain": "marketplace_uber-eats-manager",
+      "label": "Uber Eats Manager",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "doordash-merchant",
+      "file": "marketplace/doordash-merchant.json",
+      "pain": "marketplace_doordash-merchant",
+      "label": "DoorDash Merchant",
+      "domain": "marketplace_3p",
+      "rank": null
+    },
+    {
+      "id": "grubhub-merchants",
+      "file": "marketplace/grubhub-merchants.json",
+      "pain": "marketplace_grubhub-merchants",
+      "label": "Grubhub for Restaurants",
+      "domain": "marketplace_3p",
+      "rank": null
+    }
+  ],
+  "ordering_agents": [
+    {
+      "id": "toast-ooo",
+      "file": "ordering/toast-ooo.json",
+      "pain": "ordering_toast-ooo",
+      "label": "Toast Online Ordering Module",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "square-online",
+      "file": "ordering/square-online.json",
+      "pain": "ordering_square-online",
+      "label": "Square Online Dining",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "clover-online",
+      "file": "ordering/clover-online.json",
+      "pain": "ordering_clover-online",
+      "label": "Clover Dining Online",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "spoton-online",
+      "file": "ordering/spoton-online.json",
+      "pain": "ordering_spoton-online",
+      "label": "SpotOn Online Ordering",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "bentobox",
+      "file": "ordering/bentobox.json",
+      "pain": "ordering_bentobox",
+      "label": "BentoBox",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "flipdish",
+      "file": "ordering/flipdish.json",
+      "pain": "ordering_flipdish",
+      "label": "Flipdish",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "ordermark",
+      "file": "ordering/ordermark.json",
+      "pain": "ordering_ordermark",
+      "label": "Ordermark",
+      "domain": "delivery_aggregation",
+      "rank": null
+    },
+    {
+      "id": "menufy",
+      "file": "ordering/menufy.json",
+      "pain": "ordering_menufy",
+      "label": "Menufy",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "beyond-menu",
+      "file": "ordering/beyond-menu.json",
+      "pain": "ordering_beyond-menu",
+      "label": "Beyond Menu",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "seamless-ordering",
+      "file": "ordering/seamless-ordering.json",
+      "pain": "ordering_seamless-ordering",
+      "label": "Grubhub Seamless Ordering",
+      "domain": "marketplace_ordering",
+      "rank": null
+    },
+    {
+      "id": "wishbone",
+      "file": "ordering/wishbone.json",
+      "pain": "ordering_wishbone",
+      "label": "Wishbone",
+      "domain": "first_party_ordering",
+      "rank": null
+    },
+    {
+      "id": "incentivio",
+      "file": "ordering/incentivio.json",
+      "pain": "ordering_incentivio",
+      "label": "Incentivio Ordering",
+      "domain": "first_party_ordering",
+      "rank": null
+    }
+  ],
+  "loyalty_agents": [
+    {
+      "id": "belly",
+      "file": "loyalty/belly.json",
+      "pain": "loyalty_belly",
+      "label": "Belly Loyalty",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "stamp-me",
+      "file": "loyalty/stamp-me.json",
+      "pain": "loyalty_stamp-me",
+      "label": "Stamp Me",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "loyaltylion",
+      "file": "loyalty/loyaltylion.json",
+      "pain": "loyalty_loyaltylion",
+      "label": "LoyaltyLion",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "annex-cloud",
+      "file": "loyalty/annex-cloud.json",
+      "pain": "loyalty_annex-cloud",
+      "label": "Annex Cloud",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "antavo",
+      "file": "loyalty/antavo.json",
+      "pain": "loyalty_antavo",
+      "label": "Antavo",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "sessionm",
+      "file": "loyalty/sessionm.json",
+      "pain": "loyalty_sessionm",
+      "label": "SessionM",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "sparkfly",
+      "file": "loyalty/sparkfly.json",
+      "pain": "loyalty_sparkfly",
+      "label": "Sparkfly",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "likecard",
+      "file": "loyalty/likecard.json",
+      "pain": "loyalty_likecard",
+      "label": "LikeCard",
+      "domain": "gift_loyalty",
+      "rank": null
+    },
+    {
+      "id": "paytronix-loyalty",
+      "file": "loyalty/paytronix-loyalty.json",
+      "pain": "loyalty_paytronix-loyalty",
+      "label": "Paytronix Loyalty",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "punchh-enterprise",
+      "file": "loyalty/punchh-enterprise.json",
+      "pain": "loyalty_punchh-enterprise",
+      "label": "Punchh Enterprise",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "thanx-crm",
+      "file": "loyalty/thanx-crm.json",
+      "pain": "loyalty_thanx-crm",
+      "label": "Thanx CRM",
+      "domain": "loyalty_crm",
+      "rank": null
+    },
+    {
+      "id": "fishbowl-loyalty",
+      "file": "loyalty/fishbowl-loyalty.json",
+      "pain": "loyalty_fishbowl-loyalty",
+      "label": "Fishbowl Loyalty",
+      "domain": "loyalty_crm",
+      "rank": null
+    }
+  ],
+  "reservations_agents": [
+    {
+      "id": "bookatable",
+      "file": "reservations/bookatable.json",
+      "pain": "reservations_bookatable",
+      "label": "Bookatable",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "quandoo",
+      "file": "reservations/quandoo.json",
+      "pain": "reservations_quandoo",
+      "label": "Quandoo",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "covermanager",
+      "file": "reservations/covermanager.json",
+      "pain": "reservations_covermanager",
+      "label": "CoverManager",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "thefork",
+      "file": "reservations/thefork.json",
+      "pain": "reservations_thefork",
+      "label": "TheFork",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "eatapp",
+      "file": "reservations/eatapp.json",
+      "pain": "reservations_eatapp",
+      "label": "Eat App",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "tablein",
+      "file": "reservations/tablein.json",
+      "pain": "reservations_tablein",
+      "label": "Tablein",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "reservision",
+      "file": "reservations/reservision.json",
+      "pain": "reservations_reservision",
+      "label": "Reservision",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "tableagent",
+      "file": "reservations/tableagent.json",
+      "pain": "reservations_tableagent",
+      "label": "TableAgent",
+      "domain": "reservations",
+      "rank": null
+    },
+    {
+      "id": "waitlistme-pro",
+      "file": "reservations/waitlistme-pro.json",
+      "pain": "reservations_waitlistme-pro",
+      "label": "Waitlist.me Pro",
+      "domain": "waitlist",
+      "rank": null
+    },
+    {
+      "id": "yelp-waitlist",
+      "file": "reservations/yelp-waitlist.json",
+      "pain": "reservations_yelp-waitlist",
+      "label": "Yelp Waitlist",
+      "domain": "waitlist",
+      "rank": null
+    }
+  ],
+  "payments_agents": [
+    {
+      "id": "worldpay",
+      "file": "payments/worldpay.json",
+      "pain": "payments_worldpay",
+      "label": "Worldpay Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "chase-merchant",
+      "file": "payments/chase-merchant.json",
+      "pain": "payments_chase-merchant",
+      "label": "Chase Merchant Services",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "stripe-terminal",
+      "file": "payments/stripe-terminal.json",
+      "pain": "payments_stripe-terminal",
+      "label": "Stripe Terminal Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "adyen",
+      "file": "payments/adyen.json",
+      "pain": "payments_adyen",
+      "label": "Adyen Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "toast-payments",
+      "file": "payments/toast-payments.json",
+      "pain": "payments_toast-payments",
+      "label": "Toast Payments",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "square-payments",
+      "file": "payments/square-payments.json",
+      "pain": "payments_square-payments",
+      "label": "Square Payments Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "shift4-payments",
+      "file": "payments/shift4-payments.json",
+      "pain": "payments_shift4-payments",
+      "label": "Shift4 Payments",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "cardconnect",
+      "file": "payments/cardconnect.json",
+      "pain": "payments_cardconnect",
+      "label": "CardConnect Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "elavon",
+      "file": "payments/elavon.json",
+      "pain": "payments_elavon",
+      "label": "Elavon Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "clover-payments",
+      "file": "payments/clover-payments.json",
+      "pain": "payments_clover-payments",
+      "label": "Clover Payments",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "helcim",
+      "file": "payments/helcim.json",
+      "pain": "payments_helcim",
+      "label": "Helcim Restaurant",
+      "domain": "payments",
+      "rank": null
+    },
+    {
+      "id": "payment-depot",
+      "file": "payments/payment-depot.json",
+      "pain": "payments_payment-depot",
+      "label": "Payment Depot Restaurant",
+      "domain": "payments",
+      "rank": null
+    }
+  ],
+  "reputation_agents": [
+    {
+      "id": "gbp",
+      "file": "reputation/gbp.json",
+      "pain": "reputation_gbp",
+      "label": "Google Business Profile Ops",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "yelp-business",
+      "file": "reputation/yelp-business.json",
+      "pain": "reputation_yelp-business",
+      "label": "Yelp for Business",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "tripadvisor",
+      "file": "reputation/tripadvisor.json",
+      "pain": "reputation_tripadvisor",
+      "label": "TripAdvisor Restaurant",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "nicejob",
+      "file": "reputation/nicejob.json",
+      "pain": "reputation_nicejob",
+      "label": "NiceJob",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "grade-us",
+      "file": "reputation/grade-us.json",
+      "pain": "reputation_grade-us",
+      "label": "Grade.us",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "reputation-com",
+      "file": "reputation/reputation-com.json",
+      "pain": "reputation_reputation-com",
+      "label": "Reputation.com Restaurant",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "birdeye-rest",
+      "file": "reputation/birdeye-rest.json",
+      "pain": "reputation_birdeye-rest",
+      "label": "BirdEye Restaurant",
+      "domain": "reputation",
+      "rank": null
+    },
+    {
+      "id": "podium-reviews",
+      "file": "reputation/podium-reviews.json",
+      "pain": "reputation_podium-reviews",
+      "label": "Podium Reviews",
+      "domain": "reputation",
+      "rank": null
+    }
+  ],
+  "thematic_agents": [
+    {
+      "id": "labor",
+      "label": "Labor / staffing (cross-vendor)",
+      "file": "thematic/labor.json"
+    },
+    {
+      "id": "cost",
+      "label": "Cost / fees / margins (cross-vendor)",
+      "file": "thematic/cost.json"
+    },
+    {
+      "id": "drift",
+      "label": "Menu / price / data drift",
+      "file": "thematic/drift.json"
+    },
+    {
+      "id": "marketplace_3p_bundle",
+      "label": "3P bundle hate (DD+UE+GH together)",
+      "file": "thematic/marketplace-3p.json"
+    },
+    {
+      "id": "stack_sprawl",
+      "label": "Frankenstein stack / too many vendors",
+      "file": "thematic/stack-sprawl.json"
+    },
+    {
+      "id": "chargebacks",
+      "label": "Chargebacks / fake orders / fraud",
+      "file": "thematic/chargebacks.json"
+    },
+    {
+      "id": "hardware_lockin",
+      "label": "Hardware lease / lock-in traps",
+      "file": "thematic/hardware-lockin.json"
+    },
+    {
+      "id": "integration_hell",
+      "label": "Integration hell / nothing syncs",
+      "file": "thematic/integration-hell.json"
+    }
+  ],
+  "approval_required_for": [
+    "outreach",
+    "dm",
+    "email",
+    "comment",
+    "spend",
+    "publish"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Upserve POS Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Upserve POS POS complaints",
+  "shape": "fox",
+  "color": "#E76F51",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "upserve-pos",
+  "pain_id": "pos_upserve-pos",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Lightspeed / Upserve",
+  "aliases": [
+    "Breadcrumb POS",
+    "Upserve Breadcrumb"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Upserve POS (Lightspeed / Upserve). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Upserve POS sucks restaurant",
+    "Upserve POS fees",
+    "leaving Upserve POS",
+    "switching off Upserve POS",
+    "Upserve POS hate restaurant",
+    "Upserve POS support nightmare",
+    "replacing Upserve POS restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Upserve POS / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Upserve POS \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

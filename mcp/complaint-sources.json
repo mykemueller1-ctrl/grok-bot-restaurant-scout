@@ -1,0 +1,17 @@
+{
+  "name": "complaint-sources",
+  "transport": "http",
+  "url": "https://api.yourdomain.com/mcp/sources",
+  "auth": "bearer:${COMPLAINT_SOURCES_TOKEN}",
+  "tools": [
+    "search_tiktok",
+    "search_reddit",
+    "search_facebook_groups",
+    "search_x",
+    "search_forums",
+    "get_thread_context",
+    "get_profile_public"
+  ],
+  "also_use": ["social-trends"],
+  "notes": "Read-only complaint hunting across TikTok, Reddit, FB groups, X, forums. Pair with social-trends MCP. No auto-comment or DM from this connector."
+}

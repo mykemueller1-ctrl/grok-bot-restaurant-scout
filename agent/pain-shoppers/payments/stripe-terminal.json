@@ -1,0 +1,41 @@
+{
+  "name": "Stripe Terminal Restaurant Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Stripe Terminal Restaurant payments pain",
+  "shape": "fox",
+  "color": "#6C757D",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "stripe-terminal",
+  "pain_id": "payments_stripe-terminal",
+  "category": "payments",
+  "domain": "payments",
+  "legal_name": "Stripe Terminal Restaurant",
+  "aliases": [
+    "Stripe Terminal Restaurant"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Stripe Terminal Restaurant (Stripe Terminal Restaurant). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: payments.",
+  "seed_queries": [
+    "Stripe Terminal Restaurant sucks restaurant",
+    "Stripe Terminal Restaurant fees",
+    "leaving Stripe Terminal Restaurant",
+    "switching off Stripe Terminal Restaurant",
+    "Stripe Terminal Restaurant hate restaurant",
+    "Stripe Terminal Restaurant support nightmare",
+    "replacing Stripe Terminal Restaurant restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Stripe Terminal Restaurant / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Stripe Terminal Restaurant \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

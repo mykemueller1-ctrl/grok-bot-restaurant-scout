@@ -1,0 +1,41 @@
+{
+  "name": "Punchh Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Punchh silo complaints",
+  "shape": "fox",
+  "color": "#BC4749",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "punchh",
+  "pain_id": "silo_punchh",
+  "category": "silo",
+  "domain": "loyalty_crm",
+  "legal_name": "Punchh",
+  "aliases": [
+    "Punchh"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Punchh (Punchh). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: loyalty_crm.",
+  "seed_queries": [
+    "Punchh sucks restaurant",
+    "Punchh fees",
+    "leaving Punchh",
+    "switching off Punchh",
+    "Punchh hate restaurant",
+    "Punchh support nightmare",
+    "replacing Punchh restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Punchh / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Punchh \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

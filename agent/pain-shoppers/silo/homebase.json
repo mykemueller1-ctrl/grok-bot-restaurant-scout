@@ -1,0 +1,41 @@
+{
+  "name": "Homebase Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Homebase silo complaints",
+  "shape": "fox",
+  "color": "#003049",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "homebase",
+  "pain_id": "silo_homebase",
+  "category": "silo",
+  "domain": "scheduling_labor",
+  "legal_name": "Homebase",
+  "aliases": [
+    "Join Homebase"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Homebase (Homebase). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: scheduling_labor.",
+  "seed_queries": [
+    "Homebase sucks restaurant",
+    "Homebase fees",
+    "leaving Homebase",
+    "switching off Homebase",
+    "Homebase hate restaurant",
+    "Homebase support nightmare",
+    "replacing Homebase restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Homebase / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Homebase \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

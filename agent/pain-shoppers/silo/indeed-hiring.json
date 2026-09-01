@@ -1,0 +1,41 @@
+{
+  "name": "Indeed Restaurant Hiring Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Indeed Restaurant Hiring silo complaints",
+  "shape": "fox",
+  "color": "#386641",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "indeed-hiring",
+  "pain_id": "silo_indeed-hiring",
+  "category": "silo",
+  "domain": "hiring",
+  "legal_name": "Indeed Restaurant Hiring",
+  "aliases": [
+    "Indeed Restaurant Hiring"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Indeed Restaurant Hiring (Indeed Restaurant Hiring). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: hiring.",
+  "seed_queries": [
+    "Indeed Restaurant Hiring sucks restaurant",
+    "Indeed Restaurant Hiring fees",
+    "leaving Indeed Restaurant Hiring",
+    "switching off Indeed Restaurant Hiring",
+    "Indeed Restaurant Hiring hate restaurant",
+    "Indeed Restaurant Hiring support nightmare",
+    "replacing Indeed Restaurant Hiring restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Indeed Restaurant Hiring / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Indeed Restaurant Hiring \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

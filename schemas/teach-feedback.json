@@ -1,0 +1,17 @@
+{
+  "$schema_name": "TeachFeedback",
+  "description": "Owner teaching signal that drives recurse-learn.",
+  "required": ["pain_lead_id", "label"],
+  "properties": {
+    "pain_lead_id": { "type": "string" },
+    "pain_id": { "type": "string" },
+    "label": {
+      "type": "string",
+      "enum": ["keep", "reject", "wrong_pain", "wrong_icp", "needs_research"]
+    },
+    "corrected_pain_id": { "type": "string" },
+    "notes": { "type": "string" },
+    "good_looks_like": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

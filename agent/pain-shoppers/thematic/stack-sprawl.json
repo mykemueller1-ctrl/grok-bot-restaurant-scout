@@ -1,0 +1,25 @@
+{
+  "name": "Stack Sprawl Pain Shopper",
+  "title": "Never86 lead shopper \u2014 stack_sprawl",
+  "shape": "fox",
+  "color": "#264653",
+  "family": "never86-pain-shoppers",
+  "pain_id": "stack_sprawl",
+  "category": "thematic",
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Finds operators drowning in too many restaurant vendors \u2014 frankenstein stacks, double entry, nothing talks. Shops leads for Never86 consolidation wedge.",
+  "seed_queries": [
+    "too many restaurant apps",
+    "restaurant tech stack nightmare",
+    "we pay for 8 apps that don't sync",
+    "siloed restaurant software",
+    "integration hell restaurant"
+  ],
+  "icp_hints": [
+    "operator voice",
+    "US first",
+    "active pain last 90 days"
+  ],
+  "swarm": true
+}

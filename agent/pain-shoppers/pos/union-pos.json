@@ -1,0 +1,41 @@
+{
+  "name": "Union POS Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Union POS POS complaints",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "union-pos",
+  "pain_id": "pos_union-pos",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Union",
+  "aliases": [
+    "Union POS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Union POS (Union). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Union POS sucks restaurant",
+    "Union POS fees",
+    "leaving Union POS",
+    "switching off Union POS",
+    "Union POS hate restaurant",
+    "Union POS support nightmare",
+    "replacing Union POS restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Union POS / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Union POS \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

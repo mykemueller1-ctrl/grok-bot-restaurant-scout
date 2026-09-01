@@ -1,0 +1,41 @@
+{
+  "name": "HungryPanda Pain Shopper",
+  "title": "Never86 lead shopper \u2014 HungryPanda marketplace pain",
+  "shape": "fox",
+  "color": "#AE2012",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "hungrypanda",
+  "pain_id": "marketplace_hungrypanda",
+  "category": "marketplace",
+  "domain": "marketplace_3p",
+  "legal_name": "HungryPanda",
+  "aliases": [
+    "HungryPanda"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about HungryPanda (HungryPanda). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: marketplace_3p.",
+  "seed_queries": [
+    "HungryPanda sucks restaurant",
+    "HungryPanda fees",
+    "leaving HungryPanda",
+    "switching off HungryPanda",
+    "HungryPanda hate restaurant",
+    "HungryPanda support nightmare",
+    "replacing HungryPanda restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit HungryPanda / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on HungryPanda \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Fishbowl Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Fishbowl silo complaints",
+  "shape": "fox",
+  "color": "#D62828",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "fishbowl",
+  "pain_id": "silo_fishbowl",
+  "category": "silo",
+  "domain": "loyalty_crm",
+  "legal_name": "Fishbowl",
+  "aliases": [
+    "Fishbowl Instant Marketing"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Fishbowl (Fishbowl). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: loyalty_crm.",
+  "seed_queries": [
+    "Fishbowl sucks restaurant",
+    "Fishbowl fees",
+    "leaving Fishbowl",
+    "switching off Fishbowl",
+    "Fishbowl hate restaurant",
+    "Fishbowl support nightmare",
+    "replacing Fishbowl restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Fishbowl / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Fishbowl \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

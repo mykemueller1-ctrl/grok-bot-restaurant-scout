@@ -1,0 +1,41 @@
+{
+  "name": "Push Operations Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Push Operations silo complaints",
+  "shape": "fox",
+  "color": "#FCBF49",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "push-operations",
+  "pain_id": "silo_push-operations",
+  "category": "silo",
+  "domain": "payroll",
+  "legal_name": "Push Operations",
+  "aliases": [
+    "Push Operations"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Push Operations (Push Operations). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: payroll.",
+  "seed_queries": [
+    "Push Operations sucks restaurant",
+    "Push Operations fees",
+    "leaving Push Operations",
+    "switching off Push Operations",
+    "Push Operations hate restaurant",
+    "Push Operations support nightmare",
+    "replacing Push Operations restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Push Operations / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Push Operations \u2192 Never86 wedge"
+  },
+  "swarm": true
+}
