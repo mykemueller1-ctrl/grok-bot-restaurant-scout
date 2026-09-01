@@ -1,6 +1,8 @@
-# Grok Bot — Restaurant Scout
+# Grok Bot — Restaurant Scout (Never86)
 
-Agent config, skills, routines, and MCP connectors for a restaurant social-commerce scout.
+Agent config, skills, routines, and MCP connectors for Never86's chef-brand scout.
+
+**Job:** find food brands people already love (UGC / chef-driven), onboard them onto Never86, and sell via TikTok/Instagram buy-now — not DoorDash-style marketplaces.
 
 - `agent/restaurant-scout.json` — agent identity
 - `skills/` — morning scan, script draft, catalog sync
@@ -9,3 +11,4 @@ Agent config, skills, routines, and MCP connectors for a restaurant social-comme
 - `SETUP.md` — copy-paste setup for the Grok Bot desktop app
 
 Sibling repo: `restaurant-social-commerce-engine` (the API + dashboard the bot talks to).
+

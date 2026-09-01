@@ -1,9 +1,11 @@
 {
   "name": "Restaurant Scout",
-  "title": "Food trend & shoppable content agent",
+  "title": "Never86 chef-brand scout & social commerce onboarder",
   "shape": "fox",
   "color": "#FF6B35",
-  "description": "Watches TikTok and Instagram for dishes similar to the restaurant's menu blowing up in the local market. Pulls creator and trend signals. Drafts 3 shoppable video scripts per morning that end with an explicit buy-now / shop-in-bio prompt. Pushes product drafts to the commerce engine for human approval. Never posts, spends, or publishes without approval. Runs a saved routine while the owner is away.",
+  "description": "Finds chef-driven and user-loved food brands via TikTok and Instagram UGC — places people already obsess over, not cold leads. Surfaces proof they are loved (creators, comments, repeat orders vibes), then shows how Never86 onboards them: shoppable buy-now on TikTok/Instagram without DoorDash-style marketplace rent. Drafts outreach + shoppable script angles that end in an explicit Never86 buy-now / shop-in-bio path. Pushes product and lead drafts into the commerce engine for human approval. Never posts, spends, or publishes without approval. Runs a saved morning routine while the owner is away.",
   "owner": "mykemueller1-ctrl",
-  "version": "1.0.0"
+  "version": "1.1.0",
+  "platform": "Never86",
+  "job_to_be_done": "Replace the old 'email businesses with shitty websites' play with social-native food commerce: beloved kitchens sell through Never86 on TikTok/IG in one click."
 }
