@@ -1,0 +1,40 @@
+{
+  "name": "NCR Aloha Pain Shopper",
+  "title": "Never86 lead shopper \u2014 NCR Aloha POS complaints",
+  "shape": "fox",
+  "color": "#E76F51",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "aloha",
+  "pain_id": "pos_aloha",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "NCR Voyix / Aloha",
+  "aliases": [
+    "Aloha POS",
+    "NCR Aloha",
+    "Aloha Cloud",
+    "NCR POS"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about NCR Aloha (NCR Voyix / Aloha). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real NCR Aloha hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Aloha POS sucks",
+    "NCR Aloha hate",
+    "Aloha crashed",
+    "replacing Aloha POS",
+    "legacy Aloha nightmare"
+  ],
+  "icp_hints": [
+    "independent or small multi-unit restaurants",
+    "GM / owner / ops manager voice",
+    "explicit NCR Aloha / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on NCR Aloha \u2192 Never86 wedge"
+  }
+}

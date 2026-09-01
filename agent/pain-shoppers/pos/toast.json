@@ -1,0 +1,42 @@
+{
+  "name": "Toast Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Toast POS complaints",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "toast",
+  "pain_id": "pos_toast",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Toast, Inc.",
+  "aliases": [
+    "Toast POS",
+    "Toast Tab",
+    "Fuck Toast",
+    "ToastHQ"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about Toast (Toast, Inc.). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real Toast hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "fuck Toast POS",
+    "Toast POS fees",
+    "Toast crashed mid service",
+    "switching off Toast",
+    "Toast support nightmare",
+    "Toast contract lock-in",
+    "leaving Toast restaurant"
+  ],
+  "icp_hints": [
+    "independent or small multi-unit restaurants",
+    "GM / owner / ops manager voice",
+    "explicit Toast / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Toast \u2192 Never86 wedge"
+  }
+}

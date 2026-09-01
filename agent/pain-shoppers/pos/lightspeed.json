@@ -1,0 +1,39 @@
+{
+  "name": "Lightspeed Restaurant Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Lightspeed Restaurant POS complaints",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "lightspeed",
+  "pain_id": "pos_lightspeed",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Lightspeed Commerce",
+  "aliases": [
+    "Lightspeed POS",
+    "Lightspeed K-Series",
+    "Lightspeed Restaurant"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about Lightspeed Restaurant (Lightspeed Commerce). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real Lightspeed Restaurant hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Lightspeed Restaurant sucks",
+    "Lightspeed POS fees",
+    "Lightspeed inventory nightmare",
+    "switching off Lightspeed restaurant",
+    "Lightspeed support restaurant"
+  ],
+  "icp_hints": [
+    "independent or small multi-unit restaurants",
+    "GM / owner / ops manager voice",
+    "explicit Lightspeed Restaurant / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Lightspeed Restaurant \u2192 Never86 wedge"
+  }
+}

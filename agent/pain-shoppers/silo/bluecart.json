@@ -1,0 +1,34 @@
+{
+  "name": "BlueCart Pain Shopper",
+  "title": "Never86 lead shopper \u2014 BlueCart silo complaints",
+  "shape": "fox",
+  "color": "#E5989B",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "bluecart",
+  "pain_id": "silo_bluecart",
+  "category": "silo",
+  "domain": "ordering_procurement",
+  "legal_name": "BlueCart",
+  "aliases": [
+    "Blue Cart"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans for operators complaining about siloed vendor BlueCart (ordering_procurement). Captures stack-pain where BlueCart doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "seed_queries": [
+    "BlueCart sucks",
+    "BlueCart hate restaurant",
+    "leaving BlueCart"
+  ],
+  "icp_hints": [
+    "ops / owner / back-office voice",
+    "named BlueCart in complaint",
+    "multi-tool stack signals (doesn't sync / double entry)",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on BlueCart \u2192 Never86 wedge"
+  }
+}

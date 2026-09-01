@@ -1,0 +1,37 @@
+{
+  "name": "Restaurant365 Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Restaurant365 silo complaints",
+  "shape": "fox",
+  "color": "#003049",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "restaurant365",
+  "pain_id": "silo_restaurant365",
+  "category": "silo",
+  "domain": "accounting_ops",
+  "legal_name": "Restaurant365",
+  "aliases": [
+    "R365",
+    "Restaurant 365"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans for operators complaining about siloed vendor Restaurant365 (accounting_ops). Captures stack-pain where Restaurant365 doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "seed_queries": [
+    "Restaurant365 sucks",
+    "R365 hate",
+    "Restaurant 365 fees",
+    "leaving Restaurant365",
+    "R365 accounting nightmare"
+  ],
+  "icp_hints": [
+    "ops / owner / back-office voice",
+    "named Restaurant365 in complaint",
+    "multi-tool stack signals (doesn't sync / double entry)",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Restaurant365 \u2192 Never86 wedge"
+  }
+}

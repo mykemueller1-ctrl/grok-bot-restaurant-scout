@@ -1,13 +1,13 @@
 {
   "name": "Labor Pain Shopper",
-  "title": "Never86 lead shopper — labor & staffing",
+  "title": "Never86 lead shopper \u2014 labor & staffing",
   "shape": "fox",
   "color": "#F4A261",
   "family": "never86-pain-shoppers",
   "pain_id": "labor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans TikTok, Reddit, Facebook groups, and industry chatter for restaurants complaining about labor — no-shows, scheduling hell, overtime, hiring, turnover, tip pooling fights, labor %. Shops each lead with full context, teach/label with Myke, recurse-learn labor-pain signals, automate Never86 sales leads. Never outreaches without approval.",
+  "description": "Scans TikTok, Reddit, Facebook groups, and industry chatter for restaurants complaining about labor \u2014 no-shows, scheduling hell, overtime, hiring, turnover, tip pooling fights, labor %. Shops each lead with full context, teach/label with Myke, recurse-learn labor-pain signals, automate Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
     "restaurant short staffed again",
     "scheduling software sucks restaurant",
@@ -22,5 +22,6 @@
     "owners / GMs talking labor % or scheduling",
     "venues where labor pain blocks growth or service",
     "US markets first"
-  ]
+  ],
+  "category": "thematic"
 }

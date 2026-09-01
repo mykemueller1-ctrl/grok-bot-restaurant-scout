@@ -1,0 +1,37 @@
+{
+  "name": "7shifts Pain Shopper",
+  "title": "Never86 lead shopper \u2014 7shifts silo complaints",
+  "shape": "fox",
+  "color": "#D62828",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "7shifts",
+  "pain_id": "silo_7shifts",
+  "category": "silo",
+  "domain": "scheduling_labor",
+  "legal_name": "7shifts",
+  "aliases": [
+    "7 shifts",
+    "Seven Shifts"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans for operators complaining about siloed vendor 7shifts (scheduling_labor). Captures stack-pain where 7shifts doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "seed_queries": [
+    "7shifts sucks",
+    "7shifts fees",
+    "switching off 7shifts",
+    "7shifts scheduling hate",
+    "restaurant scheduling software hate 7shifts"
+  ],
+  "icp_hints": [
+    "ops / owner / back-office voice",
+    "named 7shifts in complaint",
+    "multi-tool stack signals (doesn't sync / double entry)",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on 7shifts \u2192 Never86 wedge"
+  }
+}

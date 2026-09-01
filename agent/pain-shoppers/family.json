@@ -1,9 +1,10 @@
 {
   "family": "never86-pain-shoppers",
   "platform": "Never86",
-  "version": "1.0.0",
-  "purpose": "Shop sales customers for Never86 by finding restaurants, managers, and operators publicly complaining about restaurant software, labor, cost, drift, and 3P marketplaces — then capture full context, teach/label with the owner, recurse-learn search patterns, and automate structured sales leads.",
-  "shop_means": "Collect identity + complaint context window (what they hate, why, quotes, venue, role, channels) — not purchase. Owner teaches what 'good' looks like; agents recurse and eventually auto-fill the sales lead form.",
+  "version": "1.1.0",
+  "purpose": "Shop sales customers for Never86 by finding restaurants/managers publicly complaining about specific POS (top 10) and silo vendors \u2014 learn complaint language at scale per vendor, capture context, teach with owner, recurse, automate sales lead forms.",
+  "shop_means": "Collect identity + complaint context window (vendor, quotes, venue, role, channels). Owner teaches what good looks like per vendor; agents recurse and auto-fill sales forms.",
+  "vendor_catalog": "vendors/catalog.json",
   "sources": [
     "tiktok",
     "instagram",
@@ -12,7 +13,6 @@
     "x",
     "forums",
     "discord",
-    "yelp_talk",
     "linkedin"
   ],
   "shared_skills": [
@@ -20,44 +20,208 @@
     "lead-shop-enrich",
     "teach-label",
     "recurse-learn",
-    "sales-lead-form"
+    "sales-lead-form",
+    "vendor-complaint-learn"
   ],
-  "agents": [
+  "pos_agents": [
     {
-      "id": "toast-pos",
-      "file": "toast-pos.json",
-      "pain": "toast_pos",
-      "label": "Fuck Toast / POS hate"
+      "id": "toast",
+      "file": "pos/toast.json",
+      "pain": "pos_toast",
+      "label": "Toast",
+      "rank": 1
     },
+    {
+      "id": "square",
+      "file": "pos/square.json",
+      "pain": "pos_square",
+      "label": "Square for Restaurants",
+      "rank": 2
+    },
+    {
+      "id": "clover",
+      "file": "pos/clover.json",
+      "pain": "pos_clover",
+      "label": "Clover",
+      "rank": 3
+    },
+    {
+      "id": "lightspeed",
+      "file": "pos/lightspeed.json",
+      "pain": "pos_lightspeed",
+      "label": "Lightspeed Restaurant",
+      "rank": 4
+    },
+    {
+      "id": "aloha",
+      "file": "pos/aloha.json",
+      "pain": "pos_aloha",
+      "label": "NCR Aloha",
+      "rank": 5
+    },
+    {
+      "id": "touchbistro",
+      "file": "pos/touchbistro.json",
+      "pain": "pos_touchbistro",
+      "label": "TouchBistro",
+      "rank": 6
+    },
+    {
+      "id": "spoton",
+      "file": "pos/spoton.json",
+      "pain": "pos_spoton",
+      "label": "SpotOn",
+      "rank": 7
+    },
+    {
+      "id": "par-brink",
+      "file": "pos/par-brink.json",
+      "pain": "pos_par-brink",
+      "label": "PAR Brink",
+      "rank": 8
+    },
+    {
+      "id": "oracle-micros",
+      "file": "pos/oracle-micros.json",
+      "pain": "pos_oracle-micros",
+      "label": "Oracle MICROS / Simphony",
+      "rank": 9
+    },
+    {
+      "id": "skytab",
+      "file": "pos/skytab.json",
+      "pain": "pos_skytab",
+      "label": "SkyTab",
+      "rank": 10
+    }
+  ],
+  "silo_agents": [
+    {
+      "id": "7shifts",
+      "file": "silo/7shifts.json",
+      "pain": "silo_7shifts",
+      "label": "7shifts",
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "hotschedules",
+      "file": "silo/hotschedules.json",
+      "pain": "silo_hotschedules",
+      "label": "HotSchedules",
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "harri",
+      "file": "silo/harri.json",
+      "pain": "silo_harri",
+      "label": "Harri",
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "restaurant365",
+      "file": "silo/restaurant365.json",
+      "pain": "silo_restaurant365",
+      "label": "Restaurant365",
+      "domain": "accounting_ops"
+    },
+    {
+      "id": "marginedge",
+      "file": "silo/marginedge.json",
+      "pain": "silo_marginedge",
+      "label": "MarginEdge",
+      "domain": "cogs_ap"
+    },
+    {
+      "id": "extrachef",
+      "file": "silo/extrachef.json",
+      "pain": "silo_extrachef",
+      "label": "xtraCHEF",
+      "domain": "cogs_ap"
+    },
+    {
+      "id": "crunchtime",
+      "file": "silo/crunchtime.json",
+      "pain": "silo_crunchtime",
+      "label": "Crunchtime",
+      "domain": "enterprise_ops"
+    },
+    {
+      "id": "marketman",
+      "file": "silo/marketman.json",
+      "pain": "silo_marketman",
+      "label": "MarketMan",
+      "domain": "inventory"
+    },
+    {
+      "id": "upserve",
+      "file": "silo/upserve.json",
+      "pain": "silo_upserve",
+      "label": "Upserve",
+      "domain": "legacy_ops"
+    },
+    {
+      "id": "homebase",
+      "file": "silo/homebase.json",
+      "pain": "silo_homebase",
+      "label": "Homebase",
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "wheniwork",
+      "file": "silo/wheniwork.json",
+      "pain": "silo_wheniwork",
+      "label": "When I Work",
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "ctuit",
+      "file": "silo/ctuit.json",
+      "pain": "silo_ctuit",
+      "label": "CTUIT",
+      "domain": "inventory"
+    },
+    {
+      "id": "bluecart",
+      "file": "silo/bluecart.json",
+      "pain": "silo_bluecart",
+      "label": "BlueCart",
+      "domain": "ordering_procurement"
+    },
+    {
+      "id": "orderly",
+      "file": "silo/orderly.json",
+      "pain": "silo_orderly",
+      "label": "Orderly",
+      "domain": "inventory"
+    },
+    {
+      "id": "bevspot",
+      "file": "silo/bevspot.json",
+      "pain": "silo_bevspot",
+      "label": "BevSpot",
+      "domain": "beverage_inventory"
+    }
+  ],
+  "thematic_agents": [
     {
       "id": "labor",
-      "file": "labor.json",
-      "pain": "labor",
-      "label": "Labor / staffing / scheduling"
-    },
-    {
-      "id": "tech-stack",
-      "file": "tech-stack.json",
-      "pain": "tech_stack",
-      "label": "Tech stack suck / siloed vendors"
+      "label": "Labor / staffing (cross-vendor)",
+      "file": "thematic/labor.json"
     },
     {
       "id": "cost",
-      "file": "cost.json",
-      "pain": "cost",
-      "label": "Cost / fees / margins"
+      "label": "Cost / fees / margins (cross-vendor)",
+      "file": "thematic/cost.json"
     },
     {
       "id": "drift",
-      "file": "drift.json",
-      "pain": "drift",
-      "label": "Menu / price / data drift"
+      "label": "Menu / price / data drift",
+      "file": "thematic/drift.json"
     },
     {
-      "id": "marketplace-3p",
-      "file": "marketplace-3p.json",
-      "pain": "marketplace_3p",
-      "label": "DoorDash / Grubhub / Uber Eats (3P)"
+      "id": "marketplace_3p",
+      "label": "DoorDash / Grubhub / Uber Eats",
+      "file": "thematic/marketplace-3p.json"
     }
   ],
   "approval_required_for": [

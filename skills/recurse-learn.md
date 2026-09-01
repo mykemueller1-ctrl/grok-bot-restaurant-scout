@@ -1,20 +1,16 @@
 # Skill: Recurse Learn
 
 **Used by:** all `never86-pain-shoppers` agents.  
-**Trigger:** after each teach batch, or weekly consolidation.
+**Trigger:** after each teach batch; weekly family rollup.
 
-**Goal:** Research → learn → tighten the hunt. Agents get sharper from Myke's labels, not from guessing forever.
+**Goal:** Research → learn → tighten the hunt **per vendor**.
 
-1. Pull last N labeled leads for this `pain_id`.
-2. Diff keeps vs rejects:
-   - Phrases / vendors / roles that predict `keep`
-   - Noise patterns to suppress (diner rants, memes, job seekers, Toast employees, etc.)
-3. Update the agent's learned bank (stored via lead-shop MCP, not only in chat):
-   - `query_boosts[]` / `query_blocks[]`
-   - `icp_rules` (must / must-not)
-   - `example_keeps` / `example_rejects` (short)
-4. Research pass on ambiguous `needs_research` labels: open venue site, menu, socials; enrich; re-queue for teach once.
-5. Emit a short learning note to owner: "Next scan will boost X, kill Y."
-6. When keep-rate on auto-scored leads is stable (owner-defined threshold), enable auto-fill path in `sales-lead-form` for high-confidence keeps only.
+1. Pull last N labeled leads for this agent.
+2. Diff keeps vs rejects → query boosts/blocks + ICP must/must-not.
+3. For POS/silo agents, also run `vendor-complaint-learn`.
+4. Research `needs_research` labels once (site/socials), then re-queue teach.
+5. Persist learned bank via lead-shop MCP.
+6. Owner note: "Next {vendor} scan will boost X, kill Y."
+7. When keep-rate is stable, unlock high-confidence auto-fill in `sales-lead-form`.
 
-**Never** auto-outreach from learning alone — learning only improves search + form fill.
+**Never** auto-outreach from learning alone.

@@ -1,12 +1,14 @@
 {
   "$schema_name": "SalesLead",
-  "description": "Never86 sales lead produced after shop + teach. Automation fills this form; outreach stays approval-gated.",
+  "description": "Never86 sales lead after shop + teach. Vendor displace fields for POS/silo.",
   "required": ["pain_id", "account_name", "complaint_thesis", "why_never86_now", "status"],
   "properties": {
     "id": { "type": "string" },
-    "pain_id": {
+    "pain_id": { "type": "string" },
+    "vendor_id": { "type": "string" },
+    "category": {
       "type": "string",
-      "enum": ["toast_pos", "labor", "tech_stack", "cost", "drift", "marketplace_3p"]
+      "enum": ["pos", "silo", "thematic"]
     },
     "pain_lead_id": { "type": "string" },
     "account_name": { "type": "string" },
@@ -17,7 +19,9 @@
     "market": { "type": "string" },
     "complaint_thesis": { "type": "string" },
     "quotes": { "type": "array", "items": { "type": "string" } },
+    "primary_vendor": { "type": "string" },
     "vendors_to_displace": { "type": "array", "items": { "type": "string" } },
+    "stack_guess": { "type": "array", "items": { "type": "string" } },
     "why_never86_now": { "type": "string" },
     "suggested_angle": { "type": "string" },
     "sources": { "type": "array", "items": { "type": "string" } },

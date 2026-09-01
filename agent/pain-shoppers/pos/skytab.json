@@ -1,0 +1,39 @@
+{
+  "name": "SkyTab Pain Shopper",
+  "title": "Never86 lead shopper \u2014 SkyTab POS complaints",
+  "shape": "fox",
+  "color": "#118AB2",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "skytab",
+  "pain_id": "pos_skytab",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Shift4 / SkyTab",
+  "aliases": [
+    "Sky Tab",
+    "Shift4 POS",
+    "SkyTab POS"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about SkyTab (Shift4 / SkyTab). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real SkyTab hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "SkyTab sucks",
+    "Shift4 SkyTab hate",
+    "SkyTab fees",
+    "leaving SkyTab",
+    "SkyTab restaurant POS"
+  ],
+  "icp_hints": [
+    "independent or small multi-unit restaurants",
+    "GM / owner / ops manager voice",
+    "explicit SkyTab / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on SkyTab \u2192 Never86 wedge"
+  }
+}

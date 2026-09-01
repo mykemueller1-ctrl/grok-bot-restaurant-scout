@@ -1,13 +1,13 @@
 {
   "name": "Drift Pain Shopper",
-  "title": "Never86 lead shopper — menu / price / data drift",
+  "title": "Never86 lead shopper \u2014 menu / price / data drift",
   "shape": "fox",
   "color": "#264653",
   "family": "never86-pain-shoppers",
   "pain_id": "drift",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Finds operators burned by drift — menu wrong on DoorDash vs in-house, prices out of sync, 86'd items still live online, modifiers missing, photos stale across channels. Shops full drift context, teach/label with Myke what 'real drift pain' is, recurse-learn, automate Never86 sales leads. Never outreaches without approval.",
+  "description": "Finds operators burned by drift \u2014 menu wrong on DoorDash vs in-house, prices out of sync, 86'd items still live online, modifiers missing, photos stale across channels. Shops full drift context, teach/label with Myke what 'real drift pain' is, recurse-learn, automate Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
     "menu wrong on DoorDash",
     "prices different on Uber Eats",
@@ -22,5 +22,6 @@
     "multi-channel menus (POS + 3P + website)",
     "guest-facing errors from sync failure",
     "ops people owning menu updates"
-  ]
+  ],
+  "category": "thematic"
 }

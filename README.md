@@ -2,46 +2,75 @@
 
 Agent configs, skills, routines, and MCP connectors for Never86.
 
-## Agents
+## Restaurant Scout
 
-### Restaurant Scout
-Shoppable content scout — find love-proven food brands / UGC and draft buy-now scripts.
+Shoppable content scout — love-proven food brands → buy-now scripts.
 
 - `agent/restaurant-scout.json`
 - Skills: `morning-scan`, `script-draft`, `catalog-sync`
-- Routine: `routines/daily.json` (07:00 America/Chicago)
+- Routine: `routines/daily.json`
 
-### Pain Shoppers (sales lead hunters)
-Six agents that **shop customers** for Never86 by scanning TikTok, Reddit, Facebook groups, and forums for operator complaints — then capture identity + complaint context, let you teach/label, recurse-learn, and automate the sales lead form.
+## Pain Shoppers (per-vendor sales hunters)
 
-| Agent | Pain |
-| --- | --- |
-| `agent/pain-shoppers/toast-pos.json` | Fuck Toast / POS hate |
-| `agent/pain-shoppers/labor.json` | Labor / staffing / scheduling |
-| `agent/pain-shoppers/tech-stack.json` | Tech stack suck / siloed vendors |
-| `agent/pain-shoppers/cost.json` | Cost / fees / margins |
-| `agent/pain-shoppers/drift.json` | Menu / price / data drift |
-| `agent/pain-shoppers/marketplace-3p.json` | DoorDash / Grubhub / Uber Eats (3P) |
+Agents that **shop customers** by scanning TikTok / Reddit / Facebook groups / forums for operator complaints, then teach → recurse-learn → sales lead forms.
 
-Family index: `agent/pain-shoppers/family.json`  
-Shared loop skills: `pain-complaint-scan` → `lead-shop-enrich` → `teach-label` → `recurse-learn` → `sales-lead-form`  
-Schemas: `schemas/pain-lead.json`, `teach-feedback.json`, `sales-lead.json`  
-Routine: `routines/pain-shoppers-daily.json` (08:00 America/Chicago)
+### Top 10 POS (one agent each)
 
-**Shop** = get their info + the context window of what they're complaining about.  
-**Teach** = you label keeps/rejects so agents learn.  
-**Automate** = fill Never86 sales lead forms; outreach still needs approval.
+| # | File | Vendor |
+| --- | --- | --- |
+| 1 | `agent/pain-shoppers/pos/toast.json` | Toast |
+| 2 | `agent/pain-shoppers/pos/square.json` | Square for Restaurants |
+| 3 | `agent/pain-shoppers/pos/clover.json` | Clover |
+| 4 | `agent/pain-shoppers/pos/lightspeed.json` | Lightspeed Restaurant |
+| 5 | `agent/pain-shoppers/pos/aloha.json` | NCR Aloha |
+| 6 | `agent/pain-shoppers/pos/touchbistro.json` | TouchBistro |
+| 7 | `agent/pain-shoppers/pos/spoton.json` | SpotOn |
+| 8 | `agent/pain-shoppers/pos/par-brink.json` | PAR Brink |
+| 9 | `agent/pain-shoppers/pos/oracle-micros.json` | Oracle MICROS / Simphony |
+| 10 | `agent/pain-shoppers/pos/skytab.json` | SkyTab (Shift4) |
+
+### Silo vendors (one agent each)
+
+| File | Vendor | Domain |
+| --- | --- | --- |
+| `silo/7shifts.json` | 7shifts | scheduling / labor |
+| `silo/hotschedules.json` | HotSchedules | scheduling / labor |
+| `silo/harri.json` | Harri | scheduling / labor |
+| `silo/homebase.json` | Homebase | scheduling / labor |
+| `silo/wheniwork.json` | When I Work | scheduling / labor |
+| `silo/restaurant365.json` | Restaurant365 | accounting / ops |
+| `silo/marginedge.json` | MarginEdge | COGS / AP |
+| `silo/extrachef.json` | xtraCHEF | COGS / AP |
+| `silo/crunchtime.json` | Crunchtime | enterprise ops |
+| `silo/marketman.json` | MarketMan | inventory |
+| `silo/ctuit.json` | CTUIT / Compeat | inventory |
+| `silo/orderly.json` | Orderly | inventory |
+| `silo/bevspot.json` | BevSpot | beverage inventory |
+| `silo/bluecart.json` | BlueCart | procurement |
+| `silo/upserve.json` | Upserve | legacy ops |
+
+### Thematic (cross-vendor)
+
+`agent/pain-shoppers/thematic/` — labor, cost, drift, marketplace-3p
+
+### Source of truth + codegen
+
+- `agent/pain-shoppers/vendors/catalog.json` — vendors, aliases, seed queries
+- `agent/pain-shoppers/generate_agents.py` — regenerates POS/silo JSON + `family.json`
+- `agent/pain-shoppers/family.json` — index of all shopper agents
+
+### Shared loop
+
+`pain-complaint-scan` → `lead-shop-enrich` → `teach-label` → `vendor-complaint-learn` → `recurse-learn` → `sales-lead-form`
+
+**Shop** = identity + complaint context. **Teach** = your keep/reject labels. **Learn at scale** = per-vendor phrase/alias banks. **Automate** = sales lead forms (outreach still approval-gated).
+
+Routine: `routines/pain-shoppers-daily.json`
 
 ## MCP
 
-- `mcp/commerce-engine.json` — menu / TikTok product drafts
-- `mcp/social-connector.json` — trends + social read
-- `mcp/complaint-sources.json` — TikTok / Reddit / FB groups / forums search
-- `mcp/lead-shop.json` — pain leads, teach memory, sales forms
-- `mcp/approvals.json` — gates outbound
+- `mcp/commerce-engine.json`, `social-connector.json`, `complaint-sources.json`, `lead-shop.json`, `approvals.json`
 
 ## Setup
 
-See `SETUP.md`.
-
-Sibling repo: `restaurant-social-commerce-engine` (API + dashboard).
+See `SETUP.md`. Sibling: `restaurant-social-commerce-engine`.

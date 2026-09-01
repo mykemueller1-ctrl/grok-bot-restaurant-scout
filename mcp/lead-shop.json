@@ -11,7 +11,10 @@
     "get_learned_bank",
     "save_sales_lead",
     "merge_leads",
-    "list_sales_leads"
+    "list_sales_leads",
+    "list_vendor_aliases",
+    "record_vendor_phrase",
+    "route_wrong_pain"
   ],
-  "notes": "Persists shopped complaints, Myke's teach labels, recurse-learn query banks, and Never86 sales lead forms. Token in Grok Bot secret store."
+  "notes": "Persists shopped complaints, per-vendor learned banks (aliases/phrases), teach labels, and Never86 sales lead forms."
 }

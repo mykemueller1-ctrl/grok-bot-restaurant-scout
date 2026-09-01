@@ -1,0 +1,391 @@
+{
+  "version": "1.1.0",
+  "platform": "Never86",
+  "purpose": "Canonical vendor map for pain-shopper agents. Each POS/silo entry gets its own agent that learns complaint patterns at scale (aliases, rants, switch-off language) and feeds teach → recurse → sales lead forms.",
+  "pos_top10": [
+    {
+      "id": "toast",
+      "name": "Toast",
+      "legal": "Toast, Inc.",
+      "category": "pos",
+      "rank": 1,
+      "aliases": ["Toast POS", "Toast Tab", "Fuck Toast", "ToastHQ"],
+      "seed_queries": [
+        "fuck Toast POS",
+        "Toast POS fees",
+        "Toast crashed mid service",
+        "switching off Toast",
+        "Toast support nightmare",
+        "Toast contract lock-in",
+        "leaving Toast restaurant"
+      ]
+    },
+    {
+      "id": "square",
+      "name": "Square for Restaurants",
+      "legal": "Block, Inc.",
+      "category": "pos",
+      "rank": 2,
+      "aliases": ["Square POS", "Square Restaurants", "Sq POS"],
+      "seed_queries": [
+        "Square for Restaurants sucks",
+        "Square POS restaurant fees",
+        "Square frozen mid rush",
+        "switching from Square restaurant",
+        "Square restaurant limitations"
+      ]
+    },
+    {
+      "id": "clover",
+      "name": "Clover",
+      "legal": "Fiserv / Clover",
+      "category": "pos",
+      "rank": 3,
+      "aliases": ["Clover POS", "Clover Station", "Clover Mini"],
+      "seed_queries": [
+        "Clover POS sucks restaurant",
+        "Clover fees",
+        "Clover crashed",
+        "leaving Clover restaurant",
+        "Clover merchant services hate"
+      ]
+    },
+    {
+      "id": "lightspeed",
+      "name": "Lightspeed Restaurant",
+      "legal": "Lightspeed Commerce",
+      "category": "pos",
+      "rank": 4,
+      "aliases": ["Lightspeed POS", "Lightspeed K-Series", "Lightspeed Restaurant"],
+      "seed_queries": [
+        "Lightspeed Restaurant sucks",
+        "Lightspeed POS fees",
+        "Lightspeed inventory nightmare",
+        "switching off Lightspeed restaurant",
+        "Lightspeed support restaurant"
+      ]
+    },
+    {
+      "id": "aloha",
+      "name": "NCR Aloha",
+      "legal": "NCR Voyix / Aloha",
+      "category": "pos",
+      "rank": 5,
+      "aliases": ["Aloha POS", "NCR Aloha", "Aloha Cloud", "NCR POS"],
+      "seed_queries": [
+        "Aloha POS sucks",
+        "NCR Aloha hate",
+        "Aloha crashed",
+        "replacing Aloha POS",
+        "legacy Aloha nightmare"
+      ]
+    },
+    {
+      "id": "touchbistro",
+      "name": "TouchBistro",
+      "legal": "TouchBistro Inc.",
+      "category": "pos",
+      "rank": 6,
+      "aliases": ["Touch Bistro", "TB POS"],
+      "seed_queries": [
+        "TouchBistro sucks",
+        "TouchBistro fees",
+        "TouchBistro crashed",
+        "leaving TouchBistro",
+        "TouchBistro iPad POS hate"
+      ]
+    },
+    {
+      "id": "spoton",
+      "name": "SpotOn",
+      "legal": "SpotOn Transact",
+      "category": "pos",
+      "rank": 7,
+      "aliases": ["Spot On POS", "SpotOn POS"],
+      "seed_queries": [
+        "SpotOn POS sucks",
+        "SpotOn fees restaurant",
+        "leaving SpotOn",
+        "SpotOn contract",
+        "SpotOn restaurant hate"
+      ]
+    },
+    {
+      "id": "par-brink",
+      "name": "PAR Brink",
+      "legal": "PAR Technology (Brink POS)",
+      "category": "pos",
+      "rank": 8,
+      "aliases": ["Brink POS", "PAR Brink", "PAR Technology POS", "Brink by PAR"],
+      "seed_queries": [
+        "Brink POS sucks",
+        "PAR Brink hate",
+        "Brink POS fees",
+        "leaving Brink POS",
+        "PAR Technology restaurant POS"
+      ]
+    },
+    {
+      "id": "oracle-micros",
+      "name": "Oracle MICROS / Simphony",
+      "legal": "Oracle Food & Beverage",
+      "category": "pos",
+      "rank": 9,
+      "aliases": ["MICROS", "Oracle Simphony", "Oracle POS", "Simphony POS", "MICROS 9700"],
+      "seed_queries": [
+        "Oracle MICROS sucks",
+        "Simphony POS hate",
+        "MICROS outdated",
+        "replacing Oracle POS restaurant",
+        "MICROS support nightmare"
+      ]
+    },
+    {
+      "id": "skytab",
+      "name": "SkyTab",
+      "legal": "Shift4 / SkyTab",
+      "category": "pos",
+      "rank": 10,
+      "aliases": ["Sky Tab", "Shift4 POS", "SkyTab POS"],
+      "seed_queries": [
+        "SkyTab sucks",
+        "Shift4 SkyTab hate",
+        "SkyTab fees",
+        "leaving SkyTab",
+        "SkyTab restaurant POS"
+      ]
+    }
+  ],
+  "silo_vendors": [
+    {
+      "id": "7shifts",
+      "name": "7shifts",
+      "category": "silo",
+      "domain": "scheduling_labor",
+      "aliases": ["7 shifts", "Seven Shifts"],
+      "seed_queries": [
+        "7shifts sucks",
+        "7shifts fees",
+        "switching off 7shifts",
+        "7shifts scheduling hate",
+        "restaurant scheduling software hate 7shifts"
+      ]
+    },
+    {
+      "id": "hotschedules",
+      "name": "HotSchedules",
+      "category": "silo",
+      "domain": "scheduling_labor",
+      "aliases": ["Hot Schedules", "Fourth HotSchedules"],
+      "seed_queries": [
+        "HotSchedules sucks",
+        "HotSchedules hate",
+        "leaving HotSchedules",
+        "HotSchedules fees"
+      ]
+    },
+    {
+      "id": "harri",
+      "name": "Harri",
+      "category": "silo",
+      "domain": "scheduling_labor",
+      "aliases": ["Harri HCM", "Harri scheduling"],
+      "seed_queries": [
+        "Harri scheduling sucks",
+        "Harri restaurant hate",
+        "leaving Harri",
+        "Harri fees restaurant"
+      ]
+    },
+    {
+      "id": "restaurant365",
+      "name": "Restaurant365",
+      "category": "silo",
+      "domain": "accounting_ops",
+      "aliases": ["R365", "Restaurant 365"],
+      "seed_queries": [
+        "Restaurant365 sucks",
+        "R365 hate",
+        "Restaurant 365 fees",
+        "leaving Restaurant365",
+        "R365 accounting nightmare"
+      ]
+    },
+    {
+      "id": "marginedge",
+      "name": "MarginEdge",
+      "category": "silo",
+      "domain": "cogs_ap",
+      "aliases": ["Margin Edge"],
+      "seed_queries": [
+        "MarginEdge sucks",
+        "MarginEdge fees",
+        "leaving MarginEdge",
+        "Margin Edge invoice hate"
+      ]
+    },
+    {
+      "id": "extrachef",
+      "name": "xtraCHEF",
+      "category": "silo",
+      "domain": "cogs_ap",
+      "aliases": ["Extra Chef", "ExtraChef", "xtraCHEF by Toast"],
+      "seed_queries": [
+        "xtraCHEF sucks",
+        "ExtraChef hate",
+        "Extra Chef fees",
+        "leaving xtraCHEF",
+        "Toast xtraCHEF complaint"
+      ]
+    },
+    {
+      "id": "crunchtime",
+      "name": "Crunchtime",
+      "category": "silo",
+      "domain": "enterprise_ops",
+      "aliases": ["Crunch Time", "Crunchtime.net"],
+      "seed_queries": [
+        "Crunchtime sucks",
+        "Crunch Time hate",
+        "leaving Crunchtime",
+        "Crunchtime inventory nightmare"
+      ]
+    },
+    {
+      "id": "marketman",
+      "name": "MarketMan",
+      "category": "silo",
+      "domain": "inventory",
+      "aliases": ["Market Man"],
+      "seed_queries": [
+        "MarketMan sucks",
+        "Market Man hate",
+        "leaving MarketMan",
+        "MarketMan inventory fees"
+      ]
+    },
+    {
+      "id": "upserve",
+      "name": "Upserve",
+      "category": "silo",
+      "domain": "legacy_ops",
+      "aliases": ["Upserve by Lightspeed", "Breadcrumb"],
+      "seed_queries": [
+        "Upserve sucks",
+        "Upserve hate",
+        "leaving Upserve",
+        "Upserve Lightspeed migration hate"
+      ]
+    },
+    {
+      "id": "homebase",
+      "name": "Homebase",
+      "category": "silo",
+      "domain": "scheduling_labor",
+      "aliases": ["Join Homebase"],
+      "seed_queries": [
+        "Homebase scheduling sucks restaurant",
+        "Homebase fees restaurant",
+        "leaving Homebase restaurant"
+      ]
+    },
+    {
+      "id": "wheniwork",
+      "name": "When I Work",
+      "category": "silo",
+      "domain": "scheduling_labor",
+      "aliases": ["WhenIWork", "When I Work scheduling"],
+      "seed_queries": [
+        "When I Work sucks restaurant",
+        "WhenIWork hate restaurant",
+        "leaving When I Work"
+      ]
+    },
+    {
+      "id": "ctuit",
+      "name": "CTUIT",
+      "category": "silo",
+      "domain": "inventory",
+      "aliases": ["CTUIT Compeat", "Compeat"],
+      "seed_queries": [
+        "CTUIT sucks",
+        "Compeat hate",
+        "leaving CTUIT",
+        "CTUIT restaurant software"
+      ]
+    },
+    {
+      "id": "bluecart",
+      "name": "BlueCart",
+      "category": "silo",
+      "domain": "ordering_procurement",
+      "aliases": ["Blue Cart"],
+      "seed_queries": [
+        "BlueCart sucks",
+        "BlueCart hate restaurant",
+        "leaving BlueCart"
+      ]
+    },
+    {
+      "id": "orderly",
+      "name": "Orderly",
+      "category": "silo",
+      "domain": "inventory",
+      "aliases": ["Orderly.io", "Get Orderly"],
+      "seed_queries": [
+        "Orderly inventory sucks",
+        "Orderly restaurant hate",
+        "leaving Orderly software"
+      ]
+    },
+    {
+      "id": "bevspot",
+      "name": "BevSpot",
+      "category": "silo",
+      "domain": "beverage_inventory",
+      "aliases": ["Bev Spot"],
+      "seed_queries": [
+        "BevSpot sucks",
+        "BevSpot hate",
+        "leaving BevSpot"
+      ]
+    }
+  ],
+  "thematic": [
+    {
+      "id": "labor",
+      "label": "Labor / staffing (cross-vendor)",
+      "file": "thematic/labor.json"
+    },
+    {
+      "id": "cost",
+      "label": "Cost / fees / margins (cross-vendor)",
+      "file": "thematic/cost.json"
+    },
+    {
+      "id": "drift",
+      "label": "Menu / price / data drift",
+      "file": "thematic/drift.json"
+    },
+    {
+      "id": "marketplace_3p",
+      "label": "DoorDash / Grubhub / Uber Eats",
+      "file": "thematic/marketplace-3p.json"
+    }
+  ],
+  "learning": {
+    "complaint_signals": [
+      "fuck {vendor}",
+      "leaving {vendor}",
+      "switching off {vendor}",
+      "{vendor} crashed",
+      "{vendor} fees",
+      "{vendor} lock-in",
+      "{vendor} support",
+      "replacing {vendor}",
+      "{vendor} nightmare",
+      "{vendor} vs"
+    ],
+    "at_scale": "Each vendor agent accumulates keep/reject labels, alias hits, and phrase banks so complaint identification improves per vendor — not one generic 'POS hate' bucket."
+  }
+}

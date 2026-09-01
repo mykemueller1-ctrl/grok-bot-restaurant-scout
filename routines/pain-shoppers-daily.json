@@ -2,25 +2,27 @@
   "name": "pain-shoppers-daily",
   "schedule": "0 8 * * *",
   "timezone": "America/Chicago",
-  "description": "Runs each Never86 pain shopper: scan → shop/enrich → teach batch → recurse learn. Sales lead form fills on keep. Outreach still approval-gated.",
-  "agents": [
-    "toast-pos",
-    "labor",
-    "tech-stack",
-    "cost",
-    "drift",
-    "marketplace-3p"
+  "description": "Runs every Never86 vendor + thematic pain shopper: scan → shop → teach → vendor-learn → recurse → sales form on keep.",
+  "agent_globs": [
+    "agent/pain-shoppers/pos/*.json",
+    "agent/pain-shoppers/silo/*.json",
+    "agent/pain-shoppers/thematic/*.json"
   ],
   "steps_per_agent": [
     { "skill": "pain-complaint-scan" },
     { "skill": "lead-shop-enrich", "depends_on": "pain-complaint-scan" },
     { "skill": "teach-label", "depends_on": "lead-shop-enrich" },
+    {
+      "skill": "vendor-complaint-learn",
+      "depends_on": "teach-label",
+      "when": "category in [pos, silo]"
+    },
     { "skill": "recurse-learn", "depends_on": "teach-label" },
     { "skill": "sales-lead-form", "depends_on": "teach-label", "when": "label == keep" }
   ],
   "notify": {
     "channel": "telegram",
-    "message": "Pain shoppers ready — teach batches by theme (Toast/POS, labor, stack, cost, drift, 3P). Label keeps so we recurse-learn and auto-fill sales forms."
+    "message": "Pain shoppers ready — teach batches by vendor (Toast…SkyTab POS + 7shifts…BevSpot silos + thematic). Label keeps so we learn complaint language at scale per vendor."
   },
   "approval_required_for": ["outreach", "dm", "email", "comment", "spend", "publish"]
 }

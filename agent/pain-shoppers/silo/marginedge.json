@@ -1,0 +1,35 @@
+{
+  "name": "MarginEdge Pain Shopper",
+  "title": "Never86 lead shopper \u2014 MarginEdge silo complaints",
+  "shape": "fox",
+  "color": "#669BBC",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "marginedge",
+  "pain_id": "silo_marginedge",
+  "category": "silo",
+  "domain": "cogs_ap",
+  "legal_name": "MarginEdge",
+  "aliases": [
+    "Margin Edge"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans for operators complaining about siloed vendor MarginEdge (cogs_ap). Captures stack-pain where MarginEdge doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "seed_queries": [
+    "MarginEdge sucks",
+    "MarginEdge fees",
+    "leaving MarginEdge",
+    "Margin Edge invoice hate"
+  ],
+  "icp_hints": [
+    "ops / owner / back-office voice",
+    "named MarginEdge in complaint",
+    "multi-tool stack signals (doesn't sync / double entry)",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on MarginEdge \u2192 Never86 wedge"
+  }
+}

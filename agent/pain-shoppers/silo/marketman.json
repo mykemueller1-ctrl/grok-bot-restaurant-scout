@@ -1,0 +1,35 @@
+{
+  "name": "MarketMan Pain Shopper",
+  "title": "Never86 lead shopper \u2014 MarketMan silo complaints",
+  "shape": "fox",
+  "color": "#BC4749",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "marketman",
+  "pain_id": "silo_marketman",
+  "category": "silo",
+  "domain": "inventory",
+  "legal_name": "MarketMan",
+  "aliases": [
+    "Market Man"
+  ],
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Scans for operators complaining about siloed vendor MarketMan (inventory). Captures stack-pain where MarketMan doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "seed_queries": [
+    "MarketMan sucks",
+    "Market Man hate",
+    "leaving MarketMan",
+    "MarketMan inventory fees"
+  ],
+  "icp_hints": [
+    "ops / owner / back-office voice",
+    "named MarketMan in complaint",
+    "multi-tool stack signals (doesn't sync / double entry)",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on MarketMan \u2192 Never86 wedge"
+  }
+}

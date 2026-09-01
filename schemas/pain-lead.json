@@ -1,12 +1,17 @@
 {
   "$schema_name": "PainLead",
-  "description": "Shopped complaint lead awaiting teach/label. Captures identity + complaint context window.",
+  "description": "Shopped complaint lead awaiting teach/label. Vendor-specific when from POS/silo agents.",
   "required": ["pain_id", "sources", "complaint_summary", "status"],
   "properties": {
     "id": { "type": "string" },
     "pain_id": {
       "type": "string",
-      "enum": ["toast_pos", "labor", "tech_stack", "cost", "drift", "marketplace_3p"]
+      "description": "e.g. pos_toast, silo_7shifts, marketplace_3p"
+    },
+    "vendor_id": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["pos", "silo", "thematic"]
     },
     "sources": {
       "type": "array",
@@ -41,6 +46,7 @@
     "complaint_summary": { "type": "string" },
     "quotes": { "type": "array", "items": { "type": "string" } },
     "vendors_mentioned": { "type": "array", "items": { "type": "string" } },
+    "stack_guess": { "type": "array", "items": { "type": "string" } },
     "raw_context": { "type": "string" },
     "severity_signals": { "type": "array", "items": { "type": "string" } },
     "score": { "type": "number" },
