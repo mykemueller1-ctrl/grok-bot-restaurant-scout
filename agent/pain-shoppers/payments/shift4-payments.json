@@ -1,0 +1,41 @@
+{
+  "name": "Shift4 Payments Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Shift4 Payments payments pain",
+  "shape": "fox",
+  "color": "#495057",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "shift4-payments",
+  "pain_id": "payments_shift4-payments",
+  "category": "payments",
+  "domain": "payments",
+  "legal_name": "Shift4 Payments",
+  "aliases": [
+    "Shift4 Payments"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Shift4 Payments (Shift4 Payments). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: payments.",
+  "seed_queries": [
+    "Shift4 Payments sucks restaurant",
+    "Shift4 Payments fees",
+    "leaving Shift4 Payments",
+    "switching off Shift4 Payments",
+    "Shift4 Payments hate restaurant",
+    "Shift4 Payments support nightmare",
+    "replacing Shift4 Payments restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Shift4 Payments / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Shift4 Payments \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

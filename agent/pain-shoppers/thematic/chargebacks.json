@@ -1,0 +1,24 @@
+{
+  "name": "Chargebacks Fraud Pain Shopper",
+  "title": "Never86 lead shopper \u2014 chargebacks",
+  "shape": "fox",
+  "color": "#264653",
+  "family": "never86-pain-shoppers",
+  "pain_id": "chargebacks",
+  "category": "thematic",
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Finds restaurants hit by fake orders, chargebacks, friendly fraud, and delivery theft. Shops Never86 leads around owned-channel trust.",
+  "seed_queries": [
+    "DoorDash fake order chargeback",
+    "restaurant chargeback fraud",
+    "Uber Eats fraudulent order",
+    "delivery order never picked up chargeback"
+  ],
+  "icp_hints": [
+    "operator voice",
+    "US first",
+    "active pain last 90 days"
+  ],
+  "swarm": true
+}

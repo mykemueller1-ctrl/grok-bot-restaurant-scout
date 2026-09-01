@@ -2,7 +2,7 @@
   "name": "Upserve Pain Shopper",
   "title": "Never86 lead shopper \u2014 Upserve silo complaints",
   "shape": "fox",
-  "color": "#386641",
+  "color": "#5C4D7D",
   "family": "never86-pain-shoppers",
   "vendor_id": "upserve",
   "pain_id": "silo_upserve",
@@ -10,27 +10,32 @@
   "domain": "legacy_ops",
   "legal_name": "Upserve",
   "aliases": [
-    "Upserve by Lightspeed",
-    "Breadcrumb"
+    "Upserve by Lightspeed"
   ],
-  "version": "1.1.0",
+  "rank": null,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans for operators complaining about siloed vendor Upserve (legacy_ops). Captures stack-pain where Upserve doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Upserve (Upserve). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: legacy_ops.",
   "seed_queries": [
-    "Upserve sucks",
-    "Upserve hate",
+    "Upserve sucks restaurant",
+    "Upserve fees",
     "leaving Upserve",
-    "Upserve Lightspeed migration hate"
+    "switching off Upserve",
+    "Upserve hate restaurant",
+    "Upserve support nightmare",
+    "replacing Upserve restaurant"
   ],
   "icp_hints": [
-    "ops / owner / back-office voice",
-    "named Upserve in complaint",
-    "multi-tool stack signals (doesn't sync / double entry)",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Upserve / alias mention",
+    "active complaint in last 90 days",
     "US markets first"
   ],
   "learning": {
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on Upserve \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

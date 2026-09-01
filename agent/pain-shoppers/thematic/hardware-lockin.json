@@ -1,0 +1,24 @@
+{
+  "name": "Hardware Lock-in Pain Shopper",
+  "title": "Never86 lead shopper \u2014 hardware_lockin",
+  "shape": "fox",
+  "color": "#264653",
+  "family": "never86-pain-shoppers",
+  "pain_id": "hardware_lockin",
+  "category": "thematic",
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Finds operators trapped in POS hardware leases, early termination fees, and equipment lock-in. Shops Never86 leads on escape / owned commerce.",
+  "seed_queries": [
+    "POS hardware lease trap",
+    "Toast equipment contract",
+    "restaurant POS early termination fee",
+    "can't leave POS hardware lock-in"
+  ],
+  "icp_hints": [
+    "operator voice",
+    "US first",
+    "active pain last 90 days"
+  ],
+  "swarm": true
+}

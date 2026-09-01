@@ -1,0 +1,41 @@
+{
+  "name": "Deliverect Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Deliverect silo complaints",
+  "shape": "fox",
+  "color": "#A7C957",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "deliverect",
+  "pain_id": "silo_deliverect",
+  "category": "silo",
+  "domain": "delivery_ops",
+  "legal_name": "Deliverect",
+  "aliases": [
+    "Deliverect"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Deliverect (Deliverect). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: delivery_ops.",
+  "seed_queries": [
+    "Deliverect sucks restaurant",
+    "Deliverect fees",
+    "leaving Deliverect",
+    "switching off Deliverect",
+    "Deliverect hate restaurant",
+    "Deliverect support nightmare",
+    "replacing Deliverect restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Deliverect / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Deliverect \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

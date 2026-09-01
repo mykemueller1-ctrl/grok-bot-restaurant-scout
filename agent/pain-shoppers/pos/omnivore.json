@@ -1,0 +1,41 @@
+{
+  "name": "Omnivore Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Omnivore POS complaints",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "omnivore",
+  "pain_id": "pos_omnivore",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Omnivore IO",
+  "aliases": [
+    "Omnivore POS middleware"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Omnivore (Omnivore IO). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Omnivore sucks restaurant",
+    "Omnivore fees",
+    "leaving Omnivore",
+    "switching off Omnivore",
+    "Omnivore hate restaurant",
+    "Omnivore support nightmare",
+    "replacing Omnivore restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Omnivore / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Omnivore \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Klaviyo Restaurant Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Klaviyo Restaurant silo complaints",
+  "shape": "fox",
+  "color": "#5C4D7D",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "klaviyo",
+  "pain_id": "silo_klaviyo",
+  "category": "silo",
+  "domain": "marketing",
+  "legal_name": "Klaviyo Restaurant",
+  "aliases": [
+    "Klaviyo Restaurant"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Klaviyo Restaurant (Klaviyo Restaurant). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: marketing.",
+  "seed_queries": [
+    "Klaviyo Restaurant sucks restaurant",
+    "Klaviyo Restaurant fees",
+    "leaving Klaviyo Restaurant",
+    "switching off Klaviyo Restaurant",
+    "Klaviyo Restaurant hate restaurant",
+    "Klaviyo Restaurant support nightmare",
+    "replacing Klaviyo Restaurant restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Klaviyo Restaurant / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Klaviyo Restaurant \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

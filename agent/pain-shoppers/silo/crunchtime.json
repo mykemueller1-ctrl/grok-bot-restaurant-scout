@@ -2,7 +2,7 @@
   "name": "Crunchtime Pain Shopper",
   "title": "Never86 lead shopper \u2014 Crunchtime silo complaints",
   "shape": "fox",
-  "color": "#5C4D7D",
+  "color": "#FCBF49",
   "family": "never86-pain-shoppers",
   "vendor_id": "crunchtime",
   "pain_id": "silo_crunchtime",
@@ -10,27 +10,32 @@
   "domain": "enterprise_ops",
   "legal_name": "Crunchtime",
   "aliases": [
-    "Crunch Time",
-    "Crunchtime.net"
+    "Crunch Time"
   ],
-  "version": "1.1.0",
+  "rank": null,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans for operators complaining about siloed vendor Crunchtime (enterprise_ops). Captures stack-pain where Crunchtime doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Crunchtime (Crunchtime). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: enterprise_ops.",
   "seed_queries": [
-    "Crunchtime sucks",
-    "Crunch Time hate",
+    "Crunchtime sucks restaurant",
+    "Crunchtime fees",
     "leaving Crunchtime",
-    "Crunchtime inventory nightmare"
+    "switching off Crunchtime",
+    "Crunchtime hate restaurant",
+    "Crunchtime support nightmare",
+    "replacing Crunchtime restaurant"
   ],
   "icp_hints": [
-    "ops / owner / back-office voice",
-    "named Crunchtime in complaint",
-    "multi-tool stack signals (doesn't sync / double entry)",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Crunchtime / alias mention",
+    "active complaint in last 90 days",
     "US markets first"
   ],
   "learning": {
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on Crunchtime \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

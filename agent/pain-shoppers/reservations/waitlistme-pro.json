@@ -1,0 +1,41 @@
+{
+  "name": "Waitlist.me Pro Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Waitlist.me Pro reservations pain",
+  "shape": "fox",
+  "color": "#74C69D",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "waitlistme-pro",
+  "pain_id": "reservations_waitlistme-pro",
+  "category": "reservations",
+  "domain": "waitlist",
+  "legal_name": "Waitlist.me Pro",
+  "aliases": [
+    "Waitlist.me Pro"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Waitlist.me Pro (Waitlist.me Pro). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: waitlist.",
+  "seed_queries": [
+    "Waitlist.me Pro sucks restaurant",
+    "Waitlist.me Pro fees",
+    "leaving Waitlist.me Pro",
+    "switching off Waitlist.me Pro",
+    "Waitlist.me Pro hate restaurant",
+    "Waitlist.me Pro support nightmare",
+    "replacing Waitlist.me Pro restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Waitlist.me Pro / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Waitlist.me Pro \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -11,22 +11,25 @@
   "legal_name": "Block, Inc.",
   "aliases": [
     "Square POS",
-    "Square Restaurants",
-    "Sq POS"
+    "Square Restaurants"
   ],
-  "version": "1.1.0",
+  "rank": 2,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about Square for Restaurants (Block, Inc.). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real Square for Restaurants hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Square for Restaurants (Block, Inc.). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
-    "Square for Restaurants sucks",
-    "Square POS restaurant fees",
-    "Square frozen mid rush",
-    "switching from Square restaurant",
-    "Square restaurant limitations"
+    "Square for Restaurants sucks restaurant",
+    "Square for Restaurants fees",
+    "leaving Square for Restaurants",
+    "switching off Square for Restaurants",
+    "Square for Restaurants hate restaurant",
+    "Square for Restaurants support nightmare",
+    "replacing Square for Restaurants restaurant",
+    "Square frozen mid rush"
   ],
   "icp_hints": [
-    "independent or small multi-unit restaurants",
-    "GM / owner / ops manager voice",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
     "explicit Square for Restaurants / alias mention",
     "active complaint in last 90 days",
     "US markets first"
@@ -35,5 +38,6 @@
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on Square for Restaurants \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

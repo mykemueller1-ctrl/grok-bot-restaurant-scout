@@ -1,0 +1,41 @@
+{
+  "name": "SevenRooms Pain Shopper",
+  "title": "Never86 lead shopper \u2014 SevenRooms silo complaints",
+  "shape": "fox",
+  "color": "#D62828",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "sevenrooms",
+  "pain_id": "silo_sevenrooms",
+  "category": "silo",
+  "domain": "reservations",
+  "legal_name": "SevenRooms",
+  "aliases": [
+    "Seven Rooms"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about SevenRooms (SevenRooms). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: reservations.",
+  "seed_queries": [
+    "SevenRooms sucks restaurant",
+    "SevenRooms fees",
+    "leaving SevenRooms",
+    "switching off SevenRooms",
+    "SevenRooms hate restaurant",
+    "SevenRooms support nightmare",
+    "replacing SevenRooms restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit SevenRooms / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on SevenRooms \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

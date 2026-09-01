@@ -1,0 +1,41 @@
+{
+  "name": "Avero Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Avero silo complaints",
+  "shape": "fox",
+  "color": "#80B918",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "avero",
+  "pain_id": "silo_avero",
+  "category": "silo",
+  "domain": "analytics",
+  "legal_name": "Avero",
+  "aliases": [
+    "Avero"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Avero (Avero). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: analytics.",
+  "seed_queries": [
+    "Avero sucks restaurant",
+    "Avero fees",
+    "leaving Avero",
+    "switching off Avero",
+    "Avero hate restaurant",
+    "Avero support nightmare",
+    "replacing Avero restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Avero / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Avero \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

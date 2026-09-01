@@ -1,0 +1,41 @@
+{
+  "name": "Thrive POS Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Thrive POS POS complaints",
+  "shape": "fox",
+  "color": "#457B9D",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "thrive",
+  "pain_id": "pos_thrive",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Thrive POS",
+  "aliases": [
+    "ThrivePOS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Thrive POS (Thrive POS). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Thrive POS sucks restaurant",
+    "Thrive POS fees",
+    "leaving Thrive POS",
+    "switching off Thrive POS",
+    "Thrive POS hate restaurant",
+    "Thrive POS support nightmare",
+    "replacing Thrive POS restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Thrive POS / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Thrive POS \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

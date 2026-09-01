@@ -12,22 +12,24 @@
   "aliases": [
     "Brink POS",
     "PAR Brink",
-    "PAR Technology POS",
     "Brink by PAR"
   ],
-  "version": "1.1.0",
+  "rank": 8,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about PAR Brink (PAR Technology (Brink POS)). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real PAR Brink hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about PAR Brink (PAR Technology (Brink POS)). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
-    "Brink POS sucks",
-    "PAR Brink hate",
-    "Brink POS fees",
-    "leaving Brink POS",
-    "PAR Technology restaurant POS"
+    "PAR Brink sucks restaurant",
+    "PAR Brink fees",
+    "leaving PAR Brink",
+    "switching off PAR Brink",
+    "PAR Brink hate restaurant",
+    "PAR Brink support nightmare",
+    "replacing PAR Brink restaurant"
   ],
   "icp_hints": [
-    "independent or small multi-unit restaurants",
-    "GM / owner / ops manager voice",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
     "explicit PAR Brink / alias mention",
     "active complaint in last 90 days",
     "US markets first"
@@ -36,5 +38,6 @@
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on PAR Brink \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

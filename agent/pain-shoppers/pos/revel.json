@@ -1,0 +1,41 @@
+{
+  "name": "Revel Systems Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Revel Systems POS complaints",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "revel",
+  "pain_id": "pos_revel",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Revel Systems",
+  "aliases": [
+    "Revel POS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Revel Systems (Revel Systems). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Revel Systems sucks restaurant",
+    "Revel Systems fees",
+    "leaving Revel Systems",
+    "switching off Revel Systems",
+    "Revel Systems hate restaurant",
+    "Revel Systems support nightmare",
+    "replacing Revel Systems restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Revel Systems / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Revel Systems \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

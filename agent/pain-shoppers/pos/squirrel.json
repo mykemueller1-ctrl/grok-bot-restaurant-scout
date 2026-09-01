@@ -1,0 +1,41 @@
+{
+  "name": "Squirrel Systems Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Squirrel Systems POS complaints",
+  "shape": "fox",
+  "color": "#264653",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "squirrel",
+  "pain_id": "pos_squirrel",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Squirrel Systems",
+  "aliases": [
+    "Squirrel POS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Squirrel Systems (Squirrel Systems). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Squirrel Systems sucks restaurant",
+    "Squirrel Systems fees",
+    "leaving Squirrel Systems",
+    "switching off Squirrel Systems",
+    "Squirrel Systems hate restaurant",
+    "Squirrel Systems support nightmare",
+    "replacing Squirrel Systems restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Squirrel Systems / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Squirrel Systems \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Fresh KDS Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Fresh KDS silo complaints",
+  "shape": "fox",
+  "color": "#80B918",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "fresh-kds",
+  "pain_id": "silo_fresh-kds",
+  "category": "silo",
+  "domain": "kds",
+  "legal_name": "Fresh KDS",
+  "aliases": [
+    "FreshKDS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Fresh KDS (Fresh KDS). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: kds.",
+  "seed_queries": [
+    "Fresh KDS sucks restaurant",
+    "Fresh KDS fees",
+    "leaving Fresh KDS",
+    "switching off Fresh KDS",
+    "Fresh KDS hate restaurant",
+    "Fresh KDS support nightmare",
+    "replacing Fresh KDS restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Fresh KDS / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Fresh KDS \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

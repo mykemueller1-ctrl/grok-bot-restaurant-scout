@@ -12,23 +12,25 @@
   "aliases": [
     "MICROS",
     "Oracle Simphony",
-    "Oracle POS",
     "Simphony POS",
     "MICROS 9700"
   ],
-  "version": "1.1.0",
+  "rank": 9,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about Oracle MICROS / Simphony (Oracle Food & Beverage). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real Oracle MICROS / Simphony hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Oracle MICROS / Simphony (Oracle Food & Beverage). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
-    "Oracle MICROS sucks",
-    "Simphony POS hate",
-    "MICROS outdated",
-    "replacing Oracle POS restaurant",
-    "MICROS support nightmare"
+    "Oracle MICROS / Simphony sucks restaurant",
+    "Oracle MICROS / Simphony fees",
+    "leaving Oracle MICROS / Simphony",
+    "switching off Oracle MICROS / Simphony",
+    "Oracle MICROS / Simphony hate restaurant",
+    "Oracle MICROS / Simphony support nightmare",
+    "replacing Oracle MICROS / Simphony restaurant"
   ],
   "icp_hints": [
-    "independent or small multi-unit restaurants",
-    "GM / owner / ops manager voice",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
     "explicit Oracle MICROS / Simphony / alias mention",
     "active complaint in last 90 days",
     "US markets first"
@@ -37,5 +39,6 @@
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on Oracle MICROS / Simphony \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

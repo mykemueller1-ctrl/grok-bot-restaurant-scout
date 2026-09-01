@@ -13,19 +13,22 @@
     "Touch Bistro",
     "TB POS"
   ],
-  "version": "1.1.0",
+  "rank": 6,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans TikTok, Reddit, Facebook groups, and operator forums for restaurants, GMs, owners, and managers complaining about TouchBistro (TouchBistro Inc.). Learns complaint language at scale (aliases, crash/fee/lock-in rants, switch-off talk). Shops each lead (identity + full complaint context), teach/labels with Myke, recurse-learns what real TouchBistro hate looks like, then automates Never86 sales leads. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about TouchBistro (TouchBistro Inc.). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
-    "TouchBistro sucks",
+    "TouchBistro sucks restaurant",
     "TouchBistro fees",
-    "TouchBistro crashed",
     "leaving TouchBistro",
-    "TouchBistro iPad POS hate"
+    "switching off TouchBistro",
+    "TouchBistro hate restaurant",
+    "TouchBistro support nightmare",
+    "replacing TouchBistro restaurant"
   ],
   "icp_hints": [
-    "independent or small multi-unit restaurants",
-    "GM / owner / ops manager voice",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
     "explicit TouchBistro / alias mention",
     "active complaint in last 90 days",
     "US markets first"
@@ -34,5 +37,6 @@
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on TouchBistro \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

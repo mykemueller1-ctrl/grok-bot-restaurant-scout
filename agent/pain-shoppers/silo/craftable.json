@@ -1,0 +1,41 @@
+{
+  "name": "Craftable Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Craftable silo complaints",
+  "shape": "fox",
+  "color": "#386641",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "craftable",
+  "pain_id": "silo_craftable",
+  "category": "silo",
+  "domain": "inventory",
+  "legal_name": "Craftable",
+  "aliases": [
+    "Craftable"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Craftable (Craftable). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: inventory.",
+  "seed_queries": [
+    "Craftable sucks restaurant",
+    "Craftable fees",
+    "leaving Craftable",
+    "switching off Craftable",
+    "Craftable hate restaurant",
+    "Craftable support nightmare",
+    "replacing Craftable restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Craftable / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Craftable \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

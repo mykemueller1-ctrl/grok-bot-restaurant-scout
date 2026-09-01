@@ -1,0 +1,41 @@
+{
+  "name": "Epos Now Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Epos Now POS complaints",
+  "shape": "fox",
+  "color": "#6A4C93",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "epos-now",
+  "pain_id": "pos_epos-now",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Epos Now",
+  "aliases": [
+    "Epos Now restaurant"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Epos Now (Epos Now). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Epos Now sucks restaurant",
+    "Epos Now fees",
+    "leaving Epos Now",
+    "switching off Epos Now",
+    "Epos Now hate restaurant",
+    "Epos Now support nightmare",
+    "replacing Epos Now restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Epos Now / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Epos Now \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

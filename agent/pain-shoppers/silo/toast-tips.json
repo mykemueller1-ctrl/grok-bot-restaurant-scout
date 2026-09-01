@@ -1,0 +1,41 @@
+{
+  "name": "Toast Tips Manager Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Toast Tips Manager silo complaints",
+  "shape": "fox",
+  "color": "#D62828",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "toast-tips",
+  "pain_id": "silo_toast-tips",
+  "category": "silo",
+  "domain": "payroll",
+  "legal_name": "Toast Tips Manager",
+  "aliases": [
+    "Toast Tips Manager"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Toast Tips Manager (Toast Tips Manager). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: payroll.",
+  "seed_queries": [
+    "Toast Tips Manager sucks restaurant",
+    "Toast Tips Manager fees",
+    "leaving Toast Tips Manager",
+    "switching off Toast Tips Manager",
+    "Toast Tips Manager hate restaurant",
+    "Toast Tips Manager support nightmare",
+    "replacing Toast Tips Manager restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Toast Tips Manager / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Toast Tips Manager \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

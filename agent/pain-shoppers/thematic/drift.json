@@ -5,7 +5,7 @@
   "color": "#264653",
   "family": "never86-pain-shoppers",
   "pain_id": "drift",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
   "description": "Finds operators burned by drift \u2014 menu wrong on DoorDash vs in-house, prices out of sync, 86'd items still live online, modifiers missing, photos stale across channels. Shops full drift context, teach/label with Myke what 'real drift pain' is, recurse-learn, automate Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
@@ -23,5 +23,6 @@
     "guest-facing errors from sync failure",
     "ops people owning menu updates"
   ],
-  "category": "thematic"
+  "category": "thematic",
+  "swarm": true
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Integration Hell Pain Shopper",
+  "title": "Never86 lead shopper \u2014 integration_hell",
+  "shape": "fox",
+  "color": "#264653",
+  "family": "never86-pain-shoppers",
+  "pain_id": "integration_hell",
+  "category": "thematic",
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Finds operators screaming that POS, 3P, inventory, and accounting don't sync. Shops Never86 leads on unified social-commerce rail.",
+  "seed_queries": [
+    "POS doesn't sync with DoorDash",
+    "menu out of sync integrations",
+    "restaurant API integration failed",
+    "double entering orders every night"
+  ],
+  "icp_hints": [
+    "operator voice",
+    "US first",
+    "active pain last 90 days"
+  ],
+  "swarm": true
+}

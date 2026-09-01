@@ -5,7 +5,7 @@
   "color": "#E9C46A",
   "family": "never86-pain-shoppers",
   "pain_id": "cost",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
   "description": "Scans for restaurants screaming about cost \u2014 SaaS fees, hardware leases, payment processing, 'nickel and dimed by every vendor', margin death. Shops identity + cost complaint context, teach/label with Myke, recurse-learn cost-pain ICP, automate Never86 sales leads. Never outreaches without approval.",
   "seed_queries": [
@@ -23,5 +23,6 @@
     "explicit $ or fee mentions",
     "comparing vendors on cost"
   ],
-  "category": "thematic"
+  "category": "thematic",
+  "swarm": true
 }

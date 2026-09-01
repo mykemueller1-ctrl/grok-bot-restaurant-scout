@@ -1,0 +1,42 @@
+{
+  "name": "Maitre'D Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Maitre'D POS complaints",
+  "shape": "fox",
+  "color": "#E76F51",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "maitred",
+  "pain_id": "pos_maitred",
+  "category": "pos",
+  "domain": null,
+  "legal_name": "Posera / Maitre'D",
+  "aliases": [
+    "MaitreD POS",
+    "Maitre'D POS"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Maitre'D (Posera / Maitre'D). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval.",
+  "seed_queries": [
+    "Maitre'D sucks restaurant",
+    "Maitre'D fees",
+    "leaving Maitre'D",
+    "switching off Maitre'D",
+    "Maitre'D hate restaurant",
+    "Maitre'D support nightmare",
+    "replacing Maitre'D restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Maitre'D / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Maitre'D \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

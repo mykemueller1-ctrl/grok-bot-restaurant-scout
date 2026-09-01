@@ -3,44 +3,49 @@
 ## Shared
 
 1. Download Grok Bot desktop app, sign in with your Cursor account.
-2. Secrets → store tokens: commerce, social, lead-shop, complaint-sources, approvals.
-3. Agent Computer → browser takeover → sign into TikTok + Instagram (+ Reddit / Facebook). Session persists.
+2. Secrets → commerce, social, lead-shop, complaint-sources, approvals.
+3. Agent Computer → browser takeover → TikTok + Instagram (+ Reddit / Facebook).
 
 ## Restaurant Scout
 
 1. Import `agent/restaurant-scout.json`.
-2. Plugins → `social-trends` + `restaurant-commerce-engine` + `approvals`.
-3. Import `routines/daily.json`. Test once, enable.
+2. Plugins → social-trends + restaurant-commerce-engine + approvals.
+3. Import `routines/daily.json`.
 
-## Pain Shoppers
+## Pain Shoppers — SWARM (~238 agents)
 
-### Import vendors (many agents)
+### Regenerate anytime
 
-1. If you changed the catalog, regenerate:
-   ```bash
-   python3 agent/pain-shoppers/generate_agents.py
-   ```
-2. Create one Grok Bot agent per file under:
-   - `agent/pain-shoppers/pos/` (top 10 POS)
-   - `agent/pain-shoppers/silo/` (silo vendors)
-   - `agent/pain-shoppers/thematic/` (cross-cutting pains)
-3. Plugins on each → `complaint-sources` + `social-trends` + `lead-shop` + `approvals`.
-4. Attach skills: `pain-complaint-scan`, `lead-shop-enrich`, `teach-label`, `vendor-complaint-learn`, `recurse-learn`, `sales-lead-form`.
-5. Import `routines/pain-shoppers-daily.json`.
+```bash
+python3 agent/pain-shoppers/build_swarm.py
+```
 
-### Teach mode (week one+)
+### Import strategy (hit everyone hard)
 
-Agents shop complaints and ping teach batches **per vendor**. Label:
+1. **Priority wave (day 1):** top-10 POS + DoorDash/Uber Eats/Grubhub + 7shifts/R365/MarginEdge/xtraCHEF/Crunchtime/MarketMan + thematic.
+2. **Wave 2:** remaining POS + labor/inventory/accounting silos.
+3. **Wave 3:** ordering, loyalty, reservations, payments, reputation.
 
-- `keep` / `reject` / `wrong_pain` / `wrong_icp` / `needs_research`
-- one-line notes ("this is real Toast lock-in hate")
+Or import **all** JSON under:
 
-That feedback builds per-vendor alias + phrase banks so complaint ID improves at scale. When keep-rate is solid, unlock auto-fill of `SalesLead`. Outreach still needs approval.
+- `agent/pain-shoppers/pos/`
+- `agent/pain-shoppers/silo/`
+- `agent/pain-shoppers/marketplace/`
+- `agent/pain-shoppers/ordering/`
+- `agent/pain-shoppers/loyalty/`
+- `agent/pain-shoppers/reservations/`
+- `agent/pain-shoppers/payments/`
+- `agent/pain-shoppers/reputation/`
+- `agent/pain-shoppers/thematic/`
 
-### Adding a vendor
+Plugins on each → `complaint-sources` + `social-trends` + `lead-shop` + `approvals`.  
+Skills → `pain-complaint-scan`, `lead-shop-enrich`, `teach-label`, `vendor-complaint-learn`, `recurse-learn`, `sales-lead-form`.  
+Routine → `routines/pain-shoppers-daily.json`.
 
-1. Add entry to `agent/pain-shoppers/vendors/catalog.json` (`pos_top10` or `silo_vendors`).
-2. Run `python3 agent/pain-shoppers/generate_agents.py`.
-3. Import the new JSON into Grok Bot.
+### Teach → swarm learning
 
-Reference: https://cursor.com/help/grok-bot/getting-started
+Label keep/reject/wrong_pain per vendor. That builds phrase banks so the swarm gets sharper and fills `SalesLead` forms faster. Outreach still approval-gated.
+
+### Add more vendors
+
+Edit `build_swarm.py` vendor lists (or catalog) → rerun `build_swarm.py` → import new JSON. You have headroom for millions; this pack is the immediate buyer-hunting army.

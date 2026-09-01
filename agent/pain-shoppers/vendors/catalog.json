@@ -1,158 +1,957 @@
 {
-  "version": "1.1.0",
+  "version": "2.0.0",
   "platform": "Never86",
-  "purpose": "Canonical vendor map for pain-shopper agents. Each POS/silo entry gets its own agent that learns complaint patterns at scale (aliases, rants, switch-off language) and feeds teach → recurse → sales lead forms.",
-  "pos_top10": [
+  "swarm_mode": true,
+  "purpose": "Swarm vendor map for Never86 pain-shopper agents. One agent per POS, silo, marketplace, ordering, loyalty, reservations, payments, and reputation vendor.",
+  "pos_vendors": [
     {
       "id": "toast",
       "name": "Toast",
       "legal": "Toast, Inc.",
       "category": "pos",
-      "rank": 1,
-      "aliases": ["Toast POS", "Toast Tab", "Fuck Toast", "ToastHQ"],
+      "aliases": [
+        "Toast POS",
+        "Toast Tab",
+        "Fuck Toast",
+        "ToastHQ"
+      ],
       "seed_queries": [
-        "fuck Toast POS",
-        "Toast POS fees",
-        "Toast crashed mid service",
+        "Toast sucks restaurant",
+        "Toast fees",
+        "leaving Toast",
         "switching off Toast",
+        "Toast hate restaurant",
         "Toast support nightmare",
-        "Toast contract lock-in",
-        "leaving Toast restaurant"
-      ]
+        "replacing Toast restaurant",
+        "fuck Toast POS",
+        "Toast crashed mid service",
+        "Toast contract lock-in"
+      ],
+      "rank": 1
     },
     {
       "id": "square",
       "name": "Square for Restaurants",
       "legal": "Block, Inc.",
       "category": "pos",
-      "rank": 2,
-      "aliases": ["Square POS", "Square Restaurants", "Sq POS"],
+      "aliases": [
+        "Square POS",
+        "Square Restaurants"
+      ],
       "seed_queries": [
-        "Square for Restaurants sucks",
-        "Square POS restaurant fees",
-        "Square frozen mid rush",
-        "switching from Square restaurant",
-        "Square restaurant limitations"
-      ]
+        "Square for Restaurants sucks restaurant",
+        "Square for Restaurants fees",
+        "leaving Square for Restaurants",
+        "switching off Square for Restaurants",
+        "Square for Restaurants hate restaurant",
+        "Square for Restaurants support nightmare",
+        "replacing Square for Restaurants restaurant",
+        "Square frozen mid rush"
+      ],
+      "rank": 2
     },
     {
       "id": "clover",
       "name": "Clover",
       "legal": "Fiserv / Clover",
       "category": "pos",
-      "rank": 3,
-      "aliases": ["Clover POS", "Clover Station", "Clover Mini"],
+      "aliases": [
+        "Clover POS",
+        "Clover Station",
+        "Clover Mini"
+      ],
       "seed_queries": [
-        "Clover POS sucks restaurant",
+        "Clover sucks restaurant",
         "Clover fees",
-        "Clover crashed",
-        "leaving Clover restaurant",
-        "Clover merchant services hate"
-      ]
+        "leaving Clover",
+        "switching off Clover",
+        "Clover hate restaurant",
+        "Clover support nightmare",
+        "replacing Clover restaurant"
+      ],
+      "rank": 3
     },
     {
       "id": "lightspeed",
       "name": "Lightspeed Restaurant",
       "legal": "Lightspeed Commerce",
       "category": "pos",
-      "rank": 4,
-      "aliases": ["Lightspeed POS", "Lightspeed K-Series", "Lightspeed Restaurant"],
+      "aliases": [
+        "Lightspeed POS",
+        "Lightspeed K-Series"
+      ],
       "seed_queries": [
-        "Lightspeed Restaurant sucks",
-        "Lightspeed POS fees",
-        "Lightspeed inventory nightmare",
-        "switching off Lightspeed restaurant",
-        "Lightspeed support restaurant"
-      ]
+        "Lightspeed Restaurant sucks restaurant",
+        "Lightspeed Restaurant fees",
+        "leaving Lightspeed Restaurant",
+        "switching off Lightspeed Restaurant",
+        "Lightspeed Restaurant hate restaurant",
+        "Lightspeed Restaurant support nightmare",
+        "replacing Lightspeed Restaurant restaurant"
+      ],
+      "rank": 4
     },
     {
       "id": "aloha",
       "name": "NCR Aloha",
       "legal": "NCR Voyix / Aloha",
       "category": "pos",
-      "rank": 5,
-      "aliases": ["Aloha POS", "NCR Aloha", "Aloha Cloud", "NCR POS"],
+      "aliases": [
+        "Aloha POS",
+        "NCR Aloha",
+        "Aloha Cloud"
+      ],
       "seed_queries": [
-        "Aloha POS sucks",
-        "NCR Aloha hate",
-        "Aloha crashed",
-        "replacing Aloha POS",
+        "NCR Aloha sucks restaurant",
+        "NCR Aloha fees",
+        "leaving NCR Aloha",
+        "switching off NCR Aloha",
+        "NCR Aloha hate restaurant",
+        "NCR Aloha support nightmare",
+        "replacing NCR Aloha restaurant",
         "legacy Aloha nightmare"
-      ]
+      ],
+      "rank": 5
     },
     {
       "id": "touchbistro",
       "name": "TouchBistro",
       "legal": "TouchBistro Inc.",
       "category": "pos",
-      "rank": 6,
-      "aliases": ["Touch Bistro", "TB POS"],
+      "aliases": [
+        "Touch Bistro",
+        "TB POS"
+      ],
       "seed_queries": [
-        "TouchBistro sucks",
+        "TouchBistro sucks restaurant",
         "TouchBistro fees",
-        "TouchBistro crashed",
         "leaving TouchBistro",
-        "TouchBistro iPad POS hate"
-      ]
+        "switching off TouchBistro",
+        "TouchBistro hate restaurant",
+        "TouchBistro support nightmare",
+        "replacing TouchBistro restaurant"
+      ],
+      "rank": 6
     },
     {
       "id": "spoton",
       "name": "SpotOn",
       "legal": "SpotOn Transact",
       "category": "pos",
-      "rank": 7,
-      "aliases": ["Spot On POS", "SpotOn POS"],
+      "aliases": [
+        "Spot On POS",
+        "SpotOn POS"
+      ],
       "seed_queries": [
-        "SpotOn POS sucks",
-        "SpotOn fees restaurant",
+        "SpotOn sucks restaurant",
+        "SpotOn fees",
         "leaving SpotOn",
-        "SpotOn contract",
-        "SpotOn restaurant hate"
-      ]
+        "switching off SpotOn",
+        "SpotOn hate restaurant",
+        "SpotOn support nightmare",
+        "replacing SpotOn restaurant"
+      ],
+      "rank": 7
     },
     {
       "id": "par-brink",
       "name": "PAR Brink",
       "legal": "PAR Technology (Brink POS)",
       "category": "pos",
-      "rank": 8,
-      "aliases": ["Brink POS", "PAR Brink", "PAR Technology POS", "Brink by PAR"],
+      "aliases": [
+        "Brink POS",
+        "PAR Brink",
+        "Brink by PAR"
+      ],
       "seed_queries": [
-        "Brink POS sucks",
-        "PAR Brink hate",
-        "Brink POS fees",
-        "leaving Brink POS",
-        "PAR Technology restaurant POS"
-      ]
+        "PAR Brink sucks restaurant",
+        "PAR Brink fees",
+        "leaving PAR Brink",
+        "switching off PAR Brink",
+        "PAR Brink hate restaurant",
+        "PAR Brink support nightmare",
+        "replacing PAR Brink restaurant"
+      ],
+      "rank": 8
     },
     {
       "id": "oracle-micros",
       "name": "Oracle MICROS / Simphony",
       "legal": "Oracle Food & Beverage",
       "category": "pos",
-      "rank": 9,
-      "aliases": ["MICROS", "Oracle Simphony", "Oracle POS", "Simphony POS", "MICROS 9700"],
+      "aliases": [
+        "MICROS",
+        "Oracle Simphony",
+        "Simphony POS",
+        "MICROS 9700"
+      ],
       "seed_queries": [
-        "Oracle MICROS sucks",
-        "Simphony POS hate",
-        "MICROS outdated",
-        "replacing Oracle POS restaurant",
-        "MICROS support nightmare"
-      ]
+        "Oracle MICROS / Simphony sucks restaurant",
+        "Oracle MICROS / Simphony fees",
+        "leaving Oracle MICROS / Simphony",
+        "switching off Oracle MICROS / Simphony",
+        "Oracle MICROS / Simphony hate restaurant",
+        "Oracle MICROS / Simphony support nightmare",
+        "replacing Oracle MICROS / Simphony restaurant"
+      ],
+      "rank": 9
     },
     {
       "id": "skytab",
       "name": "SkyTab",
       "legal": "Shift4 / SkyTab",
       "category": "pos",
-      "rank": 10,
-      "aliases": ["Sky Tab", "Shift4 POS", "SkyTab POS"],
+      "aliases": [
+        "Sky Tab",
+        "Shift4 POS",
+        "SkyTab POS"
+      ],
       "seed_queries": [
-        "SkyTab sucks",
-        "Shift4 SkyTab hate",
+        "SkyTab sucks restaurant",
         "SkyTab fees",
         "leaving SkyTab",
-        "SkyTab restaurant POS"
+        "switching off SkyTab",
+        "SkyTab hate restaurant",
+        "SkyTab support nightmare",
+        "replacing SkyTab restaurant"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "revel",
+      "name": "Revel Systems",
+      "legal": "Revel Systems",
+      "category": "pos",
+      "aliases": [
+        "Revel POS"
+      ],
+      "seed_queries": [
+        "Revel Systems sucks restaurant",
+        "Revel Systems fees",
+        "leaving Revel Systems",
+        "switching off Revel Systems",
+        "Revel Systems hate restaurant",
+        "Revel Systems support nightmare",
+        "replacing Revel Systems restaurant"
+      ]
+    },
+    {
+      "id": "heartland",
+      "name": "Heartland Restaurant",
+      "legal": "Global Payments / Heartland",
+      "category": "pos",
+      "aliases": [
+        "Heartland POS",
+        "Heartland Restaurant POS"
+      ],
+      "seed_queries": [
+        "Heartland Restaurant sucks restaurant",
+        "Heartland Restaurant fees",
+        "leaving Heartland Restaurant",
+        "switching off Heartland Restaurant",
+        "Heartland Restaurant hate restaurant",
+        "Heartland Restaurant support nightmare",
+        "replacing Heartland Restaurant restaurant"
+      ]
+    },
+    {
+      "id": "qu",
+      "name": "Qu Beyond",
+      "legal": "Qu Beyond / Qu POS",
+      "category": "pos",
+      "aliases": [
+        "Qu POS",
+        "Quickly POS",
+        "Qu Restaurant"
+      ],
+      "seed_queries": [
+        "Qu Beyond sucks restaurant",
+        "Qu Beyond fees",
+        "leaving Qu Beyond",
+        "switching off Qu Beyond",
+        "Qu Beyond hate restaurant",
+        "Qu Beyond support nightmare",
+        "replacing Qu Beyond restaurant"
+      ]
+    },
+    {
+      "id": "lavu",
+      "name": "Lavu",
+      "legal": "Lavu Inc.",
+      "category": "pos",
+      "aliases": [
+        "Lavu POS",
+        "Lavu iPad"
+      ],
+      "seed_queries": [
+        "Lavu sucks restaurant",
+        "Lavu fees",
+        "leaving Lavu",
+        "switching off Lavu",
+        "Lavu hate restaurant",
+        "Lavu support nightmare",
+        "replacing Lavu restaurant"
+      ]
+    },
+    {
+      "id": "shopkeep",
+      "name": "ShopKeep",
+      "legal": "Lightspeed / ShopKeep",
+      "category": "pos",
+      "aliases": [
+        "ShopKeep POS"
+      ],
+      "seed_queries": [
+        "ShopKeep sucks restaurant",
+        "ShopKeep fees",
+        "leaving ShopKeep",
+        "switching off ShopKeep",
+        "ShopKeep hate restaurant",
+        "ShopKeep support nightmare",
+        "replacing ShopKeep restaurant"
+      ]
+    },
+    {
+      "id": "talech",
+      "name": "Talech",
+      "legal": "Talech / US Bank",
+      "category": "pos",
+      "aliases": [
+        "Talech POS"
+      ],
+      "seed_queries": [
+        "Talech sucks restaurant",
+        "Talech fees",
+        "leaving Talech",
+        "switching off Talech",
+        "Talech hate restaurant",
+        "Talech support nightmare",
+        "replacing Talech restaurant"
+      ]
+    },
+    {
+      "id": "ncr-silver",
+      "name": "NCR Silver",
+      "legal": "NCR Voyix",
+      "category": "pos",
+      "aliases": [
+        "NCR Silver POS"
+      ],
+      "seed_queries": [
+        "NCR Silver sucks restaurant",
+        "NCR Silver fees",
+        "leaving NCR Silver",
+        "switching off NCR Silver",
+        "NCR Silver hate restaurant",
+        "NCR Silver support nightmare",
+        "replacing NCR Silver restaurant"
+      ]
+    },
+    {
+      "id": "squirrel",
+      "name": "Squirrel Systems",
+      "legal": "Squirrel Systems",
+      "category": "pos",
+      "aliases": [
+        "Squirrel POS"
+      ],
+      "seed_queries": [
+        "Squirrel Systems sucks restaurant",
+        "Squirrel Systems fees",
+        "leaving Squirrel Systems",
+        "switching off Squirrel Systems",
+        "Squirrel Systems hate restaurant",
+        "Squirrel Systems support nightmare",
+        "replacing Squirrel Systems restaurant"
+      ]
+    },
+    {
+      "id": "positouch",
+      "name": "POSitouch",
+      "legal": "Hospitality Solutions",
+      "category": "pos",
+      "aliases": [
+        "POSI touch",
+        "POSitouch POS"
+      ],
+      "seed_queries": [
+        "POSitouch sucks restaurant",
+        "POSitouch fees",
+        "leaving POSitouch",
+        "switching off POSitouch",
+        "POSitouch hate restaurant",
+        "POSitouch support nightmare",
+        "replacing POSitouch restaurant"
+      ]
+    },
+    {
+      "id": "dinerware",
+      "name": "Dinerware",
+      "legal": "Dinerware",
+      "category": "pos",
+      "aliases": [
+        "Dinerware POS"
+      ],
+      "seed_queries": [
+        "Dinerware sucks restaurant",
+        "Dinerware fees",
+        "leaving Dinerware",
+        "switching off Dinerware",
+        "Dinerware hate restaurant",
+        "Dinerware support nightmare",
+        "replacing Dinerware restaurant"
+      ]
+    },
+    {
+      "id": "focus-pos",
+      "name": "Focus POS",
+      "legal": "Focus Softnet / Focus POS",
+      "category": "pos",
+      "aliases": [
+        "Focus POS system"
+      ],
+      "seed_queries": [
+        "Focus POS sucks restaurant",
+        "Focus POS fees",
+        "leaving Focus POS",
+        "switching off Focus POS",
+        "Focus POS hate restaurant",
+        "Focus POS support nightmare",
+        "replacing Focus POS restaurant"
+      ]
+    },
+    {
+      "id": "hungerrush",
+      "name": "HungerRush",
+      "legal": "HungerRush (formerly SpeedLine)",
+      "category": "pos",
+      "aliases": [
+        "HungerRush POS",
+        "SpeedLine POS",
+        "SpeedLine"
+      ],
+      "seed_queries": [
+        "HungerRush sucks restaurant",
+        "HungerRush fees",
+        "leaving HungerRush",
+        "switching off HungerRush",
+        "HungerRush hate restaurant",
+        "HungerRush support nightmare",
+        "replacing HungerRush restaurant"
+      ]
+    },
+    {
+      "id": "xenial",
+      "name": "Xenial",
+      "legal": "Xenial / ParTech",
+      "category": "pos",
+      "aliases": [
+        "Xenial POS",
+        "Xenial Cloud"
+      ],
+      "seed_queries": [
+        "Xenial sucks restaurant",
+        "Xenial fees",
+        "leaving Xenial",
+        "switching off Xenial",
+        "Xenial hate restaurant",
+        "Xenial support nightmare",
+        "replacing Xenial restaurant"
+      ]
+    },
+    {
+      "id": "accupos",
+      "name": "AccuPOS",
+      "legal": "AccuPOS",
+      "category": "pos",
+      "aliases": [
+        "AccuPOS restaurant"
+      ],
+      "seed_queries": [
+        "AccuPOS sucks restaurant",
+        "AccuPOS fees",
+        "leaving AccuPOS",
+        "switching off AccuPOS",
+        "AccuPOS hate restaurant",
+        "AccuPOS support nightmare",
+        "replacing AccuPOS restaurant"
+      ]
+    },
+    {
+      "id": "upserve-pos",
+      "name": "Upserve POS",
+      "legal": "Lightspeed / Upserve",
+      "category": "pos",
+      "aliases": [
+        "Breadcrumb POS",
+        "Upserve Breadcrumb"
+      ],
+      "seed_queries": [
+        "Upserve POS sucks restaurant",
+        "Upserve POS fees",
+        "leaving Upserve POS",
+        "switching off Upserve POS",
+        "Upserve POS hate restaurant",
+        "Upserve POS support nightmare",
+        "replacing Upserve POS restaurant"
+      ]
+    },
+    {
+      "id": "aldelo",
+      "name": "Aldelo",
+      "legal": "Aldelo",
+      "category": "pos",
+      "aliases": [
+        "Aldelo POS",
+        "Aldelo For Restaurants"
+      ],
+      "seed_queries": [
+        "Aldelo sucks restaurant",
+        "Aldelo fees",
+        "leaving Aldelo",
+        "switching off Aldelo",
+        "Aldelo hate restaurant",
+        "Aldelo support nightmare",
+        "replacing Aldelo restaurant"
+      ]
+    },
+    {
+      "id": "harbortouch",
+      "name": "Harbortouch",
+      "legal": "Shift4 / Harbortouch",
+      "category": "pos",
+      "aliases": [
+        "Harbortouch POS",
+        "HT POS"
+      ],
+      "seed_queries": [
+        "Harbortouch sucks restaurant",
+        "Harbortouch fees",
+        "leaving Harbortouch",
+        "switching off Harbortouch",
+        "Harbortouch hate restaurant",
+        "Harbortouch support nightmare",
+        "replacing Harbortouch restaurant"
+      ]
+    },
+    {
+      "id": "bentro",
+      "name": "Bentro",
+      "legal": "Bentro",
+      "category": "pos",
+      "aliases": [
+        "Bentro POS"
+      ],
+      "seed_queries": [
+        "Bentro sucks restaurant",
+        "Bentro fees",
+        "leaving Bentro",
+        "switching off Bentro",
+        "Bentro hate restaurant",
+        "Bentro support nightmare",
+        "replacing Bentro restaurant"
+      ]
+    },
+    {
+      "id": "epos-now",
+      "name": "Epos Now",
+      "legal": "Epos Now",
+      "category": "pos",
+      "aliases": [
+        "Epos Now restaurant"
+      ],
+      "seed_queries": [
+        "Epos Now sucks restaurant",
+        "Epos Now fees",
+        "leaving Epos Now",
+        "switching off Epos Now",
+        "Epos Now hate restaurant",
+        "Epos Now support nightmare",
+        "replacing Epos Now restaurant"
+      ]
+    },
+    {
+      "id": "sumup",
+      "name": "SumUp POS",
+      "legal": "SumUp",
+      "category": "pos",
+      "aliases": [
+        "SumUp restaurant POS"
+      ],
+      "seed_queries": [
+        "SumUp POS sucks restaurant",
+        "SumUp POS fees",
+        "leaving SumUp POS",
+        "switching off SumUp POS",
+        "SumUp POS hate restaurant",
+        "SumUp POS support nightmare",
+        "replacing SumUp POS restaurant"
+      ]
+    },
+    {
+      "id": "zettle",
+      "name": "PayPal Zettle",
+      "legal": "PayPal",
+      "category": "pos",
+      "aliases": [
+        "Zettle POS",
+        "iZettle restaurant"
+      ],
+      "seed_queries": [
+        "PayPal Zettle sucks restaurant",
+        "PayPal Zettle fees",
+        "leaving PayPal Zettle",
+        "switching off PayPal Zettle",
+        "PayPal Zettle hate restaurant",
+        "PayPal Zettle support nightmare",
+        "replacing PayPal Zettle restaurant"
+      ]
+    },
+    {
+      "id": "future-pos",
+      "name": "Future POS",
+      "legal": "Future POS",
+      "category": "pos",
+      "aliases": [
+        "FuturePOS"
+      ],
+      "seed_queries": [
+        "Future POS sucks restaurant",
+        "Future POS fees",
+        "leaving Future POS",
+        "switching off Future POS",
+        "Future POS hate restaurant",
+        "Future POS support nightmare",
+        "replacing Future POS restaurant"
+      ]
+    },
+    {
+      "id": "pixelpoint",
+      "name": "PixelPoint",
+      "legal": "PixelPoint / NCR",
+      "category": "pos",
+      "aliases": [
+        "PixelPoint POS"
+      ],
+      "seed_queries": [
+        "PixelPoint sucks restaurant",
+        "PixelPoint fees",
+        "leaving PixelPoint",
+        "switching off PixelPoint",
+        "PixelPoint hate restaurant",
+        "PixelPoint support nightmare",
+        "replacing PixelPoint restaurant"
+      ]
+    },
+    {
+      "id": "infogenesis",
+      "name": "InfoGenesis",
+      "legal": "Agilysys InfoGenesis",
+      "category": "pos",
+      "aliases": [
+        "InfoGenesis POS",
+        "Agilysys POS"
+      ],
+      "seed_queries": [
+        "InfoGenesis sucks restaurant",
+        "InfoGenesis fees",
+        "leaving InfoGenesis",
+        "switching off InfoGenesis",
+        "InfoGenesis hate restaurant",
+        "InfoGenesis support nightmare",
+        "replacing InfoGenesis restaurant"
+      ]
+    },
+    {
+      "id": "maitred",
+      "name": "Maitre'D",
+      "legal": "Posera / Maitre'D",
+      "category": "pos",
+      "aliases": [
+        "MaitreD POS",
+        "Maitre'D POS"
+      ],
+      "seed_queries": [
+        "Maitre'D sucks restaurant",
+        "Maitre'D fees",
+        "leaving Maitre'D",
+        "switching off Maitre'D",
+        "Maitre'D hate restaurant",
+        "Maitre'D support nightmare",
+        "replacing Maitre'D restaurant"
+      ]
+    },
+    {
+      "id": "rpower",
+      "name": "RPower",
+      "legal": "RPower",
+      "category": "pos",
+      "aliases": [
+        "RPower POS"
+      ],
+      "seed_queries": [
+        "RPower sucks restaurant",
+        "RPower fees",
+        "leaving RPower",
+        "switching off RPower",
+        "RPower hate restaurant",
+        "RPower support nightmare",
+        "replacing RPower restaurant"
+      ]
+    },
+    {
+      "id": "tabit",
+      "name": "Tabit",
+      "legal": "Tabit",
+      "category": "pos",
+      "aliases": [
+        "Tabit POS"
+      ],
+      "seed_queries": [
+        "Tabit sucks restaurant",
+        "Tabit fees",
+        "leaving Tabit",
+        "switching off Tabit",
+        "Tabit hate restaurant",
+        "Tabit support nightmare",
+        "replacing Tabit restaurant"
+      ]
+    },
+    {
+      "id": "cake-pos",
+      "name": "Cake POS",
+      "legal": "Sysco / Cake",
+      "category": "pos",
+      "aliases": [
+        "Cake by Sysco",
+        "Sysco Cake POS"
+      ],
+      "seed_queries": [
+        "Cake POS sucks restaurant",
+        "Cake POS fees",
+        "leaving Cake POS",
+        "switching off Cake POS",
+        "Cake POS hate restaurant",
+        "Cake POS support nightmare",
+        "replacing Cake POS restaurant"
+      ]
+    },
+    {
+      "id": "tillster",
+      "name": "Tillster",
+      "legal": "Tillster",
+      "category": "pos",
+      "aliases": [
+        "Tillster kiosk",
+        "Tillster POS"
+      ],
+      "seed_queries": [
+        "Tillster sucks restaurant",
+        "Tillster fees",
+        "leaving Tillster",
+        "switching off Tillster",
+        "Tillster hate restaurant",
+        "Tillster support nightmare",
+        "replacing Tillster restaurant"
+      ]
+    },
+    {
+      "id": "nextep",
+      "name": "Nextep",
+      "legal": "Nextep Systems",
+      "category": "pos",
+      "aliases": [
+        "Nextep kiosk",
+        "Nextep POS"
+      ],
+      "seed_queries": [
+        "Nextep sucks restaurant",
+        "Nextep fees",
+        "leaving Nextep",
+        "switching off Nextep",
+        "Nextep hate restaurant",
+        "Nextep support nightmare",
+        "replacing Nextep restaurant"
+      ]
+    },
+    {
+      "id": "silverware",
+      "name": "Silverware POS",
+      "legal": "Silverware POS",
+      "category": "pos",
+      "aliases": [
+        "Silverware Restaurant POS"
+      ],
+      "seed_queries": [
+        "Silverware POS sucks restaurant",
+        "Silverware POS fees",
+        "leaving Silverware POS",
+        "switching off Silverware POS",
+        "Silverware POS hate restaurant",
+        "Silverware POS support nightmare",
+        "replacing Silverware POS restaurant"
+      ]
+    },
+    {
+      "id": "thrive",
+      "name": "Thrive POS",
+      "legal": "Thrive POS",
+      "category": "pos",
+      "aliases": [
+        "ThrivePOS"
+      ],
+      "seed_queries": [
+        "Thrive POS sucks restaurant",
+        "Thrive POS fees",
+        "leaving Thrive POS",
+        "switching off Thrive POS",
+        "Thrive POS hate restaurant",
+        "Thrive POS support nightmare",
+        "replacing Thrive POS restaurant"
+      ]
+    },
+    {
+      "id": "union-pos",
+      "name": "Union POS",
+      "legal": "Union",
+      "category": "pos",
+      "aliases": [
+        "Union POS"
+      ],
+      "seed_queries": [
+        "Union POS sucks restaurant",
+        "Union POS fees",
+        "leaving Union POS",
+        "switching off Union POS",
+        "Union POS hate restaurant",
+        "Union POS support nightmare",
+        "replacing Union POS restaurant"
+      ]
+    },
+    {
+      "id": "omnivore",
+      "name": "Omnivore",
+      "legal": "Omnivore IO",
+      "category": "pos",
+      "aliases": [
+        "Omnivore POS middleware"
+      ],
+      "seed_queries": [
+        "Omnivore sucks restaurant",
+        "Omnivore fees",
+        "leaving Omnivore",
+        "switching off Omnivore",
+        "Omnivore hate restaurant",
+        "Omnivore support nightmare",
+        "replacing Omnivore restaurant"
+      ]
+    },
+    {
+      "id": "salido",
+      "name": "Salido",
+      "legal": "Salido",
+      "category": "pos",
+      "aliases": [
+        "Salido POS"
+      ],
+      "seed_queries": [
+        "Salido sucks restaurant",
+        "Salido fees",
+        "leaving Salido",
+        "switching off Salido",
+        "Salido hate restaurant",
+        "Salido support nightmare",
+        "replacing Salido restaurant"
+      ]
+    },
+    {
+      "id": "toast-now",
+      "name": "Toast Now",
+      "legal": "Toast, Inc.",
+      "category": "pos",
+      "aliases": [
+        "Toast Now"
+      ],
+      "seed_queries": [
+        "Toast Now sucks restaurant",
+        "Toast Now fees",
+        "leaving Toast Now",
+        "switching off Toast Now",
+        "Toast Now hate restaurant",
+        "Toast Now support nightmare",
+        "replacing Toast Now restaurant"
+      ]
+    },
+    {
+      "id": "hl-pos",
+      "name": "H&L POS",
+      "legal": "H&L Australia",
+      "category": "pos",
+      "aliases": [
+        "H&L POS"
+      ],
+      "seed_queries": [
+        "H&L POS sucks restaurant",
+        "H&L POS fees",
+        "leaving H&L POS",
+        "switching off H&L POS",
+        "H&L POS hate restaurant",
+        "H&L POS support nightmare",
+        "replacing H&L POS restaurant"
+      ]
+    },
+    {
+      "id": "idealpos",
+      "name": "Idealpos",
+      "legal": "Idealpos",
+      "category": "pos",
+      "aliases": [
+        "Ideal POS"
+      ],
+      "seed_queries": [
+        "Idealpos sucks restaurant",
+        "Idealpos fees",
+        "leaving Idealpos",
+        "switching off Idealpos",
+        "Idealpos hate restaurant",
+        "Idealpos support nightmare",
+        "replacing Idealpos restaurant"
+      ]
+    },
+    {
+      "id": "impos",
+      "name": "Impos",
+      "legal": "Impos",
+      "category": "pos",
+      "aliases": [
+        "Impos POS"
+      ],
+      "seed_queries": [
+        "Impos sucks restaurant",
+        "Impos fees",
+        "leaving Impos",
+        "switching off Impos",
+        "Impos hate restaurant",
+        "Impos support nightmare",
+        "replacing Impos restaurant"
+      ]
+    },
+    {
+      "id": "kounta",
+      "name": "Kounta",
+      "legal": "Lightspeed / Kounta",
+      "category": "pos",
+      "aliases": [
+        "Kounta POS"
+      ],
+      "seed_queries": [
+        "Kounta sucks restaurant",
+        "Kounta fees",
+        "leaving Kounta",
+        "switching off Kounta",
+        "Kounta hate restaurant",
+        "Kounta support nightmare",
+        "replacing Kounta restaurant"
       ]
     }
   ],
@@ -160,195 +959,3449 @@
     {
       "id": "7shifts",
       "name": "7shifts",
+      "legal": "7shifts",
       "category": "silo",
-      "domain": "scheduling_labor",
-      "aliases": ["7 shifts", "Seven Shifts"],
+      "aliases": [
+        "7 shifts",
+        "Seven Shifts"
+      ],
       "seed_queries": [
-        "7shifts sucks",
+        "7shifts sucks restaurant",
         "7shifts fees",
+        "leaving 7shifts",
         "switching off 7shifts",
-        "7shifts scheduling hate",
-        "restaurant scheduling software hate 7shifts"
-      ]
+        "7shifts hate restaurant",
+        "7shifts support nightmare",
+        "replacing 7shifts restaurant"
+      ],
+      "domain": "scheduling_labor"
     },
     {
       "id": "hotschedules",
       "name": "HotSchedules",
+      "legal": "HotSchedules",
       "category": "silo",
-      "domain": "scheduling_labor",
-      "aliases": ["Hot Schedules", "Fourth HotSchedules"],
+      "aliases": [
+        "Hot Schedules",
+        "Fourth HotSchedules"
+      ],
       "seed_queries": [
-        "HotSchedules sucks",
-        "HotSchedules hate",
+        "HotSchedules sucks restaurant",
+        "HotSchedules fees",
         "leaving HotSchedules",
-        "HotSchedules fees"
-      ]
+        "switching off HotSchedules",
+        "HotSchedules hate restaurant",
+        "HotSchedules support nightmare",
+        "replacing HotSchedules restaurant"
+      ],
+      "domain": "scheduling_labor"
     },
     {
       "id": "harri",
       "name": "Harri",
+      "legal": "Harri",
       "category": "silo",
-      "domain": "scheduling_labor",
-      "aliases": ["Harri HCM", "Harri scheduling"],
+      "aliases": [
+        "Harri HCM",
+        "Harri scheduling"
+      ],
       "seed_queries": [
-        "Harri scheduling sucks",
-        "Harri restaurant hate",
+        "Harri sucks restaurant",
+        "Harri fees",
         "leaving Harri",
-        "Harri fees restaurant"
-      ]
-    },
-    {
-      "id": "restaurant365",
-      "name": "Restaurant365",
-      "category": "silo",
-      "domain": "accounting_ops",
-      "aliases": ["R365", "Restaurant 365"],
-      "seed_queries": [
-        "Restaurant365 sucks",
-        "R365 hate",
-        "Restaurant 365 fees",
-        "leaving Restaurant365",
-        "R365 accounting nightmare"
-      ]
-    },
-    {
-      "id": "marginedge",
-      "name": "MarginEdge",
-      "category": "silo",
-      "domain": "cogs_ap",
-      "aliases": ["Margin Edge"],
-      "seed_queries": [
-        "MarginEdge sucks",
-        "MarginEdge fees",
-        "leaving MarginEdge",
-        "Margin Edge invoice hate"
-      ]
-    },
-    {
-      "id": "extrachef",
-      "name": "xtraCHEF",
-      "category": "silo",
-      "domain": "cogs_ap",
-      "aliases": ["Extra Chef", "ExtraChef", "xtraCHEF by Toast"],
-      "seed_queries": [
-        "xtraCHEF sucks",
-        "ExtraChef hate",
-        "Extra Chef fees",
-        "leaving xtraCHEF",
-        "Toast xtraCHEF complaint"
-      ]
-    },
-    {
-      "id": "crunchtime",
-      "name": "Crunchtime",
-      "category": "silo",
-      "domain": "enterprise_ops",
-      "aliases": ["Crunch Time", "Crunchtime.net"],
-      "seed_queries": [
-        "Crunchtime sucks",
-        "Crunch Time hate",
-        "leaving Crunchtime",
-        "Crunchtime inventory nightmare"
-      ]
-    },
-    {
-      "id": "marketman",
-      "name": "MarketMan",
-      "category": "silo",
-      "domain": "inventory",
-      "aliases": ["Market Man"],
-      "seed_queries": [
-        "MarketMan sucks",
-        "Market Man hate",
-        "leaving MarketMan",
-        "MarketMan inventory fees"
-      ]
-    },
-    {
-      "id": "upserve",
-      "name": "Upserve",
-      "category": "silo",
-      "domain": "legacy_ops",
-      "aliases": ["Upserve by Lightspeed", "Breadcrumb"],
-      "seed_queries": [
-        "Upserve sucks",
-        "Upserve hate",
-        "leaving Upserve",
-        "Upserve Lightspeed migration hate"
-      ]
+        "switching off Harri",
+        "Harri hate restaurant",
+        "Harri support nightmare",
+        "replacing Harri restaurant"
+      ],
+      "domain": "scheduling_labor"
     },
     {
       "id": "homebase",
       "name": "Homebase",
+      "legal": "Homebase",
       "category": "silo",
-      "domain": "scheduling_labor",
-      "aliases": ["Join Homebase"],
+      "aliases": [
+        "Join Homebase"
+      ],
       "seed_queries": [
-        "Homebase scheduling sucks restaurant",
-        "Homebase fees restaurant",
-        "leaving Homebase restaurant"
-      ]
+        "Homebase sucks restaurant",
+        "Homebase fees",
+        "leaving Homebase",
+        "switching off Homebase",
+        "Homebase hate restaurant",
+        "Homebase support nightmare",
+        "replacing Homebase restaurant"
+      ],
+      "domain": "scheduling_labor"
     },
     {
       "id": "wheniwork",
       "name": "When I Work",
+      "legal": "When I Work",
       "category": "silo",
-      "domain": "scheduling_labor",
-      "aliases": ["WhenIWork", "When I Work scheduling"],
+      "aliases": [
+        "WhenIWork"
+      ],
       "seed_queries": [
         "When I Work sucks restaurant",
-        "WhenIWork hate restaurant",
-        "leaving When I Work"
-      ]
+        "When I Work fees",
+        "leaving When I Work",
+        "switching off When I Work",
+        "When I Work hate restaurant",
+        "When I Work support nightmare",
+        "replacing When I Work restaurant"
+      ],
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "deputy",
+      "name": "Deputy",
+      "legal": "Deputy",
+      "category": "silo",
+      "aliases": [
+        "Deputy"
+      ],
+      "seed_queries": [
+        "Deputy sucks restaurant",
+        "Deputy fees",
+        "leaving Deputy",
+        "switching off Deputy",
+        "Deputy hate restaurant",
+        "Deputy support nightmare",
+        "replacing Deputy restaurant"
+      ],
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "sling",
+      "name": "Sling",
+      "legal": "Sling",
+      "category": "silo",
+      "aliases": [
+        "Sling scheduling"
+      ],
+      "seed_queries": [
+        "Sling sucks restaurant",
+        "Sling fees",
+        "leaving Sling",
+        "switching off Sling",
+        "Sling hate restaurant",
+        "Sling support nightmare",
+        "replacing Sling restaurant"
+      ],
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "fourth",
+      "name": "Fourth",
+      "legal": "Fourth",
+      "category": "silo",
+      "aliases": [
+        "Fourth hospitality",
+        "Fourth RMS"
+      ],
+      "seed_queries": [
+        "Fourth sucks restaurant",
+        "Fourth fees",
+        "leaving Fourth",
+        "switching off Fourth",
+        "Fourth hate restaurant",
+        "Fourth support nightmare",
+        "replacing Fourth restaurant"
+      ],
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "synergysuite",
+      "name": "SynergySuite",
+      "legal": "SynergySuite",
+      "category": "silo",
+      "aliases": [
+        "Synergy Suite"
+      ],
+      "seed_queries": [
+        "SynergySuite sucks restaurant",
+        "SynergySuite fees",
+        "leaving SynergySuite",
+        "switching off SynergySuite",
+        "SynergySuite hate restaurant",
+        "SynergySuite support nightmare",
+        "replacing SynergySuite restaurant"
+      ],
+      "domain": "ops_suite"
+    },
+    {
+      "id": "humanity",
+      "name": "Humanity",
+      "legal": "Humanity",
+      "category": "silo",
+      "aliases": [
+        "Humanity scheduling"
+      ],
+      "seed_queries": [
+        "Humanity sucks restaurant",
+        "Humanity fees",
+        "leaving Humanity",
+        "switching off Humanity",
+        "Humanity hate restaurant",
+        "Humanity support nightmare",
+        "replacing Humanity restaurant"
+      ],
+      "domain": "scheduling_labor"
+    },
+    {
+      "id": "toast-payroll",
+      "name": "Toast Payroll",
+      "legal": "Toast Payroll",
+      "category": "silo",
+      "aliases": [
+        "Toast Payroll"
+      ],
+      "seed_queries": [
+        "Toast Payroll sucks restaurant",
+        "Toast Payroll fees",
+        "leaving Toast Payroll",
+        "switching off Toast Payroll",
+        "Toast Payroll hate restaurant",
+        "Toast Payroll support nightmare",
+        "replacing Toast Payroll restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "gusto",
+      "name": "Gusto",
+      "legal": "Gusto",
+      "category": "silo",
+      "aliases": [
+        "Gusto payroll restaurant"
+      ],
+      "seed_queries": [
+        "Gusto sucks restaurant",
+        "Gusto fees",
+        "leaving Gusto",
+        "switching off Gusto",
+        "Gusto hate restaurant",
+        "Gusto support nightmare",
+        "replacing Gusto restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "adp-run",
+      "name": "ADP RUN",
+      "legal": "ADP RUN",
+      "category": "silo",
+      "aliases": [
+        "ADP restaurant payroll"
+      ],
+      "seed_queries": [
+        "ADP RUN sucks restaurant",
+        "ADP RUN fees",
+        "leaving ADP RUN",
+        "switching off ADP RUN",
+        "ADP RUN hate restaurant",
+        "ADP RUN support nightmare",
+        "replacing ADP RUN restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "paychex",
+      "name": "Paychex",
+      "legal": "Paychex",
+      "category": "silo",
+      "aliases": [
+        "Paychex"
+      ],
+      "seed_queries": [
+        "Paychex sucks restaurant",
+        "Paychex fees",
+        "leaving Paychex",
+        "switching off Paychex",
+        "Paychex hate restaurant",
+        "Paychex support nightmare",
+        "replacing Paychex restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "restaurant365",
+      "name": "Restaurant365",
+      "legal": "Restaurant365",
+      "category": "silo",
+      "aliases": [
+        "R365",
+        "Restaurant 365"
+      ],
+      "seed_queries": [
+        "Restaurant365 sucks restaurant",
+        "Restaurant365 fees",
+        "leaving Restaurant365",
+        "switching off Restaurant365",
+        "Restaurant365 hate restaurant",
+        "Restaurant365 support nightmare",
+        "replacing Restaurant365 restaurant"
+      ],
+      "domain": "accounting_ops"
+    },
+    {
+      "id": "compeat",
+      "name": "Compeat",
+      "legal": "Compeat",
+      "category": "silo",
+      "aliases": [
+        "Compeat Advantage"
+      ],
+      "seed_queries": [
+        "Compeat sucks restaurant",
+        "Compeat fees",
+        "leaving Compeat",
+        "switching off Compeat",
+        "Compeat hate restaurant",
+        "Compeat support nightmare",
+        "replacing Compeat restaurant"
+      ],
+      "domain": "accounting_ops"
+    },
+    {
+      "id": "quickbooks",
+      "name": "QuickBooks Restaurant",
+      "legal": "QuickBooks Restaurant",
+      "category": "silo",
+      "aliases": [
+        "QuickBooks Online restaurant",
+        "QBO restaurant"
+      ],
+      "seed_queries": [
+        "QuickBooks Restaurant sucks restaurant",
+        "QuickBooks Restaurant fees",
+        "leaving QuickBooks Restaurant",
+        "switching off QuickBooks Restaurant",
+        "QuickBooks Restaurant hate restaurant",
+        "QuickBooks Restaurant support nightmare",
+        "replacing QuickBooks Restaurant restaurant"
+      ],
+      "domain": "accounting_ops"
+    },
+    {
+      "id": "xero",
+      "name": "Xero Restaurant",
+      "legal": "Xero Restaurant",
+      "category": "silo",
+      "aliases": [
+        "Xero Restaurant"
+      ],
+      "seed_queries": [
+        "Xero Restaurant sucks restaurant",
+        "Xero Restaurant fees",
+        "leaving Xero Restaurant",
+        "switching off Xero Restaurant",
+        "Xero Restaurant hate restaurant",
+        "Xero Restaurant support nightmare",
+        "replacing Xero Restaurant restaurant"
+      ],
+      "domain": "accounting_ops"
+    },
+    {
+      "id": "plateiq",
+      "name": "Plate IQ",
+      "legal": "Plate IQ",
+      "category": "silo",
+      "aliases": [
+        "PlateIQ"
+      ],
+      "seed_queries": [
+        "Plate IQ sucks restaurant",
+        "Plate IQ fees",
+        "leaving Plate IQ",
+        "switching off Plate IQ",
+        "Plate IQ hate restaurant",
+        "Plate IQ support nightmare",
+        "replacing Plate IQ restaurant"
+      ],
+      "domain": "ap_automation"
+    },
+    {
+      "id": "bill-com",
+      "name": "Bill.com Restaurant",
+      "legal": "Bill.com Restaurant",
+      "category": "silo",
+      "aliases": [
+        "Bill.com Restaurant"
+      ],
+      "seed_queries": [
+        "Bill.com Restaurant sucks restaurant",
+        "Bill.com Restaurant fees",
+        "leaving Bill.com Restaurant",
+        "switching off Bill.com Restaurant",
+        "Bill.com Restaurant hate restaurant",
+        "Bill.com Restaurant support nightmare",
+        "replacing Bill.com Restaurant restaurant"
+      ],
+      "domain": "ap_automation"
+    },
+    {
+      "id": "marginedge",
+      "name": "MarginEdge",
+      "legal": "MarginEdge",
+      "category": "silo",
+      "aliases": [
+        "Margin Edge"
+      ],
+      "seed_queries": [
+        "MarginEdge sucks restaurant",
+        "MarginEdge fees",
+        "leaving MarginEdge",
+        "switching off MarginEdge",
+        "MarginEdge hate restaurant",
+        "MarginEdge support nightmare",
+        "replacing MarginEdge restaurant"
+      ],
+      "domain": "cogs_ap"
+    },
+    {
+      "id": "extrachef",
+      "name": "xtraCHEF",
+      "legal": "xtraCHEF",
+      "category": "silo",
+      "aliases": [
+        "Extra Chef",
+        "ExtraChef",
+        "xtraCHEF by Toast"
+      ],
+      "seed_queries": [
+        "xtraCHEF sucks restaurant",
+        "xtraCHEF fees",
+        "leaving xtraCHEF",
+        "switching off xtraCHEF",
+        "xtraCHEF hate restaurant",
+        "xtraCHEF support nightmare",
+        "replacing xtraCHEF restaurant"
+      ],
+      "domain": "cogs_ap"
+    },
+    {
+      "id": "crunchtime",
+      "name": "Crunchtime",
+      "legal": "Crunchtime",
+      "category": "silo",
+      "aliases": [
+        "Crunch Time"
+      ],
+      "seed_queries": [
+        "Crunchtime sucks restaurant",
+        "Crunchtime fees",
+        "leaving Crunchtime",
+        "switching off Crunchtime",
+        "Crunchtime hate restaurant",
+        "Crunchtime support nightmare",
+        "replacing Crunchtime restaurant"
+      ],
+      "domain": "enterprise_ops"
+    },
+    {
+      "id": "marketman",
+      "name": "MarketMan",
+      "legal": "MarketMan",
+      "category": "silo",
+      "aliases": [
+        "Market Man"
+      ],
+      "seed_queries": [
+        "MarketMan sucks restaurant",
+        "MarketMan fees",
+        "leaving MarketMan",
+        "switching off MarketMan",
+        "MarketMan hate restaurant",
+        "MarketMan support nightmare",
+        "replacing MarketMan restaurant"
+      ],
+      "domain": "inventory"
     },
     {
       "id": "ctuit",
       "name": "CTUIT",
+      "legal": "CTUIT",
       "category": "silo",
-      "domain": "inventory",
-      "aliases": ["CTUIT Compeat", "Compeat"],
+      "aliases": [
+        "CTUIT Compeat"
+      ],
       "seed_queries": [
-        "CTUIT sucks",
-        "Compeat hate",
+        "CTUIT sucks restaurant",
+        "CTUIT fees",
         "leaving CTUIT",
-        "CTUIT restaurant software"
-      ]
-    },
-    {
-      "id": "bluecart",
-      "name": "BlueCart",
-      "category": "silo",
-      "domain": "ordering_procurement",
-      "aliases": ["Blue Cart"],
-      "seed_queries": [
-        "BlueCart sucks",
-        "BlueCart hate restaurant",
-        "leaving BlueCart"
-      ]
+        "switching off CTUIT",
+        "CTUIT hate restaurant",
+        "CTUIT support nightmare",
+        "replacing CTUIT restaurant"
+      ],
+      "domain": "inventory"
     },
     {
       "id": "orderly",
       "name": "Orderly",
+      "legal": "Orderly",
       "category": "silo",
-      "domain": "inventory",
-      "aliases": ["Orderly.io", "Get Orderly"],
+      "aliases": [
+        "Orderly.io"
+      ],
       "seed_queries": [
-        "Orderly inventory sucks",
-        "Orderly restaurant hate",
-        "leaving Orderly software"
-      ]
+        "Orderly sucks restaurant",
+        "Orderly fees",
+        "leaving Orderly",
+        "switching off Orderly",
+        "Orderly hate restaurant",
+        "Orderly support nightmare",
+        "replacing Orderly restaurant"
+      ],
+      "domain": "inventory"
     },
     {
       "id": "bevspot",
       "name": "BevSpot",
+      "legal": "BevSpot",
       "category": "silo",
-      "domain": "beverage_inventory",
-      "aliases": ["Bev Spot"],
+      "aliases": [
+        "Bev Spot"
+      ],
       "seed_queries": [
-        "BevSpot sucks",
-        "BevSpot hate",
-        "leaving BevSpot"
-      ]
+        "BevSpot sucks restaurant",
+        "BevSpot fees",
+        "leaving BevSpot",
+        "switching off BevSpot",
+        "BevSpot hate restaurant",
+        "BevSpot support nightmare",
+        "replacing BevSpot restaurant"
+      ],
+      "domain": "beverage_inventory"
+    },
+    {
+      "id": "bluecart",
+      "name": "BlueCart",
+      "legal": "BlueCart",
+      "category": "silo",
+      "aliases": [
+        "Blue Cart"
+      ],
+      "seed_queries": [
+        "BlueCart sucks restaurant",
+        "BlueCart fees",
+        "leaving BlueCart",
+        "switching off BlueCart",
+        "BlueCart hate restaurant",
+        "BlueCart support nightmare",
+        "replacing BlueCart restaurant"
+      ],
+      "domain": "ordering_procurement"
+    },
+    {
+      "id": "craftable",
+      "name": "Craftable",
+      "legal": "Craftable",
+      "category": "silo",
+      "aliases": [
+        "Craftable"
+      ],
+      "seed_queries": [
+        "Craftable sucks restaurant",
+        "Craftable fees",
+        "leaving Craftable",
+        "switching off Craftable",
+        "Craftable hate restaurant",
+        "Craftable support nightmare",
+        "replacing Craftable restaurant"
+      ],
+      "domain": "inventory"
+    },
+    {
+      "id": "wisk",
+      "name": "WISK.ai",
+      "legal": "WISK.ai",
+      "category": "silo",
+      "aliases": [
+        "WISK inventory"
+      ],
+      "seed_queries": [
+        "WISK.ai sucks restaurant",
+        "WISK.ai fees",
+        "leaving WISK.ai",
+        "switching off WISK.ai",
+        "WISK.ai hate restaurant",
+        "WISK.ai support nightmare",
+        "replacing WISK.ai restaurant"
+      ],
+      "domain": "inventory"
+    },
+    {
+      "id": "galley",
+      "name": "Galley Solutions",
+      "legal": "Galley Solutions",
+      "category": "silo",
+      "aliases": [
+        "Galley Solutions"
+      ],
+      "seed_queries": [
+        "Galley Solutions sucks restaurant",
+        "Galley Solutions fees",
+        "leaving Galley Solutions",
+        "switching off Galley Solutions",
+        "Galley Solutions hate restaurant",
+        "Galley Solutions support nightmare",
+        "replacing Galley Solutions restaurant"
+      ],
+      "domain": "recipe_ops"
+    },
+    {
+      "id": "clearcogs",
+      "name": "ClearCOGS",
+      "legal": "ClearCOGS",
+      "category": "silo",
+      "aliases": [
+        "ClearCOGS"
+      ],
+      "seed_queries": [
+        "ClearCOGS sucks restaurant",
+        "ClearCOGS fees",
+        "leaving ClearCOGS",
+        "switching off ClearCOGS",
+        "ClearCOGS hate restaurant",
+        "ClearCOGS support nightmare",
+        "replacing ClearCOGS restaurant"
+      ],
+      "domain": "cogs_ap"
+    },
+    {
+      "id": "partender",
+      "name": "Partender",
+      "legal": "Partender",
+      "category": "silo",
+      "aliases": [
+        "Partender"
+      ],
+      "seed_queries": [
+        "Partender sucks restaurant",
+        "Partender fees",
+        "leaving Partender",
+        "switching off Partender",
+        "Partender hate restaurant",
+        "Partender support nightmare",
+        "replacing Partender restaurant"
+      ],
+      "domain": "beverage_inventory"
+    },
+    {
+      "id": "cut-dry",
+      "name": "Cut+Dry",
+      "legal": "Cut+Dry",
+      "category": "silo",
+      "aliases": [
+        "Cut+Dry"
+      ],
+      "seed_queries": [
+        "Cut+Dry sucks restaurant",
+        "Cut+Dry fees",
+        "leaving Cut+Dry",
+        "switching off Cut+Dry",
+        "Cut+Dry hate restaurant",
+        "Cut+Dry support nightmare",
+        "replacing Cut+Dry restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "olo",
+      "name": "Olo",
+      "legal": "Olo",
+      "category": "silo",
+      "aliases": [
+        "Olo ordering",
+        "Olo Rails"
+      ],
+      "seed_queries": [
+        "Olo sucks restaurant",
+        "Olo fees",
+        "leaving Olo",
+        "switching off Olo",
+        "Olo hate restaurant",
+        "Olo support nightmare",
+        "replacing Olo restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "chownow",
+      "name": "ChowNow",
+      "legal": "ChowNow",
+      "category": "silo",
+      "aliases": [
+        "Chow Now"
+      ],
+      "seed_queries": [
+        "ChowNow sucks restaurant",
+        "ChowNow fees",
+        "leaving ChowNow",
+        "switching off ChowNow",
+        "ChowNow hate restaurant",
+        "ChowNow support nightmare",
+        "replacing ChowNow restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "chowly",
+      "name": "Chowly",
+      "legal": "Chowly",
+      "category": "silo",
+      "aliases": [
+        "Chowly"
+      ],
+      "seed_queries": [
+        "Chowly sucks restaurant",
+        "Chowly fees",
+        "leaving Chowly",
+        "switching off Chowly",
+        "Chowly hate restaurant",
+        "Chowly support nightmare",
+        "replacing Chowly restaurant"
+      ],
+      "domain": "online_ordering_middleware"
+    },
+    {
+      "id": "otter",
+      "name": "Otter",
+      "legal": "Otter",
+      "category": "silo",
+      "aliases": [
+        "Otter tablet"
+      ],
+      "seed_queries": [
+        "Otter sucks restaurant",
+        "Otter fees",
+        "leaving Otter",
+        "switching off Otter",
+        "Otter hate restaurant",
+        "Otter support nightmare",
+        "replacing Otter restaurant"
+      ],
+      "domain": "delivery_ops"
+    },
+    {
+      "id": "checkmate",
+      "name": "ItsaCheckmate",
+      "legal": "ItsaCheckmate",
+      "category": "silo",
+      "aliases": [
+        "Checkmate integration"
+      ],
+      "seed_queries": [
+        "ItsaCheckmate sucks restaurant",
+        "ItsaCheckmate fees",
+        "leaving ItsaCheckmate",
+        "switching off ItsaCheckmate",
+        "ItsaCheckmate hate restaurant",
+        "ItsaCheckmate support nightmare",
+        "replacing ItsaCheckmate restaurant"
+      ],
+      "domain": "delivery_ops"
+    },
+    {
+      "id": "deliverect",
+      "name": "Deliverect",
+      "legal": "Deliverect",
+      "category": "silo",
+      "aliases": [
+        "Deliverect"
+      ],
+      "seed_queries": [
+        "Deliverect sucks restaurant",
+        "Deliverect fees",
+        "leaving Deliverect",
+        "switching off Deliverect",
+        "Deliverect hate restaurant",
+        "Deliverect support nightmare",
+        "replacing Deliverect restaurant"
+      ],
+      "domain": "delivery_ops"
+    },
+    {
+      "id": "gloriafood",
+      "name": "GloriaFood",
+      "legal": "GloriaFood",
+      "category": "silo",
+      "aliases": [
+        "Gloria Food"
+      ],
+      "seed_queries": [
+        "GloriaFood sucks restaurant",
+        "GloriaFood fees",
+        "leaving GloriaFood",
+        "switching off GloriaFood",
+        "GloriaFood hate restaurant",
+        "GloriaFood support nightmare",
+        "replacing GloriaFood restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "menudrive",
+      "name": "MenuDrive",
+      "legal": "MenuDrive",
+      "category": "silo",
+      "aliases": [
+        "MenuDrive"
+      ],
+      "seed_queries": [
+        "MenuDrive sucks restaurant",
+        "MenuDrive fees",
+        "leaving MenuDrive",
+        "switching off MenuDrive",
+        "MenuDrive hate restaurant",
+        "MenuDrive support nightmare",
+        "replacing MenuDrive restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "owner-com",
+      "name": "Owner.com",
+      "legal": "Owner.com",
+      "category": "silo",
+      "aliases": [
+        "Owner.com"
+      ],
+      "seed_queries": [
+        "Owner.com sucks restaurant",
+        "Owner.com fees",
+        "leaving Owner.com",
+        "switching off Owner.com",
+        "Owner.com hate restaurant",
+        "Owner.com support nightmare",
+        "replacing Owner.com restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "slice",
+      "name": "Slice",
+      "legal": "Slice",
+      "category": "silo",
+      "aliases": [
+        "Slice"
+      ],
+      "seed_queries": [
+        "Slice sucks restaurant",
+        "Slice fees",
+        "leaving Slice",
+        "switching off Slice",
+        "Slice hate restaurant",
+        "Slice support nightmare",
+        "replacing Slice restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "ritual",
+      "name": "Ritual",
+      "legal": "Ritual",
+      "category": "silo",
+      "aliases": [
+        "Ritual"
+      ],
+      "seed_queries": [
+        "Ritual sucks restaurant",
+        "Ritual fees",
+        "leaving Ritual",
+        "switching off Ritual",
+        "Ritual hate restaurant",
+        "Ritual support nightmare",
+        "replacing Ritual restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "lunchbox",
+      "name": "Lunchbox",
+      "legal": "Lunchbox",
+      "category": "silo",
+      "aliases": [
+        "Lunchbox"
+      ],
+      "seed_queries": [
+        "Lunchbox sucks restaurant",
+        "Lunchbox fees",
+        "leaving Lunchbox",
+        "switching off Lunchbox",
+        "Lunchbox hate restaurant",
+        "Lunchbox support nightmare",
+        "replacing Lunchbox restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "bbot",
+      "name": "Bbot",
+      "legal": "Bbot",
+      "category": "silo",
+      "aliases": [
+        "Bbot by DoorDash"
+      ],
+      "seed_queries": [
+        "Bbot sucks restaurant",
+        "Bbot fees",
+        "leaving Bbot",
+        "switching off Bbot",
+        "Bbot hate restaurant",
+        "Bbot support nightmare",
+        "replacing Bbot restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "punchh",
+      "name": "Punchh",
+      "legal": "Punchh",
+      "category": "silo",
+      "aliases": [
+        "Punchh"
+      ],
+      "seed_queries": [
+        "Punchh sucks restaurant",
+        "Punchh fees",
+        "leaving Punchh",
+        "switching off Punchh",
+        "Punchh hate restaurant",
+        "Punchh support nightmare",
+        "replacing Punchh restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "thanx",
+      "name": "Thanx",
+      "legal": "Thanx",
+      "category": "silo",
+      "aliases": [
+        "Thanx"
+      ],
+      "seed_queries": [
+        "Thanx sucks restaurant",
+        "Thanx fees",
+        "leaving Thanx",
+        "switching off Thanx",
+        "Thanx hate restaurant",
+        "Thanx support nightmare",
+        "replacing Thanx restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "paytronix",
+      "name": "Paytronix",
+      "legal": "Paytronix",
+      "category": "silo",
+      "aliases": [
+        "Paytronix"
+      ],
+      "seed_queries": [
+        "Paytronix sucks restaurant",
+        "Paytronix fees",
+        "leaving Paytronix",
+        "switching off Paytronix",
+        "Paytronix hate restaurant",
+        "Paytronix support nightmare",
+        "replacing Paytronix restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "fishbowl",
+      "name": "Fishbowl",
+      "legal": "Fishbowl",
+      "category": "silo",
+      "aliases": [
+        "Fishbowl Instant Marketing"
+      ],
+      "seed_queries": [
+        "Fishbowl sucks restaurant",
+        "Fishbowl fees",
+        "leaving Fishbowl",
+        "switching off Fishbowl",
+        "Fishbowl hate restaurant",
+        "Fishbowl support nightmare",
+        "replacing Fishbowl restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "fivestars",
+      "name": "FiveStars",
+      "legal": "FiveStars",
+      "category": "silo",
+      "aliases": [
+        "FiveStars"
+      ],
+      "seed_queries": [
+        "FiveStars sucks restaurant",
+        "FiveStars fees",
+        "leaving FiveStars",
+        "switching off FiveStars",
+        "FiveStars hate restaurant",
+        "FiveStars support nightmare",
+        "replacing FiveStars restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "spendgo",
+      "name": "Spendgo",
+      "legal": "Spendgo",
+      "category": "silo",
+      "aliases": [
+        "Spendgo"
+      ],
+      "seed_queries": [
+        "Spendgo sucks restaurant",
+        "Spendgo fees",
+        "leaving Spendgo",
+        "switching off Spendgo",
+        "Spendgo hate restaurant",
+        "Spendgo support nightmare",
+        "replacing Spendgo restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "levelup",
+      "name": "LevelUp",
+      "legal": "LevelUp",
+      "category": "silo",
+      "aliases": [
+        "LevelUp"
+      ],
+      "seed_queries": [
+        "LevelUp sucks restaurant",
+        "LevelUp fees",
+        "leaving LevelUp",
+        "switching off LevelUp",
+        "LevelUp hate restaurant",
+        "LevelUp support nightmare",
+        "replacing LevelUp restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "toast-loyalty",
+      "name": "Toast Loyalty",
+      "legal": "Toast Loyalty",
+      "category": "silo",
+      "aliases": [
+        "Toast Loyalty"
+      ],
+      "seed_queries": [
+        "Toast Loyalty sucks restaurant",
+        "Toast Loyalty fees",
+        "leaving Toast Loyalty",
+        "switching off Toast Loyalty",
+        "Toast Loyalty hate restaurant",
+        "Toast Loyalty support nightmare",
+        "replacing Toast Loyalty restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "square-loyalty",
+      "name": "Square Loyalty",
+      "legal": "Square Loyalty",
+      "category": "silo",
+      "aliases": [
+        "Square Loyalty"
+      ],
+      "seed_queries": [
+        "Square Loyalty sucks restaurant",
+        "Square Loyalty fees",
+        "leaving Square Loyalty",
+        "switching off Square Loyalty",
+        "Square Loyalty hate restaurant",
+        "Square Loyalty support nightmare",
+        "replacing Square Loyalty restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "klaviyo",
+      "name": "Klaviyo Restaurant",
+      "legal": "Klaviyo Restaurant",
+      "category": "silo",
+      "aliases": [
+        "Klaviyo Restaurant"
+      ],
+      "seed_queries": [
+        "Klaviyo Restaurant sucks restaurant",
+        "Klaviyo Restaurant fees",
+        "leaving Klaviyo Restaurant",
+        "switching off Klaviyo Restaurant",
+        "Klaviyo Restaurant hate restaurant",
+        "Klaviyo Restaurant support nightmare",
+        "replacing Klaviyo Restaurant restaurant"
+      ],
+      "domain": "marketing"
+    },
+    {
+      "id": "popmenu",
+      "name": "Popmenu",
+      "legal": "Popmenu",
+      "category": "silo",
+      "aliases": [
+        "Pop Menu"
+      ],
+      "seed_queries": [
+        "Popmenu sucks restaurant",
+        "Popmenu fees",
+        "leaving Popmenu",
+        "switching off Popmenu",
+        "Popmenu hate restaurant",
+        "Popmenu support nightmare",
+        "replacing Popmenu restaurant"
+      ],
+      "domain": "marketing_web"
+    },
+    {
+      "id": "opentable",
+      "name": "OpenTable",
+      "legal": "OpenTable",
+      "category": "silo",
+      "aliases": [
+        "Open Table"
+      ],
+      "seed_queries": [
+        "OpenTable sucks restaurant",
+        "OpenTable fees",
+        "leaving OpenTable",
+        "switching off OpenTable",
+        "OpenTable hate restaurant",
+        "OpenTable support nightmare",
+        "replacing OpenTable restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "resy",
+      "name": "Resy",
+      "legal": "Resy",
+      "category": "silo",
+      "aliases": [
+        "Resy"
+      ],
+      "seed_queries": [
+        "Resy sucks restaurant",
+        "Resy fees",
+        "leaving Resy",
+        "switching off Resy",
+        "Resy hate restaurant",
+        "Resy support nightmare",
+        "replacing Resy restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "sevenrooms",
+      "name": "SevenRooms",
+      "legal": "SevenRooms",
+      "category": "silo",
+      "aliases": [
+        "Seven Rooms"
+      ],
+      "seed_queries": [
+        "SevenRooms sucks restaurant",
+        "SevenRooms fees",
+        "leaving SevenRooms",
+        "switching off SevenRooms",
+        "SevenRooms hate restaurant",
+        "SevenRooms support nightmare",
+        "replacing SevenRooms restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "tock",
+      "name": "Tock",
+      "legal": "Tock",
+      "category": "silo",
+      "aliases": [
+        "Tock"
+      ],
+      "seed_queries": [
+        "Tock sucks restaurant",
+        "Tock fees",
+        "leaving Tock",
+        "switching off Tock",
+        "Tock hate restaurant",
+        "Tock support nightmare",
+        "replacing Tock restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "yelp-guest-manager",
+      "name": "Yelp Guest Manager",
+      "legal": "Yelp Guest Manager",
+      "category": "silo",
+      "aliases": [
+        "Yelp Guest Manager"
+      ],
+      "seed_queries": [
+        "Yelp Guest Manager sucks restaurant",
+        "Yelp Guest Manager fees",
+        "leaving Yelp Guest Manager",
+        "switching off Yelp Guest Manager",
+        "Yelp Guest Manager hate restaurant",
+        "Yelp Guest Manager support nightmare",
+        "replacing Yelp Guest Manager restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "waitlistme",
+      "name": "Waitlist Me",
+      "legal": "Waitlist Me",
+      "category": "silo",
+      "aliases": [
+        "Waitlist Me"
+      ],
+      "seed_queries": [
+        "Waitlist Me sucks restaurant",
+        "Waitlist Me fees",
+        "leaving Waitlist Me",
+        "switching off Waitlist Me",
+        "Waitlist Me hate restaurant",
+        "Waitlist Me support nightmare",
+        "replacing Waitlist Me restaurant"
+      ],
+      "domain": "waitlist"
+    },
+    {
+      "id": "hostme",
+      "name": "Hostme",
+      "legal": "Hostme",
+      "category": "silo",
+      "aliases": [
+        "Hostme"
+      ],
+      "seed_queries": [
+        "Hostme sucks restaurant",
+        "Hostme fees",
+        "leaving Hostme",
+        "switching off Hostme",
+        "Hostme hate restaurant",
+        "Hostme support nightmare",
+        "replacing Hostme restaurant"
+      ],
+      "domain": "waitlist"
+    },
+    {
+      "id": "fresh-kds",
+      "name": "Fresh KDS",
+      "legal": "Fresh KDS",
+      "category": "silo",
+      "aliases": [
+        "FreshKDS"
+      ],
+      "seed_queries": [
+        "Fresh KDS sucks restaurant",
+        "Fresh KDS fees",
+        "leaving Fresh KDS",
+        "switching off Fresh KDS",
+        "Fresh KDS hate restaurant",
+        "Fresh KDS support nightmare",
+        "replacing Fresh KDS restaurant"
+      ],
+      "domain": "kds"
+    },
+    {
+      "id": "qsr-automations",
+      "name": "QSR Automations",
+      "legal": "QSR Automations",
+      "category": "silo",
+      "aliases": [
+        "QSR Automations"
+      ],
+      "seed_queries": [
+        "QSR Automations sucks restaurant",
+        "QSR Automations fees",
+        "leaving QSR Automations",
+        "switching off QSR Automations",
+        "QSR Automations hate restaurant",
+        "QSR Automations support nightmare",
+        "replacing QSR Automations restaurant"
+      ],
+      "domain": "kds"
+    },
+    {
+      "id": "toast-kds",
+      "name": "Toast KDS",
+      "legal": "Toast KDS",
+      "category": "silo",
+      "aliases": [
+        "Toast KDS"
+      ],
+      "seed_queries": [
+        "Toast KDS sucks restaurant",
+        "Toast KDS fees",
+        "leaving Toast KDS",
+        "switching off Toast KDS",
+        "Toast KDS hate restaurant",
+        "Toast KDS support nightmare",
+        "replacing Toast KDS restaurant"
+      ],
+      "domain": "kds"
+    },
+    {
+      "id": "givex",
+      "name": "GiveX",
+      "legal": "GiveX",
+      "category": "silo",
+      "aliases": [
+        "GiveX"
+      ],
+      "seed_queries": [
+        "GiveX sucks restaurant",
+        "GiveX fees",
+        "leaving GiveX",
+        "switching off GiveX",
+        "GiveX hate restaurant",
+        "GiveX support nightmare",
+        "replacing GiveX restaurant"
+      ],
+      "domain": "gift_cards"
+    },
+    {
+      "id": "freedompay",
+      "name": "FreedomPay",
+      "legal": "FreedomPay",
+      "category": "silo",
+      "aliases": [
+        "FreedomPay"
+      ],
+      "seed_queries": [
+        "FreedomPay sucks restaurant",
+        "FreedomPay fees",
+        "leaving FreedomPay",
+        "switching off FreedomPay",
+        "FreedomPay hate restaurant",
+        "FreedomPay support nightmare",
+        "replacing FreedomPay restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "birdeye",
+      "name": "Birdeye",
+      "legal": "Birdeye",
+      "category": "silo",
+      "aliases": [
+        "Birdeye"
+      ],
+      "seed_queries": [
+        "Birdeye sucks restaurant",
+        "Birdeye fees",
+        "leaving Birdeye",
+        "switching off Birdeye",
+        "Birdeye hate restaurant",
+        "Birdeye support nightmare",
+        "replacing Birdeye restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "yext",
+      "name": "Yext",
+      "legal": "Yext",
+      "category": "silo",
+      "aliases": [
+        "Yext"
+      ],
+      "seed_queries": [
+        "Yext sucks restaurant",
+        "Yext fees",
+        "leaving Yext",
+        "switching off Yext",
+        "Yext hate restaurant",
+        "Yext support nightmare",
+        "replacing Yext restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "podium",
+      "name": "Podium",
+      "legal": "Podium",
+      "category": "silo",
+      "aliases": [
+        "Podium"
+      ],
+      "seed_queries": [
+        "Podium sucks restaurant",
+        "Podium fees",
+        "leaving Podium",
+        "switching off Podium",
+        "Podium hate restaurant",
+        "Podium support nightmare",
+        "replacing Podium restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "ovation",
+      "name": "Ovation",
+      "legal": "Ovation",
+      "category": "silo",
+      "aliases": [
+        "Ovation"
+      ],
+      "seed_queries": [
+        "Ovation sucks restaurant",
+        "Ovation fees",
+        "leaving Ovation",
+        "switching off Ovation",
+        "Ovation hate restaurant",
+        "Ovation support nightmare",
+        "replacing Ovation restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "jolt",
+      "name": "Jolt",
+      "legal": "Jolt",
+      "category": "silo",
+      "aliases": [
+        "Jolt"
+      ],
+      "seed_queries": [
+        "Jolt sucks restaurant",
+        "Jolt fees",
+        "leaving Jolt",
+        "switching off Jolt",
+        "Jolt hate restaurant",
+        "Jolt support nightmare",
+        "replacing Jolt restaurant"
+      ],
+      "domain": "ops_checklists"
+    },
+    {
+      "id": "avero",
+      "name": "Avero",
+      "legal": "Avero",
+      "category": "silo",
+      "aliases": [
+        "Avero"
+      ],
+      "seed_queries": [
+        "Avero sucks restaurant",
+        "Avero fees",
+        "leaving Avero",
+        "switching off Avero",
+        "Avero hate restaurant",
+        "Avero support nightmare",
+        "replacing Avero restaurant"
+      ],
+      "domain": "analytics"
+    },
+    {
+      "id": "upserve",
+      "name": "Upserve",
+      "legal": "Upserve",
+      "category": "silo",
+      "aliases": [
+        "Upserve by Lightspeed"
+      ],
+      "seed_queries": [
+        "Upserve sucks restaurant",
+        "Upserve fees",
+        "leaving Upserve",
+        "switching off Upserve",
+        "Upserve hate restaurant",
+        "Upserve support nightmare",
+        "replacing Upserve restaurant"
+      ],
+      "domain": "legacy_ops"
+    },
+    {
+      "id": "profitsword",
+      "name": "ProfitSword",
+      "legal": "ProfitSword",
+      "category": "silo",
+      "aliases": [
+        "ProfitSword"
+      ],
+      "seed_queries": [
+        "ProfitSword sucks restaurant",
+        "ProfitSword fees",
+        "leaving ProfitSword",
+        "switching off ProfitSword",
+        "ProfitSword hate restaurant",
+        "ProfitSword support nightmare",
+        "replacing ProfitSword restaurant"
+      ],
+      "domain": "analytics"
+    },
+    {
+      "id": "mashgin",
+      "name": "Mashgin",
+      "legal": "Mashgin",
+      "category": "silo",
+      "aliases": [
+        "Mashgin"
+      ],
+      "seed_queries": [
+        "Mashgin sucks restaurant",
+        "Mashgin fees",
+        "leaving Mashgin",
+        "switching off Mashgin",
+        "Mashgin hate restaurant",
+        "Mashgin support nightmare",
+        "replacing Mashgin restaurant"
+      ],
+      "domain": "checkout_ai"
+    },
+    {
+      "id": "presto",
+      "name": "Presto",
+      "legal": "Presto",
+      "category": "silo",
+      "aliases": [
+        "Presto AI"
+      ],
+      "seed_queries": [
+        "Presto sucks restaurant",
+        "Presto fees",
+        "leaving Presto",
+        "switching off Presto",
+        "Presto hate restaurant",
+        "Presto support nightmare",
+        "replacing Presto restaurant"
+      ],
+      "domain": "ai_voice_ordering"
+    },
+    {
+      "id": "hi-auto",
+      "name": "Hi Auto",
+      "legal": "Hi Auto",
+      "category": "silo",
+      "aliases": [
+        "Hi Auto"
+      ],
+      "seed_queries": [
+        "Hi Auto sucks restaurant",
+        "Hi Auto fees",
+        "leaving Hi Auto",
+        "switching off Hi Auto",
+        "Hi Auto hate restaurant",
+        "Hi Auto support nightmare",
+        "replacing Hi Auto restaurant"
+      ],
+      "domain": "ai_voice_ordering"
+    },
+    {
+      "id": "keel",
+      "name": "Keel",
+      "legal": "Keel",
+      "category": "silo",
+      "aliases": [
+        "Keel"
+      ],
+      "seed_queries": [
+        "Keel sucks restaurant",
+        "Keel fees",
+        "leaving Keel",
+        "switching off Keel",
+        "Keel hate restaurant",
+        "Keel support nightmare",
+        "replacing Keel restaurant"
+      ],
+      "domain": "delivery_ops"
+    },
+    {
+      "id": "urbanpiper",
+      "name": "UrbanPiper",
+      "legal": "UrbanPiper",
+      "category": "silo",
+      "aliases": [
+        "UrbanPiper"
+      ],
+      "seed_queries": [
+        "UrbanPiper sucks restaurant",
+        "UrbanPiper fees",
+        "leaving UrbanPiper",
+        "switching off UrbanPiper",
+        "UrbanPiper hate restaurant",
+        "UrbanPiper support nightmare",
+        "replacing UrbanPiper restaurant"
+      ],
+      "domain": "delivery_ops"
+    },
+    {
+      "id": "foodconnex",
+      "name": "FoodConnex",
+      "legal": "FoodConnex",
+      "category": "silo",
+      "aliases": [
+        "FoodConnex"
+      ],
+      "seed_queries": [
+        "FoodConnex sucks restaurant",
+        "FoodConnex fees",
+        "leaving FoodConnex",
+        "switching off FoodConnex",
+        "FoodConnex hate restaurant",
+        "FoodConnex support nightmare",
+        "replacing FoodConnex restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "opsanalitica",
+      "name": "OpsAnalitica",
+      "legal": "OpsAnalitica",
+      "category": "silo",
+      "aliases": [
+        "OpsAnalitica"
+      ],
+      "seed_queries": [
+        "OpsAnalitica sucks restaurant",
+        "OpsAnalitica fees",
+        "leaving OpsAnalitica",
+        "switching off OpsAnalitica",
+        "OpsAnalitica hate restaurant",
+        "OpsAnalitica support nightmare",
+        "replacing OpsAnalitica restaurant"
+      ],
+      "domain": "ops_checklists"
+    },
+    {
+      "id": "reviewtrackers",
+      "name": "ReviewTrackers",
+      "legal": "ReviewTrackers",
+      "category": "silo",
+      "aliases": [
+        "ReviewTrackers"
+      ],
+      "seed_queries": [
+        "ReviewTrackers sucks restaurant",
+        "ReviewTrackers fees",
+        "leaving ReviewTrackers",
+        "switching off ReviewTrackers",
+        "ReviewTrackers hate restaurant",
+        "ReviewTrackers support nightmare",
+        "replacing ReviewTrackers restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "toast-online-ordering",
+      "name": "Toast Online Ordering",
+      "legal": "Toast Online Ordering",
+      "category": "silo",
+      "aliases": [
+        "Toast Online Ordering"
+      ],
+      "seed_queries": [
+        "Toast Online Ordering sucks restaurant",
+        "Toast Online Ordering fees",
+        "leaving Toast Online Ordering",
+        "switching off Toast Online Ordering",
+        "Toast Online Ordering hate restaurant",
+        "Toast Online Ordering support nightmare",
+        "replacing Toast Online Ordering restaurant"
+      ],
+      "domain": "online_ordering"
+    },
+    {
+      "id": "7shifts-payroll",
+      "name": "7shifts Payroll",
+      "legal": "7shifts Payroll",
+      "category": "silo",
+      "aliases": [
+        "7shifts Payroll"
+      ],
+      "seed_queries": [
+        "7shifts Payroll sucks restaurant",
+        "7shifts Payroll fees",
+        "leaving 7shifts Payroll",
+        "switching off 7shifts Payroll",
+        "7shifts Payroll hate restaurant",
+        "7shifts Payroll support nightmare",
+        "replacing 7shifts Payroll restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "homebase-payroll",
+      "name": "Homebase Payroll",
+      "legal": "Homebase Payroll",
+      "category": "silo",
+      "aliases": [
+        "Homebase Payroll"
+      ],
+      "seed_queries": [
+        "Homebase Payroll sucks restaurant",
+        "Homebase Payroll fees",
+        "leaving Homebase Payroll",
+        "switching off Homebase Payroll",
+        "Homebase Payroll hate restaurant",
+        "Homebase Payroll support nightmare",
+        "replacing Homebase Payroll restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "4p-foods",
+      "name": "4P Foods Ops",
+      "legal": "4P Foods Ops",
+      "category": "silo",
+      "aliases": [
+        "4P Foods Ops"
+      ],
+      "seed_queries": [
+        "4P Foods Ops sucks restaurant",
+        "4P Foods Ops fees",
+        "leaving 4P Foods Ops",
+        "switching off 4P Foods Ops",
+        "4P Foods Ops hate restaurant",
+        "4P Foods Ops support nightmare",
+        "replacing 4P Foods Ops restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "restaurant-depot",
+      "name": "Restaurant Depot Portal",
+      "legal": "Restaurant Depot Portal",
+      "category": "silo",
+      "aliases": [
+        "Restaurant Depot Portal"
+      ],
+      "seed_queries": [
+        "Restaurant Depot Portal sucks restaurant",
+        "Restaurant Depot Portal fees",
+        "leaving Restaurant Depot Portal",
+        "switching off Restaurant Depot Portal",
+        "Restaurant Depot Portal hate restaurant",
+        "Restaurant Depot Portal support nightmare",
+        "replacing Restaurant Depot Portal restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "sysco-market",
+      "name": "Sysco Market",
+      "legal": "Sysco Market",
+      "category": "silo",
+      "aliases": [
+        "Sysco Market"
+      ],
+      "seed_queries": [
+        "Sysco Market sucks restaurant",
+        "Sysco Market fees",
+        "leaving Sysco Market",
+        "switching off Sysco Market",
+        "Sysco Market hate restaurant",
+        "Sysco Market support nightmare",
+        "replacing Sysco Market restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "us-foods",
+      "name": "US Foods Online",
+      "legal": "US Foods Online",
+      "category": "silo",
+      "aliases": [
+        "US Foods Online"
+      ],
+      "seed_queries": [
+        "US Foods Online sucks restaurant",
+        "US Foods Online fees",
+        "leaving US Foods Online",
+        "switching off US Foods Online",
+        "US Foods Online hate restaurant",
+        "US Foods Online support nightmare",
+        "replacing US Foods Online restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "chefstore",
+      "name": "ChefStore",
+      "legal": "ChefStore",
+      "category": "silo",
+      "aliases": [
+        "ChefStore"
+      ],
+      "seed_queries": [
+        "ChefStore sucks restaurant",
+        "ChefStore fees",
+        "leaving ChefStore",
+        "switching off ChefStore",
+        "ChefStore hate restaurant",
+        "ChefStore support nightmare",
+        "replacing ChefStore restaurant"
+      ],
+      "domain": "procurement"
+    },
+    {
+      "id": "marginedge-invoice",
+      "name": "Marginedge Invoice",
+      "legal": "Marginedge Invoice",
+      "category": "silo",
+      "aliases": [
+        "Marginedge Invoice"
+      ],
+      "seed_queries": [
+        "Marginedge Invoice sucks restaurant",
+        "Marginedge Invoice fees",
+        "leaving Marginedge Invoice",
+        "switching off Marginedge Invoice",
+        "Marginedge Invoice hate restaurant",
+        "Marginedge Invoice support nightmare",
+        "replacing Marginedge Invoice restaurant"
+      ],
+      "domain": "cogs_ap"
+    },
+    {
+      "id": "crunchtime-inventory",
+      "name": "Crunchtime Inventory",
+      "legal": "Crunchtime Inventory",
+      "category": "silo",
+      "aliases": [
+        "Crunchtime Inventory"
+      ],
+      "seed_queries": [
+        "Crunchtime Inventory sucks restaurant",
+        "Crunchtime Inventory fees",
+        "leaving Crunchtime Inventory",
+        "switching off Crunchtime Inventory",
+        "Crunchtime Inventory hate restaurant",
+        "Crunchtime Inventory support nightmare",
+        "replacing Crunchtime Inventory restaurant"
+      ],
+      "domain": "enterprise_ops"
+    },
+    {
+      "id": "harri-hiring",
+      "name": "Harri Hiring",
+      "legal": "Harri Hiring",
+      "category": "silo",
+      "aliases": [
+        "Harri Hiring"
+      ],
+      "seed_queries": [
+        "Harri Hiring sucks restaurant",
+        "Harri Hiring fees",
+        "leaving Harri Hiring",
+        "switching off Harri Hiring",
+        "Harri Hiring hate restaurant",
+        "Harri Hiring support nightmare",
+        "replacing Harri Hiring restaurant"
+      ],
+      "domain": "hiring"
+    },
+    {
+      "id": "snagajob",
+      "name": "Snagajob Restaurant",
+      "legal": "Snagajob Restaurant",
+      "category": "silo",
+      "aliases": [
+        "Snagajob Restaurant"
+      ],
+      "seed_queries": [
+        "Snagajob Restaurant sucks restaurant",
+        "Snagajob Restaurant fees",
+        "leaving Snagajob Restaurant",
+        "switching off Snagajob Restaurant",
+        "Snagajob Restaurant hate restaurant",
+        "Snagajob Restaurant support nightmare",
+        "replacing Snagajob Restaurant restaurant"
+      ],
+      "domain": "hiring"
+    },
+    {
+      "id": "indeed-hiring",
+      "name": "Indeed Restaurant Hiring",
+      "legal": "Indeed Restaurant Hiring",
+      "category": "silo",
+      "aliases": [
+        "Indeed Restaurant Hiring"
+      ],
+      "seed_queries": [
+        "Indeed Restaurant Hiring sucks restaurant",
+        "Indeed Restaurant Hiring fees",
+        "leaving Indeed Restaurant Hiring",
+        "switching off Indeed Restaurant Hiring",
+        "Indeed Restaurant Hiring hate restaurant",
+        "Indeed Restaurant Hiring support nightmare",
+        "replacing Indeed Restaurant Hiring restaurant"
+      ],
+      "domain": "hiring"
+    },
+    {
+      "id": "ziprecruiter",
+      "name": "ZipRecruiter Restaurant",
+      "legal": "ZipRecruiter Restaurant",
+      "category": "silo",
+      "aliases": [
+        "ZipRecruiter Restaurant"
+      ],
+      "seed_queries": [
+        "ZipRecruiter Restaurant sucks restaurant",
+        "ZipRecruiter Restaurant fees",
+        "leaving ZipRecruiter Restaurant",
+        "switching off ZipRecruiter Restaurant",
+        "ZipRecruiter Restaurant hate restaurant",
+        "ZipRecruiter Restaurant support nightmare",
+        "replacing ZipRecruiter Restaurant restaurant"
+      ],
+      "domain": "hiring"
+    },
+    {
+      "id": "toast-tips",
+      "name": "Toast Tips Manager",
+      "legal": "Toast Tips Manager",
+      "category": "silo",
+      "aliases": [
+        "Toast Tips Manager"
+      ],
+      "seed_queries": [
+        "Toast Tips Manager sucks restaurant",
+        "Toast Tips Manager fees",
+        "leaving Toast Tips Manager",
+        "switching off Toast Tips Manager",
+        "Toast Tips Manager hate restaurant",
+        "Toast Tips Manager support nightmare",
+        "replacing Toast Tips Manager restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "7shifts-tips",
+      "name": "7shifts Tip Pooling",
+      "legal": "7shifts Tip Pooling",
+      "category": "silo",
+      "aliases": [
+        "7shifts Tip Pooling"
+      ],
+      "seed_queries": [
+        "7shifts Tip Pooling sucks restaurant",
+        "7shifts Tip Pooling fees",
+        "leaving 7shifts Tip Pooling",
+        "switching off 7shifts Tip Pooling",
+        "7shifts Tip Pooling hate restaurant",
+        "7shifts Tip Pooling support nightmare",
+        "replacing 7shifts Tip Pooling restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "push-operations",
+      "name": "Push Operations",
+      "legal": "Push Operations",
+      "category": "silo",
+      "aliases": [
+        "Push Operations"
+      ],
+      "seed_queries": [
+        "Push Operations sucks restaurant",
+        "Push Operations fees",
+        "leaving Push Operations",
+        "switching off Push Operations",
+        "Push Operations hate restaurant",
+        "Push Operations support nightmare",
+        "replacing Push Operations restaurant"
+      ],
+      "domain": "payroll"
+    },
+    {
+      "id": "4dayweek",
+      "name": "4dayweek Ops",
+      "legal": "4dayweek Ops",
+      "category": "silo",
+      "aliases": [
+        "4dayweek Ops"
+      ],
+      "seed_queries": [
+        "4dayweek Ops sucks restaurant",
+        "4dayweek Ops fees",
+        "leaving 4dayweek Ops",
+        "switching off 4dayweek Ops",
+        "4dayweek Ops hate restaurant",
+        "4dayweek Ops support nightmare",
+        "replacing 4dayweek Ops restaurant"
+      ],
+      "domain": "scheduling_labor"
+    }
+  ],
+  "marketplace_vendors": [
+    {
+      "id": "doordash",
+      "name": "DoorDash",
+      "legal": "DoorDash",
+      "category": "marketplace",
+      "aliases": [
+        "Door Dash"
+      ],
+      "seed_queries": [
+        "DoorDash sucks restaurant",
+        "DoorDash fees",
+        "leaving DoorDash",
+        "switching off DoorDash",
+        "DoorDash hate restaurant",
+        "DoorDash support nightmare",
+        "replacing DoorDash restaurant",
+        "DoorDash commission too high",
+        "DoorDash chargebacks"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "uber-eats",
+      "name": "Uber Eats",
+      "legal": "Uber Eats",
+      "category": "marketplace",
+      "aliases": [
+        "UberEats"
+      ],
+      "seed_queries": [
+        "Uber Eats sucks restaurant",
+        "Uber Eats fees",
+        "leaving Uber Eats",
+        "switching off Uber Eats",
+        "Uber Eats hate restaurant",
+        "Uber Eats support nightmare",
+        "replacing Uber Eats restaurant",
+        "Uber Eats fees killing us"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "grubhub",
+      "name": "Grubhub",
+      "legal": "Grubhub",
+      "category": "marketplace",
+      "aliases": [
+        "Grub Hub"
+      ],
+      "seed_queries": [
+        "Grubhub sucks restaurant",
+        "Grubhub fees",
+        "leaving Grubhub",
+        "switching off Grubhub",
+        "Grubhub hate restaurant",
+        "Grubhub support nightmare",
+        "replacing Grubhub restaurant",
+        "Grubhub not worth it"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "postmates",
+      "name": "Postmates",
+      "legal": "Postmates",
+      "category": "marketplace",
+      "aliases": [
+        "Postmates"
+      ],
+      "seed_queries": [
+        "Postmates sucks restaurant",
+        "Postmates fees",
+        "leaving Postmates",
+        "switching off Postmates",
+        "Postmates hate restaurant",
+        "Postmates support nightmare",
+        "replacing Postmates restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "ezcater",
+      "name": "EzCater",
+      "legal": "EzCater",
+      "category": "marketplace",
+      "aliases": [
+        "ezCater"
+      ],
+      "seed_queries": [
+        "EzCater sucks restaurant",
+        "EzCater fees",
+        "leaving EzCater",
+        "switching off EzCater",
+        "EzCater hate restaurant",
+        "EzCater support nightmare",
+        "replacing EzCater restaurant"
+      ],
+      "domain": "catering_marketplace"
+    },
+    {
+      "id": "tgtg",
+      "name": "Too Good To Go",
+      "legal": "Too Good To Go",
+      "category": "marketplace",
+      "aliases": [
+        "Too Good To Go"
+      ],
+      "seed_queries": [
+        "Too Good To Go sucks restaurant",
+        "Too Good To Go fees",
+        "leaving Too Good To Go",
+        "switching off Too Good To Go",
+        "Too Good To Go hate restaurant",
+        "Too Good To Go support nightmare",
+        "replacing Too Good To Go restaurant"
+      ],
+      "domain": "surplus_marketplace"
+    },
+    {
+      "id": "hungrypanda",
+      "name": "HungryPanda",
+      "legal": "HungryPanda",
+      "category": "marketplace",
+      "aliases": [
+        "HungryPanda"
+      ],
+      "seed_queries": [
+        "HungryPanda sucks restaurant",
+        "HungryPanda fees",
+        "leaving HungryPanda",
+        "switching off HungryPanda",
+        "HungryPanda hate restaurant",
+        "HungryPanda support nightmare",
+        "replacing HungryPanda restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "fantuan",
+      "name": "Fantuan",
+      "legal": "Fantuan",
+      "category": "marketplace",
+      "aliases": [
+        "Fantuan"
+      ],
+      "seed_queries": [
+        "Fantuan sucks restaurant",
+        "Fantuan fees",
+        "leaving Fantuan",
+        "switching off Fantuan",
+        "Fantuan hate restaurant",
+        "Fantuan support nightmare",
+        "replacing Fantuan restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "chowbus",
+      "name": "Chowbus",
+      "legal": "Chowbus",
+      "category": "marketplace",
+      "aliases": [
+        "Chowbus"
+      ],
+      "seed_queries": [
+        "Chowbus sucks restaurant",
+        "Chowbus fees",
+        "leaving Chowbus",
+        "switching off Chowbus",
+        "Chowbus hate restaurant",
+        "Chowbus support nightmare",
+        "replacing Chowbus restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "deliveroo",
+      "name": "Deliveroo",
+      "legal": "Deliveroo",
+      "category": "marketplace",
+      "aliases": [
+        "Deliveroo"
+      ],
+      "seed_queries": [
+        "Deliveroo sucks restaurant",
+        "Deliveroo fees",
+        "leaving Deliveroo",
+        "switching off Deliveroo",
+        "Deliveroo hate restaurant",
+        "Deliveroo support nightmare",
+        "replacing Deliveroo restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "just-eat",
+      "name": "Just Eat",
+      "legal": "Just Eat",
+      "category": "marketplace",
+      "aliases": [
+        "Just Eat"
+      ],
+      "seed_queries": [
+        "Just Eat sucks restaurant",
+        "Just Eat fees",
+        "leaving Just Eat",
+        "switching off Just Eat",
+        "Just Eat hate restaurant",
+        "Just Eat support nightmare",
+        "replacing Just Eat restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "skip",
+      "name": "SkipTheDishes",
+      "legal": "SkipTheDishes",
+      "category": "marketplace",
+      "aliases": [
+        "SkipTheDishes"
+      ],
+      "seed_queries": [
+        "SkipTheDishes sucks restaurant",
+        "SkipTheDishes fees",
+        "leaving SkipTheDishes",
+        "switching off SkipTheDishes",
+        "SkipTheDishes hate restaurant",
+        "SkipTheDishes support nightmare",
+        "replacing SkipTheDishes restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "doordash-drive",
+      "name": "DoorDash Drive",
+      "legal": "DoorDash Drive",
+      "category": "marketplace",
+      "aliases": [
+        "DoorDash Drive"
+      ],
+      "seed_queries": [
+        "DoorDash Drive sucks restaurant",
+        "DoorDash Drive fees",
+        "leaving DoorDash Drive",
+        "switching off DoorDash Drive",
+        "DoorDash Drive hate restaurant",
+        "DoorDash Drive support nightmare",
+        "replacing DoorDash Drive restaurant"
+      ],
+      "domain": "delivery_logistics"
+    },
+    {
+      "id": "uber-direct",
+      "name": "Uber Direct",
+      "legal": "Uber Direct",
+      "category": "marketplace",
+      "aliases": [
+        "Uber Direct"
+      ],
+      "seed_queries": [
+        "Uber Direct sucks restaurant",
+        "Uber Direct fees",
+        "leaving Uber Direct",
+        "switching off Uber Direct",
+        "Uber Direct hate restaurant",
+        "Uber Direct support nightmare",
+        "replacing Uber Direct restaurant"
+      ],
+      "domain": "delivery_logistics"
+    },
+    {
+      "id": "relay",
+      "name": "Relay Delivery",
+      "legal": "Relay Delivery",
+      "category": "marketplace",
+      "aliases": [
+        "Relay Delivery"
+      ],
+      "seed_queries": [
+        "Relay Delivery sucks restaurant",
+        "Relay Delivery fees",
+        "leaving Relay Delivery",
+        "switching off Relay Delivery",
+        "Relay Delivery hate restaurant",
+        "Relay Delivery support nightmare",
+        "replacing Relay Delivery restaurant"
+      ],
+      "domain": "delivery_logistics"
+    },
+    {
+      "id": "doordash-storefront",
+      "name": "DoorDash Storefront",
+      "legal": "DoorDash Storefront",
+      "category": "marketplace",
+      "aliases": [
+        "DoorDash Storefront"
+      ],
+      "seed_queries": [
+        "DoorDash Storefront sucks restaurant",
+        "DoorDash Storefront fees",
+        "leaving DoorDash Storefront",
+        "switching off DoorDash Storefront",
+        "DoorDash Storefront hate restaurant",
+        "DoorDash Storefront support nightmare",
+        "replacing DoorDash Storefront restaurant"
+      ],
+      "domain": "marketplace_storefront"
+    },
+    {
+      "id": "grubhub-direct",
+      "name": "Grubhub Direct",
+      "legal": "Grubhub Direct",
+      "category": "marketplace",
+      "aliases": [
+        "Grubhub Direct"
+      ],
+      "seed_queries": [
+        "Grubhub Direct sucks restaurant",
+        "Grubhub Direct fees",
+        "leaving Grubhub Direct",
+        "switching off Grubhub Direct",
+        "Grubhub Direct hate restaurant",
+        "Grubhub Direct support nightmare",
+        "replacing Grubhub Direct restaurant"
+      ],
+      "domain": "marketplace_storefront"
+    },
+    {
+      "id": "caviar",
+      "name": "Caviar",
+      "legal": "Caviar",
+      "category": "marketplace",
+      "aliases": [
+        "Caviar"
+      ],
+      "seed_queries": [
+        "Caviar sucks restaurant",
+        "Caviar fees",
+        "leaving Caviar",
+        "switching off Caviar",
+        "Caviar hate restaurant",
+        "Caviar support nightmare",
+        "replacing Caviar restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "seamless",
+      "name": "Seamless",
+      "legal": "Seamless",
+      "category": "marketplace",
+      "aliases": [
+        "Seamless"
+      ],
+      "seed_queries": [
+        "Seamless sucks restaurant",
+        "Seamless fees",
+        "leaving Seamless",
+        "switching off Seamless",
+        "Seamless hate restaurant",
+        "Seamless support nightmare",
+        "replacing Seamless restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "uber-eats-manager",
+      "name": "Uber Eats Manager",
+      "legal": "Uber Eats Manager",
+      "category": "marketplace",
+      "aliases": [
+        "Uber Eats Manager"
+      ],
+      "seed_queries": [
+        "Uber Eats Manager sucks restaurant",
+        "Uber Eats Manager fees",
+        "leaving Uber Eats Manager",
+        "switching off Uber Eats Manager",
+        "Uber Eats Manager hate restaurant",
+        "Uber Eats Manager support nightmare",
+        "replacing Uber Eats Manager restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "doordash-merchant",
+      "name": "DoorDash Merchant",
+      "legal": "DoorDash Merchant",
+      "category": "marketplace",
+      "aliases": [
+        "DoorDash Merchant"
+      ],
+      "seed_queries": [
+        "DoorDash Merchant sucks restaurant",
+        "DoorDash Merchant fees",
+        "leaving DoorDash Merchant",
+        "switching off DoorDash Merchant",
+        "DoorDash Merchant hate restaurant",
+        "DoorDash Merchant support nightmare",
+        "replacing DoorDash Merchant restaurant"
+      ],
+      "domain": "marketplace_3p"
+    },
+    {
+      "id": "grubhub-merchants",
+      "name": "Grubhub for Restaurants",
+      "legal": "Grubhub for Restaurants",
+      "category": "marketplace",
+      "aliases": [
+        "Grubhub for Restaurants"
+      ],
+      "seed_queries": [
+        "Grubhub for Restaurants sucks restaurant",
+        "Grubhub for Restaurants fees",
+        "leaving Grubhub for Restaurants",
+        "switching off Grubhub for Restaurants",
+        "Grubhub for Restaurants hate restaurant",
+        "Grubhub for Restaurants support nightmare",
+        "replacing Grubhub for Restaurants restaurant"
+      ],
+      "domain": "marketplace_3p"
+    }
+  ],
+  "ordering_vendors": [
+    {
+      "id": "toast-ooo",
+      "name": "Toast Online Ordering Module",
+      "legal": "Toast Online Ordering Module",
+      "category": "ordering",
+      "aliases": [
+        "Toast Online Ordering Module"
+      ],
+      "seed_queries": [
+        "Toast Online Ordering Module sucks restaurant",
+        "Toast Online Ordering Module fees",
+        "leaving Toast Online Ordering Module",
+        "switching off Toast Online Ordering Module",
+        "Toast Online Ordering Module hate restaurant",
+        "Toast Online Ordering Module support nightmare",
+        "replacing Toast Online Ordering Module restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "square-online",
+      "name": "Square Online Dining",
+      "legal": "Square Online Dining",
+      "category": "ordering",
+      "aliases": [
+        "Square Online Dining"
+      ],
+      "seed_queries": [
+        "Square Online Dining sucks restaurant",
+        "Square Online Dining fees",
+        "leaving Square Online Dining",
+        "switching off Square Online Dining",
+        "Square Online Dining hate restaurant",
+        "Square Online Dining support nightmare",
+        "replacing Square Online Dining restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "clover-online",
+      "name": "Clover Dining Online",
+      "legal": "Clover Dining Online",
+      "category": "ordering",
+      "aliases": [
+        "Clover Dining Online"
+      ],
+      "seed_queries": [
+        "Clover Dining Online sucks restaurant",
+        "Clover Dining Online fees",
+        "leaving Clover Dining Online",
+        "switching off Clover Dining Online",
+        "Clover Dining Online hate restaurant",
+        "Clover Dining Online support nightmare",
+        "replacing Clover Dining Online restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "spoton-online",
+      "name": "SpotOn Online Ordering",
+      "legal": "SpotOn Online Ordering",
+      "category": "ordering",
+      "aliases": [
+        "SpotOn Online Ordering"
+      ],
+      "seed_queries": [
+        "SpotOn Online Ordering sucks restaurant",
+        "SpotOn Online Ordering fees",
+        "leaving SpotOn Online Ordering",
+        "switching off SpotOn Online Ordering",
+        "SpotOn Online Ordering hate restaurant",
+        "SpotOn Online Ordering support nightmare",
+        "replacing SpotOn Online Ordering restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "bentobox",
+      "name": "BentoBox",
+      "legal": "BentoBox",
+      "category": "ordering",
+      "aliases": [
+        "Bento Box"
+      ],
+      "seed_queries": [
+        "BentoBox sucks restaurant",
+        "BentoBox fees",
+        "leaving BentoBox",
+        "switching off BentoBox",
+        "BentoBox hate restaurant",
+        "BentoBox support nightmare",
+        "replacing BentoBox restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "flipdish",
+      "name": "Flipdish",
+      "legal": "Flipdish",
+      "category": "ordering",
+      "aliases": [
+        "Flipdish"
+      ],
+      "seed_queries": [
+        "Flipdish sucks restaurant",
+        "Flipdish fees",
+        "leaving Flipdish",
+        "switching off Flipdish",
+        "Flipdish hate restaurant",
+        "Flipdish support nightmare",
+        "replacing Flipdish restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "ordermark",
+      "name": "Ordermark",
+      "legal": "Ordermark",
+      "category": "ordering",
+      "aliases": [
+        "Ordermark"
+      ],
+      "seed_queries": [
+        "Ordermark sucks restaurant",
+        "Ordermark fees",
+        "leaving Ordermark",
+        "switching off Ordermark",
+        "Ordermark hate restaurant",
+        "Ordermark support nightmare",
+        "replacing Ordermark restaurant"
+      ],
+      "domain": "delivery_aggregation"
+    },
+    {
+      "id": "menufy",
+      "name": "Menufy",
+      "legal": "Menufy",
+      "category": "ordering",
+      "aliases": [
+        "Menufy"
+      ],
+      "seed_queries": [
+        "Menufy sucks restaurant",
+        "Menufy fees",
+        "leaving Menufy",
+        "switching off Menufy",
+        "Menufy hate restaurant",
+        "Menufy support nightmare",
+        "replacing Menufy restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "beyond-menu",
+      "name": "Beyond Menu",
+      "legal": "Beyond Menu",
+      "category": "ordering",
+      "aliases": [
+        "Beyond Menu"
+      ],
+      "seed_queries": [
+        "Beyond Menu sucks restaurant",
+        "Beyond Menu fees",
+        "leaving Beyond Menu",
+        "switching off Beyond Menu",
+        "Beyond Menu hate restaurant",
+        "Beyond Menu support nightmare",
+        "replacing Beyond Menu restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "seamless-ordering",
+      "name": "Grubhub Seamless Ordering",
+      "legal": "Grubhub Seamless Ordering",
+      "category": "ordering",
+      "aliases": [
+        "Grubhub Seamless Ordering"
+      ],
+      "seed_queries": [
+        "Grubhub Seamless Ordering sucks restaurant",
+        "Grubhub Seamless Ordering fees",
+        "leaving Grubhub Seamless Ordering",
+        "switching off Grubhub Seamless Ordering",
+        "Grubhub Seamless Ordering hate restaurant",
+        "Grubhub Seamless Ordering support nightmare",
+        "replacing Grubhub Seamless Ordering restaurant"
+      ],
+      "domain": "marketplace_ordering"
+    },
+    {
+      "id": "wishbone",
+      "name": "Wishbone",
+      "legal": "Wishbone",
+      "category": "ordering",
+      "aliases": [
+        "Wishbone"
+      ],
+      "seed_queries": [
+        "Wishbone sucks restaurant",
+        "Wishbone fees",
+        "leaving Wishbone",
+        "switching off Wishbone",
+        "Wishbone hate restaurant",
+        "Wishbone support nightmare",
+        "replacing Wishbone restaurant"
+      ],
+      "domain": "first_party_ordering"
+    },
+    {
+      "id": "incentivio",
+      "name": "Incentivio Ordering",
+      "legal": "Incentivio Ordering",
+      "category": "ordering",
+      "aliases": [
+        "Incentivio Ordering"
+      ],
+      "seed_queries": [
+        "Incentivio Ordering sucks restaurant",
+        "Incentivio Ordering fees",
+        "leaving Incentivio Ordering",
+        "switching off Incentivio Ordering",
+        "Incentivio Ordering hate restaurant",
+        "Incentivio Ordering support nightmare",
+        "replacing Incentivio Ordering restaurant"
+      ],
+      "domain": "first_party_ordering"
+    }
+  ],
+  "loyalty_vendors": [
+    {
+      "id": "belly",
+      "name": "Belly Loyalty",
+      "legal": "Belly Loyalty",
+      "category": "loyalty",
+      "aliases": [
+        "Belly Loyalty"
+      ],
+      "seed_queries": [
+        "Belly Loyalty sucks restaurant",
+        "Belly Loyalty fees",
+        "leaving Belly Loyalty",
+        "switching off Belly Loyalty",
+        "Belly Loyalty hate restaurant",
+        "Belly Loyalty support nightmare",
+        "replacing Belly Loyalty restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "stamp-me",
+      "name": "Stamp Me",
+      "legal": "Stamp Me",
+      "category": "loyalty",
+      "aliases": [
+        "Stamp Me"
+      ],
+      "seed_queries": [
+        "Stamp Me sucks restaurant",
+        "Stamp Me fees",
+        "leaving Stamp Me",
+        "switching off Stamp Me",
+        "Stamp Me hate restaurant",
+        "Stamp Me support nightmare",
+        "replacing Stamp Me restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "loyaltylion",
+      "name": "LoyaltyLion",
+      "legal": "LoyaltyLion",
+      "category": "loyalty",
+      "aliases": [
+        "LoyaltyLion"
+      ],
+      "seed_queries": [
+        "LoyaltyLion sucks restaurant",
+        "LoyaltyLion fees",
+        "leaving LoyaltyLion",
+        "switching off LoyaltyLion",
+        "LoyaltyLion hate restaurant",
+        "LoyaltyLion support nightmare",
+        "replacing LoyaltyLion restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "annex-cloud",
+      "name": "Annex Cloud",
+      "legal": "Annex Cloud",
+      "category": "loyalty",
+      "aliases": [
+        "Annex Cloud"
+      ],
+      "seed_queries": [
+        "Annex Cloud sucks restaurant",
+        "Annex Cloud fees",
+        "leaving Annex Cloud",
+        "switching off Annex Cloud",
+        "Annex Cloud hate restaurant",
+        "Annex Cloud support nightmare",
+        "replacing Annex Cloud restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "antavo",
+      "name": "Antavo",
+      "legal": "Antavo",
+      "category": "loyalty",
+      "aliases": [
+        "Antavo"
+      ],
+      "seed_queries": [
+        "Antavo sucks restaurant",
+        "Antavo fees",
+        "leaving Antavo",
+        "switching off Antavo",
+        "Antavo hate restaurant",
+        "Antavo support nightmare",
+        "replacing Antavo restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "sessionm",
+      "name": "SessionM",
+      "legal": "SessionM",
+      "category": "loyalty",
+      "aliases": [
+        "SessionM"
+      ],
+      "seed_queries": [
+        "SessionM sucks restaurant",
+        "SessionM fees",
+        "leaving SessionM",
+        "switching off SessionM",
+        "SessionM hate restaurant",
+        "SessionM support nightmare",
+        "replacing SessionM restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "sparkfly",
+      "name": "Sparkfly",
+      "legal": "Sparkfly",
+      "category": "loyalty",
+      "aliases": [
+        "Sparkfly"
+      ],
+      "seed_queries": [
+        "Sparkfly sucks restaurant",
+        "Sparkfly fees",
+        "leaving Sparkfly",
+        "switching off Sparkfly",
+        "Sparkfly hate restaurant",
+        "Sparkfly support nightmare",
+        "replacing Sparkfly restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "likecard",
+      "name": "LikeCard",
+      "legal": "LikeCard",
+      "category": "loyalty",
+      "aliases": [
+        "LikeCard"
+      ],
+      "seed_queries": [
+        "LikeCard sucks restaurant",
+        "LikeCard fees",
+        "leaving LikeCard",
+        "switching off LikeCard",
+        "LikeCard hate restaurant",
+        "LikeCard support nightmare",
+        "replacing LikeCard restaurant"
+      ],
+      "domain": "gift_loyalty"
+    },
+    {
+      "id": "paytronix-loyalty",
+      "name": "Paytronix Loyalty",
+      "legal": "Paytronix Loyalty",
+      "category": "loyalty",
+      "aliases": [
+        "Paytronix Loyalty"
+      ],
+      "seed_queries": [
+        "Paytronix Loyalty sucks restaurant",
+        "Paytronix Loyalty fees",
+        "leaving Paytronix Loyalty",
+        "switching off Paytronix Loyalty",
+        "Paytronix Loyalty hate restaurant",
+        "Paytronix Loyalty support nightmare",
+        "replacing Paytronix Loyalty restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "punchh-enterprise",
+      "name": "Punchh Enterprise",
+      "legal": "Punchh Enterprise",
+      "category": "loyalty",
+      "aliases": [
+        "Punchh Enterprise"
+      ],
+      "seed_queries": [
+        "Punchh Enterprise sucks restaurant",
+        "Punchh Enterprise fees",
+        "leaving Punchh Enterprise",
+        "switching off Punchh Enterprise",
+        "Punchh Enterprise hate restaurant",
+        "Punchh Enterprise support nightmare",
+        "replacing Punchh Enterprise restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "thanx-crm",
+      "name": "Thanx CRM",
+      "legal": "Thanx CRM",
+      "category": "loyalty",
+      "aliases": [
+        "Thanx CRM"
+      ],
+      "seed_queries": [
+        "Thanx CRM sucks restaurant",
+        "Thanx CRM fees",
+        "leaving Thanx CRM",
+        "switching off Thanx CRM",
+        "Thanx CRM hate restaurant",
+        "Thanx CRM support nightmare",
+        "replacing Thanx CRM restaurant"
+      ],
+      "domain": "loyalty_crm"
+    },
+    {
+      "id": "fishbowl-loyalty",
+      "name": "Fishbowl Loyalty",
+      "legal": "Fishbowl Loyalty",
+      "category": "loyalty",
+      "aliases": [
+        "Fishbowl Loyalty"
+      ],
+      "seed_queries": [
+        "Fishbowl Loyalty sucks restaurant",
+        "Fishbowl Loyalty fees",
+        "leaving Fishbowl Loyalty",
+        "switching off Fishbowl Loyalty",
+        "Fishbowl Loyalty hate restaurant",
+        "Fishbowl Loyalty support nightmare",
+        "replacing Fishbowl Loyalty restaurant"
+      ],
+      "domain": "loyalty_crm"
+    }
+  ],
+  "reservations_vendors": [
+    {
+      "id": "bookatable",
+      "name": "Bookatable",
+      "legal": "Bookatable",
+      "category": "reservations",
+      "aliases": [
+        "Bookatable"
+      ],
+      "seed_queries": [
+        "Bookatable sucks restaurant",
+        "Bookatable fees",
+        "leaving Bookatable",
+        "switching off Bookatable",
+        "Bookatable hate restaurant",
+        "Bookatable support nightmare",
+        "replacing Bookatable restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "quandoo",
+      "name": "Quandoo",
+      "legal": "Quandoo",
+      "category": "reservations",
+      "aliases": [
+        "Quandoo"
+      ],
+      "seed_queries": [
+        "Quandoo sucks restaurant",
+        "Quandoo fees",
+        "leaving Quandoo",
+        "switching off Quandoo",
+        "Quandoo hate restaurant",
+        "Quandoo support nightmare",
+        "replacing Quandoo restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "covermanager",
+      "name": "CoverManager",
+      "legal": "CoverManager",
+      "category": "reservations",
+      "aliases": [
+        "CoverManager"
+      ],
+      "seed_queries": [
+        "CoverManager sucks restaurant",
+        "CoverManager fees",
+        "leaving CoverManager",
+        "switching off CoverManager",
+        "CoverManager hate restaurant",
+        "CoverManager support nightmare",
+        "replacing CoverManager restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "thefork",
+      "name": "TheFork",
+      "legal": "TheFork",
+      "category": "reservations",
+      "aliases": [
+        "TheFork"
+      ],
+      "seed_queries": [
+        "TheFork sucks restaurant",
+        "TheFork fees",
+        "leaving TheFork",
+        "switching off TheFork",
+        "TheFork hate restaurant",
+        "TheFork support nightmare",
+        "replacing TheFork restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "eatapp",
+      "name": "Eat App",
+      "legal": "Eat App",
+      "category": "reservations",
+      "aliases": [
+        "Eat App"
+      ],
+      "seed_queries": [
+        "Eat App sucks restaurant",
+        "Eat App fees",
+        "leaving Eat App",
+        "switching off Eat App",
+        "Eat App hate restaurant",
+        "Eat App support nightmare",
+        "replacing Eat App restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "tablein",
+      "name": "Tablein",
+      "legal": "Tablein",
+      "category": "reservations",
+      "aliases": [
+        "Tablein"
+      ],
+      "seed_queries": [
+        "Tablein sucks restaurant",
+        "Tablein fees",
+        "leaving Tablein",
+        "switching off Tablein",
+        "Tablein hate restaurant",
+        "Tablein support nightmare",
+        "replacing Tablein restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "reservision",
+      "name": "Reservision",
+      "legal": "Reservision",
+      "category": "reservations",
+      "aliases": [
+        "Reservision"
+      ],
+      "seed_queries": [
+        "Reservision sucks restaurant",
+        "Reservision fees",
+        "leaving Reservision",
+        "switching off Reservision",
+        "Reservision hate restaurant",
+        "Reservision support nightmare",
+        "replacing Reservision restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "tableagent",
+      "name": "TableAgent",
+      "legal": "TableAgent",
+      "category": "reservations",
+      "aliases": [
+        "TableAgent"
+      ],
+      "seed_queries": [
+        "TableAgent sucks restaurant",
+        "TableAgent fees",
+        "leaving TableAgent",
+        "switching off TableAgent",
+        "TableAgent hate restaurant",
+        "TableAgent support nightmare",
+        "replacing TableAgent restaurant"
+      ],
+      "domain": "reservations"
+    },
+    {
+      "id": "waitlistme-pro",
+      "name": "Waitlist.me Pro",
+      "legal": "Waitlist.me Pro",
+      "category": "reservations",
+      "aliases": [
+        "Waitlist.me Pro"
+      ],
+      "seed_queries": [
+        "Waitlist.me Pro sucks restaurant",
+        "Waitlist.me Pro fees",
+        "leaving Waitlist.me Pro",
+        "switching off Waitlist.me Pro",
+        "Waitlist.me Pro hate restaurant",
+        "Waitlist.me Pro support nightmare",
+        "replacing Waitlist.me Pro restaurant"
+      ],
+      "domain": "waitlist"
+    },
+    {
+      "id": "yelp-waitlist",
+      "name": "Yelp Waitlist",
+      "legal": "Yelp Waitlist",
+      "category": "reservations",
+      "aliases": [
+        "Yelp Waitlist"
+      ],
+      "seed_queries": [
+        "Yelp Waitlist sucks restaurant",
+        "Yelp Waitlist fees",
+        "leaving Yelp Waitlist",
+        "switching off Yelp Waitlist",
+        "Yelp Waitlist hate restaurant",
+        "Yelp Waitlist support nightmare",
+        "replacing Yelp Waitlist restaurant"
+      ],
+      "domain": "waitlist"
+    }
+  ],
+  "payments_vendors": [
+    {
+      "id": "worldpay",
+      "name": "Worldpay Restaurant",
+      "legal": "Worldpay Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Worldpay Restaurant"
+      ],
+      "seed_queries": [
+        "Worldpay Restaurant sucks restaurant",
+        "Worldpay Restaurant fees",
+        "leaving Worldpay Restaurant",
+        "switching off Worldpay Restaurant",
+        "Worldpay Restaurant hate restaurant",
+        "Worldpay Restaurant support nightmare",
+        "replacing Worldpay Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "chase-merchant",
+      "name": "Chase Merchant Services",
+      "legal": "Chase Merchant Services",
+      "category": "payments",
+      "aliases": [
+        "Chase Merchant Services"
+      ],
+      "seed_queries": [
+        "Chase Merchant Services sucks restaurant",
+        "Chase Merchant Services fees",
+        "leaving Chase Merchant Services",
+        "switching off Chase Merchant Services",
+        "Chase Merchant Services hate restaurant",
+        "Chase Merchant Services support nightmare",
+        "replacing Chase Merchant Services restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "stripe-terminal",
+      "name": "Stripe Terminal Restaurant",
+      "legal": "Stripe Terminal Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Stripe Terminal Restaurant"
+      ],
+      "seed_queries": [
+        "Stripe Terminal Restaurant sucks restaurant",
+        "Stripe Terminal Restaurant fees",
+        "leaving Stripe Terminal Restaurant",
+        "switching off Stripe Terminal Restaurant",
+        "Stripe Terminal Restaurant hate restaurant",
+        "Stripe Terminal Restaurant support nightmare",
+        "replacing Stripe Terminal Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "adyen",
+      "name": "Adyen Restaurant",
+      "legal": "Adyen Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Adyen Restaurant"
+      ],
+      "seed_queries": [
+        "Adyen Restaurant sucks restaurant",
+        "Adyen Restaurant fees",
+        "leaving Adyen Restaurant",
+        "switching off Adyen Restaurant",
+        "Adyen Restaurant hate restaurant",
+        "Adyen Restaurant support nightmare",
+        "replacing Adyen Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "toast-payments",
+      "name": "Toast Payments",
+      "legal": "Toast Payments",
+      "category": "payments",
+      "aliases": [
+        "Toast Payments"
+      ],
+      "seed_queries": [
+        "Toast Payments sucks restaurant",
+        "Toast Payments fees",
+        "leaving Toast Payments",
+        "switching off Toast Payments",
+        "Toast Payments hate restaurant",
+        "Toast Payments support nightmare",
+        "replacing Toast Payments restaurant",
+        "Toast payment processing rates"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "square-payments",
+      "name": "Square Payments Restaurant",
+      "legal": "Square Payments Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Square Payments Restaurant"
+      ],
+      "seed_queries": [
+        "Square Payments Restaurant sucks restaurant",
+        "Square Payments Restaurant fees",
+        "leaving Square Payments Restaurant",
+        "switching off Square Payments Restaurant",
+        "Square Payments Restaurant hate restaurant",
+        "Square Payments Restaurant support nightmare",
+        "replacing Square Payments Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "shift4-payments",
+      "name": "Shift4 Payments",
+      "legal": "Shift4 Payments",
+      "category": "payments",
+      "aliases": [
+        "Shift4 Payments"
+      ],
+      "seed_queries": [
+        "Shift4 Payments sucks restaurant",
+        "Shift4 Payments fees",
+        "leaving Shift4 Payments",
+        "switching off Shift4 Payments",
+        "Shift4 Payments hate restaurant",
+        "Shift4 Payments support nightmare",
+        "replacing Shift4 Payments restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "cardconnect",
+      "name": "CardConnect Restaurant",
+      "legal": "CardConnect Restaurant",
+      "category": "payments",
+      "aliases": [
+        "CardConnect Restaurant"
+      ],
+      "seed_queries": [
+        "CardConnect Restaurant sucks restaurant",
+        "CardConnect Restaurant fees",
+        "leaving CardConnect Restaurant",
+        "switching off CardConnect Restaurant",
+        "CardConnect Restaurant hate restaurant",
+        "CardConnect Restaurant support nightmare",
+        "replacing CardConnect Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "elavon",
+      "name": "Elavon Restaurant",
+      "legal": "Elavon Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Elavon Restaurant"
+      ],
+      "seed_queries": [
+        "Elavon Restaurant sucks restaurant",
+        "Elavon Restaurant fees",
+        "leaving Elavon Restaurant",
+        "switching off Elavon Restaurant",
+        "Elavon Restaurant hate restaurant",
+        "Elavon Restaurant support nightmare",
+        "replacing Elavon Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "clover-payments",
+      "name": "Clover Payments",
+      "legal": "Clover Payments",
+      "category": "payments",
+      "aliases": [
+        "Clover Payments"
+      ],
+      "seed_queries": [
+        "Clover Payments sucks restaurant",
+        "Clover Payments fees",
+        "leaving Clover Payments",
+        "switching off Clover Payments",
+        "Clover Payments hate restaurant",
+        "Clover Payments support nightmare",
+        "replacing Clover Payments restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "helcim",
+      "name": "Helcim Restaurant",
+      "legal": "Helcim Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Helcim Restaurant"
+      ],
+      "seed_queries": [
+        "Helcim Restaurant sucks restaurant",
+        "Helcim Restaurant fees",
+        "leaving Helcim Restaurant",
+        "switching off Helcim Restaurant",
+        "Helcim Restaurant hate restaurant",
+        "Helcim Restaurant support nightmare",
+        "replacing Helcim Restaurant restaurant"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "payment-depot",
+      "name": "Payment Depot Restaurant",
+      "legal": "Payment Depot Restaurant",
+      "category": "payments",
+      "aliases": [
+        "Payment Depot Restaurant"
+      ],
+      "seed_queries": [
+        "Payment Depot Restaurant sucks restaurant",
+        "Payment Depot Restaurant fees",
+        "leaving Payment Depot Restaurant",
+        "switching off Payment Depot Restaurant",
+        "Payment Depot Restaurant hate restaurant",
+        "Payment Depot Restaurant support nightmare",
+        "replacing Payment Depot Restaurant restaurant"
+      ],
+      "domain": "payments"
+    }
+  ],
+  "reputation_vendors": [
+    {
+      "id": "gbp",
+      "name": "Google Business Profile Ops",
+      "legal": "Google Business Profile Ops",
+      "category": "reputation",
+      "aliases": [
+        "Google reviews restaurant"
+      ],
+      "seed_queries": [
+        "Google Business Profile Ops sucks restaurant",
+        "Google Business Profile Ops fees",
+        "leaving Google Business Profile Ops",
+        "switching off Google Business Profile Ops",
+        "Google Business Profile Ops hate restaurant",
+        "Google Business Profile Ops support nightmare",
+        "replacing Google Business Profile Ops restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "yelp-business",
+      "name": "Yelp for Business",
+      "legal": "Yelp for Business",
+      "category": "reputation",
+      "aliases": [
+        "Yelp for Business"
+      ],
+      "seed_queries": [
+        "Yelp for Business sucks restaurant",
+        "Yelp for Business fees",
+        "leaving Yelp for Business",
+        "switching off Yelp for Business",
+        "Yelp for Business hate restaurant",
+        "Yelp for Business support nightmare",
+        "replacing Yelp for Business restaurant",
+        "Yelp extortion restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "tripadvisor",
+      "name": "TripAdvisor Restaurant",
+      "legal": "TripAdvisor Restaurant",
+      "category": "reputation",
+      "aliases": [
+        "TripAdvisor Restaurant"
+      ],
+      "seed_queries": [
+        "TripAdvisor Restaurant sucks restaurant",
+        "TripAdvisor Restaurant fees",
+        "leaving TripAdvisor Restaurant",
+        "switching off TripAdvisor Restaurant",
+        "TripAdvisor Restaurant hate restaurant",
+        "TripAdvisor Restaurant support nightmare",
+        "replacing TripAdvisor Restaurant restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "nicejob",
+      "name": "NiceJob",
+      "legal": "NiceJob",
+      "category": "reputation",
+      "aliases": [
+        "NiceJob"
+      ],
+      "seed_queries": [
+        "NiceJob sucks restaurant",
+        "NiceJob fees",
+        "leaving NiceJob",
+        "switching off NiceJob",
+        "NiceJob hate restaurant",
+        "NiceJob support nightmare",
+        "replacing NiceJob restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "grade-us",
+      "name": "Grade.us",
+      "legal": "Grade.us",
+      "category": "reputation",
+      "aliases": [
+        "Grade.us"
+      ],
+      "seed_queries": [
+        "Grade.us sucks restaurant",
+        "Grade.us fees",
+        "leaving Grade.us",
+        "switching off Grade.us",
+        "Grade.us hate restaurant",
+        "Grade.us support nightmare",
+        "replacing Grade.us restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "reputation-com",
+      "name": "Reputation.com Restaurant",
+      "legal": "Reputation.com Restaurant",
+      "category": "reputation",
+      "aliases": [
+        "Reputation.com Restaurant"
+      ],
+      "seed_queries": [
+        "Reputation.com Restaurant sucks restaurant",
+        "Reputation.com Restaurant fees",
+        "leaving Reputation.com Restaurant",
+        "switching off Reputation.com Restaurant",
+        "Reputation.com Restaurant hate restaurant",
+        "Reputation.com Restaurant support nightmare",
+        "replacing Reputation.com Restaurant restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "birdeye-rest",
+      "name": "BirdEye Restaurant",
+      "legal": "BirdEye Restaurant",
+      "category": "reputation",
+      "aliases": [
+        "BirdEye Restaurant"
+      ],
+      "seed_queries": [
+        "BirdEye Restaurant sucks restaurant",
+        "BirdEye Restaurant fees",
+        "leaving BirdEye Restaurant",
+        "switching off BirdEye Restaurant",
+        "BirdEye Restaurant hate restaurant",
+        "BirdEye Restaurant support nightmare",
+        "replacing BirdEye Restaurant restaurant"
+      ],
+      "domain": "reputation"
+    },
+    {
+      "id": "podium-reviews",
+      "name": "Podium Reviews",
+      "legal": "Podium Reviews",
+      "category": "reputation",
+      "aliases": [
+        "Podium Reviews"
+      ],
+      "seed_queries": [
+        "Podium Reviews sucks restaurant",
+        "Podium Reviews fees",
+        "leaving Podium Reviews",
+        "switching off Podium Reviews",
+        "Podium Reviews hate restaurant",
+        "Podium Reviews support nightmare",
+        "replacing Podium Reviews restaurant"
+      ],
+      "domain": "reputation"
     }
   ],
   "thematic": [
@@ -368,9 +4421,29 @@
       "file": "thematic/drift.json"
     },
     {
-      "id": "marketplace_3p",
-      "label": "DoorDash / Grubhub / Uber Eats",
+      "id": "marketplace_3p_bundle",
+      "label": "3P bundle hate (DD+UE+GH together)",
       "file": "thematic/marketplace-3p.json"
+    },
+    {
+      "id": "stack_sprawl",
+      "label": "Frankenstein stack / too many vendors",
+      "file": "thematic/stack-sprawl.json"
+    },
+    {
+      "id": "chargebacks",
+      "label": "Chargebacks / fake orders / fraud",
+      "file": "thematic/chargebacks.json"
+    },
+    {
+      "id": "hardware_lockin",
+      "label": "Hardware lease / lock-in traps",
+      "file": "thematic/hardware-lockin.json"
+    },
+    {
+      "id": "integration_hell",
+      "label": "Integration hell / nothing syncs",
+      "file": "thematic/integration-hell.json"
     }
   ],
   "learning": {
@@ -384,8 +4457,9 @@
       "{vendor} support",
       "replacing {vendor}",
       "{vendor} nightmare",
-      "{vendor} vs"
+      "{vendor} commission",
+      "{vendor} chargeback"
     ],
-    "at_scale": "Each vendor agent accumulates keep/reject labels, alias hits, and phrase banks so complaint identification improves per vendor — not one generic 'POS hate' bucket."
+    "at_scale": "Per-vendor phrase/alias banks from teach labels \u2192 sharper complaint ID \u2192 more Never86 buyers."
   }
 }

@@ -2,10 +2,16 @@
   "name": "pain-shoppers-daily",
   "schedule": "0 8 * * *",
   "timezone": "America/Chicago",
-  "description": "Runs every Never86 vendor + thematic pain shopper: scan → shop → teach → vendor-learn → recurse → sales form on keep.",
+  "description": "SWARM run: every Never86 vendor + thematic pain shopper scans, shops, teach-batches, vendor-learns, recurse-learns, and fills sales forms on keep.",
   "agent_globs": [
     "agent/pain-shoppers/pos/*.json",
     "agent/pain-shoppers/silo/*.json",
+    "agent/pain-shoppers/marketplace/*.json",
+    "agent/pain-shoppers/ordering/*.json",
+    "agent/pain-shoppers/loyalty/*.json",
+    "agent/pain-shoppers/reservations/*.json",
+    "agent/pain-shoppers/payments/*.json",
+    "agent/pain-shoppers/reputation/*.json",
     "agent/pain-shoppers/thematic/*.json"
   ],
   "steps_per_agent": [
@@ -15,14 +21,15 @@
     {
       "skill": "vendor-complaint-learn",
       "depends_on": "teach-label",
-      "when": "category in [pos, silo]"
+      "when": "category != thematic"
     },
     { "skill": "recurse-learn", "depends_on": "teach-label" },
     { "skill": "sales-lead-form", "depends_on": "teach-label", "when": "label == keep" }
   ],
   "notify": {
     "channel": "telegram",
-    "message": "Pain shoppers ready — teach batches by vendor (Toast…SkyTab POS + 7shifts…BevSpot silos + thematic). Label keeps so we learn complaint language at scale per vendor."
+    "message": "Never86 swarm ready — teach batches across POS/silo/marketplace/ordering/loyalty/reservations/payments/reputation. Label keeps so we learn at scale and auto-fill sales forms."
   },
-  "approval_required_for": ["outreach", "dm", "email", "comment", "spend", "publish"]
+  "approval_required_for": ["outreach", "dm", "email", "comment", "spend", "publish"],
+  "swarm_mode": true
 }

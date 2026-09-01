@@ -1,0 +1,41 @@
+{
+  "name": "Adyen Restaurant Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Adyen Restaurant payments pain",
+  "shape": "fox",
+  "color": "#ADB5BD",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "adyen",
+  "pain_id": "payments_adyen",
+  "category": "payments",
+  "domain": "payments",
+  "legal_name": "Adyen Restaurant",
+  "aliases": [
+    "Adyen Restaurant"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Adyen Restaurant (Adyen Restaurant). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: payments.",
+  "seed_queries": [
+    "Adyen Restaurant sucks restaurant",
+    "Adyen Restaurant fees",
+    "leaving Adyen Restaurant",
+    "switching off Adyen Restaurant",
+    "Adyen Restaurant hate restaurant",
+    "Adyen Restaurant support nightmare",
+    "replacing Adyen Restaurant restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Adyen Restaurant / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Adyen Restaurant \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Gusto Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Gusto silo complaints",
+  "shape": "fox",
+  "color": "#F77F00",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "gusto",
+  "pain_id": "silo_gusto",
+  "category": "silo",
+  "domain": "payroll",
+  "legal_name": "Gusto",
+  "aliases": [
+    "Gusto payroll restaurant"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Gusto (Gusto). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: payroll.",
+  "seed_queries": [
+    "Gusto sucks restaurant",
+    "Gusto fees",
+    "leaving Gusto",
+    "switching off Gusto",
+    "Gusto hate restaurant",
+    "Gusto support nightmare",
+    "replacing Gusto restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Gusto / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Gusto \u2192 Never86 wedge"
+  },
+  "swarm": true
+}

@@ -2,7 +2,7 @@
   "name": "MarketMan Pain Shopper",
   "title": "Never86 lead shopper \u2014 MarketMan silo complaints",
   "shape": "fox",
-  "color": "#BC4749",
+  "color": "#003049",
   "family": "never86-pain-shoppers",
   "vendor_id": "marketman",
   "pain_id": "silo_marketman",
@@ -12,24 +12,30 @@
   "aliases": [
     "Market Man"
   ],
-  "version": "1.1.0",
+  "rank": null,
+  "version": "2.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Scans for operators complaining about siloed vendor MarketMan (inventory). Captures stack-pain where MarketMan doesn't talk to POS/ordering/accounting. Learns complaint patterns at scale, shops identity + context, teach/labels with Myke, recurse-learns, automates Never86 sales leads positioned against vendor sprawl. Never outreaches without approval.",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about MarketMan (MarketMan). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: inventory.",
   "seed_queries": [
-    "MarketMan sucks",
-    "Market Man hate",
+    "MarketMan sucks restaurant",
+    "MarketMan fees",
     "leaving MarketMan",
-    "MarketMan inventory fees"
+    "switching off MarketMan",
+    "MarketMan hate restaurant",
+    "MarketMan support nightmare",
+    "replacing MarketMan restaurant"
   ],
   "icp_hints": [
-    "ops / owner / back-office voice",
-    "named MarketMan in complaint",
-    "multi-tool stack signals (doesn't sync / double entry)",
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit MarketMan / alias mention",
+    "active complaint in last 90 days",
     "US markets first"
   ],
   "learning": {
     "track_aliases": true,
     "track_complaint_phrases": true,
     "displace_narrative": "Operator hate on MarketMan \u2192 Never86 wedge"
-  }
+  },
+  "swarm": true
 }

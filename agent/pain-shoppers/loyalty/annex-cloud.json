@@ -1,0 +1,41 @@
+{
+  "name": "Annex Cloud Pain Shopper",
+  "title": "Never86 lead shopper \u2014 Annex Cloud loyalty/CRM pain",
+  "shape": "fox",
+  "color": "#E0AAFF",
+  "family": "never86-pain-shoppers",
+  "vendor_id": "annex-cloud",
+  "pain_id": "loyalty_annex-cloud",
+  "category": "loyalty",
+  "domain": "loyalty_crm",
+  "legal_name": "Annex Cloud",
+  "aliases": [
+    "Annex Cloud"
+  ],
+  "rank": null,
+  "version": "2.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Swarm agent for Never86. Scans TikTok, Reddit, Facebook groups, X, and operator forums for restaurants/GMs/owners complaining about Annex Cloud (Annex Cloud). Learns complaint language at scale. Shops identity + full complaint context, teach/labels with Myke, recurse-learns, automates Never86 sales leads. Never outreaches without approval. Domain focus: loyalty_crm.",
+  "seed_queries": [
+    "Annex Cloud sucks restaurant",
+    "Annex Cloud fees",
+    "leaving Annex Cloud",
+    "switching off Annex Cloud",
+    "Annex Cloud hate restaurant",
+    "Annex Cloud support nightmare",
+    "replacing Annex Cloud restaurant"
+  ],
+  "icp_hints": [
+    "independent or multi-unit restaurant operators",
+    "GM / owner / ops / back-office voice",
+    "explicit Annex Cloud / alias mention",
+    "active complaint in last 90 days",
+    "US markets first"
+  ],
+  "learning": {
+    "track_aliases": true,
+    "track_complaint_phrases": true,
+    "displace_narrative": "Operator hate on Annex Cloud \u2192 Never86 wedge"
+  },
+  "swarm": true
+}
