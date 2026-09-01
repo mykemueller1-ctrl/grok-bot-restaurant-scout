@@ -1,0 +1,33 @@
+# Never86 Grok Bot stack — Render Blueprint
+# Connect this repo once in Render Dashboard → Blueprints → New Blueprint Instance.
+# Postgres + API + generated MCP token. No manual env wiring for DATABASE_URL.
+
+databases:
+  - name: never86-pain-leads-db
+    plan: free
+    region: oregon
+
+envVarGroups:
+  - name: never86-grok-bot-stack
+    envVars:
+      - key: MCP_API_TOKEN
+        generateValue: true
+      - key: OWNER_EMAIL
+        value: ops@never86.ai
+
+services:
+  - type: web
+    name: never86-pain-leads-api
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: services/pain-leads-api
+    buildCommand: npm install && npm run build && npx prisma db push --accept-data-loss
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: never86-pain-leads-db
+          property: connectionString
+      - fromGroup: never86-grok-bot-stack

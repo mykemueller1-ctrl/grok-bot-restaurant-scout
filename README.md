@@ -52,6 +52,8 @@ Routine: `routines/pain-shoppers-daily.json`
 
 `commerce-engine`, `social-connector`, `complaint-sources`, `lead-shop`, `approvals`
 
+Wiring manifest: `stack/wiring.json`. Self-contained API: `services/pain-leads-api/`. Operator playbook: `docs/OPERATOR.md`.
+
 ## Setup
 
 See `SETUP.md`.
