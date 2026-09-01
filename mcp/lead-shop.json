@@ -1,7 +1,7 @@
 {
   "name": "lead-shop",
   "transport": "http",
-  "url": "https://api.yourdomain.com/mcp/leads",
+  "url": "${COMMERCE_ENGINE_URL}/mcp/leads",
   "auth": "bearer:${LEAD_SHOP_TOKEN}",
   "tools": [
     "save_pain_lead",
