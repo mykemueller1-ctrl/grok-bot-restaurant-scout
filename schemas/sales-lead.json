@@ -1,0 +1,30 @@
+{
+  "$schema_name": "SalesLead",
+  "description": "Never86 sales lead produced after shop + teach. Automation fills this form; outreach stays approval-gated.",
+  "required": ["pain_id", "account_name", "complaint_thesis", "why_never86_now", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "pain_id": {
+      "type": "string",
+      "enum": ["toast_pos", "labor", "tech_stack", "cost", "drift", "marketplace_3p"]
+    },
+    "pain_lead_id": { "type": "string" },
+    "account_name": { "type": "string" },
+    "contact_name": { "type": "string" },
+    "role": { "type": "string" },
+    "handles": { "type": "object" },
+    "city": { "type": "string" },
+    "market": { "type": "string" },
+    "complaint_thesis": { "type": "string" },
+    "quotes": { "type": "array", "items": { "type": "string" } },
+    "vendors_to_displace": { "type": "array", "items": { "type": "string" } },
+    "why_never86_now": { "type": "string" },
+    "suggested_angle": { "type": "string" },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "confidence": { "type": "number" },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "QUALIFIED", "IN_OUTREACH", "WON", "LOST", "DISQUALIFIED"]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "family": "never86-pain-shoppers",
+  "platform": "Never86",
+  "version": "1.0.0",
+  "purpose": "Shop sales customers for Never86 by finding restaurants, managers, and operators publicly complaining about restaurant software, labor, cost, drift, and 3P marketplaces — then capture full context, teach/label with the owner, recurse-learn search patterns, and automate structured sales leads.",
+  "shop_means": "Collect identity + complaint context window (what they hate, why, quotes, venue, role, channels) — not purchase. Owner teaches what 'good' looks like; agents recurse and eventually auto-fill the sales lead form.",
+  "sources": [
+    "tiktok",
+    "instagram",
+    "reddit",
+    "facebook_groups",
+    "x",
+    "forums",
+    "discord",
+    "yelp_talk",
+    "linkedin"
+  ],
+  "shared_skills": [
+    "pain-complaint-scan",
+    "lead-shop-enrich",
+    "teach-label",
+    "recurse-learn",
+    "sales-lead-form"
+  ],
+  "agents": [
+    {
+      "id": "toast-pos",
+      "file": "toast-pos.json",
+      "pain": "toast_pos",
+      "label": "Fuck Toast / POS hate"
+    },
+    {
+      "id": "labor",
+      "file": "labor.json",
+      "pain": "labor",
+      "label": "Labor / staffing / scheduling"
+    },
+    {
+      "id": "tech-stack",
+      "file": "tech-stack.json",
+      "pain": "tech_stack",
+      "label": "Tech stack suck / siloed vendors"
+    },
+    {
+      "id": "cost",
+      "file": "cost.json",
+      "pain": "cost",
+      "label": "Cost / fees / margins"
+    },
+    {
+      "id": "drift",
+      "file": "drift.json",
+      "pain": "drift",
+      "label": "Menu / price / data drift"
+    },
+    {
+      "id": "marketplace-3p",
+      "file": "marketplace-3p.json",
+      "pain": "marketplace_3p",
+      "label": "DoorDash / Grubhub / Uber Eats (3P)"
+    }
+  ],
+  "approval_required_for": [
+    "outreach",
+    "dm",
+    "email",
+    "comment",
+    "spend",
+    "publish"
+  ]
+}

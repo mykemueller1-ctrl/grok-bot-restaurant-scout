@@ -1,0 +1,57 @@
+{
+  "$schema_name": "PainLead",
+  "description": "Shopped complaint lead awaiting teach/label. Captures identity + complaint context window.",
+  "required": ["pain_id", "sources", "complaint_summary", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "pain_id": {
+      "type": "string",
+      "enum": ["toast_pos", "labor", "tech_stack", "cost", "drift", "marketplace_3p"]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "platform": { "type": "string" },
+          "url": { "type": "string" },
+          "posted_at": { "type": "string" },
+          "handle": { "type": "string" }
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "properties": {
+        "display_name": { "type": "string" },
+        "role_guess": { "type": "string" },
+        "handles": { "type": "object" },
+        "public_contacts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "venue": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "city": { "type": "string" },
+        "cuisine": { "type": "string" },
+        "unit_count_guess": { "type": "string" }
+      }
+    },
+    "complaint_summary": { "type": "string" },
+    "quotes": { "type": "array", "items": { "type": "string" } },
+    "vendors_mentioned": { "type": "array", "items": { "type": "string" } },
+    "raw_context": { "type": "string" },
+    "severity_signals": { "type": "array", "items": { "type": "string" } },
+    "score": { "type": "number" },
+    "status": {
+      "type": "string",
+      "enum": ["NEEDS_TEACH", "READY_FOR_FORM", "REJECTED", "REASSIGNED", "MERGED"]
+    },
+    "teach_label": {
+      "type": "string",
+      "enum": ["keep", "reject", "wrong_pain", "wrong_icp", "needs_research"]
+    },
+    "teach_notes": { "type": "string" }
+  }
+}

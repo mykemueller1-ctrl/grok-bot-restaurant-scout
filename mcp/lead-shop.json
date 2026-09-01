@@ -1,0 +1,17 @@
+{
+  "name": "lead-shop",
+  "transport": "http",
+  "url": "https://api.yourdomain.com/mcp/leads",
+  "auth": "bearer:${LEAD_SHOP_TOKEN}",
+  "tools": [
+    "save_pain_lead",
+    "list_pain_leads",
+    "save_teach_feedback",
+    "update_learned_bank",
+    "get_learned_bank",
+    "save_sales_lead",
+    "merge_leads",
+    "list_sales_leads"
+  ],
+  "notes": "Persists shopped complaints, Myke's teach labels, recurse-learn query banks, and Never86 sales lead forms. Token in Grok Bot secret store."
+}
