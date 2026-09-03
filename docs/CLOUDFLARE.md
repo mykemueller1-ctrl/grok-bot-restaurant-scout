@@ -5,11 +5,11 @@ Phone OK. One fresh token → agent deploys the rest.
 ## 1. Create a fresh Cloudflare API token
 
 1. Open [dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)
-2. **Create Token** → use template **Edit Cloudflare Workers** (or custom):
-   - Account → **Workers Scripts**: Edit
-   - Account → **Workers KV Storage**: Edit (optional)
-   - Account → **D1**: Edit
-   - Account → **Account Settings**: Read (helps wrangler)
+2. **Create Token** → template **Edit Cloudflare Workers** (must say **Edit**, not Read):
+   - Account → **Workers Scripts**: **Edit**
+   - Account → **D1**: **Edit**
+   - Account → **Account Settings**: Read
+   - Do **not** use an R2-only token or a Read-everything token — deploy will auth-fail with code 10000
 3. Account resources → include account `722e0fcc05092bb2333396735d644d44`
 4. Create → **copy the token once**
 
