@@ -4,7 +4,7 @@
   "api": {
     "service": "never86-pain-leads-api",
     "host_env": "NEVER86_API_URL",
-    "default_host": "https://never86-pain-leads-api.onrender.com",
+    "default_host": "https://never86-pain-leads.vercel.app",
     "health": "/health",
     "token_env": "MCP_API_TOKEN"
   },
@@ -35,10 +35,16 @@
     }
   },
   "deploy": {
-    "primary": "render_blueprint",
+    "primary": "vercel_mcp",
+    "live_url": "https://never86-pain-leads.vercel.app",
+    "vercel_project": "never86-pain-leads",
     "blueprint_file": "render.yaml",
     "repo": "mykemueller1-ctrl/grok-bot-restaurant-scout",
-    "fallback_commerce_monorepo": "mykemueller1-ctrl/restaurant-social-commerce-engine"
+    "fallback_commerce_monorepo": "mykemueller1-ctrl/restaurant-social-commerce-engine",
+    "blockers": {
+      "supabase": "org has unpaid invoices — restore never86 project after settling",
+      "render_mcp": "unauthorized in cloud session — Blueprint ready when auth works"
+    }
   },
   "import_waves": {
     "wave_1": [

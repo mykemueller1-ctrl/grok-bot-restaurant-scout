@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/health", "destination": "/api/health" },
+    { "source": "/mcp", "destination": "/api/mcp" },
+    { "source": "/mcp/:path*", "destination": "/api/mcp" }
+  ]
+}
