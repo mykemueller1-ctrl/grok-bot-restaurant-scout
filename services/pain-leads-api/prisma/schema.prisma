@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model PainLead {
+  id               String   @id @default(cuid())
+  painId           String
+  vendorId         String?
+  category         String?
+  complaintSummary String
+  quotes           String[]
+  vendorsMentioned String[]
+  stackGuess       String[]
+  rawContext       String?
+  status           String   @default("NEEDS_TEACH")
+  teachLabel       String?
+  teachNotes       String?
+  score            Float?
+  identity         Json?
+  venue            Json?
+  sources          Json?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model SalesLead {
+  id                String   @id @default(cuid())
+  painLeadId        String?
+  painId            String
+  vendorId          String?
+  category          String?
+  accountName       String
+  complaintThesis   String
+  whyNever86Now     String
+  vendorsToDisplace String[]
+  stackGuess        String[]
+  suggestedAngle    String?
+  confidence        Float?
+  status            String   @default("DRAFT")
+  contact           Json?
+  sources           String[]
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model TeachFeedback {
+  id              String   @id @default(cuid())
+  painLeadId      String
+  painId          String?
+  label           String
+  correctedPainId String?
+  notes           String?
+  goodLooksLike   String?
+  createdAt       DateTime @default(now())
+}
+
+model VendorLearnedBank {
+  id        String   @id @default(cuid())
+  vendorId  String   @unique
+  painId    String?
+  data      Json
+  version   Int      @default(1)
+  updatedAt DateTime @updatedAt
+}
+
+model ApprovalRequest {
+  id        String   @id @default(cuid())
+  agentId   String?
+  action    String
+  payload   Json?
+  status    String   @default("PENDING")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

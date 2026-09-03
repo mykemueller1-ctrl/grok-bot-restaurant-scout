@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "purpose": "Single wiring manifest for Never86 Grok Bot agents. Cloud agents and scripts resolve this — operator does not hand-connect APIs.",
+  "api": {
+    "service": "never86-pain-leads-api",
+    "host_env": "NEVER86_API_URL",
+    "default_host": "https://never86-pain-leads-api.onrender.com",
+    "health": "/health",
+    "token_env": "MCP_API_TOKEN"
+  },
+  "grok_bot_secrets": {
+    "COMMERCE_ENGINE_URL": "${NEVER86_API_URL}",
+    "COMMERCE_ENGINE_TOKEN": "${MCP_API_TOKEN}",
+    "LEAD_SHOP_TOKEN": "${MCP_API_TOKEN}",
+    "COMPLAINT_SOURCES_TOKEN": "${MCP_API_TOKEN}",
+    "APPROVALS_TOKEN": "${MCP_API_TOKEN}",
+    "OWNER_EMAIL": "${OWNER_EMAIL}"
+  },
+  "mcp_connectors": {
+    "commerce-engine": {
+      "file": "mcp/commerce-engine.json",
+      "path": "/mcp"
+    },
+    "lead-shop": {
+      "file": "mcp/lead-shop.json",
+      "path": "/mcp/leads"
+    },
+    "complaint-sources": {
+      "file": "mcp/complaint-sources.json",
+      "path": "/mcp/sources"
+    },
+    "approvals": {
+      "file": "mcp/approvals.json",
+      "path": "/mcp/approvals"
+    }
+  },
+  "deploy": {
+    "primary": "render_blueprint",
+    "blueprint_file": "render.yaml",
+    "repo": "mykemueller1-ctrl/grok-bot-restaurant-scout",
+    "fallback_commerce_monorepo": "mykemueller1-ctrl/restaurant-social-commerce-engine"
+  },
+  "codex_cloud": {
+    "repo": "mykemueller1-ctrl/grok-bot-restaurant-scout",
+    "agents_md": "AGENTS.md",
+    "setup_script": "scripts/codex-cloud-setup.sh",
+    "docs": "docs/CODEX-CLOUD.md",
+    "secrets_manifest": "stack/github-secrets.manifest.json"
+  },
+  "cloudflare": {
+    "account_id": "722e0fcc05092bb2333396735d644d44",
+    "token_secret_name": "CLOUDFLARE_API_TOKEN",
+    "note": "Account id is public config. API token lives only in GitHub/Codex secrets — never in git."
+  },
+  "github": {
+    "actions_secrets_url": "https://github.com/mykemueller1-ctrl/grok-bot-restaurant-scout/settings/secrets/actions",
+    "secrets_manifest": "stack/github-secrets.manifest.json"
+  },
+
+  "import_waves": {
+    "wave_1": [
+      "agent/pain-shoppers/pos/toast.json",
+      "agent/pain-shoppers/pos/square.json",
+      "agent/pain-shoppers/pos/clover.json",
+      "agent/pain-shoppers/pos/lightspeed.json",
+      "agent/pain-shoppers/pos/aloha.json",
+      "agent/pain-shoppers/pos/touchbistro.json",
+      "agent/pain-shoppers/pos/spoton.json",
+      "agent/pain-shoppers/pos/par-brink.json",
+      "agent/pain-shoppers/pos/oracle-micros.json",
+      "agent/pain-shoppers/pos/skytab.json",
+      "agent/pain-shoppers/marketplace/doordash.json",
+      "agent/pain-shoppers/marketplace/uber-eats.json",
+      "agent/pain-shoppers/marketplace/grubhub.json",
+      "agent/pain-shoppers/silo/7shifts.json",
+      "agent/pain-shoppers/silo/restaurant365.json",
+      "agent/pain-shoppers/silo/marginedge.json",
+      "agent/pain-shoppers/silo/extrachef.json",
+      "agent/pain-shoppers/silo/crunchtime.json",
+      "agent/pain-shoppers/silo/marketman.json",
+      "agent/pain-shoppers/thematic/labor.json",
+      "agent/pain-shoppers/thematic/marketplace-3p.json"
+    ]
+  }
+}

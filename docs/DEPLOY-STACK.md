@@ -1,43 +1,57 @@
-# Never86 stack — deploy checklist (night of 2026-09-01)
+# Never86 stack — automated wiring
 
-## Merged to `grok-bot-restaurant-scout` main
+Operator playbook: **`docs/OPERATOR.md`**. You do not hand-connect APIs.
+
+## Self-contained in this repo
+
+| Asset | Purpose |
+| --- | --- |
+| `services/pain-leads-api/` | Fastify MCP API (leads, sources, approvals) |
+| `render.yaml` | Postgres + API — one Blueprint deploy |
+| `stack/wiring.json` | Canonical URLs, secrets map, import waves |
+| `scripts/generate-secrets.mjs` | Token + Grok Bot secret bundle |
+| `scripts/resolve-mcp-config.mjs` | Resolved MCP URLs for import |
+| `scripts/import-wave-1.sh` | Priority agent import list |
+
+## Cloud agent deploy sequence
+
+1. **Render Blueprint** — connect repo → apply `render.yaml`
+2. **Health** — `GET https://<service>/health`
+3. **Secrets** — copy `MCP_API_TOKEN` from Render env group `never86-grok-bot-stack`
+4. **Resolve** — `NEVER86_API_URL=https://... MCP_API_TOKEN=... node scripts/resolve-mcp-config.mjs`
+5. **Grok Bot** — import secrets from `stack/resolved-secrets.json`
+6. **Agents** — wave 1 via `./scripts/import-wave-1.sh`
+
+## MCP endpoints (live after deploy)
+
+| Connector | Path |
+| --- | --- |
+| lead-shop | `POST /mcp/leads` |
+| complaint-sources | `POST /mcp/sources` |
+| approvals | `POST /mcp/approvals` |
+| commerce-engine (legacy) | `POST /mcp` |
+
+Auth: `Authorization: Bearer $MCP_API_TOKEN`
+
+## Sibling repos (optional full commerce)
+
+| Repo | Role |
+| --- | --- |
+| `never86` | never86.ai site + briefing cron |
+| `restaurant-social-commerce-engine` | TikTok Shop / IG dashboard + full commerce MCP |
+
+Branch `cursor/wire-mcp-and-deploy-bc19` on commerce-engine adds pain-lead Prisma models to the monorepo API when bot push access is granted.
+
+## Merged agent work (main)
 
 - PR #3 — Restaurant Scout Never86 purpose
-- PR #4 — 238 pain-shopper agents (swarm)
-- PR #5 — MCP URLs use `${COMMERCE_ENGINE_URL}` env vars
+- PR #4 — 238 pain-shopper swarm
+- PR #5 — MCP env-based URLs
+- PR #6 — this deploy checklist (superseded by automated wiring above)
 
-## Vercel (you do once — ~3 min)
+## Grok Bot secrets (auto-resolved)
 
-Your team `myke-muellers-projects` has **no GitHub repos linked yet**. That’s why auto-import failed.
+All use the same token from Render `generateValue`:
 
-1. [vercel.com/account/settings](https://vercel.com/account/settings) → **Git** → connect GitHub
-2. Import **`mykemueller1-ctrl/never86`** → add env from `never86/.env.example` → Deploy
-3. Import **`mykemueller1-ctrl/restaurant-social-commerce-engine`** → root **`apps/web`** → Deploy
-4. API (`apps/api`) → use **Render** (see `restaurant-social-commerce-engine/docs/DEPLOY.md`)
-
-## Commerce engine MCP (ready locally, needs push)
-
-Branch `cursor/wire-mcp-and-deploy-bc19` in `restaurant-social-commerce-engine` adds:
-
-- `POST /mcp` + `POST /mcp/leads` — Grok Bot tool dispatch
-- Prisma: `PainLead`, `SalesLead`, `TeachFeedback`, `VendorLearnedBank`
-- `MCP_API_TOKEN` bearer auth
-- `docs/DEPLOY.md`
-
-Push failed from cloud agent (403). Re-run in that repo or cherry-pick commit message: *Wire MCP HTTP bridge for Grok Bot agents + pain lead storage*.
-
-## Grok Bot secrets (after API is live)
-
-| Secret | Value |
-| --- | --- |
-| `COMMERCE_ENGINE_URL` | `https://your-api.onrender.com` |
-| `COMMERCE_ENGINE_TOKEN` | same as API `MCP_API_TOKEN` |
-| `LEAD_SHOP_TOKEN` | same token |
-| `COMPLAINT_SOURCES_TOKEN` | same token (until dedicated search service) |
-
-## Morning
-
-1. Connect Vercel Git
-2. Deploy never86 + commerce web
-3. Deploy commerce API on Render + `pnpm db:push`
-4. Import pain-shopper agents from `agent/pain-shoppers/`
+- `COMMERCE_ENGINE_URL` → API host
+- `COMMERCE_ENGINE_TOKEN`, `LEAD_SHOP_TOKEN`, `COMPLAINT_SOURCES_TOKEN`, `APPROVALS_TOKEN` → `MCP_API_TOKEN`

@@ -52,6 +52,15 @@ Routine: `routines/pain-shoppers-daily.json`
 
 `commerce-engine`, `social-connector`, `complaint-sources`, `lead-shop`, `approvals`
 
+Wiring manifest: `stack/wiring.json`. Self-contained API: `services/pain-leads-api/`. Operator playbook: `docs/OPERATOR.md`.
+
+## Codex Cloud + GitHub
+
+- `AGENTS.md` — instructions Codex loads automatically
+- `docs/CODEX-CLOUD.md` — connect ChatGPT Codex → this GitHub repo (phone OK)
+- `stack/github-secrets.manifest.json` — secret **names** for GitHub Actions + Codex (values never in git)
+- `scripts/codex-cloud-setup.sh` — Codex Cloud environment setup script
+
 ## Setup
 
 See `SETUP.md`.

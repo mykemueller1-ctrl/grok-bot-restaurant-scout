@@ -1,0 +1,59 @@
+name: Validate Never86 stack
+
+on:
+  push:
+    branches: [main, "cursor/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pain-leads-api:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/pain-leads-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: services/pain-leads-api/package-lock.json
+      - run: npm install
+      - run: npm run build
+        env:
+          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+
+  wiring:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/resolve-mcp-config.mjs
+      - run: test -f stack/resolved-secrets.json
+      - name: Codex Cloud wiring present
+        run: |
+          test -f AGENTS.md
+          test -f docs/CODEX-CLOUD.md
+          test -f scripts/codex-cloud-setup.sh
+          test -f stack/github-secrets.manifest.json
+          python3 -c "import json; m=json.load(open('stack/github-secrets.manifest.json')); assert m['codex_cloud_environment']['repo'].endswith('grok-bot-restaurant-scout')"
+          python3 -c "import json; w=json.load(open('stack/wiring.json')); assert 'codex_cloud' in w and 'cloudflare' in w"
+
+  swarm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 agent/pain-shoppers/build_swarm.py
+      - run: test "$(python3 -c "import json; print(json.load(open('agent/pain-shoppers/family.json'))['agent_count'])")" = "238"
+
+  codex-setup-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: bash scripts/codex-cloud-setup.sh
