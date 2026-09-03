@@ -54,6 +54,12 @@ Routine: `routines/pain-shoppers-daily.json`
 
 Wiring manifest: `stack/wiring.json`. Self-contained API: `services/pain-leads-api/`. Operator playbook: `docs/OPERATOR.md`.
 
+## Deploy (Cloudflare — preferred)
+
+Phone guide: **`docs/CLOUDFLARE.md`**. Script: `bash scripts/cloudflare-deploy.sh` with `CLOUDFLARE_API_TOKEN`.
+
+Worker + D1 live under `services/pain-leads-api/` (`src/worker/`, `wrangler.toml`, `migrations/`).
+
 ## Codex Cloud + GitHub
 
 - `AGENTS.md` — instructions Codex loads automatically

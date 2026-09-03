@@ -35,8 +35,12 @@
     }
   },
   "deploy": {
-    "primary": "render_blueprint",
-    "blueprint_file": "render.yaml",
+    "primary": "cloudflare_workers_d1",
+    "worker_name": "never86-pain-leads-api",
+    "wrangler_file": "services/pain-leads-api/wrangler.toml",
+    "deploy_script": "scripts/cloudflare-deploy.sh",
+    "docs": "docs/CLOUDFLARE.md",
+    "fallback_render_blueprint": "render.yaml",
     "repo": "mykemueller1-ctrl/grok-bot-restaurant-scout",
     "fallback_commerce_monorepo": "mykemueller1-ctrl/restaurant-social-commerce-engine"
   },

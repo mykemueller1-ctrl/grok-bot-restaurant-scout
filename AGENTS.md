@@ -42,11 +42,12 @@ Required runtime names are listed in `stack/github-secrets.manifest.json`.
 
 ## Deploy preference
 
-1. Primary: Render Blueprint (`render.yaml`) → service `never86-pain-leads-api`
-2. Then: `NEVER86_API_URL=… MCP_API_TOKEN=… node scripts/resolve-mcp-config.mjs`
-3. Import wave 1: `./scripts/import-wave-1.sh` (Grok Bot desktop)
+1. **Primary: Cloudflare Workers + D1** — `docs/CLOUDFLARE.md` + `bash scripts/cloudflare-deploy.sh`
+2. Needs env `CLOUDFLARE_API_TOKEN` (fresh; never from a screenshot) + account `722e0fcc05092bb2333396735d644d44`
+3. Then: `NEVER86_API_URL=… MCP_API_TOKEN=… node scripts/resolve-mcp-config.mjs`
+4. Import wave 1: `./scripts/import-wave-1.sh` (Grok Bot desktop)
 
-Cloudflare account id (public) may be stored in `stack/wiring.json` under `cloudflare`. The API token itself is a secret — GitHub/Codex only.
+Fallback only: Render Blueprint (`render.yaml`). Do not use Supabase unless the operator explicitly asks.
 
 ## Do not
 
