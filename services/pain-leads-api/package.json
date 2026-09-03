@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "dev:worker": "wrangler dev",
     "build": "prisma generate && tsc",
     "start": "node dist/server.js",
     "db:push": "prisma db push",
+    "deploy:cloudflare": "bash ../../scripts/cloudflare-deploy.sh",
     "postinstall": "prisma generate"
   },
   "dependencies": {

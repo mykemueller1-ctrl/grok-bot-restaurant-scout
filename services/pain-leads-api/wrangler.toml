@@ -1,0 +1,21 @@
+name = "never86-pain-leads-api"
+main = "src/worker/index.ts"
+compatibility_date = "2026-03-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "722e0fcc05092bb2333396735d644d44"
+
+# Workers free plan — public URL: https://never86-pain-leads-api.<subdomain>.workers.dev
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "never86-pain-leads"
+# Filled by scripts/cloudflare-deploy.sh after `wrangler d1 create`
+database_id = "REPLACE_AFTER_D1_CREATE"
+migrations_dir = "migrations"
+
+[vars]
+OWNER_EMAIL = "ops@never86.ai"
+
+# Secrets (set via wrangler, never commit):
+#   npx wrangler secret put MCP_API_TOKEN
