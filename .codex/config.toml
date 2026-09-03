@@ -1,0 +1,8 @@
+# Project-scoped Codex defaults for Never86 Grok Bot.
+# Loaded only when this project is trusted in Codex.
+
+[project]
+# Prefer repo AGENTS.md over ad-hoc prompting.
+
+[features]
+# Keep defaults; override in Codex Cloud UI if needed.

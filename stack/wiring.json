@@ -40,6 +40,23 @@
     "repo": "mykemueller1-ctrl/grok-bot-restaurant-scout",
     "fallback_commerce_monorepo": "mykemueller1-ctrl/restaurant-social-commerce-engine"
   },
+  "codex_cloud": {
+    "repo": "mykemueller1-ctrl/grok-bot-restaurant-scout",
+    "agents_md": "AGENTS.md",
+    "setup_script": "scripts/codex-cloud-setup.sh",
+    "docs": "docs/CODEX-CLOUD.md",
+    "secrets_manifest": "stack/github-secrets.manifest.json"
+  },
+  "cloudflare": {
+    "account_id": "722e0fcc05092bb2333396735d644d44",
+    "token_secret_name": "CLOUDFLARE_API_TOKEN",
+    "note": "Account id is public config. API token lives only in GitHub/Codex secrets — never in git."
+  },
+  "github": {
+    "actions_secrets_url": "https://github.com/mykemueller1-ctrl/grok-bot-restaurant-scout/settings/secrets/actions",
+    "secrets_manifest": "stack/github-secrets.manifest.json"
+  },
+
   "import_waves": {
     "wave_1": [
       "agent/pain-shoppers/pos/toast.json",

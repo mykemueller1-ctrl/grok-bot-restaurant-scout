@@ -3,3 +3,8 @@ services/pain-leads-api/node_modules/
 services/pain-leads-api/dist/
 services/pain-leads-api/.env
 commerce-engine-tmp/
+.env
+.env.*
+!.env.example
+*.pem
+.codex/auth.json

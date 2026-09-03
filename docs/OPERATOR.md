@@ -45,6 +45,10 @@ Each label updates vendor phrase banks (`VendorLearnedBank`). Wrong-pain routes 
 
 Edit `agent/pain-shoppers/build_swarm.py` or `vendors/catalog.json` → `python3 agent/pain-shoppers/build_swarm.py` → import new JSON.
 
+## Codex Cloud (GitHub)
+
+Phone steps: **`docs/CODEX-CLOUD.md`**. Repo already has `AGENTS.md` + setup script. You only install the Codex GitHub App and paste secrets into GitHub/Codex UIs — never into chat.
+
 ## If Render Blueprint is not connected yet
 
 The API code is self-contained in this repo. A cloud agent with Render MCP auth runs:
