@@ -11,7 +11,7 @@ workers_dev = true
 binding = "DB"
 database_name = "never86-pain-leads"
 # Filled by scripts/cloudflare-deploy.sh after `wrangler d1 create`
-database_id = "REPLACE_AFTER_D1_CREATE"
+database_id = "61063643-7a8b-4384-a18d-5ce30d3d5cd2"
 migrations_dir = "migrations"
 
 [vars]

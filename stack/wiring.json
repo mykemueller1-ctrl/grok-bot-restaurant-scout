@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "purpose": "Single wiring manifest for Never86 Grok Bot agents. Cloud agents and scripts resolve this — operator does not hand-connect APIs.",
+  "purpose": "Single wiring manifest for Never86 Grok Bot agents. Cloud agents and scripts resolve this \u2014 operator does not hand-connect APIs.",
   "api": {
     "service": "never86-pain-leads-api",
     "host_env": "NEVER86_API_URL",
-    "default_host": "https://never86-pain-leads-api.onrender.com",
+    "default_host": "https://never86-pain-leads-api.never86.workers.dev",
     "health": "/health",
     "token_env": "MCP_API_TOKEN"
   },
@@ -54,13 +54,14 @@
   "cloudflare": {
     "account_id": "722e0fcc05092bb2333396735d644d44",
     "token_secret_name": "CLOUDFLARE_API_TOKEN",
-    "note": "Account id is public config. API token lives only in GitHub/Codex secrets — never in git."
+    "note": "Account id is public config. API token lives only in GitHub/Codex secrets \u2014 never in git.",
+    "d1_database_id": "61063643-7a8b-4384-a18d-5ce30d3d5cd2",
+    "worker_url": "https://never86-pain-leads-api.never86.workers.dev"
   },
   "github": {
     "actions_secrets_url": "https://github.com/mykemueller1-ctrl/grok-bot-restaurant-scout/settings/secrets/actions",
     "secrets_manifest": "stack/github-secrets.manifest.json"
   },
-
   "import_waves": {
     "wave_1": [
       "agent/pain-shoppers/pos/toast.json",
