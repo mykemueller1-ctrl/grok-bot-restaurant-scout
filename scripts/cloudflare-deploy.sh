@@ -18,9 +18,10 @@ export CLOUDFLARE_ACCOUNT_ID="$ACCOUNT_ID"
 
 cd "$API"
 
-echo "==> Verifying Cloudflare token"
-VERIFY=$(curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" https://api.cloudflare.com/client/v4/user/tokens/verify)
-echo "$VERIFY" | python3 -c "import json,sys;d=json.load(sys.stdin);assert d.get('success'), d; print('token ok:', d['result']['status'])"
+echo "==> Verifying Cloudflare token (account API)"
+ACCOUNT_JSON=$(curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}")
+echo "$ACCOUNT_JSON" | python3 -c "import json,sys;d=json.load(sys.stdin);assert d.get('success'), d; print('account ok:', d['result'].get('name'))"
 
 echo "==> Ensuring D1 database never86-pain-leads"
 DB_LIST=$(npx --yes wrangler d1 list --json 2>/dev/null || npx --yes wrangler d1 list)
