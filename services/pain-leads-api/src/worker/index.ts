@@ -1,7 +1,20 @@
 /**
  * Cloudflare Worker entry — Never86 pain-leads MCP API on D1.
  * Same routes as the Fastify/Render service: /health, /mcp, /mcp/leads|sources|approvals
+ * Compiled by Wrangler (excluded from Node `tsc` build).
  */
+
+/** Minimal D1 typings so this file is self-contained without @cloudflare/workers-types. */
+interface D1PreparedStatement {
+  bind(...values: unknown[]): D1PreparedStatement;
+  first<T = Record<string, unknown>>(): Promise<T | null>;
+  run(): Promise<unknown>;
+  all<T = Record<string, unknown>>(): Promise<{ results: T[] }>;
+}
+interface D1Database {
+  prepare(query: string): D1PreparedStatement;
+}
+
 export interface Env {
   DB: D1Database;
   MCP_API_TOKEN?: string;
@@ -114,12 +127,12 @@ async function dispatchLead(db: D1Database, tool: string, args: Record<string, u
           .prepare(`SELECT * FROM PainLead WHERE painId = ? ORDER BY createdAt DESC LIMIT 50`)
           .bind(String(args.pain_id))
           .all()
-          .then((r) => r.results);
+          .then((r: { results: unknown[] }) => r.results);
       }
       return db
         .prepare(`SELECT * FROM PainLead ORDER BY createdAt DESC LIMIT 50`)
         .all()
-        .then((r) => r.results);
+        .then((r: { results: unknown[] }) => r.results);
     }
     case "save_teach_feedback": {
       const rowId = id();
@@ -202,7 +215,7 @@ async function dispatchLead(db: D1Database, tool: string, args: Record<string, u
       return db
         .prepare(`SELECT * FROM SalesLead ORDER BY createdAt DESC LIMIT 50`)
         .all()
-        .then((r) => r.results);
+        .then((r: { results: unknown[] }) => r.results);
     case "merge_leads":
     case "list_vendor_aliases":
     case "record_vendor_phrase":
