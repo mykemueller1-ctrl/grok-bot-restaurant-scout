@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-maitre-d-mcp-resy-opentable-watch",
+  "lane": "cursor_agents",
+  "name": "Ma\u00eetre d'MCP Resy/OpenTable reservation Cursor",
+  "verdict": "watch",
+  "summary": "NEW: conare.ai Ma\u00eetre d'MCP \u2014 Cursor/Claude MCP for Google Places discovery + Resy/OpenTable availability/booking (dietary + weather awareness). Reservation-skew adjacent for love teach (G&TG OpenTable); not Meta FBE; auth-first; fee pause.",
+  "researched_at": "2026-09-05T00:00:00.000Z",
+  "sources": [
+    "https://conare.ai/marketplace/mcp/maitre-d-mcp",
+    "https://glama.ai/mcp/servers/devingoodsell/matire-d-mcp"
+  ],
+  "memory_tags": [
+    "maitre-d-mcp",
+    "resy",
+    "opentable",
+    "cursor-mcp",
+    "reservation-skew"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass4",
+  "lane": "vertical_gtm",
+  "name": "Deliverect + Zyda + ChatFood + Flipdish Meta Order Food pass-4",
+  "verdict": "adopt",
+  "summary": "Live FETCH pass-4: Deliverect Direct Suite IG + FB Start Order (Jul 15 2026) still live. Zyda FBE + ChatFood IG Order Food + Flipdish Instagram sticker docs still live. Meta Hatch BI memo still live (order food + book tables \u2014 Shop rival, not FBE). peer_count stays 9.",
+  "researched_at": "2026-09-05T00:00:00.000Z",
+  "sources": [
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://help.deliverect.com/en/articles/9197029-direct-suite-add-a-start-order-button-on-a-facebook-page",
+    "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://help.flipdish.com/en/articles/9585449-link-to-your-flipdish-online-ordering-page-directly-from-instagram-posts",
+    "https://www.businessinsider.com/meta-hatch-personal-ai-agent-capabilities-employees-memo-2026-8"
+  ],
+  "notes": "peer_count stays 9 \u2014 Hatch not FBE"
+}

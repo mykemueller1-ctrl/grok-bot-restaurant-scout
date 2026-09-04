@@ -1,5 +1,5 @@
 {
-  "version": "1.92.84",
+  "version": "1.92.85",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp pass-19 + Deliverect Meta + Menami MCP + Ma\u00eetre d'MCP + CTA",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold. Deliverect/Zyda/ChatFood/Flipdish Meta live; Hatch Shop rival \u2014 peer_count stays 9. NEW Menami @menami/mcp-server for Cursor agents + Ma\u00eetre d'MCP Resy/OpenTable; Ressto/Ontabee CTA not FBE",
+      "verdict": "adopt"
+    },
     {
       "item": "Yelp pass-18 + Toast/Square/Bento/Kyte Meta + restaurant-mcp + MENA WA 0%",
       "lane": "vertical_gtm",
@@ -3468,5 +3474,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T23:45:00Z"
+  "updated_at": "2026-09-05T00:05:00Z"
 }

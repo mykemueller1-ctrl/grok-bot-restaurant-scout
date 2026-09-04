@@ -1228,3 +1228,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk__OovTZxuxr9j (~10 min).
 - Ledger v1.92.84. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-19 + Deliverect Meta + Menami/Maître d MCP)
+
+- Yelp pass-19 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass19.json`.
+- Adopted love rails reconfirm. Finding: `2026-09-04-love-rails-pass-yelp19.json`.
+- Reconfirmed Deliverect/Zyda/ChatFood/Flipdish Meta + Hatch Shop rival — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass4.json`.
+- Watched **Menami MCP** (@menami/mcp-server Cursor agents) + **Maître d'MCP** (Resy/OpenTable) + Ressto/Ontabee CTA (not FBE). Findings: `2026-09-04-menami-mcp-agents-watch.json`, `2026-09-04-maitre-d-mcp-resy-opentable-watch.json`, `2026-09-04-ressto-ontabee-cta-reconfirm-pass3.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_h2OMNCNRLeQ9 (~10 min).
+- Ledger v1.92.85. Auth still blocked for unlock READY.
+
