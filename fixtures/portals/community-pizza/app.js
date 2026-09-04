@@ -5,6 +5,7 @@
   let door = null;
   let seatsDoc = null;
   let salesDoc = null;
+  let driveLib = null;
 
   async function boot() {
     await Never86Portal.loadTenantBound(VENUE);
@@ -33,8 +34,10 @@
   async function loadProtected(loginId) {
     seatsDoc = await Never86Portal.api.venueJson(VENUE, "seats.json");
     salesDoc = await Never86Portal.api.venueJson(VENUE, "data/historical-sales.json");
+    driveLib = await Never86Portal.api.venueJson(VENUE, "data/drive-library.json");
     Never86Portal.assertOwnData(seatsDoc, VENUE, "seats");
     Never86Portal.assertOwnData(salesDoc, VENUE, "historical-sales");
+    Never86Portal.assertOwnData(driveLib, VENUE, "drive-library");
     renderDesk(loginId);
   }
 
@@ -81,7 +84,34 @@
           <div class="stat"><b>${Never86Portal.money(live.week_labor_total)}</b><span>Week labor so far</span></div>
           <div class="stat"><b>${recent.length ? Never86Portal.money(recent[0].grandTotal) : "—"}</b><span>Latest sample Z ${recent[0]?.label || ""}</span></div>
         </div>
-        <p class="lock">Archive only: ${archive.folder} · ${Never86Portal.money(archive.week_grand_total)} prior-year pack.</p>
+        <p class="lock">Drive sync ${salesDoc.drive_synced_at || "—"} · Archive ${archive.folder}: ${Never86Portal.money(archive.week_grand_total)} · labor ${Never86Portal.money(archive.week_labor_total)}</p>
+        <div class="stats" style="margin-top:12px">
+          ${(archive.days || [])
+            .map(
+              (d) =>
+                `<div class="stat"><b>${Never86Portal.money(d.grandTotal)}</b><span>${d.label} · labor ${Never86Portal.money(d.labor)}</span></div>`
+            )
+            .join("")}
+        </div>
+      </section>
+      <section class="sales" style="margin-top:14px">
+        <h3>Google Drive → Community</h3>
+        <p>${(driveLib.packs || []).length} packs pulled from ${driveLib.drive_account}. Exclusive to this house.</p>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+          ${(driveLib.packs || [])
+            .map(
+              (p) => `
+            <article class="seat">
+              <div class="badge paid">${p.kind}</div>
+              <h2 style="font-size:16px">${p.title}</h2>
+              <ul>${(p.files || [])
+                .slice(0, 4)
+                .map((f) => `<li>${f.title || f.date || f.id}</li>`)
+                .join("")}</ul>
+            </article>`
+            )
+            .join("")}
+        </div>
       </section>
     `;
     document.getElementById("signout").onclick = async () => {

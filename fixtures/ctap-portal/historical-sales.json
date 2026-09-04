@@ -4,9 +4,10 @@
   "as_of": "2026-09-04",
   "note": "As of Fri 2026-09-04 only. Live book is the Sun\u2013Sat week that contains today. Do not treat the Sep 2025 Drive pack as this week.",
   "sources": [
-    "fixtures/toast/drive-ctap-index.json",
-    "Drive: ZReport_Summary Community Pizza (7-15 + 7-16-2026)",
-    "Drive archive: Ctap Weekly sales 9-14-25 to 9-20-25 (prior year \u2014 not live)"
+    "Google Drive live pull (communitypizza2026@gmail.com)",
+    "fixtures/portals/community-pizza/data/drive-library.json",
+    "Drive folder: Ctap Weekly sales 9-14-25 to 9-20-25",
+    "Drive: ZReport_Summary 7-15 + 7-16-2026"
   ],
   "live_book": {
     "start": "2026-08-31",
@@ -65,7 +66,8 @@
           "name": "Table",
           "amount": 2267.59
         }
-      ]
+      ],
+      "drive_file_id": "1enGB2QwbyBo7xib8x7CSQrFqWVDzFWcx"
     },
     {
       "date": "2026-07-16",
@@ -96,7 +98,8 @@
           "name": "Table",
           "amount": 2089.08
         }
-      ]
+      ],
+      "drive_file_id": "18rBcvrJt5tNBwtqe_b1o4qEVBTEGCqka"
     }
   ],
   "archive_week_2025_09": {
@@ -113,10 +116,11 @@
         "beerSales": 1024,
         "liquorSales": 586.5,
         "largePizzaSales": 959.22,
-        "labor": 1698.18,
+        "labor": 1518.44,
         "expectedCash": 1727.81,
         "actualDeposit": 1727.81,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "1IC31VS0cMXY_On3uCAwkVTHePJDo1xS1"
       },
       {
         "date": "2025-09-15",
@@ -130,7 +134,8 @@
         "labor": 1197.7,
         "expectedCash": 651.6,
         "actualDeposit": 0,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "1VM2TTF18sI0nTo5gfyGVd4-qgYBlNrjl"
       },
       {
         "date": "2025-09-16",
@@ -144,7 +149,8 @@
         "labor": 1312.66,
         "expectedCash": 1166.8,
         "actualDeposit": 1166.8,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "1XXxGYE-09CicfknFtm2fiHR114s0U9I4"
       },
       {
         "date": "2025-09-17",
@@ -158,7 +164,8 @@
         "labor": 1305.88,
         "expectedCash": 824.47,
         "actualDeposit": 824.47,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "1ZrCXY2CokyFUo_ddUqO2TUFS6o-A-ZGi"
       },
       {
         "date": "2025-09-18",
@@ -172,7 +179,8 @@
         "labor": 1654.37,
         "expectedCash": 713.04,
         "actualDeposit": 713.04,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "1VZcaPEk2L3XOUcYXWx9DsrvWUGABhKRU"
       },
       {
         "date": "2025-09-19",
@@ -186,7 +194,8 @@
         "labor": 2143.37,
         "expectedCash": 2325.5,
         "actualDeposit": 0,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "1_Jezqkzooaun5RqOtU--XwIpihvqsYaB"
       },
       {
         "date": "2025-09-20",
@@ -200,12 +209,31 @@
         "labor": 1929.9,
         "expectedCash": 1501.05,
         "actualDeposit": 0,
-        "channels": []
+        "channels": [],
+        "drive_file_id": "13fe_oCwz3vvVMYKmd4i_YjT3ichXg82F"
       }
     ],
     "week_grand_total": 40274.06,
-    "week_labor_total": 11242.06,
+    "week_labor_total": 11062.32,
     "kind": "archive",
-    "note": "Prior-year Drive pack (Sep 2025). Not the live book \u2014 today is only 2026-09-04."
-  }
+    "note": "Prior-year Drive pack (Sep 2025). Not the live book \u2014 today is only 2026-09-04.",
+    "drive_verified": true
+  },
+  "drive_synced_at": "2026-09-04T18:27:25Z",
+  "extra_z": [
+    {
+      "date": "2025-10-05",
+      "label": "Sun 10/5",
+      "source": "10-5-2025 Historical_Prev_Day_Z_Report",
+      "drive_file_id": "1h1zV2SwSY8skarpH1W-aVNzLGmjFZuzB",
+      "grandTotal": 8106.25,
+      "foodSales": 3831.98,
+      "beerSales": 1062.02,
+      "liquorSales": 859.0,
+      "largePizzaSales": 1582.58,
+      "labor": 1698.18,
+      "expectedCash": 1954.19,
+      "actualDeposit": 1954.19
+    }
+  ]
 }
