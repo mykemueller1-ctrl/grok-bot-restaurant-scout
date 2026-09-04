@@ -1,17 +1,12 @@
 {
   "finding_id": "uber-webshop-fee-saleslead-5-market-2026-09",
-  "date": "2026-09-04",
-  "name": "Uber Webshop 2.5%+$0.29 SalesLead dogfood across 5 love markets",
-  "vendor_or_project": "Uber Webshop",
   "lane": "vertical_gtm",
+  "name": "Uber Webshop 2.5%+$0.29 processing SalesLead dogfood across 5 love markets",
   "verdict": "adopt",
-  "summary": "Primary merchants.ubereats.com/us/en/pricing Webshop 2.5% order processing + $0.29/order → pain-to-sales-uber-webshop-fee-* ×5; strong_keep 53.",
-  "what_it_does": "Uber Webshop 2.5%+$0.29 under commission-free claim → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
-  "how_competitors_use_it": "Uber pitches commission-free Webshop direct OO while publishing 2.5% order processing fee + $0.29 per order.",
-  "what_we_use_today": "marketplace_direct_zero already covers Webshop 0% commission narrative; this dogfood teaches the published processing fee leak",
-  "gap": "Closed — first_party_pct_fee widened for 2.5% order processing; validate-uber-webshop-fee-dogfood ≥5",
-  "sources": [
+  "priority": 1,
+  "summary": "Primary merchants.ubereats.com/us/en/pricing Webshop 2.5%+$0.29 \u2192 pain-to-sales-uber-webshop-fee-* \u00d75; strong_keep 53.",
+  "researched_at": "2026-09-04",
+  "urls": [
     "https://merchants.ubereats.com/us/en/pricing/"
-  ],
-  "never": "Not forecasting research."
+  ]
 }
