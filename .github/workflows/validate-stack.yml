@@ -339,7 +339,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'Olo Order with Google Fee is 5% charged on the subtotal vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'Menufy charges a $1.75 convenience fee per order on direct OO vs DoorDash Marketplace 25%' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Flipdish charges order fees as a flat rate of €0.50 plus percentage per order vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
-          node scripts/score-marketplace-keep.mjs 'BentoBox QR Order & Pay charges a $0.99 diner fee per order vs DoorDash Marketplace 25% KEEP' | grep -q guest_paid_platform_fee
+          node scripts/score-marketplace-keep.mjs 'BentoBox QR Order & Pay charges a $0.99 diner fee per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q guest_paid_platform_fee
           node scripts/score-marketplace-keep.mjs 'DoorDash Online Ordering is 0% commission on direct orders — Marketplace still 25%' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'Uber Webshop is commission-free on direct orders — Grubhub Direct skips marketing commissions' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25%' | grep -q social_shop_fee
