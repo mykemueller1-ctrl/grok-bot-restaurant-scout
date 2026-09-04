@@ -46,6 +46,7 @@ console.log("active_buy_now: fixtures/tool-hunt/script-draft-{franklin,husk,rioj
 console.log("active_keep_scorer: scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs");
 console.log("active_sales_dogfood: girl-goat + franklin + miami-michaels-genuine + nashville-husk + denver-rioja");
 console.log("active_buy_now_gate: scripts/validate-buy-now-dogfood.mjs");
+console.log("active_market_coverage_gate: scripts/validate-market-coverage.mjs");
 console.log("active_keep_grader_pilot: scripts/keep-channel-grader.mjs");
 console.log("active_brief: node scripts/tool-hunt-brief.mjs --write");
 console.log("next: skills in routines/tool-hunt-weekly.json → write ToolFinding JSON → update ledger");

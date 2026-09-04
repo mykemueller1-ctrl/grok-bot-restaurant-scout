@@ -48,6 +48,7 @@ Vertical AI moves weekly. Guessing loses. This loop:
 | `scripts/unlock-beyond-the-hunt.mjs` | After READY: Mem0 import + Context smoke |
 | `scripts/context-search.mjs` | Context REST research when `CONTEXT_DEV_API_KEY` set |
 | `scripts/mem0-smoke.mjs` | Mem0 smoke when `MEM0_API_KEY` set |
+| `scripts/validate-market-coverage.mjs` | CI: love↔keep-grader↔script↔catalog per CHI/ATX/MIA/BNA/DEN |
 
 ## Desktop unlocks (cloud agents cannot click these)
 

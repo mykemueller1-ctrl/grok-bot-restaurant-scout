@@ -122,6 +122,7 @@ jobs:
           test -f scripts/score-pain-fixtures.mjs
           test -f scripts/validate-love-fixtures.mjs
           test -f scripts/validate-buy-now-dogfood.mjs
+          test -f scripts/validate-market-coverage.mjs
           test -f scripts/keep-channel-grader.mjs
           test -f scripts/validate-keep-grader-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
@@ -148,6 +149,7 @@ jobs:
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 11'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
+          node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then

@@ -1,5 +1,5 @@
 {
-  "version": "1.33.0",
+  "version": "1.34.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -87,6 +87,7 @@
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
+    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
@@ -581,6 +582,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "5-market coverage validator (love↔grader↔buy-now)",
+      "lane": "vertical_gtm",
+      "why": "CI gate keeps CHI/ATX/MIA/BNA/DEN chains aligned by market+yelp_alias",
+      "verdict": "adopt"
+    },
     {
       "item": "Buy-now script+catalog dogfood across 5 love markets",
       "lane": "vertical_gtm",

@@ -239,3 +239,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added script-draft + catalog-sync for Girl & The Goat (CHI) and Michael's Genuine (MIA).
 - validate-buy-now-dogfood gate ≥5 (matches love markets).
 - Ledger v1.33.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (5-market coverage validator)
+
+- Added scripts/validate-market-coverage.mjs — love↔keep-grader↔script-draft↔catalog-sync per CHI/ATX/MIA/BNA/DEN (shared yelp_alias).
+- Wired into validate-stack.yml CI.
+- Ledger v1.34.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
