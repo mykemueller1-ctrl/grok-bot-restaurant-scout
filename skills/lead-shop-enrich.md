@@ -14,7 +14,7 @@
    - Public contact surfaces only
 2. **Public venue enrichment (adopted — Active, no Apollo required):**
    - Composio `YELP_SEARCH_BUSINESSES` → `YELP_GET_BUSINESS_DETAILS` (phone, website, address)
-   - When a phone is already known (love fixtures / complaint stubs): `YELP_SEARCH_BY_PHONE` (E.164) to resolve alias + identity fast — live 2026-09-04: Franklin ATX, Husk BNA, Rioja DEN
+   - When a phone is already known (love fixtures / complaint stubs): `YELP_SEARCH_BY_PHONE` (E.164) to resolve alias + identity fast — live 2026-09-04 all 5 markets: G&TG CHI, Franklin ATX, Michaels MIA, Husk BNA, Rioja DEN
    - `COMPOSIO_SEARCH_GOOGLE_MAPS` to disambiguate / confirm operational status
    - `COMPOSIO_SEARCH_WEB` + optional `COMPOSIO_SEARCH_FETCH_URL_CONTENT` for public email / contact page (never invent contacts)
    - When Apollo/Clay become desktop-auth’d, use them as a second pass — not a blocker

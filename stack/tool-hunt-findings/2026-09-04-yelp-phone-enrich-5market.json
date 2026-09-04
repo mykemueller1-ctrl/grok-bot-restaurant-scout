@@ -1,0 +1,25 @@
+{
+  "finding_id": "yelp-phone-enrich-5market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Yelp phone enrich all 5 love markets (CHI/ATX/MIA/BNA/DEN)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio YELP_SEARCH_BY_PHONE resolves all five primary love seeds from fixture phones — Girl & The Goat, Franklin, Michaels Genuine, Husk, Rioja. Pain→sales identity enrich is Active across the full morning-scan market set without Apollo/Clay/Mem0.",
+  "researched_at": "2026-09-04",
+  "live_proof": {
+    "chi": {"phone": "+13124926262", "alias": "girl-and-the-goat-chicago", "review_count": 10732},
+    "atx": {"phone": "+15126531187", "alias": "franklin-barbecue-austin", "review_count": 6477},
+    "mia": {"phone": "+13056760894", "alias": "michaels-genuine-food-and-drink-miami", "review_count": 2084},
+    "bna": {"phone": "+16152566565", "alias": "husk-nashville", "review_count": 1987},
+    "den": {"phone": "+13038202282", "alias": "rioja-denver", "review_count": 2915}
+  },
+  "urls": [
+    "skills/lead-shop-enrich.md",
+    "fixtures/tool-hunt/chicago-love-brands.json",
+    "fixtures/tool-hunt/austin-love-brands.json",
+    "fixtures/tool-hunt/miami-love-brands.json",
+    "fixtures/tool-hunt/nashville-love-brands.json",
+    "fixtures/tool-hunt/denver-love-brands.json"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting."
+}

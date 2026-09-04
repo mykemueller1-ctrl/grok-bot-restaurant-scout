@@ -720,3 +720,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Live `YELP_SEARCH_BY_PHONE`: Franklin ATX, Husk BNA, Rioja DEN (2915). Finding: `2026-09-04-yelp-phone-enrich-multi-market.json`.
 - `lead-shop-enrich` + `sales-lead-form` teach phone-first enrich. Ledger v1.92.17. Auth still blocked.
+
+### 2026-09-04 (5-market Yelp phone enrich complete)
+
+- Phone enrich now covers all 5 primaries: G&TG CHI 10732 · Franklin ATX · Michaels MIA · Husk BNA · Rioja DEN. Finding: `2026-09-04-yelp-phone-enrich-5market.json`.
+- Ledger v1.92.18. Still blocked on Mem0/Context for unlock READY.
