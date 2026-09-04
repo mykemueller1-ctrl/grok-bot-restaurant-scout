@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-nullmark-webview-applepay-watch",
+  "lane": "vertical_gtm",
+  "name": "NullMark in-app browser Apple Pay escape (linkboo-class)",
+  "verdict": "watch",
+  "summary": "NEW watch: nullmark.tech guide (Apr 6 2026) \u2014 IG/TikTok WKWebView blocks Payment Request API so Apple Pay disappears; smart-link forces Safari/Chrome. linkboo-class webview cliff for love\u2192buy-now; Shop wedge; fee pause; not Meta FBE.",
+  "researched_at": "2026-09-04T22:40:00.000Z",
+  "sources": [
+    "https://nullmark.tech/guides/apple-pay-in-app-browser",
+    "COMPOSIO_SEARCH_WEB NullMark Apple Pay in-app browser"
+  ],
+  "memory_tags": [
+    "nullmark",
+    "webview",
+    "apple-pay",
+    "linkboo-class"
+  ]
+}

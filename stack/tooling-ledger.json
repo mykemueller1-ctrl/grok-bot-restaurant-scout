@@ -1,5 +1,5 @@
 {
-  "version": "1.92.80",
+  "version": "1.92.81",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp pass-15 + love rails + Deliverect/Zyda/ChatFood/Flipdish Meta + AnythingMCP/NullMark/Hatch",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold (Franklin preorder+Shopify; Michaels UberEats+DoorDash leak; G&TG OpenTable skew; Husk Toast gift; Rioja Flavor Dojo). Deliverect/Zyda/ChatFood/Flipdish Meta docs live; Uber IG Delivery rent contrast \u2014 peer_count stays 9. NEW AnythingMCP WA\u2192Cursor + NullMark webview Apple Pay escape; Hatch BI Shop rival reconfirm (not FBE)",
+      "verdict": "adopt"
+    },
     {
       "item": "Yelp pass-14 + love rails + Toast/Square/Bento/Kyte Meta + WebMCP/GMaps MCP",
       "lane": "vertical_gtm",
@@ -3444,5 +3450,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T23:20:00Z"
+  "updated_at": "2026-09-04T22:45:00Z"
 }

@@ -1,0 +1,11 @@
+{
+  "finding_id": "2026-09-04-uber-ig-delivery-rent-reconfirm-pass2",
+  "lane": "vertical_gtm",
+  "name": "Uber Eats IG Delivery Button+Sticker rent contrast pass-2",
+  "verdict": "adopt",
+  "summary": "help.uber.com Instagram Delivery Button + Sticker still live \u2014 IG Order Now/sticker \u2192 Uber Eats menu = marketplace rent contrast vs first-party FBE. Teach love\u2192buy-now; do NOT bump meta_order_food_peer_count (stays 9).",
+  "researched_at": "2026-09-04T22:40:00.000Z",
+  "sources": [
+    "https://help.uber.com/merchants-and-restaurants/article/instagram-delivery-button-+-sticker?nodeId=92d1fcbf-1b65-4a79-9a16-690710e90046"
+  ]
+}

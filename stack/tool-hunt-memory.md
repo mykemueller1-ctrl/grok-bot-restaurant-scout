@@ -1188,3 +1188,14 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_0Hn7EPypFJJ6 (~10 min).
 - Ledger v1.92.80. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-15 + Meta peers + AnythingMCP/NullMark)
+
+- Yelp pass-15 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass15.json`.
+- Adopted love rails reconfirm (Franklin preorder+Shopify; Michaels UberEats+DoorDash leak; G&TG OpenTable skew; Husk Toast gift; Rioja Flavor Dojo). Finding: `2026-09-04-love-rails-pass-yelp15.json`.
+- Reconfirmed Deliverect Direct Suite IG + FB Start Order (Jul 15 2026) + Zyda FBE + ChatFood IG + Flipdish bounce — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass2.json`.
+- Uber IG Delivery Button + Sticker rent contrast reconfirm (not FBE). Finding: `2026-09-04-uber-ig-delivery-rent-reconfirm-pass2.json`.
+- Watched **AnythingMCP** WA→Cursor MCP + **NullMark** IG webview Apple Pay escape (linkboo-class). Findings: `2026-09-04-anythingmcp-wa-cursor-watch.json`, `2026-09-04-nullmark-webview-applepay-watch.json`.
+- Meta Hatch BI memo Shop rival reconfirm pass-3 — not FBE. Finding: `2026-09-04-meta-hatch-bi-reconfirm-pass3.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_UWlxjL4Y-2uI (~10 min).
+- Ledger v1.92.81. Auth still blocked for unlock READY.
+
