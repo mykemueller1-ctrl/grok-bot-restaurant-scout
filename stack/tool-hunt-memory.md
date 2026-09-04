@@ -310,3 +310,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fixed ToolFinding schema (`finding_id` + `researched_at`) on keep-grader / Shop-hike / RestauNax findings — unblocks validate-tooling-ledger CI.
 - Watched KwickOS KwickMenu (POS-bundled 0% OO) + Otter commission-free OO (watch per-order txn fee KEEP leak). Skip Otter labor.
 - Ledger v1.44.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Otter per-order fee pain-scan adopt)
+
+- Adopted pain-scan-otter-per-order.json → `per_order_platform_fee` (strong_keep 17).
+- Morning-scan / script-draft / sales-lead-form teach Shop 6% (watch ~8%) + Otter/KwickOS/RestauNax peers.
+- Ledger v1.45.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

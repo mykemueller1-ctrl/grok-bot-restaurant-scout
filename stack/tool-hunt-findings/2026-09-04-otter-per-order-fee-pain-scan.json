@@ -1,0 +1,22 @@
+{
+  "finding_id": "otter-per-order-fee-pain-scan-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Otter per-order txn fee → pain-scan KEEP dogfood",
+  "vendor_or_project": "Otter",
+  "urls": [
+    "https://www.tryotter.com/products/online-ordering",
+    "https://www.tryotter.com/pricing-details-pos",
+    "https://www.fooderise.com/en/blog/tryotter-frais-transaction-vrais-couts-restaurateurs-2026",
+    "fixtures/tool-hunt/pain-scan-otter-per-order.json"
+  ],
+  "what_it_does": "Otter pitches commission-free direct OO while Advanced/POS bundles can still charge per-order transaction fees on top of processing.",
+  "how_competitors_use_it": "Anti-DoorDash KEEP messaging with aggregator tablet; fee stack may still skim KEEP like BentoBox/UpMenu per-order patterns.",
+  "what_we_use_today": "per_order_platform_fee KEEP signal + new pain-scan-otter-per-order.json; contrast vs Shop ~6% buy-now",
+  "gap": "Exact US txn fee often quote-based — teach the pattern, not a single published rate",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted Otter per-order fee KEEP pain fixture (strong_keep +1). Skip Otter labor/forecast. Auth still blocked.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

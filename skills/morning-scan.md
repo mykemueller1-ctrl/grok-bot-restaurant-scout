@@ -2,7 +2,7 @@
 
 **Trigger:** daily 07:00 local time (routine).
 
-**Goal:** Find chef-driven / already-loved food brands (UGC proof) that fit **Never86 buy-now** — shoppable TikTok/IG without DoorDash-style marketplace rent. Teach KEEP math: TikTok Shop US ~6% referral (`social_shop_fee`) vs Marketplace 15–30%. Not cold websites. Not forecasting targets.
+**Goal:** Find chef-driven / already-loved food brands (UGC proof) that fit **Never86 buy-now** — shoppable TikTok/IG without DoorDash-style marketplace rent. Teach KEEP math: TikTok Shop US ~6% referral (`social_shop_fee`; watch Oct 2026 ~8% reports) vs Marketplace 15–30%. Not cold websites. Not forecasting targets.
 
 1. Read configured city + cuisine tags from the commerce engine.
 2. Discover love signals:
@@ -15,8 +15,8 @@
    - hook summary + why people love it (UGC signal)
    - brand / kitchen name if identifiable
    - source URL, score (0–100)
-   - Never86 fit note: shoppable SKU potential vs marketplace-only vibe; Shop ~6% KEEP vs delivery rent
-   - Rival wedge check: would Owner/Dinevate/Trenz/Menami/Deonde/SWIPEBY/OPA!/Toast OO first-party OS, TextOrder/Ainisa/Ordr DM ordering, Seekadu reservation DMs, Moast Shopify UGC widgets, Seekeasy creator discovery, Klikit Shop POS, or generic AI menu-video (Feedo/PlateAI/Flik/Mooz) own this better — or does **shoppable buy-now + cult proof** win?
+   - Never86 fit note: shoppable SKU potential vs marketplace-only vibe; Shop ~6% KEEP vs delivery rent (watch ~8%)
+   - Rival wedge check: would Owner/Dinevate/Trenz/Menami/Deonde/SWIPEBY/OPA!/Toast OO/Otter/KwickOS/RestauNax first-party OS, TextOrder/Ainisa/Ordr DM ordering, Seekadu reservation DMs, Moast Shopify UGC widgets, Seekeasy creator discovery, Klikit Shop POS, or generic AI menu-video (Feedo/PlateAI/Flik/Mooz) own this better — or does **shoppable buy-now + cult proof** win?
 4. Write results to `CreatorLead` via the commerce engine MCP.
 5. Output a ranked list framed as **onboarding targets**, not content ideas alone.
 
