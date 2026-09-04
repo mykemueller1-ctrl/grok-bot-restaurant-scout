@@ -508,3 +508,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [sohungry.net FAQs](https://sohungry.net/faqs.aspx) + [plans](https://sohungry.net/plans.aspx): Free **$1.25**/order guest convenience fee; Premium **$0.60** ($0.85 Clover).
 - pain-scan-sohungry-guest-fee.json (2 hits) → strong_keep **45**; pain-to-sales-sohungry-fee-* ×5; validate-sohungry-fee-dogfood ≥5 (`sohungry_fee_dogfoods`).
 - Ledger v1.76.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (FoodScout GO $0.99 guest service fee SalesLead)
+
+- Primary [foodscoutgo.com/pricing](https://foodscoutgo.com/pricing): **$0.99**/order customer service fee; restaurant $0 upfront / $0 monthly.
+- pain-scan-foodscout-guest-fee.json → strong_keep **46**; pain-to-sales-foodscout-fee-* ×5; validate-foodscout-fee-dogfood ≥5 (`foodscout_fee_dogfoods`).
+- Watched MOBI HQ NZ guest service fee $0.10–$3 (no US swarm). Ledger v1.77.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

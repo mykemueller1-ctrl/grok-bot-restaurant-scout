@@ -1,5 +1,5 @@
 {
-  "version": "1.76.0",
+  "version": "1.77.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -121,7 +121,8 @@
     "olo_fee_dogfood_gate": "scripts/validate-olo-fee-dogfood.mjs (Olo Order with Google Fee 5% \u2192 SalesLead \u22655 markets)",
     "bentobox_fee_dogfood_gate": "scripts/validate-bentobox-fee-dogfood.mjs (BentoBox QR Order & Pay $0.99 diner fee \u2192 SalesLead \u22655 markets)",
     "kontactless_fee_dogfood_gate": "scripts/validate-kontactless-fee-dogfood.mjs (Kontactless $0.50\u2013$1.00/order guest convenience fee \u2192 SalesLead \u22655 markets)",
-    "sohungry_fee_dogfood_gate": "scripts/validate-sohungry-fee-dogfood.mjs (SoHungry Free $1.25/order guest convenience fee \u2192 SalesLead \u22655 markets)"
+    "sohungry_fee_dogfood_gate": "scripts/validate-sohungry-fee-dogfood.mjs (SoHungry Free $1.25/order guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "foodscout_fee_dogfood_gate": "scripts/validate-foodscout-fee-dogfood.mjs (FoodScout GO $0.99/order guest service fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -1021,9 +1022,32 @@
         "https://sohungry.net/faqs.aspx",
         "https://sohungry.net/plans.aspx"
       ]
+    },
+    {
+      "name": "FoodScout GO",
+      "lane": "vertical_gtm",
+      "stack": "Custom restaurant app OO; $0 upfront/$0 monthly to restaurant; $0.99 customer service fee per order; Stripe 2.9%+30\u00a2 customer-paid",
+      "memory": "Direct app order/customer list",
+      "edge": "Guest-paid $0.99 service fee under free-for-restaurants claim \u2014 Tabski/SoHungry-class KEEP peer; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://foodscoutgo.com/pricing"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "FoodScout GO $0.99 guest service fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN FoodScout GO $0.99 customer service fee/order (foodscoutgo.com/pricing) \u2192 SalesLead vs Shop ~6%; validate-foodscout-fee-dogfood \u22655; strong_keep 46",
+      "verdict": "adopt"
+    },
+    {
+      "item": "MOBI HQ guest service fee $0.10\u2013$3 (NZ)",
+      "lane": "vertical_gtm",
+      "why": "help.mobihq.com mandatory guest service fee % basket min $0.10 max $3 \u2014 NZ/GST; watch only, no US swarm expand",
+      "verdict": "watch"
+    },
     {
       "item": "SoHungry $1.25 guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2024,5 +2048,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:25:00Z"
+  "updated_at": "2026-09-04T21:40:00Z"
 }

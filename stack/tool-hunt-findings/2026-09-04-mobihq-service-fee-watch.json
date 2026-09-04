@@ -1,0 +1,12 @@
+{
+  "finding_id": "mobihq-service-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "MOBI HQ guest service fee $0.10\u2013$3 (NZ watch)",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "help.mobihq.com: mandatory guest service fee % of basket, min $0.10 max $3 \u2014 NZ/GST context; watch only, no US swarm expand.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.mobihq.com/service-fee-faq"
+  ]
+}
