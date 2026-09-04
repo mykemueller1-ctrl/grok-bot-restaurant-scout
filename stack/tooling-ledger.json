@@ -1,5 +1,5 @@
 {
-  "version": "1.73.0",
+  "version": "1.74.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -118,7 +118,8 @@
     "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15\u2013$1.99 \u2192 SalesLead \u22655 markets)",
     "chownow_fee_dogfood_gate": "scripts/validate-chownow-fee-dogfood.mjs (ChowNow $0.99 service charge + 7.5% Support Local Fee \u2192 SalesLead \u22655 markets)",
     "slice_fee_dogfood_gate": "scripts/validate-slice-fee-dogfood.mjs (Slice Online $3/order / Family $2/order \u2192 SalesLead \u22655 markets; pizza niche)",
-    "olo_fee_dogfood_gate": "scripts/validate-olo-fee-dogfood.mjs (Olo Order with Google Fee 5% \u2192 SalesLead \u22655 markets)"
+    "olo_fee_dogfood_gate": "scripts/validate-olo-fee-dogfood.mjs (Olo Order with Google Fee 5% \u2192 SalesLead \u22655 markets)",
+    "bentobox_fee_dogfood_gate": "scripts/validate-bentobox-fee-dogfood.mjs (BentoBox QR Order & Pay $0.99 diner fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -703,14 +704,16 @@
     {
       "name": "BentoBox",
       "lane": "vertical_gtm",
-      "stack": "Website/commerce suite now Clover-only for new customers; takeout add-on with reported $0.99/order service fee + processing",
+      "stack": "Website/commerce suite now Clover-only for new customers; QR Order & Pay $19/mo + $0.99 diner fee/order (waived on follow-up from same device); takeout add-on with reported restaurant-paid $0.99/order service fee + processing",
       "memory": "Guest/commerce data inside Clover hospitality stack",
-      "edge": "Per-order fee + POS lock-in = KEEP leak teach signal; not social buy-now native",
+      "edge": "Primary teach: guest-paid $0.99 diner fee on QR Order & Pay (Help Center) \u2014 KEEP leak + Clover lock-in; not social buy-now native",
       "updated": "2026-09-04",
       "sources": [
         "https://getbento.com/",
         "https://orderitto.com/compare/bentobox-pricing",
-        "https://www.getsauce.com/post/bentobox-pricing-fees"
+        "https://www.getsauce.com/post/bentobox-pricing-fees",
+        "https://help.getbento.com/en/articles/421057",
+        "https://help.getbento.com/en/articles/418369"
       ]
     },
     {
@@ -996,6 +999,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "BentoBox $0.99 diner fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN BentoBox QR Order & Pay $0.99 diner fee (Help Center primary) \u2192 SalesLead vs Shop ~6%; validate-bentobox-fee-dogfood \u22655; second pain-scan hit \u2192 strong_keep 42",
+      "verdict": "adopt"
+    },
+    {
+      "item": "1 Stop Order guest convenience fee 1\u20132%",
+      "lane": "vertical_gtm",
+      "why": "1stoporder.com/pricing Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer \u2014 percentage guest fee; watch before dogfood",
+      "verdict": "watch"
+    },
     {
       "item": "Flipdish \u20ac0.50 flat + percentage fee refresh (second pain-scan hit)",
       "lane": "vertical_gtm",
@@ -1966,5 +1981,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T20:15:00Z"
+  "updated_at": "2026-09-04T20:35:00Z"
 }

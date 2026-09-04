@@ -1,0 +1,12 @@
+{
+  "finding_id": "1stoporder-pct-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "1 Stop Order guest convenience fee 1\u20132%",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "1stoporder.com/pricing: Free plan 2% convenience fee to customer; Pro/Custom 1%. Percentage guest fee \u2014 watch before dogfood; not expanding swarm.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.1stoporder.com/pricing"
+  ]
+}

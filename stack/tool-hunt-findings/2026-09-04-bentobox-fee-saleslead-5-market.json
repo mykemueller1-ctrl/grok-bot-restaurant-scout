@@ -1,0 +1,13 @@
+{
+  "finding_id": "bentobox-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "BentoBox $0.99 diner fee SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary Help Center $0.99 diner fee on QR Order & Pay \u2192 pain-to-sales-bentobox-fee-* \u00d75; validate-bentobox-fee-dogfood \u22655. Pain-scan already counted (strong_keep stays 41).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.getbento.com/en/articles/421057",
+    "https://help.getbento.com/en/articles/418369"
+  ]
+}

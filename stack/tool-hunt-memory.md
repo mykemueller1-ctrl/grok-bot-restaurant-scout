@@ -491,10 +491,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Second pain-scan hit → strong_keep **41**; dogfood theses + validator cite €0.50 / $0.50; `flipdish_fee_dogfoods=5`.
 - Watched Ordering.Tools EU 3–5% (Starter 5% / Pro 3%) — no US swarm expand. Ledger v1.73.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (BentoBox $0.99 diner fee SalesLead)
 
-
-
-
-
-
-
+- Primary Help Center: BentoBox QR Order & Pay **$0.99 diner fee** per order (waived on follow-up from same device) — [QR FAQs](https://help.getbento.com/en/articles/421057) + [Location Settings Service Fee](https://help.getbento.com/en/articles/418369).
+- pain-scan-bentobox-guest-fee.json second hit (primary Help Center) → strong_keep **42**; pain-to-sales-bentobox-fee-* ×5; validate-bentobox-fee-dogfood ≥5 (`bentobox_fee_dogfoods`).
+- Watched 1 Stop Order guest convenience fee 1–2% (percentage; no dogfood yet). Ledger v1.74.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
