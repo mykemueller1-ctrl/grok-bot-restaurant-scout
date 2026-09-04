@@ -3,14 +3,23 @@
   "icp_tier": "owner_1_5",
   "report_id": "vendor-invoice",
   "source_channel": "photo",
-  "engine": "tesseract",
+  "engine": "auto",
+  "engines_used": [
+    "rapid",
+    "tesseract"
+  ],
   "schema": "schemas/vendor-invoice.json",
-  "note": "Photo OCR is the primary owner-1-5 invoice spine. Email PDFs are bonus when they forward.",
+  "taxonomy": "agent/report-ops/taxonomy/cogs-categories.json",
+  "docs_ref": "docs/RESTAURANT-AP-OCR.md",
+  "note": "Photo OCR + COGS category coding (food/beer/wine/liquor/pop). RapidOCR primary; Tesseract fallback.",
   "documents": [
     {
       "source_channel": "photo",
       "doc_kind": "store_receipt",
       "vendor": "Walmart",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-19",
       "invoice_num": null,
       "amount": 104.64,
@@ -22,22 +31,25 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 40.5,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-c53b-7180-8d49-b479c14b1329.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "SS ik. ee ee yo. ha ET aie 8 :\noS. \u2018see Sa aa Sea, eats ae\nSNE SE OS oo Ra een oe Safa ee;\nSo Sos *- oe Se Ne * a a SSS & SS ee ap mae <=. . ab ae\nSane << hy ad =: ae a oP 2 x ete ,\nSS EG ER ee eee Pee.\nSex Sey FS ee\nste Se agi ~ a ape \u2018foe ey wm uy *\nFee Ao a ee Ee nine \u00a2 \u2018hy es\nes Se Be scorch hate Give ic Bet. a \u2019\n= =. Sane ~~ ee. ' Us Tee ; bees a MRS a Tees S\nrae ee >a on Ss Thank = dback Q By i A a oe 3 os :\n\u2019 ~\u2014 Se \u2018te \u2018 you! ID #:7 oe vey walmart com As vate ae 2 a By\n. 2 a \u2018 WSXXNOLGBB "
+      "raw_text_excerpt": "Walmart\nWM Supercenter\n30361STAVE S\nFORT D0DGEIA50501\n#ITEMS SOLD17\nTC#9997 5758 07952261 2656 1\nORG LIMES\n681131091250F\n2.98 N\nORG LIMES\n681131091250F\n2.98 N\nBULK LEMONS\n00000000530 F\n7AT1\nFOR\n0.62\n4.3\nGVWPCREAM\nN\n605388187170\n2.9\nGVWPCREAM\nN\n605388187170 F\n2.96\nN\nLA H0T SAUCE 190298000250\n2.97\nTTMANG0CSH633148102750\nN\n2.97\nFBZTRSHLNS 030772240430\nN\n5.94 X\nFBZAEGNMBZ030772204140\n5.94 X\nGV 0J 89 CAL 194346266180 F\nGV 0J 89 CAL 194346266180 F\n6.471\nN\n6.47 N\nGV 0J 89 CAL 194346266180 F\n6.47\nN\nGV 0"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Performance Foodservice",
+      "vendor_type": "broadline",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-18",
       "invoice_num": "OICE",
       "amount": 153.38,
@@ -49,7 +61,8 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 62.3,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -58,16 +71,19 @@
         "01a06a6c-c5e0-7c7c-93bc-c2481ab2f6c2.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Teike creche Se PRE EE Fee RS es OY91190 FF ai 2\nPey\n| 419g \u00b0mmance Foodservice - Cedar Rapids\nHT P.o 44th avenue s.w.\nNes! ~~ Cag. BOX 1267\n(3707~Rapids, IA 52404 P E\n(809) 22072300\nMUNI 332-8170\nr Dob, FOODSERVICE\n> STH Fed rp: 84-0629503 I \u00a9\nMo Dely pate: 08/18/26\n2\nFOR: Performance Foodservice-Cedar Rapids\nme | kkekkaek INVOICE \u00ab#*exx%\n| DATE INVOICE SLM |ACCT N\n: 08/18/26 | 239335 64 | 6528\nSs\n: j , COMMUNITY TAP s PHONE NO TAIP | STOP | PAC\np 2021 STH AVE \u00a2 L 515-269-1082 242 | 010\nD\n= FOR"
+      "raw_text_excerpt": "699116\nP.O.BOX 1267\nPERFORMANCE\n(319)396-1300\n(800)332-8170\nMUNIT\nTDOD\nFOODSERVICE\n5TH\nFed ID: 84-0629503\n515\nDelv Date: 08/18/26\nSMO\n202\nFOR:\nPerformance Foodservice-Cedar Rapids\nINVOICE\nDATE\nINVOICE\nSLM\nACCT\n08/18/26\n239335\n64\nS\nCOMMUNITYTAP\n6528\nH\nSOLD\nPHONE NO\nTAIP\nSTOP\nPAC\nI\nP\n2021\n5TH AVE S\n515-269-1082\n242\n010\nFORT\nDODGE IA 50501\nT\nTERMS:EFT 21Day\nT\n0\nSLM:64\nSCOTT SELIM\nQUANTITY\nPORTION\nT\nUNIT\nSIZE\nBRAND\nITEM\nORDER\nSHIP\nNUMBER\nDESCAIPTION\nOF\nRC\nA\nUNIT PRICE\nEXTENSION\nX\nRU\nUN\nUN\n1\nCS\n4/2.5"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Performance Foodservice",
+      "vendor_type": "broadline",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-18",
-      "invoice_num": null,
-      "amount": 152.58,
-      "printed_total": 152.58,
+      "invoice_num": "OICE",
+      "amount": 137.88,
+      "printed_total": 137.88,
       "tax": null,
       "account": null,
       "employee": null,
@@ -75,7 +91,8 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 67.9,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -84,74 +101,88 @@
         "01a06a6c-c687-73f5-815b-460ea31c2ed2.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "ah ra\nPer Ae\nLog Tmance Foodservice - Cedar Rapids Be\nP.O 44th avenue S.W.\nced. BOX 1267\n(31a, Rapids, IA 52404 E re)\n(agg) 32672300\n)332-8170 FOODSERV 4\nFed rp: 84-0629503 @ yc\nDely Date: 08/18/26 ane\nPerformance Foodservice-Cedar Rapids\nkkekkuek I N VO Tc E kkekeak er\nCE\n239335 64 | 6528 \u2014\nS COMMUNITY TAP S 08/18/28\nz ia) PHONE NO TRIP STOP | PAGE ne\np 2021 5TH AVE S 5 515-269-1082 242 | 010 1 ey\nFO [\u2122\nRT DODGE IA 50501 s TERMS: EFT 21 Day =\na 0 SLM: 64 SCOTT SELIM a\nNITE [es PORTIONS |\nea POA"
+      "raw_text_excerpt": "P.O.BOX 1267\nPERFORMANCE\n(319)396-1300\n(800)332-8170\nFOODSERVICE\nFed ID:84-0629503\nDelv Date: 08/18/26\nPerformance Foodservice-Cedar Rapids\nINVOICE\nCE\nINVOICE\nSLM\nDATE\nACCTNO\n08/18/26\n239335\n64\n6528\nCOMMUNITYTAP\n70s\nPHONE NO\nTRIP\nSTOP\nPAGE\nS\nH\n242\n010\n1\n515-269-1082\nI\n2021 5TH AVE S\nM\nP\nD\nFORT DODGE IA 50501\nTERMS:EFT 21Day\nT\nT\nSLM:64\nSCOTT SELIM\n0\n0\nQUANTITY\nPORTION\nT\nITEM\nA\nUNIT PRICE\nEXTENSION\nUNIT\nSIZE\nBRAND\nDESCRIPTION\n#OF\nRC\nNUMBER\nX\nORDER\nSHIP\nRU\nUN\nUN\nDRY GOODS\n1.318\n65.88\n131.76\n2\nCS\n1/"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Sysco",
+      "vendor_type": "broadline",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-18",
       "invoice_num": "OICE",
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 337.92,
+      "printed_total": 337.92,
       "tax": null,
       "account": null,
       "employee": null,
-      "description": "man",
+      "description": "GROUP TOTAL",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 48.8,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
       "quality_flags": [
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-c723-7432-a2a4-8b0f43941d22.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "a ae a a a\nra cee ee EEE AAU AMAA 's ORIGINAL INVOICE CONFIDENTIAL PROPERTY OF SYSCO See Se\nae 2; Pe dd TT, CUSTOMER Fyre | CUSTOMER Series aa\nSpats . 8/18/26 ae\n\u2014 FORT DODGE TA yi SCO qaucr stop. | 567872 439547404 4 2 pe oes\nes 2026 5TH AVE s 50501-4308 \u2014f/Attheheartor SYSCO IOWA, INC. o font pt\n\u2018ene hae\u2019? 8202 et Samay C2, PEACE ery 08 | TERMS \u2014Past OUS BALANCES Ane sopmecr no SERVICE CHARGE | \u00a7 \u201cPNR\nSMOKEWORX LLC 800-799-2627 0022-3911 | 2208 | 1 week z Ce ae\n: oe anne Ss (800-Syscocs) \u2014_\u2014\u2014\\"
+      "raw_text_excerpt": "MPORTANT PACA PROVISION:\nSIGN\nDRIVER'S\nCASES\n\u53e3\n\u53e3\n2026\nFORT DODGE\n\u53e3\nCOMMUNITY TAP\n24\nPOE\n10\nORDER SUMMARY\nTYT\nMISC\nST\nSPLIT TOT.PCS\nDIS\n5TH\n1scs\nFORT\n2026\nSMOKEWORX\n9\n5\nH\nN\nCHARGES\nCS\ncS\ncS\ncS\nAVE\nARISING\nDODGE\n5THAVES\n(C)\n30\nTEE\n10\nPACK\nOF\n12500CT SYS CLS STRAW PLAS UNWRP JMBO B YSTJ77ESYS12\n10100CT\nS\nTHE\n150\n8160Z\n6#10\nOUT\n22.5\nLLC\nSIGNATURE\n10.\nCUBE\nSIZE\nIA\nTHR\nLB\nYOUR\n50501-4308\nSAA\nGROSS WT.\nCHGS FOR FUEL\nSYS CLS GLOVE NITRILE FDSRV PF BLK 304363444\n**PAPER\nSYS CLS FLOUR HI-GLUTEN BL EN M734"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Sysco",
+      "vendor_type": "broadline",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": null,
-      "invoice_num": null,
-      "amount": 54.59,
-      "printed_total": 54.59,
+      "invoice_num": "OICE",
+      "amount": 42.95,
+      "printed_total": 42.95,
       "tax": null,
       "account": null,
       "employee": null,
-      "description": "ae",
+      "description": "PEACH\n6",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 50.7,
-      "rotation_deg": 0,
-      "quality_flags": [],
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
       "source_images": [
         "01a06a6c-c7c9-7b72-bac8-3ce89ed0b033.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "yn Mag aS Ad eee B/4o7e\" PRBS | aie ee\nak 2 S) QO TRUCK STOP 567872 439547404 4 1 bea\nBy aap COMMUNITY TAP Y SC 0 /007 GRCHASE ORDER : 2 ea :\nea FORT DODGE IA 50501-4308 Attheheartof SYSCO IOWA, INC 3 \u2014\u2014 a eee.\nae more oats 955 $3202 food and service ONE SYSCO PLACE. e208 TERM I week NCES ARE SUBJECT To SERVICE CHARGE | 3 eae\neee ed Tada ANKENY, IA 50021-3911 Rolling + wer om 1 eee\nie 2026 StH AVE (800-syscocs MANIFEST# 953625 NORMA ri : Rae\nue a PORT Once SG (800-Syscocs) MENTE ON BEBE Son Dae "
+      "raw_text_excerpt": "2026\nFORT\nCOMMUNITY TAP\n0\nQ\nDON\n5TH\nDODGE\nFORT\n2026\nSMOKEWORX LLC\n515-955-8202\n2\n1s\n1S\n\u7247\nH\n5\n4S\nSPLIT TOT.PCS\ncS\nCS\nCS\nCS\ncS\nAVE\ncS\ncS\ncS\nROVISION:THE\nDODGE\n5THAVES\nONLY5LB\nONLY5LB\nONLY3LB\nPACK\n12280Z\n1212IN\n20\n613oz\n6.5 GALKEMPS\n45LB\n86#AVG\n115DZ\n5LB\nSIZE\nIA\nGAL\nSIGNATURE:\n11\nCUBE\n50501-4308\nCOD(CASH)\nROTEL\nBONMAM\n**CANNED\nAREZIMP\n**FROZEN**\nWHLFCLS\nBBRLCLS CHEESE SWISS/AMER 120 SLI\nBBRLCLS\nWHLFCLS MILK 2% GALLON\nCASAIMP\nAREZIMP CHEESE MOZZARELLA L/M PRT\nWHLFCLS\nWHLFIMP\n**DAIRY**\nGROSS WT\n48.63"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Northern Lights Distributing",
+      "vendor_type": "specialty_food",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-17",
-      "invoice_num": "699004",
-      "amount": 171.91,
-      "printed_total": 171.91,
+      "invoice_num": "Fort",
+      "amount": 173.72,
+      "printed_total": 173.72,
       "tax": null,
       "account": null,
       "employee": null,
-      "description": null,
+      "description": "Pack",
       "customer": null,
       "line_items": [],
-      "handwritten_credit": -4.0,
-      "ocr_confidence": 68.9,
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -160,24 +191,28 @@
         "01a06a6c-c860-7bd9-b8ce-b0018af265af.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "oe ew be iP\n7 Bs ie ay\niN SE A NRE NORTHERN LIGHTS DISTRIBUTING, INC. i\nNYaY Saat Tsorewererrcot 2949 8th Avenue South Invoice #: 699004 ae\nFort Dodge, IA 50501 Invoice Date: 08/17/2026 :\nl_ Foodservice | : : (515) 576-2181 \u00bb Fax: (515) 576-7704 | Page ee 1 6 Sr\nttp:/www.northernlightsdistributing.com/ Customer #: 53168 | =\nShi ; fe\n| Se ee oe Bill To: if\nDA \u2014\u2014\u2014\u2014yy Eee ee\n2024 STH AVENUE SOUTH 2024 5TH AVENUE SOUTH ee\nFORT DODGE, IA 50501 y | FORT DODGE, IA 50501- x\nPhone: (515) 955-8202 Cust. P"
+      "raw_text_excerpt": "699116\nNORTHERN LIGHTS DISTRIBUTING,INC.\n29498thAvenueSouth\nNORTHERN LIGHTS\nInvoice#:\nFort Dodge, IA 50501\n699091\nFoodservice\nInvoiceDate:08/17/2026\n(515) 576-2181 \u00b7 Fax: (515) 576-7704\nhttp://www.northernlightsdistributing.com/\nPage:\n1\nCustomer#:\n53168\nShip To:\nBill To:\nCOMMUNITYPIZZA,INC.\n20245THAVENUESOUTH\nCOMMUNITY PIZZA,INC.\nFORTDODGE,IA50501\n20245THAVENUESOUTH\nFORTDODGE,IA50501-\nPhone:(515) 955-8202\nCust.PO #:PU MON.8-17\nTerms:EFT/ACH\nContact: SCOTT\nSalesPerson:5-John Graham\nItem#\nUPC Code"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Northern Lights Distributing",
+      "vendor_type": "specialty_food",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-18",
-      "invoice_num": "699116",
-      "amount": 472.08,
-      "printed_total": 472.08,
+      "invoice_num": "oice",
+      "amount": 480.85,
+      "printed_total": 480.85,
       "tax": null,
       "account": null,
       "employee": null,
       "description": "Pack",
       "customer": null,
       "line_items": [],
-      "handwritten_credit": null,
-      "ocr_confidence": 71.8,
+      "handwritten_credit": 0.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -186,72 +221,77 @@
         "01a06a6c-c8f7-7159-ab0e-6bf863855038.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Be nS\nie\n| ia\n| Wes\n\u2014\u2014 NORTHERN LIGHTS DISTRIBUTING, INC. Ls\n2 ren sia slidolemandi 2949 8th Avenue South Invoice #: 699116 wi &\nNORTHERN LIGHTS Fort Dodge, IA 50501 Invoice Date: 08/18/2026 nee\n(515) 576-2181 + Fax: (515) 576-7704 a\nhttp://www.northernlightsdistributing.com/ Customer #: 53168 26\nShip MMe ge Bill To: =e\n: KKK nl Bre oy\nFES\n| COMMUNITY PIZZA, INC. COMMUNITY PIZZA, INC. =\n2024 5TH AVENUE SOUTH \u2018| 2024 5TH AVENUE SOUTH eg\nFORT DODGE, IA 50501 FORT DODGE, IA 50501- . %\ne:\neS \u00a9\n- nae"
+      "raw_text_excerpt": "NORTHERNLIGHTSDISTRIBUTING,INC.\n29498thAvenueSouth\nNORTHERN LIGHTS\nInvoice#\uff1a\n699116\nFort Dodge, IA 50501\nFoodservice\nInvoice Date:\n(515)576-2181\u00b7Fax:(515) 576-7704\n08/18/2026\nhttp://www.northernlightsdistributing.com/\nPage:\n1\nCustomer #:\n53168\nShip To:\nBill To:\nCOMMUNITYPIZZA,INC.\nCOMMUNITYPIZZA,INC.\n20245THAVENUESOUTH\n20245THAVENUESOUTH\nFORTDODGE,IA50501\nFORTDODGE,IA50501-\nPhone:(515) 955-8202\nCust.PO #:Verbal\nTerms:EFT/ACH\nContact:SCOTT\nSalesPerson:5-John Graham\nItem#\n/UPC Code #\nDescription\nP"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "payout_slip",
+      "vendor": "Community Pizza",
+      "vendor_type": "pos_payout",
+      "cogs_category": "misc_opex",
+      "category_source": "payout_account",
       "date": null,
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 9.0,
+      "printed_total": 9.0,
       "tax": null,
-      "account": null,
+      "account": "5699 danager Sign",
       "employee": null,
       "description": null,
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 27.5,
-      "rotation_deg": 180,
-      "quality_flags": [
-        "low_confidence",
-        "partial",
-        "rotated"
-      ],
+      "ocr_engine": "rapid",
+      "ocr_confidence": 74.9,
+      "rotation_deg": 0,
+      "quality_flags": [],
       "source_images": [
         "01a06a6c-c98f-7b07-82d8-95093dda5894.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "_yaewenreia PNM al 5 8 SS ape\nee foneunti imo mbee nhs: Sc TN ES et\nRae Py ee Nee\nMO re ee PRE ee rhs We aes Boe\na ee\nSee ee ie all : j ees oi: Pere. \u00e9\nee GON ae td a A 3} gee Y dee ae * mds\na fF me Fee Os\noe if \u00a7 ?. Fee ee oS ot ge\n! ae e E ae ah aa\n: Prd i # = Fs , ae 7]\n. ; pa :\nS a \u00a7 ag all :\n\u00a2 a 4 - a\ni acts\u2019 & - 4 F, Pi\na o - a ; ?\n& a. * a e\n9 oe ene ee rae ee ee Or cu anc, si ee ;\nos = A a , oe A\nq UE aees oer am peariharren G2 See Se ee Pepaoensed es PRON ES + a ae\nie EG cd Wed Eo Be {S"
+      "raw_text_excerpt": "Register : 2\nDnintiunt lhnnn Dunbi Nan N Iiu d\n2026 5th Ave South\nJessica Gai ley (54)\nConmnily Piizd\n515-965-8202\nAmount: $9.00\nAccount Number: 5699\ndanager Sign:\nPayee Sign:\nm"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "payout_slip_plus_receipt",
+      "vendor": "Hy-Vee",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "payout_account",
       "date": null,
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 32.3,
+      "printed_total": 32.3,
       "tax": null,
-      "account": null,
+      "account": "4312 Account Name",
       "employee": null,
-      "description": null,
+      "description": "Hyvee\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 29.2,
-      "rotation_deg": 180,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 77.4,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-ca2a-7e07-b95c-ad376a4fe778.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "fin aes aes eae Pras i i Maid is a\nfate S \u2018 \u2018 ; are } mee 4 . Nee\n. RNA ne At AYES ee eo, | ae\n>< Beh. . s i \u201c 4 as ae , -\n\u2014\u2014 a \u2014 Sven Fue i, ie ye ; son el eM s+ A\nBe iy a ae\na tae 4 iy Og ieee Ny i Ps Ste ks a \u201d\n\u00ab Sex \u00e9. : ut my Ags 4 5 te \u00ae  \u2014- ,\nee dy \u201d . 4 * : 7, ae i On ms Aes ~ ; > \u2014 t \u00a9 Ade 7 iy\n$i Cae 1% a a ufik y (i Rie a a aes\nDe M, WPA Ny, 1. cali\nmp yt Sl Aner ae i) a.\nWe \u2018 ; \u201ceb re. Wee 7 ae re ee Boas\n\u2018se 4 ella ee ee a OM AG\nBe fx ce me 3 oi ty i | UM The\nSee ye pet oa ae : b) o"
+      "raw_text_excerpt": "1 \n1111 0 1 11  11\nRegister #: 2\nCommuiri ty Pizza\n2026 5th Ave South\n515-955-82C2\nJessica Gai ley (54)\nAccount Number: 4312\nAccount Name: Food\nDescription: Hyvee\nAmount: $32.30\nManager Sign:\nPayee Sign:"
     },
     {
       "source_channel": "photo",
       "doc_kind": "store_receipt",
       "vendor": "Hy-Vee",
-      "date": null,
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
+      "date": "2026-08-18",
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 31.92,
+      "printed_total": 31.92,
       "tax": null,
       "account": null,
       "employee": null,
@@ -259,26 +299,29 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 49.1,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 96.2,
       "rotation_deg": 90,
       "quality_flags": [
-        "partial",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-cac1-7924-8bb4-10116bb9ab7e.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "i sy Ve ye ph a eee Tale =\n\u2018 ~ ae | iw | ) \\ or Sa eee\n\" \u2014 Ra ie 2 \\ es - \u2014 \u2014 a a ee \u00e9\na bi Gay\n= Se EMPLOYEE OWNED LC Se\nee 115 $ 29th St, Suite _\na Fort Dodge, IA 50501 \\\n; : <s 515-573-4109 ash Vee | \\\nRae. _ 1132StoreManagementMai |Group@hy-Vee . con\npeewee BURGER BUNS BC 6000200000 3.99 \u2014\npace \u00a7=AMBURGER BUNS 8C 6000200000 3.99 F\nSaas Ge HAMBURGER BUNS 8C 6000200000 3.99 F a )\nee. HA! A , 4 ; ee |\na ae HAMBURGER BUNS 8C 6000200000 3.99 F ip uven | at ae\nSe _\u2014S\u2014sIAMBURGER BUNS 8C 6000200000 "
+      "raw_text_excerpt": "HyVee.\nEMPLOYEEOWNED\n115 S 29th St, Suite A\nFort Dodge, IA 50501\n515-573-4105\n3.99\nF\n3.99\nF\n3.99\nF\n3.99\nF\n1111111 11\n3.99\nF\nHAMBURGER BUNS 8C 6000200000\nRegister #\n3.99\nF\nHAMBURGER BUNS 8C 6000200000\n3.99\nF\nHAMBURGER BUNS 8C 6000200000\n3.99\nPizza\nve South\nSUBTOTAL[8]\n31.92\n5-82C2\nTOTAL\n31.92\nCash\n50.00\niley (54)\nCash\n-18.08\n0011192180826010000312\nee\nCashier Name: Tiphanie\n$32. 30\nDate\nTime\nStore\nPOS Emp TRX\n08/18/26 04:23 PM 1192\n10180240312\nTell us about your trip for a chance to\nWIN A $5OO HY-"
     },
     {
       "source_channel": "photo",
       "doc_kind": "store_receipt",
       "vendor": "Menards",
-      "date": "2028-11-16",
+      "vendor_type": "hardware",
+      "cogs_category": "ops_supplies",
+      "category_source": "vendor_directory",
+      "date": "2026-11-16",
       "invoice_num": null,
-      "amount": 3.08,
-      "printed_total": 3.08,
+      "amount": 75.16,
+      "printed_total": 75.16,
       "tax": null,
       "account": null,
       "employee": null,
@@ -286,103 +329,116 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 34.1,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-cb5c-74bf-bd89-98518048c4b9.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Rie ee ak ke aw\nes a\nee ee \u2122 : \u2018wear Pi a 33 \u2014 ee Oe\nes , i. Jo oe .3319 5ST1 aA\nAB ee +e CAC. a T 5: jee\nsor ae ee Bey a ORT DL AVENUE SOUTH\net ore ee, Ste \u00a9 So WDGE, 4 sour .: 3.08\neee tee oe GE, 18 SO50T |} te Ne 2\nae iia | * ees TETUR \u2018\u00bb YO Ut NN Sas, 2\n= oe + aato ae wan N Po. UR R Se .\n5 Ras a ne : a\u201c ro * Un) 0 \u2019 VA ECE LPT es rN ae iy PXs my\nro aS a <2 rr ECE ee py de 3 oo,\n- Se ~ 2s mS On th ow alle ee i oa',. a\nbe * e \u2018 lo ab r ( cay \u00e9\n: 2 co ae \u00b0 Of an 2 + receipt , returns fo Ee Us :"
+      "raw_text_excerpt": "YOUR RECEIPT\nUnleso\nlowallo\nreturns'\nfor\nitemsonth\nreceipt wi+:l\nLcin theiiorm\nofanin\ncred\nchei if the\nletus\ndone af\n11/16/26\nIf yruhu\nlpstiont\ngarding the\nch.ges\nrec\nt\uff0cplease\nFiuGfronte\ns.com\nSale Transacticn\nFALL PARTY CAKES VANILLA\n5732731\n320Z MEAN GREEN ORANGE\n3.15\nNT\n6478038\n2.99\nDAWN ULTRA BLUE 982ML\n6479471\n5@5.89\n29.45\n22 OZ MURPHY OIL SOAP\n6471200\n2.98\nRU W&G CONC 35.20Z\n2638033\n25.97\nSHARPIE FINE BLACK\n5655201\n3@1.97\n5.91\nTOTAL\n70.45\nTAXWEBSTER-IA7%\n4.71\nTOTAL SALE\n75.16\nCASH\n80.25\nCH"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "payout_slip_plus_receipt",
+      "vendor": "Menards",
+      "vendor_type": "hardware",
+      "cogs_category": "misc_opex",
+      "category_source": "payout_account",
       "date": null,
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 80.25,
+      "printed_total": 80.25,
       "tax": null,
-      "account": null,
+      "account": "5699 Account Name",
       "employee": null,
-      "description": null,
+      "description": "Menards\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 27.4,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 85.9,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-cbfc-71ef-a5ef-384ef882666c.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "\u00e9 Ya My eG.\n\u00a2 , we i 4 ie #\n\u00abi ae \u201c Bet Ee oe\n> ee dae Fa al 0 Os eS bes\nae bd pol ! 2 Ret , \u201c B, : 2 a e 4\n; Ey : . * ; \u201c ipa fe - \u201c(0 ; igh. 7 a . Ri a ie? A ae te\n\u00e9 a \u00ab wn. eM a $ \u00bb * sy\nY ese ee hae :\na P ; pe Pl te ce i ce a \u00a2 x % \u00e9\nwe 23 oS gti FO %, cad + ta tk vee : ; ; : : <\naoe oA al wate att :\na oh x 2 \u00a9 i mee \u00ab a - % iia i Pe y = ao ee\n* \u00a5 - al 4h ,. . 3 z 9 te co foe te es, te : 2s. % : |\nMe a . * @ ois is : ie See: 4 nO bet} : |\n: J p i . F. i - jet Gs foe? . en gh 4 4 3 \u2019 \u00a5 = \u00a2g\n4"
+      "raw_text_excerpt": "Payee Signr:\n111110010 1 0A 1 011\nRegister #: 2\nCommunity Pizza\n2026 5th Ave South\n515-955-82C2\nJessica Gai ley (54)\nAccount Number: 5699\nAccount Name: Miscel laneous\nDescription: Menards\nAmount: $76. 0\nManager Sign:\nPayee Sign:\nW&G\n8033\nRPIE FINE BLACK\n5.91\n3\u00b1@1.97\n201\n70.45\n4.71\nBSTER-IA7%\n75.16\nCASALE\n80.25\nCHANGE\n5.09"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
-      "date": null,
+      "doc_kind": "payout_slip",
+      "vendor": "Community Pizza",
+      "vendor_type": null,
+      "cogs_category": "unknown",
+      "category_source": "unmapped",
+      "date": "2026-08-19",
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 109.98,
+      "printed_total": 109.98,
       "tax": null,
-      "account": null,
-      "employee": null,
+      "account": "5220 Account Name",
+      "employee": "Kenzy Thompson",
       "description": null,
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 25.3,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 83.7,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated",
+        "uncategorized"
       ],
       "source_images": [
         "01a06a6c-cc96-7b38-bd76-c0f335052348.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Oe tis ,\nREVERS: ;\n\nev ae iy ae Z ik ie ; 2 : : Soy ee .\nfoe 8 eS eee re ce sie: e 4 oy 3 s : : ies\n\na Se ok % e ee oe gh a jel tg | |\n\nw iggrt ig eee Se Be \u2019 RR ONS: iene : ges os isu ee\nwe hy 2 : if a VS ud? Bk gh eee ie AEs hace rd we ees P : i ao : ie\ney ve\u2019 i oe i a ee ue Bratt een Pe ae : - cr Bo\na i Rp 2S Bae rs es ee Pear Pe a gs ) : | | | : | -\nwe eS & J te 2 = ee eee See ee | Pee eis bee bce ee | - : : : 2 y\nig oe. fee dee Uae Fe Je HS ees ae: Bi eee ihe a : : : , | :\n\n4 4 4 ees eG ee "
+      "raw_text_excerpt": "08-19-2026\n8/19/20261:37:31PM\nRegister #:2\nCommunity Pizza\n2026 5th Ave South\n515-955-82C2\nKenzy Thompson (175)\nAccount Number: 5220\nAccount Name: Operating Supplies\nDnniotipp*MImpd + Tm+\nAmount: $109.98\nManager Sign:\nPayee Sign:"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "payout_slip",
+      "vendor": "Community Pizza",
+      "vendor_type": "pos_payout",
+      "cogs_category": "misc_opex",
+      "category_source": "payout_account",
       "date": null,
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 4.0,
+      "printed_total": 4.0,
       "tax": null,
-      "account": null,
+      "account": "5699 Description",
       "employee": null,
-      "description": null,
+      "description": "Ootd\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 21.0,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 78.3,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-cd30-7ce1-8909-99d12249039f.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "NS Oe oe Se BRCM a ae NN fo Ss tee is 7 Re Ne Bes ees oe er ees :\nfie BL ea ha ae Teaee ay Bone Ye ah gece eae oc fe ne OMe ey ahaa \u00a5 eS,\ni Oh cr i Netra FU aCe ean ge Aue ie oar ay\nee oo wee ia E\u00a7 GOI SOE 0 AOU acer Aaa teas Search one RNS a tes as MUSE Teer eN a CU i\nPeg eee eee ae Bese To! aaa Be ee es\nef Veg ENN Pee Cie pee SS Seer ee ed ae eae Gay oe \u00b0 im :\nee er Raha |, eaten ee ara nen Se ss rues :\nOn Sue ea x ae Ha ee : :\nee ie . 3 Be Oe a a Ne ey ga :\nee eS. soi OP RE ht. aa A WO a REC "
+      "raw_text_excerpt": "Register #: 2\nCommuni ty Pizza\n2026 5th Ave South\n515-955-82C2\nBrys8orn Co6k (215)\nAccount Number:5699\nDescription:Ootd\nAmount: $4.00\nManager Sign:\nMannane\nPayee Sign:"
     },
     {
       "source_channel": "photo",
       "doc_kind": "unknown",
       "vendor": "unknown",
+      "vendor_type": null,
+      "cogs_category": "unknown",
+      "category_source": "unmapped",
       "date": null,
       "invoice_num": null,
       "amount": 0.0,
@@ -394,50 +450,86 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 28.8,
-      "rotation_deg": 180,
+      "ocr_engine": "tesseract",
+      "ocr_confidence": 57.0,
+      "rotation_deg": 0,
       "quality_flags": [
-        "low_confidence",
         "partial",
-        "rotated"
+        "uncategorized"
       ],
       "source_images": [
         "01a06a6c-cdc1-74ca-8bcf-ebdd8a3d001a.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "#3 +e & Ae ; . pes\nis \u00a5 . F ; pes & ig aL : fp e\nae aS i,\nae p \u00abOG {1 [i 7\na Re +. vy wer ty es \u201ci sues\n\u00a9 \u00a5 t . 4F i hi H s =. / f - ot :\nidl of ee ~ fy| i \u2014 ( co na _\u2014 Ay :\n' % Hf i j onal ] St as aches\n\u2019 i i } ty ce Pt es = ween\n\n+a f) ; = a sie oo\n\ni () [ pe ee |\n\npy M4 Mo i... i Pej 4 \u2018\n\nS. # saaetn: % * ce & me ols\nue rh 2 i) = ff id . ri) |\nwe. | 4 ae 8 uj eg\n\n% ik\u2019 i - oP i) | 4 real )\n4 ba Std * g a Fs . i a re i j j ~ \u201c ij | A i \u2018a we\nahs Ni : Ve / = Fa rH . J ; oy \u201cy *\nam b T A i \u2018 bar"
+      "raw_text_excerpt": ""
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
-      "date": null,
+      "doc_kind": "payout_slip",
+      "vendor": "Community Pizza",
+      "vendor_type": "pos_payout",
+      "cogs_category": "misc_opex",
+      "category_source": "payout_account",
+      "date": "2026-08-20",
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 9.0,
+      "printed_total": 9.0,
       "tax": null,
-      "account": null,
-      "employee": null,
-      "description": null,
+      "account": "5699 Account Name",
+      "employee": "Kenzy Thompsan",
+      "description": "Store Tri\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 29.2,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 83.8,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-ce5b-7af6-9687-f6a08e8bf4f9.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "PE gil 5 ar Pe a\nee 2 ! Le r\nak ee gee \u2018 wr ENTS\nLa By\nSee SN RA\ngh hae Se <e . Biye U\nPome . eS So a aa! sy bil *:\nFF =. aaa & Ss ay aa ae wig Ch AG lt O\u2122 A ee Te\n\u201c4 oS Bee, aa ie eg ey z \u2018ae Pi, on iy wt rn eng ere ee, he sare Ax =\n\u201cmy gs Pas ee ag a ii \u2018 > i ks a. a i,\n~ > + fee \u00a5 Y \u00a5 a * ea Kei = e* a =\" * 3 i. .oS\noe % she <3 _ 4 \u2018 S. ite ft: Pe. eee a\n. ee. nes > ee : ef , Sh ES \u201cyot.c\nse _\u2014\u2014 : die 4 wi bY 5 th es :\nae we Tok ; he a =. he es\n\u2018 ; Sot S .% \u201csg. 4 Rae pe Ma: 2 7 I ade \u201cS. .\na"
+      "raw_text_excerpt": "Out\nBun\nmt\n)8--20-2026\n8/20/2026 4:09:28 PM\nRegister #: 2\nCommunity Pizza\n2026 5th Ave South\n515-955-82C2\nKenzy Thompsan (175)\nAccount Number: 5699\nAccount Name: Miscel laneous\nDescription: Store Tri\nAmount: $9.00\nManager Sign:\nPayee Sign:"
     },
     {
       "source_channel": "photo",
       "doc_kind": "payout_slip_plus_receipt",
       "vendor": "Fareway",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "payout_account",
+      "date": "2026-08-20",
+      "invoice_num": null,
+      "amount": 64.18,
+      "printed_total": 64.18,
+      "tax": null,
+      "account": "4312 Account Name",
+      "employee": "Kenzy Thompson",
+      "description": "Fareway\nAmount",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 89.6,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06a6c-cef8-7bc1-a1dc-535e61179439.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "8/20/2026 12:03:27 PM\n08-20--2026\nRegister #: 2\nCommunity Pizza\n2026 5th Ave South\n515-955-82C2\nKenzy Thompson (175)\nAccount Number: 4312\nAccount Name: Food\nDescription: Fareway\nAmount: $64.18\nManager Sign:\nIh. Payee Sign:\n200FF\nTSI:\n0000\nUU\nnnu\nA731C865CA3A2ED6\nTC:\nTID: **1\nRRN:022135\nMID: **8178\nUSD$ 64.18\nTotal:\n****************************************\nNever miss a recipe!\nJoin our Kitchen by Fareway email\nnewsletter for the latest recipes and\nexclusive content delivered right to your in\nbox."
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "store_receipt",
+      "vendor": "Fareway",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-20",
       "invoice_num": null,
       "amount": 64.18,
@@ -445,81 +537,59 @@
       "tax": null,
       "account": null,
       "employee": null,
-      "description": "Fareway",
-      "customer": null,
-      "line_items": [],
-      "handwritten_credit": null,
-      "ocr_confidence": 44.8,
-      "rotation_deg": 90,
-      "quality_flags": [
-        "low_confidence",
-        "rotated"
-      ],
-      "source_images": [
-        "01a06a6c-cef8-7bc1-a1dc-535e61179439.jpg"
-      ],
-      "venue_id": "community-pizza",
-      "raw_text_excerpt": "i ye a,\ni wot ae\n18-20-2026 8/20/2026 12:03:27 PM | oe pl gape a\n) | Deane ok gos\nRegister #: 2 [ae Byte Gee,\nTULLE LLL Ll ladles | Be hes & a\nCommunity Pizza ON 5 eee,\nif Ck KE\n2026 Sth Ave South it \u201cCR Ee Pe,\nWTTTTTI TT ade Zo ee\nCog.\nAccount Number \"31\" a | i\nDescription: Fareway . ..\nAMOUNT: 90%. oo\n(EERO RSERSGRSRRREeeeeeeeee suoomenueemeeeee =f) a _.\nawe y Pe ee LL\n2) \u2018danager $19\": ee a\nbate i\nem : ee ee ee\na ro\noe AT31CBESCASAZEDG es 5\nMe MID: xx8178 = TID: *x1 RRN: 022135 e er en\nTore U"
-    },
-    {
-      "source_channel": "photo",
-      "doc_kind": "store_receipt",
-      "vendor": "Fareway",
-      "date": null,
-      "invoice_num": null,
-      "amount": 64.18,
-      "printed_total": 64.18,
-      "tax": null,
-      "account": null,
-      "employee": null,
       "description": null,
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 39.8,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 95.6,
       "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-cf95-7610-ae0a-270009651ca3.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "| [2 \"\u2014_ Re eee\na Oe a\n\nPoca it ee ee\n\nFAREWAY (et a? ee\n\nGam MEAT & GROCERY mam | ops\n1231 ist Avenue South eee ee ee ee\n\nFort Dodge, IA Pe Pras Ss ee\n515-576-0341 eee, eee\n\nALF PORK BELLY $30.82 F b eee le Ce\nOTA het | ee ee\nTOTAL $64.18 EE ye ee\niste Ee Ors occa ce Ca fe ae eg ae was Ae We Be es ee\n2 ee ee i eee Sg. see\n3 TOTAL DUE yy $64.16 y ee\nSe ee Debit card $64.18 7 ee UU\nit Xx xxxxxaxxxx5723 Ce hrs\nee =item count 2\nCOT Entry Method:Cntctless oe\nee CARD __XOXXXKAKXAANS 723\neee =\u2014SCSO@PR"
+      "raw_text_excerpt": "FAREWAY\nMEAT&GROCERYE\n1231 1st AvenueSouth\nFort Dodge, IA\n515-576-0341\nHALF PORK BELLY\n$30.82F\nHALF PORK BELLY\n$33.36F\nSUB TOTAL\n$64.18\nTOTAL\n$64.18\nTOTAL DUE\n$64.18\nDebit card\n$64.18\n#*xxxx*******5723\nItem count\n2\n08/20/2026\n11:56:25\nDEBIT\nEntry Method:Cntctless\nCARD#:\nXXXXXXXXXXXX5723\nPURCHASE\nAPPROVED\nAUTH C0DE:299512\nMode:\nIssuer-PIN Verified\nA0000000042203\n0020048001\nTVR:\nIAD;\n0314A0410002000000000035D2737D7\n200FF\nARC:\n00\nTSI:\n0000\nA731C865CA3A2ED6\nTC:\nTID:**1\nRRN:022135\nMID:**8178\nUSD$64.1"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "payout_slip",
+      "vendor": "Community Pizza",
+      "vendor_type": "pos_payout",
+      "cogs_category": "misc_opex",
+      "category_source": "payout_account",
       "date": null,
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 40.3,
+      "printed_total": 40.3,
       "tax": null,
-      "account": null,
-      "employee": null,
-      "description": null,
+      "account": "5699 Account Name",
+      "employee": "Bryson Cook",
+      "description": "Steva N\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 30.1,
-      "rotation_deg": 180,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 76.2,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-d02f-7c8b-a5ea-5c43b8dda4a1.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Reece ca Conmetice en: ene Nenony CNC \u201cos : oe a cs\noe s a) te ent\nLe Mat el de\nSOS eR ir _ \u2018\na ty Ne Pte Te\nee a ee Pe d od\neS a ee ' ide le\neven ee Ss nie ae Pe oe Ty\noe Ce ee i {4 \u2018\nee, be oe De a re \u00e9\n~\u2014 ee oe (eee uy \u00e9\nee ll lc Se es wt\ng oe ee f :\nee see SM ns Se , a i\nsos hes aka se A a eaes os) x\ni 2 tea \u2014 wl a ae bi fe\nSPER STS f ie Ah fe | ap\n\u2018 ee . ad = % 4 \u2019 Ma, 4 oe\n; \u2018 roe we > = j\neo 2 | : me at CD a eq 2g ; at \u2018eay\n. pee ae J he Co @ ~ ; 5 i yok?\n\u2014 = =\u2014lhw MD a c a a om 4% Peo\"\ni"
+      "raw_text_excerpt": "1101 (01 1I 11 1 111\nRegister #: 2\nCommuni ty Pizza\n2026 5th Ave South\n515-955-82C2\nBryson Cook (215)\nAccount Number: 5699\nAccount Name: Miscei ianeous\nDescription: Steva N\nAmount: $40.30\nUmms\ndanager Sign:\n:UBIS"
     },
     {
       "source_channel": "photo",
       "doc_kind": "unknown",
       "vendor": "unknown",
+      "vendor_type": null,
+      "cogs_category": "unknown",
+      "category_source": "unmapped",
       "date": null,
       "invoice_num": null,
       "amount": 0.0,
@@ -531,62 +601,70 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 21.1,
-      "rotation_deg": 270,
+      "ocr_engine": "tesseract",
+      "ocr_confidence": 57.0,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
         "partial",
-        "rotated"
+        "rotated",
+        "uncategorized"
       ],
       "source_images": [
         "01a06a6c-d0c2-7c75-8645-9c48f2de0aa7.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Seapets : ep Rc i\nSe aa <p \u2018 Bee 7\neran RRR \u2018 ae eee os e <3\nee ee es ,\nSOC isin enna cs Spence ay LR ran Oost 7\nBehe oe tre eee oN Weeere eae ERS i z\nBre soon yes ey ales \u201cCON pampeeniets Seka epiatea cha Mca Recs, Sy = iO ao \u201d Re ree Cy 4\nSSR osc Meco a Repetto i Sgiee ee eet cuBueme eos oe ne\nSut A pRNe Rare Pap asec oe ES Te eas ho cpp a er Oey Bare eaten ee tae . Serre . i\nSe eae ee a) OS ea ae a eee ts eee eee Sn q e\nRUDE Sa 1S IES a ang ees Str 9 COR Cp 15 eet Rae pee age e \"ee,\nCee abe s"
+      "raw_text_excerpt": ""
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
-      "date": null,
+      "doc_kind": "payout_slip_plus_receipt",
+      "vendor": "Fareway",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "payout_account",
+      "date": "2026-08-20",
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 55.36,
+      "printed_total": 55.36,
       "tax": null,
-      "account": null,
-      "employee": null,
-      "description": null,
+      "account": "4312 Account Name",
+      "employee": "Kenzy Thompson",
+      "description": "Fareway\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 29.3,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 78.2,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-d15e-7800-809b-61e1719c0e42.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "So Yea be aaa Pen PEN CAA cat eS On ST TRENT Gi als Sanaa Tee Gem ES PGES CDN. lon CEN bis a a we ae Ca ae nee ase ee\neee tap em ie ei aa a a eT oo Be 3 coe : : wept ee E Pag ee ee ae\n: Se a ee Ce ee a oa ee a\nCp ee ee eo a en oe ae wl ey\nee ee i eee Oe ee De ee a BP eS Ae a ee. re\nSage GS Side Sees Ge. cael. ee 3} AIS By ee Sse cans NAO SAUY Re eae Bee te pore th ay ee Pet er wry Re eon, Sa ae SS ae ae\nj Se ae Lee ae SE i Se ee ee ee en, a in, ee Ce\noat ee Ee a: te ee ee OE nae\n* =. . ER OE ee "
+      "raw_text_excerpt": "J8--20-2026\n8/20/2026 10:48:43 AM\nRegister #: 2\nCommunity Pizza\n2026 5th Ave South\n515-955-82C2\nKenzy Thompson (175)\nAccount Number: 4312\nAccount Name: Food\nDescription: Fareway\nAmount:$55.36\nUBIS JOL\nston\nAAAAWNAAAAAAA\nnd Morot Avallllulor\nphune&\nAnlruld\nt\n01016\nAAAAWAHAAAAAA\nThenk yoi\nAAWAAN\n#508-002 8/\nStore ##n"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "store_receipt",
-      "vendor": "Hy-Vee",
-      "date": "2020-08-17",
-      "invoice_num": null,
-      "amount": 215.6,
-      "printed_total": 215.6,
+      "doc_kind": "wholesale_invoice_plus_receipt",
+      "vendor": "Hy-Vee Wine & Spirits",
+      "vendor_type": "wine_spirits",
+      "cogs_category": "liquor",
+      "category_source": "vendor_directory",
+      "date": "2026-08-17",
+      "invoice_num": "16775",
+      "amount": 216.0,
+      "printed_total": 216.0,
       "tax": null,
       "account": null,
       "employee": null,
-      "description": "Unit Pr",
+      "description": "10807\n0",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 62.3,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -595,12 +673,15 @@
         "01a06a6c-d1f9-7a69-a6e0-71d7611f0e21.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Oe oO Ee a Alyn Ca\n\u2014\u2014\u2014an | Salesman 7m A una S i\nmer | Delivery p\\Werget We ON ead Ae Sale Lapp\nCusto cdonald PO Oe ow\nAMa NG ah aa\u201d he ae\natin 242896 DISC TOT ee fy iy aye Aig tg I\n6246.00 ie irda OF Li LG os,\nCEH Le ll IO\noe at tae eh ee 4\nBit?! Port Dodge Hy-Vee Wine Spirits : is \u00e9\npe ) \u00ab\nx 1511 2nd Ave. North noice Num 16775 ier\n76 Fort Dodge, IA 50501 Customer Num 94016992 Page 1 of 2 : fey\n515-576-2333 Delivery Date 08/17/2096 oa Oe gaoe ay\n4.62 quail gi\n. | Qu : OY Mahe\nBill to: Community"
+      "raw_text_excerpt": "Salesman\nCustomer\nDeliveryman\nAWerger\n31896\nAMacdonald\nDISC\nTOTAL\n$216.00\nFoft DodgeHy-VeeWine&Spirits\nDate\n8/17/\n1511 2nd Ave.North\n1D\nInvoice Num 16775\nFortDodge,IA50501\n76\nCustomerNum94016902\nPage1of2\n515-576-2333\nDelivery Date 08/17/2026\nDate:08-17-2026\n11247,62\nBill to: Community\n2026 5th Ave. South\nFort Dodge, IA 50501\nThanks For Your Order!\nyau\n955-8202\nSally Hart\nQty\nQty\nOrd\nShip\nItem #\nSize\n2\n2\nDescription\n10807\n0.750Liter\n1\nCrown Royal Regal Apple\nUnit Price\n1\n11297\nTotal Price\n1.000Li"
     },
     {
       "source_channel": "photo",
       "doc_kind": "unknown",
       "vendor": "unknown",
+      "vendor_type": null,
+      "cogs_category": "unknown",
+      "category_source": "unmapped",
       "date": null,
       "invoice_num": null,
       "amount": 0.0,
@@ -612,34 +693,41 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 22.3,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 38.6,
+      "rotation_deg": 90,
       "quality_flags": [
         "low_confidence",
-        "partial"
+        "partial",
+        "rotated",
+        "uncategorized"
       ],
       "source_images": [
         "01a06a6c-d291-7595-93e2-3bc8d622e645.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Sa es aa ie Pa ee Bee acti boa dx ee .\nCe a ee 3 ee oe a ee ae = iui q '\n: as Wee \u2014 aa ae e \u2014 ; j\nanes oe Fe Ey RN ea a a | \u2014 :\nee a i ~ as \u201d \u2014 q t\nem se a ss ee oe a a. 4 oe ee \u2014 |\nae ae ae ig * Es\nco ee se ae * 2\n. ag oF ge * : S : :\n. ore \u00bb *\n, ee\n=\n* \u2018 r 1\na q\n\u00a5 Bi\nes 1 =\n% |\n= 4 q\noo\n* q\n5 de 1\n| \u2018\n\u2014\ni =\n4 '\n: i -\n&\n=\n: oa :\n* * r ae\na\n, . a\n~ re po\ni no An ST \u00ab eter et AU lies ogni \u2018\nJini ieceenB cp SRA fh a IOP eo Bier acai eas ara\nar Veen Nate BI Teen a oR ee,\nae\nae\n* 7 ae\noye Be:\nes % e"
+      "raw_text_excerpt": "n&Spins\nBaNory bao Unkcrin\nBioOommwnly\n20259h0 Sot\nmor RorWour Orte\n9698298\nSely Hatl"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Northern Lights Distributing",
+      "vendor_type": "specialty_food",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-18",
-      "invoice_num": "699510",
-      "amount": 30.59,
-      "printed_total": 30.59,
+      "invoice_num": "NORTHERN",
+      "amount": 32.74,
+      "printed_total": 32.74,
       "tax": null,
       "account": null,
       "employee": null,
-      "description": null,
+      "description": "Pack",
       "customer": null,
       "line_items": [],
-      "handwritten_credit": null,
-      "ocr_confidence": 58.7,
+      "handwritten_credit": 0.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 98.5,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -648,16 +736,19 @@
         "01a06a6c-d32c-7617-95a7-bd856085fe4c.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "ee eR a ty hy ie ice MGR AR | ak he a is ed al. it = oh!\nee a ly =\nie\na\ny\nee\nCUT Ee NORTHERN LIGHTS DISTRIBUTING, INC. Y\nSE 2949 8th Avenue South Invoice #: 699510 ne\nNORTHERN LIGHTS Fort Dodge, !A 50501 Invoice Date: 08/18/2026\n@ foodservice | J (515) 576-2181 \u00ab Fay: (515) 576-7704 Page aa ie\nhttp://www.northernlightsdistributing.com/ Customer #: 53168\n- \u2014 ina\nADI ee | Ce eee B\nCOMMUNITY PIZZA, INC. COMMUNITY PIZZA, INC. 3\n2024 STH AVENUE SOUTH 2024 STH AVENUE SOUTH 5\nFORT DODGE, IA 50501 FORT "
+      "raw_text_excerpt": "NORTHERN LIGHTS DISTRIBUTING,INC.\n2949 8th Avenue South\nInvoice #:\nNORTHERN LIGHTS\n699510\nFort Dodge, IA 50501\nFoodservice\nInvoice Date:\n(515) 576-2181 \u00b7 Fax: (515) 576-7704\n08/18/2026\nhttp://www.northernlightsdistributing.com/\nPage:\n1\nCustomer #:\n53168\nShip To:\nBill To:\nCOMMUNITY PIZZA,INC.\nCOMMUNITYPIZZA,INC.\n20245THAVENUESOUTH\nFORTDODGE,IA50501\n20245THAVENUESOUTH\nFORTDODGE,IA50501-\nPhone:(515)955-8202\nCust. PO : PU TUES. 8-18\nContact: SCOTT\nTerms:EFT/ACH\nSaies Person: 5 - John Graham\nItem#\nUP"
     },
     {
       "source_channel": "photo",
       "doc_kind": "store_receipt",
       "vendor": "Hy-Vee",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": "2026-08-17",
       "invoice_num": null,
-      "amount": 42.89,
-      "printed_total": 42.89,
+      "amount": 1247.62,
+      "printed_total": 1247.62,
       "tax": null,
       "account": null,
       "employee": null,
@@ -665,7 +756,8 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 55.8,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -674,13 +766,16 @@
         "01a06a6c-d3c9-752a-b254-18d87c4432b9.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "baie \u2018Vit znd Ave. Nor _ age aly UIA\n7\u00a2e Fort Dodge, IA 5 \u00e9 Num 94016902 oe\n; s \u20ac\n515-576-2333 aS \u201cWye 08/17/2026\nBillto: C 4 Al 0. Oe\n2nd Ave. \u00a3 CWNeED\n2 iy Dodge, Ta S056 \\ Thanks For Your O\n9-576-2333\ni T1825 toy gyiAettentMa |Group@Hy-Vee . com v\nHV spp. x\nTRi?\u2019 79450272851 034.63 T\nS PERINgePPINOT GR s98ig76qqs 34.95 T\n715097 # ine bee t pe\nv/ coun -3.5\ncoer ee, 3\n@ 0.05\nQty = Qty wy ONC waTER 7545006405 3.00 TF\nOrd Ship 3910 / 10.00\n2 foo Sh hNae GINGER BE 945005237 25.47 IF Unit Price\n8.4"
+      "raw_text_excerpt": "1 2nd Ave. Nor\nlce Num 16775\n1D\nFort Dodge, IA 5f\nmerNum 94016902\n7E\n515-576-2333\n08/17/2026\nDate\nF,62\nBill to: \nC\nEMPLOYEE OWNED\n2nd Ave.North\n2\n151/ Dodge, IA 50501\nFo515-576-2333\nThanks For Your O\nF\n9\nHV SPIRI\n75450272851,034.63 1\nBERINGER\nPINOTGR\nR8981976009\n5@\n34.95T\n715027Wine Discount\n6.99\n.05NS BTL DEP\n-3.50\n41\n0.25\nQty\n5@\nQty\n0.05\nHYv rONIC WATER\nOrd\n7545006405\nShip\n3.00 TF\n310/10.00\nSRANAC GINGER BES\n2\n2\n945005237\n25.47 TF\n3@\nUnit Price\n8.49\n1\n.30NFS BTL DEP\nApple\n1\n46\n0.90\n28.62\n3@\n2"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Confluence Distribution",
-      "date": null,
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
+      "date": "2026-08-17",
       "invoice_num": "oice",
       "amount": 216.0,
       "printed_total": 216.0,
@@ -691,7 +786,8 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 54.1,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 91.8,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -700,16 +796,19 @@
         "01a06a6c-d463-7690-8598-5f1b6bb827b0.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "wits Sue ea .. er ee es al & Se nee Bay z eee 6,\nae we ge\nte s . sate tie be\nap ci \u00a2 4 eee\nSY % ro -\u2014\u2014\u2014_ Confl ee ry tay\nsin ont le ontluence Distribution/Brewing Company Community Tap and Pizza ees\nSee | ice 1235 Thomas Beck Rd Me ::\natts \u2014 2026 5th Ave S ms\n\u00a5 ed SEMEN bes Moines, IA 50315-1055 Fort Dodge, IA 50504 oo\nbas (515) 410-9991 es\nae confluence-distro.com Mychos kc\noe COD ies\ni Date Invoice Load Sheet | PO Number R P at\nTet oute Customer | Deliveryman | Salesman as:\naes Ge1/2020 {| 227"
+      "raw_text_excerpt": "fluence\nConfluence Distribution/Brewing Company\n1235 Thomas Beck Rd\nCommunity Tap and Pizza\nDISTRIBUTION\n20265thAveS\nDesMoines,IA50315-1055\n(515)410-9991\nFort Dodge\uff0cIA 50501\nconfluence-distro.com\nMychael\nCOD\nDate\nInvoice\nLoad Sheet\n8/17/2026\nPO Number\n227930\nRoute\n26876\nCustomer\nDeliveryman\n1310Delivery Mon\nSalesman\nID\n21896\nQTY\nAMacdonald\nAWerger\nPRODUCT\nPRICE\nDEP\n764\nUPC\n2\nDesMoinesIPAKeg1/6Barrel\nNET\nDISC\n$78.00\nTOTAL\n$78.00\n$216.00\nSub Total\n$156.00\nTax\nTotal\n$216.00\nO0\nDeliveryman Signature"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "handwritten_invoice",
+      "vendor": "Sawyer's Meats of Iowa",
+      "vendor_type": "meat",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": null,
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 3.29,
+      "printed_total": 3.29,
       "tax": null,
       "account": null,
       "employee": null,
@@ -717,22 +816,25 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 27.4,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 77.3,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-d4fd-7f76-8e75-9fea43522472.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "625 * 7 Sins ae Te fe.\nm2 : sis oe at ae ES ver he a4 ae + .7 7\". ke oe\nae SOc see SE eR Mace TY Re Se DS ja ae j &\n; r ane \u201ca er z Get: io By me saat! . Woe te \u201c4 \u2018 : * ie Boot Sy : i he eg \u2018fe ay 35: N Re =\" i \" 3 ji , F ips * \u2018 \u00a5\nies =: if ef ay \u201c4 ih \u201c Ee: ie. & i 5 \u2018 wee 5, 4 > i oe ty. ae Ny * * a Ape a) at . % : a, 4 \u2018i * by 4 * Pitt : a ~ F e\nSn cates Re oy ee Oe ee AS RES | 7 ae. on en | , ol al\nVig J Cage: Pee. poy (es < las ee Fg eh Ae . rose es : \u00a5 He oe oe ae. co \u201c ie ae . \u2018oe\nDOP A"
+      "raw_text_excerpt": "SAWYER'S MEATS OF IOWA, INC.\n414 2nd Ave. South\nPhone: 576-5331\n11712\nFort Dodge, IA 50501\nSold to\nommunh\nLAL\nItem\nPrice\n# or Ibs.\nTotal\nl0. 20\n3d78l0\nGrnlHAm\n3.29\nQS\n8225\nTurkeBreast\n3.99\n37S1\nGrndBe\n4.20\n8400\nPokbitt\n2.29\n21.1\n4832\nRibs\n3PKs\n3.29\n32.1\n/05\nSAubake\nB3.39\nV3/\nChrcken\n2.aq\nS1.1//2\n79231\n41032"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
+      "doc_kind": "handwritten_invoice",
+      "vendor": "Sawyer's Meats of Iowa",
+      "vendor_type": "meat",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
       "date": null,
       "invoice_num": null,
       "amount": 0.0,
@@ -744,62 +846,68 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 26.2,
-      "rotation_deg": 180,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 69.9,
+      "rotation_deg": 0,
       "quality_flags": [
-        "low_confidence",
-        "partial",
-        "rotated"
+        "partial"
       ],
       "source_images": [
         "01a06a6c-d59b-7fe7-aaaf-b2cbae41c4c1.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "Me eo oe? ys\naS \u2018 5 Peres ie ek ape Pe . %\nnT pie Mes haf 74d phy Tes\nrat 4 ay & eee a 2 ALS (Ab. : pie le ee AS ty: Aa +. aa\nMe ee oi Fas : Dye fe yo i Ae fe ys yeaa y\u201d ped Sere\n; Seika ie ae re Fg. Ree bons ot ae bak, Br \u201cSandee th: Pe pos Wo VE oes\na8 ne pope.\u201d 5 AN Se IM, MB ae\n5 EM See as om Bee Py, Me ea toed ae mn? f is c ens it: A Ay oie. i) \u2018 Ae ee oa Set ne co hia 2 (7% 4 a me\na sy es bh De (ate he Uesiek: fF AT tee Y hie ve eae Mae 2 age ag ae | ike l=} \u2018\naa Yh) es ee sha ts Hy cer! D"
+      "raw_text_excerpt": "Phone: 576-5331\nSAWYER'S MEATS OFIOWA, INC.\n41067\n41U32\nTotal\n# or Ibs.\n92-51-8\nPrice\nFort Dodge, IA 50501\n414 2nd Ave. South\nItem\nSold to"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "FT Dodge Distributing",
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
       "date": "2020-08-18",
       "invoice_num": "W-402581",
-      "amount": 724.9,
-      "printed_total": 724.9,
+      "amount": 651.7,
+      "printed_total": 651.7,
       "tax": null,
       "account": null,
       "employee": null,
-      "description": "PRICE DEPOSIT DISC TOTAL els ge RS\na car",
+      "description": "PRICE\nDEPOSIT\nDISC\nTOTAL\n8245\n1\nAO CRISP",
       "customer": null,
       "line_items": [],
-      "handwritten_credit": 0.0,
-      "ocr_confidence": 34.3,
+      "handwritten_credit": -30.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
         "rotated"
       ],
       "source_images": [
         "01a06a6c-d637-7cdc-8b2b-f111fbc580bf.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "\u2014 i _ . PERL ee ees kg Mh le OO eee\nue Se Fees MRS OG Maite Ly a\nae page ee gee Bs 3 eg\noa Rah TER ho on ge ge or ces Bh\njn RR aS pri e ation eae poe? Aes Ga mei al\nPee BS a fa ee gh\nSee os Petes Gg.\nSe cS moe US\nSoe rae ees oe er ae nee\n: \u2018ar os ys $ . ie eS wg 7 = S \u2014 g : :\neS a = lage eg eel, wy, Ke\noo\u201d Safe! FT DODGE DISTRIBUTING Co...1NC cOMUNITY TAVERN FAD Ege eS\nSSeS S008 Hishway 169 South 2026 STH AVE 8 E * tM ee. SS af\n\u00a2 RES Fort Dodse, 1A 50501 SOL aaa RH ae\nRE ee SES (515) 679-2721 Ow"
+      "raw_text_excerpt": "FT DODGE DISTRIBUTING CO.,INC\nCOMMUNITY TAVERN\n2053 Highway 169 South\n2026 5TH AVE S\nFort Dodge. IA 50501\nFORT DODGE. IA 50501\n(515)573-2721\nBONNIE, 5159558202\nDATE:08/18/202\nCustomer Number50083\nINVOICE NUM:W-402581\nCODE\nQTY\nDESCRIPTION\nPRICE\nDEPOSIT\nDISC\nTOTAL\n8245\n1\nAO CRISP 6PK BTL\n$31.50\n$31.50\n$31.50\n11306\nBANQUET CO0RS 24PK CAN\n$22.55\n$22.55\n$22.55\n97156\n1\nBLUE M00N 1/6 BBL\n$68.75 $30.00 $68.75\n$98.75\n12205\n8\nCOORS LIGHT 6PK BTL\n$29.90\n$29.90\n$239.20\n1278\n(B0 5)HIGHLIFE 6PK BTL\n$26.95\n$26"
     },
     {
       "source_channel": "photo",
       "doc_kind": "distributor_invoice",
       "vendor": "Humes Distributing",
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
       "date": null,
-      "invoice_num": "oicef",
-      "amount": 609.1,
-      "printed_total": 609.1,
+      "invoice_num": "199980",
+      "amount": 554.1,
+      "printed_total": 554.1,
       "tax": null,
-      "account": "32090 Invoicef",
+      "account": "32090 Invoice",
       "employee": null,
       "description": null,
       "customer": null,
       "line_items": [],
-      "handwritten_credit": 0.0,
-      "ocr_confidence": 47.9,
+      "handwritten_credit": -90011.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
       "rotation_deg": 90,
       "quality_flags": [
         "rotated"
@@ -808,40 +916,46 @@
         "01a06a6c-d6ce-7a4f-9f8e-35c8dc76edf1.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "9\u201d Do a neal a ss es\nre ey : ne Oy \u201c4 mee ae\ni SS HUMES DISTRIBUTING INC. oe ag\nees 400 NORTH FIFTH STREET oc Pe\nPe see FORT DODGE, IA 50501 ee. Sh eke a\n27 Ue, ties ep, ew eae\nSa rs (515) 573-7271 Rear ge\ner = Tue Aug 18, 2026 8:40 AM me ey\nmos eee Account: 32090 Invoicef: 199980 POF: i Be ree\nees Seige \u00abCOMMUNITY TAP & PIZZA oe wee\nee COMMUNITY TAP & PIZZA License : LC0044947 Exp. Nov 30, 2026 noe ee.\npri ae = ee Car. 2026 STH AVE S Terms : Charge Only es Bees |\nSA Gessoek FORT DODGE, IA 50501"
+      "raw_text_excerpt": "HUMES DISTRIBUTING INC.\n400 NORTH FIFTH STREET\nFORT D0DGE, IA 50501\n(515) 573-7271\nTue Aug 18, 2026 8:40 AM\nAccount:32090\nInvoice#: 199980\nPO#:\nCOMMUNITY TAP &PIZZA\nCOMMUNITYTAP&PIZZA\nLicense : LC0044947 Exp. Nov 30, 2026\n20265TH AVES\nTerms\n: Charge Only\nFORT D0DGE,IA 50501\nDriver\n:70 - DEGAN KLINDT\n(515) 955-8202\nSalesrep: 66 - BAMBI BRANDOW\nITEM\u5206\nQTY\nDESCRIPTION\nU.P.C.\nPRICE\nDISC\nDEP\nAMOUNT\n02524\n1\nSELECT24/12 CAN\n018200966712\n23.35\n1.10\n1.20\n23.45\n04708\n1\nMIC ULTRA ZERO\n018200204661\n32.75\n0.0"
     },
     {
       "source_channel": "photo",
-      "doc_kind": "unknown",
-      "vendor": "unknown",
-      "date": null,
+      "doc_kind": "payout_slip_plus_receipt",
+      "vendor": "Hy-Vee",
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "payout_account",
+      "date": "2026-08-11",
       "invoice_num": null,
-      "amount": 0.0,
-      "printed_total": null,
+      "amount": 91.3,
+      "printed_total": 91.3,
       "tax": null,
-      "account": null,
-      "employee": null,
-      "description": null,
+      "account": "4311 Account Name",
+      "employee": "Miso\nCre\nJessica Gailey",
+      "description": "Hyvee\nAmount",
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 30.0,
-      "rotation_deg": 0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 88.3,
+      "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
-        "partial"
+        "rotated"
       ],
       "source_images": [
         "01a06a6c-d76a-7128-a7ff-a2c086d03b05.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "o \u00a9 23: St! $e we 2 1. wo :\n<5 S$ S38: i826 8s5: | ;\nPe 3 BS me) 4 4 1 8 a << = whe\u201d PLE Clee :\n= oo Oo co oo rf a i B gum ) & wy uy y* ra ey /- %,,* \u2018Ie :\n-AinS2 \u00ae . er ae |\noo \u2014\u2014 eRe Pee Cn woe e ee palit he ews wo we\n\u20143 : we Se. Fail oN BAG Nae s tas Ee sy A fy i oe : e \u00a5 4) bral Dy Pe x \u2018 i Poe (% : \u00a2\n: eee ae ae Roald veer, a a ea Pe eG. sy Zs\n5 e * ia Be a ane ne . Reine er ae ay: \u201cag sear ane) Oo eis Vs a es rahe fe Cae Mee es i. >\n3 rT OR ee ME hee fos Pree \u00ab| Retin) Can a ae ay ES RS SE"
+      "raw_text_excerpt": "05107\n05124\n07007\n78602\n78603\n78605\nPay Out\n90001\n11-2026\n8/11/2026 10:49]:01 AM\n9001\nRegister #: 2\nCase\nCommunity Pizza\nBott\n2026 5th Ave South\nKegs\n515-955--82C2\nMiso\nCre\nJessica Gailey (54)\nAccount Number: 4311\nAccount Name: Bread\nDescription: Hyvee\nAmount: $91.30\nManager Sign:\nvee Sign:\ncas\nPOS\nTRX\nTime\nStore\nDate\n9\n3 0155\n08/11/26 10:13 AM 1192\neto\nTell us about your trip fora\nWIN A $5OO HY-VEE GIFT\nVisit Hy-VeeSurvey.c\nfor a survey and official\nNo purchase necessary tc\nsweepstakes.\nwww.hy-"
     },
     {
       "source_channel": "photo",
       "doc_kind": "store_receipt",
       "vendor": "Hy-Vee",
-      "date": null,
+      "vendor_type": "grocery",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
+      "date": "2026-08-11",
       "invoice_num": null,
       "amount": 0.0,
       "printed_total": null,
@@ -852,10 +966,10 @@
       "customer": null,
       "line_items": [],
       "handwritten_credit": null,
-      "ocr_confidence": 29.7,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 80.6,
       "rotation_deg": 90,
       "quality_flags": [
-        "low_confidence",
         "partial",
         "rotated"
       ],
@@ -863,33 +977,64 @@
         "01a06a6c-d804-7e60-85e0-21ce33514b8e.jpg"
       ],
       "venue_id": "community-pizza",
-      "raw_text_excerpt": "ei AS | oc till ce ee Se a ii\u201d ey cee tig. St tag We tie\nbhi at eS arc er ee Ga ae, ieee age\nwoicge th, ine ek ote ia ec | Mee AGE yy Wh, See Oh A\nho SOM I Oe ea. Sa Fe etn. MOM Ee Taint 7... +k Mea SE Ih y aga\ntee Rome Be a oa ae tae ee Re,\nSO So a. ee re, Ae ee ean eel Ma 2 ty me ad\nMn co ho es SRN eID Yk GON. he ie eee BOE Vs ee\n4g eh eee eS a se Bey sy ROR ae Vey\u201d ae\ncc ee\u201d ae. %) \u201c4 Sok MA ae eal kD ES ae 8 Ne > RN aa ON aR omen\nAES ORES hyo eae een pig te e P oe\nbers Se iets | ee te gs ayy"
+      "raw_text_excerpt": "HuVo\n115 S 29th St, Suite\nEMPLOYEE OV\nFort Dodge, IA 5050\n515-573-4105\nStoreManagementMai 1Group@\n.com\nV TEXAS T0AST W 7545009810\n98\nF\n20\n2.99\nHY-VEE SPLIT TOP\n7545009854\n18\n2. @\n2.49\nP FARM DELI SWIRL 1410007009\n18\nF\n2@\n4.99\nSPECIALTY BUNS&\n6005000000\n00\nF\n14 @\n3.99\nMELISSAS W0NT0N W 4525515578\n96\nF\n4 @\n3.99\nSUBTOTAL[24]\n.90\nTOTAL\n.90\nCash\n.00\nCash\n.10\n001119211082600900\nCashier Name: Rebecca\nPOS\nTRX\nTime\nStore\nDate\n9\n30155\n08/11/26 10:13 AM 1192\nce to\nus about your trip for a\nIN A $50O HY-VEE"
     }
   ],
+  "category_rollups": {
+    "beer": 1421.8,
+    "food": 3054.23,
+    "liquor": 216.0,
+    "misc_opex": 142.55,
+    "ops_supplies": 75.16,
+    "unknown": 109.98
+  },
   "stats": {
     "count": 32,
-    "mean_confidence": 40.5,
-    "rotated": 22,
-    "low_confidence": 20,
+    "mean_confidence": 86.8,
+    "rotated": 29,
+    "low_confidence": 1,
+    "amounts_found": 27,
+    "categorized": 28,
     "vendors": [
+      "Community Pizza",
       "Confluence Distribution",
       "FT Dodge Distributing",
       "Fareway",
       "Humes Distributing",
       "Hy-Vee",
+      "Hy-Vee Wine & Spirits",
       "Menards",
       "Northern Lights Distributing",
       "Performance Foodservice",
+      "Sawyer's Meats of Iowa",
       "Sysco",
       "Walmart",
+      "unknown"
+    ],
+    "categories": [
+      "beer",
+      "food",
+      "liquor",
+      "misc_opex",
+      "ops_supplies",
       "unknown"
     ]
   },
   "known_gaps": [
-    "Amount extraction ~50% on dense distributor pages / mangled payout Amount lines \u2014 harden next",
-    "Payout slips often OCR-mangle Community Pizza header \u2014 Register#2 heuristic added in script",
-    "Handwritten Sawyer meat tickets need dedicated pass",
-    "Do not commit raw JPGs; assets live outside git"
+    "Handwritten Sawyer totals still weak on some pages",
+    "Hy-Vee Wine & Spirits vs grocery Hy-Vee can mis-route if OCR misses WINE/SPIRITS header",
+    "Blur/stain photos may fall to tesseract with partial extract"
   ],
-  "next": "Improve payout Amount: $X regex + handwritten invoice path; keep auto-rotate"
+  "benchmark": {
+    "before_tesseract_only": {
+      "amounts_found": 15,
+      "mean_confidence": 40.5,
+      "categorized": 0
+    },
+    "after_rapidocr_plus_taxonomy": {
+      "amounts_found": 27,
+      "mean_confidence": 86.8,
+      "categorized": 28
+    }
+  }
 }

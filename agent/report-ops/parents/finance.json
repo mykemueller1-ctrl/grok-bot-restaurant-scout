@@ -1,0 +1,30 @@
+{
+  "name": "Finance / P&L / Prime Cost Report Parent",
+  "title": "Never86 report parent \u2014 Finance / P&L / Prime Cost",
+  "role": "parent",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "domain_id": "finance",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Parent agent for Finance / P&L / Prime Cost reports. Forensic P&L advisor \u2014 coded invoices + sales + labor \u2192 leak dollars by category. Spawns/routes sub-agents: daily-pnl, prime-cost, vendor-spend. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
+  "job_to_be_done": "Forensic P&L advisor \u2014 coded invoices + sales + labor \u2192 leak dollars by category",
+  "sub_agents": [
+    "daily-pnl",
+    "prime-cost",
+    "vendor-spend"
+  ],
+  "skills": [
+    "report-ingest",
+    "report-route",
+    "teach-label",
+    "recurse-learn"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

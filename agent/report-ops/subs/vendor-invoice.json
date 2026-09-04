@@ -10,7 +10,7 @@
   "parent": "inventory",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Owns the Distributor / Store Invoice report (Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.). Ingests photo, email, pdf, csv. Signals: vendor, sku, qty, amount, account, payout_pair, handwritten_credit, email_forward, source_channel, ocr_confidence, rotation_deg. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "description": "Owns the Distributor / Store Invoice report (Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.). Ingests photo, email, pdf, csv. Signals: vendor, vendor_type, cogs_category, sku, qty, amount, account, payout_pair, handwritten_credit, email_forward, source_channel, ocr_confidence, rotation_deg. Routes findings up to the domain parent; teach labels via Report Teacher.",
   "source_report": "Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.",
   "formats": [
     "photo",
@@ -20,6 +20,8 @@
   ],
   "signals": [
     "vendor",
+    "vendor_type",
+    "cogs_category",
     "sku",
     "qty",
     "amount",
@@ -77,11 +79,13 @@
       "label": "keep",
       "icp_tier": "owner_1_5",
       "venue_id": "community-pizza",
-      "as_is": "Small ICPs dump phone photos of every invoice \u2014 rotated, stapled payout\u2194receipt, shadows, blur. Millions of them.",
-      "truth": "Email invoices exist, but most owner-1-5 ops will not reliably forward them. Photo OCR must work.",
-      "coach_to": "Ingest the photo firehose via invoice-photo-ocr \u2192 vendor-invoice schema. Offer email forward as a later upgrade, not a prerequisite.",
-      "good_looks_like": "Photo batch \u2192 auto-rotate OCR \u2192 vendor/date/amount/account rows with confidence flags. Low-confidence docs teach-batch to Myke.",
-      "pack": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json"
+      "as_is": "Small ICPs dump phone photos of every invoice \u2014 food, beer, liquor, pop, meat, grocery, payout slips \u2014 rotated/stapled/blurry.",
+      "truth": "Leaders (MarginEdge, Ottimate, R365, xtraCHEF) win by photo/email intake + coding to restaurant COA (food/beer/wine/liquor/NA) + daily P&L. Pure OCR alone is not enough \u2014 teach on exceptions.",
+      "coach_to": "RapidOCR+Tesseract intake \u2192 vendor_type + cogs_category \u2192 finance advisor swarm (prime cost / daily P&L / vendor spend). Email forward is bonus.",
+      "good_looks_like": "Each photo \u2192 vendor + amount + cogs_category (food|beer|wine|liquor|na_beverage|\u2026). Category rollups feed P&L advisor. Low-confidence teach-batched.",
+      "pack": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json",
+      "research": "docs/RESTAURANT-AP-OCR.md",
+      "taxonomy": "agent/report-ops/taxonomy/cogs-categories.json"
     }
   ]
 }

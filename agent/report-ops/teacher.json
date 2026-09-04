@@ -25,7 +25,10 @@
     "sku-depletion",
     "liquor-beer-par",
     "vendor-intake",
-    "vendor-invoice"
+    "vendor-invoice",
+    "daily-pnl",
+    "prime-cost",
+    "vendor-spend"
   ],
   "label_enum": [
     "keep",

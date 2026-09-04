@@ -21,6 +21,29 @@
       ]
     },
     "vendor": { "type": "string" },
+    "vendor_type": {
+      "type": ["string", "null"],
+      "description": "broadline | beer_distributor | wine_spirits | grocery | meat | hardware | …"
+    },
+    "cogs_category": {
+      "type": ["string", "null"],
+      "enum": [
+        "food",
+        "beer",
+        "wine",
+        "liquor",
+        "na_beverage",
+        "paper_packaging",
+        "ops_supplies",
+        "misc_opex",
+        "unknown",
+        null
+      ]
+    },
+    "category_source": {
+      "type": ["string", "null"],
+      "enum": ["vendor_directory", "payout_account", "line_hint", "unmapped", null]
+    },
     "date": { "type": ["string", "null"], "format": "date" },
     "invoice_num": { "type": ["string", "null"] },
     "amount": { "type": "number", "description": "Final payable / total after credits" },

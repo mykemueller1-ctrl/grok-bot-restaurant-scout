@@ -34,7 +34,7 @@ Ground truth in this repo:
 
 **Report agents that matter:** `time-entries`, `labor-summary`, `bar-kitchen-schedule`, `kitchen-labor-card`, `paper-weekly-schedule`, `item-selection`, `sales-summary`, `liquor-beer-par`, `vendor-invoice`
 
-**Never86 wedge:** Dial **invoice photo OCR** so the firehose becomes repeatable vendor/date/amount/account rows. Email forward is a bonus upgrade. Daily “oh shit” dollars — not enterprise BI.
+**Never86 wedge:** Photo OCR + **COGS category coding** (food / beer / wine / liquor / pop) → forensic P&L advisor swarm. See `docs/RESTAURANT-AP-OCR.md`. Daily “oh shit” dollars — not enterprise BI.
 
 ---
 

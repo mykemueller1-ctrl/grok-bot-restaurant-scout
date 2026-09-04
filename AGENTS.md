@@ -12,7 +12,7 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | --- | --- |
 | `agent/restaurant-scout.json` | Love → buy-now scout |
 | `agent/pain-shoppers/` | 238 vendor pain-shopper agents |
-| `agent/report-ops/` | Parent / teacher / sub agents for labor · sales · inventory reports |
+| `agent/report-ops/` | Parent / teacher / sub agents for labor · sales · inventory · finance/P&L |
 | `mcp/` | MCP connector definitions (env-based URLs) |
 | `services/pain-leads-api/` | Self-contained Fastify MCP API |
 | `stack/wiring.json` | Canonical URLs, secrets map, import waves |
@@ -21,6 +21,7 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `docs/CODEX-CLOUD.md` | GitHub ↔ Codex Cloud connect steps |
 | `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
 | `docs/CTAP-SEATS.md` | CTAP sold seats + front-door login |
+| `docs/RESTAURANT-AP-OCR.md` | Restaurant AP/OCR/COGS leaders + Never86 taxonomy |
 
 ## Build / validate
 

@@ -1,0 +1,157 @@
+{
+  "$schema_name": "RestaurantCogsTaxonomy",
+  "description": "Never86 restaurant COGS + OpEx coding taxonomy for invoice photo intake. Mirrors best-practice restaurant chart of accounts: food / beer / wine / liquor / NA bev must stay split so pour cost and food cost % are real.",
+  "version": "1.0.0",
+  "sources": [
+    "https://www.marginedge.com/how-it-works",
+    "https://www.marginedge.com/automated-invoice",
+    "https://restaurantinventorytools.com/best-restaurant-inventory-software-for-invoice-processing-2026/",
+    "https://restaurantvelocity.com/blog/restaurant-accounting-software/",
+    "https://saasrat.com/blog/best-accounting-software-for-restaurants/",
+    "https://www.korefi.ai/blog/restaurant-chart-of-accounts",
+    "https://www.marketman.com/blog/restaurant-chart-of-accounts",
+    "https://bluecloudcpa.com/guides/restaurant-bookkeeping-food-cost-prime-cost",
+    "https://restaurantassociation.com/blog/the-blueprint-for-financial-clarity-how-to-set-up-a-chart-of-accounts-for-your-restaurant/"
+  ],
+  "prime_cost": {
+    "definition": "COGS + total labor as % of net sales",
+    "typical_target_pct": [55, 65],
+    "food_cost_target_pct": [28, 35],
+    "beverage_cost_target_pct": [18, 24]
+  },
+  "categories": [
+    {
+      "id": "food",
+      "coa": "5100",
+      "label": "Food COGS",
+      "aliases": ["food", "produce", "meat", "dairy", "dry goods", "frozen", "seafood"],
+      "vendor_types": ["broadline", "produce", "meat", "grocery", "bakery", "specialty_food"],
+      "example_vendors": ["Sysco", "US Foods", "Performance Foodservice", "Northern Lights Distributing", "Sawyer's Meats", "Fareway", "Hy-Vee", "Walmart", "Restaurant Depot"]
+    },
+    {
+      "id": "beer",
+      "coa": "5200",
+      "label": "Beer COGS",
+      "aliases": ["beer", "keg", "draft", "ale", "lager", "seltzer beer"],
+      "vendor_types": ["beer_distributor"],
+      "example_vendors": ["Humes Distributing", "FT Dodge Distributing", "Hopkins Distributing", "Confluence Distribution"]
+    },
+    {
+      "id": "wine",
+      "coa": "5210",
+      "label": "Wine COGS",
+      "aliases": ["wine", "sparkling", "champagne", "prosecco"],
+      "vendor_types": ["wine_spirits", "grocery_liquor"],
+      "example_vendors": ["Hy-Vee Wine & Spirits", "Fort Dodge Hy-Vee Wine & Spirits"]
+    },
+    {
+      "id": "liquor",
+      "coa": "5220",
+      "label": "Liquor / Spirits COGS",
+      "aliases": ["liquor", "spirits", "vodka", "whiskey", "tequila", "rum", "gin", "cordial"],
+      "vendor_types": ["wine_spirits", "grocery_liquor"],
+      "example_vendors": ["Hy-Vee Wine & Spirits", "Fort Dodge Hy-Vee Wine & Spirits"]
+    },
+    {
+      "id": "na_beverage",
+      "coa": "5300",
+      "label": "Non-Alcoholic Beverage / Pop COGS",
+      "aliases": ["pop", "soda", "soft drink", "coffee", "juice", "mixer", "tonic", "energy drink", "na bev"],
+      "vendor_types": ["beverage", "grocery", "broadline"],
+      "example_vendors": ["Sysco", "Performance Foodservice", "Hy-Vee", "Walmart", "Fareway", "Coca-Cola", "Pepsi"]
+    },
+    {
+      "id": "paper_packaging",
+      "coa": "5400",
+      "label": "Paper & Packaging",
+      "aliases": ["paper", "packaging", "to-go", "foam", "liner", "napkin", "bag"],
+      "vendor_types": ["restaurant_supply", "broadline", "grocery"],
+      "example_vendors": ["Northern Lights Distributing", "Sysco", "Performance Foodservice"]
+    },
+    {
+      "id": "ops_supplies",
+      "coa": "5700",
+      "label": "Kitchen / Ops Supplies (non-COGS or smallwares)",
+      "aliases": ["supplies", "cleaning", "chemical", "gloves", "smallwares", "hardware"],
+      "vendor_types": ["restaurant_supply", "hardware", "janitorial"],
+      "example_vendors": ["Menards", "Performance Foodservice", "Sysco"]
+    },
+    {
+      "id": "misc_opex",
+      "coa": "6900",
+      "label": "Miscellaneous OpEx",
+      "aliases": ["misc", "miscellaneous", "other"],
+      "vendor_types": ["misc", "retail"],
+      "example_vendors": []
+    }
+  ],
+  "vendor_directory_seed": [
+    {"name": "Sysco", "vendor_type": "broadline", "default_category": "food"},
+    {"name": "Performance Foodservice", "vendor_type": "broadline", "default_category": "food"},
+    {"name": "US Foods", "vendor_type": "broadline", "default_category": "food"},
+    {"name": "Northern Lights Distributing", "vendor_type": "specialty_food", "default_category": "food"},
+    {"name": "Sawyer's Meats of Iowa", "vendor_type": "meat", "default_category": "food"},
+    {"name": "Fareway", "vendor_type": "grocery", "default_category": "food"},
+    {"name": "Hy-Vee", "vendor_type": "grocery", "default_category": "food"},
+    {"name": "Walmart", "vendor_type": "grocery", "default_category": "food"},
+    {"name": "Humes Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
+    {"name": "FT Dodge Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
+    {"name": "Hopkins Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
+    {"name": "Confluence Distribution", "vendor_type": "beer_distributor", "default_category": "beer"},
+    {"name": "Hy-Vee Wine & Spirits", "vendor_type": "wine_spirits", "default_category": "liquor"},
+    {"name": "Menards", "vendor_type": "hardware", "default_category": "ops_supplies"},
+    {"name": "Community Pizza", "vendor_type": "pos_payout", "default_category": null, "note": "Register payout slip — category from Account Name / Description"}
+  ],
+  "payout_account_map": {
+    "4312": "food",
+    "Food": "food",
+    "4311": "food",
+    "Bread": "food",
+    "Beverage": "na_beverage",
+    "5699": "misc_opex",
+    "Miscellaneous": "misc_opex"
+  },
+  "competitive_benchmark": {
+    "leaders": [
+      {
+        "name": "MarginEdge",
+        "role": "Invoice photo + email/EDI → human+AI line coding → daily P&L / food cost (sits on QBO/Sage)",
+        "intake": ["mobile photo", "email", "upload", "EDI"],
+        "sla": "24–48h line-item coding",
+        "never86_steal": "Photo-first intake; human teach loop on exceptions; daily leak dollars not month-end"
+      },
+      {
+        "name": "Ottimate (ex Plate IQ)",
+        "role": "AP automation / OCR / GL coding / VendorPay — AP volume specialist",
+        "intake": ["email", "upload", "scan"],
+        "never86_steal": "Line-item GL coding + approval rules by vendor/category"
+      },
+      {
+        "name": "Restaurant365",
+        "role": "Full restaurant ERP/P&L — accounting + inventory + labor (enterprise altitude)",
+        "never86_steal": "Full P&L intelligence; Never86 stays action layer for owner-1-5, not replace R365 overnight"
+      },
+      {
+        "name": "xtraCHEF by Toast",
+        "role": "Toast-native invoice + recipe costing + inventory",
+        "never86_steal": "POS-tied cost visibility; map Toast sales categories ↔ invoice categories"
+      },
+      {
+        "name": "MarketMan",
+        "role": "Inventory + invoice snap + purchasing / COGS",
+        "never86_steal": "Vendor catalog + theoretical vs actual from purchases"
+      },
+      {
+        "name": "BevSpot / Partender",
+        "role": "Bar-centric beverage inventory / pour cost",
+        "never86_steal": "Beer/wine/liquor must stay separate COGS lines"
+      },
+      {
+        "name": "ClearCOGS",
+        "role": "AI COGS forecasting from POS + invoices",
+        "never86_steal": "Predictive food cost from invoice stream"
+      }
+    ],
+    "never86_wedge": "Owner-1-5 photo firehose → OCR + category coding (food/beer/wine/liquor/pop) → forensic P&L advisor swarm. Compete on speed-to-leak-dollar and teach quality, not enterprise ERP."
+  }
+}

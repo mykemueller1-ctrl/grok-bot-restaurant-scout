@@ -1,0 +1,44 @@
+{
+  "name": "Daily P&L Flash Sub-Agent",
+  "title": "Never86 report sub \u2014 Finance / P&L / Prime Cost / Daily P&L Flash",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "domain_id": "finance",
+  "report_id": "daily-pnl",
+  "parent": "finance",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Daily P&L Flash report (Invoice category rollups + Toast sales summary + labor %). Ingests json, csv. Signals: net_sales, cogs_by_category, labor_percent, prime_cost_pct, leak_dollars. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Invoice category rollups + Toast sales summary + labor %",
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "signals": [
+    "net_sales",
+    "cogs_by_category",
+    "labor_percent",
+    "prime_cost_pct",
+    "leak_dollars"
+  ],
+  "file_globs": [
+    "*daily*pnl*",
+    "*flash*pnl*",
+    "ocr-batch*.json"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}
