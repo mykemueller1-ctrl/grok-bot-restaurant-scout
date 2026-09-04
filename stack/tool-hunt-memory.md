@@ -233,3 +233,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Eatsy Orders (bilingual flat-fee 0% commission).
 - Fifth KEEP grader dogfood: pain-to-sales-keep-grader-girl-goat.json — CHI/ATX/MIA/BNA/DEN set complete (gate ≥5).
 - Ledger v1.32.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Buy-now dogfood completes 5 love markets)
+
+- Added script-draft + catalog-sync for Girl & The Goat (CHI) and Michael's Genuine (MIA).
+- validate-buy-now-dogfood gate ≥5 (matches love markets).
+- Ledger v1.33.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

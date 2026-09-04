@@ -1,0 +1,32 @@
+{
+  "draft_id": "script-draft-girl-goat-buy-now-2026-09-04",
+  "status": "PENDING_APPROVAL",
+  "purpose": "Dogfood script-draft on Chicago chef love (Girl & The Goat) — love→buy-now vs marketplace rent / Owner/Ressto web OS. Not forecasting.",
+  "lead": {
+    "name": "Girl & The Goat",
+    "market": "Chicago, IL",
+    "yelp_alias": "girl-and-the-goat-chicago",
+    "love_signal": "Stephanie Izard cult / West Loop destination / Maps delivery=false / takeout present",
+    "source_fixture": "fixtures/tool-hunt/chicago-love-brands.json"
+  },
+  "script": {
+    "hook_2s": "Goat belly hits the plancha — West Loop night, no talking yet.",
+    "proof": "People already line Randolph for Izard — this isn't a filler reel, it's a Chicago destination kitchen.",
+    "anti_rent": "Rank channels by what you KEEP. Don't bleed DoorDash fees on demand you already own. Never86 buy-now / shop in bio.",
+    "price_scarcity": "Limited West Loop pack / merch drop — when it's gone, it's gone.",
+    "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
+  },
+  "owner_blurb": "Girl & The Goat already owns Chicago love. Never86 turns that love into shoppable TikTok/IG buy-now — not DoorDash KEEP losers, not Owner/Eatsy/Ressto website OS.",
+  "rival_contrast": [
+    "Owner.com / Eatsy Orders / Ressto / Fleksa — first-party web/app OS",
+    "ChowNow / Chowly / Lunchbox — commission-free web ordering",
+    "Ordr / Menami / TextOrder — DM/SMS conversational order",
+    "OrderPost — hosted post→order links",
+    "PlateAI / Flik / Feedo — content-only"
+  ],
+  "never": [
+    "Do not post without APPROVED",
+    "Do not pitch forecasting"
+  ],
+  "researched_at": "2026-09-04"
+}

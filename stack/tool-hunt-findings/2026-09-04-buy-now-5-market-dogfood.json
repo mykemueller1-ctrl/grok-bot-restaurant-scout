@@ -1,0 +1,21 @@
+{
+  "finding_id": "buy-now-5-market-dogfood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Buy-now script+catalog dogfood across 5 love markets",
+  "vendor_or_project": "Never86 love→buy-now",
+  "urls": [
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json",
+    "fixtures/tool-hunt/script-draft-michaels-genuine-buy-now.json",
+    "scripts/validate-buy-now-dogfood.mjs"
+  ],
+  "what_it_does": "PENDING_APPROVAL ContentDraft + SANDBOX catalog-sync for Girl & The Goat (CHI) and Michael's Genuine (MIA), completing 5-market set with Franklin/Husk/Rioja.",
+  "how_competitors_use_it": "Owner/Trenz/Eatsy ship first-party OS; we dogfood TikTok/IG shoppable close on cult chef brands.",
+  "what_we_use_today": "script-draft + catalog-sync sandboxes gated by validate-buy-now-dogfood.mjs (≥5)",
+  "gap": "Still PENDING_APPROVAL — no live TikTok Shop publish; do not expand swarm imports.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Love→buy-now dogfood now matches all 5 Yelp love markets (CHI/ATX/MIA/BNA/DEN).",
+  "operator_ask": "Optional: APPROVE one draft when ready to sync catalog — still need Mem0/Context for Beyond the Hunt READY.",
+  "researched_at": "2026-09-04"
+}

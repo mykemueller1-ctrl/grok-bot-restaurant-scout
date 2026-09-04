@@ -1,0 +1,32 @@
+{
+  "draft_id": "script-draft-michaels-genuine-buy-now-2026-09-04",
+  "status": "PENDING_APPROVAL",
+  "purpose": "Dogfood script-draft on Miami chef love (Michael's Genuine) — love→buy-now vs effective-cost marketplace rent. Not forecasting.",
+  "lead": {
+    "name": "Michael's Genuine Food & Drink",
+    "market": "Miami, FL",
+    "yelp_alias": "michaels-genuine-food-and-drink-miami",
+    "love_signal": "Chef Michael Schwartz / Design District cult / pickup present",
+    "source_fixture": "fixtures/tool-hunt/miami-love-brands.json"
+  },
+  "script": {
+    "hook_2s": "Cast-iron hits the flame — Design District night, citrus steam, no talking yet.",
+    "proof": "People already book Michael's Genuine for Schwartz — destination kitchen, not a feed filler.",
+    "anti_rent": "Your DoorDash commission is not your DoorDash cost. Shop the SKU you KEEP. Never86 buy-now / shop in bio.",
+    "price_scarcity": "Limited Design District pack / merch drop — when it's gone, it's gone.",
+    "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
+  },
+  "owner_blurb": "Michael's Genuine already owns Miami love. Never86 turns that love into shoppable TikTok/IG buy-now — not 18% effective DoorDash statements, not Owner/Sauce/BentoBox web OS.",
+  "rival_contrast": [
+    "Owner.com / Sauce / BentoBox / Fleksa — first-party web/commerce OS",
+    "ChowNow / Lunchbox / Popmenu — commission-free web ordering",
+    "Ordr / Menami / TextOrder — DM/SMS conversational order",
+    "OrderPost — hosted post→order links",
+    "PlateAI / Flik / Feedo — content-only"
+  ],
+  "never": [
+    "Do not post without APPROVED",
+    "Do not pitch forecasting"
+  ],
+  "researched_at": "2026-09-04"
+}
