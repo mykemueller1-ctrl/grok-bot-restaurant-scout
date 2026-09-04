@@ -449,4 +449,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-scan-velobite-per-order.json → strong_keep 34; pain-to-sales-velobite-fee-* ×5; validate-velobite-fee-dogfood ≥5 (`velobite_fee_dogfoods`).
 - Refreshed Slice primary pricing ($39/mo+$3/order / $399+$2) — pizza niche watch. Incentivio ~$249/mo watch (no confirmed per-order teach). Ledger v1.66.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (Ginger $1 guest fee SalesLead)
+
+- Ginger Direct **$0/mo** + **$1/order guest platform fee** (alt 5% high-volume small-ticket) ([gingerserve.com/pricing](https://www.gingerserve.com/pricing)). Voice AI +$250/mo and delivery-app +$99/mo are add-ons, not the teach.
+- pain-scan-ginger-guest-fee.json → strong_keep 35; pain-to-sales-ginger-fee-* ×5; validate-ginger-fee-dogfood ≥5 (`ginger_fee_dogfoods`).
+- Watched Semperi flat $99–$499 and FOLOS flat OO (no per-order teach). Ledger v1.67.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+
 

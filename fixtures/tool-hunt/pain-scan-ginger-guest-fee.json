@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Ginger gingerserve $1 per order guest fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.gingerserve.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "ginger_oo",
+      "snippet": "Ginger Direct is $0/month with $1 per order paid by the customer vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "ginger_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "$1 guest platform fee on 'free' OO still taxes KEEP checkout \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent. High-volume small-ticket shops may see 5% instead."
+    }
+  ],
+  "notes": "Primary: gingerserve.com/pricing \u2014 $1 platform fee per online order paid by customer; alt 5% for high-volume small-ticket. Voice AI +$250/mo and delivery-app +$99/mo are add-ons (not the teach). Skip forecasting. Not expanding swarm."
+}
