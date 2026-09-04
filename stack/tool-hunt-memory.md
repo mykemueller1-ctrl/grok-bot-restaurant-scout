@@ -986,3 +986,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Deliverect Direct Suite + ChatFood IG Order Food docs — peer_count stays 9. Finding: `2026-09-04-deliverect-chatfood-meta-reconfirm.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_pQbzgo-CRhag (~10 min).
 - Ledger v1.92.57. Auth still blocked for unlock READY.
+
+### 2026-09-04 (FoodChow/Snappy + BentoBox Meta)
+
+- Watched **FoodChow** + **Snappy** GloriaFood successors (0% direct OO; Snappy OO from $79/mo). EOL primary stays **Apr 30 2027** (Snappy blogs say Mar 31 — conflict noted). Finding: `2026-09-04-foodchow-snappy-gloriafood.json`.
+- Reconfirmed BentoBox Meta Order Food Help 412673 — peer_count stays 9. Finding: `2026-09-04-bentobox-meta-order-food-reconfirm.json`.
+- Ledger v1.92.58. Auth still blocked for unlock READY.

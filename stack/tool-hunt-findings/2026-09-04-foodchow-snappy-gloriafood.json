@@ -1,0 +1,25 @@
+{
+  "finding_id": "foodchow-snappy-gloriafood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "FoodChow + Snappy GloriaFood-successor peers",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "New GloriaFood migration peers (2026-09-04): FoodChow (foodchow.app) — 0% commission direct OO + POS/KDS ecosystem; India/AU skew; free listing + usage-based; GloriaFood shutdown guides (Apr 30 2027). Snappy (gosnappy.io, Toronto) — Online Ordering from $79/mo, 0% commission claim, branded app/site ($5k/$2k), Google ordering + DoorDash/Uber delivery integrations; GloriaFood alternatives blog. Snappy cites GloriaFood EOL Mar 31 2027 — keep ledger primary Apr 30 2027 (Enacton/Oracle-class); treat Mar 31 as conflicting secondary. Fee pause — no dogfood. Not Meta FBE peers.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://foodchow.app/",
+    "https://foodchow.app/gloriafood-is-shutting-down/",
+    "https://foodchow.app/gloriafood-alternatives/",
+    "https://gosnappy.io/",
+    "https://eu.gosnappy.io/snappy-products.html",
+    "https://gosnappy.io/blog/gloriafood-is-shutting-down-what-restaurant-operators-should-do/",
+    "https://gosnappy.io/blog/gloriafood-alternatives-for-restaurants/"
+  ],
+  "pricing_notes": {
+    "foodchow": "0% commission direct; free tier / usage-based; white-label reseller; IN phone support",
+    "snappy": "Online Ordering from $79/mo; POS/Loyalty/Reservations $79/mo each; custom app $5k + site $2k + $40/mo maintenance"
+  },
+  "gloriafood_eol_note": "Primary cite remains Apr 30 2027; Snappy blogs say Mar 31 2027 — do not change ledger without Oracle primary",
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting. Not Meta FBE — do not bump peer_count. Not claiming Snappy Mar 31 over Apr 30."
+}

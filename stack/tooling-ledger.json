@@ -1,5 +1,5 @@
 {
-  "version": "1.92.57",
+  "version": "1.92.58",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "FoodChow + Snappy GloriaFood-successor peers",
+      "lane": "vertical_gtm",
+      "why": "FoodChow 0% direct OO+POS (IN/AU); Snappy OO from $79/mo 0% claim (CA) — GloriaFood migrate watches; EOL primary stays Apr 30 2027; fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "BentoBox Meta Order Food path reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Help 412673 still live (edited 2026-01-15): FBE Order Food + Stories stickers → Bento OO/Catering; peer_count stays 9",
+      "verdict": "adopt"
+    },
     {
       "item": "Husk + Rioja buy_now_path pass-3 (BNA/DEN)",
       "lane": "vertical_gtm",
@@ -3084,5 +3096,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:30:00Z"
+  "updated_at": "2026-09-04T21:45:00Z"
 }

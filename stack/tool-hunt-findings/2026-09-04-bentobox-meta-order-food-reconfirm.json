@@ -1,0 +1,15 @@
+{
+  "finding_id": "bentobox-meta-order-food-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "BentoBox Meta Order Food path reconfirm",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "BentoBox Help Center article 412673 still live (edited 2026-01-15): Meta Business Extension → Facebook/Instagram Order Food button to Bento Online Ordering / Online Catering; Instagram Stories Food Orders sticker path documented. Confirms FBE peer #4 beside Deliverect/ChatFood. peer_count stays 9. Fee pause on QR $0.99 dogfood — GTM watch only for Meta path.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.getbento.com/en/articles/412673"
+  ],
+  "meta_order_food_peer_count": 9,
+  "tools_used": ["COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a new fee dogfood. Not forecasting. Does not inflate peer_count."
+}
