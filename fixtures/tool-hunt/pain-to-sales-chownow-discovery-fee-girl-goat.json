@@ -1,0 +1,78 @@
+{
+  "dogfood_id": "pain-to-sales-chownow-discovery-fee-girl-goat-2026-09-04",
+  "purpose": "ChowNow Discovery Network 15.5% marketing fee → SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts first_party_pct_fee on discovery channels under commission-free direct claim vs Never86 Shop ~6%. Distinct from Support Local / Catering dogfoods. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "ChowNow Discovery Network / Order Better Network 15.5% marketing fee on subtotal",
+    "marketplace_direct_zero": "ChowNow direct website/app still 0% commission claim",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "chownow_discovery_15_5pct",
+    "vendor_id": "chownow",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: ChowNow markets commission-free direct OO then Discovery Network / Order Better Network bills a 15.5% marketing fee on subtotal (Profit Protector = menu bump). Girl & The Goat-class love should close on Never86 Shop ~6% buy-now — honest platform math without discovery KEEP leak or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep",
+      "dual_run_marketplace"
+    ],
+    "vendors_mentioned": [
+      "chownow",
+      "doordash",
+      "tiktok_shop",
+      "olo"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-chownow-discovery-fee.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "chownow_discovery_15_5pct",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "ChowNow markets commission-free direct OO then Order Better Network / Discovery Network charges a 15.5% marketing fee on subtotal for Google/Yelp/etc. channel orders — first_party_pct_fee discovery KEEP leak (Profit Protector just bumps menus). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. West Loop love already prints demand — close Shop buy-now, not ChowNow Discovery 15.5%.",
+    "quotes": [
+      "ChowNow Discovery Network / Order Better Network 15.5% marketing fee on subtotal",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "ChowNow Discovery Network 15.5% marketing fee",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee teach: ChowNow Discovery 15.5% still taxes discovery tickets under commission-free framing; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand — close Shop buy-now, not ChowNow Discovery 15.5%.",
+    "sources": [
+      "https://get.chownow.com/legal/registermyresto/",
+      "https://get.chownow.com/products/discovery-network/",
+      "fixtures/tool-hunt/pain-scan-chownow-discovery-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 78,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — ChowNow Discovery 15.5% → SalesLead. Distinct from $0.99/7.5% Support Local and Catering 5% dogfoods. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-chownow-discovery-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

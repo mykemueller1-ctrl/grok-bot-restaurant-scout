@@ -594,3 +594,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-scan-foodappfast-pct-fee.json → strong_keep **60**; pain-to-sales-foodappfast-fee-* ×5; validate-foodappfast-fee-dogfood ≥5.
 - Watched Anytable: live pricing softens exact $ convenience fee (legacy $1.95) — no dogfood yet.
 - Ledger v1.89.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (ChowNow Discovery Network 15.5% SalesLead)
+
+- Primary [get.chownow.com/legal/registermyresto](https://get.chownow.com/legal/registermyresto/): Order Better Network / Discovery Network **Marketing Fee 15.5%** on Subtotal; Profit Protector = menu bump offset.
+- Widened `first_party_pct_fee` for `15.5%` / marketing fee / Order Better Network.
+- pain-scan-chownow-discovery-fee.json → strong_keep **61**; pain-to-sales-chownow-discovery-fee-* ×5; validate-chownow-discovery-fee-dogfood ≥5. Distinct from Support Local + Catering dogfoods.
+- Ledger v1.90.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

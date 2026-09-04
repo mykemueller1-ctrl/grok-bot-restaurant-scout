@@ -1,5 +1,5 @@
 {
-  "version": "1.89.0",
+  "version": "1.90.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -134,7 +134,8 @@
     "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)",
     "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)",
     "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee \u2192 SalesLead \u22655 markets)",
-    "foodappfast_fee_dogfood_gate": "scripts/validate-foodappfast-fee-dogfood.mjs (Food App Fast 8% commission \u2192 SalesLead \u22655 markets)"
+    "foodappfast_fee_dogfood_gate": "scripts/validate-foodappfast-fee-dogfood.mjs (Food App Fast 8% commission \u2192 SalesLead \u22655 markets)",
+    "chownow_discovery_fee_dogfood_gate": "scripts/validate-chownow-discovery-fee-dogfood.mjs (ChowNow Discovery Network 15.5% marketing fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -569,13 +570,14 @@
     {
       "name": "ChowNow",
       "lane": "vertical_gtm",
-      "stack": "Commission-free flat-fee direct ordering + diner data ownership + Discovery Network; dual-run with DoorDash",
+      "stack": "Commission-free flat-fee direct OO + diner data; Discovery Network / Order Better Network 15.5% marketing fee on subtotal (Profit Protector menu bump); guest $0.99 + 7.5% Support Local; Catering 5%",
       "memory": "Owned diner contact / order history for remarketing",
-      "edge": "$0.99 guest service charge (50/50) + 7.5% Support Local Fee KEEP leak teach (dogfood chownow_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout",
+      "edge": "Discovery 15.5% + guest/Support Local + Catering KEEP leaks under commission-free framing (dogfoods chownow_discovery + chownow_fee + chownow_catering); still lose on love\u2192buy-now",
       "updated": "2026-09-04",
       "sources": [
+        "https://get.chownow.com/legal/registermyresto/",
+        "https://get.chownow.com/products/discovery-network/",
         "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers",
-        "https://get.chownow.com/blog/restaurant-marketing-reviews",
         "https://get.chownow.com/restaurant-support/service-charge-frequently-asked-questions/",
         "https://get.chownow.com/diner-support/does-chownow-charge-a-fee-for-diners/"
       ]
@@ -1132,6 +1134,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "ChowNow Discovery Network 15.5% marketing fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN ChowNow Order Better Network / Discovery Network 15.5% marketing fee on subtotal (legal primary) under commission-free direct claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 15.5%; validate-chownow-discovery-fee-dogfood \u22655; strong_keep 61. Distinct from Support Local + Catering dogfoods.",
+      "verdict": "adopt"
+    },
     {
       "item": "Food App Fast 8% commission SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2216,5 +2224,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T00:15:00Z"
+  "updated_at": "2026-09-05T00:30:00Z"
 }

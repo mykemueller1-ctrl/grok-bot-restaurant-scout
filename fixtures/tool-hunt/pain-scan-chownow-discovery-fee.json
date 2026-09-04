@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "ChowNow Discovery Network / Order Better Network 15.5% marketing fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://get.chownow.com/legal/registermyresto/",
+      "posted_at": "2026-09-04",
+      "handle": "chownow_restaurant_agreement",
+      "snippet": "ChowNow Order Better Network / Discovery Network charges a 15.5% marketing fee on subtotal under commission-free direct claim vs DoorDash Marketplace 25% KEEP \u2014 restaurant owners still pay discovery KEEP leak on Google/Yelp channel orders",
+      "pain_id": "chownow_discovery_15_5pct",
+      "score": 100,
+      "never86_angle": "ChowNow Discovery 15.5% marketing fee is still first_party discovery rent under 'commission-free' framing \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: get.chownow.com/legal/registermyresto Marketing Fee = 15.5% on Subtotal for Order Better Network. Distinct from $0.99/7.5% Support Local and Catering 5%. Profit Protector offsets via menu bump. Skip forecasting."
+}
