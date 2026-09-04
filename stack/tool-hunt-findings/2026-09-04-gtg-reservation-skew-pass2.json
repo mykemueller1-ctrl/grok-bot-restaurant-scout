@@ -1,0 +1,23 @@
+{
+  "finding_id": "gtg-reservation-skew-pass2-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Girl & The Goat reservation_skew pass-2 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 2 (2026-09-04T20:10Z): Yelp still 10,731 reviews / 4.4★. Site FETCH still Make a reservation only (no OO/marketplace CTAs). OpenTable listing live. Confirms reservation_skew_no_buy_now + CHI rails. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.girlandthegoat.com/chicago",
+    "https://www.opentable.com/r/girl-and-the-goat-chicago",
+    "fixtures/tool-hunt/chicago-love-brands.json",
+    "fixtures/tool-hunt/pain-scan-reservation-skew.json"
+  ],
+  "live_yelp": {
+    "review_count": 10731,
+    "rating": 4.4,
+    "phone": "+13124926262"
+  },
+  "rails_confirmed": ["opentable_reservations", "no_first_party_oo_found"],
+  "tools_used": ["YELP_SEARCH_BUSINESSES", "COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

@@ -1,0 +1,20 @@
+{
+  "finding_id": "swipereel-shoppable-video-checkit-peer-2026-09",
+  "lane": "vertical_gtm",
+  "name": "SwipeReel — Shopify shoppable IG Reels/TikTok UGC (CheckIt peer)",
+  "vendor_or_project": "SwipeReel",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "swipereel.app + Shopify App Store: shoppable Stories/Carousel/Inline/Floating video widgets from IG Reels/TikTok; free plan + $9.99/mo Pro. Lists Food & Beverage vertical. CheckIt/FeedGrid peer for love→Shopify merch path. Watch only.",
+  "what_it_does": "Embeds shoppable social video on Shopify storefronts with product tags.",
+  "gap": "Name beside CheckIt/FeedGrid when brand has Shopify merch rails.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.swipereel.app/",
+    "https://apps.shopify.com/swipereel"
+  ],
+  "never86_wedge": "Shop buy-now vs site-embedded shoppable UGC video",
+  "not_this": "Not a fee dogfood. Not forecasting."
+}

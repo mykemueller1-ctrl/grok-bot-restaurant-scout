@@ -858,3 +858,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Palmate + DMHub WhatsApp/IG order+reservation assistants. Finding: `2026-09-04-palmate-dmhub-chat-order.json`.
 - Watched FeedGrid free Shopify shoppable IG/TikTok feeds (CheckIt peer). Finding: `2026-09-04-feedgrid-shoppable-feeds.json`.
 - Taught into GTM skills + social unlocks. Ledger v1.92.39. Auth still blocked.
+
+### 2026-09-04 (G&TG pass-2 + Mando/Orderlya + SwipeReel)
+
+- Pass-2 live: Girl & The Goat still OpenTable-only / no first-party OO (Yelp 10,731). Finding: `2026-09-04-gtg-reservation-skew-pass2.json`. `reservation_skew_no_buy_now` holds; strong_keep 65.
+- Watched Mando AI + Orderlya (MENA WA/IG order peers). Finding: `2026-09-04-mando-orderlya-dm-peers.json`.
+- Watched SwipeReel Shopify shoppable video (CheckIt/FeedGrid peer). Finding: `2026-09-04-swipereel-shoppable-video.json`.
+- Ledger v1.92.40. Auth still blocked.

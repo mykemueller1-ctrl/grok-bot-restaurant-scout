@@ -1,0 +1,21 @@
+{
+  "finding_id": "mando-orderlya-dm-order-peers-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Mando AI + Orderlya — WhatsApp/IG order+reserve peers (MENA)",
+  "vendor_or_project": "Mando AI / Orderlya",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Mando: multi-channel restaurant AI receptionist (WA/IG/Messenger/voice) that collects orders + reservations. Orderlya: MENA restaurant OS — WA/IG AI ordering, 0% commission, POS/kitchen/dispatch. Mirar/Ordr/Palmate-adjacent. Watch only — EU/MENA thematic; Shop wedge stays US in-app buy-now.",
+  "what_it_does": "Chat AI takes orders/reservations on WhatsApp/Instagram; Orderlya adds full OS (POS/kitchen/dispatch) at 0% commission.",
+  "gap": "Name beside Mirar/Ordr/Palmate/DMHub in GTM rival checks.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://mando.cx/solutions/restaurant-chatbot",
+    "https://mando.cx/channels/instagram",
+    "https://orderlya.com/"
+  ],
+  "never86_wedge": "in-app Shop buy-now vs chat order funnel",
+  "not_this": "Not a fee dogfood. Not Meta FBE peer. Not forecasting. No US swarm expand."
+}

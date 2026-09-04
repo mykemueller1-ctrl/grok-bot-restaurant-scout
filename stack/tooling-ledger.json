@@ -1,5 +1,5 @@
 {
-  "version": "1.92.39",
+  "version": "1.92.40",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "G&TG reservation_skew pass-2 live re-verify",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731 + site Make a reservation only + OpenTable live \u2014 reservation_skew_no_buy_now still holds; strong_keep 65",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Mando AI + Orderlya WA/IG DM order peers (MENA)",
+      "lane": "vertical_gtm",
+      "why": "Mirar/Ordr-class chat ordering; Orderlya 0% commission OS \u2014 watch only, no US swarm expand",
+      "verdict": "watch"
+    },
+    {
+      "item": "SwipeReel Shopify shoppable video (CheckIt/FeedGrid peer)",
+      "lane": "vertical_gtm",
+      "why": "Shoppable IG Reels/TikTok widgets on Shopify \u2014 love\u2192merch path peer",
+      "verdict": "watch"
+    },
     {
       "item": "Mirar AI IG/WhatsApp/Messenger \u2192 POS (0% commission)",
       "lane": "vertical_gtm",
