@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-toast-square-bento-kyte-meta-pass4",
+  "lane": "vertical_gtm",
+  "name": "Toast + Square + Bento Meta Order Food + Kyte unavailable pass-4",
+  "verdict": "adopt",
+  "summary": "Live FETCH pass-4: Toast Support still live (Last updated Jul 7 2026). Square article 7778 still live. Bento Help 412673 still live (edited Jan 15 2026). Kyte Help still banners IG sticker AND FB Order Food currently unavailable \u2192 Start Order. GloriaFood homepage still discontinued. meta_order_food_peer_count stays 9.",
+  "researched_at": "2026-09-04T23:40:00.000Z",
+  "sources": [
+    "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook",
+    "https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online",
+    "https://help.getbento.com/en/articles/412673",
+    "https://docs.kyteapp.com/en/articles/7861178-activating-the-instagram-order-food-sticker",
+    "https://docs.kyteapp.com/en/articles/7861141-setting-up-order-food-on-facebook",
+    "https://www.gloriafood.com/"
+  ],
+  "notes": "peer_count stays 9"
+}

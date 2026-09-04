@@ -1219,3 +1219,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_LIlW3QQ6l2nJ (~10 min).
 - Ledger v1.92.83. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-18 + Toast/Square/Bento/Kyte + restaurant-mcp + MENA WA)
+
+- Yelp pass-18 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass18.json`.
+- Adopted love rails reconfirm. Finding: `2026-09-04-love-rails-pass-yelp18.json`.
+- Reconfirmed Toast (Jul 7 2026) + Square 7778 + Bento 412673; Kyte unavailable; GloriaFood discontinued — peer_count stays 9. Finding: `2026-09-04-toast-square-bento-kyte-meta-pass4.json`.
+- Watched **aristochatti/restaurant-mcp** Places carousel + **Orange Club / Rakeez** WA 0% MENA + Klikit TikTok Shop food US reconfirm. Findings: `2026-09-04-aristochatti-restaurant-mcp-watch.json`, `2026-09-04-orangeclub-rakeez-wa-0pct-mena-watch.json`, `2026-09-04-klikit-tiktok-shop-food-us-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk__OovTZxuxr9j (~10 min).
+- Ledger v1.92.84. Auth still blocked for unlock READY.
+
