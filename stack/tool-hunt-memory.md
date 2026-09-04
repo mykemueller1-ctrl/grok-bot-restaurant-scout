@@ -924,3 +924,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Klikit US TikTok Shop food guide. Finding: `2026-09-04-klikit-shop-us-reconfirm.json`.
 - Noted non-blocking GitHub status `Vercel – never86-venue-portals` failing — no app in this repo; team Deployments = not required. open_gap `vercel-venue-portals-orphan-status`.
 - Ledger v1.92.49. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Platesready 5% + MenuDirect + Food Orders sticker)
+
+- Watched **Platesready** (CA 5% platform fee, $0 monthly) + **MenuDirect** (flat 0% OO) — fee pause, no dogfood. Finding: `2026-09-04-platesready-menudirect-ca.json`.
+- Reconfirmed Instagram Food Orders sticker partner path (Uber/BentoBox/Deliverect/Kyte). peer_count stays 9. Finding: `2026-09-04-meta-food-orders-sticker-reconfirm.json`.
+- Orphan Vercel statuses now include both `never86-venue-portal` and `never86-venue-portals` — still non-required.
+- Ledger v1.92.50. Auth still blocked for unlock READY.

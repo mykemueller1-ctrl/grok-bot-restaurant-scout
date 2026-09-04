@@ -1,0 +1,23 @@
+{
+  "finding_id": "meta-food-orders-sticker-partners-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Instagram Food Orders sticker partner path reconfirm",
+  "vendor_or_project": "Meta / Instagram",
+  "verdict": "adopt",
+  "priority": 3,
+  "summary": "Instagram Help still documents Food Orders sticker → supported delivery/OO partners (Business/Creator only; one sticker per story). Partner how-tos still live for Uber, BentoBox, Deliverect, Kyte — reinforces existing Meta Order Food peer set. Do NOT bump meta_order_food_peer_count (stays 9). Shop wedge unchanged.",
+  "what_it_does": "Stories sticker routes diners to partner ordering links — parallel love→buy-now rail to profile Order Food buttons.",
+  "gap": "",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.facebook.com/help/instagram/3064540800264009",
+    "https://www.facebook.com/help/instagram/897533104016091",
+    "https://help.uber.com/merchants-and-restaurants/article/instagram-delivery-button-+-sticker?nodeId=92d1fcbf-1b65-4a79-9a16-690710e90046",
+    "https://help.getbento.com/en/articles/412673",
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://docs.kyteapp.com/en/articles/7861178-activating-the-instagram-order-food-sticker"
+  ],
+  "not_this": "Not a peer_count change. Not fee dogfood. Not forecasting."
+}

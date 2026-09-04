@@ -1,5 +1,5 @@
 {
-  "version": "1.92.49",
+  "version": "1.92.50",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Platesready 5% + MenuDirect 0% CA OO peers",
+      "lane": "vertical_gtm",
+      "why": "Platesready flat 5% platform fee ($0 monthly) = first_party_pct_fee KEEP contrast; MenuDirect flat SaaS 0% — GloriaFood/iShopo/Menuro peers; fee pause (no dogfood)",
+      "verdict": "watch"
+    },
+    {
+      "item": "Instagram Food Orders sticker partner path reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Help + Uber/BentoBox/Deliverect/Kyte how-tos still live — reinforces Meta Order Food peer set; peer_count stays 9",
+      "verdict": "adopt"
+    },
     {
       "item": "iShopo GloriaFood successor (CA $49\u2013$249 flat, 0%)",
       "lane": "vertical_gtm",
@@ -2892,8 +2904,8 @@
     },
     {
       "id": "vercel-venue-portals-orphan-status",
-      "gap": "GitHub commit status Vercel \u2013 never86-venue-portals fails on this branch, but no venue-portals app exists in grok-bot-restaurant-scout; team Deployments check says No required projects to validate; Vercel MCP cannot read that project",
-      "action": "Operator: disconnect never86-venue-portals from this repo or fix Root Directory in Vercel for the correct app repo. Non-blocking for Beyond the Hunt / required CI.",
+      "gap": "GitHub commit statuses Vercel \u2013 never86-venue-portals AND never86-venue-portal fail on this branch, but no venue-portal(s) app exists in grok-bot-restaurant-scout; team Deployments check says No required projects to validate; Vercel MCP cannot read those projects",
+      "action": "Operator: disconnect never86-venue-portal and never86-venue-portals from this repo (or fix Root Directory to the correct app repo). Non-blocking for Beyond the Hunt / required CI.",
       "priority": 3
     },
     {
@@ -2952,5 +2964,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:28:00Z"
+  "updated_at": "2026-09-04T20:50:00Z"
 }
