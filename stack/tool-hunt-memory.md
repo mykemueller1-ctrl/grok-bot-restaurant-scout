@@ -400,3 +400,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-zayos-guest-fee.json (guests pay ~$1.99–$3.99/order under commission-free claim) → strong_keep 26.
 - Added pain-to-sales-zayos-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-zayos-fee-dogfood ≥5.
 - Ledger v1.58.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (247waiter $0.25/order transmission SalesLead)
+
+- Adopted pain-scan-247waiter-per-order.json ($45/mo + restaurant-paid $0.25/order transmission under no-commission OO) → strong_keep 27.
+- Added pain-to-sales-247waiter-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-247waiter-fee-dogfood ≥5.
+- Ledger v1.59.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

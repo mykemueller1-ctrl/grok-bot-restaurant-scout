@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "247waiter $45/mo + $0.25 per order transmission fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.247waiter.com/online-ordering-system-cost",
+      "posted_at": "2026-09-04",
+      "handle": "247waiter_oo",
+      "snippet": "247waiter charges $45/mo plus $0.25 per order transmission fee under no-commission OO — restaurant-paid KEEP leak vs DoorDash Marketplace 25%; dual-run discovery then Never86 buy-now",
+      "pain_id": "247waiter_per_order_txn_fee",
+      "score": 100,
+      "never86_angle": "Low monthly + $0.25/order transmission still taxes KEEP on every ticket — Never86 social buy-now (Shop ~6%) avoids aggregator txn skim + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: 247waiter pricing page + Orderitto cost comparison via Composio. Bright Data still 401. Restaurant-paid (not guest). Skip forecasting. Not expanding swarm imports."
+}

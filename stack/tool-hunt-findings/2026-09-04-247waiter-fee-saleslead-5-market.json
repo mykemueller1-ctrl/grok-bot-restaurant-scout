@@ -1,0 +1,26 @@
+{
+  "finding_id": "247waiter-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "247waiter $0.25/order transmission fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-247waiter-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-247waiter-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-247waiter-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-247waiter-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-247waiter-fee-rioja.json",
+    "scripts/validate-247waiter-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-247waiter-per-order.json",
+    "https://www.247waiter.com/online-ordering-system-cost"
+  ],
+  "what_it_does": "247waiter $45/mo + $0.25/order restaurant-paid transmission fee under no-commission OO → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "247waiter pitches no % commission while still charging restaurants a flat per-order transmission fee that scales with OO volume.",
+  "what_we_use_today": "validate-247waiter-fee-dogfood ≥5; per_order_platform_fee signal",
+  "gap": "Confirm live quote vs published pricing page; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "247waiter restaurant-paid $0.25/order transmission SalesLead dogfoods match five love markets; strong_keep 27.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}
