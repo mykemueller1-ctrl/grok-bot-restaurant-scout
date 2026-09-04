@@ -61,10 +61,12 @@ const out = {
   love_live_proof: love?.ok
     ? {
         markets: love.markets,
+        buy_now_path_markets: (love.report || []).filter((r) => (r.buy_now_rails || []).length).length,
         primaries: (love.report || []).map((r) => ({
           market: r.market,
           brand: r.live_primary,
           reviews: r.live_reviews,
+          buy_now_rails: r.buy_now_rails || [],
         })),
       }
     : { ok: false, stderr: (loveOut.stderr || "").slice(0, 300) },

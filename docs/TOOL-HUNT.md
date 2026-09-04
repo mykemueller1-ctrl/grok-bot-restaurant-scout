@@ -77,9 +77,10 @@ Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, con
 
 | Path | Proof |
 | --- | --- |
-| Love morning-scan | Yelp search/details + `fixtures/tool-hunt/*-love-brands.json` (`live_proof`) |
+| Love morning-scan | Yelp search/details + `fixtures/tool-hunt/*-love-brands.json` (`live_proof` + `buy_now_path`) |
+| Love order rails | Composio web/Maps + `buy_now_path` on all 5 live primaries — morning-scan captures marketplace leaks / Shopify / Toast |
 | Pain→sales enrich | `YELP_SEARCH_BY_PHONE` on all 5 love-seed phones — `skills/lead-shop-enrich.md` |
-| Status | `node scripts/print-beyond-the-hunt-status.mjs` (`phone_enrich_markets: 5`) |
+| Status | `node scripts/print-beyond-the-hunt-status.mjs` (`phone_enrich_markets: 5`, `buy_now_path_markets: 5`) |
 
 Fee catalog remains paused (`strong_keep` 63).
 

@@ -15,6 +15,16 @@
         "rating": 4.4,
         "review_count": 10732,
         "price": "$$$"
+      },
+      "buy_now_path": {
+        "verified_at": "2026-09-04",
+        "website": "https://www.girlandthegoat.com/chicago",
+        "rails": ["opentable_reservations", "no_first_party_oo_found"],
+        "note": "Menu/reservations site; OpenTable listing — Shop buy-now fills missing social close",
+        "sources": [
+          "https://www.girlandthegoat.com/chicago",
+          "https://www.opentable.com/r/girl-and-the-goat-chicago"
+        ]
       }
     },
     {

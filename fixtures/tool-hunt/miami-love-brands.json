@@ -27,6 +27,15 @@
         "review_count": 2084,
         "price": "$$$",
         "transactions": ["pickup"]
+      },
+      "buy_now_path": {
+        "verified_at": "2026-09-04",
+        "website": "https://michaelsgenuine.com/",
+        "rails": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
+        "note": "Official site pushes UberEats/DoorDash for delivery — marketplace leak on love brand; Shop buy-now displaces rent",
+        "sources": [
+          "https://michaelsgenuine.com/"
+        ]
       }
     },
     {

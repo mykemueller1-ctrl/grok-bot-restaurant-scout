@@ -26,6 +26,16 @@
         "review_count": 6477,
         "price": "$$$",
         "transactions": ["delivery"]
+      },
+      "buy_now_path": {
+        "verified_at": "2026-09-04",
+        "website": "https://franklinbbq.com/",
+        "rails": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch — Never86 Shop can close feed love into SKU packs",
+        "sources": [
+          "https://preorder.franklinbbq.com/information",
+          "https://shop.franklinbbq.com/"
+        ]
       }
     },
     {

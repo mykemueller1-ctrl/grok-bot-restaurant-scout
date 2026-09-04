@@ -18,6 +18,17 @@
         "review_count": 1987,
         "price": "$$$",
         "transactions": ["delivery"]
+      },
+      "buy_now_path": {
+        "verified_at": "2026-09-04",
+        "website": "http://www.husknashville.com/",
+        "rails": ["resy_reservations", "toast_gift_card", "takeout"],
+        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) — Toast lock-in; Shop for social SKUs",
+        "sources": [
+          "http://www.husknashville.com/",
+          "https://www.toasttab.com/husk-nashville/findcard",
+          "https://resy.com/cities/nashville-tn/venues/husk-nashville"
+        ]
       }
     },
     {

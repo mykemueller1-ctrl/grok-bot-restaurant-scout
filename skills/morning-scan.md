@@ -16,6 +16,7 @@
    - hook summary + why people love it (UGC signal)
    - brand / kitchen name if identifiable
    - source URL, score (0–100)
+   - **order_rails / buy_now_path** (Active public second pass): official site + Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_FETCH_URL_CONTENT` / `COMPOSIO_SEARCH_GOOGLE_MAPS` — note first-party OO, Toast OO, Shopify merch, Resy/OpenTable, or marketplace leak (UberEats/DoorDash on brand site). Calibration: `fixtures/tool-hunt/*-love-brands.json` → `buy_now_path` on live primaries (Franklin Shopify+preorder; Michaels marketplace leak; Husk Toast gift+Resy; G&TG reservation-skew; Rioja Flavor Dojo).
    - Never86 fit note: shoppable SKU potential vs marketplace-only vibe; Shop ~6% KEEP vs delivery rent (watch ~8%)
    - Rival wedge check: would Owner/Dinevate/Trenz/Menami/Deonde/SWIPEBY/OPA!/Toast OO/Otter/KwickOS/RestauNax/BentoBox first-party OS, Deliverect/Zyda/ChatFood/BentoBox/Toast/Flipdish IG/FB Order Food, DirectOrders IG DM/WhatsApp, linkboo webview-escape bio links, BiteSight/Smiilen video marketplace, TextOrder/Ainisa/Ordr DM ordering, Seekadu reservation DMs, Moast Shopify UGC widgets, Seekeasy creator discovery, Klikit Shop POS, or generic AI menu-video (Feedo/PlateAI/Flik/Mooz) own this better — or does **shoppable buy-now + cult proof** win?
 4. Write results to `CreatorLead` via the commerce engine MCP.

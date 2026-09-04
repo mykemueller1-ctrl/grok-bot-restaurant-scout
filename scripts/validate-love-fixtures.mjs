@@ -52,12 +52,17 @@ for (const f of files) {
     console.error(`validate-love-fixtures: ${f} needs ≥1 brand with live_yelp.review_count + verified_at`);
     process.exit(1);
   }
+  if (!primary.buy_now_path?.verified_at || !Array.isArray(primary.buy_now_path.rails) || !primary.buy_now_path.rails.length) {
+    console.error(`validate-love-fixtures: ${f} live primary needs buy_now_path.verified_at + rails[]`);
+    process.exit(1);
+  }
   report.push({
     file: f,
     market,
     brands: brands.length,
     live_primary: primary.name,
     live_reviews: primary.live_yelp.review_count,
+    buy_now_rails: primary.buy_now_path.rails,
   });
 }
 

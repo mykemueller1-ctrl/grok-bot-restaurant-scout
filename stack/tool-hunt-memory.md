@@ -755,3 +755,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **Toast Online Ordering** (watch): Support primary (Jul 2026) — IG Order food Action Button → select Toast as partner; Stories Food Orders sticker; Facebook Start Order → Toast OO / Location Picker. US POS Meta Order Food peer. Finding: `2026-09-04-toast-meta-order-food.json`.
 - Taught across GTM skills + COMPOSIO-SOCIAL-UNLOCKS + Automation prompt. Flipdish IG Order Now already catalogued (fee dogfood); named beside Toast in Meta peers list.
 - Ledger v1.92.23. Fee pause + Mem0/Context auth-first unchanged.
+
+### 2026-09-04 (love-seed buy_now_path rails)
+
+- Live public second pass on 5 live_yelp primaries: Franklin Shopify merch + first-party preorder; Michaels Genuine homepage UberEats/DoorDash leak; Husk Resy + Toast gift-card; G&TG OpenTable/no OO; Rioja Flavor Dojo in-person carryout.
+- Fixtures + `validate-love-fixtures.mjs` require `buy_now_path`; morning-scan captures `order_rails`. Finding: `2026-09-04-love-seed-buy-now-paths.json`.
+- Ledger v1.92.24. Auth still blocked.

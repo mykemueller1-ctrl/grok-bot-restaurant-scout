@@ -18,6 +18,15 @@
         "review_count": 2915,
         "price": "$$$",
         "transactions": ["pickup"]
+      },
+      "buy_now_path": {
+        "verified_at": "2026-09-04",
+        "website": "https://www.riojadenver.com/",
+        "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
+        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs",
+        "sources": [
+          "https://www.riojadenver.com/menus/carryout/"
+        ]
       }
     },
     {

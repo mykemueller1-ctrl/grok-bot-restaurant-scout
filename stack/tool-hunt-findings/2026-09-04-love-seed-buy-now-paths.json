@@ -1,0 +1,19 @@
+{
+  "finding_id": "love-seed-buy-now-paths-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Live buy-now / order rails on 5 love-seed primaries",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Composio SEARCH_WEB + FETCH + GOOGLE_MAPS on live_yelp primaries: Franklin ATX has first-party preorder (preorder.franklinbbq.com) + Shopify merch (shop.franklinbbq.com) — cult love already SKU-ready; Michael's Genuine MIA homepage pushes UberEats/DoorDash delivery (marketplace leak on love brand); Husk BNA sits on Resy + Toast gift-card rail (toasttab.com/husk-nashville/findcard); G&TG CHI is OpenTable/reservation-skewed with no first-party OO found; Rioja DEN Flavor Dojo carryout is in-person pickup narrative. Morning-scan must capture order_rails so Never86 Shop buy-now can displace marketplace links and ride existing merch/preorder demand.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://preorder.franklinbbq.com/information",
+    "https://shop.franklinbbq.com/",
+    "https://michaelsgenuine.com/",
+    "https://www.toasttab.com/husk-nashville/findcard",
+    "https://www.girlandthegoat.com/chicago",
+    "https://www.riojadenver.com/menus/carryout/",
+    "http://www.husknashville.com/"
+  ],
+  "not_this": "Not fee dogfood. Do not claim Miami Toast OO from Cleveland ToastTab sibling. Not forecasting."
+}
