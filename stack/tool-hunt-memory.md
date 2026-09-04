@@ -1161,3 +1161,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_5AELl4d2rM0y (~10 min).
 - Ledger v1.92.77. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Deliverect/Zyda/ChatFood/Flipdish Meta + webview)
+
+- Reconfirmed Deliverect Direct Suite IG + FB Start Order (Jul 15 2026) + Zyda FBE + ChatFood IG Order Food + Flipdish bounce — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass.json`.
+- Reconfirmed linkboo restaurant webview cliffs + LinkScale bio hub (Uber Eats CTA). Finding: `2026-09-04-linkboo-linkscale-webview-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_5AELl4d2rM0y (~10 min).
+- Ledger v1.92.78. Auth still blocked for unlock READY.
+

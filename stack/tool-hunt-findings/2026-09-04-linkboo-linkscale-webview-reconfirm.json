@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-linkboo-linkscale-webview-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "linkboo restaurant webview escape + LinkScale bio hub reconfirm",
+  "verdict": "watch",
+  "summary": "Live FETCH link.boo/for/restaurants (updated Jun 2026) still documents Toast/Resy/OpenTable/Square webview cliffs on IG bio order/book. LinkScale restaurant bio hub still CTAs menu/bookings + Uber Eats/Deliveroo — bio-hub peer, not FBE. Never86 in-app Shop wedge holds; fee pause.",
+  "researched_at": "2026-09-04T22:05:00.000Z",
+  "sources": [
+    "https://link.boo/for/restaurants",
+    "https://linkscale.to/solutions/restaurants"
+  ]
+}
