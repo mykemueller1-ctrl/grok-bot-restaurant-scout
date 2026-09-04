@@ -1,5 +1,5 @@
 {
-  "version": "1.92.20",
+  "version": "1.92.21",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1241,6 +1241,18 @@
   ],
   "watchlist": [
     {
+      "item": "Smiilen video→delivery marketplace (BiteSight peer)",
+      "lane": "vertical_gtm",
+      "why": "Creator food video → one-tap delivery order with performance pay — adjacent love discovery on marketplace rent; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "ChatFood Instagram Order Food + Facebook Commerce",
+      "lane": "vertical_gtm",
+      "why": "Meta Order Food partner peer to Deliverect/Zyda; watch GTM only — fee catalog pause",
+      "verdict": "watch"
+    },
+    {
       "item": "lead-shop-enrich + sales-lead-form marked hunt-critical for Sync Skills",
       "lane": "skills_knowledge",
       "why": "print-sync-skills-checklist + CURSOR-SYNC-SKILLS now require pain→sales enrich skills; TOOL-HUNT documents Active-without-Mem0 paths",
@@ -2480,5 +2492,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:25:00Z"
+  "updated_at": "2026-09-04T19:28:00Z"
 }
