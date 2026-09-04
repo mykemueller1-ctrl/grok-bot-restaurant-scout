@@ -430,3 +430,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened per_order_platform_fee for “$0.25 commission fee” language; pain-scan-orda-per-order.json → strong_keep 31.
 - Added pain-to-sales-orda-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-orda-fee-dogfood ≥5.
 - Watched Upserve/U-Series 2.99% OO service fee. Ledger v1.63.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Upserve/U-Series 2.99% OO SalesLead)
+
+- Widened first_party_pct_fee for 2.99% / online ordering service fee; pain-scan-upserve-pct-fee.json → strong_keep 32.
+- Added pain-to-sales-upserve-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-upserve-fee-dogfood ≥5.
+- Ledger v1.64.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

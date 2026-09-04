@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-upserve-fee-girl-goat-2026-09-04",
+  "purpose": "Upserve/Lightspeed U-Series Online Ordering 2.99% service fee (guest-default) \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts first_party_pct_fee + guest_paid vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Upserve U-Series OO service fee 2.99% (guest-default; restaurant can absorb)",
+    "guest_paid_tech_fee": "Online Platform Consumer Fee defaults to guest paying 2.99%",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "upserve_oo_pct_fee",
+    "vendor_id": "upserve",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Upserve/Lightspeed U-Series assesses a 2.99% Online Ordering service fee (guest-default). Girl & The Goat-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "upserve",
+      "lightspeed",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-upserve-pct-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "upserve_oo_pct_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Upserve/Lightspeed U-Series Online Ordering assesses a 2.99% service fee on the order total \u2014 by default guests pay the Online Platform Consumer Fee (restaurant can absorb). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. West Loop love already prints demand \u2014 close Shop buy-now, not Upserve 2.99% diner OO fees on every ticket.",
+    "quotes": [
+      "Upserve U-Series Online Ordering service fee 2.99%",
+      "Guest-default Online Platform Consumer Fee",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Upserve/Lightspeed U-Series 2.99% OO service fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + guest_paid_tech_fee + social_shop_fee teach: Upserve 2.99% guest OO fee is still platform rent on POS-bundled ordering; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand \u2014 close Shop buy-now, not Upserve 2.99% diner OO fees on every ticket.",
+    "sources": [
+      "https://u-series-support.lightspeedhq.com/s/article/Upserve-Online-Ordering-Service-Fee",
+      "fixtures/tool-hunt/pain-scan-upserve-pct-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Upserve/U-Series 2.99% OO fee \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-upserve-pct-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

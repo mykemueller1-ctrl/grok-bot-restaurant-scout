@@ -1,5 +1,5 @@
 {
-  "version": "1.63.0",
+  "version": "1.64.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -110,6 +110,7 @@
     "tabski_fee_dogfood_gate": "scripts/validate-tabski-fee-dogfood.mjs (Tabski $0.99 guest convenience fee → SalesLead ≥5 markets)",
     "gotab_fee_dogfood_gate": "scripts/validate-gotab-fee-dogfood.mjs (GoTab guest 1%+$0.25 / $0.25 convenience → SalesLead ≥5 markets)",
     "orda_fee_dogfood_gate": "scripts/validate-orda-fee-dogfood.mjs (Orda Starter $59/mo + $0.25/order commission → SalesLead ≥5 markets)",
+    "upserve_fee_dogfood_gate": "scripts/validate-upserve-fee-dogfood.mjs (Upserve/U-Series 2.99% OO service fee → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -252,6 +253,18 @@
       "sources": [
         "https://www.getorda.com/pricing",
         "https://www.getorda.com/"
+      ]
+    },
+    {
+      "name": "Upserve / Lightspeed U-Series",
+      "lane": "vertical_gtm",
+      "stack": "POS-bundled Online Ordering; 2.99% service fee on order total (guest-default Consumer Fee; restaurant can absorb)",
+      "memory": "n/a",
+      "edge": "POS OO with guest-default 2.99% — Owner/Flipdish-class % KEEP peer inside Lightspeed stack",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://u-series-support.lightspeedhq.com/s/article/Upserve-Online-Ordering-Service-Fee",
+        "https://www.lightspeedhq.com/integrations/upserve-online-ordering/"
       ]
     },
     {
@@ -926,6 +939,12 @@
   ],
   "watchlist": [
     {
+      "item": "Upserve/U-Series 2.99% OO service fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN guest-default 2.99% Online Ordering service fee → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-upserve-fee-dogfood ≥5; strong_keep 32",
+      "verdict": "adopt"
+    },
+    {
       "item": "Orda $0.25/order commission fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN Orda Starter $59/mo + $0.25 commission fee per order on Square OO → SalesLead vs Shop ~6%; validate-orda-fee-dogfood ≥5; strong_keep 31",
@@ -934,8 +953,8 @@
     {
       "item": "Upserve U-Series Online Ordering 2.99% service fee",
       "lane": "vertical_gtm",
-      "why": "Guest-passable 2.99% OO service fee — watch; may need first_party_pct_fee widen before dogfood",
-      "verdict": "watch"
+      "why": "Promoted: first_party_pct_fee widened + 5-market SalesLead dogfood",
+      "verdict": "adopt"
     },
     {
       "item": "GoTab guest convenience fee SalesLead dogfood across 5 love markets",
