@@ -5,7 +5,7 @@
 **Goal:** Track restaurant **social-commerce / anti-marketplace / pain-GTM** rivals — adopt patterns that sharpen Never86, skip forecasting suites.
 
 ### Watch set (seed)
-Owner.com · Trenz · BrandPal · CreatOK · Restomas · Feedia · Straunt · Zayos · PlateAI · Flik AI · Seekadu · TextOrder · Menami · Klikit (APAC) · Outbites · Orderitto · Moast · Ainisa · Seekeasy · Feedo AI · OrderPost · Beebz · Seared · DirectOrders · Gegsy · Deonde · SWIPEBY · OPA! · Ordr · Lunchbox · ChowNow · Chowly · Menufy · Popmenu · Flipdish · Sauce · Fleksa · BentoBox · Ressto · Eatsy Orders · FlavorFeed AI · Restos.io · INFI ONLINE · WhatsMenu · Square AI-channel · UpMenu · DineOpen · Muncho · DoorDash Online Ordering · Restolabs · MenuForma · Clover Restaurant OO · Uber Webshop · Grubhub Direct · Olo Network · Menusso · Toast Online Ordering
+Owner.com · Trenz · BrandPal · CreatOK · Restomas · Feedia · Straunt · Zayos · PlateAI · Flik AI · Seekadu · TextOrder · Menami · Klikit (APAC) · Outbites · Orderitto · Moast · Ainisa · Seekeasy · Feedo AI · OrderPost · Beebz · Seared · DirectOrders · Gegsy · Deonde · SWIPEBY · OPA! · Ordr · Lunchbox · ChowNow · Chowly · Menufy · Popmenu · Flipdish · Sauce · Fleksa · BentoBox · Ressto · Eatsy Orders · FlavorFeed AI · Restos.io · INFI ONLINE · WhatsMenu · Square AI-channel · UpMenu · DineOpen · Muncho · DoorDash Online Ordering · Restolabs · MenuForma · Clover Restaurant OO · Uber Webshop · Grubhub Direct · Olo Network · Menusso · Toast Online Ordering · Dinevate
 
 **Skip for hunt research:** Cartsense (non-restaurant TikTok Shop ecom), Nailah labor/demand-forecast features, any historical sales/labor forecasting suite. Also skip SpotOn/DineOpen/Clover/Toast labor-scheduling deep dives — ordering KEEP only.
 

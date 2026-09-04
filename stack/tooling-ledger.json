@@ -1,5 +1,5 @@
 {
-  "version": "1.39.0",
+  "version": "1.40.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -95,6 +95,7 @@
       "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
     },
     "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs",
+    "social_shop_dogfood_gate": "scripts/validate-social-shop-dogfood.mjs (Shop ~6% → SalesLead)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade + fixtures keep-channel-grader-pilot + pain-to-sales-keep-grader-rioja/franklin + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -779,9 +780,33 @@
       "sources": [
         "https://pos.toasttab.com/products/online-ordering"
       ]
+    },
+    {
+      "name": "Dinevate",
+      "lane": "vertical_gtm",
+      "stack": "Website + branded app + register + AI phone agent; $499 onboard then per-order or flat monthly; Owner.com alternative narrative",
+      "memory": "Unified order pipeline",
+      "edge": "Owner-class first-party OS with voice AI now — not TikTok Shop buy-now",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.dinevate.com/compare/owner-com/",
+        "https://www.dinevate.com/blog/posts/owner-alternative/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "social_shop_fee → Franklin SalesLead dogfood",
+      "lane": "vertical_gtm",
+      "why": "Shop ~6% KEEP teach folded into pain→sales; CI validate-social-shop-dogfood ≥1",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Dinevate Owner.com alternative OS",
+      "lane": "vertical_gtm",
+      "why": "Website/app/voice OS peer; watch only — not Shop-native",
+      "verdict": "watch"
+    },
     {
       "item": "TikTok Shop ~6% social_shop_fee KEEP teach",
       "lane": "vertical_gtm",

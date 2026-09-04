@@ -278,3 +278,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Updated script-draft anti-rent teach with Shop KEEP math.
 - Watched Toast Online Ordering (0% commission + POS lock-in). Skip labor/forecast.
 - Ledger v1.39.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (social_shop SalesLead dogfood + Dinevate watch)
+
+- Dogfood pain-to-sales-social-shop-franklin.json + validate-social-shop-dogfood.mjs CI gate.
+- Morning-scan teach: Shop ~6% KEEP vs Marketplace rent.
+- Watched Dinevate (Owner alternative OS). Skip labor/forecast.
+- Ledger v1.40.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

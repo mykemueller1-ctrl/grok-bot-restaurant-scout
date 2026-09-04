@@ -1,0 +1,20 @@
+{
+  "finding_id": "social-shop-saleslead-dogfood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Dogfood social_shop_fee → Franklin SalesLead",
+  "vendor_or_project": "Never86 love→buy-now",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-social-shop-franklin.json",
+    "scripts/validate-social-shop-dogfood.mjs"
+  ],
+  "what_it_does": "End-to-end dogfood: TikTok Shop ~6% vs Marketplace 15–30% KEEP teach → SalesLead DRAFT for Franklin Barbecue; CI gate validate-social-shop-dogfood.mjs.",
+  "how_competitors_use_it": "Owner/Dinevate sell website OS; Klikit sells Shop POS middleware — we teach Shop KEEP math into pain→sales + buy-now scripts.",
+  "what_we_use_today": "social_shop_fee scorer + script-draft anti-rent + this SalesLead dogfood",
+  "gap": "Still DRAFT calibration — Mem0/Context blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "social_shop_fee now folds into a SalesLead dogfood with CI gate (≥1).",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}
