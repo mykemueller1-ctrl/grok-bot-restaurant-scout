@@ -47,10 +47,15 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **BentoBox** (Clover Hospitality) Meta Business Extension → Bento Online Ordering / Catering + Stories Food Orders sticker ([Help Center](https://help.getbento.com/en/articles/412673))
 - **Toast Online Ordering** — Instagram Action Button Order food → select Toast as partner; Stories Food Orders sticker; Facebook Start Order ([Toast Support](https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook))
 - **Flipdish** — Instagram Order Now / Food Orders sticker → Flipdish bounce URL (already in fee catalog for €0.50+%)
+- **Kyte** — Meta Business Extension Order Food on FB/IG + Stories stickers → Kyte online catalog ([Kyte FBE](https://www.kyteapp.com/apps/fbe))
 
-Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close (not Meta Order Food button — adjacent social intake).
+Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close and **RAY** commission-free Instagram delivery channel (Order Food/Reserve + DM automation — [RAY blog](https://blog.rayapp.ai/en/delivery-without-commission/instagram-delivery-channel-restaurants/)) — adjacent social intake, not Meta FBE peers.
 
 Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch; also watch video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products (BentoBox QR $0.99 / Flipdish €0.50+% already in catalog).
+
+## Instagram reconnect (issued this hunt)
+
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_JYyUTk9S5ND5) — Business/Creator only. Reply `instagram connected` when done.
 
 ## Still required for Beyond the Hunt READY
 

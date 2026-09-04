@@ -1,6 +1,6 @@
 {
-  "version": "1.92.27",
-  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
+  "version": "1.92.28",
+  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
     "pain_to_sales_lead",
@@ -16,7 +16,7 @@
   "last_brief": "2026-09-04",
   "owner": "mykemueller1-ctrl",
   "ours": {
-    "vertical_wedge": "Chef-loved / UGC-proven kitchens → Never86 TikTok/IG buy-now; vendor-pain shoppers → taught sales leads",
+    "vertical_wedge": "Chef-loved / UGC-proven kitchens \u2192 Never86 TikTok/IG buy-now; vendor-pain shoppers \u2192 taught sales leads",
     "ide_agents": {
       "primary": "Cursor Cloud Agents + desktop Cursor",
       "also": [
@@ -30,7 +30,7 @@
       "primary": "teach_memory on pain/report agents + VendorLearnedBank",
       "cursor_automation_memories": "preferred for Beyond the Hunt cross-run learning",
       "mem0_mcp": "needsAuth or MEM0_API_KEY (scripts/mem0-smoke.mjs)",
-      "context_dev": "MCP OAuth-desktop-only; headless CONTEXT_DEV_API_KEY → scripts/context-search.mjs",
+      "context_dev": "MCP OAuth-desktop-only; headless CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs",
       "pinecone": "MCP present; configure only if vector search needed for vertical knowledge",
       "posthog_scratchpad": "signals-scout scratchpad for product analytics memory"
     },
@@ -43,7 +43,7 @@
         "docs/CLOUDFLARE.md"
       ],
       "posthog_skills": "PostHog MCP skills store",
-      "personal_skills_sync": "desktop: Settings → Agents → Sync Skills for Cloud Agents"
+      "personal_skills_sync": "desktop: Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents"
     },
     "mcp_live": [
       "Bright Data",
@@ -69,7 +69,7 @@
     ],
     "research_fallback": "Composio COMPOSIO_SEARCH_WEB + COMPOSIO_SEARCH_TAVILY (Active) when Bright Data/Context unavailable",
     "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)",
-    "pain_sales_enrich": "Composio Yelp (search/details/phone) + Google Maps + SEARCH_WEB (Active) — Apollo/Clay optional",
+    "pain_sales_enrich": "Composio Yelp (search/details/phone) + Google Maps + SEARCH_WEB (Active) \u2014 Apollo/Clay optional",
     "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts",
     "mem0": {
       "mcp_file": "mcp/mem0.json",
@@ -78,7 +78,7 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "multi-market KEEP→SalesLead + keep-grader CHI/ATX/MIA/BNA/DEN (girl-goat/franklin/michaels/husk/rioja)",
+    "pain_sales_dogfood": "multi-market KEEP\u2192SalesLead + keep-grader CHI/ATX/MIA/BNA/DEN (girl-goat/franklin/michaels/husk/rioja)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
     "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
@@ -88,57 +88,57 @@
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee + brand_site_marketplace_leak)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
-    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔guest-fee↔otter-fee↔script↔catalog per market)",
+    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love\u2194keep-grader\u2194social-shop\u2194guest-fee\u2194otter-fee\u2194script\u2194catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
-      "headless_rest": "CONTEXT_DEV_API_KEY → scripts/context-search.mjs POST /v1/web/search",
+      "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
       "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
     },
     "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs",
-    "social_shop_dogfood_gate": "scripts/validate-social-shop-dogfood.mjs (Shop ~6% → SalesLead ≥5 markets)",
-    "guest_fee_dogfood_gate": "scripts/validate-guest-fee-dogfood.mjs (DevourNow-class guest tech fee → SalesLead ≥5 markets)",
-    "otter_fee_dogfood_gate": "scripts/validate-otter-fee-dogfood.mjs (Otter restaurant-paid per-order txn fee → SalesLead ≥5 markets)",
-    "upmenu_fee_dogfood_gate": "scripts/validate-upmenu-fee-dogfood.mjs (UpMenu $1.90 overage → SalesLead ≥5 markets)",
-    "owner_fee_dogfood_gate": "scripts/validate-owner-fee-dogfood.mjs (Owner Flex 5% + guest 5% support → SalesLead ≥5 markets)",
-    "popmenu_fee_dogfood_gate": "scripts/validate-popmenu-fee-dogfood.mjs (Popmenu $1/order guest fee → SalesLead ≥5 markets)",
-    "flipdish_fee_dogfood_gate": "scripts/validate-flipdish-fee-dogfood.mjs (Flipdish flat €0.50 + % / 2–7% direct → SalesLead ≥5 markets)",
-    "lunchbox_fee_dogfood_gate": "scripts/validate-lunchbox-fee-dogfood.mjs (Lunchbox guest convenience fee → SalesLead ≥5 markets)",
-    "menufy_fee_dogfood_gate": "scripts/validate-menufy-fee-dogfood.mjs (Menufy guest convenience fee → SalesLead ≥5 markets)",
-    "zayos_fee_dogfood_gate": "scripts/validate-zayos-fee-dogfood.mjs (Zay-OS guest $1.99–$3.99/order → SalesLead ≥5 markets)",
-    "waiter247_fee_dogfood_gate": "scripts/validate-247waiter-fee-dogfood.mjs (247waiter $45/mo + $0.25/order transmission → SalesLead ≥5 markets)",
-    "outbites_fee_dogfood_gate": "scripts/validate-outbites-fee-dogfood.mjs (Outbites $1/fulfilled-order Pass → SalesLead ≥5 markets)",
-    "tabski_fee_dogfood_gate": "scripts/validate-tabski-fee-dogfood.mjs (Tabski $0.99 guest convenience fee → SalesLead ≥5 markets)",
-    "gotab_fee_dogfood_gate": "scripts/validate-gotab-fee-dogfood.mjs (GoTab guest 1%+$0.25 / $0.25 convenience → SalesLead ≥5 markets)",
-    "orda_fee_dogfood_gate": "scripts/validate-orda-fee-dogfood.mjs (Orda Starter $59/mo + $0.25/order commission → SalesLead ≥5 markets)",
-    "upserve_fee_dogfood_gate": "scripts/validate-upserve-fee-dogfood.mjs (Upserve/U-Series 2.99% OO service fee → SalesLead ≥5 markets)",
+    "social_shop_dogfood_gate": "scripts/validate-social-shop-dogfood.mjs (Shop ~6% \u2192 SalesLead \u22655 markets)",
+    "guest_fee_dogfood_gate": "scripts/validate-guest-fee-dogfood.mjs (DevourNow-class guest tech fee \u2192 SalesLead \u22655 markets)",
+    "otter_fee_dogfood_gate": "scripts/validate-otter-fee-dogfood.mjs (Otter restaurant-paid per-order txn fee \u2192 SalesLead \u22655 markets)",
+    "upmenu_fee_dogfood_gate": "scripts/validate-upmenu-fee-dogfood.mjs (UpMenu $1.90 overage \u2192 SalesLead \u22655 markets)",
+    "owner_fee_dogfood_gate": "scripts/validate-owner-fee-dogfood.mjs (Owner Flex 5% + guest 5% support \u2192 SalesLead \u22655 markets)",
+    "popmenu_fee_dogfood_gate": "scripts/validate-popmenu-fee-dogfood.mjs (Popmenu $1/order guest fee \u2192 SalesLead \u22655 markets)",
+    "flipdish_fee_dogfood_gate": "scripts/validate-flipdish-fee-dogfood.mjs (Flipdish flat \u20ac0.50 + % / 2\u20137% direct \u2192 SalesLead \u22655 markets)",
+    "lunchbox_fee_dogfood_gate": "scripts/validate-lunchbox-fee-dogfood.mjs (Lunchbox guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "menufy_fee_dogfood_gate": "scripts/validate-menufy-fee-dogfood.mjs (Menufy guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "zayos_fee_dogfood_gate": "scripts/validate-zayos-fee-dogfood.mjs (Zay-OS guest $1.99\u2013$3.99/order \u2192 SalesLead \u22655 markets)",
+    "waiter247_fee_dogfood_gate": "scripts/validate-247waiter-fee-dogfood.mjs (247waiter $45/mo + $0.25/order transmission \u2192 SalesLead \u22655 markets)",
+    "outbites_fee_dogfood_gate": "scripts/validate-outbites-fee-dogfood.mjs (Outbites $1/fulfilled-order Pass \u2192 SalesLead \u22655 markets)",
+    "tabski_fee_dogfood_gate": "scripts/validate-tabski-fee-dogfood.mjs (Tabski $0.99 guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "gotab_fee_dogfood_gate": "scripts/validate-gotab-fee-dogfood.mjs (GoTab guest 1%+$0.25 / $0.25 convenience \u2192 SalesLead \u22655 markets)",
+    "orda_fee_dogfood_gate": "scripts/validate-orda-fee-dogfood.mjs (Orda Starter $59/mo + $0.25/order commission \u2192 SalesLead \u22655 markets)",
+    "upserve_fee_dogfood_gate": "scripts/validate-upserve-fee-dogfood.mjs (Upserve/U-Series 2.99% OO service fee \u2192 SalesLead \u22655 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs",
-    "sauce_fee_dogfood_gate": "scripts/validate-sauce-fee-dogfood.mjs (Sauce under-$2/order guest fee / 0% commission → SalesLead ≥5 markets)",
-    "velobite_fee_dogfood_gate": "scripts/validate-velobite-fee-dogfood.mjs (VeloBite Growth $0.75/order → SalesLead ≥5 markets)",
-    "ginger_fee_dogfood_gate": "scripts/validate-ginger-fee-dogfood.mjs (Ginger $1/order guest platform fee → SalesLead ≥5 markets)",
-    "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15–$1.99 → SalesLead ≥5 markets)",
-    "chownow_fee_dogfood_gate": "scripts/validate-chownow-fee-dogfood.mjs (ChowNow $0.99 service charge + 7.5% Support Local Fee → SalesLead ≥5 markets)",
-    "slice_fee_dogfood_gate": "scripts/validate-slice-fee-dogfood.mjs (Slice Online $3/order / Family $2/order → SalesLead ≥5 markets; pizza niche)",
-    "olo_fee_dogfood_gate": "scripts/validate-olo-fee-dogfood.mjs (Olo Order with Google Fee 5% → SalesLead ≥5 markets)",
-    "bentobox_fee_dogfood_gate": "scripts/validate-bentobox-fee-dogfood.mjs (BentoBox QR Order & Pay $0.99 diner fee → SalesLead ≥5 markets)",
-    "kontactless_fee_dogfood_gate": "scripts/validate-kontactless-fee-dogfood.mjs (Kontactless $0.50–$1.00/order guest convenience fee → SalesLead ≥5 markets)",
-    "sohungry_fee_dogfood_gate": "scripts/validate-sohungry-fee-dogfood.mjs (SoHungry Free $1.25/order guest convenience fee → SalesLead ≥5 markets)",
-    "foodscout_fee_dogfood_gate": "scripts/validate-foodscout-fee-dogfood.mjs (FoodScout GO $0.99/order guest service fee → SalesLead ≥5 markets)",
-    "chownow_catering_fee_dogfood_gate": "scripts/validate-chownow-catering-fee-dogfood.mjs (ChowNow Catering 5% direct → SalesLead ≥5 markets)",
-    "onestoporder_fee_dogfood_gate": "scripts/validate-onestoporder-fee-dogfood.mjs (1 Stop Order Free 2% / Pro 1% guest convenience fee → SalesLead ≥5 markets)",
-    "ordering_tools_fee_dogfood_gate": "scripts/validate-ordering-tools-fee-dogfood.mjs (Ordering.Tools Starter 5% / Pro 3% → SalesLead ≥5 markets; EU thematic)",
-    "deonde_fee_dogfood_gate": "scripts/validate-deonde-fee-dogfood.mjs (Deonde Express $0.10/order overage → SalesLead ≥5 markets)",
-    "uber_webshop_fee_dogfood_gate": "scripts/validate-uber-webshop-fee-dogfood.mjs (Uber Webshop 2.5%+$0.29 processing → SalesLead ≥5 markets)",
-    "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap → SalesLead ≥5 markets)",
-    "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order → SalesLead ≥5 markets)",
-    "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi → SalesLead ≥5 markets)",
-    "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 → SalesLead ≥5 markets)",
-    "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+€0.45 per card → SalesLead ≥5 markets; EU thematic)",
-    "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee → SalesLead ≥5 markets)",
-    "foodappfast_fee_dogfood_gate": "scripts/validate-foodappfast-fee-dogfood.mjs (Food App Fast 8% commission → SalesLead ≥5 markets)",
-    "chownow_discovery_fee_dogfood_gate": "scripts/validate-chownow-discovery-fee-dogfood.mjs (ChowNow Discovery Network 15.5% marketing fee → SalesLead ≥5 markets)",
-    "addmi_fee_dogfood_gate": "scripts/validate-addmi-fee-dogfood.mjs (Addmi OO 38¢ guest fee → SalesLead ≥5 markets)",
-    "tenvito_fee_dogfood_gate": "scripts/validate-tenvito-fee-dogfood.mjs (Tenvito Open 3.9% / Service 2.9% per order → SalesLead ≥5 markets; EU thematic)",
+    "sauce_fee_dogfood_gate": "scripts/validate-sauce-fee-dogfood.mjs (Sauce under-$2/order guest fee / 0% commission \u2192 SalesLead \u22655 markets)",
+    "velobite_fee_dogfood_gate": "scripts/validate-velobite-fee-dogfood.mjs (VeloBite Growth $0.75/order \u2192 SalesLead \u22655 markets)",
+    "ginger_fee_dogfood_gate": "scripts/validate-ginger-fee-dogfood.mjs (Ginger $1/order guest platform fee \u2192 SalesLead \u22655 markets)",
+    "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15\u2013$1.99 \u2192 SalesLead \u22655 markets)",
+    "chownow_fee_dogfood_gate": "scripts/validate-chownow-fee-dogfood.mjs (ChowNow $0.99 service charge + 7.5% Support Local Fee \u2192 SalesLead \u22655 markets)",
+    "slice_fee_dogfood_gate": "scripts/validate-slice-fee-dogfood.mjs (Slice Online $3/order / Family $2/order \u2192 SalesLead \u22655 markets; pizza niche)",
+    "olo_fee_dogfood_gate": "scripts/validate-olo-fee-dogfood.mjs (Olo Order with Google Fee 5% \u2192 SalesLead \u22655 markets)",
+    "bentobox_fee_dogfood_gate": "scripts/validate-bentobox-fee-dogfood.mjs (BentoBox QR Order & Pay $0.99 diner fee \u2192 SalesLead \u22655 markets)",
+    "kontactless_fee_dogfood_gate": "scripts/validate-kontactless-fee-dogfood.mjs (Kontactless $0.50\u2013$1.00/order guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "sohungry_fee_dogfood_gate": "scripts/validate-sohungry-fee-dogfood.mjs (SoHungry Free $1.25/order guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "foodscout_fee_dogfood_gate": "scripts/validate-foodscout-fee-dogfood.mjs (FoodScout GO $0.99/order guest service fee \u2192 SalesLead \u22655 markets)",
+    "chownow_catering_fee_dogfood_gate": "scripts/validate-chownow-catering-fee-dogfood.mjs (ChowNow Catering 5% direct \u2192 SalesLead \u22655 markets)",
+    "onestoporder_fee_dogfood_gate": "scripts/validate-onestoporder-fee-dogfood.mjs (1 Stop Order Free 2% / Pro 1% guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "ordering_tools_fee_dogfood_gate": "scripts/validate-ordering-tools-fee-dogfood.mjs (Ordering.Tools Starter 5% / Pro 3% \u2192 SalesLead \u22655 markets; EU thematic)",
+    "deonde_fee_dogfood_gate": "scripts/validate-deonde-fee-dogfood.mjs (Deonde Express $0.10/order overage \u2192 SalesLead \u22655 markets)",
+    "uber_webshop_fee_dogfood_gate": "scripts/validate-uber-webshop-fee-dogfood.mjs (Uber Webshop 2.5%+$0.29 processing \u2192 SalesLead \u22655 markets)",
+    "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap \u2192 SalesLead \u22655 markets)",
+    "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)",
+    "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)",
+    "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)",
+    "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)",
+    "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee \u2192 SalesLead \u22655 markets)",
+    "foodappfast_fee_dogfood_gate": "scripts/validate-foodappfast-fee-dogfood.mjs (Food App Fast 8% commission \u2192 SalesLead \u22655 markets)",
+    "chownow_discovery_fee_dogfood_gate": "scripts/validate-chownow-discovery-fee-dogfood.mjs (ChowNow Discovery Network 15.5% marketing fee \u2192 SalesLead \u22655 markets)",
+    "addmi_fee_dogfood_gate": "scripts/validate-addmi-fee-dogfood.mjs (Addmi OO 38\u00a2 guest fee \u2192 SalesLead \u22655 markets)",
+    "tenvito_fee_dogfood_gate": "scripts/validate-tenvito-fee-dogfood.mjs (Tenvito Open 3.9% / Service 2.9% per order \u2192 SalesLead \u22655 markets; EU thematic)",
     "automation_pack": "docs/CURSOR-AUTOMATION-TOOL-HUNT.md + scripts/print-tool-hunt-automation.mjs",
     "sync_skills_pack": "docs/CURSOR-SYNC-SKILLS.md + scripts/print-sync-skills-checklist.mjs",
     "keep_grader_ui": "fixtures/tool-hunt/keep-grader/index.html + scripts/validate-keep-grader-ui.mjs",
@@ -150,7 +150,7 @@
       "lane": "vertical_gtm",
       "stack": "AI-native discovery + first-party ordering + CRM + automated marketing agents; $240M Series D (Goldman, Aug 2026); Flex $249/mo + 5% restaurant fee or Flat $499/mo (guest order support fee often ~5%)",
       "memory": "Vendor-managed marketing/content agents",
-      "edge": "Capitalized first-party OS; Flex still takes 5% KEEP; marketing agents skew email/SMS/push — not TikTok Shop-native",
+      "edge": "Capitalized first-party OS; Flex still takes 5% KEEP; marketing agents skew email/SMS/push \u2014 not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html",
@@ -162,9 +162,9 @@
     {
       "name": "Trenz",
       "lane": "vertical_gtm",
-      "stack": "Multi-agent social commerce (research → creative → publish → shop → ads); TikTok Shop partner narrative",
+      "stack": "Multi-agent social commerce (research \u2192 creative \u2192 publish \u2192 shop \u2192 ads); TikTok Shop partner narrative",
       "memory": "Agent team state across research/creative/ops",
-      "edge": "End-to-end shoppable content + TikTok Shop ops — overlaps our buy-now script path",
+      "edge": "End-to-end shoppable content + TikTok Shop ops \u2014 overlaps our buy-now script path",
       "updated": "2026-09-04",
       "sources": [
         "https://www.trenz.ai/"
@@ -173,7 +173,7 @@
     {
       "name": "Restomas",
       "lane": "vertical_gtm",
-      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp — approve then execute",
+      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp \u2014 approve then execute",
       "memory": "Platform-native agent memory",
       "edge": "Full guest-facing + marketing agent suite in one subscription",
       "updated": "2026-09-04",
@@ -208,7 +208,7 @@
       "lane": "vertical_gtm",
       "stack": "TikTok Shop video generate/clone/publish via official API",
       "memory": "Prompt cloning from winning videos",
-      "edge": "High-volume shoppable video production — compare to our script-draft skill",
+      "edge": "High-volume shoppable video production \u2014 compare to our script-draft skill",
       "updated": "2026-09-04",
       "sources": [
         "https://www.creatok.ai/"
@@ -228,9 +228,9 @@
     {
       "name": "Zayos / Zay-OS",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct ordering OS (~$399–$599/mo) that shifts platform cost to diner per-order fees (~$1.99–$3.99) + grader + CRM assistant on Claude",
+      "stack": "Commission-free direct ordering OS (~$399\u2013$599/mo) that shifts platform cost to diner per-order fees (~$1.99\u2013$3.99) + grader + CRM assistant on Claude",
       "memory": "Ask Zay CRM assistant",
-      "edge": "Same anti-marketplace thesis with guest-paid OO fees; grader is a sharp inbound wedge — not TikTok Shop-native",
+      "edge": "Same anti-marketplace thesis with guest-paid OO fees; grader is a sharp inbound wedge \u2014 not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.zayrev.com/zayos",
@@ -242,7 +242,7 @@
       "lane": "vertical_gtm",
       "stack": "Website + OO system; $45/mo + $0.25/order transmission fee (restaurant-paid); no % commission pitch; card processing separate",
       "memory": "n/a",
-      "edge": "Low monthly with restaurant-paid per-order transmission skim — Otter-class KEEP peer, not TikTok Shop-native",
+      "edge": "Low monthly with restaurant-paid per-order transmission skim \u2014 Otter-class KEEP peer, not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.247waiter.com/online-ordering-system-cost",
@@ -254,7 +254,7 @@
       "lane": "vertical_gtm",
       "stack": "Food-hall/restaurant digital OO + POS; $0.99/order guest convenience fee or $59/mo SaaS; commission-free pitch",
       "memory": "n/a",
-      "edge": "Guest $0.99 convenience fee under zero-commission claim — BentoBox/Outbites-class KEEP peer; food-hall skew",
+      "edge": "Guest $0.99 convenience fee under zero-commission claim \u2014 BentoBox/Outbites-class KEEP peer; food-hall skew",
       "updated": "2026-09-04",
       "sources": [
         "https://tabski.com/platform-fees",
@@ -266,7 +266,7 @@
       "lane": "vertical_gtm",
       "stack": "Venue/food-hall POS + QR Easy Tab; guest convenience fee FAQ $0.25; mobile CNP often 1%+$0.25 (guest-optional)",
       "memory": "n/a",
-      "edge": "Guest convenience fees fund QR tabs — Tabski-class KEEP peer; venue skew",
+      "edge": "Guest convenience fees fund QR tabs \u2014 Tabski-class KEEP peer; venue skew",
       "updated": "2026-09-04",
       "sources": [
         "https://gotab.com/faq",
@@ -279,7 +279,7 @@
       "lane": "vertical_gtm",
       "stack": "Square branded mobile/web OO; Starter $59/mo + $0.25 commission fee per order; Pro $129/mo",
       "memory": "n/a",
-      "edge": "Low monthly with restaurant-paid $0.25/order commission — Otter/247waiter-class KEEP peer on Square",
+      "edge": "Low monthly with restaurant-paid $0.25/order commission \u2014 Otter/247waiter-class KEEP peer on Square",
       "updated": "2026-09-04",
       "sources": [
         "https://www.getorda.com/pricing",
@@ -291,7 +291,7 @@
       "lane": "vertical_gtm",
       "stack": "POS-bundled Online Ordering; 2.99% service fee on order total (guest-default Consumer Fee; restaurant can absorb)",
       "memory": "n/a",
-      "edge": "POS OO with guest-default 2.99% — Owner/Flipdish-class % KEEP peer inside Lightspeed stack",
+      "edge": "POS OO with guest-default 2.99% \u2014 Owner/Flipdish-class % KEEP peer inside Lightspeed stack",
       "updated": "2026-09-04",
       "sources": [
         "https://u-series-support.lightspeedhq.com/s/article/Upserve-Online-Ordering-Service-Fee",
@@ -303,7 +303,7 @@
       "lane": "competitor_stacks",
       "stack": "Cursor IDE + Cloud Agents + Automations + Skills + MCP",
       "memory": "Automation memories; optional Mem0",
-      "edge": "Same build surface — race is vertical skills depth",
+      "edge": "Same build surface \u2014 race is vertical skills depth",
       "updated": "2026-09-04",
       "sources": [
         "https://cursor.com/docs/cloud-agent/automations",
@@ -315,7 +315,7 @@
       "lane": "competitor_stacks",
       "stack": "Claude Code CLI (+ optional Cursor)",
       "memory": "CLAUDE.md / Mem0 / Letta patterns",
-      "edge": "Terminal autonomy for heavy refactors — watch only",
+      "edge": "Terminal autonomy for heavy refactors \u2014 watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.thecodew.com/2026/08/ai-coding-assistants-compared.html"
@@ -326,7 +326,7 @@
       "lane": "vertical_gtm",
       "stack": "AI dish photo/video/Reels generators for menus and social",
       "memory": "n/a (content gen)",
-      "edge": "Cheap menu/social media assets — not shoppable commerce close",
+      "edge": "Cheap menu/social media assets \u2014 not shoppable commerce close",
       "updated": "2026-09-04",
       "sources": [
         "https://getplateai.com/",
@@ -336,9 +336,9 @@
     {
       "name": "Seekadu",
       "lane": "vertical_gtm",
-      "stack": "Instagram DM / Reels comment → reservation booking agents (OpenTable/Resy/SevenRooms)",
+      "stack": "Instagram DM / Reels comment \u2192 reservation booking agents (OpenTable/Resy/SevenRooms)",
       "memory": "Conversation booking state",
-      "edge": "Social→covers booked; adjacent GTM but not shoppable commerce",
+      "edge": "Social\u2192covers booked; adjacent GTM but not shoppable commerce",
       "updated": "2026-09-04",
       "sources": [
         "https://www.seekadu.com/ai-social-media/restaurants",
@@ -348,7 +348,7 @@
     {
       "name": "TextOrder",
       "lane": "vertical_gtm",
-      "stack": "AI ordering via TikTok/IG/FB DM + SMS + WhatsApp + web chat (scroll→DM→paid order)",
+      "stack": "AI ordering via TikTok/IG/FB DM + SMS + WhatsApp + web chat (scroll\u2192DM\u2192paid order)",
       "memory": "In-thread reorder + promo retargeting",
       "edge": "Owns conversational messaging close; Never86 wedge stays shoppable buy-now / TikTok Shop rails, not DM chatbot fork",
       "updated": "2026-09-04",
@@ -362,7 +362,7 @@
       "lane": "vertical_gtm",
       "stack": "11-system restaurant agent OS + IG/WhatsApp DMs + direct Stripe ordering + open ACP Agent Protocol for machine agents",
       "memory": "Text-thread ops interface; guest data owned by restaurant",
-      "edge": "Strongest new overlap: first-party anti-marketplace + social DM + agent-to-restaurant commerce. Watch GTM only — skip their staff/labor forecast features",
+      "edge": "Strongest new overlap: first-party anti-marketplace + social DM + agent-to-restaurant commerce. Watch GTM only \u2014 skip their staff/labor forecast features",
       "updated": "2026-09-04",
       "sources": [
         "https://getmenami.com/features",
@@ -373,9 +373,9 @@
     {
       "name": "Klikit",
       "lane": "vertical_gtm",
-      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); primary APAC guide cites TikTok Shop typically 5–10% of GMV vs 15–30% delivery; also publishes US TikTok Shop food-delivery GTM guide (seller.tiktok.com + POS aggregation)",
+      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); primary APAC guide cites TikTok Shop typically 5\u201310% of GMV vs 15\u201330% delivery; also publishes US TikTok Shop food-delivery GTM guide (seller.tiktok.com + POS aggregation)",
       "memory": "n/a (ops middleware)",
-      "edge": "TikTok Shop F&B middleware — KEEP-math peer to Never86 Shop ~6% buy-now vs DoorDash rent; APAC native + US GTM content; watch US expansion. Not a fee-dogfood target (catalog pause).",
+      "edge": "TikTok Shop F&B middleware \u2014 KEEP-math peer to Never86 Shop ~6% buy-now vs DoorDash rent; APAC native + US GTM content; watch US expansion. Not a fee-dogfood target (catalog pause).",
       "updated": "2026-09-04",
       "sources": [
         "https://klikit.io/en/integrations/tiktok-shop",
@@ -391,7 +391,7 @@
       "lane": "vertical_gtm",
       "stack": "First-party branded ordering + SMS/email/loyalty; $1/fulfilled order (Pass guest / Split / Pay restaurant); no % commission, no monthly platform fee",
       "memory": "Owned customer list / retention campaigns",
-      "edge": "Strong KEEP peer with guest-passable $1/order — not TikTok Shop-native; SalesLead dogfood adopted",
+      "edge": "Strong KEEP peer with guest-passable $1/order \u2014 not TikTok Shop-native; SalesLead dogfood adopted",
       "updated": "2026-09-04",
       "sources": [
         "https://outbites.com/",
@@ -417,7 +417,7 @@
       "lane": "vertical_gtm",
       "stack": "Shoppable TikTok/IG UGC video widgets on Shopify PDPs for F&B brands",
       "memory": "n/a (Shopify widget)",
-      "edge": "Proves UGC taste-reaction → buy; closes on Shopify not restaurant TikTok Shop kitchen rails",
+      "edge": "Proves UGC taste-reaction \u2192 buy; closes on Shopify not restaurant TikTok Shop kitchen rails",
       "updated": "2026-09-04",
       "sources": [
         "https://www.moast.io/solutions/food-beverage",
@@ -450,9 +450,9 @@
     {
       "name": "Feedo AI",
       "lane": "vertical_gtm",
-      "stack": "Dish photo → week of Instagram posts/captions; multi-aggregator listing compatibility",
+      "stack": "Dish photo \u2192 week of Instagram posts/captions; multi-aggregator listing compatibility",
       "memory": "n/a (content gen)",
-      "edge": "Content-only peer (PlateAI-class); claims IG→direct delivery share but no Shop close",
+      "edge": "Content-only peer (PlateAI-class); claims IG\u2192direct delivery share but no Shop close",
       "updated": "2026-09-04",
       "sources": [
         "https://feedoai.com/"
@@ -461,9 +461,9 @@
     {
       "name": "OrderPost",
       "lane": "vertical_gtm",
-      "stack": "Upload IG/FB post or flyer → AI extracts menu → shareable order link (no catalog)",
+      "stack": "Upload IG/FB post or flyer \u2192 AI extracts menu \u2192 shareable order link (no catalog)",
       "memory": "n/a (order pages)",
-      "edge": "Closest social-post→order peer; hosted link close vs Never86 in-app Shop rails",
+      "edge": "Closest social-post\u2192order peer; hosted link close vs Never86 in-app Shop rails",
       "updated": "2026-09-04",
       "sources": [
         "https://www.orderpost.store/"
@@ -472,9 +472,9 @@
     {
       "name": "Deliverect",
       "lane": "vertical_gtm",
-      "stack": "Social Media Ordering / Direct Suite — Instagram·Facebook·WhatsApp Order Food profile button + story stickers → first-party menu checkout (Deliverect Pay)",
+      "stack": "Social Media Ordering / Direct Suite \u2014 Instagram\u00b7Facebook\u00b7WhatsApp Order Food profile button + story stickers \u2192 first-party menu checkout (Deliverect Pay)",
       "memory": "n/a (ops middleware)",
-      "edge": "Meta-native love→buy-now rival (IG Order Food); not TikTok Shop; watch GTM only — fee catalog pause",
+      "edge": "Meta-native love\u2192buy-now rival (IG Order Food); not TikTok Shop; watch GTM only \u2014 fee catalog pause",
       "updated": "2026-09-04",
       "sources": [
         "https://www.deliverect.com/en/social-media-ordering",
@@ -487,7 +487,7 @@
       "lane": "vertical_gtm",
       "stack": "First-party online store + Meta Business Extension Order Food button on Instagram/Facebook (Food Ordering partner)",
       "memory": "n/a (ops storefront)",
-      "edge": "Deliverect peer on Meta Order Food rails — brand checkout from IG/FB; watch only, not TikTok Shop",
+      "edge": "Deliverect peer on Meta Order Food rails \u2014 brand checkout from IG/FB; watch only, not TikTok Shop",
       "updated": "2026-09-04",
       "sources": [
         "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
@@ -500,7 +500,7 @@
       "lane": "vertical_gtm",
       "stack": "Mobile ordering + Meta Instagram Order Food button/stickers + Facebook Commerce / Instagram Shops catalog sync + Commerce Inbox DMs",
       "memory": "n/a (ops ordering)",
-      "edge": "Meta Order Food partner peer to Deliverect/Zyda — watch GTM only; not TikTok Shop",
+      "edge": "Meta Order Food partner peer to Deliverect/Zyda \u2014 watch GTM only; not TikTok Shop",
       "updated": "2026-09-04",
       "sources": [
         "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
@@ -511,9 +511,9 @@
     {
       "name": "BiteSight",
       "lane": "vertical_gtm",
-      "stack": "YC video-first food delivery marketplace — scroll short-form restaurant food video → order delivery (TikTok-meets-DoorDash UX; SF live / NYC expanding)",
+      "stack": "YC video-first food delivery marketplace \u2014 scroll short-form restaurant food video \u2192 order delivery (TikTok-meets-DoorDash UX; SF live / NYC expanding)",
       "memory": "n/a (consumer app)",
-      "edge": "Love-discovery UX on a marketplace — sharpens Never86 first-party Shop buy-now vs another delivery aggregator; watch only",
+      "edge": "Love-discovery UX on a marketplace \u2014 sharpens Never86 first-party Shop buy-now vs another delivery aggregator; watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.bitesight.com/",
@@ -525,9 +525,9 @@
     {
       "name": "Smiilen",
       "lane": "vertical_gtm",
-      "stack": "Short-form food video + delivery marketplace — creators post clips → one-tap order → Smiilen logistics; restaurants pay on performance; creators earn commissions",
+      "stack": "Short-form food video + delivery marketplace \u2014 creators post clips \u2192 one-tap order \u2192 Smiilen logistics; restaurants pay on performance; creators earn commissions",
       "memory": "n/a (consumer app)",
-      "edge": "BiteSight-class video→delivery marketplace — differentiate Never86 first-party Shop buy-now; watch only",
+      "edge": "BiteSight-class video\u2192delivery marketplace \u2014 differentiate Never86 first-party Shop buy-now; watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.smiilen.com/"
@@ -536,9 +536,9 @@
     {
       "name": "linkboo",
       "lane": "vertical_gtm",
-      "stack": "Social link wrapper / link-in-bio that escapes Instagram·TikTok·Facebook in-app browsers so Toast/Resy/Square/DoorDash destinations load with Apple Pay + cookies",
+      "stack": "Social link wrapper / link-in-bio that escapes Instagram\u00b7TikTok\u00b7Facebook in-app browsers so Toast/Resy/Square/DoorDash destinations load with Apple Pay + cookies",
       "memory": "n/a (link infra)",
-      "edge": "Proves viral love→order dies in webviews; Never86 in-app Shop avoids the handoff cliff — watch for GTM messaging",
+      "edge": "Proves viral love\u2192order dies in webviews; Never86 in-app Shop avoids the handoff cliff \u2014 watch for GTM messaging",
       "updated": "2026-09-04",
       "sources": [
         "https://link.boo/for/restaurants"
@@ -558,9 +558,9 @@
     {
       "name": "Seared",
       "lane": "vertical_gtm",
-      "stack": "Flat $199/mo (Starter $99) + $500 setup commission-free OO/app/loyalty; guest-paid 5% transaction fee ($1.99 min / $7.50 hard cap) — restaurant keeps menu price",
+      "stack": "Flat $199/mo (Starter $99) + $500 setup commission-free OO/app/loyalty; guest-paid 5% transaction fee ($1.99 min / $7.50 hard cap) \u2014 restaurant keeps menu price",
       "memory": "Owned guest list",
-      "edge": "Owner-class guest 5% KEEP peer under commission-free claim — published min/cap; not Shop-native",
+      "edge": "Owner-class guest 5% KEEP peer under commission-free claim \u2014 published min/cap; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://seared.io/"
@@ -571,7 +571,7 @@
       "lane": "vertical_gtm",
       "stack": "Zero-commission branded site + ordering/delivery; Instagram DM / WhatsApp / ChatGPT / Perplexity + Voice AI intake; flat subscription ($0 customer fees on Pro)",
       "memory": "Owned customer data",
-      "edge": "Messaging-native first-party close (IG DM etc.) vs Owner web/app skew — Never86 Shop still wins in-app buy-now; watch only",
+      "edge": "Messaging-native first-party close (IG DM etc.) vs Owner web/app skew \u2014 Never86 Shop still wins in-app buy-now; watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.directorders.com/",
@@ -583,7 +583,7 @@
       "lane": "vertical_gtm",
       "stack": "Square branded iOS/Android + web storefront; Starter $69/mo + Pickup $0.40 / Delivery $1.00 per order (Pro $119/mo + $0.20/$1.00; catering 2%/1%); Nash/DoorDash Drive",
       "memory": "Square catalog sync",
-      "edge": "Published per-order bases under commission-free Square claim — Orda/Orderitto-class KEEP peer; not Shop-native",
+      "edge": "Published per-order bases under commission-free Square claim \u2014 Orda/Orderitto-class KEEP peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://gegsy.com/pricing",
@@ -593,9 +593,9 @@
     {
       "name": "Deonde",
       "lane": "vertical_gtm",
-      "stack": "White-label branded restaurant ordering / delivery OS pitched as DoorDash alternative — own your ordering dashboard",
+      "stack": "White-label branded restaurant ordering / delivery OS pitched as DoorDash alternative \u2014 own your ordering dashboard",
       "memory": "Operator backend / payouts / drivers",
-      "edge": "Anti-commission white-label apps — not TikTok Shop-native; watch KEEP messaging only — Express $0.10/order overage after caps is UpMenu-class KEEP leak",
+      "edge": "Anti-commission white-label apps \u2014 not TikTok Shop-native; watch KEEP messaging only \u2014 Express $0.10/order overage after caps is UpMenu-class KEEP leak",
       "updated": "2026-09-04",
       "sources": [
         "https://deonde.co/doordash-alternative.shtml",
@@ -620,7 +620,7 @@
       "lane": "vertical_gtm",
       "stack": "Restaurant-first marketplace / first-party ordering (Lunchbox partner); commission-transparent pitch",
       "memory": "Customer data owned by restaurant",
-      "edge": "First-party KEEP education content; adjacent to Zayos/Outbites — watch GTM only",
+      "edge": "First-party KEEP education content; adjacent to Zayos/Outbites \u2014 watch GTM only",
       "updated": "2026-09-04",
       "sources": [
         "https://opalink.com/learn/what-is-first-party-ordering",
@@ -632,7 +632,7 @@
       "lane": "vertical_gtm",
       "stack": "AI ordering assistant for F&B via WhatsApp / Instagram / Messenger",
       "memory": "In-thread order state",
-      "edge": "Messaging close peer to TextOrder/Ainisa — not Shop rails",
+      "edge": "Messaging close peer to TextOrder/Ainisa \u2014 not Shop rails",
       "updated": "2026-09-04",
       "sources": [
         "https://www.linkedin.com/posts/yasmin-reda-69678172_meet-ordr-our-ai-ordering-assistant-at-activity-7396258887915536384-zQh1"
@@ -643,7 +643,7 @@
       "lane": "vertical_gtm",
       "stack": "SMB free OO (guest convenience fee) + enterprise Lunchbox 2.0 quote-only branded web/app + marketplace aggregation; OPA! partner",
       "memory": "Guest/order data for email/SMS loyalty",
-      "edge": "Guest convenience fee on 'free' SMB OO + chain-scale first-party — not TikTok Shop-native; contrast in script-draft",
+      "edge": "Guest convenience fee on 'free' SMB OO + chain-scale first-party \u2014 not TikTok Shop-native; contrast in script-draft",
       "updated": "2026-09-04",
       "sources": [
         "https://lunchbox.io/",
@@ -657,7 +657,7 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free flat-fee direct OO + diner data; Discovery Network / Order Better Network 15.5% marketing fee on subtotal (Profit Protector menu bump); guest $0.99 + 7.5% Support Local; Catering 5%",
       "memory": "Owned diner contact / order history for remarketing",
-      "edge": "Discovery 15.5% + guest/Support Local + Catering KEEP leaks under commission-free framing (dogfoods chownow_discovery + chownow_fee + chownow_catering); still lose on love→buy-now",
+      "edge": "Discovery 15.5% + guest/Support Local + Catering KEEP leaks under commission-free framing (dogfoods chownow_discovery + chownow_fee + chownow_catering); still lose on love\u2192buy-now",
       "updated": "2026-09-04",
       "sources": [
         "https://get.chownow.com/legal/registermyresto/",
@@ -672,7 +672,7 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free branded ordering + marketing/loyalty/ads AI agents; DoorDash Preferred Integration; hybrid discovery+first-party",
       "memory": "Guest/order data for email/SMS/loyalty",
-      "edge": "First-party KEEP + marketing OS peer to ChowNow/Owner — not TikTok Shop-native",
+      "edge": "First-party KEEP + marketing OS peer to ChowNow/Owner \u2014 not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://chowly.com/",
@@ -685,7 +685,7 @@
       "lane": "vertical_gtm",
       "stack": "Flat-fee first-party ordering (~$149/$179/mo) with guest convenience fee on direct + negotiated ~12.5% DoorDash/Uber dual-run",
       "memory": "Owned guest list / email+SMS marketing",
-      "edge": "Hybrid discovery+KEEP peer with diner convenience fee — not TikTok Shop-native; swarm already has Menufy pain-shopper",
+      "edge": "Hybrid discovery+KEEP peer with diner convenience fee \u2014 not TikTok Shop-native; swarm already has Menufy pain-shopper",
       "updated": "2026-09-04",
       "sources": [
         "https://restaurant.menufy.com/article/2026/direct-vs-third-party-ordering",
@@ -698,7 +698,7 @@
       "lane": "vertical_gtm",
       "stack": "AI marketing OS + OO as paid add-on (~$50/mo + flat $1/order guest-passable) + dynamic dish SEO + email/SMS; ~10k+ restaurants",
       "memory": "Owned guest contacts + reputation/social dashboards",
-      "edge": "Marketing-first KEEP peer with guest $1/order OO fee — not TikTok Shop-native buy-now",
+      "edge": "Marketing-first KEEP peer with guest $1/order OO fee \u2014 not TikTok Shop-native buy-now",
       "updated": "2026-09-04",
       "sources": [
         "https://get.popmenu.com/pricing",
@@ -709,9 +709,9 @@
     {
       "name": "Flipdish",
       "lane": "vertical_gtm",
-      "stack": "First-party web/app ordering + Instagram Order Now / Stories stickers + AI marketing/POS; guest platform fee flat €0.50 + percentage (example €0.50+9%); marketplace sync dual-run",
+      "stack": "First-party web/app ordering + Instagram Order Now / Stories stickers + AI marketing/POS; guest platform fee flat \u20ac0.50 + percentage (example \u20ac0.50+9%); marketplace sync dual-run",
       "memory": "Owned diner data for loyalty/SMS/PPC",
-      "edge": "Strong IG→order close but flat €0.50 + % (and ~2–7% cites) still cuts KEEP; contrast vs Never86 TikTok/IG shoppable rails — skip their forecasting/scheduling features in research",
+      "edge": "Strong IG\u2192order close but flat \u20ac0.50 + % (and ~2\u20137% cites) still cuts KEEP; contrast vs Never86 TikTok/IG shoppable rails \u2014 skip their forecasting/scheduling features in research",
       "updated": "2026-09-04",
       "sources": [
         "https://www.flipdish.com/",
@@ -726,7 +726,7 @@
       "lane": "vertical_gtm",
       "stack": "$0/mo commission-free OO: Essential guest pays $2.99/order (store 3.5% txn); Plus guest $1+5%; Zero guest $1+8% (store 0% txn); local marketplace listing",
       "memory": "Claims 100% customer data ownership + next-day payout",
-      "edge": "Diner-paid tech fees under 0% commission claim — KEEP for restaurant but checkout friction; Zero plan guest 8% approaches Shop fee band; not TikTok Shop-native",
+      "edge": "Diner-paid tech fees under 0% commission claim \u2014 KEEP for restaurant but checkout friction; Zero plan guest 8% approaches Shop fee band; not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://getdevournow.com/pricing/",
@@ -738,7 +738,7 @@
       "lane": "vertical_gtm",
       "stack": "Flat-fee delivery + online + AI-phone orders routed into existing POS (Clover/Square free start; Pecan+); no extra tablet vs Otter",
       "memory": "One queue across channels into POS",
-      "edge": "Dual-run ops KEEP peer (aggregation, not Shop checkout) — watch only; skip forecasting",
+      "edge": "Dual-run ops KEEP peer (aggregation, not Shop checkout) \u2014 watch only; skip forecasting",
       "updated": "2026-09-04",
       "sources": [
         "https://www.orderout.co/compare/orderout-vs-otter",
@@ -750,7 +750,7 @@
       "lane": "vertical_gtm",
       "stack": "Restaurant POS with built-in KwickMenu commission-free branded OO; KwickDriver flat $2 fee per delivery + $6.99 per 5 miles",
       "memory": "POS-owned guest/order history for loyalty",
-      "edge": "Published $2/delivery dispatch under first-party KEEP claim — Uber Direct-class peer; not Shop-native",
+      "edge": "Published $2/delivery dispatch under first-party KEEP claim \u2014 Uber Direct-class peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://kwickos.com/blog/commission-free-online-ordering.html",
@@ -763,7 +763,7 @@
       "lane": "vertical_gtm",
       "stack": "$0/mo commission-free OO/POS/waitlist/reservations; guest-paid 1.9% service fee capped at $2.00 per order",
       "memory": "Owned order/customer tracking + loyalty",
-      "edge": "Published guest 1.9%/$2 cap under $0/mo KEEP claim — Seared/Owner-class guest % peer with hard dollar cap; not Shop-native",
+      "edge": "Published guest 1.9%/$2 cap under $0/mo KEEP claim \u2014 Seared/Owner-class guest % peer with hard dollar cap; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.s4vor.com/"
@@ -772,9 +772,9 @@
     {
       "name": "FoxiFood",
       "lane": "vertical_gtm",
-      "stack": "No monthly fee EU OO/QR/payments; pickup/dine-in 2% + €0.45 per card; delivery 2% + €0.45 + 10%; cash/transfer free",
+      "stack": "No monthly fee EU OO/QR/payments; pickup/dine-in 2% + \u20ac0.45 per card; delivery 2% + \u20ac0.45 + 10%; cash/transfer free",
       "memory": "Merchant-of-record Stripe payouts + own domain",
-      "edge": "Published 2%+€0.45 card rent under zero-monthly claim — Ordering.Tools-class EU KEEP peer; thematic US teach only",
+      "edge": "Published 2%+\u20ac0.45 card rent under zero-monthly claim \u2014 Ordering.Tools-class EU KEEP peer; thematic US teach only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.foxifood.com/pricing/",
@@ -784,9 +784,9 @@
     {
       "name": "Ser.vi",
       "lane": "vertical_gtm",
-      "stack": "$0/mo POS + zero-commission OO; guest-paid 5% convenience fee at checkout (covers platform + card); optional marketing $249–$749/mo",
+      "stack": "$0/mo POS + zero-commission OO; guest-paid 5% convenience fee at checkout (covers platform + card); optional marketing $249\u2013$749/mo",
       "memory": "Direct order + customer data for marketing",
-      "edge": "Published guest 5% convenience under $0 mo / zero commission claim — Seared/Owner/S4VOR-class guest % peer; not Shop-native",
+      "edge": "Published guest 5% convenience under $0 mo / zero commission claim \u2014 Seared/Owner/S4VOR-class guest % peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://get.ser.vi/pricing/",
@@ -798,7 +798,7 @@
       "lane": "vertical_gtm",
       "stack": "No setup / no set monthly; 8% monthly commission on food subtotal (often passed as guest convenience / online ordering fee)",
       "memory": "Custom ordering link + optional app stores",
-      "edge": "Published 8% first-party rent under no-monthly claim — Flipdish/Ordering.Tools-class; not Shop-native",
+      "edge": "Published 8% first-party rent under no-monthly claim \u2014 Flipdish/Ordering.Tools-class; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.foodappfast.com/pricing"
@@ -807,9 +807,9 @@
     {
       "name": "Addmi",
       "lane": "vertical_gtm",
-      "stack": "No monthly fee POS + QR OO; guest-paid POS 19¢ / OO 38¢; membership/invoicing 2%; event ticketing 3% cap $39",
+      "stack": "No monthly fee POS + QR OO; guest-paid POS 19\u00a2 / OO 38\u00a2; membership/invoicing 2%; event ticketing 3% cap $39",
       "memory": "Loyalty + email + gift cards included",
-      "edge": "Published 38¢ OO guest fee under no-monthly claim — FoodScout/BentoBox-class flat guest peer; not Shop-native",
+      "edge": "Published 38\u00a2 OO guest fee under no-monthly claim \u2014 FoodScout/BentoBox-class flat guest peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://addmi.com/pricing"
@@ -818,9 +818,9 @@
     {
       "name": "Tenvito",
       "lane": "vertical_gtm",
-      "stack": "EU OO Free 3.9%/order or Service €29/mo + 2.9%/order on top of Stripe; optional merchant-kept convenience fee",
+      "stack": "EU OO Free 3.9%/order or Service \u20ac29/mo + 2.9%/order on top of Stripe; optional merchant-kept convenience fee",
       "memory": "Orders + payments + customers + marketing",
-      "edge": "Adopted Open 3.9% / Service 2.9% per-order KEEP dogfood (strong_keep 63); FoxiFood-class EU thematic — no US swarm expand",
+      "edge": "Adopted Open 3.9% / Service 2.9% per-order KEEP dogfood (strong_keep 63); FoxiFood-class EU thematic \u2014 no US swarm expand",
       "updated": "2026-09-04",
       "sources": [
         "https://tenvito.com/pricing"
@@ -831,7 +831,7 @@
       "lane": "vertical_gtm",
       "stack": "$29.99/mo flat 0% Anytable commission OO; diner convenience fee at checkout (legacy pages cited $1.95; live page softens to 'modest/small')",
       "memory": "Branded ordering + website",
-      "edge": "Guest convenience fee exists but exact $ unpublished on current pricing — watch before dogfood",
+      "edge": "Guest convenience fee exists but exact $ unpublished on current pricing \u2014 watch before dogfood",
       "updated": "2026-09-04",
       "sources": [
         "https://www.anytable.com/pricing/"
@@ -840,9 +840,9 @@
     {
       "name": "Otter",
       "lane": "vertical_gtm",
-      "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198–$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
+      "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198\u2013$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
       "memory": "Unified order/ops analytics across channels",
-      "edge": "Scale first-party KEEP peer with possible per-order txn fee — watch as KEEP-leak teach vs Shop buy-now; skip labor/forecast modules",
+      "edge": "Scale first-party KEEP peer with possible per-order txn fee \u2014 watch as KEEP-leak teach vs Shop buy-now; skip labor/forecast modules",
       "updated": "2026-09-04",
       "sources": [
         "https://www.tryotter.com/products/online-ordering",
@@ -854,7 +854,7 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free first-party OO: website + branded app + loyalty/email/SMS from ~$99/mo flat; Uber Direct / DoorDash Drive for delivery without Marketplace food commission",
       "memory": "Owned guest/order list for push/email/SMS",
-      "edge": "ChowNow/BentoBox-class KEEP peer — not TikTok Shop-native; contrast in sales forms",
+      "edge": "ChowNow/BentoBox-class KEEP peer \u2014 not TikTok Shop-native; contrast in sales forms",
       "updated": "2026-09-04",
       "sources": [
         "https://restaunax.com/resources/commission-free-ordering",
@@ -866,7 +866,7 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free first-party ordering + multi-fleet managed delivery (flat-fee / 0% commission); web/Google/IG/FB order capture + guest marketing",
       "memory": "Owned guest/order data for email/SMS retention",
-      "edge": "Under $2/order guest fee + 0% commission OO (dogfood sauce_fee_dogfoods=5) — still lose on love→buy-now + IG Checkout; skip Sauce demand-forecasting; delivery $7.99/order is logistics",
+      "edge": "Under $2/order guest fee + 0% commission OO (dogfood sauce_fee_dogfoods=5) \u2014 still lose on love\u2192buy-now + IG Checkout; skip Sauce demand-forecasting; delivery $7.99/order is logistics",
       "updated": "2026-09-04",
       "sources": [
         "https://www.getsauce.com/",
@@ -879,7 +879,7 @@
       "lane": "vertical_gtm",
       "stack": "AI restaurant OS: website + 0% commission direct ordering + POS/QR/reservations/marketing; GloriaFood-successor narrative",
       "memory": "POS-linked guest data for email/SMS loyalty",
-      "edge": "First-party KEEP OS peer — not TikTok Shop-native; contrast in sales angles",
+      "edge": "First-party KEEP OS peer \u2014 not TikTok Shop-native; contrast in sales angles",
       "updated": "2026-09-04",
       "sources": [
         "https://fleksa.com/",
@@ -889,9 +889,9 @@
     {
       "name": "BentoBox",
       "lane": "vertical_gtm",
-      "stack": "Website/commerce suite now Clover-only for new customers; QR Order & Pay $19/mo + $0.99 diner fee/order; Meta Business Extension Order Food on FB/IG + Stories Food Orders sticker → Bento Online Ordering / Catering",
+      "stack": "Website/commerce suite now Clover-only for new customers; QR Order & Pay $19/mo + $0.99 diner fee/order; Meta Business Extension Order Food on FB/IG + Stories Food Orders sticker \u2192 Bento Online Ordering / Catering",
       "memory": "Guest/commerce data inside Clover hospitality stack",
-      "edge": "Dual teach: (1) guest-paid $0.99 QR fee dogfooded; (2) Meta Order Food peer to Deliverect/Zyda/ChatFood — watch GTM only, fee pause",
+      "edge": "Dual teach: (1) guest-paid $0.99 QR fee dogfooded; (2) Meta Order Food peer to Deliverect/Zyda/ChatFood \u2014 watch GTM only, fee pause",
       "updated": "2026-09-04",
       "sources": [
         "https://getbento.com/",
@@ -905,9 +905,9 @@
     {
       "name": "Ressto",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct ordering (free ≤100 orders/mo; Growth ~$39/outlet) + branded app/website/loyalty; GloriaFood migration path; Deonde-family support",
+      "stack": "Commission-free direct ordering (free \u2264100 orders/mo; Growth ~$39/outlet) + branded app/website/loyalty; GloriaFood migration path; Deonde-family support",
       "memory": "Owned diner list for SMS/email/loyalty",
-      "edge": "Active GloriaFood-successor KEEP peer — not TikTok Shop-native; already adjacent to watched Deonde",
+      "edge": "Active GloriaFood-successor KEEP peer \u2014 not TikTok Shop-native; already adjacent to watched Deonde",
       "updated": "2026-09-04",
       "sources": [
         "https://ressto.co/",
@@ -919,7 +919,7 @@
       "lane": "vertical_gtm",
       "stack": "Flat-fee 0% commission branded ordering + optional app/loyalty; EN/ES bilingual; dual-run beside DoorDash/Uber",
       "memory": "Owned diner contacts for loyalty/SMS",
-      "edge": "Latino-independent KEEP peer — website/app OS not TikTok Shop-native",
+      "edge": "Latino-independent KEEP peer \u2014 website/app OS not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://eatsyorders.com/",
@@ -931,7 +931,7 @@
       "lane": "vertical_gtm",
       "stack": "Free/paid restaurant POS + digital signage + online ordering; auto IG/TikTok content generation narrative",
       "memory": "POS + content session state",
-      "edge": "Content→order peer overlaps social path; not TikTok Shop-native checkout",
+      "edge": "Content\u2192order peer overlaps social path; not TikTok Shop-native checkout",
       "updated": "2026-09-04",
       "sources": [
         "https://www.flavorfeed.ai/",
@@ -941,9 +941,9 @@
     {
       "name": "Restos.io",
       "lane": "vertical_gtm",
-      "stack": "Commission-free link ordering; Free €0 forever or Pro €29/mo flat — no per-order cut",
+      "stack": "Commission-free link ordering; Free \u20ac0 forever or Pro \u20ac29/mo flat \u2014 no per-order cut",
       "memory": "Menu/order SaaS",
-      "edge": "EU flat-fee KEEP peer for regulars via shareable link — not shoppable TikTok/IG cart",
+      "edge": "EU flat-fee KEEP peer for regulars via shareable link \u2014 not shoppable TikTok/IG cart",
       "updated": "2026-09-04",
       "sources": [
         "https://restos.io/",
@@ -955,7 +955,7 @@
       "lane": "vertical_gtm",
       "stack": "0% commission restaurant ordering + website builder; Stripe/Square payouts; social/QR links",
       "memory": "Subscription ordering OS",
-      "edge": "Commission-free peer via social/QR — website OS not Never86 buy-now",
+      "edge": "Commission-free peer via social/QR \u2014 website OS not Never86 buy-now",
       "updated": "2026-09-04",
       "sources": [
         "https://infi.us/products/online-ordering",
@@ -965,9 +965,9 @@
     {
       "name": "WhatsMenu",
       "lane": "vertical_gtm",
-      "stack": "Owned branded storefront/catalog with WhatsApp confirmations; frames TikTok discovery → owned checkout vs TikTok Shop commission",
+      "stack": "Owned branded storefront/catalog with WhatsApp confirmations; frames TikTok discovery \u2192 owned checkout vs TikTok Shop commission",
       "memory": "Catalog + order confirmations",
-      "edge": "Owned-storefront alternative to Shop checkout — watch, do not confuse with in-app TikTok Shop middleware",
+      "edge": "Owned-storefront alternative to Shop checkout \u2014 watch, do not confuse with in-app TikTok Shop middleware",
       "updated": "2026-09-04",
       "sources": [
         "https://whatsmenu.page/en/",
@@ -979,7 +979,7 @@
       "lane": "vertical_gtm",
       "stack": "ChatGPT/Claude restaurant ordering (Jul 2026) into Square POS/KDS; 0% marketplace commission (processing only)",
       "memory": "Square seller + AI assistant session",
-      "edge": "Agentic discovery→order KEEP peer on huge Square install base — not TikTok Shop-native",
+      "edge": "Agentic discovery\u2192order KEEP peer on huge Square install base \u2014 not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.digitalapplied.com/blog/square-chatgpt-claude-ordering-agentic-commerce-2026"
@@ -990,7 +990,7 @@
       "lane": "vertical_gtm",
       "stack": "Flat-fee online ordering $49/$89/$169 with order caps; ~$1.90/order overage; branded app add-on",
       "memory": "Owned diner list",
-      "edge": "Commission-free headline with per-order overage KEEP leak — website OS not Shop-native",
+      "edge": "Commission-free headline with per-order overage KEEP leak \u2014 website OS not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.upmenu.com/pricing/",
@@ -1002,7 +1002,7 @@
       "lane": "vertical_gtm",
       "stack": "AI restaurant OS from ~$10/mo: POS, voice/WhatsApp ordering, QR menus, commission-free online ordering shareable in IG/TikTok bio",
       "memory": "AI agent + POS session",
-      "edge": "Bio-link commission-free peer — skip any labor/forecast modules if present",
+      "edge": "Bio-link commission-free peer \u2014 skip any labor/forecast modules if present",
       "updated": "2026-09-04",
       "sources": [
         "https://www.dineopen.com/",
@@ -1014,7 +1014,7 @@
       "lane": "vertical_gtm",
       "stack": "QR order & pay, 0% commission direct delivery, AI phone agents",
       "memory": "Table/QR + AI agent state",
-      "edge": "QR/table KEEP peer — not TikTok Shop buy-now",
+      "edge": "QR/table KEEP peer \u2014 not TikTok Shop buy-now",
       "updated": "2026-09-04",
       "sources": [
         "https://muncho.app/"
@@ -1023,9 +1023,9 @@
     {
       "name": "DoorDash Online Ordering",
       "lane": "vertical_gtm",
-      "stack": "0% commission direct OO via restaurant website/social/Google; Marketplace still 15–30%; Drive On-Demand flat fulfillment",
+      "stack": "0% commission direct OO via restaurant website/social/Google; Marketplace still 15\u201330%; Drive On-Demand flat fulfillment",
       "memory": "DoorDash merchant portal + dual-channel",
-      "edge": "Marketplace vendor's own 0% direct — dual-run KEEP teach; not TikTok Shop-native",
+      "edge": "Marketplace vendor's own 0% direct \u2014 dual-run KEEP teach; not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://merchants.doordash.com/en-us/products/online-ordering",
@@ -1035,9 +1035,9 @@
     {
       "name": "Restolabs",
       "lane": "vertical_gtm",
-      "stack": "Commission-free online ordering from ~$45–55/mo (Basic/Growth tiers); loyalty/QR add-ons",
+      "stack": "Commission-free online ordering from ~$45\u201355/mo (Basic/Growth tiers); loyalty/QR add-ons",
       "memory": "Owned diner contacts",
-      "edge": "Flat-fee KEEP peer — website OS not Shop-native",
+      "edge": "Flat-fee KEEP peer \u2014 website OS not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.restolabs.com/blog/commission-free-online-ordering-for-restaurants",
@@ -1049,7 +1049,7 @@
       "lane": "vertical_gtm",
       "stack": "AI QR menu + online ordering; 0% commission; ~$9.9/mo + Stripe processing",
       "memory": "QR menu session",
-      "edge": "Low-cost QR KEEP peer — not shoppable TikTok/IG cart",
+      "edge": "Low-cost QR KEEP peer \u2014 not shoppable TikTok/IG cart",
       "updated": "2026-09-04",
       "sources": [
         "https://menuforma.com/",
@@ -1061,7 +1061,7 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free OO on Restaurant Growth plan (~$89.95/mo); orders into Clover POS/kitchen",
       "memory": "Clover POS catalog",
-      "edge": "POS-bundled KEEP OO with Clover lock-in — pairs with BentoBox pos_fee_lockin; skip labor modules",
+      "edge": "POS-bundled KEEP OO with Clover lock-in \u2014 pairs with BentoBox pos_fee_lockin; skip labor modules",
       "updated": "2026-09-04",
       "sources": [
         "https://www.limelightpayments.com/clover-for-restaurants"
@@ -1070,9 +1070,9 @@
     {
       "name": "Uber Webshop",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct OO claim via restaurant website/social; published Webshop processing 2.5% + $0.29/order; Marketplace still ~20–30% (Lite raised Mar 2026)",
+      "stack": "Commission-free direct OO claim via restaurant website/social; published Webshop processing 2.5% + $0.29/order; Marketplace still ~20\u201330% (Lite raised Mar 2026)",
       "memory": "Uber Eats Manager + Webshop",
-      "edge": "Marketplace vendor '0% commission' direct still takes 2.5%+$0.29 processing — first_party KEEP teach vs DoorDash OO rate-unpublished",
+      "edge": "Marketplace vendor '0% commission' direct still takes 2.5%+$0.29 processing \u2014 first_party KEEP teach vs DoorDash OO rate-unpublished",
       "updated": "2026-09-04",
       "sources": [
         "https://merchants.ubereats.com/us/en/pricing/",
@@ -1096,7 +1096,7 @@
       "lane": "vertical_gtm",
       "stack": "Second-party consumer ordering app (late 2026) on Olo Accounts (~40M guests); 0% commission; restaurants own guest data; Dispatch fulfillment partners",
       "memory": "Olo Accounts + Network",
-      "edge": "Enterprise/chain discovery without Marketplace rent — watch; not TikTok Shop-native",
+      "edge": "Enterprise/chain discovery without Marketplace rent \u2014 watch; not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.fsrmagazine.com/feature/olo-launches-new-restaurant-ordering-app",
@@ -1108,7 +1108,7 @@
       "lane": "vertical_gtm",
       "stack": "Zero-commission branded restaurant app (US/Miami) on flat subscription; DoorDash-powered delivery option",
       "memory": "Branded app guests",
-      "edge": "Branded-app KEEP peer — not shoppable TikTok/IG cart",
+      "edge": "Branded-app KEEP peer \u2014 not shoppable TikTok/IG cart",
       "updated": "2026-09-04",
       "sources": [
         "https://menusso.com/us/"
@@ -1117,9 +1117,9 @@
     {
       "name": "Toast Online Ordering",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct OO into Toast POS; Instagram Order food Action Button + Stories Food Orders sticker (select Toast as partner) + Facebook Start Order → Toast OO / Location Picker; software + processing still apply; deepens Toast lock-in",
+      "stack": "Commission-free direct OO into Toast POS; Instagram Order food Action Button + Stories Food Orders sticker (select Toast as partner) + Facebook Start Order \u2192 Toast OO / Location Picker; software + processing still apply; deepens Toast lock-in",
       "memory": "Toast POS + OO",
-      "edge": "US POS-bundled Meta Order Food peer (Support primary) — love→buy-now rival for Toast kitchens; pairs with pos_fee_lockin; skip Toast labor/forecast; watch only — fee pause",
+      "edge": "US POS-bundled Meta Order Food peer (Support primary) \u2014 love\u2192buy-now rival for Toast kitchens; pairs with pos_fee_lockin; skip Toast labor/forecast; watch only \u2014 fee pause",
       "updated": "2026-09-04",
       "sources": [
         "https://pos.toasttab.com/products/online-ordering",
@@ -1131,7 +1131,7 @@
       "lane": "vertical_gtm",
       "stack": "Website + branded app + register + AI phone agent; $499 onboard then per-order or flat monthly; Owner.com alternative narrative",
       "memory": "Unified order pipeline",
-      "edge": "Owner-class first-party OS with voice AI now — not TikTok Shop buy-now",
+      "edge": "Owner-class first-party OS with voice AI now \u2014 not TikTok Shop buy-now",
       "updated": "2026-09-04",
       "sources": [
         "https://www.dinevate.com/compare/owner-com/",
@@ -1143,7 +1143,7 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free restaurant/bar POS + OO; Growth $0.75/order or $99/mo flat; Pro $1.00/order or $249/mo",
       "memory": "Guest/order data on first-party rails",
-      "edge": "Pay-per-order $0.75 KEEP leak teach (dogfood velobite_fee_dogfoods=5); still lose on love→buy-now + IG Checkout. Skip AI pricing-intelligence framing.",
+      "edge": "Pay-per-order $0.75 KEEP leak teach (dogfood velobite_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout. Skip AI pricing-intelligence framing.",
       "updated": "2026-09-04",
       "sources": [
         "https://www.velobite.com/pricing",
@@ -1155,7 +1155,7 @@
       "lane": "vertical_gtm",
       "stack": "Free POS + Ginger Direct OO; $1 guest platform fee/order (alt 5% high-volume small-ticket); Voice AI +$250/mo",
       "memory": "Guest/order data on first-party rails",
-      "edge": "$1 guest fee KEEP leak teach (dogfood ginger_fee_dogfoods=5); still lose on love→buy-now + IG Checkout",
+      "edge": "$1 guest fee KEEP leak teach (dogfood ginger_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout",
       "updated": "2026-09-04",
       "sources": [
         "https://www.gingerserve.com/pricing",
@@ -1165,9 +1165,9 @@
     {
       "name": "Ritual",
       "lane": "vertical_gtm",
-      "stack": "Pickup marketplace app with guest service fees ($0.15–$1.99) + separate Ritual Online Ordering ~$69/mo first-party product",
+      "stack": "Pickup marketplace app with guest service fees ($0.15\u2013$1.99) + separate Ritual Online Ordering ~$69/mo first-party product",
       "memory": "Guest/order data on Ritual rails",
-      "edge": "Guest service fee KEEP leak teach (dogfood ritual_fee_dogfoods=5); still lose on love→buy-now + IG Checkout",
+      "edge": "Guest service fee KEEP leak teach (dogfood ritual_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout",
       "updated": "2026-09-04",
       "sources": [
         "https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees",
@@ -1179,7 +1179,7 @@
       "lane": "vertical_gtm",
       "stack": "Pizzeria OO + POS membership; Online $39/mo+$3/order; Family $399/mo+$2/order",
       "memory": "Guest/order data on Slice rails",
-      "edge": "$2–$3/order KEEP leak teach (dogfood slice_fee_dogfoods=5); pizza niche; still lose on love→buy-now + IG Checkout",
+      "edge": "$2\u2013$3/order KEEP leak teach (dogfood slice_fee_dogfoods=5); pizza niche; still lose on love\u2192buy-now + IG Checkout",
       "updated": "2026-09-04",
       "sources": [
         "https://slice.com/pricing/"
@@ -1190,7 +1190,7 @@
       "lane": "vertical_gtm",
       "stack": "QR digital menu + mobile order-and-pay; Classic/POS Plus $0.50/order guest convenience fee (operator may absorb); Pay-as-you-go $1.00/order; $399/mo flat alt; LA-based hospitality",
       "memory": "Guest order/payment data via QR sessions",
-      "edge": "Guest-paid $0.50–$1.00 convenience fee under contactless QR OO — Tabski/BentoBox-class KEEP peer; not Shop-native",
+      "edge": "Guest-paid $0.50\u2013$1.00 convenience fee under contactless QR OO \u2014 Tabski/BentoBox-class KEEP peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.kontactless.io/"
@@ -1199,9 +1199,9 @@
     {
       "name": "SoHungry",
       "lane": "vertical_gtm",
-      "stack": "Map-first SMB online ordering; Free $0/mo + $1.25 guest convenience fee/order; Premium ~$29–$45/mo drops fee to $0.60 ($0.85 Clover)",
+      "stack": "Map-first SMB online ordering; Free $0/mo + $1.25 guest convenience fee/order; Premium ~$29\u2013$45/mo drops fee to $0.60 ($0.85 Clover)",
       "memory": "Order/customer contacts via Square/PayPal/Clover pass-through",
-      "edge": "Guest-paid $1.25 convenience fee under free-for-restaurants claim — Menufy/Kontactless-class KEEP peer; map niche; not Shop-native",
+      "edge": "Guest-paid $1.25 convenience fee under free-for-restaurants claim \u2014 Menufy/Kontactless-class KEEP peer; map niche; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://sohungry.net/faqs.aspx",
@@ -1211,9 +1211,9 @@
     {
       "name": "FoodScout GO",
       "lane": "vertical_gtm",
-      "stack": "Custom restaurant app OO; $0 upfront/$0 monthly to restaurant; $0.99 customer service fee per order; Stripe 2.9%+30¢ customer-paid",
+      "stack": "Custom restaurant app OO; $0 upfront/$0 monthly to restaurant; $0.99 customer service fee per order; Stripe 2.9%+30\u00a2 customer-paid",
       "memory": "Direct app order/customer list",
-      "edge": "Guest-paid $0.99 service fee under free-for-restaurants claim — Tabski/SoHungry-class KEEP peer; not Shop-native",
+      "edge": "Guest-paid $0.99 service fee under free-for-restaurants claim \u2014 Tabski/SoHungry-class KEEP peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://foodscoutgo.com/pricing"
@@ -1222,9 +1222,9 @@
     {
       "name": "1 Stop Order",
       "lane": "vertical_gtm",
-      "stack": "SMB online ordering; Free $0/mo + 2% customer convenience fee/order; Pro $69/mo + 1%; Custom $109/mo + 1%; min 50¢; Stripe-like 2.9%+30¢",
+      "stack": "SMB online ordering; Free $0/mo + 2% customer convenience fee/order; Pro $69/mo + 1%; Custom $109/mo + 1%; min 50\u00a2; Stripe-like 2.9%+30\u00a2",
       "memory": "Direct order customer list",
-      "edge": "Guest-paid 1–2% convenience fee under free/low monthly claim — Owner/ChowNow-class % KEEP peer; not Shop-native",
+      "edge": "Guest-paid 1\u20132% convenience fee under free/low monthly claim \u2014 Owner/ChowNow-class % KEEP peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.1stoporder.com/pricing",
@@ -1234,9 +1234,9 @@
     {
       "name": "Ordering.Tools",
       "lane": "vertical_gtm",
-      "stack": "EU-first OO: Free 20 orders/mo 0%; Starter €30/mo + 5% on all orders; Pro €60/mo + 3%; KDS/inventory add-ons",
+      "stack": "EU-first OO: Free 20 orders/mo 0%; Starter \u20ac30/mo + 5% on all orders; Pro \u20ac60/mo + 3%; KDS/inventory add-ons",
       "memory": "Owned order/customer data",
-      "edge": "Published 3–5% platform commission — Flipdish-adjacent EU KEEP peer; thematic US teach only; skip inventory/forecast modules",
+      "edge": "Published 3\u20135% platform commission \u2014 Flipdish-adjacent EU KEEP peer; thematic US teach only; skip inventory/forecast modules",
       "updated": "2026-09-04",
       "sources": [
         "https://www.ordering.tools/en/pricing"
@@ -1245,9 +1245,33 @@
   ],
   "watchlist": [
     {
+      "item": "Status printer keep_teach (strong_keep + brand_site_marketplace_leak)",
+      "lane": "skills_knowledge",
+      "why": "print-beyond-the-hunt-status exposes strong_keep 64 + brand_site_marketplace_leak fixture for weekly gate; CI greps",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Kyte Meta Order Food taught across GTM skills + COMPOSIO-SOCIAL-UNLOCKS",
+      "lane": "skills_knowledge",
+      "why": "morning-scan / script-draft / sales-lead-form / frontier-scan / rival-watch + social unlocks name Kyte beside Deliverect/Zyda/ChatFood/BentoBox/Toast",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Kyte Meta Business Extension Order Food (FB/IG + Stories)",
+      "lane": "vertical_gtm",
+      "why": "Kyte FBE primary: Order Food button + Stories stickers \u2192 Kyte catalog \u2014 Meta peer; watch only \u2014 fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "RAY Instagram commission-free delivery channel",
+      "lane": "vertical_gtm",
+      "why": "RAY May 2026: IG Order Food/Reserve + DM automation vs marketplace 20\u201335% \u2014 DirectOrders-adjacent; watch only",
+      "verdict": "watch"
+    },
+    {
       "item": "brand_site_marketplace_leak KEEP signal (Michaels live proof)",
       "lane": "vertical_gtm",
-      "why": "Official homepage still CTAs UberEats/DoorDash — love→buy-now teach; pain-scan + CLI/API scorer; strong_keep 64; NOT a fee dogfood",
+      "why": "Official homepage still CTAs UberEats/DoorDash \u2014 love\u2192buy-now teach; pain-scan + CLI/API scorer; strong_keep 64; NOT a fee dogfood",
       "verdict": "adopt"
     },
     {
@@ -1259,19 +1283,19 @@
     {
       "item": "Script-draft dogfoods cite live buy_now_path rails (5/5)",
       "lane": "skills_knowledge",
-      "why": "Franklin Shopify+preorder, Michaels UberEats/DoorDash leak, Husk Toast+Resy, G&TG OpenTable, Rioja Flavor Dojo — validate-buy-now-dogfood requires lead.buy_now_path.rails",
+      "why": "Franklin Shopify+preorder, Michaels UberEats/DoorDash leak, Husk Toast+Resy, G&TG OpenTable, Rioja Flavor Dojo \u2014 validate-buy-now-dogfood requires lead.buy_now_path.rails",
       "verdict": "adopt"
     },
     {
       "item": "Love-seed buy_now_path rails on all 5 live primaries",
       "lane": "vertical_gtm",
-      "why": "Franklin Shopify+preorder; Michaels UberEats/DoorDash leak; Husk Toast gift+Resy; G&TG OpenTable; Rioja Flavor Dojo — morning-scan captures order_rails; CI via validate-love-fixtures",
+      "why": "Franklin Shopify+preorder; Michaels UberEats/DoorDash leak; Husk Toast gift+Resy; G&TG OpenTable; Rioja Flavor Dojo \u2014 morning-scan captures order_rails; CI via validate-love-fixtures",
       "verdict": "adopt"
     },
     {
       "item": "Toast Online Ordering Meta Order Food (IG/FB)",
       "lane": "vertical_gtm",
-      "why": "Toast Support: select Toast as IG Order food partner + Stories sticker → Toast OO — US POS Meta peer; watch only — fee pause",
+      "why": "Toast Support: select Toast as IG Order food partner + Stories sticker \u2192 Toast OO \u2014 US POS Meta peer; watch only \u2014 fee pause",
       "verdict": "watch"
     },
     {
@@ -1289,55 +1313,55 @@
     {
       "item": "BentoBox Meta Order Food (FB/IG button + Stories sticker)",
       "lane": "vertical_gtm",
-      "why": "Clover Hospitality Help Center: Meta Business Extension → Bento OO/Catering — US Meta Order Food peer; watch only — fee pause",
+      "why": "Clover Hospitality Help Center: Meta Business Extension \u2192 Bento OO/Catering \u2014 US Meta Order Food peer; watch only \u2014 fee pause",
       "verdict": "watch"
     },
     {
       "item": "DirectOrders IG DM / WhatsApp / ChatGPT ordering",
       "lane": "vertical_gtm",
-      "why": "Messaging-native first-party channels vs Owner web/app skew — sharpens love→buy-now rival set; watch only",
+      "why": "Messaging-native first-party channels vs Owner web/app skew \u2014 sharpens love\u2192buy-now rival set; watch only",
       "verdict": "watch"
     },
     {
-      "item": "Smiilen video→delivery marketplace (BiteSight peer)",
+      "item": "Smiilen video\u2192delivery marketplace (BiteSight peer)",
       "lane": "vertical_gtm",
-      "why": "Creator food video → one-tap delivery order with performance pay — adjacent love discovery on marketplace rent; watch only",
+      "why": "Creator food video \u2192 one-tap delivery order with performance pay \u2014 adjacent love discovery on marketplace rent; watch only",
       "verdict": "watch"
     },
     {
       "item": "ChatFood Instagram Order Food + Facebook Commerce",
       "lane": "vertical_gtm",
-      "why": "Meta Order Food partner peer to Deliverect/Zyda; watch GTM only — fee catalog pause",
+      "why": "Meta Order Food partner peer to Deliverect/Zyda; watch GTM only \u2014 fee catalog pause",
       "verdict": "watch"
     },
     {
       "item": "lead-shop-enrich + sales-lead-form marked hunt-critical for Sync Skills",
       "lane": "skills_knowledge",
-      "why": "print-sync-skills-checklist + CURSOR-SYNC-SKILLS now require pain→sales enrich skills; TOOL-HUNT documents Active-without-Mem0 paths",
+      "why": "print-sync-skills-checklist + CURSOR-SYNC-SKILLS now require pain\u2192sales enrich skills; TOOL-HUNT documents Active-without-Mem0 paths",
       "verdict": "adopt"
     },
     {
       "item": "Status printer surfaces 5-market phone enrich Active",
       "lane": "cursor_agents",
-      "why": "print-beyond-the-hunt-status.mjs pain_sales_enrich.phone_enrich_markets=5 — operator sees pain→sales path without Apollo",
+      "why": "print-beyond-the-hunt-status.mjs pain_sales_enrich.phone_enrich_markets=5 \u2014 operator sees pain\u2192sales path without Apollo",
       "verdict": "adopt"
     },
     {
       "item": "Yelp phone enrich all 5 love markets (CHI/ATX/MIA/BNA/DEN)",
       "lane": "vertical_gtm",
-      "why": "Primary love-seed phones resolve via YELP_SEARCH_BY_PHONE across full morning-scan set — pain→sales without Apollo",
+      "why": "Primary love-seed phones resolve via YELP_SEARCH_BY_PHONE across full morning-scan set \u2014 pain\u2192sales without Apollo",
       "verdict": "adopt"
     },
     {
       "item": "Yelp phone enrich multi-market + lead-shop-enrich skill wire",
       "lane": "skills_knowledge",
-      "why": "ATX/BNA/DEN phones resolve via YELP_SEARCH_BY_PHONE; lead-shop-enrich teaches phone-first enrich for pain→sales without Apollo",
+      "why": "ATX/BNA/DEN phones resolve via YELP_SEARCH_BY_PHONE; lead-shop-enrich teaches phone-first enrich for pain\u2192sales without Apollo",
       "verdict": "adopt"
     },
     {
-      "item": "Yelp phone enrich Active for pain→sales (Franklin ATX)",
+      "item": "Yelp phone enrich Active for pain\u2192sales (Franklin ATX)",
       "lane": "vertical_gtm",
-      "why": "YELP_SEARCH_BY_PHONE resolves love-seed phone → venue identity without Apollo/Clay; CI gates weekly status_snapshot",
+      "why": "YELP_SEARCH_BY_PHONE resolves love-seed phone \u2192 venue identity without Apollo/Clay; CI gates weekly status_snapshot",
       "verdict": "adopt"
     },
     {
@@ -1353,9 +1377,9 @@
       "verdict": "adopt"
     },
     {
-      "item": "Zyda Meta Order Food button (IG/FB) — Deliverect peer",
+      "item": "Zyda Meta Order Food button (IG/FB) \u2014 Deliverect peer",
       "lane": "vertical_gtm",
-      "why": "Meta Business Extension Order Food → Zyda first-party store; watch alongside Deliverect; not fee dogfood",
+      "why": "Meta Business Extension Order Food \u2192 Zyda first-party store; watch alongside Deliverect; not fee dogfood",
       "verdict": "watch"
     },
     {
@@ -1365,63 +1389,63 @@
       "verdict": "adopt"
     },
     {
-      "item": "linkboo social webview escape (IG/TikTok bio → real browser)",
+      "item": "linkboo social webview escape (IG/TikTok bio \u2192 real browser)",
       "lane": "vertical_gtm",
-      "why": "Viral love→Toast/Resy/Apple Pay dies in social webviews; sharpens Never86 in-app Shop buy-now wedge — watch only, not fee dogfood",
+      "why": "Viral love\u2192Toast/Resy/Apple Pay dies in social webviews; sharpens Never86 in-app Shop buy-now wedge \u2014 watch only, not fee dogfood",
       "verdict": "watch"
     },
     {
       "item": "BiteSight video-first delivery marketplace (TikTok meets DoorDash)",
       "lane": "vertical_gtm",
-      "why": "UGC discovery UX on marketplace rent — differentiate Never86 first-party Shop; watch only",
+      "why": "UGC discovery UX on marketplace rent \u2014 differentiate Never86 first-party Shop; watch only",
       "verdict": "watch"
     },
     {
       "item": "Beyond the Hunt one-screen status printer",
       "lane": "cursor_agents",
-      "why": "print-beyond-the-hunt-status.mjs surfaces auth BLOCKED/READY + 5-market love live_proof + fee pause + top gaps — operator path to Mem0/Context close",
+      "why": "print-beyond-the-hunt-status.mjs surfaces auth BLOCKED/READY + 5-market love live_proof + fee pause + top gaps \u2014 operator path to Mem0/Context close",
       "verdict": "adopt"
     },
     {
       "item": "Deliverect wired into GTM skills (morning-scan / rival-watch / script-draft)",
       "lane": "skills_knowledge",
-      "why": "Meta Order Food rival now taught in hunt skills so love→buy-now wedge checks include IG button path vs Never86 Shop",
+      "why": "Meta Order Food rival now taught in hunt skills so love\u2192buy-now wedge checks include IG button path vs Never86 Shop",
       "verdict": "adopt"
     },
     {
       "item": "Live Yelp 5-market morning-scan love seeds (CHI/ATX/MIA/BNA/DEN)",
       "lane": "vertical_gtm",
-      "why": "Primary love brands live-verified via Composio Yelp details — morning-scan unblocked without IG/TikTok",
+      "why": "Primary love brands live-verified via Composio Yelp details \u2014 morning-scan unblocked without IG/TikTok",
       "verdict": "adopt"
     },
     {
       "item": "Deliverect Social Media Ordering (IG/FB/WA Order Food)",
       "lane": "vertical_gtm",
-      "why": "Meta Order Food button + story stickers → first-party checkout; love→buy-now rival on IG rails (not TikTok Shop); watch only — fee catalog pause",
+      "why": "Meta Order Food button + story stickers \u2192 first-party checkout; love\u2192buy-now rival on IG rails (not TikTok Shop); watch only \u2014 fee catalog pause",
       "verdict": "watch"
     },
     {
       "item": "Live Yelp CHI morning-scan love proof (G&TG 10731 reviews)",
       "lane": "vertical_gtm",
-      "why": "Composio Yelp Active reconfirmed Girl & The Goat + Purple Pig against chicago-love-brands — morning-scan love→buy-now without IG/TikTok",
+      "why": "Composio Yelp Active reconfirmed Girl & The Goat + Purple Pig against chicago-love-brands \u2014 morning-scan love\u2192buy-now without IG/TikTok",
       "verdict": "adopt"
     },
     {
-      "item": "Klikit TikTok Shop KEEP-math rival (5–10% vs 15–30% delivery)",
+      "item": "Klikit TikTok Shop KEEP-math rival (5\u201310% vs 15\u201330% delivery)",
       "lane": "vertical_gtm",
-      "why": "Primary APAC guide sharpens Shop ~6% buy-now wedge; watch only — not fee dogfood; catalog pause stands",
+      "why": "Primary APAC guide sharpens Shop ~6% buy-now wedge; watch only \u2014 not fee dogfood; catalog pause stands",
       "verdict": "watch"
     },
     {
       "item": "Composio social unlocks pack (IG+TikTok) with Yelp Active seed",
       "lane": "vertical_gtm",
-      "why": "Morning-scan love→buy-now stays unblocked via Yelp fixtures; IG link + TikTok auth-config documented for UGC upgrade",
+      "why": "Morning-scan love\u2192buy-now stays unblocked via Yelp fixtures; IG link + TikTok auth-config documented for UGC upgrade",
       "verdict": "adopt"
     },
     {
       "item": "KEEP channel grader thin public UI",
       "lane": "vertical_gtm",
-      "why": "Static keep-grader UI closes public-surface gap for love→buy-now KEEP teach; CLI parity validated; fee catalog pause unchanged",
+      "why": "Static keep-grader UI closes public-surface gap for love\u2192buy-now KEEP teach; CLI parity validated; fee catalog pause unchanged",
       "verdict": "adopt"
     },
     {
@@ -1437,267 +1461,267 @@
       "verdict": "adopt"
     },
     {
-      "item": "Fee catalog pause — Mem0/Context unlock next",
+      "item": "Fee catalog pause \u2014 Mem0/Context unlock next",
       "lane": "memory",
-      "why": "Operator: enough bad-fee context (fee dogfoods paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love→buy-now / Cursor tooling that the catalog does not already teach.",
+      "why": "Operator: enough bad-fee context (fee dogfoods paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love\u2192buy-now / Cursor tooling that the catalog does not already teach.",
       "verdict": "watch"
     },
     {
       "item": "Tenvito 3.9%/2.9% per-order SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Tenvito Open 3.9% / Service €29+2.9% per order on top of Stripe (tenvito.com/pricing) under free/low-monthly claim → SalesLead vs Shop ~6%; first_party_pct_fee widened for 3.9%/2.9% per order; validate-tenvito-fee-dogfood ≥5; strong_keep 63. EU thematic — no US swarm expand.",
+      "why": "CHI/ATX/MIA/BNA/DEN Tenvito Open 3.9% / Service \u20ac29+2.9% per order on top of Stripe (tenvito.com/pricing) under free/low-monthly claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 3.9%/2.9% per order; validate-tenvito-fee-dogfood \u22655; strong_keep 63. EU thematic \u2014 no US swarm expand.",
       "verdict": "adopt"
     },
     {
-      "item": "Addmi 38¢ OO guest fee SalesLead dogfood across 5 love markets",
+      "item": "Addmi 38\u00a2 OO guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Addmi OO 38¢ (POS 19¢) guest-paid on addmi.com/pricing under no-monthly claim → SalesLead vs Shop ~6%; per_order widened for 38 cents; validate-addmi-fee-dogfood ≥5; strong_keep 62",
+      "why": "CHI/ATX/MIA/BNA/DEN Addmi OO 38\u00a2 (POS 19\u00a2) guest-paid on addmi.com/pricing under no-monthly claim \u2192 SalesLead vs Shop ~6%; per_order widened for 38 cents; validate-addmi-fee-dogfood \u22655; strong_keep 62",
       "verdict": "adopt"
     },
     {
       "item": "ChowNow Discovery Network 15.5% marketing fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN ChowNow Order Better Network / Discovery Network 15.5% marketing fee on subtotal (legal primary) under commission-free direct claim → SalesLead vs Shop ~6%; first_party_pct_fee widened for 15.5%; validate-chownow-discovery-fee-dogfood ≥5; strong_keep 61. Distinct from Support Local + Catering dogfoods.",
+      "why": "CHI/ATX/MIA/BNA/DEN ChowNow Order Better Network / Discovery Network 15.5% marketing fee on subtotal (legal primary) under commission-free direct claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 15.5%; validate-chownow-discovery-fee-dogfood \u22655; strong_keep 61. Distinct from Support Local + Catering dogfoods.",
       "verdict": "adopt"
     },
     {
       "item": "Food App Fast 8% commission SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Food App Fast 8% monthly commission (often guest online ordering fee) on foodappfast.com/pricing under no-monthly claim → SalesLead vs Shop ~6%; first_party_pct_fee widened for 8%/online ordering fee; validate-foodappfast-fee-dogfood ≥5; strong_keep 60",
+      "why": "CHI/ATX/MIA/BNA/DEN Food App Fast 8% monthly commission (often guest online ordering fee) on foodappfast.com/pricing under no-monthly claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 8%/online ordering fee; validate-foodappfast-fee-dogfood \u22655; strong_keep 60",
       "verdict": "adopt"
     },
     {
       "item": "Anytable guest convenience fee (exact $ soft on live page)",
       "lane": "vertical_gtm",
-      "why": "anytable.com/pricing $29.99/mo + diner convenience fee; legacy cache cited $1.95 but live page says modest/small only — watch until exact $ republished",
+      "why": "anytable.com/pricing $29.99/mo + diner convenience fee; legacy cache cited $1.95 but live page says modest/small only \u2014 watch until exact $ republished",
       "verdict": "watch"
     },
     {
       "item": "Ser.vi guest 5% convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Ser.vi guest 5% convenience fee on get.ser.vi/pricing under $0 mo / zero commission claim → SalesLead vs Shop ~6%; first_party_pct_fee widened for 5% convenience fee; validate-servi-fee-dogfood ≥5; strong_keep 59",
+      "why": "CHI/ATX/MIA/BNA/DEN Ser.vi guest 5% convenience fee on get.ser.vi/pricing under $0 mo / zero commission claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 5% convenience fee; validate-servi-fee-dogfood \u22655; strong_keep 59",
       "verdict": "adopt"
     },
     {
-      "item": "FoxiFood 2%+€0.45 card fee SalesLead dogfood across 5 love markets",
+      "item": "FoxiFood 2%+\u20ac0.45 card fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN FoxiFood 2% + €0.45 per card (delivery +10%) on foxifood.com/pricing under no-monthly claim → SalesLead vs Shop ~6%; first_party_pct_fee + per_order widened for 2%+€0.45; validate-foxifood-fee-dogfood ≥5; strong_keep 58. EU thematic — no US swarm expand.",
+      "why": "CHI/ATX/MIA/BNA/DEN FoxiFood 2% + \u20ac0.45 per card (delivery +10%) on foxifood.com/pricing under no-monthly claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee + per_order widened for 2%+\u20ac0.45; validate-foxifood-fee-dogfood \u22655; strong_keep 58. EU thematic \u2014 no US swarm expand.",
       "verdict": "adopt"
     },
     {
       "item": "S4VOR guest 1.9%/$2 cap SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN S4VOR guest 1.9% service fee capped at $2.00 on s4vor.com under $0/mo commission-free claim → SalesLead vs Shop ~6%; first_party_pct_fee widened for 1.9%/$2 cap; validate-s4vor-fee-dogfood ≥5; strong_keep 57",
+      "why": "CHI/ATX/MIA/BNA/DEN S4VOR guest 1.9% service fee capped at $2.00 on s4vor.com under $0/mo commission-free claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 1.9%/$2 cap; validate-s4vor-fee-dogfood \u22655; strong_keep 57",
       "verdict": "adopt"
     },
     {
       "item": "KwickDriver $2/delivery SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN KwickDriver $2 flat fee per delivery (+ $6.99/5mi) on kwickos.com/platform/delivery → SalesLead vs Shop ~6%; per_order_platform_fee widened for per-delivery; validate-kwickdriver-fee-dogfood ≥5; strong_keep 56",
+      "why": "CHI/ATX/MIA/BNA/DEN KwickDriver $2 flat fee per delivery (+ $6.99/5mi) on kwickos.com/platform/delivery \u2192 SalesLead vs Shop ~6%; per_order_platform_fee widened for per-delivery; validate-kwickdriver-fee-dogfood \u22655; strong_keep 56",
       "verdict": "adopt"
     },
     {
       "item": "Gegsy Starter $0.40/$1.00 per-order SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Gegsy Starter Pickup $0.40 / Delivery $1.00 (gegsy.com/pricing) under commission-free Square OO → SalesLead vs Shop ~6%; validate-gegsy-fee-dogfood ≥5; strong_keep 55",
+      "why": "CHI/ATX/MIA/BNA/DEN Gegsy Starter Pickup $0.40 / Delivery $1.00 (gegsy.com/pricing) under commission-free Square OO \u2192 SalesLead vs Shop ~6%; validate-gegsy-fee-dogfood \u22655; strong_keep 55",
       "verdict": "adopt"
     },
     {
       "item": "Seared guest 5% ($1.99 min / $7.50 cap) SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Seared guest 5% transaction fee ($1.99 min / $7.50 cap) on seared.io FAQ under commission-free claim → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-seared-fee-dogfood ≥5; strong_keep 54",
+      "why": "CHI/ATX/MIA/BNA/DEN Seared guest 5% transaction fee ($1.99 min / $7.50 cap) on seared.io FAQ under commission-free claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-seared-fee-dogfood \u22655; strong_keep 54",
       "verdict": "adopt"
     },
     {
       "item": "Uber Webshop 2.5%+$0.29 processing SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Uber Webshop 2.5% order processing + $0.29/order (merchants.ubereats.com/us/en/pricing) under commission-free claim → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-uber-webshop-fee-dogfood ≥5; strong_keep 53",
+      "why": "CHI/ATX/MIA/BNA/DEN Uber Webshop 2.5% order processing + $0.29/order (merchants.ubereats.com/us/en/pricing) under commission-free claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-uber-webshop-fee-dogfood \u22655; strong_keep 53",
       "verdict": "adopt"
     },
     {
       "item": "Deonde Express $0.10 overage SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Deonde Express $0.10/order overage after caps (deonde.co/pricing) → SalesLead vs Shop ~6%; validate-deonde-fee-dogfood ≥5; strong_keep 52",
+      "why": "CHI/ATX/MIA/BNA/DEN Deonde Express $0.10/order overage after caps (deonde.co/pricing) \u2192 SalesLead vs Shop ~6%; validate-deonde-fee-dogfood \u22655; strong_keep 52",
       "verdict": "adopt"
     },
     {
       "item": "Ordering.Tools 5%/3% platform commission SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Ordering.Tools Starter 5% / Pro 3% on all orders (ordering.tools/en/pricing) → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-ordering-tools-fee-dogfood ≥5; strong_keep 51. EU thematic — no US swarm expand.",
+      "why": "CHI/ATX/MIA/BNA/DEN Ordering.Tools Starter 5% / Pro 3% on all orders (ordering.tools/en/pricing) \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-ordering-tools-fee-dogfood \u22655; strong_keep 51. EU thematic \u2014 no US swarm expand.",
       "verdict": "adopt"
     },
     {
-      "item": "1 Stop Order 1–2% guest convenience fee SalesLead dogfood across 5 love markets",
+      "item": "1 Stop Order 1\u20132% guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN 1 Stop Order Free 2% / Pro·Custom 1% convenience fee charged to customer (min $0.50) → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-onestoporder-fee-dogfood ≥5; strong_keep 49",
+      "why": "CHI/ATX/MIA/BNA/DEN 1 Stop Order Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer (min $0.50) \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-onestoporder-fee-dogfood \u22655; strong_keep 49",
       "verdict": "adopt"
     },
     {
-      "item": "Appetier flat $199–$249/mo zero diner fees",
+      "item": "Appetier flat $199\u2013$249/mo zero diner fees",
       "lane": "vertical_gtm",
-      "why": "appetier.com/pricing commission-free flat monthly, no diner service fees — watch as flat KEEP peer vs 1 Stop Order %",
+      "why": "appetier.com/pricing commission-free flat monthly, no diner service fees \u2014 watch as flat KEEP peer vs 1 Stop Order %",
       "verdict": "watch"
     },
     {
       "item": "ChowNow Catering 5% SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN ChowNow 5% fee per catering order on direct channel → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-chownow-catering-fee-dogfood ≥5; strong_keep 47. Distinct from $0.99 + 7.5% Support Local.",
+      "why": "CHI/ATX/MIA/BNA/DEN ChowNow 5% fee per catering order on direct channel \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-chownow-catering-fee-dogfood \u22655; strong_keep 47. Distinct from $0.99 + 7.5% Support Local.",
       "verdict": "adopt"
     },
     {
       "item": "Hotplate 5% + $0.55 platform fee (cottage/drop)",
       "lane": "vertical_gtm",
-      "why": "Cottage/drop bakers niche — not core restaurant GTM; watch only, no swarm expand",
+      "why": "Cottage/drop bakers niche \u2014 not core restaurant GTM; watch only, no swarm expand",
       "verdict": "watch"
     },
     {
       "item": "FoodScout GO $0.99 guest service fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN FoodScout GO $0.99 customer service fee/order (foodscoutgo.com/pricing) → SalesLead vs Shop ~6%; validate-foodscout-fee-dogfood ≥5; strong_keep 46",
+      "why": "CHI/ATX/MIA/BNA/DEN FoodScout GO $0.99 customer service fee/order (foodscoutgo.com/pricing) \u2192 SalesLead vs Shop ~6%; validate-foodscout-fee-dogfood \u22655; strong_keep 46",
       "verdict": "adopt"
     },
     {
-      "item": "MOBI HQ guest service fee $0.10–$3 (NZ)",
+      "item": "MOBI HQ guest service fee $0.10\u2013$3 (NZ)",
       "lane": "vertical_gtm",
-      "why": "help.mobihq.com mandatory guest service fee % basket min $0.10 max $3 — NZ/GST; watch only, no US swarm expand",
+      "why": "help.mobihq.com mandatory guest service fee % basket min $0.10 max $3 \u2014 NZ/GST; watch only, no US swarm expand",
       "verdict": "watch"
     },
     {
       "item": "SoHungry $1.25 guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN SoHungry Free $1.25 (Premium $0.60/$0.85 Clover) guest convenience fee → SalesLead vs Shop ~6%; validate-sohungry-fee-dogfood ≥5; 2 pain-scan hits → strong_keep 45",
+      "why": "CHI/ATX/MIA/BNA/DEN SoHungry Free $1.25 (Premium $0.60/$0.85 Clover) guest convenience fee \u2192 SalesLead vs Shop ~6%; validate-sohungry-fee-dogfood \u22655; 2 pain-scan hits \u2192 strong_keep 45",
       "verdict": "adopt"
     },
     {
-      "item": "Kontactless $0.50–$1.00 guest convenience fee SalesLead dogfood across 5 love markets",
+      "item": "Kontactless $0.50\u2013$1.00 guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Kontactless Classic $0.50 / Pay-as-you-go $1.00 per-order guest fee (kontactless.io primary) → SalesLead vs Shop ~6%; validate-kontactless-fee-dogfood ≥5; strong_keep 43",
+      "why": "CHI/ATX/MIA/BNA/DEN Kontactless Classic $0.50 / Pay-as-you-go $1.00 per-order guest fee (kontactless.io primary) \u2192 SalesLead vs Shop ~6%; validate-kontactless-fee-dogfood \u22655; strong_keep 43",
       "verdict": "adopt"
     },
     {
       "item": "BentoBox $0.99 diner fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN BentoBox QR Order & Pay $0.99 diner fee (Help Center primary) → SalesLead vs Shop ~6%; validate-bentobox-fee-dogfood ≥5; second pain-scan hit → strong_keep 42",
+      "why": "CHI/ATX/MIA/BNA/DEN BentoBox QR Order & Pay $0.99 diner fee (Help Center primary) \u2192 SalesLead vs Shop ~6%; validate-bentobox-fee-dogfood \u22655; second pain-scan hit \u2192 strong_keep 42",
       "verdict": "adopt"
     },
     {
-      "item": "Flipdish €0.50 flat + percentage fee refresh (second pain-scan hit)",
+      "item": "Flipdish \u20ac0.50 flat + percentage fee refresh (second pain-scan hit)",
       "lane": "vertical_gtm",
-      "why": "Help Center sales report: flat rate + percentage (example €0.50 + 9%); euro scorer widen; pain-scan second hit → strong_keep 41; dogfood theses cite €0.50",
+      "why": "Help Center sales report: flat rate + percentage (example \u20ac0.50 + 9%); euro scorer widen; pain-scan second hit \u2192 strong_keep 41; dogfood theses cite \u20ac0.50",
       "verdict": "adopt"
     },
     {
       "item": "Menufy $1.75 convenience fee refresh (second pain-scan hit)",
       "lane": "vertical_gtm",
-      "why": "Confirmed $1.75/order convenience fee (Orderitto/CostBench 2026); pain-scan second hit → strong_keep 40; dogfood theses cite $1.75",
+      "why": "Confirmed $1.75/order convenience fee (Orderitto/CostBench 2026); pain-scan second hit \u2192 strong_keep 40; dogfood theses cite $1.75",
       "verdict": "adopt"
     },
     {
-      "item": "Orderitto flat $149–$249/mo zero per-order",
+      "item": "Orderitto flat $149\u2013$249/mo zero per-order",
       "lane": "vertical_gtm",
-      "why": "orderitto.com/pricing — zero per-order commission; watch as flat KEEP peer vs Menufy $1.75",
+      "why": "orderitto.com/pricing \u2014 zero per-order commission; watch as flat KEEP peer vs Menufy $1.75",
       "verdict": "watch"
     },
     {
       "item": "Olo Order with Google 5% SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Olo OwG Fee 5% on subtotal (Google enhanced redirect) → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-olo-fee-dogfood ≥5; strong_keep 39. Enterprise thematic.",
+      "why": "CHI/ATX/MIA/BNA/DEN Olo OwG Fee 5% on subtotal (Google enhanced redirect) \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-olo-fee-dogfood \u22655; strong_keep 39. Enterprise thematic.",
       "verdict": "adopt"
     },
     {
       "item": "Instagram/Facebook native Checkout retired (Aug 2025)",
       "lane": "vertical_gtm",
-      "why": "Meta phased out in-app Checkout; legacy 5%/$0.40 cites stale. Link-out $0 Meta selling fee — do not dogfood IG Checkout 5%.",
+      "why": "Meta phased out in-app Checkout; legacy 5%/$0.40 cites stale. Link-out $0 Meta selling fee \u2014 do not dogfood IG Checkout 5%.",
       "verdict": "watch"
     },
     {
-      "item": "Slice $2–$3/order SalesLead dogfood across 5 love markets",
+      "item": "Slice $2\u2013$3/order SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Slice Online $39/mo+$3/order; Family $399+$2/order (waive under $10) → SalesLead vs Shop ~6%; validate-slice-fee-dogfood ≥5; pizza niche thematic; strong_keep 38 (pain-scan already counted)",
+      "why": "CHI/ATX/MIA/BNA/DEN Slice Online $39/mo+$3/order; Family $399+$2/order (waive under $10) \u2192 SalesLead vs Shop ~6%; validate-slice-fee-dogfood \u22655; pizza niche thematic; strong_keep 38 (pain-scan already counted)",
       "verdict": "adopt"
     },
     {
       "item": "DirectOrders $249/mo flat zero customer fees",
       "lane": "vertical_gtm",
-      "why": "directorders.com/pricing Pro $249 founding — $0 commission, $0 customer fees. No per-order teach — watch only",
+      "why": "directorders.com/pricing Pro $249 founding \u2014 $0 commission, $0 customer fees. No per-order teach \u2014 watch only",
       "verdict": "watch"
     },
     {
-      "item": "Grabull Direct customer service fee / 7–10% menu bump",
+      "item": "Grabull Direct customer service fee / 7\u201310% menu bump",
       "lane": "vertical_gtm",
-      "why": "Customer-paid service fee plan + partner docs cite 7–10% menu bump; exact $/order unpublished — watch before dogfood",
+      "why": "Customer-paid service fee plan + partner docs cite 7\u201310% menu bump; exact $/order unpublished \u2014 watch before dogfood",
       "verdict": "watch"
     },
     {
       "item": "ChowNow $0.99 service charge + 7.5% Support Local Fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN optional $0.99 site/app service charge (50/50) + 7.5% Support Local Fee on App → SalesLead vs Shop ~6%; first_party_pct_fee widened for 7.5%; validate-chownow-fee-dogfood ≥5; strong_keep 38",
+      "why": "CHI/ATX/MIA/BNA/DEN optional $0.99 site/app service charge (50/50) + 7.5% Support Local Fee on App \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 7.5%; validate-chownow-fee-dogfood \u22655; strong_keep 38",
       "verdict": "adopt"
     },
     {
       "item": "Ritual guest service fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Ritual $0.15–$0.99 (<$30) / $1.99 (>$30) guest service fee → SalesLead vs Shop ~6%; validate-ritual-fee-dogfood ≥5; strong_keep 36. Distinct from Ritual OO $69/mo product.",
+      "why": "CHI/ATX/MIA/BNA/DEN Ritual $0.15\u2013$0.99 (<$30) / $1.99 (>$30) guest service fee \u2192 SalesLead vs Shop ~6%; validate-ritual-fee-dogfood \u22655; strong_keep 36. Distinct from Ritual OO $69/mo product.",
       "verdict": "adopt"
     },
     {
       "item": "Toast ~$0.49 online guest fee (secondary)",
       "lane": "vertical_gtm",
-      "why": "$0.99 guest fee removed 2023; secondary 2026 cites ~$0.49 — not on toasttab.com. Watch only alongside Toast OO 0% + POS lock-in.",
+      "why": "$0.99 guest fee removed 2023; secondary 2026 cites ~$0.49 \u2014 not on toasttab.com. Watch only alongside Toast OO 0% + POS lock-in.",
       "verdict": "watch"
     },
     {
       "item": "Ginger $1 guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Ginger Direct $0/mo + $1/order guest platform fee (alt 5% high-volume small-ticket) → SalesLead vs Shop ~6%; validate-ginger-fee-dogfood ≥5; strong_keep 35",
+      "why": "CHI/ATX/MIA/BNA/DEN Ginger Direct $0/mo + $1/order guest platform fee (alt 5% high-volume small-ticket) \u2192 SalesLead vs Shop ~6%; validate-ginger-fee-dogfood \u22655; strong_keep 35",
       "verdict": "adopt"
     },
     {
-      "item": "Semperi flat $99–$499/mo early access OO",
+      "item": "Semperi flat $99\u2013$499/mo early access OO",
       "lane": "vertical_gtm",
-      "why": "Flat monthly, no per-order cut — watch only (no fee teach)",
+      "why": "Flat monthly, no per-order cut \u2014 watch only (no fee teach)",
       "verdict": "watch"
     },
     {
       "item": "FOLOS flat monthly no-commission OO",
       "lane": "vertical_gtm",
-      "why": "Pricing on request; no per-order teach — watch only",
+      "why": "Pricing on request; no per-order teach \u2014 watch only",
       "verdict": "watch"
     },
     {
       "item": "VeloBite $0.75/order SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN VeloBite Growth $0.75 flat per order (Pro $1.00; alt $99/$249/mo) → SalesLead vs Shop ~6%; validate-velobite-fee-dogfood ≥5; strong_keep 34. Skip AI pricing-intelligence framing.",
+      "why": "CHI/ATX/MIA/BNA/DEN VeloBite Growth $0.75 flat per order (Pro $1.00; alt $99/$249/mo) \u2192 SalesLead vs Shop ~6%; validate-velobite-fee-dogfood \u22655; strong_keep 34. Skip AI pricing-intelligence framing.",
       "verdict": "adopt"
     },
     {
       "item": "Incentivio $249/mo loyalty+OO",
       "lane": "vertical_gtm",
-      "why": "~$249/mo commission-free OO+loyalty; Chargebee usage fees exist but no public per-order gateway quote — watch only",
+      "why": "~$249/mo commission-free OO+loyalty; Chargebee usage fees exist but no public per-order gateway quote \u2014 watch only",
       "verdict": "watch"
     },
     {
       "item": "Sauce under-$2 guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Sauce flat guest fee under $2/order (0% commission; from ~$199/mo) → SalesLead vs Shop ~6%; validate-sauce-fee-dogfood ≥5; strong_keep 33. Skip Sauce demand-forecasting.",
+      "why": "CHI/ATX/MIA/BNA/DEN Sauce flat guest fee under $2/order (0% commission; from ~$199/mo) \u2192 SalesLead vs Shop ~6%; validate-sauce-fee-dogfood \u22655; strong_keep 33. Skip Sauce demand-forecasting.",
       "verdict": "adopt"
     },
     {
       "item": "Menubly $9.99/mo flat QR ordering",
       "lane": "vertical_gtm",
-      "why": "menubly.com/pricing Standard $9.99/mo flat — no per-order fee teach; watch only vs Sauce/Upserve/Orda",
+      "why": "menubly.com/pricing Standard $9.99/mo flat \u2014 no per-order fee teach; watch only vs Sauce/Upserve/Orda",
       "verdict": "watch"
     },
     {
       "item": "Upserve/U-Series 2.99% OO service fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN guest-default 2.99% Online Ordering service fee → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-upserve-fee-dogfood ≥5; strong_keep 32",
+      "why": "CHI/ATX/MIA/BNA/DEN guest-default 2.99% Online Ordering service fee \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-upserve-fee-dogfood \u22655; strong_keep 32",
       "verdict": "adopt"
     },
     {
       "item": "Orda $0.25/order commission fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Orda Starter $59/mo + $0.25 commission fee per order on Square OO → SalesLead vs Shop ~6%; validate-orda-fee-dogfood ≥5; strong_keep 31",
+      "why": "CHI/ATX/MIA/BNA/DEN Orda Starter $59/mo + $0.25 commission fee per order on Square OO \u2192 SalesLead vs Shop ~6%; validate-orda-fee-dogfood \u22655; strong_keep 31",
       "verdict": "adopt"
     },
     {
@@ -1709,19 +1733,19 @@
     {
       "item": "GoTab guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN FAQ $0.25 + mobile CNP often 1%+$0.25 on Easy Tab → SalesLead vs Shop ~6%; validate-gotab-fee-dogfood ≥5; strong_keep 30",
+      "why": "CHI/ATX/MIA/BNA/DEN FAQ $0.25 + mobile CNP often 1%+$0.25 on Easy Tab \u2192 SalesLead vs Shop ~6%; validate-gotab-fee-dogfood \u22655; strong_keep 30",
       "verdict": "adopt"
     },
     {
       "item": "Per Diem Square app per-order fees",
       "lane": "vertical_gtm",
-      "why": "Third-party blogs cite $0.50/$1.50 per-order; tryperdiem.com/pricing shows $99 without confirming — watch only",
+      "why": "Third-party blogs cite $0.50/$1.50 per-order; tryperdiem.com/pricing shows $99 without confirming \u2014 watch only",
       "verdict": "watch"
     },
     {
       "item": "Tabski $0.99 guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN $0.99/order guest fee (alt $59/mo SaaS) under commission-free digital OO → SalesLead vs Shop ~6%; validate-tabski-fee-dogfood ≥5; strong_keep 29",
+      "why": "CHI/ATX/MIA/BNA/DEN $0.99/order guest fee (alt $59/mo SaaS) under commission-free digital OO \u2192 SalesLead vs Shop ~6%; validate-tabski-fee-dogfood \u22655; strong_keep 29",
       "verdict": "adopt"
     },
     {
@@ -1733,67 +1757,67 @@
     {
       "item": "Outbites $1/fulfilled-order Pass fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN $1/order Pass guest-paid (Split/Pay options) under 0% commission → SalesLead vs Shop ~6%; validate-outbites-fee-dogfood ≥5; strong_keep 28; per_order regex accepts 'fulfilled'",
+      "why": "CHI/ATX/MIA/BNA/DEN $1/order Pass guest-paid (Split/Pay options) under 0% commission \u2192 SalesLead vs Shop ~6%; validate-outbites-fee-dogfood \u22655; strong_keep 28; per_order regex accepts 'fulfilled'",
       "verdict": "adopt"
     },
     {
       "item": "247waiter $0.25/order transmission fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN $45/mo + restaurant-paid $0.25/order transmission → SalesLead vs Shop ~6%; validate-247waiter-fee-dogfood ≥5; strong_keep 27",
+      "why": "CHI/ATX/MIA/BNA/DEN $45/mo + restaurant-paid $0.25/order transmission \u2192 SalesLead vs Shop ~6%; validate-247waiter-fee-dogfood \u22655; strong_keep 27",
       "verdict": "adopt"
     },
     {
-      "item": "Zay-OS guest $1.99–$3.99 per-order fee SalesLead dogfood across 5 love markets",
+      "item": "Zay-OS guest $1.99\u2013$3.99 per-order fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN commission-free OO with diner per-order fees → SalesLead vs Shop ~6%; validate-zayos-fee-dogfood ≥5; strong_keep 26",
+      "why": "CHI/ATX/MIA/BNA/DEN commission-free OO with diner per-order fees \u2192 SalesLead vs Shop ~6%; validate-zayos-fee-dogfood \u22655; strong_keep 26",
       "verdict": "adopt"
     },
     {
       "item": "Menufy guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN guest fee on direct + optional ~12.5% hybrid → SalesLead vs Shop ~6%; validate-menufy-fee-dogfood ≥5; strong_keep 25",
+      "why": "CHI/ATX/MIA/BNA/DEN guest fee on direct + optional ~12.5% hybrid \u2192 SalesLead vs Shop ~6%; validate-menufy-fee-dogfood \u22655; strong_keep 25",
       "verdict": "adopt"
     },
     {
       "item": "CloudWaitress GloriaFood successor (~$39/mo 0%)",
       "lane": "vertical_gtm",
-      "why": "GloriaFood EOL Apr 2027 migration peer; flat OO rails — watch only",
+      "why": "GloriaFood EOL Apr 2027 migration peer; flat OO rails \u2014 watch only",
       "verdict": "watch"
     },
     {
       "item": "Lunchbox guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN free/no-commission OO with guest convenience fee → SalesLead vs Shop ~6%; validate-lunchbox-fee-dogfood ≥5; strong_keep 24",
+      "why": "CHI/ATX/MIA/BNA/DEN free/no-commission OO with guest convenience fee \u2192 SalesLead vs Shop ~6%; validate-lunchbox-fee-dogfood \u22655; strong_keep 24",
       "verdict": "adopt"
     },
     {
       "item": "Olo App 0% + Order with Google fee refresh",
       "lane": "vertical_gtm",
-      "why": "Promoted: Olo Help Center Invoice Reconciliation confirms OwG Fee 5% on subtotal → 5-market SalesLead dogfood",
+      "why": "Promoted: Olo Help Center Invoice Reconciliation confirms OwG Fee 5% on subtotal \u2192 5-market SalesLead dogfood",
       "verdict": "adopt"
     },
     {
-      "item": "Flipdish 2–7% direct % SalesLead dogfood across 5 love markets",
+      "item": "Flipdish 2\u20137% direct % SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Flipdish/IG Order Now ~2–7% → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-flipdish-fee-dogfood ≥5; strong_keep 23",
+      "why": "CHI/ATX/MIA/BNA/DEN Flipdish/IG Order Now ~2\u20137% \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-flipdish-fee-dogfood \u22655; strong_keep 23",
       "verdict": "adopt"
     },
     {
       "item": "Slice pizzeria 5% / $3-per-order fee",
       "lane": "vertical_gtm",
-      "why": "Promoted: primary Online $39+$3 / Family $399+$2 → 5-market SalesLead dogfood (pizza niche thematic)",
+      "why": "Promoted: primary Online $39+$3 / Family $399+$2 \u2192 5-market SalesLead dogfood (pizza niche thematic)",
       "verdict": "adopt"
     },
     {
       "item": "Popmenu $1/order guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN OO add-on ~$50/mo + $1/order (often guest-paid) → SalesLead vs Shop ~6%; validate-popmenu-fee-dogfood ≥5; strong_keep 21",
+      "why": "CHI/ATX/MIA/BNA/DEN OO add-on ~$50/mo + $1/order (often guest-paid) \u2192 SalesLead vs Shop ~6%; validate-popmenu-fee-dogfood \u22655; strong_keep 21",
       "verdict": "adopt"
     },
     {
       "item": "Owner Flex/guest 5% SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Flex $249+5% restaurant + guest 5% support on both plans → SalesLead vs Shop ~6%; validate-owner-fee-dogfood ≥5",
+      "why": "CHI/ATX/MIA/BNA/DEN Flex $249+5% restaurant + guest 5% support on both plans \u2192 SalesLead vs Shop ~6%; validate-owner-fee-dogfood \u22655",
       "verdict": "adopt"
     },
     {
@@ -1805,19 +1829,19 @@
     {
       "item": "Ontabee flat $49 no-% Owner alternative",
       "lane": "vertical_gtm",
-      "why": "Cost wedge vs Owner Flex/guest 5%; not Shop-native — watch only",
+      "why": "Cost wedge vs Owner Flex/guest 5%; not Shop-native \u2014 watch only",
       "verdict": "watch"
     },
     {
       "item": "UpMenu $1.90 overage SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Basic/Standard $1.90/order after 75/210 caps → SalesLead vs Shop ~6%; validate-upmenu-fee-dogfood ≥5",
+      "why": "CHI/ATX/MIA/BNA/DEN Basic/Standard $1.90/order after 75/210 caps \u2192 SalesLead vs Shop ~6%; validate-upmenu-fee-dogfood \u22655",
       "verdict": "adopt"
     },
     {
       "item": "ChowNow flat-fee OO pricing refresh (~$149/mo)",
       "lane": "vertical_gtm",
-      "why": "Promoted: $0.99 service charge + 7.5% Support Local Fee primary docs → 5-market SalesLead dogfood; flat ~$149/mo still secondary",
+      "why": "Promoted: $0.99 service charge + 7.5% Support Local Fee primary docs \u2192 5-market SalesLead dogfood; flat ~$149/mo still secondary",
       "verdict": "adopt"
     },
     {
@@ -1835,31 +1859,31 @@
     {
       "item": "Klikit TikTok Shop food middleware refresh (APAC)",
       "lane": "vertical_gtm",
-      "why": "Native Shop→POS sync still APAC-first; reinforces Shop KEEP math — watch only, no US swarm",
+      "why": "Native Shop\u2192POS sync still APAC-first; reinforces Shop KEEP math \u2014 watch only, no US swarm",
       "verdict": "watch"
     },
     {
       "item": "Otter restaurant-paid per-order fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Otter ~$0.15+/order restaurant-paid txn → SalesLead vs Shop ~6%; validate-otter-fee-dogfood ≥5; distinct from guest_paid",
+      "why": "CHI/ATX/MIA/BNA/DEN Otter ~$0.15+/order restaurant-paid txn \u2192 SalesLead vs Shop ~6%; validate-otter-fee-dogfood \u22655; distinct from guest_paid",
       "verdict": "adopt"
     },
     {
       "item": "Instagram Shopping checkout ~5% vs link-out $0 Meta selling fee (2026 refresh)",
       "lane": "vertical_gtm",
-      "why": "Native Checkout retired Aug 2025; legacy 5%/$0.40 cites stale. Link-out $0 Meta selling fee — watch only, do not dogfood.",
+      "why": "Native Checkout retired Aug 2025; legacy 5%/$0.40 cites stale. Link-out $0 Meta selling fee \u2014 watch only, do not dogfood.",
       "verdict": "watch"
     },
     {
       "item": "guest_paid_platform_fee KEEP signal (DevourNow-class diner tech fees)",
       "lane": "vertical_gtm",
-      "why": "Customers/guests pay $2.99 or $1+% under 0% commission claims — distinct from restaurant-paid per-order fees",
+      "why": "Customers/guests pay $2.99 or $1+% under 0% commission claims \u2014 distinct from restaurant-paid per-order fees",
       "verdict": "adopt"
     },
     {
       "item": "guest-paid OO tech fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN DevourNow-class $2.99/$1+% guest fees → SalesLead vs Shop ~6%; validate-guest-fee-dogfood ≥5",
+      "why": "CHI/ATX/MIA/BNA/DEN DevourNow-class $2.99/$1+% guest fees \u2192 SalesLead vs Shop ~6%; validate-guest-fee-dogfood \u22655",
       "verdict": "adopt"
     },
     {
@@ -1869,9 +1893,9 @@
       "verdict": "adopt"
     },
     {
-      "item": "OrderOut flat-fee delivery/online → POS (vs Otter tablet)",
+      "item": "OrderOut flat-fee delivery/online \u2192 POS (vs Otter tablet)",
       "lane": "vertical_gtm",
-      "why": "Lightweight dual-run ops peer free on Clover/Square; not Shop-native — watch only",
+      "why": "Lightweight dual-run ops peer free on Clover/Square; not Shop-native \u2014 watch only",
       "verdict": "watch"
     },
     {
@@ -1883,7 +1907,7 @@
     {
       "item": "KwickOS KwickMenu POS-bundled commission-free OO",
       "lane": "vertical_gtm",
-      "why": "POS-embedded 0% OO (~$59/mo terminal) KEEP peer; not Shop-native — contrast dual-run teach",
+      "why": "POS-embedded 0% OO (~$59/mo terminal) KEEP peer; not Shop-native \u2014 contrast dual-run teach",
       "verdict": "watch"
     },
     {
@@ -1893,51 +1917,51 @@
       "verdict": "watch"
     },
     {
-      "item": "TikTok Shop US referral watch Oct 1 2026 (6%→8% + 1.5% creator facilitation)",
+      "item": "TikTok Shop US referral watch Oct 1 2026 (6%\u21928% + 1.5% creator facilitation)",
       "lane": "vertical_gtm",
-      "why": "Secondary reports (Ecommerce Times) claim Q4 hike; Dashboardly still ~6% as of Jul 2026 — keep grader default 6 until official/post-Oct confirm; still beats Marketplace 15–30%",
+      "why": "Secondary reports (Ecommerce Times) claim Q4 hike; Dashboardly still ~6% as of Jul 2026 \u2014 keep grader default 6 until official/post-Oct confirm; still beats Marketplace 15\u201330%",
       "verdict": "watch"
     },
     {
       "item": "RestauNax commission-free OO (~$99/mo)",
       "lane": "vertical_gtm",
-      "why": "First-party KEEP peer (site/app/loyalty); not Shop-native — contrast in sales forms",
+      "why": "First-party KEEP peer (site/app/loyalty); not Shop-native \u2014 contrast in sales forms",
       "verdict": "watch"
     },
     {
       "item": "KEEP grader default social_fee_pct=6 (Shop referral)",
       "lane": "vertical_gtm",
-      "why": "CLI/lib/MCP default matches TikTok Shop ~6%; dogfoods teach 94% KEEP vs Marketplace 15–30%",
+      "why": "CLI/lib/MCP default matches TikTok Shop ~6%; dogfoods teach 94% KEEP vs Marketplace 15\u201330%",
       "verdict": "adopt"
     },
     {
       "item": "social_shop_fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN Shop ~6% → SalesLead; coverage chain includes social-shop",
+      "why": "CHI/ATX/MIA/BNA/DEN Shop ~6% \u2192 SalesLead; coverage chain includes social-shop",
       "verdict": "adopt"
     },
     {
-      "item": "social_shop_fee → Franklin SalesLead dogfood",
+      "item": "social_shop_fee \u2192 Franklin SalesLead dogfood",
       "lane": "vertical_gtm",
-      "why": "Shop ~6% KEEP teach folded into pain→sales; CI validate-social-shop-dogfood ≥5",
+      "why": "Shop ~6% KEEP teach folded into pain\u2192sales; CI validate-social-shop-dogfood \u22655",
       "verdict": "adopt"
     },
     {
       "item": "Dinevate Owner.com alternative OS",
       "lane": "vertical_gtm",
-      "why": "Website/app/voice OS peer; watch only — not Shop-native",
+      "why": "Website/app/voice OS peer; watch only \u2014 not Shop-native",
       "verdict": "watch"
     },
     {
       "item": "TikTok Shop ~6% social_shop_fee KEEP teach",
       "lane": "vertical_gtm",
-      "why": "Shop 6% vs Marketplace 15-30% sharpens love→buy-now; strong_keep 16",
+      "why": "Shop 6% vs Marketplace 15-30% sharpens love\u2192buy-now; strong_keep 16",
       "verdict": "adopt"
     },
     {
       "item": "Toast Online Ordering 0% commission + POS lock-in",
       "lane": "vertical_gtm",
-      "why": "POS-bundled KEEP OO peer; watch only — skip labor/forecast",
+      "why": "POS-bundled KEEP OO peer; watch only \u2014 skip labor/forecast",
       "verdict": "watch"
     },
     {
@@ -1965,7 +1989,7 @@
       "verdict": "adopt"
     },
     {
-      "item": "Restolabs commission-free OO ~$45–55/mo",
+      "item": "Restolabs commission-free OO ~$45\u201355/mo",
       "lane": "vertical_gtm",
       "why": "Flat-fee KEEP peer; watch only",
       "verdict": "watch"
@@ -1991,7 +2015,7 @@
     {
       "item": "Square ChatGPT/Claude AI-channel ordering",
       "lane": "vertical_gtm",
-      "why": "0% marketplace commission agentic commerce into Square POS; watch only — skip labor tools",
+      "why": "0% marketplace commission agentic commerce into Square POS; watch only \u2014 skip labor tools",
       "verdict": "watch"
     },
     {
@@ -2015,11 +2039,11 @@
     {
       "item": "FlavorFeed AI POS + IG/TikTok content + ordering",
       "lane": "vertical_gtm",
-      "why": "Content→order peer; watch only",
+      "why": "Content\u2192order peer; watch only",
       "verdict": "watch"
     },
     {
-      "item": "Restos.io €0/€29 commission-free link ordering",
+      "item": "Restos.io \u20ac0/\u20ac29 commission-free link ordering",
       "lane": "vertical_gtm",
       "why": "EU flat-fee KEEP peer; watch only",
       "verdict": "watch"
@@ -2033,11 +2057,11 @@
     {
       "item": "WhatsMenu owned storefront vs TikTok Shop",
       "lane": "vertical_gtm",
-      "why": "TikTok traffic → owned catalog (not Shop checkout); watch only",
+      "why": "TikTok traffic \u2192 owned catalog (not Shop checkout); watch only",
       "verdict": "watch"
     },
     {
-      "item": "5-market coverage validator (love↔grader↔buy-now)",
+      "item": "5-market coverage validator (love\u2194grader\u2194buy-now)",
       "lane": "vertical_gtm",
       "why": "CI gate keeps CHI/ATX/MIA/BNA/DEN chains aligned by market+yelp_alias",
       "verdict": "adopt"
@@ -2045,7 +2069,7 @@
     {
       "item": "Buy-now script+catalog dogfood across 5 love markets",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN ContentDraft+catalog sandboxes; validate-buy-now ≥5",
+      "why": "CHI/ATX/MIA/BNA/DEN ContentDraft+catalog sandboxes; validate-buy-now \u22655",
       "verdict": "adopt"
     },
     {
@@ -2057,7 +2081,7 @@
     {
       "item": "KEEP grader 5-market SalesLead dogfood set",
       "lane": "vertical_gtm",
-      "why": "CHI/ATX/MIA/BNA/DEN keep-grader→SalesLead fixtures; CI gate ≥5",
+      "why": "CHI/ATX/MIA/BNA/DEN keep-grader\u2192SalesLead fixtures; CI gate \u22655",
       "verdict": "adopt"
     },
     {
@@ -2081,7 +2105,7 @@
     {
       "item": "Sauce commission-free ordering + delivery OS",
       "lane": "vertical_gtm",
-      "why": "Promoted: under $2/order guest fee + 0% commission (getsauce.com/p) → 5-market SalesLead dogfood; delivery $7.99/order is logistics; skip Sauce forecasting",
+      "why": "Promoted: under $2/order guest fee + 0% commission (getsauce.com/p) \u2192 5-market SalesLead dogfood; delivery $7.99/order is logistics; skip Sauce forecasting",
       "verdict": "adopt"
     },
     {
@@ -2099,7 +2123,7 @@
     {
       "item": "Flipdish Instagram Order Now + first-party KEEP",
       "lane": "vertical_gtm",
-      "why": "IG profile/Stories → direct order; dual-run marketplaces — watch social close only",
+      "why": "IG profile/Stories \u2192 direct order; dual-run marketplaces \u2014 watch social close only",
       "verdict": "watch"
     },
     {
@@ -2111,7 +2135,7 @@
     {
       "item": "Menufy hybrid first-party + 12.5% marketplace",
       "lane": "vertical_gtm",
-      "why": "Flat-fee direct + negotiated dual-run; guest convenience fee now SalesLead-dogfooded — keep hybrid watch context",
+      "why": "Flat-fee direct + negotiated dual-run; guest convenience fee now SalesLead-dogfooded \u2014 keep hybrid watch context",
       "verdict": "adopt"
     },
     {
@@ -2135,7 +2159,7 @@
     {
       "item": "Denver Yelp love + Rioja SalesLead dogfood",
       "lane": "vertical_gtm",
-      "why": "Fifth-market morning-scan + KEEP→DRAFT without Apollo/Mem0",
+      "why": "Fifth-market morning-scan + KEEP\u2192DRAFT without Apollo/Mem0",
       "verdict": "adopt"
     },
     {
@@ -2147,19 +2171,19 @@
     {
       "item": "ChowNow commission-free first-party OS",
       "lane": "vertical_gtm",
-      "why": "Promoted: $0.99 service charge + 7.5% Support Local Fee primary docs → 5-market SalesLead dogfood; flat ~$149/mo still secondary",
+      "why": "Promoted: $0.99 service charge + 7.5% Support Local Fee primary docs \u2192 5-market SalesLead dogfood; flat ~$149/mo still secondary",
       "verdict": "adopt"
     },
     {
       "item": "Husk Nashville buy-now script + catalog sandbox",
       "lane": "vertical_gtm",
-      "why": "Second ContentDraft + commerce-engine sandbox after Franklin — Nashville love→buy-now",
+      "why": "Second ContentDraft + commerce-engine sandbox after Franklin \u2014 Nashville love\u2192buy-now",
       "verdict": "adopt"
     },
     {
       "item": "Lunchbox first-party OS + order aggregation",
       "lane": "vertical_gtm",
-      "why": "Enterprise KEEP peer / OPA! partner; watch GTM only — skip forecasting",
+      "why": "Enterprise KEEP peer / OPA! partner; watch GTM only \u2014 skip forecasting",
       "verdict": "watch"
     },
     {
@@ -2175,9 +2199,9 @@
       "verdict": "adopt"
     },
     {
-      "item": "Nashville Husk menu-markup → SalesLead dogfood",
+      "item": "Nashville Husk menu-markup \u2192 SalesLead dogfood",
       "lane": "vertical_gtm",
-      "why": "Fourth-market love+pain→DRAFT without Apollo/Mem0/IG",
+      "why": "Fourth-market love+pain\u2192DRAFT without Apollo/Mem0/IG",
       "verdict": "adopt"
     },
     {
@@ -2217,15 +2241,15 @@
       "verdict": "adopt"
     },
     {
-      "item": "Miami Michael's Genuine KEEP→SalesLead dogfood",
+      "item": "Miami Michael's Genuine KEEP\u2192SalesLead dogfood",
       "lane": "vertical_gtm",
-      "why": "Third-market love+pain→DRAFT without Apollo/Mem0/IG",
+      "why": "Third-market love+pain\u2192DRAFT without Apollo/Mem0/IG",
       "verdict": "adopt"
     },
     {
       "item": "validate-love-fixtures.mjs multi-market gate",
       "lane": "vertical_gtm",
-      "why": "CI ensures Chicago/Austin/Miami love seeds stay ≥3 brands each",
+      "why": "CI ensures Chicago/Austin/Miami love seeds stay \u22653 brands each",
       "verdict": "adopt"
     },
     {
@@ -2241,9 +2265,9 @@
       "verdict": "adopt"
     },
     {
-      "item": "Pain fixtures KEEP-hardened (≥4 strong hits)",
+      "item": "Pain fixtures KEEP-hardened (\u22654 strong hits)",
       "lane": "vertical_gtm",
-      "why": "score-pain-fixtures requires ≥4 anti_marketplace_buy_now; toast+DoorDash+KEEP all strong",
+      "why": "score-pain-fixtures requires \u22654 anti_marketplace_buy_now; toast+DoorDash+KEEP all strong",
       "verdict": "adopt"
     },
     {
@@ -2253,9 +2277,9 @@
       "verdict": "watch"
     },
     {
-      "item": "OrderPost IG post→order pages",
+      "item": "OrderPost IG post\u2192order pages",
       "lane": "vertical_gtm",
-      "why": "Closest social-post→order rival to love→buy-now; contrast hosted link vs Shop rails",
+      "why": "Closest social-post\u2192order rival to love\u2192buy-now; contrast hosted link vs Shop rails",
       "verdict": "watch"
     },
     {
@@ -2271,9 +2295,9 @@
       "verdict": "adopt"
     },
     {
-      "item": "Franklin effective-cost pain→SalesLead dogfood",
+      "item": "Franklin effective-cost pain\u2192SalesLead dogfood",
       "lane": "vertical_gtm",
-      "why": "Statement-math KEEP + Austin love brand → DRAFT without Apollo/Mem0",
+      "why": "Statement-math KEEP + Austin love brand \u2192 DRAFT without Apollo/Mem0",
       "verdict": "adopt"
     },
     {
@@ -2297,7 +2321,7 @@
     {
       "item": "Moast Shopify shoppable UGC (F&B)",
       "lane": "vertical_gtm",
-      "why": "UGC→buy on PDPs; contrast vs Never86 in-app Shop rails",
+      "why": "UGC\u2192buy on PDPs; contrast vs Never86 in-app Shop rails",
       "verdict": "watch"
     },
     {
@@ -2333,7 +2357,7 @@
     {
       "item": "Marketplace KEEP snippet scorer",
       "lane": "vertical_gtm",
-      "why": "scripts/score-marketplace-keep.mjs boosts pain stubs with KEEP/commission/quit/effective-cost language — no auth",
+      "why": "scripts/score-marketplace-keep.mjs boosts pain stubs with KEEP/commission/quit/effective-cost language \u2014 no auth",
       "verdict": "adopt"
     },
     {
@@ -2345,7 +2369,7 @@
     {
       "item": "Outbites $1/order first-party KEEP rival",
       "lane": "vertical_gtm",
-      "why": "Promoted: pain-scan + 5-market SalesLead dogfood; validate-outbites-fee-dogfood ≥5",
+      "why": "Promoted: pain-scan + 5-market SalesLead dogfood; validate-outbites-fee-dogfood \u22655",
       "verdict": "adopt"
     },
     {
@@ -2363,13 +2387,13 @@
     {
       "item": "Franklin buy-now script-draft dogfood",
       "lane": "vertical_gtm",
-      "why": "PENDING_APPROVAL ContentDraft fixture sharpens love→buy-now path",
+      "why": "PENDING_APPROVAL ContentDraft fixture sharpens love\u2192buy-now path",
       "verdict": "adopt"
     },
     {
-      "item": "Pain→SalesLead KEEP end-to-end dogfood",
+      "item": "Pain\u2192SalesLead KEEP end-to-end dogfood",
       "lane": "vertical_gtm",
-      "why": "X+SEARCH_WEB+Yelp+Maps → SalesLead DRAFT without Apollo/Mem0; skills updated",
+      "why": "X+SEARCH_WEB+Yelp+Maps \u2192 SalesLead DRAFT without Apollo/Mem0; skills updated",
       "verdict": "adopt"
     },
     {
@@ -2391,7 +2415,7 @@
       "verdict": "adopt"
     },
     {
-      "item": "Yelp + Maps public enrich for pain→sales",
+      "item": "Yelp + Maps public enrich for pain\u2192sales",
       "lane": "vertical_gtm",
       "why": "Active Composio path; adopted into lead-shop-enrich",
       "verdict": "adopt"
@@ -2405,7 +2429,7 @@
     {
       "item": "Desktop auth: Mem0 + Context.dev",
       "lane": "memory",
-      "why": "Cloud cannot run interactive mcp_auth — blocks durable memory + research redundancy",
+      "why": "Cloud cannot run interactive mcp_auth \u2014 blocks durable memory + research redundancy",
       "verdict": "needs_auth"
     },
     {
@@ -2435,17 +2459,17 @@
     {
       "item": "Zayos Restaurant Grader inbound wedge",
       "lane": "vertical_gtm",
-      "why": "Free diagnostic → OS conversion; pattern we may copy for pain/onboarding",
+      "why": "Free diagnostic \u2192 OS conversion; pattern we may copy for pain/onboarding",
       "verdict": "pilot"
     },
     {
       "item": "Zep/Graphiti / Letta",
       "lane": "memory",
-      "why": "Only if teach_memory quality plateaus — not a forecasting play",
+      "why": "Only if teach_memory quality plateaus \u2014 not a forecasting play",
       "verdict": "watch"
     },
     {
-      "item": "Seekadu Instagram→reservation agents",
+      "item": "Seekadu Instagram\u2192reservation agents",
       "lane": "vertical_gtm",
       "why": "Social conversion rival; keep Never86 on buy-now not table turns",
       "verdict": "watch"
@@ -2459,39 +2483,39 @@
     {
       "item": "Menami OS + ACP Agent Protocol",
       "lane": "vertical_gtm",
-      "why": "First-party ordering + IG/WhatsApp + machine-agent checkout protocol — top-priority rival watch; skip forecasting features",
+      "why": "First-party ordering + IG/WhatsApp + machine-agent checkout protocol \u2014 top-priority rival watch; skip forecasting features",
       "verdict": "watch"
     },
     {
       "item": "Klikit TikTok Shop POS (APAC)",
       "lane": "vertical_gtm",
-      "why": "Shop→kitchen sync validates shoppable food ops; US GTM secondary",
+      "why": "Shop\u2192kitchen sync validates shoppable food ops; US GTM secondary",
       "verdict": "watch"
     },
     {
       "item": "Context.dev headless REST (CONTEXT_DEV_API_KEY)",
       "lane": "mcp_connectors",
-      "why": "Cloud research path when MCP OAuth unavailable — scripts/context-search.mjs",
+      "why": "Cloud research path when MCP OAuth unavailable \u2014 scripts/context-search.mjs",
       "verdict": "needs_auth"
     },
     {
       "item": "Bright Data SERP/discover",
       "lane": "mcp_connectors",
-      "why": "Namespace ready but search_engine/discover still HTTP 401 — Composio stays primary",
+      "why": "Namespace ready but search_engine/discover still HTTP 401 \u2014 Composio stays primary",
       "verdict": "needs_auth"
     }
   ],
   "open_gaps": [
     {
       "id": "fee-catalog-pause-auth-first",
-      "gap": "Fee KEEP catalog sufficient (paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach) — operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
-      "action": "Do not expand fee dogfoods unless cite sharpens love→buy-now / Cursor memory-skills-MCP beyond catalog. Unlock MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth). Verify: node scripts/unlock-beyond-the-hunt.mjs → exit 0, then import stack/tool-hunt-memory.md",
+      "gap": "Fee KEEP catalog sufficient (paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach) \u2014 operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
+      "action": "Do not expand fee dogfoods unless cite sharpens love\u2192buy-now / Cursor memory-skills-MCP beyond catalog. Unlock MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth). Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0, then import stack/tool-hunt-memory.md",
       "priority": 1
     },
     {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context not verified in this environment",
-      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/unlock-beyond-the-hunt.mjs → exit 0",
+      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0",
       "priority": 1
     },
     {
@@ -2503,7 +2527,7 @@
     {
       "id": "skills-sync",
       "gap": "Confirm Sync Skills for Cloud Agents",
-      "action": "Desktop Settings → Agents → Sync Skills for Cloud Agents = On. Verify: node scripts/print-sync-skills-checklist.mjs. Reply: skills sync on",
+      "action": "Desktop Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents = On. Verify: node scripts/print-sync-skills-checklist.mjs. Reply: skills sync on",
       "priority": 2
     },
     {
@@ -2514,25 +2538,25 @@
     },
     {
       "id": "composio-instagram",
-      "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
+      "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
       "action": "Open https://connect.composio.dev/link/lk_5JKgmm1s0io7 (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
       "id": "composio-tiktok-auth-config",
       "gap": "TikTok Composio needs org auth-config before connect",
-      "action": "https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true — set auth config, then reconnect. See docs/COMPOSIO-SOCIAL-UNLOCKS.md",
+      "action": "https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true \u2014 set auth config, then reconnect. See docs/COMPOSIO-SOCIAL-UNLOCKS.md",
       "priority": 3
     },
     {
       "id": "apollo-clay-auth",
-      "gap": "Apollo + Clay optional — public Yelp/Maps enrich already adopted",
+      "gap": "Apollo + Clay optional \u2014 public Yelp/Maps enrich already adopted",
       "action": "Authenticate Apollo and/or Clay in Cursor desktop when ready to enrich leads",
       "priority": 4
     },
     {
       "id": "pinecone-api-key",
-      "gap": "Pinecone MCP lacks PINECONE_API_KEY — cannot store vertical knowledge vectors yet",
+      "gap": "Pinecone MCP lacks PINECONE_API_KEY \u2014 cannot store vertical knowledge vectors yet",
       "action": "Add PINECONE_API_KEY to Cursor MCP config (https://app.pinecone.io); never paste in chat",
       "priority": 3
     },

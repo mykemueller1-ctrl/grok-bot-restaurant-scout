@@ -562,6 +562,8 @@ jobs:
           node scripts/print-beyond-the-hunt-status.mjs | grep -q '"top_watch_rivals"'
           node scripts/print-beyond-the-hunt-status.mjs | grep -q '"phone_enrich_markets": 5'
           node scripts/print-beyond-the-hunt-status.mjs | grep -q '"buy_now_path_markets": 5'
+          node scripts/print-beyond-the-hunt-status.mjs | grep -q '"strong_keep": 64'
+          node scripts/print-beyond-the-hunt-status.mjs | grep -q '"brand_site_marketplace_leak": true'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
             echo "unlock READY"

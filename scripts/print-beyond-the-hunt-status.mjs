@@ -46,6 +46,19 @@ const feePause = (ledger.open_gaps || []).some(
   (g) => g.id === "fee-catalog-pause-auth-first"
 );
 
+let strongKeep = null;
+const painScore = run("scripts/score-pain-fixtures.mjs");
+try {
+  const parsed = JSON.parse(painScore.stdout || "{}");
+  strongKeep = typeof parsed.strong_keep === "number" ? parsed.strong_keep : null;
+} catch {
+  strongKeep = null;
+}
+
+const brandLeakFixture = existsSync(
+  join(root, "fixtures", "tool-hunt", "pain-scan-brand-site-marketplace-leak.json")
+);
+
 const out = {
   ok: love?.ok === true,
   goal: "beyond-the-hunt best-in-vertical (love→buy-now · pain→sales-lead · Cursor memory/skills/MCP)",
@@ -70,6 +83,11 @@ const out = {
         })),
       }
     : { ok: false, stderr: (loveOut.stderr || "").slice(0, 300) },
+  keep_teach: {
+    strong_keep: strongKeep,
+    brand_site_marketplace_leak: brandLeakFixture,
+    note: "Fee dogfoods paused; brand_site_marketplace_leak is love→buy-now teach",
+  },
   social: {
     yelp_active_seed: true,
     instagram: social?.social_unlocks?.instagram?.status || "unknown",

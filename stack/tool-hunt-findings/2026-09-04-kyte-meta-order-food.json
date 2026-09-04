@@ -1,0 +1,13 @@
+{
+  "finding_id": "kyte-meta-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Kyte Meta Business Extension Order Food (FB/IG + Stories)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Kyte primary FBE page: Meta partner — Order Food button on Facebook/Instagram profiles + food ordering stickers in Stories → Kyte online catalog. Select Kyte as IG Order Food action-button partner. Deliverect/Zyda/ChatFood/BentoBox/Toast peer. Watch only — fee catalog pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.kyteapp.com/apps/fbe"
+  ],
+  "not_this": "Not fee dogfood. Not TikTok Shop-native. Not forecasting. Skip Kyte POS inventory modules."
+}

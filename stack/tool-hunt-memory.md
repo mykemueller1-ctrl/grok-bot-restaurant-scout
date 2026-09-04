@@ -778,3 +778,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fixture: `pain-scan-brand-site-marketplace-leak.json` → overall `strong_keep` 64. **Not a fee dogfood** — fee catalog pause still holds.
 - Taught in pain-complaint-scan / sales-lead-form / script-draft / morning-scan. Finding: `2026-09-04-brand-site-marketplace-leak-signal.json`. Ledger v1.92.27.
 - Still blocked: Mem0 + Context for unlock READY.
+
+### 2026-09-04 (Kyte Meta Order Food + RAY IG delivery + keep_teach status)
+
+- **Kyte** (watch): Meta FBE Order Food on FB/IG + Stories stickers → Kyte catalog (kyteapp.com/apps/fbe). Finding: `2026-09-04-kyte-meta-order-food.json`.
+- **RAY** (watch): IG commission-free delivery channel (Order Food/Reserve + DM automation) vs marketplace 20–35%. Finding: `2026-09-04-ray-instagram-delivery-channel.json`.
+- Status printer `keep_teach`: `strong_keep` 64 + `brand_site_marketplace_leak: true`. CI greps.
+- Instagram reconnect link refreshed (`lk_JYyUTk9S5ND5`, ~10 min). Ledger v1.92.28. Auth still blocked.
