@@ -1,5 +1,5 @@
 {
-  "version": "1.27.0",
+  "version": "1.28.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -493,14 +493,50 @@
         "https://restaurant.menufy.com/article/2026/direct-vs-third-party-ordering",
         "https://restaurant.menufy.com/pricing"
       ]
+    },
+    {
+      "name": "Popmenu",
+      "lane": "vertical_gtm",
+      "stack": "AI marketing OS + commission-free on-site ordering + dynamic dish SEO pages + email/SMS/social; ~12k restaurants",
+      "memory": "Owned guest contacts + reputation/social dashboards",
+      "edge": "Owner/ChowNow-class first-party KEEP peer — website/SEO/email skew, not TikTok Shop-native buy-now",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://popmenu.com/",
+        "https://www.getsauce.com/post/owner-com-vs-popmenu"
+      ]
+    },
+    {
+      "name": "Flipdish",
+      "lane": "vertical_gtm",
+      "stack": "First-party web/app ordering + Instagram Order Now / Stories stickers + AI marketing/POS; marketplace sync dual-run",
+      "memory": "Owned diner data for loyalty/SMS/PPC",
+      "edge": "Strong IG→order close + KEEP messaging; contrast vs Never86 TikTok/IG shoppable rails — skip their forecasting/scheduling features in research",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.flipdish.com/",
+        "https://www.flipdish.com/us/resources/blog/get-direct-orders-on-instagram"
+      ]
     }
   ],
   "watchlist": [
     {
-      "item": "KEEP channel-rank grader pilot",
+      "item": "Popmenu commission-free marketing OS",
       "lane": "vertical_gtm",
-      "why": "Zayos-style KEEP$ diagnostic → SalesLead teach; no swarm expansion",
-      "verdict": "pilot"
+      "why": "Owner-class first-party KEEP + social/SEO; watch for outreach contrast",
+      "verdict": "watch"
+    },
+    {
+      "item": "Flipdish Instagram Order Now + first-party KEEP",
+      "lane": "vertical_gtm",
+      "why": "IG profile/Stories → direct order; dual-run marketplaces — watch social close only",
+      "verdict": "watch"
+    },
+    {
+      "item": "KEEP channel-rank grader MCP + Rioja dogfood",
+      "lane": "vertical_gtm",
+      "why": "keep_channel_grade + pain-to-sales-keep-grader-rioja; no swarm expansion",
+      "verdict": "adopt"
     },
     {
       "item": "Menufy hybrid first-party + 12.5% marketplace",

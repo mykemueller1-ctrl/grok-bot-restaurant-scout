@@ -200,3 +200,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Wired keep_channel_grade into complaint-sources (Fastify sources.ts + Worker) via keepChannelGrade.ts.
 - Dogfood: pain-to-sales-keep-grader-rioja.json folds KEEP$ rank into SalesLead DRAFT.
 - Ledger v1.27.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Popmenu + Flipdish watch + grader dogfood gate)
+
+- Watched Popmenu (commission-free marketing OS + on-site ordering) and Flipdish (IG Order Now + first-party KEEP). Skip Flipdish forecasting features.
+- Added scripts/validate-keep-grader-dogfood.mjs CI gate.
+- Ledger v1.28.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
