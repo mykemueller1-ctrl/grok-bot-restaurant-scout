@@ -333,3 +333,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - validate-market-coverage chain now love→keep-grader→social-shop→guest-fee→script-draft→catalog-sync.
 - Ledger v1.48.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (guest_paid_platform_fee KEEP signal)
+
+- Adopted guest_paid_platform_fee on KEEP scorer (CLI + keepChannelGrade sibling marketplaceKeepScore.ts).
+- CI smoke for DevourNow-class “customers pay $2.99 tech fee”. Distinct from restaurant-paid per_order fees.
+- Ledger v1.49.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

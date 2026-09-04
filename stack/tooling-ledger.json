@@ -1,5 +1,5 @@
 {
-  "version": "1.48.0",
+  "version": "1.49.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -85,7 +85,7 @@
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔guest-fee↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
@@ -856,6 +856,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "guest_paid_platform_fee KEEP signal (DevourNow-class diner tech fees)",
+      "lane": "vertical_gtm",
+      "why": "Customers/guests pay $2.99 or $1+% under 0% commission claims — distinct from restaurant-paid per-order fees",
+      "verdict": "adopt"
+    },
     {
       "item": "guest-paid OO tech fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",

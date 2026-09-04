@@ -39,6 +39,8 @@ const rules = [
   { re: /doordash online ordering|uber\s*webshop|grubhub\s*direct|0%\s*commission on direct|online ordering.*(0%|zero)\s*commission|(0%|zero)\s*commission.*(direct|own (site|website|channel)|webshop)|drive on-demand|grubhub\s*connect/, signal: "marketplace_direct_zero", w: 15 },
   // Social shop take-rate vs marketplace rent (TikTok Shop ~6% US; watch Oct 2026 ~8%)
   { re: /tiktok shop.*(6|8)\s*%|(6|8)\s*%\s*(referral|unified|commission|platform)|shop referral fee|unified referral/, signal: "social_shop_fee", w: 15 },
+  // Guest-paid OO tech fees (DevourNow $2.99 / $1+% diner fees under 0% commission claims)
+  { re: /customers? pay|guests? pay|diner[- ]paid|guest[- ]paid|tech fee|service fee.*(customer|guest|diner)|(customer|guest|diner).*(tech|service|platform) fee/, signal: "guest_paid_platform_fee", w: 15 },
 ];
 
 const signals = [];
