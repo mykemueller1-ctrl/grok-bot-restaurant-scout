@@ -25,13 +25,13 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04T22:50Z",
+        "reverified_at": "2026-09-04T23:10Z",
         "website": "https://www.riojadenver.com/",
         "rails": [
           "flavor_dojo_carryout_in_person",
           "phone_reservations"
         ],
-        "note": "Flavor Dojo carryout is in-person pickup narrative \u2014 Shop buy-now closes social demand without bio\u2192webview cliffs. Pass-3: carryout page + phone reservations still live on riojadenver.com (riorestaurant.com is parked \u2014 ignore). Pass-4: Flavor Dojo + phone still live on riojadenver.com. Pass-5: Flavor Dojo + phone still live on riojadenver.com. Pass-6: Flavor Dojo + phone reservations still live on riojadenver.com. Pass-7/Yelp-12: Flavor Dojo + phone still live; Yelp 2914 stable.",
+        "note": "Flavor Dojo carryout is in-person pickup narrative \u2014 Shop buy-now closes social demand without bio\u2192webview cliffs. Pass-3: carryout page + phone reservations still live on riojadenver.com (riorestaurant.com is parked \u2014 ignore). Pass-4: Flavor Dojo + phone still live on riojadenver.com. Pass-5: Flavor Dojo + phone still live on riojadenver.com. Pass-6: Flavor Dojo + phone reservations still live on riojadenver.com. Pass-7/Yelp-12: Flavor Dojo + phone still live; Yelp 2914 stable. Pass-8/Yelp-13: Flavor Dojo still live; Yelp 2914 stable.",
         "sources": [
           "https://www.riojadenver.com/menus/carryout/",
           "https://www.riojadenver.com/",
@@ -39,7 +39,9 @@
           "stack/tool-hunt-findings/2026-09-04-rioja-buy-now-pass4.json",
           "stack/tool-hunt-findings/2026-09-04-rioja-buy-now-pass6.json",
           "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp12.json",
-          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json"
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json",
+          "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp13.json",
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass13.json"
         ]
       }
     },

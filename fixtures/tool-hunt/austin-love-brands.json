@@ -37,8 +37,8 @@
           "shopify_merch",
           "goldbelly_ship"
         ],
-        "reverified_at": "2026-09-04T22:50Z",
-        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch \u2014 Never86 Shop can close feed love into SKU packs. Pass-4: preorder.franklinbbq.com + Shopify store + Goldbelly ship still live. Pass-5: preorder + Shopify + Goldbelly still live. Pass-6: preorder + Shopify + Goldbelly still live. Pass-7: preorder + Shopify + Goldbelly still live. Pass-8/Yelp-12: preorder + Shopify e-gift/Goldbelly cite still live; Yelp 6477 stable.",
+        "reverified_at": "2026-09-04T23:10Z",
+        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch \u2014 Never86 Shop can close feed love into SKU packs. Pass-4: preorder.franklinbbq.com + Shopify store + Goldbelly ship still live. Pass-5: preorder + Shopify + Goldbelly still live. Pass-6: preorder + Shopify + Goldbelly still live. Pass-7: preorder + Shopify + Goldbelly still live. Pass-8/Yelp-12: preorder + Shopify e-gift/Goldbelly cite still live; Yelp 6477 stable. Pass-9/Yelp-13: preorder still live; Yelp 6477 stable.",
         "sources": [
           "https://preorder.franklinbbq.com/",
           "https://shop.franklinbbq.com/",
@@ -47,7 +47,9 @@
           "stack/tool-hunt-findings/2026-09-04-franklin-buy-now-pass5.json",
           "stack/tool-hunt-findings/2026-09-04-franklin-buy-now-pass7.json",
           "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp12.json",
-          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json"
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json",
+          "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp13.json",
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass13.json"
         ]
       }
     },

@@ -23,8 +23,8 @@
           "opentable_reservations",
           "no_first_party_oo_found"
         ],
-        "reverified_at": "2026-09-04T22:50Z",
-        "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close. Pass-5: site hours/contact only (no OO CTA); OpenTable live (Booked 203\u00d7 today). Yelp 10731 reviews. Pass-7: site hours/contact only; OpenTable live \u2014 reservation_skew holds. Pass-8/Yelp-12: chicago hours/contact + OpenTable Make a reservation still live; Yelp 10731 stable.",
+        "reverified_at": "2026-09-04T23:10Z",
+        "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close. Pass-5: site hours/contact only (no OO CTA); OpenTable live (Booked 203\u00d7 today). Yelp 10731 reviews. Pass-7: site hours/contact only; OpenTable live \u2014 reservation_skew holds. Pass-8/Yelp-12: chicago hours/contact + OpenTable Make a reservation still live; Yelp 10731 stable. Pass-9/Yelp-13: chicago hours/contact still live; Yelp 10731 stable.",
         "sources": [
           "https://www.girlandthegoat.com/chicago",
           "https://www.opentable.com/r/girl-and-the-goat-chicago",
@@ -33,7 +33,9 @@
           "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-pass5.json",
           "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-pass7.json",
           "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp12.json",
-          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json"
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json",
+          "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp13.json",
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass13.json"
         ]
       }
     },

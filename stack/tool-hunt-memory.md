@@ -1168,3 +1168,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_5AELl4d2rM0y (~10 min).
 - Ledger v1.92.78. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-13 + PosDO/FoodNearMe + WA CTA)
+
+- Yelp pass-13 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass13.json`.
+- Adopted love rails reconfirm (Franklin preorder; Michaels UberEats+DoorDash leak; G&TG skew; Husk Toast gift; Rioja Flavor Dojo). Finding: `2026-09-04-love-rails-pass-yelp13.json`.
+- Watched **PosDO MCP** + **Food Near Me MCP** Cursor restaurant discovery. Finding: `2026-09-04-posdo-foodnearme-mcp-cursor.json`.
+- Watched OrderViaChat + OrderOnWhats.app WA peers (fee pause). Finding: `2026-09-04-orderviachat-orderonwhats-wa.json`.
+- Reconfirmed Ressto/Ontabee FB CTA (not FBE) + Deonde/Ordering.co GloriaFood EOL Apr 30 2027 — peer_count stays 9. Findings: `2026-09-04-ressto-ontabee-cta-reconfirm-pass2.json`, `2026-09-04-deonde-orderingco-gloriafood-migrate-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_WTy_pya-Ct6E (~10 min).
+- Ledger v1.92.79. Auth still blocked for unlock READY.
+

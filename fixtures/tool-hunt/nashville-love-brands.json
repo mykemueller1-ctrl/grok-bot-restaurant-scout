@@ -25,13 +25,13 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04T22:50Z",
+        "reverified_at": "2026-09-04T23:10Z",
         "website": "http://www.husknashville.com/",
         "rails": [
           "resy_reservations",
           "toast_gift_card"
         ],
-        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) \u2014 Toast/Resy lock-in = webview cliff teach; Shop for social SKUs. Pass-3: Resy + Toast findcard still live; no public Toast OO \u2014 takeout rail dropped. Pass-4: Resy + Toast findcard still live; no Toast OO. Pass-5: Resy + Toast findcard still live; no Toast OO. Pass-6: Resy + Toast findcard still live; no Toast OO. Pass-7/Yelp-12: Toast findcard still live; Yelp 1987 stable.",
+        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) \u2014 Toast/Resy lock-in = webview cliff teach; Shop for social SKUs. Pass-3: Resy + Toast findcard still live; no public Toast OO \u2014 takeout rail dropped. Pass-4: Resy + Toast findcard still live; no Toast OO. Pass-5: Resy + Toast findcard still live; no Toast OO. Pass-6: Resy + Toast findcard still live; no Toast OO. Pass-7/Yelp-12: Toast findcard still live; Yelp 1987 stable. Pass-8/Yelp-13: Toast findcard still live; Yelp 1987 stable.",
         "sources": [
           "http://www.husknashville.com/",
           "https://www.toasttab.com/husk-nashville/findcard",
@@ -40,7 +40,9 @@
           "stack/tool-hunt-findings/2026-09-04-husk-buy-now-pass4.json",
           "stack/tool-hunt-findings/2026-09-04-husk-buy-now-pass6.json",
           "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp12.json",
-          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json"
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass12.json",
+          "stack/tool-hunt-findings/2026-09-04-love-rails-pass-yelp13.json",
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass13.json"
         ]
       }
     },

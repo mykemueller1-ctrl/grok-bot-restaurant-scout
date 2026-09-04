@@ -1,0 +1,20 @@
+{
+  "finding_id": "2026-09-04-posdo-foodnearme-mcp-cursor",
+  "lane": "cursor_agents",
+  "name": "PosDO MCP + Food Near Me MCP Cursor restaurant discovery",
+  "verdict": "watch",
+  "summary": "NEW Cursor/Claude restaurant discovery MCP peers: PosDO (pos.do/mcp — 356K+ restaurants / 20 countries; Apache proxy repo) + Food Near Me (foodnear.me/mcp — menu-indexed search, no API key beta). Sharpens love→buy-now venue discovery; Yelp phone stays Active for pain enrich; auth-first; fee pause.",
+  "researched_at": "2026-09-04T22:02:00.000Z",
+  "sources": [
+    "https://github.com/posdo-io/mcp-server",
+    "https://pos.do/mcp",
+    "https://github.com/food-near-me/platform/blob/main/README.md",
+    "https://foodnear.me/mcp"
+  ],
+  "memory_tags": [
+    "posdo",
+    "foodnearme",
+    "cursor-mcp",
+    "restaurant-discovery"
+  ]
+}

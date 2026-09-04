@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-orderviachat-orderonwhats-wa",
+  "lane": "vertical_gtm",
+  "name": "OrderViaChat + OrderOnWhats.app WA ordering peers",
+  "verdict": "watch",
+  "summary": "Live FETCH: OrderViaChat Mar 2026 WA AI chatbot ordering guide (anti-marketplace commission narrative). OrderOnWhats.app still positions WA storefront + AI chatbot + order mgmt from $13/mo. ChatOrder-class WA messaging-close peers; fee catalog pause — do not dogfood fees.",
+  "researched_at": "2026-09-04T22:02:00.000Z",
+  "sources": [
+    "https://orderviachat.com/blog/whatsapp-ai-chatbot-ordering",
+    "https://orderonwhats.app/"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-ressto-ontabee-cta-reconfirm-pass2",
+  "lane": "vertical_gtm",
+  "name": "Ressto + Ontabee Facebook Order Food CTA reconfirm pass-2",
+  "verdict": "watch",
+  "summary": "Live FETCH: Ressto facebook-ordering still teaches paste Ressto link into Facebook Order Food/Order Now action button (CTA linker, 0% claim). Ontabee facebook-ordering still CTA Order Now path. Not Meta native FBE — do not inflate meta_order_food_peer_count (stays 9).",
+  "researched_at": "2026-09-04T22:02:00.000Z",
+  "sources": [
+    "https://ressto.co/facebook-ordering.shtml",
+    "https://www.ontabee.com/facebook-ordering"
+  ]
+}

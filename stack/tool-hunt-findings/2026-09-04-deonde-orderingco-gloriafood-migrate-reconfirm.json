@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-deonde-orderingco-gloriafood-migrate-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "Deonde + Ordering.co GloriaFood EOL Apr 30 2027 migrate reconfirm",
+  "verdict": "watch",
+  "summary": "Live FETCH: Deonde gloriafood-alternative + Ordering.co best-alternatives-2026 still cite Oracle GloriaFood EOL Apr 30 2027 + closed signups. GloriaFood remains Meta Order Food peer #9 until EOL — migrate wave watch; peer_count stays 9; fee pause.",
+  "researched_at": "2026-09-04T22:02:00.000Z",
+  "sources": [
+    "https://deonde.co/gloriafood-alternative.shtml",
+    "https://www.ordering.co/the-best-gloriafood-alternatives-2026"
+  ]
+}
