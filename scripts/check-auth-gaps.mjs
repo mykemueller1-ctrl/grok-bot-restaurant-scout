@@ -45,6 +45,9 @@ console.log("check-auth-gaps:");
 if (gaps.length === 0) {
   console.log(" - none");
   console.log("STATUS: READY");
+  console.log(
+    "Next: node scripts/mem0-import-tool-hunt-memory.mjs  # once, then weekly"
+  );
 } else {
   for (const g of gaps) console.log(` - ${g}`);
   console.log(

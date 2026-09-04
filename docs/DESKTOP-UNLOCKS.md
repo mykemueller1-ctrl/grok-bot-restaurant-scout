@@ -11,7 +11,8 @@ Project MCP stubs: **`.cursor/mcp.json`** (`mem0` + `context` URLs).
 | Desktop OAuth | Settings → MCP → mem0 → Authenticate (`https://mcp.mem0.ai/mcp`) |
 | Headless / cloud | `MEM0_API_KEY` (`m0-…`) from https://app.mem0.ai/dashboard/api-keys → cloud/Codex secrets |
 
-Verify: `node scripts/mem0-smoke.mjs`
+Verify: `node scripts/mem0-smoke.mjs`  
+After first READY: `node scripts/mem0-import-tool-hunt-memory.mjs` (loads `stack/tool-hunt-memory.md`)
 
 ## 2. Context (required)
 

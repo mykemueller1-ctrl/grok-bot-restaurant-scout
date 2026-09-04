@@ -1,0 +1,32 @@
+{
+  "draft_id": "script-draft-franklin-buy-now-2026-09-04",
+  "status": "PENDING_APPROVAL",
+  "purpose": "Dogfood script-draft skill on Austin cult brand — love→buy-now, not marketplace delivery, not forecasting.",
+  "lead": {
+    "name": "Franklin Barbecue",
+    "market": "Austin, TX",
+    "yelp_alias": "franklin-barbecue-austin",
+    "love_signal": "National cult BBQ / line culture / chef Aaron Franklin — 6.4k+ Yelp reviews",
+    "source_fixture": "fixtures/tool-hunt/austin-love-brands.json"
+  },
+  "script": {
+    "hook_2s": "Close-up of the brisket bark crack as the knife hits — smoke curls, no talking yet.",
+    "proof": "People wait hours for this — Franklin isn't a feed filler, it's a cult kitchen.",
+    "anti_rent": "Skip the delivery-app tax. Shop the pack the kitchen actually wants you to buy — Never86 buy-now / shop in bio.",
+    "price_scarcity": "Limited smoke-day SKU / merch drop — when it's gone, it's gone.",
+    "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
+  },
+  "owner_blurb": "Franklin already owns love. Never86 turns that love into shoppable TikTok/IG buy-now — not DoorDash KEEP losers, not Owner email/SMS OS, not TextOrder/Menami DM chatbots, not Seekadu reservations, not PlateAI reels that never close a sale.",
+  "rival_contrast": [
+    "Owner.com — email/SMS first-party OS",
+    "Menami / TextOrder — DM/SMS conversational order",
+    "Seekadu — reservation DMs",
+    "PlateAI / Flik — content-only",
+    "Klikit — APAC Shop POS middleware"
+  ],
+  "never": [
+    "Do not post without APPROVED",
+    "Do not pitch forecasting"
+  ],
+  "researched_at": "2026-09-04"
+}

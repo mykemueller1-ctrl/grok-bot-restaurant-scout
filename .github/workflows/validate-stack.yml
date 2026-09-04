@@ -78,3 +78,6 @@ jobs:
           test -f fixtures/tool-hunt/austin-love-brands.json
           test -f fixtures/tool-hunt/pain-scan-marketplace-keep.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json
+          test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
+          test -f scripts/mem0-import-tool-hunt-memory.mjs
+          test -f scripts/mem0-smoke.mjs

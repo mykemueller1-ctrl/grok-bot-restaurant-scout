@@ -15,5 +15,7 @@
 4. Save as `ContentDraft` with status PENDING_APPROVAL.
 5. Ping owner for approval. On approve → status APPROVED → hand to commerce engine to create product draft.
 
+**Active dogfood:** `fixtures/tool-hunt/script-draft-franklin-buy-now.json` (Franklin BBQ Austin from Yelp love calibration).
+
 **Never** post or schedule without APPROVED status.
 **Never** optimize scripts for labor/sales forecasting narratives.

@@ -1,5 +1,5 @@
 {
-  "version": "1.11.0",
+  "version": "1.12.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -75,12 +75,14 @@
       "mcp_file": "mcp/mem0.json",
       "status": "needsAuth_or_MEM0_API_KEY",
       "smoke": "scripts/mem0-smoke.mjs",
+      "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
     "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json (KEEP → SalesLead DRAFT)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
+    "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
       "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
@@ -264,6 +266,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Mem0 import of tool-hunt-memory.md",
+      "lane": "memory",
+      "why": "scripts/mem0-import-tool-hunt-memory.mjs ready the moment MEM0_API_KEY lands",
+      "verdict": "needs_auth"
+    },
+    {
+      "item": "Franklin buy-now script-draft dogfood",
+      "lane": "vertical_gtm",
+      "why": "PENDING_APPROVAL ContentDraft fixture sharpens love→buy-now path",
+      "verdict": "adopt"
+    },
     {
       "item": "Pain→SalesLead KEEP end-to-end dogfood",
       "lane": "vertical_gtm",

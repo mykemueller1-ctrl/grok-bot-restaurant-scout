@@ -97,3 +97,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Closed Active loop: marketplace KEEP + $188K quit signal → Yelp/Maps Girl & The Goat enrich → SalesLead DRAFT.
 - Fixture: fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json. Skills sales-lead-form + lead-shop-enrich updated.
 - Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Mem0 import ready + Franklin script)
+
+- Added scripts/mem0-import-tool-hunt-memory.mjs — runs the moment MEM0_API_KEY lands.
+- Dogfood buy-now script: fixtures/tool-hunt/script-draft-franklin-buy-now.json (PENDING_APPROVAL).
+- Auth still blocked (Mem0/Context).
