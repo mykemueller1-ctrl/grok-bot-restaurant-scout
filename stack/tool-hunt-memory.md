@@ -91,3 +91,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted multi-market Yelp morning-scan: fixtures/tool-hunt/austin-love-brands.json (Uchi, Franklin, Intero, Eldorado).
 - Added scripts/run-tool-hunt-week.mjs headless gate (auth + ledger); CI tool-hunt runs it.
 - Auth still blocked (Mem0/Context).
+
+### 2026-09-04 (pain→sales KEEP dogfood)
+
+- Closed Active loop: marketplace KEEP + $188K quit signal → Yelp/Maps Girl & The Goat enrich → SalesLead DRAFT.
+- Fixture: fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json. Skills sales-lead-form + lead-shop-enrich updated.
+- Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

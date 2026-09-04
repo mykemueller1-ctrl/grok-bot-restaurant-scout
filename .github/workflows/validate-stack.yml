@@ -77,3 +77,4 @@ jobs:
           test -f scripts/context-search.mjs
           test -f fixtures/tool-hunt/austin-love-brands.json
           test -f fixtures/tool-hunt/pain-scan-marketplace-keep.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json

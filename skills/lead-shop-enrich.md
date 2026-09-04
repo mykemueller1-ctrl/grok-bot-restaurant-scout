@@ -24,7 +24,8 @@
    - `raw_context`, `opportunity_signals`, `status: NEEDS_TEACH`
 4. Rank by Never86 fit:
    - pain intensity × operator authenticity × reachable × vendor displace potential
-   - Boost when complaint maps to marketplace rent / POS lock-in that Never86 **buy-now** or stack displacement can answer
+   - Boost when complaint maps to marketplace rent / POS lock-in / **KEEP-not-GMV** language that Never86 **buy-now** or stack displacement can answer
    - Do **not** rank on sales/labor forecasting potential
+5. Optional: after teach `keep`, hand off to `sales-lead-form` (see end-to-end dogfood `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json`).
 
 **Done when:** each kept stub is a filled `PainLead` ready for `teach-label`.

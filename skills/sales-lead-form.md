@@ -17,15 +17,18 @@ Fill and save `SalesLead`:
 | `quotes` | raw |
 | `vendors_to_displace` | Toast, DoorDash, etc. |
 | `why_never86_now` | map pain → Never86 wedge (buy-now / social commerce / leave marketplace tax / stack pain) |
-| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner-style OS or content-only AI if useful |
+| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Menami/TextOrder DM+direct-order agents, Seekadu reservations, or content-only AI Reels |
 | `sources` | URLs |
 | `confidence` | score + teach history |
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
 
 Rules:
+- Prefer **KEEP / commission % / quit marketplace** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-to-sales-keep-girl-goat.json`).
 - Draft outreach copy may be suggested; **sending** requires approvals MCP.
 - Same human/venue across pain agents → merge / link, don't spam duplicate leads.
 - Never pitch labor/sales **forecasting** as the Never86 product.
 - Output digest: "N new qualified leads for {pain_id}."
 
 **Done when:** `SalesLead` saved and owner notified.
+
+**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` proves Yelp/Maps/X/SEARCH_WEB → SalesLead DRAFT without Apollo/Mem0.

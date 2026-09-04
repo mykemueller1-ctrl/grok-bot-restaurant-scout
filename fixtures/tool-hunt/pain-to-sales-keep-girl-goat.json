@@ -1,0 +1,87 @@
+{
+  "dogfood_id": "pain-to-sales-keep-girl-goat-2026-09-04",
+  "purpose": "End-to-end Active path: marketplace KEEP pain signals → Yelp/Maps enrich → SalesLead draft (love→buy-now wedge). No Apollo/Mem0/Context required.",
+  "pain_stubs": [
+    {
+      "source": "x",
+      "url": "https://x.com/talk2cc/status/2094864157204152404",
+      "snippet": "Restaurant owners: rank your sales channels by what you KEEP, not what they sell.",
+      "pain_id": "marketplace_rent",
+      "score": 88
+    },
+    {
+      "source": "web",
+      "url": "https://www.gotjelly.com/post/he-paid-188k-in-delivery-app-fees-then-he-quit",
+      "snippet": "Operator paid ~$188K in delivery app fees then quit third-party delivery.",
+      "pain_id": "doordash_commission_quit",
+      "score": 92
+    }
+  ],
+  "pain_lead": {
+    "pain_id": "marketplace_rent",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "phone": "+13124926262",
+      "address": "809 W Randolph St, Chicago, IL 60607",
+      "website": "http://www.girlandthegoat.com/",
+      "rating": 4.4,
+      "maps_service_options": {
+        "delivery": false,
+        "dine_in": true,
+        "takeout": true
+      }
+    },
+    "complaint_summary": "Industry KEEP / quit-marketplace signal (not a personal G&TG complaint). Love-proven chef brand with Maps delivery=false is a buy-now onboard target — own the social commerce channel before rivals (Menami/TextOrder/Owner) do.",
+    "opportunity_signals": [
+      "cult_chef_ugc",
+      "first_party_takeout_present",
+      "marketplace_rent_industry_pain",
+      "shoppable_sku_potential"
+    ],
+    "vendors_mentioned": ["doordash", "uber_eats"],
+    "sources": [
+      "https://x.com/talk2cc/status/2094864157204152404",
+      "https://www.gotjelly.com/post/he-paid-188k-in-delivery-app-fees-then-he-quit",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago",
+      "https://www.girlandthegoat.com/"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "marketplace_rent",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Operators are ranking channels by KEEP (not GMV) and quitting 15–30% marketplace commissions; love brands need a shoppable social rail that is not DoorDash rent and not just email/SMS OS.",
+    "quotes": [
+      "rank your sales channels by what you KEEP, not what they sell",
+      "He Paid $188K in Delivery App Fees. Then He Quit."
+    ],
+    "vendors_to_displace": ["DoorDash", "Uber Eats"],
+    "why_never86_now": "Chef-loved brand + takeout already first-party → Never86 TikTok/IG buy-now closes social demand without marketplace tax; sharper than Owner email/SMS, TextOrder DM chat, or Menami full OS for SKU shoppable close.",
+    "suggested_angle": "Draft only: You already win on love and first-party takeout — Never86 turns that love into shoppable TikTok/IG buy-now so viral demand lands as owned revenue, not delivery-app KEEP losers.",
+    "sources": [
+      "https://x.com/talk2cc/status/2094864157204152404",
+      "https://www.gotjelly.com/post/he-paid-188k-in-delivery-app-fees-then-he-quit",
+      "https://www.dailymail.com/yourmoney/article-15983503/restaurants-ditch-doordash-ubereats-delivery.html"
+    ],
+    "confidence": 72,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — not a live outreach. Sending requires approvals MCP + teach keep."
+  },
+  "tools_used": [
+    "X.search_posts_all",
+    "COMPOSIO_SEARCH_WEB",
+    "YELP_GET_BUSINESS_DETAILS",
+    "COMPOSIO_SEARCH_GOOGLE_MAPS"
+  ],
+  "status": "verified_active",
+  "researched_at": "2026-09-04"
+}
