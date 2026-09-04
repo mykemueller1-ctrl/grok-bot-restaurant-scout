@@ -32,4 +32,4 @@ Rules:
 
 **Done when:** `SalesLead` saved and owner notified.
 
-**Active dogfood:** multi-market KEEP→SalesLead fixtures including `pain-to-sales-keep-grader-rioja.json` + `franklin` + `husk` + `michaels-genuine` prove grader→lead without Apollo/Mem0.
+**Active dogfood:** keep-grader→SalesLead across CHI/ATX/MIA/BNA/DEN (`pain-to-sales-keep-grader-girl-goat` + franklin + michaels-genuine + husk + rioja) without Apollo/Mem0.

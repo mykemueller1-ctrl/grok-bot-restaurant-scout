@@ -19,7 +19,7 @@
 4. Fold into `SalesLead.complaint_thesis` / `suggested_angle`: biggest GMV may be worst KEEP; shift social demand to buy-now; dual-run marketplaces for discovery only.
 5. Contrast vs ChowNow/Chowly/Lunchbox web OS and Owner email/SMS — Never86 owns TikTok/IG shoppable close.
 
-**Fixtures:** `keep-channel-grader-pilot.json` · keep-grader dogfoods for Rioja · Franklin · Husk · Michael's Genuine
+**Fixtures:** keep-grader→SalesLead for all 5 love markets — Girl & Goat · Franklin · Michael's Genuine · Husk · Rioja
 
 **Lib (keep in sync):** `services/pain-leads-api/src/lib/keepChannelGrade.ts`
 

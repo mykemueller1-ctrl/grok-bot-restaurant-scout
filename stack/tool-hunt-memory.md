@@ -227,3 +227,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fourth KEEP grader→SalesLead: pain-to-sales-keep-grader-michaels-genuine.json (gate ≥4).
 - API CI smoke covers per_order_platform_fee.
 - Ledger v1.31.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Eatsy watch + Chicago KEEP grader completes 5 markets)
+
+- Watched Eatsy Orders (bilingual flat-fee 0% commission).
+- Fifth KEEP grader dogfood: pain-to-sales-keep-grader-girl-goat.json — CHI/ATX/MIA/BNA/DEN set complete (gate ≥5).
+- Ledger v1.32.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
