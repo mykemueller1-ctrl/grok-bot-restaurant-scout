@@ -1,5 +1,5 @@
 {
-  "version": "1.92.56",
+  "version": "1.92.57",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -80,7 +80,7 @@
     },
     "pain_sales_dogfood": "multi-market KEEP\u2192SalesLead + keep-grader CHI/ATX/MIA/BNA/DEN (girl-goat/franklin/michaels/husk/rioja)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
-    "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp + buy_now_path pass-2 on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
+    "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp + buy_now_path pass-3 on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "status_printer": "scripts/print-beyond-the-hunt-status.mjs",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Husk + Rioja buy_now_path pass-3 (BNA/DEN)",
+      "lane": "vertical_gtm",
+      "why": "Husk: Resy + Toast gift live; takeout rail dropped (no Toast OO). Rioja: Flavor Dojo + phone still live on riojadenver.com — love calibration holds",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Deliverect + ChatFood Meta Order Food reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Direct Suite help + ChatFood IG Order Food docs still live; ChatFood stays separate peer post-acquisition — peer_count stays 9",
+      "verdict": "adopt"
+    },
     {
       "item": "G&TG reservation_skew + Franklin buy_now pass-3",
       "lane": "vertical_gtm",
@@ -3072,5 +3084,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:20:00Z"
+  "updated_at": "2026-09-04T21:30:00Z"
 }

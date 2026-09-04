@@ -47,7 +47,7 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **BentoBox** (Clover Hospitality) Meta Business Extension → Bento Online Ordering / Catering + Stories Food Orders sticker ([Help Center](https://help.getbento.com/en/articles/412673))
 - **Toast Online Ordering** — Instagram Action Button Order food → select Toast as partner; Stories Food Orders sticker; Facebook Start Order ([Toast Support](https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook))
 - **Flipdish** — Instagram Order Now / Food Orders sticker → Flipdish bounce URL (already in fee catalog for €0.50+%)
-- **Kyte** — Meta Business Extension Order Food on FB/IG + Stories stickers → Kyte online catalog ([Kyte FBE](https://www.kyteapp.com/apps/fbe))
+- **Kyte** — Meta Business Extension Order Food on FB/IG profiles → Kyte online catalog ([Kyte FBE](https://www.kyteapp.com/apps/fbe)). IG Stories Food Orders sticker integration currently unavailable (Help banner) — use FB Start Order / profile Order Food instead; still counts as FBE peer.
 - **Square Online** — Dashboard Channels → Facebook Food Ordering; Order Food buttons + Stories stickers → Square website ([Square Support](https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online))
 - **GloriaFood** — Facebook Start Order / Order Now via smart link ([how-to](https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button) / [facebook-ordering](https://www.gloriafood.com/facebook-ordering)). **Oracle EOL Apr 30, 2027** (new signups closed; no Oracle replacement) — keep as FBE peer #9 until shutdown; Shop migration wedge for restaurants losing free Meta-adjacent OO ([Enacton](https://www.enacton.com/blog/gloriafood-shutting-down/), [Ogent](https://ogent.ai/gloriafood-shutdown)). Finding: `2026-09-04-gloriafood-eol-shop-wedge.json`.
 
@@ -65,7 +65,9 @@ Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_g48XCJfFBuxc) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_pQbzgo-CRhag) — Business/Creator only. Reply `instagram connected` when done.
+
+**Meta FBE reconfirm (2026-09-04):** Deliverect Direct Suite + ChatFood IG Order Food docs still live — peer_count stays **9**. Finding: `2026-09-04-deliverect-chatfood-meta-reconfirm.json`.
 
 ## Still required for Beyond the Hunt READY
 

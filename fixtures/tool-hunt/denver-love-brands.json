@@ -21,14 +21,14 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04T20:20Z",
+        "reverified_at": "2026-09-04T21:05Z",
         "website": "https://www.riojadenver.com/",
         "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
-        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs. Pass-2: carryout page + phone reservations still live.",
+        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs. Pass-3: carryout page + phone reservations still live on riojadenver.com (riorestaurant.com is parked — ignore).",
         "sources": [
           "https://www.riojadenver.com/menus/carryout/",
           "https://www.riojadenver.com/",
-          "stack/tool-hunt-findings/2026-09-04-rioja-buy-now-pass2.json"
+          "stack/tool-hunt-findings/2026-09-04-rioja-buy-now-pass3.json"
         ]
       }
     },

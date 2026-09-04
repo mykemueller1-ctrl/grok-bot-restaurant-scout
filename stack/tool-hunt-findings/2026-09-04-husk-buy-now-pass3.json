@@ -1,0 +1,27 @@
+{
+  "finding_id": "husk-buy-now-pass3-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Husk Nashville buy_now_path pass-3 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 3 (2026-09-04T21:05Z): Yelp still 1,987 / 3.9★ / delivery. Resy venue page live (“Book Your Husk Nashville Reservation Now on Resy”). Toast gift-card findcard live (toasttab.com/husk-nashville/findcard). No public Toast OO / first-party takeout URL found — drop prior `takeout` rail. Rails now: resy_reservations + toast_gift_card. Bio Resy/Toast = linkboo webview cliff teach; Shop closes social SKUs without handoff.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://husknashville.com/",
+    "https://www.toasttab.com/husk-nashville/findcard",
+    "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+    "fixtures/tool-hunt/nashville-love-brands.json"
+  ],
+  "live_yelp": {
+    "review_count": 1987,
+    "rating": 3.9,
+    "phone": "+16152566565",
+    "transactions": ["delivery"]
+  },
+  "rails_confirmed": ["resy_reservations", "toast_gift_card"],
+  "rails_dropped": ["takeout"],
+  "rails_drop_reason": "No live Toast OO or brand-site takeout order URL; only findcard + Resy + PDF menus",
+  "webview_cliff_note": "Toast gift + Resy bio links hit IG Apple Pay / cookie cliffs — Never86 Shop avoids handoff",
+  "tools_used": ["YELP_SEARCH_BUSINESSES", "COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a fee dogfood. Not forecasting. Not claiming Toast Online Ordering."
+}

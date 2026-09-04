@@ -978,3 +978,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted Kyte nuance: IG Stories sticker **unavailable**; FB Order Food still peer — peer_count stays 9. Finding: `2026-09-04-kyte-ig-sticker-unavailable.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_g48XCJfFBuxc (~10 min).
 - Ledger v1.92.56. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Husk/Rioja pass-3 + Deliverect/ChatFood)
+
+- Adopted Husk **buy_now_path** pass-3: Resy + Toast gift live; **dropped `takeout`** (no Toast OO URL). Finding: `2026-09-04-husk-buy-now-pass3.json`.
+- Adopted Rioja **buy_now_path** pass-3: Flavor Dojo + phone still live on **riojadenver.com** (riorestaurant.com is parked — ignore). Finding: `2026-09-04-rioja-buy-now-pass3.json`.
+- Reconfirmed Deliverect Direct Suite + ChatFood IG Order Food docs — peer_count stays 9. Finding: `2026-09-04-deliverect-chatfood-meta-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_pQbzgo-CRhag (~10 min).
+- Ledger v1.92.57. Auth still blocked for unlock READY.

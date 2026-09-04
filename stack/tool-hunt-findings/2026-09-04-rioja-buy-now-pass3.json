@@ -1,0 +1,31 @@
+{
+  "finding_id": "rioja-buy-now-pass3-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Rioja Denver buy_now_path pass-3 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 3 (2026-09-04T21:05Z): Yelp still 2,914 / 4.3★ / pickup. Official site riojadenver.com/menus/carryout/ still Flavor Dojo in-person pickup narrative + phone reservations (303-820-2282). Note: riorestaurant.com is a parked HugeDomains sale — do not cite as Rioja. Completes BNA+DEN pass-3 after ATX/CHI/MIA. Shop closes social demand without bio→webview cliffs.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.riojadenver.com/",
+    "https://www.riojadenver.com/menus/carryout/",
+    "fixtures/tool-hunt/denver-love-brands.json"
+  ],
+  "live_yelp": {
+    "review_count": 2914,
+    "rating": 4.3,
+    "phone": "+13038202282",
+    "transactions": ["pickup"]
+  },
+  "rails_confirmed": ["flavor_dojo_carryout_in_person", "phone_reservations"],
+  "domain_trap": "riorestaurant.com is for sale (HugeDomains) — not the restaurant; always use riojadenver.com",
+  "five_market_pass3": {
+    "ATX": "Franklin preorder/Shopify/Goldbelly",
+    "CHI": "G&TG reservation_skew",
+    "MIA": "Michaels marketplace leak",
+    "BNA": "Husk Resy + Toast gift (no Toast OO)",
+    "DEN": "Rioja Flavor Dojo"
+  },
+  "tools_used": ["YELP_SEARCH_BUSINESSES", "COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a fee dogfood. Not forecasting."
+}

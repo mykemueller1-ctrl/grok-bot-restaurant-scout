@@ -1,0 +1,21 @@
+{
+  "finding_id": "deliverect-chatfood-meta-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Deliverect + ChatFood Meta Order Food path reconfirm",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Live 2026-09-04: Deliverect still official Meta Business Partner for Instagram → POS (integrations/instagram + Direct Suite help article 7979423 for Order Food button + Stories stickers). ChatFood docs still teach IG Order Food button + Food Orders stickers (docs.chatfood.io/4297634); ChatFood remains listed separately after Deliverect acquisition — keep both in FBE peer set. peer_count stays 9. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.deliverect.com/en/integrations/instagram",
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://www.deliverect.com/en/social-media-ordering",
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://www.deliverect.com/en/deliverect-acquires-chatfood"
+  ],
+  "meta_order_food_peer_count": 9,
+  "peers_touched": ["Deliverect", "ChatFood"],
+  "acquisition_note": "ChatFood acquired by Deliverect (2023) but Meta partner docs still list ChatFood separately — do not drop without care",
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting. Does not inflate peer_count. Not Hatch/FBE conflation."
+}
