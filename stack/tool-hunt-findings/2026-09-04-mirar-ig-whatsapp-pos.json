@@ -1,0 +1,20 @@
+{
+  "finding_id": "mirar-ig-whatsapp-pos-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Mirar AI — IG/WhatsApp/Messenger DM → POS (0% commission)",
+  "vendor_or_project": "Mirar AI",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "mirar.ai primary: conversational commerce for multi-location hospitality — Instagram, WhatsApp, Messenger DMs become commission-free orders that flow to POS. Anti-marketplace 30% framing. DirectOrders/Ordr/TextOrder-adjacent social intake. Watch only — Never86 wedge stays in-app Shop buy-now.",
+  "what_it_does": "AI takes menu/Q&A/payment/pickup-delivery in IG/WA/Messenger DMs and pushes orders to POS.",
+  "gap": "GTM skills should name Mirar beside DirectOrders/Ordr/TextOrder/FOSA when checking DM-order rivals.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.mirar.ai/",
+    "https://www.linkedin.com/company/mirar-ai"
+  ],
+  "never86_wedge": "in-app Shop buy-now vs DM chat funnel",
+  "not_this": "Not a fee dogfood. Not Meta FBE peer. Not forecasting."
+}

@@ -1,0 +1,20 @@
+{
+  "finding_id": "feedgrid-shoppable-feeds-checkit-peer-2026-09",
+  "lane": "vertical_gtm",
+  "name": "FeedGrid — Shopify shoppable IG/TikTok feeds (CheckIt peer)",
+  "vendor_or_project": "FeedGrid",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "feedgrid.app + Shopify App Store: free forever shoppable Instagram/TikTok storefront widgets with product tags (Grid/Collage/Highlight/Slider). CheckIt-class peer for love→Shopify merch path (Franklin-style). Watch only — not Shop-native TikTok checkout.",
+  "what_it_does": "Embeds shoppable IG/TikTok feeds on Shopify Online Store 2.0 themes.",
+  "gap": "Name FeedGrid beside CheckIt when brand already has Shopify merch rails.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://feedgrid.app/",
+    "https://apps.shopify.com/feedgrid"
+  ],
+  "never86_wedge": "Shop buy-now vs site-embedded shoppable UGC",
+  "not_this": "Not a fee dogfood. Not forecasting."
+}

@@ -851,3 +851,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Re-cited link.boo/for/restaurants (Toast/Resy/Tock + delivery deep-link cliffs). Finding: `2026-09-04-linkboo-restaurants-primary.json`.
 - Taught NullMark beside linkboo in morning-scan / sales-lead / rival-watch / frontier-scan + social unlocks.
 - Instagram reconnect: `lk_Nkytnvh45r-q` (~10 min). Ledger v1.92.38. Auth still blocked.
+
+### 2026-09-04 (Mirar + Palmate/DMHub + FeedGrid)
+
+- Watched Mirar AI IG/WA/Messenger → POS 0% commission (DirectOrders-class). Finding: `2026-09-04-mirar-ig-whatsapp-pos.json`.
+- Watched Palmate + DMHub WhatsApp/IG order+reservation assistants. Finding: `2026-09-04-palmate-dmhub-chat-order.json`.
+- Watched FeedGrid free Shopify shoppable IG/TikTok feeds (CheckIt peer). Finding: `2026-09-04-feedgrid-shoppable-feeds.json`.
+- Taught into GTM skills + social unlocks. Ledger v1.92.39. Auth still blocked.

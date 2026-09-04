@@ -1,0 +1,20 @@
+{
+  "finding_id": "palmate-dmhub-whatsapp-ig-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Palmate AI + DMHub — WhatsApp/IG order + reservation assistants",
+  "vendor_or_project": "Palmate AI / DMHub",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Palmate: 24/7 WhatsApp + Instagram AI ordering/reservations (menu Q&A, book tables). DMHub: WhatsApp AI host for reservations, menu Q&A, takeout ($79/$149 mo). Adjacent to Seekadu/DirectOrders messaging close. Watch only.",
+  "what_it_does": "Chat AI assistants that take orders and reservations on WhatsApp/Instagram.",
+  "gap": "Name beside Seekadu reservation DMs + TextOrder/Ordr messaging peers in GTM skills.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://palmate.ai/solutions/ai-ordering-assistant-for-restaurants-cafes",
+    "https://www.dmhub.ai/restaurant"
+  ],
+  "never86_wedge": "in-app Shop buy-now vs chat reservation/order funnel",
+  "not_this": "Not a fee dogfood. Not Meta FBE peer. Not forecasting."
+}

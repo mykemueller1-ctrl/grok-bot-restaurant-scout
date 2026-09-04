@@ -1,5 +1,5 @@
 {
-  "version": "1.92.38",
+  "version": "1.92.39",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -555,6 +555,29 @@
       "sources": [
         "https://nullmark.tech/guides/apple-pay-in-app-browser",
         "https://nullmark.tech/fix/instagram-payment-not-working"
+      ]
+    },
+    {
+      "name": "Mirar",
+      "lane": "vertical_gtm",
+      "stack": "IG / WhatsApp / Messenger DM conversational commerce \u2192 POS; zero marketplace commission claim",
+      "memory": "n/a (messaging OO)",
+      "edge": "DirectOrders/Ordr-class social intake; Never86 Shop buy-now vs DM funnel \u2014 watch only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.mirar.ai/"
+      ]
+    },
+    {
+      "name": "FeedGrid",
+      "lane": "vertical_gtm",
+      "stack": "Free Shopify app: shoppable Instagram + TikTok feed widgets with product tags",
+      "memory": "n/a (Shopify widget)",
+      "edge": "CheckIt peer for love\u2192Shopify merch path \u2014 watch only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://feedgrid.app/",
+        "https://apps.shopify.com/feedgrid"
       ]
     },
     {
@@ -1257,6 +1280,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Mirar AI IG/WhatsApp/Messenger \u2192 POS (0% commission)",
+      "lane": "vertical_gtm",
+      "why": "mirar.ai primary: DM conversational commerce to POS vs marketplace 30% \u2014 DirectOrders/Ordr adjacent; Shop wedge",
+      "verdict": "watch"
+    },
+    {
+      "item": "Palmate + DMHub WhatsApp/IG order+reservation assistants",
+      "lane": "vertical_gtm",
+      "why": "Chat AI order/reserve peers (Seekadu/TextOrder adjacent) \u2014 watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "FeedGrid Shopify shoppable IG/TikTok feeds (CheckIt peer)",
+      "lane": "vertical_gtm",
+      "why": "Free shoppable social feed widgets on Shopify \u2014 love\u2192merch path peer to CheckIt",
+      "verdict": "watch"
+    },
+    {
+      "item": "GTM skills teach Mirar/Palmate/DMHub/FeedGrid",
+      "lane": "skills_knowledge",
+      "why": "morning-scan / sales-lead / rival-watch / frontier-scan + social unlocks name new DM + shoppable-feed peers",
+      "verdict": "adopt"
+    },
     {
       "item": "NullMark Instagram/TikTok IAB escape (Apple Pay)",
       "lane": "vertical_gtm",

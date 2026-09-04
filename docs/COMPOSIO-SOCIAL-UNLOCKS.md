@@ -55,7 +55,7 @@ Also watch Meta-adjacent **CTA linkers** (Order Food / Start Order → own menu 
 
 FBE peer set reconfirmed at **9** (2026-09-04) — finding `2026-09-04-meta-fbe-peer-set-reconfirm.json`.
 
-Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)), and **FOSA** Facebook Messenger ordering ([getfosa.ai](https://www.getfosa.ai/facebook-for-restaurant-marketing-and-ordering)) — adjacent social intake, not Meta FBE peers.
+Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, **Mirar** IG/WhatsApp/Messenger → POS (0% commission) ([mirar.ai](https://www.mirar.ai/)), **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)), **FOSA** Facebook Messenger ordering ([getfosa.ai](https://www.getfosa.ai/facebook-for-restaurant-marketing-and-ordering)), and **Palmate** / **DMHub** WhatsApp/IG order+reservation assistants — adjacent social intake, not Meta FBE peers.
 
 **Not Meta Order Food:** **Menusso** is a branded restaurant app / 0% commission OS ([menusso.com/us](https://menusso.com/us/)) — watch separately; do not inflate `meta_order_food_peer_count`.
 
