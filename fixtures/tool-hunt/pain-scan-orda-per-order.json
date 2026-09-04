@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Orda Starter $59/mo + $0.25 commission fee Square OO KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.getorda.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "orda_oo",
+      "snippet": "Orda Starter $59/mo plus $0.25 commission fee per order under Square branded OO \u2014 KEEP leak vs DoorDash Marketplace 25%; dual-run discovery then Never86 buy-now",
+      "pain_id": "orda_per_order_commission_fee",
+      "score": 100,
+      "never86_angle": "Square app OO with $0.25/order commission fee still taxes KEEP \u2014 Never86 social buy-now (Shop ~6%) avoids aggregator skim + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: getorda.com/pricing (primary). Composio/Bright Data flaky this turn. Skip forecasting. Not expanding swarm imports."
+}

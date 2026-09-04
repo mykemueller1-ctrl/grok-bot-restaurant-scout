@@ -424,3 +424,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Promoted GoTab: pain-scan-gotab-guest-fee.json (FAQ $0.25 + mobile CNP often 1%+$0.25) → strong_keep 30.
 - Added pain-to-sales-gotab-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-gotab-fee-dogfood ≥5.
 - Watched Per Diem per-order claims (not confirmed on tryperdiem.com/pricing). Ledger v1.62.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Orda $0.25/order commission SalesLead)
+
+- Widened per_order_platform_fee for “$0.25 commission fee” language; pain-scan-orda-per-order.json → strong_keep 31.
+- Added pain-to-sales-orda-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-orda-fee-dogfood ≥5.
+- Watched Upserve/U-Series 2.99% OO service fee. Ledger v1.63.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

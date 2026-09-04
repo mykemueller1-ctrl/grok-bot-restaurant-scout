@@ -153,6 +153,7 @@ jobs:
           test -f scripts/validate-outbites-fee-dogfood.mjs
           test -f scripts/validate-tabski-fee-dogfood.mjs
           test -f scripts/validate-gotab-fee-dogfood.mjs
+          test -f scripts/validate-orda-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
@@ -175,6 +176,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-outbites-per-order.json
           test -f fixtures/tool-hunt/pain-scan-tabski-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-gotab-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-orda-per-order.json
           test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
           test -f fixtures/tool-hunt/pain-scan-doordash-online-ordering.json
           test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
@@ -251,6 +253,11 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-rioja.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -263,6 +270,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'UpMenu Basic overage $1.90 per order after 75 orders — KEEP leak' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Outbites is $1 per fulfilled order platform fee — KEEP leak' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Orda Starter $59/mo plus $0.25 commission fee per order — KEEP leak' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Owner.com Flex $249/month plus 5% restaurant fee per order — guests see 5% order support fee' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'DoorDash Online Ordering is 0% commission on direct orders — Marketplace still 25%' | grep -q marketplace_direct_zero
@@ -271,7 +279,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 30'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 31'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
@@ -289,6 +297,7 @@ jobs:
           node scripts/validate-outbites-fee-dogfood.mjs | grep -q '"outbites_fee_dogfoods": 5'
           node scripts/validate-tabski-fee-dogfood.mjs | grep -q '"tabski_fee_dogfoods": 5'
           node scripts/validate-gotab-fee-dogfood.mjs | grep -q '"gotab_fee_dogfoods": 5'
+          node scripts/validate-orda-fee-dogfood.mjs | grep -q '"orda_fee_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
