@@ -22,7 +22,8 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `docs/OPERATOR.md` | Operator playbook |
 | `docs/CODEX-CLOUD.md` | GitHub ↔ Codex Cloud connect steps |
 | `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
-| `docs/TOOL-HUNT.md` | Continuous AI tooling research loop |
+| `docs/TOOL-HUNT.md` | Continuous best-in-vertical tooling research |
+| `docs/DESKTOP-UNLOCKS.md` | Mem0/Context/Automation/Composio clicks |
 
 ## Build / validate
 

@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
+  "version": "1.2.0",
+  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
     "pain_to_sales_lead",
@@ -16,10 +16,13 @@
   "last_brief": "2026-09-04",
   "owner": "mykemueller1-ctrl",
   "ours": {
-    "vertical_wedge": "Chef-loved / UGC-proven kitchens → Never86 TikTok/IG buy-now; vendor-pain shoppers → taught sales leads",
+    "vertical_wedge": "Chef-loved / UGC-proven kitchens \u2192 Never86 TikTok/IG buy-now; vendor-pain shoppers \u2192 taught sales leads",
     "ide_agents": {
       "primary": "Cursor Cloud Agents + desktop Cursor",
-      "also": ["Grok Bot desktop (swarm import)", "Codex Cloud (GitHub-connected)"],
+      "also": [
+        "Grok Bot desktop (swarm import)",
+        "Codex Cloud (GitHub-connected)"
+      ],
       "automations": "Cursor Automations + memories preferred; cloud timer beyond-the-hunt-weekly until Automation exists",
       "notes": "Repo agents under agent/; cloud agents own wiring per AGENTS.md"
     },
@@ -34,9 +37,13 @@
     "skills_knowledge": {
       "project_skills": "skills/*.md including tool-hunt + GTM skills",
       "agents_md": "AGENTS.md",
-      "operator_docs": ["docs/OPERATOR.md", "docs/TOOL-HUNT.md", "docs/CLOUDFLARE.md"],
+      "operator_docs": [
+        "docs/OPERATOR.md",
+        "docs/TOOL-HUNT.md",
+        "docs/CLOUDFLARE.md"
+      ],
       "posthog_skills": "PostHog MCP skills store",
-      "personal_skills_sync": "desktop: Settings → Agents → Sync Skills for Cloud Agents"
+      "personal_skills_sync": "desktop: Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents"
     },
     "mcp_live": [
       "Bright Data",
@@ -59,37 +66,45 @@
       "complaint-sources",
       "approvals",
       "social-connector"
-    ]
+    ],
+    "research_fallback": "Composio COMPOSIO_SEARCH_WEB (Active) when Bright Data/Context unavailable",
+    "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)"
   },
   "competitors": [
     {
       "name": "Owner.com",
       "lane": "vertical_gtm",
-      "stack": "AI agents for direct ordering + marketing to replace DoorDash tech rent; flat-rate positioning",
+      "stack": "AI-native discovery + first-party ordering + CRM + automated marketing agents; $240M Series D (Goldman, Aug 2026)",
       "memory": "Vendor-managed marketing/content agents",
-      "edge": "Capitalized direct-order + AI marketing for independents; threatens marketplace rent narrative we also fight",
+      "edge": "Capitalized anti-DoorDash OS; first-party channels over TikTok Shop-first",
       "updated": "2026-09-04",
       "sources": [
-        "https://memeburn.com/owner-just-raised-240m-to-prove-ai-can-kill-the-doordash-model/"
+        "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html",
+        "https://www.owner.com/",
+        "https://www.owner.com/automatic-marketing"
       ]
     },
     {
       "name": "Trenz",
       "lane": "vertical_gtm",
-      "stack": "Multi-agent social commerce (research → creative → publish → shop → ads); TikTok Shop partner narrative",
+      "stack": "Multi-agent social commerce (research \u2192 creative \u2192 publish \u2192 shop \u2192 ads); TikTok Shop partner narrative",
       "memory": "Agent team state across research/creative/ops",
-      "edge": "End-to-end shoppable content + TikTok Shop ops — overlaps our buy-now script path",
+      "edge": "End-to-end shoppable content + TikTok Shop ops \u2014 overlaps our buy-now script path",
       "updated": "2026-09-04",
-      "sources": ["https://www.trenz.ai/"]
+      "sources": [
+        "https://www.trenz.ai/"
+      ]
     },
     {
       "name": "Restomas",
       "lane": "vertical_gtm",
-      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp — approve then execute",
+      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp \u2014 approve then execute",
       "memory": "Platform-native agent memory",
       "edge": "Full guest-facing + marketing agent suite in one subscription",
       "updated": "2026-09-04",
-      "sources": ["https://www.restomas.com/en/agentic-ai"]
+      "sources": [
+        "https://www.restomas.com/en/agentic-ai"
+      ]
     },
     {
       "name": "Feedia",
@@ -98,7 +113,9 @@
       "memory": "Hybrid merchant knowledge base",
       "edge": "Culture/language-aware social agents for small restaurants",
       "updated": "2026-09-04",
-      "sources": ["https://feedia.ai/"]
+      "sources": [
+        "https://feedia.ai/"
+      ]
     },
     {
       "name": "BrandPal",
@@ -107,16 +124,20 @@
       "memory": "Fine-tuned brand agents on proprietary data",
       "edge": "Official TikTok Shop Academy learning-partner narrative + creator outreach agents",
       "updated": "2026-09-04",
-      "sources": ["https://www.brandpal.ai/"]
+      "sources": [
+        "https://www.brandpal.ai/"
+      ]
     },
     {
       "name": "CreatOK",
       "lane": "vertical_gtm",
       "stack": "TikTok Shop video generate/clone/publish via official API",
       "memory": "Prompt cloning from winning videos",
-      "edge": "High-volume shoppable video production — compare to our script-draft skill",
+      "edge": "High-volume shoppable video production \u2014 compare to our script-draft skill",
       "updated": "2026-09-04",
-      "sources": ["https://www.creatok.ai/"]
+      "sources": [
+        "https://www.creatok.ai/"
+      ]
     },
     {
       "name": "Straunt",
@@ -125,7 +146,9 @@
       "memory": "Campaign + guest data agents",
       "edge": "Broad operator OS; watch GTM/campaign agents only (not forecasting)",
       "updated": "2026-09-04",
-      "sources": ["https://www.straunt.ai/"]
+      "sources": [
+        "https://www.straunt.ai/"
+      ]
     },
     {
       "name": "Zayos / Zay-OS",
@@ -134,14 +157,16 @@
       "memory": "Ask Zay CRM assistant",
       "edge": "Same anti-marketplace thesis; grader is a sharp inbound wedge",
       "updated": "2026-09-04",
-      "sources": ["https://www.zayrev.com/zayos"]
+      "sources": [
+        "https://www.zayrev.com/zayos"
+      ]
     },
     {
       "name": "Cursor-native shops",
       "lane": "competitor_stacks",
       "stack": "Cursor IDE + Cloud Agents + Automations + Skills + MCP",
       "memory": "Automation memories; optional Mem0",
-      "edge": "Same build surface — race is vertical skills depth",
+      "edge": "Same build surface \u2014 race is vertical skills depth",
       "updated": "2026-09-04",
       "sources": [
         "https://cursor.com/docs/cloud-agent/automations",
@@ -153,18 +178,36 @@
       "lane": "competitor_stacks",
       "stack": "Claude Code CLI (+ optional Cursor)",
       "memory": "CLAUDE.md / Mem0 / Letta patterns",
-      "edge": "Terminal autonomy for heavy refactors — watch only",
+      "edge": "Terminal autonomy for heavy refactors \u2014 watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.thecodew.com/2026/08/ai-coding-assistants-compared.html"
+      ]
+    },
+    {
+      "name": "PlateAI / Flik AI",
+      "lane": "vertical_gtm",
+      "stack": "AI dish photo/video/Reels generators for menus and social",
+      "memory": "n/a (content gen)",
+      "edge": "Cheap menu/social media assets \u2014 not shoppable commerce close",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://getplateai.com/",
+        "https://www.flikai.com/restaurants"
       ]
     }
   ],
   "watchlist": [
     {
+      "item": "Composio SEARCH_WEB research path",
+      "lane": "mcp_connectors",
+      "why": "Active fallback when Bright Data/Context unavailable",
+      "verdict": "adopt"
+    },
+    {
       "item": "Desktop auth: Mem0 + Context.dev",
       "lane": "memory",
-      "why": "Cloud cannot run interactive mcp_auth — blocks durable memory + research redundancy",
+      "why": "Cloud cannot run interactive mcp_auth \u2014 blocks durable memory + research redundancy",
       "verdict": "needs_auth"
     },
     {
@@ -194,13 +237,13 @@
     {
       "item": "Zayos Restaurant Grader inbound wedge",
       "lane": "vertical_gtm",
-      "why": "Free diagnostic → OS conversion; pattern we may copy for pain/onboarding",
+      "why": "Free diagnostic \u2192 OS conversion; pattern we may copy for pain/onboarding",
       "verdict": "pilot"
     },
     {
       "item": "Zep/Graphiti / Letta",
       "lane": "memory",
-      "why": "Only if teach_memory quality plateaus — not a forecasting play",
+      "why": "Only if teach_memory quality plateaus \u2014 not a forecasting play",
       "verdict": "watch"
     }
   ],
@@ -208,7 +251,7 @@
     {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context need Cursor desktop authentication (cloud mcp_auth unavailable)",
-      "action": "In Cursor desktop: authenticate Mem0 and Context MCP; never paste tokens in chat",
+      "action": "See docs/DESKTOP-UNLOCKS.md \u2014 authenticate Mem0 and Context in desktop MCP settings",
       "priority": 1
     },
     {
@@ -220,13 +263,31 @@
     {
       "id": "skills-sync",
       "gap": "Confirm Sync Skills for Cloud Agents",
-      "action": "Desktop Settings → Agents → Sync Skills for Cloud Agents = on",
+      "action": "Desktop Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents = on",
       "priority": 2
     },
     {
       "id": "vertical-grader-wedge",
       "gap": "Rivals ship free graders / diagnostics; we shop pain but lack a public self-serve wedge",
-      "action": "Pilot a Never86 fit/grader concept after teach quality is stable — do not expand import waves early",
+      "action": "Pilot a Never86 fit/grader concept after teach quality is stable \u2014 do not expand import waves early",
+      "priority": 3
+    },
+    {
+      "id": "composio-instagram",
+      "gap": "Instagram Composio connection initiated but not Active",
+      "action": "Open the latest Connect Instagram link from the agent brief (expires ~10 min) or re-request",
+      "priority": 2
+    },
+    {
+      "id": "composio-tiktok-auth-config",
+      "gap": "TikTok Composio needs org auth-config before connect",
+      "action": "https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true then reconnect",
+      "priority": 3
+    },
+    {
+      "id": "apollo-clay-auth",
+      "gap": "Apollo + Clay MCP needsAuth \u2014 blocks pain\u2192sales enrichment at scale",
+      "action": "Authenticate Apollo and/or Clay in Cursor desktop when ready to enrich leads",
       "priority": 3
     }
   ],

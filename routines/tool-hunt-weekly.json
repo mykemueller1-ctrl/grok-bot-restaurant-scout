@@ -6,8 +6,9 @@
   "agent": "agent/tool-hunt/beyond-the-hunt.json",
   "steps": [
     { "skill": "tool-frontier-scan" },
+    { "skill": "vertical-rival-watch", "depends_on": "tool-frontier-scan" },
     { "skill": "memory-skills-audit", "depends_on": "tool-frontier-scan" },
-    { "skill": "stack-vs-competitors", "depends_on": "tool-frontier-scan" },
+    { "skill": "stack-vs-competitors", "depends_on": ["tool-frontier-scan", "vertical-rival-watch"] },
     { "skill": "tool-hunt-brief", "depends_on": ["memory-skills-audit", "stack-vs-competitors"] }
   ],
   "notify": {

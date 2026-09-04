@@ -75,7 +75,13 @@ if (existsSync(findingsDir)) {
 const routine = loadJson(routinePath);
 if (routine.name !== "tool-hunt-weekly") fail("routine name mismatch");
 const skills = (routine.steps || []).map((s) => s.skill).filter(Boolean);
-for (const skill of ["tool-frontier-scan", "memory-skills-audit", "stack-vs-competitors", "tool-hunt-brief"]) {
+for (const skill of [
+  "tool-frontier-scan",
+  "vertical-rival-watch",
+  "memory-skills-audit",
+  "stack-vs-competitors",
+  "tool-hunt-brief",
+]) {
   if (!skills.includes(skill)) fail(`routine missing skill ${skill}`);
   const skillPath = join(root, "skills", `${skill}.md`);
   if (!existsSync(skillPath)) fail(`missing skills/${skill}.md`);

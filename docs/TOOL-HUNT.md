@@ -34,24 +34,22 @@ Vertical AI moves weekly. Guessing loses. This loop:
 | --- | --- |
 | `agent/tool-hunt/beyond-the-hunt.json` | Scout agent |
 | `skills/tool-frontier-scan.md` | Research pass |
+| `skills/vertical-rival-watch.md` | Vertical competitor watch |
 | `skills/memory-skills-audit.md` | Memory + skills inventory |
 | `skills/stack-vs-competitors.md` | Us vs them matrix |
 | `skills/tool-hunt-brief.md` | Operator brief |
 | `stack/tooling-ledger.json` | Canonical stack + competitors + gaps |
+| `stack/tool-hunt-memory.md` | Git-backed hunt memory until Mem0/Automations |
 | `stack/tool-hunt-findings/` | Dated `ToolFinding` JSON |
+| `docs/DESKTOP-UNLOCKS.md` | Auth clicks cloud agents cannot do |
 | `schemas/tool-finding.json` | Finding schema |
 | `routines/tool-hunt-weekly.json` | Monday 09:00 America/Chicago |
 
 ## Desktop unlocks (cloud agents cannot click these)
 
-Do once in **Cursor desktop IDE** (Settings → MCP / Agents):
+Full checklist: **`docs/DESKTOP-UNLOCKS.md`**.
 
-1. **Authenticate Mem0** — durable cross-session memory
-2. **Authenticate Context.dev** — research redundancy when Bright Data flakes
-3. **Sync Skills for Cloud Agents** — Settings → Agents → on
-4. **Create Automation** at [cursor.com/automations](https://cursor.com/automations) with **memories on**, prompt from `routines/tool-hunt-weekly.json` → `cursor_automation.prompt_hint`
-
-Until then, a cloud **timer** (`beyond-the-hunt-weekly`) keeps the Monday scan alive.
+Until Mem0/Automations are live, use `stack/tool-hunt-memory.md` + the cloud **timer** (`beyond-the-hunt-weekly`).
 
 ## Agent loop
 
