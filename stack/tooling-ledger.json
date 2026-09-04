@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -68,7 +68,9 @@
       "social-connector"
     ],
     "research_fallback": "Composio COMPOSIO_SEARCH_WEB (Active) when Bright Data/Context unavailable",
-    "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)"
+    "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)",
+    "pain_sales_enrich": "Composio Yelp + Google Maps + SEARCH_WEB (Active) \u2014 Apollo/Clay optional",
+    "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts"
   },
   "competitors": [
     {
@@ -199,6 +201,12 @@
   ],
   "watchlist": [
     {
+      "item": "Yelp + Maps public enrich for pain\u2192sales",
+      "lane": "vertical_gtm",
+      "why": "Active Composio path; adopted into lead-shop-enrich",
+      "verdict": "adopt"
+    },
+    {
       "item": "Composio SEARCH_WEB research path",
       "lane": "mcp_connectors",
       "why": "Active fallback when Bright Data/Context unavailable",
@@ -286,8 +294,14 @@
     },
     {
       "id": "apollo-clay-auth",
-      "gap": "Apollo + Clay MCP needsAuth \u2014 blocks pain\u2192sales enrichment at scale",
+      "gap": "Apollo + Clay optional \u2014 public Yelp/Maps enrich already adopted",
       "action": "Authenticate Apollo and/or Clay in Cursor desktop when ready to enrich leads",
+      "priority": 4
+    },
+    {
+      "id": "pinecone-api-key",
+      "gap": "Pinecone MCP lacks PINECONE_API_KEY \u2014 cannot store vertical knowledge vectors yet",
+      "action": "Add PINECONE_API_KEY to Cursor MCP config (https://app.pinecone.io); never paste in chat",
       "priority": 3
     }
   ],

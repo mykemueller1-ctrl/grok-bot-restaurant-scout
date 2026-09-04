@@ -32,9 +32,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 ## Log
 
-### 2026-09-04
+### 2026-09-04 (later)
 
-- Scope locked: no forecasting research.
-- Composio search adopted for vertical SERP; Bright Data still 401 in this env.
-- Instagram Composio connection initiated for never86 alias.
-- Goal remains open until desktop auth gaps close.
+- Adopted Yelp + Google Maps + COMPOSIO_SEARCH_WEB into `lead-shop-enrich` for public venue contacts (Apollo/Clay no longer block pain→sales).
+- Pinecone MCP present but `PINECONE_API_KEY` unset — optional vector memory; document in DESKTOP-UNLOCKS.
+- Mem0 + Context still needsAuth (desktop-only).
+- Fresh Instagram Composio connect link issued (10 min TTL).
+- Midweek vertical-rival timer added.
