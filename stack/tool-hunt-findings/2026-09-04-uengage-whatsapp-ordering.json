@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-uengage-whatsapp-ordering",
+  "lane": "vertical_gtm",
+  "name": "uEngage WhatsApp Ordering",
+  "verdict": "watch",
+  "summary": "uEngage Edge WhatsApp Ordering: browse/order/pay in WhatsApp, live in 48h, less commissions / full customer data claim — ChatOrder/Yumzip-class WA commerce rival. Fee pause; not Meta FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-uengage-whatsapp-ordering",
+  "source_urls": [
+    "https://www.uengage.io/edge/whatsapp-ordering"
+  ],
+  "memory_tags": [
+    "uengage",
+    "whatsapp",
+    "new-rival",
+    "fee-pause"
+  ]
+}

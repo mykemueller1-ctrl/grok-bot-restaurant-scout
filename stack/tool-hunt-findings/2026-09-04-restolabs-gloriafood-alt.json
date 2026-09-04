@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-restolabs-gloriafood-alt",
+  "lane": "vertical_gtm",
+  "name": "Restolabs GloriaFood alternative (Jun 2026)",
+  "verdict": "watch",
+  "summary": "Restolabs blog (updated Jun 3 2026) pitches commission-free direct OO + guided GloriaFood migration; cites Oracle GloriaFood retirement Apr 30 2027. Watch as GloriaFood successor peer; fee pause; not Meta FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-restolabs-gloriafood-alt",
+  "source_urls": [
+    "https://www.restolabs.com/blog/restolabs-the-best-gloriafood-alternative-for-restaurants-in-2026"
+  ],
+  "memory_tags": [
+    "restolabs",
+    "gloriafood-successor",
+    "eol-2027-04-30",
+    "fee-pause"
+  ]
+}

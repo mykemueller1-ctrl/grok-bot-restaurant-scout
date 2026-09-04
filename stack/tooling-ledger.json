@@ -1,5 +1,5 @@
 {
-  "version": "1.92.69",
+  "version": "1.92.70",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp love pass-7 (G&TG 10731 / Rioja 2914) + Ordering.co GloriaFood 2026",
+      "lane": "vertical_gtm",
+      "why": "Pass-7: G&TG -1 to 10731, Rioja -1 to 2914; Franklin/Michaels/Husk stable. Ordering.co alternatives page still cites EOL Apr 30 2027 — peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Restolabs + Hyperzod + Deonde GloriaFood successor wave",
+      "lane": "vertical_gtm",
+      "why": "Restolabs Jun 2026 migrate blog + Hyperzod gloriafoodalternative.com + Deonde May comparison all cite Apr 30 2027 — fee pause; not FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "uEngage + RevYoMe WhatsApp ordering",
+      "lane": "vertical_gtm",
+      "why": "NEW WA commerce peers (uEngage Edge + RevYoMe QR to WA 0% claim) — ChatOrder/Yumzip/Savera class; fee pause; not FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "B2B Enrichment MCP + dylanottinger GTM MCP",
+      "lane": "cursor_agents",
+      "why": "Hunter+Apollo MCP + HubSpot/Clay/Apollo GTM MCP — Cursor skills peers; Yelp phone stays Active; auth-first",
+      "verdict": "watch"
+    },
     {
       "item": "BentoBox Meta Help 412673 + Hatch BI + Dashboardly 6% + Square AI reconfirm",
       "lane": "vertical_gtm",
@@ -3270,5 +3294,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:28:35Z"
+  "updated_at": "2026-09-04T21:32:08Z"
 }

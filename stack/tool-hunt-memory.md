@@ -1078,3 +1078,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted reconfirms: Square ChatGPT/Claude ordering, Dashboardly TikTok Shop ~6%, Meta Hatch BI (Shop rival, not FBE). Findings: `2026-09-04-square-ai-channel-reconfirm.json`, `2026-09-04-dashboardly-tiktok-shop-6pct-reconfirm.json`, `2026-09-04-meta-hatch-bi-order-book-reconfirm.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_rv_eJnojQ9eR (~10 min).
 - Ledger v1.92.69. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp pass-7 + Restolabs/uEngage/RevYoMe + Cursor GTM MCPs)
+
+- Yelp pass-7: G&TG **10731** (−1), Rioja **2914** (−1); Franklin 6477 / Michaels 2084 / Husk 1987 stable. Finding: `2026-09-04-yelp-5market-pass7.json`.
+- Watched **Restolabs** + **Hyperzod** gloriafoodalternative.com + **Deonde** comparison — GloriaFood EOL Apr 30 2027. Findings: `2026-09-04-restolabs-gloriafood-alt.json`, `2026-09-04-hyperzod-gloriafood-alt-site.json`, `2026-09-04-deonde-gloriafood-comparison-reconfirm.json`.
+- Adopted Ordering.co GloriaFood alternatives 2026 reconfirm. Finding: `2026-09-04-ordering-co-gloriafood-2026-reconfirm.json`.
+- Watched **uEngage** WA ordering + **RevYoMe** QR→WA 0%. Findings: `2026-09-04-uengage-whatsapp-ordering.json`, `2026-09-04-revyome-whatsapp-qr.json`.
+- Watched **B2B Enrichment MCP** + **dylanottinger/gtm-mcp-server**. Findings: `2026-09-04-b2b-enrichment-mcp-cursor.json`, `2026-09-04-gtm-mcp-server-dylan.json`.
+- Ledger v1.92.70. Auth still blocked for unlock READY.

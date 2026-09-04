@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-b2b-enrichment-mcp-cursor",
+  "lane": "skills_knowledge",
+  "name": "B2B Enrichment MCP (Hunter+Apollo)",
+  "verdict": "watch",
+  "summary": "Aleksey-Panf/b2b-enrichment-mcp: unified Cursor/Claude MCP combining Hunter.io email find + Apollo company intel. Skills/MCP enrich peer; Yelp phone stays Active primary; auth-first.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-b2b-enrichment-mcp-cursor",
+  "source_urls": [
+    "https://github.com/Aleksey-Panf/b2b-enrichment-mcp"
+  ],
+  "memory_tags": [
+    "b2b-enrichment-mcp",
+    "hunter",
+    "apollo",
+    "cursor",
+    "skills"
+  ]
+}

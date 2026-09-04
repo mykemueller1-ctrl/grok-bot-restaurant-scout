@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-revyome-whatsapp-qr",
+  "lane": "vertical_gtm",
+  "name": "RevYoMe WhatsApp QR ordering",
+  "verdict": "watch",
+  "summary": "RevYoMe online ordering: QR digital menu to WhatsApp cart/checkout, 0% order commission claim, pickup/delivery tracking. NEW WA QR peer for love to buy-now teach; fee pause; not FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-revyome-whatsapp-qr",
+  "source_urls": [
+    "https://revyome.com/online-ordering"
+  ],
+  "memory_tags": [
+    "revyome",
+    "whatsapp",
+    "qr-menu",
+    "zero-commission-claim",
+    "new-rival"
+  ]
+}

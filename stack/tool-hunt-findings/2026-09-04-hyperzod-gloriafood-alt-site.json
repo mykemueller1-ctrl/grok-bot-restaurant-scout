@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-hyperzod-gloriafood-alt-site",
+  "lane": "vertical_gtm",
+  "name": "Hyperzod gloriafoodalternative.com (app-first)",
+  "verdict": "watch",
+  "summary": "Hyperzod landing gloriafoodalternative.com still live: app-first GloriaFood replacement (branded iOS/Android + OO/POS/delivery). Reconfirm Hyperzod as GloriaFood white-label successor; EOL 2027; not FBE; fee pause.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-hyperzod-gloriafood-alt-site",
+  "source_urls": [
+    "https://gloriafoodalternative.com/"
+  ],
+  "memory_tags": [
+    "hyperzod",
+    "gloriafood-successor",
+    "branded-app",
+    "fee-pause"
+  ]
+}

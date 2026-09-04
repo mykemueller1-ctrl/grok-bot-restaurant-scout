@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-gtm-mcp-server-dylan",
+  "lane": "skills_knowledge",
+  "name": "GTM MCP Server (dylanottinger)",
+  "verdict": "watch",
+  "summary": "dylanottinger/gtm-mcp-server wires HubSpot+Clay+Apollo+Slack+email into one Cursor/Claude MCP for prospect to CRM GTM. Watch as orchestration peer; Apollo/Clay still optional; Yelp Active primary.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-gtm-mcp-server-dylan",
+  "source_urls": [
+    "https://github.com/dylanottinger/gtm-mcp-server"
+  ],
+  "memory_tags": [
+    "gtm-mcp-server",
+    "hubspot",
+    "clay",
+    "apollo",
+    "cursor"
+  ]
+}

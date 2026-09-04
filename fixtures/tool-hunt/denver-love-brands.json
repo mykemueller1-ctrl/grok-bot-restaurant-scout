@@ -8,7 +8,7 @@
       "yelp_alias": "rioja-denver",
       "phone": "+13038202282",
       "rating": 4.3,
-      "review_count": 2915,
+      "review_count": 2914,
       "transactions": [
         "pickup"
       ],
@@ -17,7 +17,7 @@
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.3,
-        "review_count": 2915,
+        "review_count": 2914,
         "price": "$$$",
         "transactions": [
           "pickup"
@@ -80,7 +80,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Hop Alley / Rioja / Tavernetta / Uncle) 2026-09-04",
-  "live_proof": "Composio YELP_SEARCH_AND_CHAT 2026-09-04 pass-6 \u2014 Rioja 2915 reviews",
+  "live_proof": "Composio YELP_SEARCH_AND_CHAT 2026-09-04 pass-7 \u2014 Rioja 2914 reviews",
   "status": "calibration_only",
   "notes": "Prefer chef/cult narrative + review volume. Fruition restaurant alias not resolved in this scan \u2014 skipped."
 }
