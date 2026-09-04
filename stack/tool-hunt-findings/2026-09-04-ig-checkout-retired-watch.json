@@ -1,0 +1,12 @@
+{
+  "finding_id": "ig-checkout-retired-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Instagram/Facebook native Checkout retired (Aug 2025)",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Meta phased out in-app Checkout by Aug 2025; legacy 5%/$0.40 cites are stale. Link-out $0 Meta selling fee \u2014 reinforces Shop buy-now, not a live fee teach. Do not dogfood IG Checkout 5%.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://coruzant.com/digital-strategy/instagram-commerce-report/"
+  ]
+}

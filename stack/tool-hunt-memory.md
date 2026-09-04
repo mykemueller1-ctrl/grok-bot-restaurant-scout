@@ -473,6 +473,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-to-sales-slice-fee-* ×5; validate-slice-fee-dogfood ≥5 (`slice_fee_dogfoods`); strong_keep stays **38** (pain-scan already counted).
 - Watched DirectOrders $249 flat (no per-order) + Grabull Direct guest service fee / 7–10% menu bump (exact $/order unpublished). Ledger v1.70.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (Olo Order with Google 5% SalesLead)
+
+- Olo **Order with Google Fee 5%** on subtotal (Google enhanced redirect) — primary [Invoice Reconciliation](https://olosupport.zendesk.com/hc/en-us/articles/37069343928219-Invoice-Reconciliation). Enterprise thematic teach.
+- Widened `first_party_pct_fee` for Order with Google Fee / 5% charged on; pain-scan-olo-google-fee.json → strong_keep 39; pain-to-sales-olo-fee-* ×5; validate-olo-fee-dogfood ≥5 (`olo_fee_dogfoods`).
+- IG native Checkout retired Aug 2025 — do not dogfood legacy 5%/$0.40. Ledger v1.71.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+
 
 
 

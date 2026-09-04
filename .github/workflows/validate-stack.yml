@@ -161,6 +161,7 @@ jobs:
           test -f scripts/validate-ritual-fee-dogfood.mjs
           test -f scripts/validate-chownow-fee-dogfood.mjs
           test -f scripts/validate-slice-fee-dogfood.mjs
+          test -f scripts/validate-olo-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
@@ -190,6 +191,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-ginger-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-ritual-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-chownow-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-olo-google-fee.json
           test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
           test -f fixtures/tool-hunt/pain-scan-doordash-online-ordering.json
           test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
@@ -306,6 +308,11 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-slice-fee-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-slice-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-slice-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-rioja.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -323,13 +330,14 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'Upserve U-Series Online Ordering service fee is 2.99% — guests pay vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'ChowNow Support Local Fee is 7.5% of the subtotal on App orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Olo Order with Google Fee is 5% charged on the subtotal vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'DoorDash Online Ordering is 0% commission on direct orders — Marketplace still 25%' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'Uber Webshop is commission-free on direct orders — Grubhub Direct skips marketing commissions' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25%' | grep -q social_shop_fee
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 38'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 39'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
@@ -355,6 +363,7 @@ jobs:
           node scripts/validate-ritual-fee-dogfood.mjs | grep -q '"ritual_fee_dogfoods": 5'
           node scripts/validate-chownow-fee-dogfood.mjs | grep -q '"chownow_fee_dogfoods": 5'
           node scripts/validate-slice-fee-dogfood.mjs | grep -q '"slice_fee_dogfoods": 5'
+          node scripts/validate-olo-fee-dogfood.mjs | grep -q '"olo_fee_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
