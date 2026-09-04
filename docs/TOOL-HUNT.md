@@ -82,7 +82,7 @@ Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, con
 | Pain→sales enrich | `YELP_SEARCH_BY_PHONE` on all 5 love-seed phones — `skills/lead-shop-enrich.md` |
 | Status | `node scripts/print-beyond-the-hunt-status.mjs` (`phone_enrich_markets: 5`, `buy_now_path_markets: 5`) |
 
-Fee catalog remains paused (fee dogfoods frozen; overall `strong_keep` 64 includes `brand_site_marketplace_leak` love→buy-now teach).
+Fee catalog remains paused (fee dogfoods frozen; overall `strong_keep` 65 includes `brand_site_marketplace_leak` love→buy-now teach).
 
 ## KEEP grader UI
 

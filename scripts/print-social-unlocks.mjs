@@ -46,6 +46,18 @@ const out = {
     },
     morning_scan: "skills/morning-scan.md",
     fee_catalog_pause: true,
+    meta_order_food_peers: [
+      "Deliverect",
+      "Zyda",
+      "ChatFood",
+      "BentoBox",
+      "Toast Online Ordering",
+      "Flipdish",
+      "Kyte",
+      "Square Online",
+      "GloriaFood",
+    ],
+    meta_order_food_peer_count: 9,
     still_need_for_goal: [
       "MEM0_API_KEY or Mem0 MCP OAuth",
       "CONTEXT_DEV_API_KEY or Context MCP OAuth",

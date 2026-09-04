@@ -17,7 +17,7 @@
    - When a phone is already known (love fixtures / complaint stubs): `YELP_SEARCH_BY_PHONE` (E.164) to resolve alias + identity fast — live 2026-09-04 all 5 markets: G&TG CHI, Franklin ATX, Michaels MIA, Husk BNA, Rioja DEN
    - `COMPOSIO_SEARCH_GOOGLE_MAPS` to disambiguate / confirm operational status
    - `COMPOSIO_SEARCH_WEB` + optional `COMPOSIO_SEARCH_FETCH_URL_CONTENT` for public email / contact page (never invent contacts)
-   - **buy_now_path / order_rails** (same public pass): official site CTAs — first-party OO, Toast OO, Shopify merch, Resy/OpenTable, or marketplace leak (UberEats/DoorDash on brand site → `brand_site_marketplace_leak`). Calibration: `fixtures/tool-hunt/*-love-brands.json` → `buy_now_path` (e.g. Michaels Genuine site → UberEats/DoorDash; Franklin → Shopify+preorder). Fold rails into `PainLead.opportunity_signals` + sales-lead `suggested_angle`
+   - **buy_now_path / order_rails** (same public pass): official site CTAs — first-party OO, Toast OO, Shopify merch, Resy/OpenTable, or marketplace leak (UberEats/DoorDash on brand site → `brand_site_marketplace_leak`) or reservation-skew / no OO (`reservation_skew_no_buy_now`). Calibration: `fixtures/tool-hunt/*-love-brands.json` → `buy_now_path` (e.g. Michaels Genuine site → UberEats/DoorDash; Franklin → Shopify+preorder). Fold rails into `PainLead.opportunity_signals` + sales-lead `suggested_angle`
    - When Apollo/Clay become desktop-auth’d, use them as a second pass — not a blocker
 3. Write `PainLead`:
    - `pain_id`, `vendor_id`, `category` (`pos` | `silo` | `thematic`)

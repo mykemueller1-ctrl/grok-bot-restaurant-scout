@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_FETCH_URL_CONTENT", "scripts/score-marketplace-keep.mjs"],
+  "query": "love-brand reservation-skew OpenTable only / no first-party OO (Girl & The Goat live proof)",
+  "hits": [
+    {
+      "url": "https://www.girlandthegoat.com/chicago",
+      "posted_at": "2026-09-04",
+      "handle": "girlandthegoat",
+      "snippet": "Restaurant owners: Girl & The Goat brand site is reservation-skewed — OpenTable only, no first-party OO found. Cult love without Shop buy-now; operators KEEP more when social commerce closes vs DoorDash marketplace rent.",
+      "pain_id": "reservation_skew_no_buy_now",
+      "score": 90,
+      "never86_angle": "Love→buy-now teach: reservation-only cult brands need Shop close — not just OpenTable"
+    }
+  ],
+  "notes": "Not a fee dogfood. Live buy_now_path on chicago-love-brands.json (opentable_reservations, no_first_party_oo_found). Skip forecasting."
+}

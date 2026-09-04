@@ -28,4 +28,4 @@ ls skills/*.md | wc -l                        # expect project skill count
 Mem0 + Context — `docs/DESKTOP-UNLOCKS.md`  
 Then: `node scripts/unlock-beyond-the-hunt.mjs` → exit 0
 
-Fee catalog remains paused (fee dogfoods frozen; overall `strong_keep` 64 includes `brand_site_marketplace_leak`) — no new fee dogfoods unless a cite sharpens love→buy-now / Cursor stack.
+Fee catalog remains paused (fee dogfoods frozen; overall `strong_keep` 65 includes `brand_site_marketplace_leak`) — no new fee dogfoods unless a cite sharpens love→buy-now / Cursor stack.

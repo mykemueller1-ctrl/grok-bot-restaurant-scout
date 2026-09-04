@@ -1,10 +1,10 @@
 {
   "dogfood_id": "pain-to-sales-social-shop-girl-goat-2026-09-04",
-  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run → SalesLead DRAFT for Girl & The Goat (Chicago). Love→buy-now KEEP math dogfood. Not forecasting.",
+  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Love\u2192buy-now KEEP math dogfood. Not forecasting.",
   "signals": {
     "social_shop_fee": "TikTok Shop US unified referral ~6%",
     "marketplace_direct_zero": "DoorDash Online Ordering / Uber Webshop 0% direct",
-    "marketplace_rent": "DoorDash Marketplace 15–30%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%",
     "buy_now_path_rails": [
       "opentable_reservations",
       "no_first_party_oo_found"
@@ -22,13 +22,14 @@
       "yelp_alias": "girl-and-the-goat-chicago",
       "love_signal": "Chef Stephanie Izard cult Chicago brand / UGC-heavy"
     },
-    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15–30% rent. Girl & The Goat-class love should close on TikTok/IG buy-now — dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
+    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15\u201330% rent. Girl & The Goat-class love should close on TikTok/IG buy-now \u2014 dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
     "opportunity_signals": [
       "social_shop_fee",
       "marketplace_direct_zero",
       "cult_chef_ugc",
       "shoppable_sku_potential",
-      "buy_now_path"
+      "buy_now_path",
+      "reservation_skew_no_buy_now"
     ],
     "vendors_mentioned": [
       "doordash",
@@ -46,7 +47,7 @@
         "opentable_reservations",
         "no_first_party_oo_found"
       ],
-      "note": "Menu/reservations site; OpenTable listing — Shop buy-now fills missing social close",
+      "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close",
       "sources": [
         "https://www.girlandthegoat.com/chicago",
         "https://www.opentable.com/r/girl-and-the-goat-chicago"
@@ -60,17 +61,17 @@
     "role": "owner/GM (needs teach)",
     "city": "Chicago",
     "market": "Chicago, IL",
-    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15–30%. Public rails are OpenTable/reservation-skewed with no first-party OO — Never86 Shop fills the missing social close at ~6% KEEP vs Marketplace 15–30% rent.",
+    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15\u201330%. Public rails are OpenTable/reservation-skewed with no first-party OO \u2014 Never86 Shop fills the missing social close at ~6% KEEP vs Marketplace 15\u201330% rent.",
     "quotes": [
       "TikTok Shop US unified referral ~6%",
-      "DoorDash Marketplace 15–30%",
+      "DoorDash Marketplace 15\u201330%",
       "DoorDash Online Ordering 0% on direct"
     ],
     "vendors_to_displace": [
       "DoorDash Marketplace",
       "Uber Eats Marketplace"
     ],
-    "why_never86_now": "social_shop_fee + live buy_now_path (opentable_reservations, no_first_party_oo_found): Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now — not Owner Flex 5%, not Toast Meta Order Food webviews, not forecasting.",
+    "why_never86_now": "social_shop_fee + live buy_now_path (opentable_reservations, no_first_party_oo_found): Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now \u2014 not Owner Flex 5%, not Toast Meta Order Food webviews, not forecasting.",
     "suggested_angle": "Draft only: Your kitchen already owns the feed. Never86 turns that love into TikTok/IG buy-now at Shop-class KEEP (~6%) instead of losing 25% to delivery apps.",
     "sources": [
       "scripts/score-marketplace-keep.mjs",
@@ -82,7 +83,7 @@
     ],
     "confidence": 78,
     "status": "DRAFT",
-    "notes": "Calibration dogfood — social_shop_fee → SalesLead. Not live outreach. Not forecasting."
+    "notes": "Calibration dogfood \u2014 social_shop_fee \u2192 SalesLead. Not live outreach. Not forecasting."
   },
   "tools_used": [
     "scripts/score-marketplace-keep.mjs",

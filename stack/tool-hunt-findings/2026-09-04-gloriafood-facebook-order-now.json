@@ -1,0 +1,13 @@
+{
+  "finding_id": "gloriafood-facebook-order-now-2026-09",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood Facebook Start Order / Order Now button",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "GloriaFood primary how-to: Facebook profile Action Button → Start Order + GloriaFood smart link → online menu. Meta-adjacent social OO peer (Oracle GloriaFood). Watch only — fee pause; Ressto already watched as successor.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button"
+  ],
+  "not_this": "Not fee dogfood. Not TikTok Shop-native. Not forecasting."
+}

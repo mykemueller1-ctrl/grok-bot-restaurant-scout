@@ -793,3 +793,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **Square Online** (watch): Support primary — Facebook Food Ordering → Order Food buttons + Stories stickers. Finding: `2026-09-04-square-meta-order-food.json`.
 - **Zeew** (watch tertiary): Facebook Order Now white-label. Finding: `2026-09-04-zeew-facebook-order-now.json`.
 - Ledger v1.92.29. Auth still blocked for unlock READY.
+
+### 2026-09-04 (reservation_skew_no_buy_now + Franklin re-verify + GloriaFood)
+
+- Adopted `reservation_skew_no_buy_now` KEEP signal from G&TG live proof (OpenTable-only / no first-party OO). Fixture → overall `strong_keep` 65. Not fee dogfood.
+- Live re-fetch Franklin preorder + Shopify still live. Finding: `2026-09-04-franklin-rails-reverify.json`.
+- **GloriaFood** (watch): Facebook Start Order + smart link. Finding: `2026-09-04-gloriafood-facebook-order-now.json`.
+- Status: `meta_order_food_peer_count: 9` + reservation_skew teach. Instagram reconnect `lk_z4bfeUbq52iQ`. Ledger v1.92.30. Auth still blocked.

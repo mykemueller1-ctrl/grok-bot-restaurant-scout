@@ -5,7 +5,7 @@ Close Instagram + TikTok so morning-scan can pull UGC proofs. Until then, **Yelp
 **Live proof (2026-09-04):** Composio `YELP_SEARCH_BUSINESSES` + details reconfirmed Girl & The Goat Chicago — **10,731** reviews, 4.4★, phone matches fixture. Morning-scan love→buy-now does **not** block on IG/TikTok.
 
 **Scope:** Never86 shoppable TikTok/IG buy-now  
-**Out:** forecasting · fee-dogfood expansion (paused; overall strong_keep 64 includes brand_site_marketplace_leak)
+**Out:** forecasting · fee-dogfood expansion (paused; overall strong_keep 65 includes brand_site_marketplace_leak)
 
 ## Active now (no auth)
 
@@ -49,6 +49,7 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **Flipdish** — Instagram Order Now / Food Orders sticker → Flipdish bounce URL (already in fee catalog for €0.50+%)
 - **Kyte** — Meta Business Extension Order Food on FB/IG + Stories stickers → Kyte online catalog ([Kyte FBE](https://www.kyteapp.com/apps/fbe))
 - **Square Online** — Dashboard Channels → Facebook Food Ordering; Order Food buttons + Stories stickers → Square website ([Square Support](https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online))
+- **GloriaFood** — Facebook Start Order / Order Now via smart link ([GloriaFood how-to](https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button))
 
 Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close and **RAY** commission-free Instagram delivery channel (Order Food/Reserve + DM automation — [RAY blog](https://blog.rayapp.ai/en/delivery-without-commission/instagram-delivery-channel-restaurants/)) — adjacent social intake, not Meta FBE peers.
 
@@ -56,7 +57,7 @@ Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_JYyUTk9S5ND5) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_z4bfeUbq52iQ) — Business/Creator only. Reply `instagram connected` when done.
 
 ## Still required for Beyond the Hunt READY
 

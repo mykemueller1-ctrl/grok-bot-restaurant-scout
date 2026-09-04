@@ -1,0 +1,14 @@
+{
+  "finding_id": "franklin-buy-now-rails-reverify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Franklin BBQ Shopify + first-party preorder rails re-verified",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Live re-fetch: preorder.franklinbbq.com curbside pickup (2–56 days, 5–30 lb) and shop.franklinbbq.com Shopify merch + Goldbelly ship still live. Confirms ATX love-seed buy_now_path (first_party_preorder, shopify_merch, goldbelly_ship). Shop buy-now rides existing SKU rails.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://preorder.franklinbbq.com/information",
+    "https://shop.franklinbbq.com/"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting."
+}

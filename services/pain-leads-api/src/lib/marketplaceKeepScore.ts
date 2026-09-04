@@ -36,6 +36,8 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /customers? pay|guests? pay|diner[- ]paid|guest[- ]paid|tech fee|service fee.*(customer|guest|diner)|(customer|guest|diner).*(tech|service|platform) fee/i, signal: "guest_paid_platform_fee", w: 15 },
   // Brand-site marketplace leak (love brand homepage still CTAs UberEats/DoorDash — Michaels Genuine live proof)
   { re: /marketplace leak|(brand[\s-]?site|official (site|website)|homepage|our website).{0,80}(uber\s*eats|doordash|grubhub)|(uber\s*eats|doordash|grubhub).{0,80}(brand[\s-]?site|official (site|website)|homepage|on (the |our )?(site|website))|(pushes?|links? to|cta).{0,40}(uber\s*eats|doordash).{0,40}(delivery|order)/i, signal: "brand_site_marketplace_leak", w: 20 },
+  // Reservation-skew love brands (G&TG OpenTable-only — no first-party OO / Shop buy-now gap)
+  { re: /reservation[\s-]?skew|no first[\s-]?party oo|opentable[\s\/-]*(reservation[- ]?)?skew|reservation[- ]only|make a reservation(?!.*\b(order|delivery|takeout)\b)|cult love without (shop|buy-now|first[\s-]?party)/i, signal: "reservation_skew_no_buy_now", w: 20 },
 ];
 
 export function scoreMarketplaceKeep(snippet: string): MarketplaceKeepResult {

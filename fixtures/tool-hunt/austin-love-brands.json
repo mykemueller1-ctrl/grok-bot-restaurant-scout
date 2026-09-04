@@ -1,6 +1,6 @@
 {
   "seed_id": "austin-love-brands-yelp-2026-09-04",
-  "purpose": "Second-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "purpose": "Second-market calibration for morning-scan love\u2192buy-now (chef/cult brands). Not forecasting.",
   "market": "Austin, TX",
   "brands": [
     {
@@ -19,23 +19,30 @@
       "rating": 4.5,
       "review_count": 6477,
       "love_signal": "National cult BBQ / line culture / chef-driven",
-      "never86_fit": "Viral demand → buy-now / merch/SKU packs (not marketplace delivery)",
+      "never86_fit": "Viral demand \u2192 buy-now / merch/SKU packs (not marketplace delivery)",
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.5,
         "review_count": 6477,
         "price": "$$$",
-        "transactions": ["delivery"]
+        "transactions": [
+          "delivery"
+        ]
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
         "website": "https://franklinbbq.com/",
-        "rails": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
-        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch — Never86 Shop can close feed love into SKU packs",
+        "rails": [
+          "first_party_preorder",
+          "shopify_merch",
+          "goldbelly_ship"
+        ],
+        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch \u2014 Never86 Shop can close feed love into SKU packs",
         "sources": [
           "https://preorder.franklinbbq.com/information",
           "https://shop.franklinbbq.com/"
-        ]
+        ],
+        "reverified_at": "2026-09-04T19:41Z"
       }
     },
     {
@@ -54,11 +61,11 @@
       "rating": 4.5,
       "review_count": 1097,
       "love_signal": "Local Mexican cult / high review volume",
-      "never86_fit": "Community love → social commerce close"
+      "never86_fit": "Community love \u2192 social commerce close"
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Franklin Barbecue 6477 reviews",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 \u2014 Franklin Barbecue 6477 reviews",
   "status": "calibration_only",
   "notes": "Yelp details responses omitted website field; use Maps/web second pass when contacting. Prefer cult/chef signal over generic high-rating food trucks."
 }

@@ -1,0 +1,15 @@
+{
+  "finding_id": "instagram-reconnect-2026-09-04-c",
+  "lane": "mcp_connectors",
+  "name": "Instagram Composio reconnect link (morning-scan UGC)",
+  "verdict": "needs_auth",
+  "priority": 2,
+  "summary": "Fresh Composio Instagram connect issued for never86-morning-scan. Link expires ~10 minutes.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://connect.composio.dev/link/lk_z4bfeUbq52iQ",
+    "docs/COMPOSIO-SOCIAL-UNLOCKS.md"
+  ],
+  "operator_ask": "Open https://connect.composio.dev/link/lk_z4bfeUbq52iQ within ~10 min (Business/Creator). Reply: instagram connected",
+  "not_this": "Yelp 5-market love seed stays Active without IG."
+}

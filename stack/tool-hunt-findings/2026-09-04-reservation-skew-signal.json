@@ -1,0 +1,24 @@
+{
+  "finding_id": "reservation-skew-no-buy-now-signal-2026-09",
+  "lane": "vertical_gtm",
+  "name": "reservation_skew_no_buy_now KEEP scorer signal",
+  "vendor_or_project": "Girl & The Goat love-seed / Never86 KEEP scorer",
+  "urls": [
+    "https://www.girlandthegoat.com/chicago",
+    "https://www.opentable.com/r/girl-and-the-goat-chicago",
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-reservation-skew.json",
+    "fixtures/tool-hunt/chicago-love-brands.json"
+  ],
+  "what_it_does": "Detects reservation-skew / OpenTable-only / no first-party OO language on love brands so morning-scan and SalesLeads pitch Shop buy-now into the gap.",
+  "how_competitors_use_it": "Cult restaurants often lead with reservations and never expose shoppable rails — leaving social demand to marketplaces.",
+  "what_we_use_today": "score-marketplace-keep + chicago buy_now_path rails + girl-goat social-shop dogfood",
+  "gap": "Mem0/Context still blocked for unlock READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted reservation_skew_no_buy_now from G&TG live proof (OpenTable-only, no first-party OO). Not fee dogfood — love→buy-now teach. strong_keep 65.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "not_this": "Not a new fee dogfood. Fee catalog pause still holds. Not forecasting."
+}

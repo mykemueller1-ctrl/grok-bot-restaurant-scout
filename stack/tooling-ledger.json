@@ -1,5 +1,5 @@
 {
-  "version": "1.92.29",
+  "version": "1.92.30",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -86,7 +86,7 @@
     "status_printer": "scripts/print-beyond-the-hunt-status.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee + brand_site_marketplace_leak)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee + brand_site_marketplace_leak + reservation_skew_no_buy_now)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "market_coverage_gate": "scripts/validate-market-coverage.mjs (love\u2194keep-grader\u2194social-shop\u2194guest-fee\u2194otter-fee\u2194script\u2194catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
@@ -1245,6 +1245,30 @@
   ],
   "watchlist": [
     {
+      "item": "reservation_skew_no_buy_now KEEP signal (G&TG live proof)",
+      "lane": "vertical_gtm",
+      "why": "OpenTable-only / no first-party OO \u2014 love\u2192buy-now teach; pain-scan + CLI/API scorer; strong_keep 65; NOT a fee dogfood",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Franklin Shopify + preorder rails re-verified live",
+      "lane": "vertical_gtm",
+      "why": "preorder.franklinbbq.com + shop.franklinbbq.com still live \u2014 confirms ATX buy_now_path",
+      "verdict": "adopt"
+    },
+    {
+      "item": "GloriaFood Facebook Start Order / Order Now",
+      "lane": "vertical_gtm",
+      "why": "GloriaFood how-to: FB Action Button Start Order + smart link \u2014 Meta-adjacent; watch only \u2014 fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "Status printer meta_order_food_peer_count: 9",
+      "lane": "skills_knowledge",
+      "why": "print-social-unlocks + status expose Meta Order Food peer set for weekly gate",
+      "verdict": "adopt"
+    },
+    {
       "item": "Social-shop dogfood requires brand_site_marketplace_leak when rails include UberEats/DoorDash",
       "lane": "skills_knowledge",
       "why": "validate-social-shop-dogfood enforces Michaels-class leak teach on opportunity_signals + complaint_thesis",
@@ -1493,7 +1517,7 @@
     {
       "item": "Fee catalog pause \u2014 Mem0/Context unlock next",
       "lane": "memory",
-      "why": "Operator: enough bad-fee context (fee dogfoods paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love\u2192buy-now / Cursor tooling that the catalog does not already teach.",
+      "why": "Operator: enough bad-fee context (fee dogfoods paused; overall strong_keep 65 includes brand_site_marketplace_leak love teach). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love\u2192buy-now / Cursor tooling that the catalog does not already teach.",
       "verdict": "watch"
     },
     {
@@ -2538,7 +2562,7 @@
   "open_gaps": [
     {
       "id": "fee-catalog-pause-auth-first",
-      "gap": "Fee KEEP catalog sufficient (paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach) \u2014 operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
+      "gap": "Fee KEEP catalog sufficient (paused; overall strong_keep 65 includes brand_site_marketplace_leak love teach) \u2014 operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
       "action": "Do not expand fee dogfoods unless cite sharpens love\u2192buy-now / Cursor memory-skills-MCP beyond catalog. Unlock MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth). Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0, then import stack/tool-hunt-memory.md",
       "priority": 1
     },

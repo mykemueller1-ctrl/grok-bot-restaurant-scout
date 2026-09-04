@@ -58,6 +58,9 @@ try {
 const brandLeakFixture = existsSync(
   join(root, "fixtures", "tool-hunt", "pain-scan-brand-site-marketplace-leak.json")
 );
+const reservationSkewFixture = existsSync(
+  join(root, "fixtures", "tool-hunt", "pain-scan-reservation-skew.json")
+);
 
 const out = {
   ok: love?.ok === true,
@@ -86,12 +89,14 @@ const out = {
   keep_teach: {
     strong_keep: strongKeep,
     brand_site_marketplace_leak: brandLeakFixture,
-    note: "Fee dogfoods paused; brand_site_marketplace_leak is love→buy-now teach",
+    reservation_skew_no_buy_now: reservationSkewFixture,
+    note: "Fee dogfoods paused; brand_site_marketplace_leak + reservation_skew are love→buy-now teach",
   },
   social: {
     yelp_active_seed: true,
     instagram: social?.social_unlocks?.instagram?.status || "unknown",
     tiktok: social?.social_unlocks?.tiktok?.status || "unknown",
+    meta_order_food_peer_count: social?.social_unlocks?.meta_order_food_peer_count || null,
     docs: "docs/COMPOSIO-SOCIAL-UNLOCKS.md",
   },
   pain_sales_enrich: {
