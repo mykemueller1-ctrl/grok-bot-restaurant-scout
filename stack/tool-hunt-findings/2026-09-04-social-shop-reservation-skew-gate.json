@@ -1,0 +1,15 @@
+{
+  "finding_id": "social-shop-reservation-skew-gate-2026-09",
+  "lane": "skills_knowledge",
+  "name": "Social-shop dogfood requires reservation_skew_no_buy_now when rails include no_first_party_oo_found",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "validate-social-shop-dogfood.mjs mirrors brand_site_marketplace_leak gate: rails with no_first_party_oo_found must include opportunity_signals reservation_skew_no_buy_now and complaint_thesis must name reservation-skew / OpenTable / no first-party OO. G&TG dogfood already compliant. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "scripts/validate-social-shop-dogfood.mjs",
+    "fixtures/tool-hunt/pain-to-sales-social-shop-girl-goat.json",
+    "fixtures/tool-hunt/pain-scan-reservation-skew.json"
+  ],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

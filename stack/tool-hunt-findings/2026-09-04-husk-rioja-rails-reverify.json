@@ -1,0 +1,26 @@
+{
+  "finding_id": "husk-rioja-buy-now-rails-reverify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Husk + Rioja buy_now_path rails re-verified live",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio FETCH_URL_CONTENT 2026-09-04: Toast findcard husk-nashville still live (Husk - Nashville - Find Card); Resy venue Book Your Husk Nashville Reservation still live; husknashville.com Reservations CTA live. Rioja Flavor Dojo carryout page still live (in-person pickup 1431 Larimer + phone 303.820.2282). Confirms BNA/DEN buy_now_path rails. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.toasttab.com/husk-nashville/findcard",
+    "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+    "http://www.husknashville.com/",
+    "https://www.riojadenver.com/menus/carryout/",
+    "fixtures/tool-hunt/nashville-love-brands.json",
+    "fixtures/tool-hunt/denver-love-brands.json"
+  ],
+  "rails_confirmed": {
+    "husk": ["resy_reservations", "toast_gift_card", "takeout"],
+    "rioja": ["flavor_dojo_carryout_in_person", "phone_reservations"]
+  },
+  "tools_used": [
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "WebFetch"
+  ],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

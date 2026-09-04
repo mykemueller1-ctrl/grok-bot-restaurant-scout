@@ -66,6 +66,24 @@ for (const f of files) {
       process.exit(1);
     }
   }
+  const reservationSkewRails = rails.filter((r) => /no_first_party_oo_found/i.test(String(r)));
+  if (reservationSkewRails.length) {
+    const signals = data.pain_lead?.opportunity_signals || [];
+    if (!signals.includes("reservation_skew_no_buy_now")) {
+      console.error(
+        `validate-social-shop-dogfood: ${f} rails ${reservationSkewRails.join(",")} require opportunity_signals reservation_skew_no_buy_now`
+      );
+      process.exit(1);
+    }
+    if (
+      !/reservation[\s-]?skew|no first[\s-]?party oo|opentable[\s\/-]*(reservation[- ]?)?skew|opentable[\/\s-]*reservation|reservation[- ]only|cult love without (shop|buy-now)/i.test(
+        lead.complaint_thesis
+      )
+    ) {
+      console.error(`validate-social-shop-dogfood: ${f} complaint_thesis must name reservation-skew / no first-party OO`);
+      process.exit(1);
+    }
+  }
   const forbidBlob = JSON.stringify([data.notes, lead.notes, data.purpose, data.never].filter(Boolean));
   if (!/forecast/i.test(forbidBlob)) {
     console.error(`validate-social-shop-dogfood: ${f} must explicitly forbid forecasting in notes/purpose`);

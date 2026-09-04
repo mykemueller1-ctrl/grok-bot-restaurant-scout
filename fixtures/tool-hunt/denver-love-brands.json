@@ -21,11 +21,13 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
+        "reverified_at": "2026-09-04",
         "website": "https://www.riojadenver.com/",
         "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
-        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs",
+        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs. Re-verified live via COMPOSIO_SEARCH_FETCH_URL_CONTENT.",
         "sources": [
-          "https://www.riojadenver.com/menus/carryout/"
+          "https://www.riojadenver.com/menus/carryout/",
+          "stack/tool-hunt-findings/2026-09-04-husk-rioja-rails-reverify.json"
         ]
       }
     },

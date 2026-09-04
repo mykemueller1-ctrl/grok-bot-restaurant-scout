@@ -800,3 +800,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Live re-fetch Franklin preorder + Shopify still live. Finding: `2026-09-04-franklin-rails-reverify.json`.
 - **GloriaFood** (watch): Facebook Start Order + smart link. Finding: `2026-09-04-gloriafood-facebook-order-now.json`.
 - Status: `meta_order_food_peer_count: 9` + reservation_skew teach. Instagram reconnect `lk_z4bfeUbq52iQ`. Ledger v1.92.30. Auth still blocked.
+
+### 2026-09-04 (reservation_skew social-shop gate + Husk/Rioja re-verify)
+
+- `validate-social-shop-dogfood.mjs` now requires `reservation_skew_no_buy_now` when rails include `no_first_party_oo_found` (mirrors brand_site leak gate). G&TG dogfood already compliant.
+- Live re-fetch: Toast findcard + Resy + husknashville.com Reservations still live; Rioja Flavor Dojo carryout + phone still live. Finding: `2026-09-04-husk-rioja-rails-reverify.json`.
+- Ledger v1.92.31. Auth still blocked for unlock READY.

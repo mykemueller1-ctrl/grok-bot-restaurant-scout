@@ -1,5 +1,5 @@
 {
-  "version": "1.92.30",
+  "version": "1.92.31",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -96,7 +96,7 @@
       "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
     },
     "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs",
-    "social_shop_dogfood_gate": "scripts/validate-social-shop-dogfood.mjs (Shop ~6% \u2192 SalesLead \u22655 markets)",
+    "social_shop_dogfood_gate": "scripts/validate-social-shop-dogfood.mjs (Shop ~6% \u2192 SalesLead \u22655 markets; brand_site leak + reservation_skew rails gates)",
     "guest_fee_dogfood_gate": "scripts/validate-guest-fee-dogfood.mjs (DevourNow-class guest tech fee \u2192 SalesLead \u22655 markets)",
     "otter_fee_dogfood_gate": "scripts/validate-otter-fee-dogfood.mjs (Otter restaurant-paid per-order txn fee \u2192 SalesLead \u22655 markets)",
     "upmenu_fee_dogfood_gate": "scripts/validate-upmenu-fee-dogfood.mjs (UpMenu $1.90 overage \u2192 SalesLead \u22655 markets)",
@@ -1244,6 +1244,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Social-shop dogfood requires reservation_skew_no_buy_now when rails include no_first_party_oo_found",
+      "lane": "skills_knowledge",
+      "why": "validate-social-shop-dogfood enforces G&TG-class reservation-skew teach on opportunity_signals + complaint_thesis (mirrors brand_site leak gate)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Husk + Rioja buy_now_path rails re-verified live",
+      "lane": "vertical_gtm",
+      "why": "Toast findcard + Resy + husknashville.com Reservations still live; Rioja Flavor Dojo carryout + phone reservations still live (Composio FETCH 2026-09-04)",
+      "verdict": "adopt"
+    },
     {
       "item": "reservation_skew_no_buy_now KEEP signal (G&TG live proof)",
       "lane": "vertical_gtm",

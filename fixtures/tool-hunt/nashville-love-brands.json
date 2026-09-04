@@ -21,13 +21,15 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
+        "reverified_at": "2026-09-04",
         "website": "http://www.husknashville.com/",
         "rails": ["resy_reservations", "toast_gift_card", "takeout"],
-        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) — Toast lock-in; Shop for social SKUs",
+        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) — Toast lock-in; Shop for social SKUs. Re-verified live via COMPOSIO_SEARCH_FETCH_URL_CONTENT.",
         "sources": [
           "http://www.husknashville.com/",
           "https://www.toasttab.com/husk-nashville/findcard",
-          "https://resy.com/cities/nashville-tn/venues/husk-nashville"
+          "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+          "stack/tool-hunt-findings/2026-09-04-husk-rioja-rails-reverify.json"
         ]
       }
     },
