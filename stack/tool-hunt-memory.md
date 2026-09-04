@@ -418,3 +418,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-tabski-guest-fee.json ($0.99/order guest fee or $59/mo SaaS under commission-free digital OO) → strong_keep 29.
 - Added pain-to-sales-tabski-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-tabski-fee-dogfood ≥5.
 - Watched GoTab guest 1%+$0.25 (secondary cite). Ledger v1.61.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (GoTab guest convenience fee SalesLead)
+
+- Promoted GoTab: pain-scan-gotab-guest-fee.json (FAQ $0.25 + mobile CNP often 1%+$0.25) → strong_keep 30.
+- Added pain-to-sales-gotab-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-gotab-fee-dogfood ≥5.
+- Watched Per Diem per-order claims (not confirmed on tryperdiem.com/pricing). Ledger v1.62.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

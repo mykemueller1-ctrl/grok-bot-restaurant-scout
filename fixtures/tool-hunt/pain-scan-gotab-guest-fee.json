@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_WEB",
+    "COMPOSIO_SEARCH_TAVILY",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "GoTab guest convenience fee 1% + $0.25 mobile QR Easy Tab KEEP pain",
+  "hits": [
+    {
+      "url": "https://gotab.com/faq",
+      "posted_at": "2026-09-04",
+      "handle": "gotab_oo",
+      "snippet": "GoTab guests pay 1% + $0.25 per order convenience fee on mobile QR Easy Tab (or $0.25 guest fee per FAQ) \u2014 KEEP leak vs DoorDash Marketplace 25%; dual-run discovery then Never86 buy-now",
+      "pain_id": "gotab_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "Guest 1%+$0.25 / $0.25 convenience fee on mobile tabs still taxes KEEP \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: gotab.com/faq ($0.25 guest convenience) + gotab.com Restaurant Business reprint (mobile CNP 1%+$0.25, guest-optional). Bright Data still 401. Promote watch\u2192adopt. Skip forecasting. Not expanding swarm imports."
+}
