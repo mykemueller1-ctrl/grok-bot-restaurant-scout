@@ -1,0 +1,31 @@
+{
+  "seed_id": "chicago-love-brands-yelp-2026-09-04",
+  "purpose": "Calibration targets for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "market": "Chicago, IL",
+  "brands": [
+    {
+      "name": "Girl & The Goat",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "phone": "+13124926262",
+      "website": "https://www.girlandthegoat.com/chicago",
+      "love_signal": "Chef Stephanie Izard / high UGC / cult following",
+      "never86_fit": "shoppable SKU + social buy-now onboard"
+    },
+    {
+      "name": "S.K.Y.",
+      "yelp_alias": "s-k-y-chicago-5",
+      "phone": "+13128461077",
+      "love_signal": "Chef-driven New American / cocktail destination",
+      "never86_fit": "premium brand buy-now candidate"
+    },
+    {
+      "name": "The Purple Pig",
+      "yelp_alias": "the-purple-pig-chicago",
+      "phone": "+13124641744",
+      "love_signal": "High review volume / tourist+local love",
+      "never86_fit": "SKU pack potential if UGC strong"
+    }
+  ],
+  "source": "Yelp Composio dogfood 2026-09-04",
+  "status": "calibration_only"
+}

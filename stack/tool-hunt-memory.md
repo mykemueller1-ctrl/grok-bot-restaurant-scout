@@ -59,3 +59,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added `.cursor/mcp.json` + `mcp/context.json` so desktop Auth is one click from the repo.
 - Weekly routine starts with `auth-gap-check` + `scripts/check-auth-gaps.mjs`.
 - Mem0/Context still needsAuth in cloud; MEM0_API_KEY still missing.
+
+### 2026-09-04 (pain dogfood)
+
+- Verified Composio+X pain scan: Toast fee lock-in + DoorDash ~$188K commission quit (Omaha) → Never86 anti-rent sales angle.
+- Saved fixtures/tool-hunt/pain-scan-toast-doordash.json + chicago-love-brands.json.
+- Auth gaps unchanged (Mem0/Context needsAuth).

@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -77,7 +77,9 @@
       "smoke": "scripts/mem0-smoke.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)"
+    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)",
+    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (verified fixtures/tool-hunt/pain-scan-toast-doordash.json)",
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json"
   },
   "competitors": [
     {
@@ -219,6 +221,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Pain-scan Composio+X fallback",
+      "lane": "vertical_gtm",
+      "why": "Verified Active path for Toast/DoorDash operator pain when complaint-sources thin",
+      "verdict": "adopt"
+    },
     {
       "item": "Yelp + Maps public enrich for pain\u2192sales",
       "lane": "vertical_gtm",

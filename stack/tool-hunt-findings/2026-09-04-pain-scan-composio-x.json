@@ -1,0 +1,20 @@
+{
+  "finding_id": "pain-scan-composio-x-adopted-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Pain-scan fallback verified: Composio + X",
+  "vendor_or_project": "Composio / X",
+  "urls": [
+    "https://dundeeomaha.org/2026/04/omaha-restaurant-owner-drops-delivery-apps-after-188k-in-fees/",
+    "https://x.com/maxxdelivers/status/2089468688395362773"
+  ],
+  "what_it_does": "Live SEARCH_WEB + X posts surface Toast fee lock-in and DoorDash commission exits for pain→sales shopping.",
+  "how_competitors_use_it": "GTM agents mine public operator complaints when native social MCP is thin.",
+  "what_we_use_today": "pain-complaint-scan now has verified Active fallback; fixture fixtures/tool-hunt/pain-scan-toast-doordash.json",
+  "gap": "complaint-sources MCP still preferred when live; Auth gaps Mem0/Context unrelated to this adopt",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "DoorDash $188K commission quit is gold Never86 anti-rent sales angle; Toast fee pain feeds POS shoppers.",
+  "operator_ask": "Still need Mem0 + Context desktop unlocks for goal completion",
+  "researched_at": "2026-09-04"
+}
