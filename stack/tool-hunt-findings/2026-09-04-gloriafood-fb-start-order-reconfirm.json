@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-gloriafood-fb-start-order-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood Facebook Start Order how-to reconfirm",
+  "verdict": "adopt",
+  "summary": "gloriafood.com Facebook online-ordering button how-to still live (Start Order \u2192 own menu). Keep as FBE peer #9 until Oracle LDOS Apr 30 2027; Shop migrate wedge for free Meta-adjacent OO loss.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-gloriafood-fb-start-order-reconfirm",
+  "ledger_version": "1.92.76",
+  "source_urls": [
+    "https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button"
+  ],
+  "memory_tags": [
+    "gloriafood",
+    "meta-fbe",
+    "peer-count-9",
+    "eol-2027-04-30"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "finding_id": "2026-09-04-franklin-husk-buy-now-pass",
+  "lane": "vertical_gtm",
+  "name": "Franklin preorder + Husk Resy/Toast gift reconfirm",
+  "verdict": "adopt",
+  "summary": "ATX preorder.franklinbbq.com still live; BNA Resy venue + Toast findcard still live \u2014 Franklin first_party_preorder and Husk resy_reservations + toast_gift_card rails hold.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-franklin-husk-buy-now-pass",
+  "teach": {
+    "label": "buy_now_path",
+    "markets": [
+      "ATX",
+      "BNA"
+    ],
+    "rails": {
+      "Franklin Barbecue": [
+        "first_party_preorder"
+      ],
+      "Husk": [
+        "resy_reservations",
+        "toast_gift_card"
+      ]
+    }
+  },
+  "source_urls": [
+    "https://preorder.franklinbbq.com/",
+    "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+    "https://www.toasttab.com/husk-nashville/findcard"
+  ]
+}

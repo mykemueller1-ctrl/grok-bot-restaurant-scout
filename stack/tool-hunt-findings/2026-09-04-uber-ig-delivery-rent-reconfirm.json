@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-uber-ig-delivery-rent-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "Uber Eats Instagram Delivery Button + Sticker rent reconfirm",
+  "verdict": "adopt",
+  "summary": "help.uber.com Instagram Delivery Button + Sticker still live \u2014 IG Order Now / Food Orders sticker \u2192 Uber Eats menu = marketplace rent contrast vs first-party FBE peers. Do NOT bump meta_order_food_peer_count (stays 9).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-uber-ig-delivery-rent-reconfirm",
+  "ledger_version": "1.92.76",
+  "source_urls": [
+    "https://help.uber.com/merchants-and-restaurants/article/instagram-delivery-button-+-sticker?nodeId=92d1fcbf-1b65-4a79-9a16-690710e90046"
+  ],
+  "memory_tags": [
+    "uber-eats",
+    "ig-rent-contrast",
+    "peer-count-9"
+  ]
+}

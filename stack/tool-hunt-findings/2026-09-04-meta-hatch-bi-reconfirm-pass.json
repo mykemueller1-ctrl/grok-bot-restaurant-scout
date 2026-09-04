@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-meta-hatch-bi-reconfirm-pass",
+  "lane": "vertical_gtm",
+  "name": "Meta Hatch AI agent Shop rival reconfirm",
+  "verdict": "watch",
+  "summary": "Business Insider Aug 27 2026 memo + Enterprise DNA: Hatch orders food / books tables inside IG/WA \u2014 platform Shop rival to Never86, NOT an Order Food FBE peer. peer_count stays 9.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-meta-hatch-bi-reconfirm-pass",
+  "source_urls": [
+    "https://www.businessinsider.com/meta-hatch-personal-ai-agent-capabilities-employees-memo-2026-8",
+    "https://enterprisedna.co/resources/news/meta-hatch-consumer-ai-agent-platform-launch-2026/"
+  ],
+  "memory_tags": [
+    "meta-hatch",
+    "shop-rival",
+    "not-fbe"
+  ]
+}

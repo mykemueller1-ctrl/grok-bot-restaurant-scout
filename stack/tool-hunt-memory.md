@@ -1140,3 +1140,14 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_qI2zoaDc8G8x (~10 min).
 - Ledger v1.92.75. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Uber IG rent + GloriaFood FB + FoodBooking EOL + Hatch)
+
+- Reconfirmed Uber Eats IG Delivery Button + Sticker — rent contrast; peer_count stays 9. Finding: `2026-09-04-uber-ig-delivery-rent-reconfirm.json`.
+- Reconfirmed GloriaFood Facebook Start Order how-to — peer #9 until Apr 30 2027. Finding: `2026-09-04-gloriafood-fb-start-order-reconfirm.json`.
+- Watched FoodBooking Start Order CTA with OO EOL **Mar 31 2027** (not FBE). Finding: `2026-09-04-foodbooking-eol-cta-reconfirm.json`.
+- Watched Meta Hatch BI (Shop rival, not FBE). Finding: `2026-09-04-meta-hatch-bi-reconfirm-pass.json`.
+- Adopted Franklin preorder + Husk Resy/Toast reconfirm; Yelp pass-11 G&TG/Franklin/Rioja stable. Findings: `2026-09-04-franklin-husk-buy-now-pass.json`, `2026-09-04-yelp-gtg-franklin-rioja-pass11.json`.
+- Watched GrowthPilot MCP + mcp-bizintel Cursor. Finding: `2026-09-04-growthpilot-bizintel-mcp-cursor.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_ZcIofoskAlCk (~10 min).
+- Ledger v1.92.76. Auth still blocked for unlock READY.
+

@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-yelp-gtg-franklin-rioja-pass11",
+  "lane": "vertical_gtm",
+  "name": "Yelp G&TG/Franklin/Rioja stable pass-11",
+  "verdict": "adopt",
+  "summary": "Yelp search pass-11 stable: Girl & The Goat 10731; Franklin Barbecue 6477; Rioja 2914 \u2014 love calibration holds.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-yelp-gtg-franklin-rioja-pass11",
+  "teach": {
+    "label": "yelp_love_stable",
+    "counts": {
+      "gtg": 10731,
+      "franklin": 6477,
+      "rioja": 2914
+    }
+  }
+}

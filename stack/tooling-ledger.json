@@ -1,5 +1,5 @@
 {
-  "version": "1.92.75",
+  "version": "1.92.76",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Uber IG rent + GloriaFood FB Start Order + FoodBooking EOL CTA + Hatch",
+      "lane": "vertical_gtm",
+      "why": "Uber IG Delivery Button still live (rent contrast, not FBE). GloriaFood FB Start Order how-to still live \u2014 peer_count 9. FoodBooking Start Order CTA EOL Mar 31 2027 \u2014 not FBE. Hatch BI Shop rival \u2014 not FBE",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Franklin/Husk buy_now + Yelp G&TG/Franklin/Rioja pass-11",
+      "lane": "vertical_gtm",
+      "why": "ATX preorder + BNA Resy/Toast gift still live; Yelp 10731/6477/2914 stable",
+      "verdict": "adopt"
+    },
+    {
+      "item": "GrowthPilot MCP + mcp-bizintel Cursor",
+      "lane": "cursor_agents",
+      "why": "NEW Cursor GTM/lead MCP peers; Yelp phone stays Active; auth-first",
+      "verdict": "watch"
+    },
     {
       "item": "Kyte FBE unavailable reconfirm + Yelp pass-10 + Rioja/G&TG love",
       "lane": "vertical_gtm",
@@ -3355,7 +3373,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_qI2zoaDc8G8x (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_ZcIofoskAlCk (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -3390,5 +3408,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T22:20:00Z"
+  "updated_at": "2026-09-04T22:35:00Z"
 }

@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-foodbooking-eol-cta-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "FoodBooking Start Order CTA + OO EOL Mar 31 2027",
+  "verdict": "watch",
+  "summary": "startfoodbooking.com/facebook-ordering still sells Start Order button smart link; page states current OO fully closes Mar 31 2027 while new alt platform in development \u2014 Meta-adjacent CTA not FBE; parallel GloriaFood Apr 30 2027 wedge; no peer_count bump.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-foodbooking-eol-cta-reconfirm",
+  "source_urls": [
+    "https://startfoodbooking.com/facebook-ordering/",
+    "https://startfoodbooking.com/faq/"
+  ],
+  "memory_tags": [
+    "foodbooking",
+    "cta-not-fbe",
+    "eol-2027-03-31"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-growthpilot-bizintel-mcp-cursor",
+  "lane": "cursor_agents",
+  "name": "GrowthPilot MCP + mcp-bizintel Cursor",
+  "verdict": "watch",
+  "summary": "P-Suraj/growthpilot-mcp and bch1212/mcp-bizintel \u2014 new Cursor GTM/lead MCP peers alongside LeadHub/LeadMagic; Yelp phone stays Active; auth-first; do not expand fee dogfoods.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-growthpilot-bizintel-mcp-cursor",
+  "source_urls": [
+    "https://github.com/P-Suraj/growthpilot-mcp",
+    "https://github.com/bch1212/mcp-bizintel"
+  ],
+  "memory_tags": [
+    "growthpilot",
+    "bizintel",
+    "cursor-mcp",
+    "gtm-enrich"
+  ]
+}
