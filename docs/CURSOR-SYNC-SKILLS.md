@@ -9,7 +9,7 @@ One desktop click so Cloud Agents inherit project + personal skills for Beyond t
 
 1. Open **Cursor Desktop** (not cloud-only)
 2. **Settings → Agents → Sync Skills for Cloud Agents** → **On**
-3. Confirm project skills under `skills/` are visible to cloud runs (especially `tool-frontier-scan`, `vertical-rival-watch`, `memory-skills-audit`, `morning-scan`, `script-draft`, `tool-hunt-brief`)
+3. Confirm project skills under `skills/` are visible to cloud runs (especially `tool-frontier-scan`, `vertical-rival-watch`, `memory-skills-audit`, `morning-scan`, `script-draft`, `tool-hunt-brief`, `lead-shop-enrich`, `sales-lead-form`)
 4. Reply in the cloud agent thread: `skills sync on`
 
 ## Why

@@ -73,6 +73,16 @@ node scripts/unlock-beyond-the-hunt.mjs   # exit 0 when Mem0+Context READY
 
 Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, continue with Active Composio/X/Yelp paths. Brief stays git-backed until Mem0 imports.
 
+## Active without Mem0 (keep hunting)
+
+| Path | Proof |
+| --- | --- |
+| Love morning-scan | Yelp search/details + `fixtures/tool-hunt/*-love-brands.json` (`live_proof`) |
+| Pain→sales enrich | `YELP_SEARCH_BY_PHONE` on all 5 love-seed phones — `skills/lead-shop-enrich.md` |
+| Status | `node scripts/print-beyond-the-hunt-status.mjs` (`phone_enrich_markets: 5`) |
+
+Fee catalog remains paused (`strong_keep` 63).
+
 ## KEEP grader UI
 
 Thin public wedge: `fixtures/tool-hunt/keep-grader/` — rank KEEP$ after fees (Shop ~6% buy-now vs Marketplace 15–30%).

@@ -730,3 +730,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - `print-beyond-the-hunt-status.mjs` now includes `pain_sales_enrich.phone_enrich_markets: 5`. CI greps it. Tip CI green on 5-market phone enrich. Ledger v1.92.19.
 - Still blocked: Mem0 + Context for unlock READY.
+
+### 2026-09-04 (hunt-critical lead-shop skills + Active-without-Mem0 docs)
+
+- Added `lead-shop-enrich` + `sales-lead-form` to Sync Skills hunt-critical list.
+- TOOL-HUNT: Active-without-Mem0 table (love Yelp + phone enrich + status).
+- Tip CI green on status phone enrich. Ledger v1.92.20. Auth still blocked.

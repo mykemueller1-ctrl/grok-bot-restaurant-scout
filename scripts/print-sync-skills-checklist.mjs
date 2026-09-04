@@ -20,6 +20,8 @@ const huntCritical = [
   "tool-hunt-brief.md",
   "auth-gap-check.md",
   "stack-vs-competitors.md",
+  "lead-shop-enrich.md",
+  "sales-lead-form.md",
 ];
 
 if (!existsSync(skillsDir)) {
