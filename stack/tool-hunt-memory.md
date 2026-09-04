@@ -180,3 +180,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Dogfood: pain-to-sales-denver-rioja.json. Adopted scripts/validate-buy-now-dogfood.mjs CI gate.
 - Watched ChowNow (commission-free first-party + dual-run DoorDash). Skip forecasting.
 - Ledger v1.24.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Rioja buy-now + dual-run KEEP + Chowly)
+
+- Adopted script-draft-rioja-buy-now.json + catalog-sync-rioja-sandbox.json (validate-buy-now ≥3).
+- Adopted dual_run_marketplace KEEP signal + pain-scan-dual-run.json (10/10 strong).
+- Watched Chowly (commission-free ordering + marketing OS; DoorDash hybrid). Skip forecasting.
+- Ledger v1.25.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

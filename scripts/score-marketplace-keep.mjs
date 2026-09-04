@@ -29,6 +29,8 @@ const rules = [
   { re: /pad(ded)?|menu markup|inflat(ed|e) menu|markup (on|to offset)/, signal: "menu_markup_pain", w: 15 },
   // First-party OS KEEP peers (Deonde/OPA!/SWIPEBY language)
   { re: /own your ordering|commission[\s-]?free|100%\s*of\s*(the\s*)?revenue|keep more profit/, signal: "own_ordering_keep", w: 15 },
+  // Dual-run: keep marketplace for discovery, own channel for KEEP guests
+  { re: /dual[\s-]?run|run both|marketplaces? for (new|discovery)|discovery.*(direct|first[\s-]?party)/, signal: "dual_run_marketplace", w: 15 },
 ];
 
 const signals = [];

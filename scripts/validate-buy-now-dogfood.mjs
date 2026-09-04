@@ -2,7 +2,7 @@
 /**
  * Validate love→buy-now dogfood fixtures (script-draft + catalog-sync).
  * Ensures PENDING_APPROVAL drafts pair with SANDBOX catalog payloads.
- * Exit 0 if ≥2 script drafts and matching catalog syncs are well-formed; else 1.
+ * Exit 0 if ≥3 script drafts and matching catalog syncs are well-formed; else 1.
  * No network. No secrets.
  */
 import { readdirSync, readFileSync } from "node:fs";
@@ -16,12 +16,12 @@ const files = readdirSync(dir).sort();
 const scripts = files.filter((f) => f.startsWith("script-draft-") && f.endsWith(".json"));
 const catalogs = files.filter((f) => f.startsWith("catalog-sync-") && f.endsWith(".json"));
 
-if (scripts.length < 2) {
-  console.error(`validate-buy-now-dogfood: need ≥2 script-draft-*.json (has ${scripts.length})`);
+if (scripts.length < 3) {
+  console.error(`validate-buy-now-dogfood: need ≥3 script-draft-*.json (has ${scripts.length})`);
   process.exit(1);
 }
-if (catalogs.length < 2) {
-  console.error(`validate-buy-now-dogfood: need ≥2 catalog-sync-*.json (has ${catalogs.length})`);
+if (catalogs.length < 3) {
+  console.error(`validate-buy-now-dogfood: need ≥3 catalog-sync-*.json (has ${catalogs.length})`);
   process.exit(1);
 }
 

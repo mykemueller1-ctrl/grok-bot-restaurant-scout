@@ -11,11 +11,11 @@
    - Anti-rent beat: buy without marketplace tax — Never86 buy-now / shop in bio
    - Price or scarcity
    - CTA: "tap the bag" / "shop in bio" linking Never86 / TikTok Shop product
-3. Optionally draft a short owner-facing outreach blurb: why this brand, what Never86 does vs marketplace rent / effective-cost statement math / menu-markup pad, vs Owner-style email/SMS OS, vs Lunchbox/OPA!/SWIPEBY/Outbites/Orderitto/Seared/DirectOrders/Deonde first-party web/QR ordering, vs Menami/TextOrder/Ainisa/Ordr DM+direct-order agents, vs OrderPost hosted post→order links, vs Seekadu reservation DMs, vs Moast Shopify shoppable UGC widgets, vs Seekeasy/Beebz creator discovery (skip forecasting pitches), vs Klikit-style Shop POS middleware, and vs content-only AI Reels tools (Feedo/PlateAI/Flik/Mooz) that never close a shoppable sale.
+3. Optionally draft a short owner-facing outreach blurb: why this brand, what Never86 does vs marketplace rent / effective-cost statement math / menu-markup pad / dual-run discovery, vs Owner-style email/SMS OS, vs ChowNow/Chowly/Lunchbox/OPA!/SWIPEBY/Outbites/Orderitto/Seared/DirectOrders/Deonde first-party web/QR ordering, vs Menami/TextOrder/Ainisa/Ordr DM+direct-order agents, vs OrderPost hosted post→order links, vs Seekadu reservation DMs, vs Moast Shopify shoppable UGC widgets, vs Seekeasy/Beebz creator discovery (skip forecasting pitches), vs Klikit-style Shop POS middleware, and vs content-only AI Reels tools (Feedo/PlateAI/Flik/Mooz) that never close a shoppable sale.
 4. Save as `ContentDraft` with status PENDING_APPROVAL.
 5. Ping owner for approval. On approve → status APPROVED → hand to commerce engine to create product draft.
 
-**Active dogfood:** `fixtures/tool-hunt/script-draft-franklin-buy-now.json` (Franklin BBQ Austin) + `fixtures/tool-hunt/script-draft-husk-buy-now.json` (Husk Nashville from Yelp love calibration).
+**Active dogfood:** `fixtures/tool-hunt/script-draft-franklin-buy-now.json` (Franklin BBQ Austin) + `fixtures/tool-hunt/script-draft-husk-buy-now.json` (Husk Nashville) + `fixtures/tool-hunt/script-draft-rioja-buy-now.json` (Rioja Denver).
 
 **Never** post or schedule without APPROVED status.
 **Never** optimize scripts for labor/sales forecasting narratives.

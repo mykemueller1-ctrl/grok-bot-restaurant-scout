@@ -104,6 +104,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-denver-rioja.json
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
+          test -f fixtures/tool-hunt/script-draft-rioja-buy-now.json
           test -f scripts/mem0-import-tool-hunt-memory.mjs
           test -f scripts/mem0-smoke.mjs
           test -f scripts/score-marketplace-keep.mjs
@@ -114,15 +115,18 @@ jobs:
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-rioja-sandbox.json
+          test -f fixtures/tool-hunt/pain-scan-dual-run.json
           test -f stack/tool-hunt-briefs/2026-09-04.md
           node scripts/score-marketplace-keep.mjs "KEEP DoorDash commission quit" | grep -q anti_marketplace_buy_now
           node scripts/score-marketplace-keep.mjs "DoorDash commission is not your cost — statement effective cost 18.75% restaurant lives on what is left" | grep -q effective_cost_math
           node scripts/score-marketplace-keep.mjs "Restaurant owners leaving Toast cite high fees lock-in — rent they do not KEEP" | grep -q pos_fee_lockin
           node scripts/score-marketplace-keep.mjs "pad DoorDash menus 20% menu markup to offset commissions" | grep -q menu_markup_pain
           node scripts/score-marketplace-keep.mjs "Own your ordering commission-free KEEP more profit" | grep -q own_ordering_keep
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 9'
+          node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 10'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
-          node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 2'
+          node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 3'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then

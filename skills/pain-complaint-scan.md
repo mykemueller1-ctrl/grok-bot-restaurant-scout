@@ -12,7 +12,7 @@
 3. Search connected sources:
    - Primary: complaint-sources + social-trends MCP
    - Fallback (verified Active): Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_NEWS` + X `search_posts_all` for recent operator complaints (see `fixtures/tool-hunt/pain-scan-toast-doordash.json`, `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `fixtures/tool-hunt/pain-scan-doordash-effective-cost.json`, `fixtures/tool-hunt/pain-scan-menu-markup.json`)
-4. Prefer posts/articles with **fee $, commission %, leaving/switching, keep-what-you-sell / channel ranking, effective cost / statement math, padded delivery menus / menu markup, own-your-ordering / commission-free** language from owners/GMs.
+4. Prefer posts/articles with **fee $, commission %, leaving/switching, keep-what-you-sell / channel ranking, effective cost / statement math, padded delivery menus / menu markup, own-your-ordering / commission-free, dual-run discovery** language from owners/GMs.
 5. Score KEEP language (optional Active helper):
    - Local: `node scripts/score-marketplace-keep.mjs "<snippet>"`
    - MCP (complaint-sources): `score_marketplace_keep` with `{ "snippet": "…" }` → boost stubs with `score >= 50` / `anti_marketplace_buy_now`.

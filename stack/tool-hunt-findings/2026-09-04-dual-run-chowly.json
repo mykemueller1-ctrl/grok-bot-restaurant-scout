@@ -1,0 +1,22 @@
+{
+  "finding_id": "dual-run-keep-chowly-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Dual-run KEEP signal + Chowly first-party watch",
+  "vendor_or_project": "score_marketplace_keep / Chowly",
+  "urls": [
+    "https://chowly.com/",
+    "https://chowly.com/solutions/branded-online-ordering",
+    "https://chowly.com/resources/blogs/first-party-vs-third-party-delivery-economics/",
+    "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers"
+  ],
+  "what_it_does": "KEEP scorer detects dual-run / marketplaces-for-discovery language; Chowly watched as commission-free ordering + marketing OS peer to ChowNow/Owner.",
+  "how_competitors_use_it": "Pitch hybrid DoorDash discovery + first-party KEEP; Chowly consolidates ordering+ads+loyalty.",
+  "what_we_use_today": "menu_markup + own_ordering KEEP; Never86 owns social buy-now side of dual-run",
+  "gap": "Closed — dual_run_marketplace on CLI+API; pain-scan-dual-run.json; Chowly watch only (skip forecasting).",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted dual_run_marketplace KEEP signal; watched Chowly as first-party+marketing peer. No forecasting research.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}
