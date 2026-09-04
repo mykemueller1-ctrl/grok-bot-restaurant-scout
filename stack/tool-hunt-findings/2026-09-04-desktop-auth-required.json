@@ -1,0 +1,19 @@
+{
+  "finding_id": "desktop-auth-blocked-cloud-2026-09",
+  "lane": "memory",
+  "name": "Mem0 + Context auth require Cursor desktop",
+  "vendor_or_project": "Cursor / Mem0 / Context",
+  "urls": [
+    "https://docs.mem0.ai/platform/mem0-mcp"
+  ],
+  "what_it_does": "Interactive MCP authentication is desktop-only; cloud agents cannot complete mcp_auth.",
+  "how_competitors_use_it": "Teams auth memory/research MCPs once on desktop so cloud automations inherit them.",
+  "what_we_use_today": "Mem0 and Context both needsAuth; Bright Data usable with intermittent 401; WebSearch fallback.",
+  "gap": "Durable memory + dual research blocked until Myke auths in desktop IDE.",
+  "pivot_speed": "hours",
+  "verdict": "needs_auth",
+  "priority": 1,
+  "summary": "Cannot finish auth from this cloud run — desktop clicks required.",
+  "operator_ask": "In Cursor desktop: authenticate Mem0 + Context, enable Sync Skills for Cloud Agents, create Automation with memories using docs/TOOL-HUNT.md.",
+  "researched_at": "2026-09-04"
+}

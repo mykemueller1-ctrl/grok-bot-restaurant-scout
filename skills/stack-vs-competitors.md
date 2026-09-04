@@ -2,17 +2,13 @@
 
 **Trigger:** after `tool-frontier-scan`, or when Myke asks “what are we using vs them?”
 
-**Goal:** Clear matrix — Never86 stack vs competitor / peer stacks — so pivots are evidence-based.
+**Goal:** Clear matrix — Never86 vs **vertical** competitors (and coding-agent peers) — so pivots are evidence-based.
 
-1. Load `stack/tooling-ledger.json` sections: `ours`, `competitors`, `open_gaps`.
-2. For each competitor row, refresh from latest public sources (docs, changelogs, comparison writeups). Do not invent usage.
-3. Fill gaps only when evidence exists:
-   - IDE / agent surface
-   - Memory layer
-   - Skills / knowledge
-   - MCP / connectors
-   - Orchestration / automations
-4. Update `competitors[]` and `open_gaps[]` in the ledger.
-5. Produce a short operator table in the brief (see `tool-hunt-brief`): **Us | Them | Gap | Pivot speed**.
+1. Load `stack/tooling-ledger.json` → `ours`, `competitors`, `open_gaps`.
+2. Refresh vertical rows first: social commerce agents, direct-order AI, restaurant marketing agents, shoppable video tools.
+3. Keep coding-agent peers (Cursor / Claude Code / Windsurf / Copilot) as secondary — they power how we build, not the product category.
+4. **Ignore** forecasting/labor-research competitors unless they also ship GTM/social commerce agents (then only note the GTM slice).
+5. Update ledger; every gap gets `close` / `watch` / `ignore`.
+6. Brief table: **Us | Them | Gap | Pivot speed**.
 
-**Done when:** ledger competitor rows are dated, every gap has a verdict (`close` / `watch` / `ignore`), and the brief can be generated without extra research.
+**Done when:** vertical competitor rows dated; brief can generate without extra research.

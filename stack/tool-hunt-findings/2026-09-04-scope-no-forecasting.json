@@ -1,0 +1,17 @@
+{
+  "finding_id": "vertical-scope-no-forecasting-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Scope lock: no sales/labor forecasting research",
+  "vendor_or_project": "Never86",
+  "urls": [],
+  "what_it_does": "Operator directive: Beyond the Hunt researches best tools in the vertical (buy-now + pain→sales + agent stack). Explicitly out of scope: historical sales forecasting and labor forecasting products.",
+  "how_competitors_use_it": "Many restaurant AI platforms mix forecasting into OS pitches; we skip that lane for tooling research.",
+  "what_we_use_today": "report-ops still ingests real Toast labor/sales dumps for ops — that is file ops, not forecasting product research.",
+  "gap": "None — scope clarified so weekly scans stay sharp.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Ledger + skills + routine now hard-exclude forecasting research; keep report ingest separate.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -19,6 +19,7 @@ const LANES = new Set([
   "skills_knowledge",
   "mcp_connectors",
   "competitor_stacks",
+  "vertical_gtm",
   "orchestration",
   "other",
 ]);

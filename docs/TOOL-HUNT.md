@@ -1,17 +1,32 @@
-# Beyond the Hunt — AI tooling frontier
+# Beyond the Hunt — best in the restaurant vertical
 
-Continuous research loop so Never86 stays on the best Cursor agents, memory, skills, and knowledge tools — and knows what competitors use.
+Continuous research so Never86 runs the **best tools in our vertical**: love→buy-now social commerce, pain→sales-lead shopping, Cursor agents / memory / skills. Pivot fast. Stay ahead of vertical competitors.
+
+## What we are hunting (yes)
+
+| Lane | Examples |
+| --- | --- |
+| Social commerce GTM | TikTok/IG shoppable, UGC scout, buy-now scripts, creator→onboard |
+| Pain → sales lead | Vendor complaint shoppers, teach/label, sales forms |
+| Agent stack | Cursor Automations, memories, skills, MCP, Mem0 |
+| Vertical rivals | Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos |
+
+## What we are NOT hunting (no)
+
+- Historical sales forecasting products
+- Labor forecasting / schedule-optimization research
+- Generic BI / “restaurant analytics platform” bake-offs
+
+Report-ops still **ingests** real Toast/labor/sales files Myke already gets — that is ops, not a tooling research lane.
 
 ## Why
 
-AI tooling moves weekly. Guessing loses. This loop:
+Vertical AI moves weekly. Guessing loses. This loop:
 
-1. Scans the frontier
-2. Diffs **us vs them**
+1. Scans Cursor + restaurant GTM frontier
+2. Diffs **us vs vertical competitors**
 3. Audits memory / skills / MCP auth gaps
-4. Briefs Myke with concrete adopt / pilot / watch asks
-
-GTM agents (restaurant scout, pain shoppers, report-ops) stay on mission. This is **operator infrastructure**, not a change to love→buy-now or pain→sales-lead purpose.
+4. Briefs Myke with adopt / pilot / watch asks
 
 ## Pieces
 
@@ -27,21 +42,22 @@ GTM agents (restaurant scout, pain shoppers, report-ops) stay on mission. This i
 | `schemas/tool-finding.json` | Finding schema |
 | `routines/tool-hunt-weekly.json` | Monday 09:00 America/Chicago |
 
-## Operator loop (you)
+## Desktop unlocks (cloud agents cannot click these)
 
-1. Read the weekly brief (Telegram / chat).
-2. Authenticate blocked MCPs when asked (Mem0, Context) — never paste tokens into chat.
-3. Approve pilots (`adopt` / `pilot` only).
-4. Optional but recommended: create a **Cursor Automation** at [cursor.com/automations](https://cursor.com/automations) with memories on, using the prompt in `routines/tool-hunt-weekly.json` → `cursor_automation.prompt_hint`.
-5. Turn on **Sync Skills for Cloud Agents** (Settings → Agents) so personal skills travel.
+Do once in **Cursor desktop IDE** (Settings → MCP / Agents):
 
-## Agent loop (cloud / automation)
+1. **Authenticate Mem0** — durable cross-session memory
+2. **Authenticate Context.dev** — research redundancy when Bright Data flakes
+3. **Sync Skills for Cloud Agents** — Settings → Agents → on
+4. **Create Automation** at [cursor.com/automations](https://cursor.com/automations) with **memories on**, prompt from `routines/tool-hunt-weekly.json` → `cursor_automation.prompt_hint`
+
+Until then, a cloud **timer** (`beyond-the-hunt-weekly`) keeps the Monday scan alive.
+
+## Agent loop
 
 ```
 tool-frontier-scan → memory-skills-audit → stack-vs-competitors → tool-hunt-brief
 ```
-
-Validate ledger anytime:
 
 ```bash
 node scripts/validate-tooling-ledger.mjs
@@ -49,17 +65,16 @@ node scripts/validate-tooling-ledger.mjs
 
 ## Decision rules
 
-Copied from the ledger:
-
-- **adopt** — closes a named gap; pivot in hours/days; no secret sprawl
+- **adopt** — closes a named gap; pivot in hours/days; sharpens vertical GTM
 - **pilot** — dogfood one week before promoting
 - **watch** — track monthly
-- **skip** — no edge, or expands forbidden surfaces
-- **needs_auth** — already wired; only operator auth blocks it
+- **skip** — forecasting/labor-research, no edge, or forbidden surfaces
+- **needs_auth** — already wired; only desktop auth blocks it
 
 ## Do not
 
 - Commit API tokens or `.env`
 - Expand to Supabase unless Myke explicitly asks
 - Install paid tools or switch primary IDE without approval
+- Drift tool-hunt into sales/labor **forecasting** research
 - Change pain-shopper / restaurant-scout purpose while hunting tools

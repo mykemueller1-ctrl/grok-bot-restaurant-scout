@@ -1,43 +1,56 @@
 {
-  "version": "1.0.0",
-  "purpose": "Canonical ledger: what Never86 uses for agents/memory/skills/knowledge vs what competitors use. Beyond the Hunt updates this — never invent competitor claims.",
+  "version": "1.1.0",
+  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
+  "mission_yes": [
+    "love_to_buy_now",
+    "pain_to_sales_lead",
+    "cursor_agents_memory_skills",
+    "vertical_gtm_rivals"
+  ],
+  "mission_no": [
+    "historical_sales_forecasting",
+    "labor_forecasting",
+    "generic_restaurant_bi_bakeoffs"
+  ],
   "last_scan": "2026-09-04",
   "last_brief": "2026-09-04",
   "owner": "mykemueller1-ctrl",
   "ours": {
+    "vertical_wedge": "Chef-loved / UGC-proven kitchens → Never86 TikTok/IG buy-now; vendor-pain shoppers → taught sales leads",
     "ide_agents": {
       "primary": "Cursor Cloud Agents + desktop Cursor",
       "also": ["Grok Bot desktop (swarm import)", "Codex Cloud (GitHub-connected)"],
-      "automations": "Cursor Automations (scheduled / GitHub / Slack) — preferred for recurring tool hunt",
-      "notes": "Repo agents live under agent/; cloud agents own wiring per AGENTS.md"
+      "automations": "Cursor Automations + memories preferred; cloud timer beyond-the-hunt-weekly until Automation exists",
+      "notes": "Repo agents under agent/; cloud agents own wiring per AGENTS.md"
     },
     "memory": {
       "primary": "teach_memory on pain/report agents + VendorLearnedBank",
-      "cursor_automation_memories": "available on Automations (MEMORIES.md-style named entries) — wire for Beyond the Hunt automation",
-      "mem0_mcp": "connected in Cursor but needsAuth as of last audit",
-      "context_dev": "needsAuth",
-      "pinecone": "MCP present; tool count may be zero until configured",
-      "posthog_scratchpad": "signals-scout scratchpad for analytics memory"
+      "cursor_automation_memories": "preferred for Beyond the Hunt cross-run learning",
+      "mem0_mcp": "needs desktop auth (cloud cannot mcp_auth)",
+      "context_dev": "needs desktop auth",
+      "pinecone": "MCP present; configure only if vector search needed for vertical knowledge",
+      "posthog_scratchpad": "signals-scout scratchpad for product analytics memory"
     },
     "skills_knowledge": {
-      "project_skills": "skills/*.md (restaurant scout, pain shoppers, report-ops, tool-hunt)",
+      "project_skills": "skills/*.md including tool-hunt + GTM skills",
       "agents_md": "AGENTS.md",
       "operator_docs": ["docs/OPERATOR.md", "docs/TOOL-HUNT.md", "docs/CLOUDFLARE.md"],
-      "posthog_skills": "PostHog MCP skills store available in this environment",
-      "personal_skills_sync": "enable Settings → Agents → Sync Skills for Cloud Agents"
+      "posthog_skills": "PostHog MCP skills store",
+      "personal_skills_sync": "desktop: Settings → Agents → Sync Skills for Cloud Agents"
     },
     "mcp_live": [
-      "Bright Data (research SERP/scrape — auth can flake; fall back to WebSearch)",
+      "Bright Data",
       "PostHog",
       "Render",
       "Vercel",
-      "Cloudflare-docs / builds / observability / bindings",
+      "Cloudflare-*",
       "Resend",
-      "Gmail / Google Drive / Google Calendar",
+      "Gmail / Drive / Calendar",
       "X",
-      "Supabase (do not expand unless operator asks)",
+      "Supabase (do not expand unless asked)",
       "Mobbin",
       "Composio",
+      "Apollo / Clay (GTM enrichment when relevant)",
       "cursor-cloud / cursor-subscriptions"
     ],
     "mcp_repo_defined": [
@@ -50,10 +63,85 @@
   },
   "competitors": [
     {
+      "name": "Owner.com",
+      "lane": "vertical_gtm",
+      "stack": "AI agents for direct ordering + marketing to replace DoorDash tech rent; flat-rate positioning",
+      "memory": "Vendor-managed marketing/content agents",
+      "edge": "Capitalized direct-order + AI marketing for independents; threatens marketplace rent narrative we also fight",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://memeburn.com/owner-just-raised-240m-to-prove-ai-can-kill-the-doordash-model/"
+      ]
+    },
+    {
+      "name": "Trenz",
+      "lane": "vertical_gtm",
+      "stack": "Multi-agent social commerce (research → creative → publish → shop → ads); TikTok Shop partner narrative",
+      "memory": "Agent team state across research/creative/ops",
+      "edge": "End-to-end shoppable content + TikTok Shop ops — overlaps our buy-now script path",
+      "updated": "2026-09-04",
+      "sources": ["https://www.trenz.ai/"]
+    },
+    {
+      "name": "Restomas",
+      "lane": "vertical_gtm",
+      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp — approve then execute",
+      "memory": "Platform-native agent memory",
+      "edge": "Full guest-facing + marketing agent suite in one subscription",
+      "updated": "2026-09-04",
+      "sources": ["https://www.restomas.com/en/agentic-ai"]
+    },
+    {
+      "name": "Feedia",
+      "lane": "vertical_gtm",
+      "stack": "AI agent squad for indie restaurants: social, community, campaigns; zero ad-spend pitch",
+      "memory": "Hybrid merchant knowledge base",
+      "edge": "Culture/language-aware social agents for small restaurants",
+      "updated": "2026-09-04",
+      "sources": ["https://feedia.ai/"]
+    },
+    {
+      "name": "BrandPal",
+      "lane": "vertical_gtm",
+      "stack": "AI agents + services for TikTok Shop / Amazon / DTC; Scriptly for shoppable scripts",
+      "memory": "Fine-tuned brand agents on proprietary data",
+      "edge": "Official TikTok Shop Academy learning-partner narrative + creator outreach agents",
+      "updated": "2026-09-04",
+      "sources": ["https://www.brandpal.ai/"]
+    },
+    {
+      "name": "CreatOK",
+      "lane": "vertical_gtm",
+      "stack": "TikTok Shop video generate/clone/publish via official API",
+      "memory": "Prompt cloning from winning videos",
+      "edge": "High-volume shoppable video production — compare to our script-draft skill",
+      "updated": "2026-09-04",
+      "sources": ["https://www.creatok.ai/"]
+    },
+    {
+      "name": "Straunt",
+      "lane": "vertical_gtm",
+      "stack": "AI restaurant platform: voice ordering, marketplace unify, campaigns, POS",
+      "memory": "Campaign + guest data agents",
+      "edge": "Broad operator OS; watch GTM/campaign agents only (not forecasting)",
+      "updated": "2026-09-04",
+      "sources": ["https://www.straunt.ai/"]
+    },
+    {
+      "name": "Zayos / Zay-OS",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free direct ordering OS + grader + CRM assistant on Claude",
+      "memory": "Ask Zay CRM assistant",
+      "edge": "Same anti-marketplace thesis; grader is a sharp inbound wedge",
+      "updated": "2026-09-04",
+      "sources": ["https://www.zayrev.com/zayos"]
+    },
+    {
       "name": "Cursor-native shops",
+      "lane": "competitor_stacks",
       "stack": "Cursor IDE + Cloud Agents + Automations + Skills + MCP",
-      "memory": "Automation memories; optional Mem0 / Graphiti MCP",
-      "edge": "Same surface we are on — race is skills depth + automation quality",
+      "memory": "Automation memories; optional Mem0",
+      "edge": "Same build surface — race is vertical skills depth",
       "updated": "2026-09-04",
       "sources": [
         "https://cursor.com/docs/cloud-agent/automations",
@@ -62,114 +150,91 @@
     },
     {
       "name": "Claude Code heavy teams",
-      "stack": "Claude Code CLI (+ optional Cursor/IDE for day-to-day)",
-      "memory": "Project CLAUDE.md / memory files; often Mem0 or Letta for long-horizon",
-      "edge": "Large-context autonomous refactors and terminal agent loops",
+      "lane": "competitor_stacks",
+      "stack": "Claude Code CLI (+ optional Cursor)",
+      "memory": "CLAUDE.md / Mem0 / Letta patterns",
+      "edge": "Terminal autonomy for heavy refactors — watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.thecodew.com/2026/08/ai-coding-assistants-compared.html"
-      ]
-    },
-    {
-      "name": "Windsurf / Devin Desktop shops",
-      "stack": "Windsurf Cascade agentic IDE (generous free tier narrative in 2026 comps)",
-      "memory": "Product-native agent memory; MCP-capable",
-      "edge": "Price/free-tier and Cascade agent loops",
-      "updated": "2026-09-04",
-      "sources": [
-        "https://devtoollab.com/blog/best-ai-coding-assistants"
-      ]
-    },
-    {
-      "name": "GitHub Copilot enterprise default",
-      "stack": "Copilot in VS Code / JetBrains + GitHub Actions agents",
-      "memory": "Limited cross-session vs dedicated memory MCPs",
-      "edge": "Compliance + ecosystem fit, not frontier agent depth",
-      "updated": "2026-09-04",
-      "sources": [
-        "https://www.thecodew.com/2026/08/ai-coding-assistants-compared.html"
-      ]
-    },
-    {
-      "name": "Full-delegation Devin teams",
-      "stack": "Devin cloud agent for end-to-end PR delivery",
-      "memory": "Vendor-managed task memory",
-      "edge": "Outsourced task delegation at higher price point",
-      "updated": "2026-09-04",
-      "sources": [
-        "https://vmzig.com/en/blog/articles/2026-cursor-windsurf-claude-code-copilot-gemini-devin-six-ai-tools-comparison.html"
       ]
     }
   ],
   "watchlist": [
     {
-      "item": "Mem0 MCP auth + OpenMemory cross-tool memory",
+      "item": "Desktop auth: Mem0 + Context.dev",
       "lane": "memory",
-      "why": "Already in Cursor; unlocks persistent ops memory across sessions",
+      "why": "Cloud cannot run interactive mcp_auth — blocks durable memory + research redundancy",
       "verdict": "needs_auth"
     },
     {
-      "item": "Zep / Graphiti temporal knowledge graph",
-      "lane": "memory",
-      "why": "Strong LongMemEval narrative for facts that change over time (vendors, ICP labels)",
-      "verdict": "watch"
-    },
-    {
-      "item": "Letta stateful agents",
-      "lane": "memory",
-      "why": "OS-style tiered memory for long-horizon autonomous agents",
-      "verdict": "watch"
-    },
-    {
-      "item": "Cursor Automations + Memories for Beyond the Hunt",
+      "item": "Cursor Automation + Memories for Beyond the Hunt",
       "lane": "cursor_agents",
-      "why": "Native recurring research with cross-run memory — best fit for this mission",
+      "why": "Durable weekly vertical scan with cross-run memory",
       "verdict": "adopt"
     },
     {
-      "item": "Context.dev MCP auth",
-      "lane": "mcp_connectors",
-      "why": "Preferred live web research when Bright Data auth flakes",
-      "verdict": "needs_auth"
+      "item": "Owner.com AI marketing agents",
+      "lane": "vertical_gtm",
+      "why": "Well-funded anti-DoorDash agent stack; track messaging + wedge vs Never86 buy-now",
+      "verdict": "watch"
     },
     {
-      "item": "Claude Code as secondary terminal agent",
-      "lane": "competitor_stacks",
-      "why": "Peers pair IDE agent + terminal agent; evaluate only if Cursor cloud hits ceilings",
+      "item": "Trenz / BrandPal / CreatOK shoppable video agents",
+      "lane": "vertical_gtm",
+      "why": "Direct competitors to script-draft + social publish path",
+      "verdict": "watch"
+    },
+    {
+      "item": "Restomas / Feedia restaurant marketing agent suites",
+      "lane": "vertical_gtm",
+      "why": "Full-stack marketing agents for independents",
+      "verdict": "watch"
+    },
+    {
+      "item": "Zayos Restaurant Grader inbound wedge",
+      "lane": "vertical_gtm",
+      "why": "Free diagnostic → OS conversion; pattern we may copy for pain/onboarding",
+      "verdict": "pilot"
+    },
+    {
+      "item": "Zep/Graphiti / Letta",
+      "lane": "memory",
+      "why": "Only if teach_memory quality plateaus — not a forecasting play",
       "verdict": "watch"
     }
   ],
   "open_gaps": [
     {
-      "id": "auth-mem0",
-      "gap": "Mem0 MCP needsAuth — cannot write/search durable agent memory yet",
-      "action": "Operator authenticates Mem0 in Cursor MCP settings",
+      "id": "desktop-auth-mem0-context",
+      "gap": "Mem0 + Context need Cursor desktop authentication (cloud mcp_auth unavailable)",
+      "action": "In Cursor desktop: authenticate Mem0 and Context MCP; never paste tokens in chat",
       "priority": 1
     },
     {
-      "id": "auth-context",
-      "gap": "Context.dev needsAuth — weaker research redundancy when Bright Data 401s",
-      "action": "Operator authenticates Context MCP",
-      "priority": 2
-    },
-    {
       "id": "automation-tool-hunt",
-      "gap": "No Cursor Automation yet for weekly Beyond the Hunt",
-      "action": "Create automation at cursor.com/automations from docs/TOOL-HUNT.md prompt",
+      "gap": "No Cursor Automation yet; timer is interim",
+      "action": "Create Automation at cursor.com/automations with memories + prompt_hint from routines/tool-hunt-weekly.json",
       "priority": 1
     },
     {
       "id": "skills-sync",
-      "gap": "Confirm Sync Skills for Cloud Agents is on so personal skills travel",
-      "action": "Settings → Agents → Sync Skills for Cloud Agents",
+      "gap": "Confirm Sync Skills for Cloud Agents",
+      "action": "Desktop Settings → Agents → Sync Skills for Cloud Agents = on",
       "priority": 2
+    },
+    {
+      "id": "vertical-grader-wedge",
+      "gap": "Rivals ship free graders / diagnostics; we shop pain but lack a public self-serve wedge",
+      "action": "Pilot a Never86 fit/grader concept after teach quality is stable — do not expand import waves early",
+      "priority": 3
     }
   ],
   "decision_rules": {
-    "adopt": "Fills a named open_gap, pivot_speed hours|days, no secret sprawl",
-    "pilot": "Promising but needs a 1-week dogfood before ledger promotion",
+    "adopt": "Fills a named open_gap, sharpens vertical GTM, pivot_speed hours|days, no secret sprawl",
+    "pilot": "Promising vertical wedge; dogfood one week before ledger promotion",
     "watch": "Track monthly; no install",
-    "skip": "Overlaps ours without clear edge, or expands forbidden surfaces (e.g. Supabase without ask)",
-    "needs_auth": "Tool already wired; blocked only on operator auth"
+    "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
+    "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   }
 }

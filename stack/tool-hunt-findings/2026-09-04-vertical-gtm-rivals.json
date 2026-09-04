@@ -1,0 +1,22 @@
+{
+  "finding_id": "vertical-owner-trenz-restomas-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Vertical AI GTM rivals (Owner, Trenz, Restomas, Feedia)",
+  "vendor_or_project": "market",
+  "urls": [
+    "https://memeburn.com/owner-just-raised-240m-to-prove-ai-can-kill-the-doordash-model/",
+    "https://www.trenz.ai/",
+    "https://www.restomas.com/en/agentic-ai",
+    "https://feedia.ai/"
+  ],
+  "what_it_does": "Agentic stacks for restaurants/social commerce: Owner (direct order + AI marketing vs DoorDash rent), Trenz (TikTok Shop agent team), Restomas (full marketing/guest agents), Feedia (indie social agent squad).",
+  "how_competitors_use_it": "They sell approve-then-execute marketing/social/commerce agents to independents — same anti-marketplace story, different wedge than Never86 chef-love buy-now + pain shopping.",
+  "what_we_use_today": "Restaurant Scout + 238 pain shoppers + teach loop + shoppable scripts; Cursor/Grok Bot agent ops.",
+  "gap": "Need continuous vertical competitor tracking (not forecasting tools) and sharper public wedges like graders.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Best-in-vertical race is agent depth on social commerce + operator GTM — stay Cursor-powered, copy wedge patterns (grader/inbound) carefully, do not chase sales/labor forecasting suites.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

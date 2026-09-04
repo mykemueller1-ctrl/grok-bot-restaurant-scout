@@ -67,9 +67,9 @@ Worker + D1 live under `services/pain-leads-api/` (`src/worker/`, `wrangler.toml
 - `stack/github-secrets.manifest.json` — secret **names** for GitHub Actions + Codex (values never in git)
 - `scripts/codex-cloud-setup.sh` — Codex Cloud environment setup script
 
-## Beyond the Hunt — tooling frontier
+## Beyond the Hunt — best in vertical
 
-Continuous scout for the latest Cursor agents, memories, skills, MCP, and competitor stacks so we can pivot fast.
+Continuous scout for the greatest tools in **our lane** (TikTok/IG buy-now, pain→sales-lead, Cursor agents/memory/skills) and what vertical rivals use. **Not** sales/labor forecasting research.
 
 - Agent: `agent/tool-hunt/beyond-the-hunt.json`
 - Ledger (us vs them): `stack/tooling-ledger.json`
