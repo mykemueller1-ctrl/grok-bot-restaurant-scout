@@ -1,5 +1,5 @@
 {
-  "version": "1.42.0",
+  "version": "1.43.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -523,6 +523,18 @@
       ]
     },
     {
+      "name": "RestauNax",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free first-party OO: website + branded app + loyalty/email/SMS from ~$99/mo flat; Uber Direct / DoorDash Drive for delivery without Marketplace food commission",
+      "memory": "Owned guest/order list for push/email/SMS",
+      "edge": "ChowNow/BentoBox-class KEEP peer — not TikTok Shop-native; contrast in sales forms",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://restaunax.com/resources/commission-free-ordering",
+        "https://restaunax.com/"
+      ]
+    },
+    {
       "name": "Sauce",
       "lane": "vertical_gtm",
       "stack": "Commission-free first-party ordering + multi-fleet managed delivery (flat-fee / 0% commission); web/Google/IG/FB order capture + guest marketing",
@@ -795,6 +807,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "TikTok Shop US referral watch Oct 1 2026 (6%→8% + 1.5% creator facilitation)",
+      "lane": "vertical_gtm",
+      "why": "Secondary reports (Ecommerce Times) claim Q4 hike; Dashboardly still ~6% as of Jul 2026 — keep grader default 6 until official/post-Oct confirm; still beats Marketplace 15–30%",
+      "verdict": "watch"
+    },
+    {
+      "item": "RestauNax commission-free OO (~$99/mo)",
+      "lane": "vertical_gtm",
+      "why": "First-party KEEP peer (site/app/loyalty); not Shop-native — contrast in sales forms",
+      "verdict": "watch"
+    },
     {
       "item": "KEEP grader default social_fee_pct=6 (Shop referral)",
       "lane": "vertical_gtm",

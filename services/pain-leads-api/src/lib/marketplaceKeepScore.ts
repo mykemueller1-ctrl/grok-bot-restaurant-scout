@@ -30,7 +30,7 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /5%\s*(restaurant|per[\s-]?order|platform|order support|selling|checkout)|restaurant fee per order|order support fee|owner\.com.*5%|\$249.*5%|\$0\.40\s*(per[\s-]?order|minimum)/i, signal: "first_party_pct_fee", w: 15 },
   // Marketplace vendor's own 0% direct channel (DoorDash OO / Uber Webshop / Grubhub Direct)
   { re: /doordash online ordering|uber\s*webshop|grubhub\s*direct|0%\s*commission on direct|online ordering.*(0%|zero)\s*commission|(0%|zero)\s*commission.*(direct|own (site|website|channel)|webshop)|drive on-demand|grubhub\s*connect/i, signal: "marketplace_direct_zero", w: 15 },
-  // Social shop take-rate vs marketplace rent (TikTok Shop ~6% US referral)
+  // Social shop take-rate vs marketplace rent (TikTok Shop ~6% US; watch Oct 2026 ~8%)
   { re: /tiktok shop.*(6|8)\s*%|(6|8)\s*%\s*(referral|unified|commission|platform)|shop referral fee|unified referral/i, signal: "social_shop_fee", w: 15 },
 ];
 

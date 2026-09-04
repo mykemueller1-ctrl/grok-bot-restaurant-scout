@@ -298,3 +298,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Updated 5 keep-grader dogfoods + pilot: social keep_pct 94%; teach Shop ~6% vs Marketplace 15–30%.
 - Validator asserts social_fee_pct=6 + quote `social_buy_now keep_pct 94%`.
 - Ledger v1.42.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Shop fee-hike watch + RestauNax)
+
+- Composio scan: Ecommerce Times claims TikTok Shop US referral 6%→8% Oct 1 2026 (+1.5% creator facilitation). Dashboardly still ~6% (Jul 2026). **Watch only** — keep grader default at 6 until confirmed.
+- Watched RestauNax (~$99/mo commission-free site/app) as first-party KEEP peer (not Shop-native). Skip SpotOn labor.
+- `social_shop_fee` already matches 6|8%. Ledger v1.43.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

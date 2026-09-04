@@ -1,0 +1,19 @@
+{
+  "id": "2026-09-04-restaunax-commission-free-watch",
+  "date": "2026-09-04",
+  "lane": "vertical_gtm",
+  "name": "RestauNax commission-free first-party OO",
+  "mission_fit": "pain_to_sales_lead",
+  "verdict": "watch",
+  "what_we_use_today": "pain→sales KEEP teach vs ChowNow/BentoBox/Owner first-party OS peers",
+  "summary": "RestauNax pitches flat ~$99/mo commission-free website+app+loyalty with Uber Direct/DoorDash Drive delivery — ChowNow-class KEEP peer, not TikTok Shop-native. Watch only; contrast Never86 shoppable buy-now wedge. Skip any forecasting modules. Auth still blocked.",
+  "never": [
+    "historical_sales_forecasting",
+    "labor_forecasting"
+  ],
+  "sources": [
+    "https://restaunax.com/resources/commission-free-ordering",
+    "https://restaunax.com/"
+  ],
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}
