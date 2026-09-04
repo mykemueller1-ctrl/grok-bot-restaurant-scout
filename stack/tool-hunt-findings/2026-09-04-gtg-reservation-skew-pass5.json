@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-gtg-reservation-skew-pass5",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.66",
+  "sources": [
+    {
+      "url": "https://www.girlandthegoat.com/chicago",
+      "title": "Girl & the Goat Chicago — brand site",
+      "fetched_via": "composio_search_fetch",
+      "note": "Hours/contact/menu narrative only — no first-party OO CTA"
+    },
+    {
+      "url": "https://www.opentable.com/r/girl-and-the-goat-chicago",
+      "title": "Girl & the Goat — OpenTable",
+      "fetched_via": "composio_search_fetch",
+      "note": "Make a reservation live; Booked 203 times today"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "G&TG reservation_skew pass-5: brand site still reservation/hours-only; OpenTable live (Booked 203× today). Yelp 10732. Shop buy-now fills missing social close.",
+  "teach": {
+    "label": "reservation_skew_no_buy_now",
+    "rails": ["opentable_reservations", "no_first_party_oo_found"],
+    "yelp_reviews": 10732
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now teach"],
+    "no": ["fee dogfood", "forecasting"]
+  }
+}

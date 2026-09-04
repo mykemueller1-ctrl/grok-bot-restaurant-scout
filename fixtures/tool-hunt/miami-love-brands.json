@@ -1,6 +1,6 @@
 {
   "seed_id": "miami-love-brands-yelp-2026-09-04",
-  "purpose": "Third-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "purpose": "Third-market calibration for morning-scan love\u2192buy-now (chef/cult brands). Not forecasting.",
   "market": "Miami, FL",
   "brands": [
     {
@@ -18,25 +18,35 @@
       "phone": "+13056760894",
       "rating": 4.0,
       "review_count": 2084,
-      "transactions": ["pickup"],
+      "transactions": [
+        "pickup"
+      ],
       "love_signal": "Chef Michael Schwartz / Design District cult / first-party pickup present",
-      "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard",
+      "never86_fit": "Love-proven + pickup already first-party \u2192 Shop buy-now onboard",
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.0,
         "review_count": 2084,
         "price": "$$$",
-        "transactions": ["pickup"]
+        "transactions": [
+          "pickup"
+        ]
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04T22:25Z",
+        "reverified_at": "2026-09-04T21:25Z",
         "website": "https://michaelsgenuine.com/",
-        "rails": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
-        "note": "Official site Order Delivery still lists UberEats + DoorDash — marketplace leak on love brand; Shop buy-now displaces rent. Pass-5 live FETCH confirms UberEats + DoorDash CTAs on miami page.",
+        "rails": [
+          "ubereats",
+          "doordash",
+          "opentable_reservations",
+          "takeout_cta"
+        ],
+        "note": "Official site Order Delivery still lists UberEats + DoorDash \u2014 marketplace leak on love brand; Shop buy-now displaces rent. Pass-5 live FETCH confirms UberEats + DoorDash CTAs on miami page. Pass-6: miami Delivery still UberEats+DoorDash.",
         "sources": [
           "https://www.michaelsgenuine.com/miami",
-          "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass5.json"
+          "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass5.json",
+          "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass6.json"
         ]
       }
     },
@@ -48,7 +58,7 @@
       "review_count": 989,
       "transactions": [],
       "love_signal": "National Italian cult / Miami Beach destination / no marketplace transactions on Yelp",
-      "never86_fit": "Viral demand → shoppable merch/SKU without DoorDash rails"
+      "never86_fit": "Viral demand \u2192 shoppable merch/SKU without DoorDash rails"
     },
     {
       "name": "La Fresa Francesa",
@@ -57,11 +67,11 @@
       "rating": 4.6,
       "review_count": 1044,
       "love_signal": "Local French wine-bar cult / Hialeah destination",
-      "never86_fit": "Community love → social commerce close"
+      "never86_fit": "Community love \u2192 social commerce close"
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES term=chef location=Miami, FL sort=review_count 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Michael's Genuine 2084 reviews",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 \u2014 Michael's Genuine 2084 reviews",
   "status": "calibration_only",
   "notes": "Skipped closed venues and generic name-match 'chef' hits without cult signal. Prefer chef/cult narrative + review volume."
 }

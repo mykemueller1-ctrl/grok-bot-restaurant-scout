@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-kyte-sticker-unavailable-reconfirm",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.66",
+  "sources": [
+    {
+      "url": "https://docs.kyteapp.com/en/articles/7861178-activating-the-instagram-order-food-sticker",
+      "title": "Activating the Instagram Order Food sticker | Kyte Help",
+      "fetched_via": "composio_search_web",
+      "note": "IG sticker path still documented as unavailable / advise FB Start Order alternate"
+    },
+    {
+      "url": "https://docs.kyteapp.com/en/articles/7861141-setting-up-order-food-on-facebook",
+      "title": "Setting up Order Food on Facebook | Kyte Help",
+      "fetched_via": "composio_search_web",
+      "note": "FB Order Food still the working FBE path — peer_count stays 9"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Kyte Help still banners IG sticker AND Facebook Order Food FBE setup as currently unavailable, directing operators to a Facebook Start Order action-button alternate. Keep Kyte in meta_order_food_peer_count (stays 9) until Meta partner list drops them; flag degraded FBE path for Shop wedge contrast.",
+  "teach": {
+    "label": "kyte_fbe_degraded_sticker_and_setup_unavailable",
+    "peer_count_impact": "none — keep counted until Meta partner list drops Kyte",
+    "shop_wedge": "degraded Meta FBE path strengthens first-party Shop close"
+  },
+  "mission_lock": {
+    "yes": ["Meta FBE peer hygiene"],
+    "no": ["drop Kyte from peer_count", "inflate peer_count"]
+  }
+}

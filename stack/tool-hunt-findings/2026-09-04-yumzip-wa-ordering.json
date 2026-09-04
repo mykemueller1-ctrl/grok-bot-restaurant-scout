@@ -1,0 +1,26 @@
+{
+  "id": "2026-09-04-yumzip-wa-ordering",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.66",
+  "sources": [
+    {
+      "url": "https://yumzip.in/whatsapp-ordering-system",
+      "title": "WhatsApp Food Ordering System | Yumzip",
+      "fetched_via": "composio_search_fetch",
+      "note": "IN WA QR→catalogue→pay 0% commission claim; AI automation"
+    }
+  ],
+  "verdict": "watch",
+  "category": "vertical_rival",
+  "summary": "Yumzip WhatsApp ordering (QR → catalogue → pay inside WA, 0% commission claim) — India ChatOrder/AiBotick-class peer. Watch; fee pause; not FBE.",
+  "teach": {
+    "label": "yumzip_wa_ordering_watch",
+    "geo": "IN",
+    "peers": ["cherryberry", "chatorder", "aibotick", "myfojo"],
+    "peer_count_impact": "none"
+  },
+  "mission_lock": {
+    "yes": ["WA love→buy-now watch"],
+    "no": ["meta_order_food_peer_count", "fee dogfood", "US swarm expand"]
+  }
+}

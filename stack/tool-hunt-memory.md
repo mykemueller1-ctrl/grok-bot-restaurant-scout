@@ -1045,3 +1045,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_xtQweNbjwyZS (~10 min).
 - Ledger v1.92.65. Auth still blocked for unlock READY.
 
+### 2026-09-04 (G&TG skew pass-5 + Michaels leak pass-6 + Kyte/Yumzip)
+
+- Adopted G&TG **reservation_skew** pass-5 — OpenTable live (Booked 203× today); brand site no OO. Finding: `2026-09-04-gtg-reservation-skew-pass5.json`.
+- Adopted Michaels **brand_site_marketplace_leak** pass-6 — UberEats+DoorDash still on miami. Finding: `2026-09-04-michaels-leak-pass6.json`.
+- Reconfirmed Kyte FBE degraded (sticker + FB setup unavailable banners) — peer_count stays 9. Finding: `2026-09-04-kyte-sticker-unavailable-reconfirm.json`.
+- Watched **Yumzip** IN WA ordering (0%). Finding: `2026-09-04-yumzip-wa-ordering.json`.
+- Ledger v1.92.66. Auth still blocked for unlock READY.
+

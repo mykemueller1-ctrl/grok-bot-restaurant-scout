@@ -23,13 +23,14 @@
           "opentable_reservations",
           "no_first_party_oo_found"
         ],
-        "reverified_at": "2026-09-04T22:25Z",
-        "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close. Pass-4: site Make a reservation only; OpenTable still live (Booked 203\u00d7 today). Yelp 10732 reviews.",
+        "reverified_at": "2026-09-04T21:25Z",
+        "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close. Pass-5: site hours/contact only (no OO CTA); OpenTable live (Booked 203\u00d7 today). Yelp 10732 reviews.",
         "sources": [
           "https://www.girlandthegoat.com/chicago",
           "https://www.opentable.com/r/girl-and-the-goat-chicago",
           "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-pass4.json",
-          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass6.json"
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass6.json",
+          "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-pass5.json"
         ]
       }
     },

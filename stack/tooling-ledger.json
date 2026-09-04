@@ -1,5 +1,5 @@
 {
-  "version": "1.92.65",
+  "version": "1.92.66",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "G&TG reservation_skew pass-5 + Michaels leak pass-6",
+      "lane": "vertical_gtm",
+      "why": "CHI OpenTable-only skew still live (Booked 203× today); MIA brand site still UberEats+DoorDash — love teaches hold (Yelp 10732 / 2084)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Kyte FBE degraded (sticker + FB setup unavailable)",
+      "lane": "vertical_gtm",
+      "why": "Kyte Help banners IG sticker AND FB Order Food setup unavailable → Start Order alternate; keep peer_count 9 until Meta partner list drops Kyte",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Yumzip WhatsApp ordering (IN 0%)",
+      "lane": "vertical_gtm",
+      "why": "QR→WA catalogue→pay 0% commission claim — CherryBerry/ChatOrder-class; fee pause; not FBE",
+      "verdict": "watch"
+    },
     {
       "item": "Yelp love pass-6 (G&TG 10732 / Rioja 2915)",
       "lane": "vertical_gtm",
