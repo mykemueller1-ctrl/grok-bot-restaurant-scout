@@ -171,6 +171,7 @@ jobs:
           test -f scripts/validate-gegsy-fee-dogfood.mjs
           test -f scripts/validate-kwickdriver-fee-dogfood.mjs
           test -f scripts/validate-s4vor-fee-dogfood.mjs
+          test -f scripts/validate-foxifood-fee-dogfood.mjs
           test -f scripts/validate-ritual-fee-dogfood.mjs
           test -f scripts/validate-chownow-fee-dogfood.mjs
           test -f scripts/validate-slice-fee-dogfood.mjs
@@ -383,6 +384,12 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-foxifood-card-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-rioja.json
           test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-franklin.json
           test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-girl-goat.json
           test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-husk.json
@@ -427,6 +434,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'Uber Webshop charges a 2.5% order processing fee + $0.29 per order vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'Seared charges customers a 5% transaction fee with a $1.99 minimum and hard cap of $7.50 per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'S4VOR guests pay a 1.9% service fee capped at $2.00 per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'FoxiFood charges 2% + €0.45 per card payment under no monthly fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'Gegsy Starter Pickup base $0.40 per order and Delivery base $1.00 per order under commission-free Square OO vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'KwickDriver charges a flat $2 fee per delivery plus $6.99 per 5 miles under first-party OO vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Deonde Express charges $0.10 per order overage beyond included monthly orders vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
@@ -442,7 +450,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 57'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 58'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
@@ -478,6 +486,7 @@ jobs:
           node scripts/validate-gegsy-fee-dogfood.mjs | grep -q '"gegsy_fee_dogfoods": 5'
           node scripts/validate-kwickdriver-fee-dogfood.mjs | grep -q '"kwickdriver_fee_dogfoods": 5'
           node scripts/validate-s4vor-fee-dogfood.mjs | grep -q '"s4vor_fee_dogfoods": 5'
+          node scripts/validate-foxifood-fee-dogfood.mjs | grep -q '"foxifood_fee_dogfoods": 5'
           node scripts/validate-ritual-fee-dogfood.mjs | grep -q '"ritual_fee_dogfoods": 5'
           node scripts/validate-chownow-fee-dogfood.mjs | grep -q '"chownow_fee_dogfoods": 5'
           node scripts/validate-slice-fee-dogfood.mjs | grep -q '"slice_fee_dogfoods": 5'

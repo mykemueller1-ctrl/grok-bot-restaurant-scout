@@ -572,3 +572,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for `1.9%` / `capped at $2` / `max $2`.
 - pain-scan-s4vor-guest-fee.json → strong_keep **57**; pain-to-sales-s4vor-fee-* ×5; validate-s4vor-fee-dogfood ≥5. Seared/Owner-class guest % peer with hard $2 cap.
 - Ledger v1.86.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (FoxiFood 2%+€0.45 card SalesLead)
+
+- Primary [foxifood.com/pricing](https://www.foxifood.com/pricing/): pickup/dine-in **2% + €0.45** per card; delivery **2% + €0.45 + 10%**; cash/transfer free.
+- Widened `first_party_pct_fee` for `2%+€0.45`; `per_order_platform_fee` for `€0.45` / `0.45 €`.
+- pain-scan-foxifood-card-fee.json → strong_keep **58**; pain-to-sales-foxifood-fee-* ×5; validate-foxifood-fee-dogfood ≥5. Ordering.Tools-class EU thematic — no US swarm expand.
+- Ledger v1.87.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

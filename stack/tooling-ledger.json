@@ -1,5 +1,5 @@
 {
-  "version": "1.86.0",
+  "version": "1.87.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -131,7 +131,8 @@
     "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap \u2192 SalesLead \u22655 markets)",
     "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)",
     "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)",
-    "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)"
+    "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)",
+    "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)"
   },
   "competitors": [
     {
@@ -679,6 +680,18 @@
       ]
     },
     {
+      "name": "FoxiFood",
+      "lane": "vertical_gtm",
+      "stack": "No monthly fee EU OO/QR/payments; pickup/dine-in 2% + \u20ac0.45 per card; delivery 2% + \u20ac0.45 + 10%; cash/transfer free",
+      "memory": "Merchant-of-record Stripe payouts + own domain",
+      "edge": "Published 2%+\u20ac0.45 card rent under zero-monthly claim \u2014 Ordering.Tools-class EU KEEP peer; thematic US teach only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.foxifood.com/pricing/",
+        "https://www.foxifood.com/"
+      ]
+    },
+    {
       "name": "Otter",
       "lane": "vertical_gtm",
       "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198\u2013$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
@@ -1083,6 +1096,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "FoxiFood 2%+\u20ac0.45 card fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN FoxiFood 2% + \u20ac0.45 per card (delivery +10%) on foxifood.com/pricing under no-monthly claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee + per_order widened for 2%+\u20ac0.45; validate-foxifood-fee-dogfood \u22655; strong_keep 58. EU thematic \u2014 no US swarm expand.",
+      "verdict": "adopt"
+    },
     {
       "item": "S4VOR guest 1.9%/$2 cap SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2143,5 +2162,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T23:30:00Z"
+  "updated_at": "2026-09-04T23:45:00Z"
 }
