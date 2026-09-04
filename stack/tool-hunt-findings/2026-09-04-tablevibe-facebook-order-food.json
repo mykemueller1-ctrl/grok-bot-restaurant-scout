@@ -1,0 +1,15 @@
+{
+  "finding_id": "tablevibe-facebook-order-food-cta-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Tablevibe Facebook Order Food CTA (Meta-adjacent)",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Tablevibe Help: Edit Action Button → Order Food / Shop Now / Start Order → Website Link to tablevibe.co shop URL. Instagram = profile Links URL (not FBE partner picker). Meta-adjacent CTA only — do not bump meta_order_food_peer_count. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://intercom.help/tablevibeco/en/articles/6867370-how-do-i-add-my-shop-to-facebook-instagram-google-and-my-own-website",
+    "https://www.tablevibe.co/home-copy"
+  ],
+  "meta_classification": "cta_link_not_fbe_peer",
+  "not_this": "Not a Meta Order Food peer_count bump. Not a fee dogfood. Not forecasting."
+}

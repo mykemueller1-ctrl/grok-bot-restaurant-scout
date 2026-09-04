@@ -1,0 +1,32 @@
+{
+  "finding_id": "meta-fbe-peer-set-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Meta Order Food FBE peer set reconfirmed (count 9)",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Composio SEARCH_WEB 2026-09-04 reconfirm: BentoBox, Kyte, Deliverect, Zyda, ChatFood, Square Online, Flipdish (plus Toast OO + GloriaFood already catalogued) remain the Meta Order Food / FBE-class peer set. No new FBE primary partner surfaced. Tablevibe remains CTA website-link only (Order Food / Shop Now → tablevibe.co URL) — watch tertiary; do NOT bump meta_order_food_peer_count. Fee pause.",
+  "researched_at": "2026-09-04",
+  "peer_count": 9,
+  "peers_reconfirmed": [
+    "Deliverect",
+    "Zyda",
+    "ChatFood",
+    "BentoBox",
+    "Toast Online Ordering",
+    "Flipdish",
+    "Kyte",
+    "Square Online",
+    "GloriaFood"
+  ],
+  "cta_not_fbe": ["Tablevibe", "Ressto", "FoodBooking", "Ontabee"],
+  "urls": [
+    "https://help.getbento.com/en/articles/412673",
+    "https://www.kyteapp.com/apps/fbe",
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://help.zyda.com/en/setting-up-facebook-business-extension-order-food-button",
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://intercom.help/tablevibeco/en/articles/6867370-how-do-i-add-my-shop-to-facebook-instagram-google-and-my-own-website",
+    "docs/COMPOSIO-SOCIAL-UNLOCKS.md"
+  ],
+  "not_this": "Not a peer_count bump. Not a fee dogfood. Not forecasting."
+}

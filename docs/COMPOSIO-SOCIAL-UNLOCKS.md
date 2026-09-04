@@ -51,7 +51,9 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **Square Online** — Dashboard Channels → Facebook Food Ordering; Order Food buttons + Stories stickers → Square website ([Square Support](https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online))
 - **GloriaFood** — Facebook Start Order / Order Now via smart link ([GloriaFood how-to](https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button))
 
-Also watch Meta-adjacent **CTA linkers** (Order Food / Start Order → own menu — **not** Meta FBE peers; do not inflate `meta_order_food_peer_count`): **Ressto** ([facebook-ordering](https://ressto.co/facebook-ordering.shtml)), **FoodBooking** ([Start Order](https://startfoodbooking.com/facebook-ordering/) — OO EOL Mar 2027), **Tablevibe** / **Ontabee** Order Food website links.
+Also watch Meta-adjacent **CTA linkers** (Order Food / Start Order → own menu — **not** Meta FBE peers; do not inflate `meta_order_food_peer_count`): **Ressto** ([facebook-ordering](https://ressto.co/facebook-ordering.shtml)), **FoodBooking** ([Start Order](https://startfoodbooking.com/facebook-ordering/) — OO EOL Mar 2027), **Tablevibe** ([Order Food website link](https://intercom.help/tablevibeco/en/articles/6867370-how-do-i-add-my-shop-to-facebook-instagram-google-and-my-own-website)), **Ontabee** Order Food website links.
+
+FBE peer set reconfirmed at **9** (2026-09-04) — finding `2026-09-04-meta-fbe-peer-set-reconfirm.json`.
 
 Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, and **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)) — adjacent social intake, not Meta FBE peers.
 
