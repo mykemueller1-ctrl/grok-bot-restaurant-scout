@@ -54,7 +54,7 @@
     desk.innerHTML = `
       <div class="top">
         <div>
-          <div class="mark">Never 86<em>'d</em></div>
+          <div class="mark">Never 86<em>'d</em> · CTAP Beta R&D</div>
           <div class="meta">${seatsDoc.venue_name} · Fort Dodge · enterprise secure · as of ${asOf}</div>
         </div>
         <button class="signout" type="button" id="signout">Sign out</button>

@@ -1,5 +1,5 @@
 {
-  "product": "Never 86'd Action Shift \u2014 secure venue portals",
+  "product": "Never 86'd · CTAP Beta R&D \u2014 secure venue portals",
   "as_of": "2026-09-04",
   "isolation_rule": "Server-side exclusive boundary via portal-gateway. Hashed house codes. Venue-scoped HttpOnly sessions. Each portal may only receive JSON for its own venue_id.",
   "serve": "PORTAL_SESSION_SECRET=\u2026 node services/portal-gateway/src/server.mjs",
