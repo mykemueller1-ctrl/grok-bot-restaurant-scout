@@ -1,0 +1,42 @@
+{
+  "name": "Owner-Operator 1\u20135 ICP Sub",
+  "title": "Never86 ICP \u2014 Owner-Operator 1\u20135",
+  "role": "icp_sub",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-report-ops",
+  "icp_tier": "owner-1-5",
+  "parent": "icp-scale",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns Owner-Operator 1\u20135 (1\u20135). Buyer: Owner / GM (still in the building). Single-owner ops: paper labor cards, weekly schedules, Toast day exports, distributor invoices. Pains: owner burnout and cash-flow gut feel; labor % without group targets; second unit ~130% ops surface for ~60% revenue capacity; inventory = invoice photos + Hy-Vee runs. Wedge: Daily leak dollars from red-book chaos \u2014 not enterprise BI.",
+  "units": "1\u20135",
+  "buyer": "Owner / GM (still in the building)",
+  "pains": [
+    "owner burnout and cash-flow gut feel",
+    "labor % without group targets",
+    "second unit ~130% ops surface for ~60% revenue capacity",
+    "inventory = invoice photos + Hy-Vee runs"
+  ],
+  "report_ids": [
+    "kitchen-labor-card",
+    "paper-weekly-schedule",
+    "time-entries",
+    "labor-summary",
+    "sales-summary",
+    "item-selection",
+    "liquor-beer-par",
+    "vendor-invoice"
+  ],
+  "example_packs": [
+    "ctap-physical",
+    "courser/grill"
+  ],
+  "never86_wedge": "Daily leak dollars from red-book chaos \u2014 not enterprise BI",
+  "skills": [
+    "icp-scale-classify",
+    "teach-label",
+    "report-ingest"
+  ],
+  "swarm": true
+}

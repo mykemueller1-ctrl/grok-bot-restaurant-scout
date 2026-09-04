@@ -1,0 +1,41 @@
+{
+  "name": "SKU Depletion from Product Mix Sub-Agent",
+  "title": "Never86 report sub \u2014 Inventory / Par / Ordering / SKU Depletion from Product Mix",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-report-ops",
+  "domain_id": "inventory",
+  "report_id": "sku-depletion",
+  "parent": "inventory",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the SKU Depletion from Product Mix report (Derived from Item Selection qty). Ingests json, csv. Signals: inventory_depletion_qty, sku, net_sales. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Derived from Item Selection qty",
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "signals": [
+    "inventory_depletion_qty",
+    "sku",
+    "net_sales"
+  ],
+  "file_globs": [
+    "labor-sales-inventory.json",
+    "*depletion*"
+  ],
+  "schema": "schemas/labor-sales-inventory.json",
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

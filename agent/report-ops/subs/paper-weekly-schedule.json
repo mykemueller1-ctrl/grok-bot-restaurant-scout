@@ -1,0 +1,44 @@
+{
+  "name": "Paper Weekly Schedule Sub-Agent",
+  "title": "Never86 report sub \u2014 Labor / Paper Weekly Schedule",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#F4A261",
+  "family": "never86-report-ops",
+  "domain_id": "labor",
+  "report_id": "paper-weekly-schedule",
+  "parent": "labor",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Paper Weekly Schedule report (Calendarpedia / handwritten week grid). Ingests photo, pdf, xlsx. Signals: employee, day, shift_window, station_code, events. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Calendarpedia / handwritten week grid",
+  "formats": [
+    "photo",
+    "pdf",
+    "xlsx"
+  ],
+  "signals": [
+    "employee",
+    "day",
+    "shift_window",
+    "station_code",
+    "events"
+  ],
+  "file_globs": [
+    "*Weekly schedule*",
+    "*Work Schedule*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

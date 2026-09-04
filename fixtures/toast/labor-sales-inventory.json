@@ -1,0 +1,2674 @@
+{
+  "period": {
+    "labor_date": "8/31/26",
+    "sales_start": "8/24/26 11:26 AM",
+    "sales_end": "8/30/26 8:44 PM",
+    "source_labor_file": "TimeEntries_2026_08_31_2d57.csv",
+    "source_sales_file": "ItemSelectionDetails_2026_08_24-2026_08_30_e02a.csv",
+    "note": "Labor window and sales window differ — sales_per_labor_hour is directional only until ranges align."
+  },
+  "labor": {
+    "entries": [
+      {
+        "employee": "Team Member 01",
+        "job_title": "Chef",
+        "in_at": "8/31/26 8:13 AM",
+        "out_at": "8/31/26 6:56 PM",
+        "total_hours": 10.71,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 10.71
+      },
+      {
+        "employee": "Team Member 02",
+        "job_title": "AM Server",
+        "in_at": "8/31/26 9:58 AM",
+        "out_at": "8/31/26 3:28 PM",
+        "total_hours": 5.5,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 5.5
+      },
+      {
+        "employee": "Team Member 03",
+        "job_title": "PM Bartender",
+        "in_at": "8/31/26 10:30 AM",
+        "out_at": "8/31/26 5:42 PM",
+        "total_hours": 7.19,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 7.19
+      },
+      {
+        "employee": "Team Member 04",
+        "job_title": "MAIN BAR",
+        "in_at": "8/31/26 10:31 AM",
+        "out_at": "8/31/26 9:47 PM",
+        "total_hours": 11.28,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 11.28
+      },
+      {
+        "employee": "Team Member 05",
+        "job_title": "Cook",
+        "in_at": "8/31/26 10:34 AM",
+        "out_at": "9/1/26 4:00 AM",
+        "total_hours": 17.42,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 17.42
+      },
+      {
+        "employee": "Team Member 06",
+        "job_title": "Cook",
+        "in_at": "8/31/26 11:49 AM",
+        "out_at": "8/31/26 9:14 PM",
+        "total_hours": 9.42,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 9.42
+      },
+      {
+        "employee": "Team Member 07",
+        "job_title": "Cook",
+        "in_at": "8/31/26 2:02 PM",
+        "out_at": "8/31/26 9:19 PM",
+        "total_hours": 7.29,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 7.29
+      },
+      {
+        "employee": "Team Member 08",
+        "job_title": "Server",
+        "in_at": "8/31/26 3:00 PM",
+        "out_at": "8/31/26 9:28 PM",
+        "total_hours": 6.46,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 6.46
+      },
+      {
+        "employee": "Team Member 09",
+        "job_title": "Cook",
+        "in_at": "8/31/26 3:01 PM",
+        "out_at": "8/31/26 9:08 PM",
+        "total_hours": 6.12,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 6.12
+      },
+      {
+        "employee": "Team Member 10",
+        "job_title": "Server",
+        "in_at": "8/31/26 3:52 PM",
+        "out_at": "8/31/26 8:50 PM",
+        "total_hours": 4.97,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 4.97
+      },
+      {
+        "employee": "Team Member 11",
+        "job_title": "PM Bartender",
+        "in_at": "8/31/26 4:00 PM",
+        "out_at": "8/31/26 9:51 PM",
+        "total_hours": 5.85,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 5.85
+      },
+      {
+        "employee": "Team Member 12",
+        "job_title": "Cook",
+        "in_at": "8/31/26 4:47 PM",
+        "out_at": "8/31/26 9:46 PM",
+        "total_hours": 4.98,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 4.98
+      },
+      {
+        "employee": "Team Member 13",
+        "job_title": "Host",
+        "in_at": "8/31/26 4:55 PM",
+        "out_at": "8/31/26 8:21 PM",
+        "total_hours": 3.43,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 3.43
+      },
+      {
+        "employee": "Team Member 14",
+        "job_title": "Expo",
+        "in_at": "8/31/26 5:04 PM",
+        "out_at": "8/31/26 8:29 PM",
+        "total_hours": 3.42,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 3.42
+      },
+      {
+        "employee": "Team Member 03",
+        "job_title": "PM Bartender",
+        "in_at": "8/31/26 5:42 PM",
+        "out_at": "8/31/26 9:51 PM",
+        "total_hours": 4.16,
+        "unpaid_break_hours": 0,
+        "paid_break_hours": 0,
+        "payable_hours": 4.16
+      }
+    ],
+    "by_job": {
+      "Chef": {
+        "payable_hours": 10.71,
+        "punches": 1,
+        "people": [
+          "Team Member 01"
+        ]
+      },
+      "AM Server": {
+        "payable_hours": 5.5,
+        "punches": 1,
+        "people": [
+          "Team Member 02"
+        ]
+      },
+      "PM Bartender": {
+        "payable_hours": 17.2,
+        "punches": 3,
+        "people": [
+          "Team Member 03",
+          "Team Member 11"
+        ]
+      },
+      "MAIN BAR": {
+        "payable_hours": 11.28,
+        "punches": 1,
+        "people": [
+          "Team Member 04"
+        ]
+      },
+      "Cook": {
+        "payable_hours": 45.230000000000004,
+        "punches": 5,
+        "people": [
+          "Team Member 05",
+          "Team Member 06",
+          "Team Member 07",
+          "Team Member 09",
+          "Team Member 12"
+        ]
+      },
+      "Server": {
+        "payable_hours": 11.43,
+        "punches": 2,
+        "people": [
+          "Team Member 08",
+          "Team Member 10"
+        ]
+      },
+      "Host": {
+        "payable_hours": 3.43,
+        "punches": 1,
+        "people": [
+          "Team Member 13"
+        ]
+      },
+      "Expo": {
+        "payable_hours": 3.42,
+        "punches": 1,
+        "people": [
+          "Team Member 14"
+        ]
+      }
+    },
+    "by_employee": {
+      "Team Member 01": {
+        "payable_hours": 10.71,
+        "jobs": [
+          "Chef"
+        ]
+      },
+      "Team Member 02": {
+        "payable_hours": 5.5,
+        "jobs": [
+          "AM Server"
+        ]
+      },
+      "Team Member 03": {
+        "payable_hours": 11.350000000000001,
+        "jobs": [
+          "PM Bartender"
+        ]
+      },
+      "Team Member 04": {
+        "payable_hours": 11.28,
+        "jobs": [
+          "MAIN BAR"
+        ]
+      },
+      "Team Member 05": {
+        "payable_hours": 17.42,
+        "jobs": [
+          "Cook"
+        ]
+      },
+      "Team Member 06": {
+        "payable_hours": 9.42,
+        "jobs": [
+          "Cook"
+        ]
+      },
+      "Team Member 07": {
+        "payable_hours": 7.29,
+        "jobs": [
+          "Cook"
+        ]
+      },
+      "Team Member 08": {
+        "payable_hours": 6.46,
+        "jobs": [
+          "Server"
+        ]
+      },
+      "Team Member 09": {
+        "payable_hours": 6.12,
+        "jobs": [
+          "Cook"
+        ]
+      },
+      "Team Member 10": {
+        "payable_hours": 4.97,
+        "jobs": [
+          "Server"
+        ]
+      },
+      "Team Member 11": {
+        "payable_hours": 5.85,
+        "jobs": [
+          "PM Bartender"
+        ]
+      },
+      "Team Member 12": {
+        "payable_hours": 4.98,
+        "jobs": [
+          "Cook"
+        ]
+      },
+      "Team Member 13": {
+        "payable_hours": 3.43,
+        "jobs": [
+          "Host"
+        ]
+      },
+      "Team Member 14": {
+        "payable_hours": 3.42,
+        "jobs": [
+          "Expo"
+        ]
+      }
+    }
+  },
+  "product_mix": {
+    "skus": [
+      {
+        "sku": "Burger",
+        "menu_group": "Burgers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 118,
+        "net_sales": 2208.4,
+        "inventory_depletion_qty": 118
+      },
+      {
+        "sku": "Stir Fry",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 47,
+        "net_sales": 1036.8,
+        "inventory_depletion_qty": 47
+      },
+      {
+        "sku": "Fish & Chips",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 42,
+        "net_sales": 989.2,
+        "inventory_depletion_qty": 42
+      },
+      {
+        "sku": "Green Curry",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 36,
+        "net_sales": 855,
+        "inventory_depletion_qty": 36
+      },
+      {
+        "sku": "Burger",
+        "menu_group": "Burgers",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 42,
+        "net_sales": 716.45,
+        "inventory_depletion_qty": 42
+      },
+      {
+        "sku": "Lemon Chicken",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 34,
+        "net_sales": 702.7,
+        "inventory_depletion_qty": 34
+      },
+      {
+        "sku": "Grilled Chicken Sandwich",
+        "menu_group": "Burgers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 41,
+        "net_sales": 685.5,
+        "inventory_depletion_qty": 41
+      },
+      {
+        "sku": "Tzatziki Salmon",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 24,
+        "net_sales": 624,
+        "inventory_depletion_qty": 24
+      },
+      {
+        "sku": "Wings",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 36,
+        "net_sales": 600.1,
+        "inventory_depletion_qty": 36
+      },
+      {
+        "sku": "Green State Lager",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 65,
+        "net_sales": 585,
+        "inventory_depletion_qty": 65
+      },
+      {
+        "sku": "Bolognese",
+        "menu_group": "Featured Menu",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 27,
+        "net_sales": 560.25,
+        "inventory_depletion_qty": 27
+      },
+      {
+        "sku": "Burrito",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 27,
+        "net_sales": 530,
+        "inventory_depletion_qty": 27
+      },
+      {
+        "sku": "Chicken & Broccoli Alfredo",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 23,
+        "net_sales": 510,
+        "inventory_depletion_qty": 23
+      },
+      {
+        "sku": "Bistro Duck",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 17,
+        "net_sales": 510,
+        "inventory_depletion_qty": 17
+      },
+      {
+        "sku": "Chicken Tikka",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 22,
+        "net_sales": 507.5,
+        "inventory_depletion_qty": 22
+      },
+      {
+        "sku": "Pork Potstickers",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 35,
+        "net_sales": 492.5,
+        "inventory_depletion_qty": 35
+      },
+      {
+        "sku": "Chicken Parmesan",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 22,
+        "net_sales": 483,
+        "inventory_depletion_qty": 22
+      },
+      {
+        "sku": "Short Rib",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 17,
+        "net_sales": 476,
+        "inventory_depletion_qty": 17
+      },
+      {
+        "sku": "Little Sip",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 50,
+        "net_sales": 450,
+        "inventory_depletion_qty": 50
+      },
+      {
+        "sku": "Seared Sesame Ahi",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 16,
+        "net_sales": 448,
+        "inventory_depletion_qty": 16
+      },
+      {
+        "sku": "Chicken Quesadilla",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 28,
+        "net_sales": 420,
+        "inventory_depletion_qty": 28
+      },
+      {
+        "sku": "Switchback Ale",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 46,
+        "net_sales": 414,
+        "inventory_depletion_qty": 46
+      },
+      {
+        "sku": "Hot Nuggets",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 29,
+        "net_sales": 389.2,
+        "inventory_depletion_qty": 29
+      },
+      {
+        "sku": "Fish & Chips",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 19,
+        "net_sales": 386,
+        "inventory_depletion_qty": 19
+      },
+      {
+        "sku": "NY Strip",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 13,
+        "net_sales": 371.2,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "Fried Rice Special",
+        "menu_group": "Featured Menu",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 13,
+        "net_sales": 335.7,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "Mac-N- Cheese",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 19,
+        "net_sales": 334.1,
+        "inventory_depletion_qty": 19
+      },
+      {
+        "sku": "Shrimp Scampi",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 13,
+        "net_sales": 332.1,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "SWQuesadilla",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 21,
+        "net_sales": 327.4,
+        "inventory_depletion_qty": 21
+      },
+      {
+        "sku": "Red, White & Blue",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 13,
+        "net_sales": 325,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "Pesto Shrimp Alfredo",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 12,
+        "net_sales": 324,
+        "inventory_depletion_qty": 12
+      },
+      {
+        "sku": "Greek",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 16,
+        "net_sales": 321,
+        "inventory_depletion_qty": 16
+      },
+      {
+        "sku": "B.L.T",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 22,
+        "net_sales": 320.5,
+        "inventory_depletion_qty": 22
+      },
+      {
+        "sku": "1/2 Rack Of Ribs",
+        "menu_group": "Barbeque",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 13,
+        "net_sales": 320,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "Crab Dip",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 23,
+        "net_sales": 312.2,
+        "inventory_depletion_qty": 23
+      },
+      {
+        "sku": "Clam Chowdah",
+        "menu_group": "Soup",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 46,
+        "net_sales": 304.5,
+        "inventory_depletion_qty": 46
+      },
+      {
+        "sku": "Electric Mayhem Espresso Martini",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 17,
+        "net_sales": 289,
+        "inventory_depletion_qty": 17
+      },
+      {
+        "sku": "Reuben",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 17,
+        "net_sales": 289,
+        "inventory_depletion_qty": 17
+      },
+      {
+        "sku": "Valley Italian PILS",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 33,
+        "net_sales": 280.5,
+        "inventory_depletion_qty": 33
+      },
+      {
+        "sku": "Caesar",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 15,
+        "net_sales": 278.5,
+        "inventory_depletion_qty": 15
+      },
+      {
+        "sku": "Coconut Shrimp",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 19,
+        "net_sales": 265.5,
+        "inventory_depletion_qty": 19
+      },
+      {
+        "sku": "Manhattan",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 14,
+        "net_sales": 263,
+        "inventory_depletion_qty": 14
+      },
+      {
+        "sku": "Veggie Burger",
+        "menu_group": "Burgers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 16,
+        "net_sales": 257.7,
+        "inventory_depletion_qty": 16
+      },
+      {
+        "sku": "Arugula Salad",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 12,
+        "net_sales": 253,
+        "inventory_depletion_qty": 12
+      },
+      {
+        "sku": "Lobster Alfredo",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 247,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Lawson's Kingdom Trail IPA",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 29,
+        "net_sales": 243,
+        "inventory_depletion_qty": 29
+      },
+      {
+        "sku": "Philly Steak",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 14,
+        "net_sales": 240,
+        "inventory_depletion_qty": 14
+      },
+      {
+        "sku": "Seoul Food",
+        "menu_group": "Entrees",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 11,
+        "net_sales": 236.9,
+        "inventory_depletion_qty": 11
+      },
+      {
+        "sku": "Sauvignon Blanc",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 26,
+        "net_sales": 234,
+        "inventory_depletion_qty": 26
+      },
+      {
+        "sku": "Greek Salad",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 12,
+        "net_sales": 232.25,
+        "inventory_depletion_qty": 12
+      },
+      {
+        "sku": "Spinach/Steak",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 230,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Maine Lunch",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 21,
+        "net_sales": 210,
+        "inventory_depletion_qty": 21
+      },
+      {
+        "sku": "Salmon",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 12,
+        "net_sales": 209,
+        "inventory_depletion_qty": 12
+      },
+      {
+        "sku": "Sweet Potato Fries",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 21,
+        "net_sales": 208,
+        "inventory_depletion_qty": 21
+      },
+      {
+        "sku": "Titos",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 20,
+        "net_sales": 206.5,
+        "inventory_depletion_qty": 20
+      },
+      {
+        "sku": "Primavera",
+        "menu_group": "Pasta",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 200,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Kids Mac & Cheese",
+        "menu_group": "Kids Menu",
+        "menu": "Kids Menu",
+        "sales_category": "Food",
+        "qty": 14,
+        "net_sales": 196,
+        "inventory_depletion_qty": 14
+      },
+      {
+        "sku": "Kings Script Pinot Noir",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 15,
+        "net_sales": 195,
+        "inventory_depletion_qty": 15
+      },
+      {
+        "sku": "Wings",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 12,
+        "net_sales": 192.95,
+        "inventory_depletion_qty": 12
+      },
+      {
+        "sku": "Buffalo Chicken Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 11,
+        "net_sales": 191,
+        "inventory_depletion_qty": 11
+      },
+      {
+        "sku": "Kids Chicken Nuggets",
+        "menu_group": "Kids Menu",
+        "menu": "Kids Menu",
+        "sales_category": "Food",
+        "qty": 15,
+        "net_sales": 187.4,
+        "inventory_depletion_qty": 15
+      },
+      {
+        "sku": "Green Curry",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 186,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Clam Chowdah",
+        "menu_group": "Soup",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 28,
+        "net_sales": 186,
+        "inventory_depletion_qty": 28
+      },
+      {
+        "sku": "Blood Orange Aperol Spritz",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 13,
+        "net_sales": 182,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "Stir-Fry",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 181,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "BBQ Chicken",
+        "menu_group": "Barbeque",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 179,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Josh Chardonay",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 22,
+        "net_sales": 176,
+        "inventory_depletion_qty": 22
+      },
+      {
+        "sku": "Grilled Caprese Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 12,
+        "net_sales": 172,
+        "inventory_depletion_qty": 12
+      },
+      {
+        "sku": "Burrito",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 172,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Piccini Pinot Grigio",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 19,
+        "net_sales": 171,
+        "inventory_depletion_qty": 19
+      },
+      {
+        "sku": "Max's Mussels",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 168,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Dogfish Head GD",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 21,
+        "net_sales": 168,
+        "inventory_depletion_qty": 21
+      },
+      {
+        "sku": "Crispy BYO Chicken Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 11,
+        "net_sales": 167.4,
+        "inventory_depletion_qty": 11
+      },
+      {
+        "sku": "BBQ Salmon",
+        "menu_group": "Barbeque",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 161,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Bread Pudding",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 16,
+        "net_sales": 160,
+        "inventory_depletion_qty": 16
+      },
+      {
+        "sku": "BBQ 1/2 Ribs",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 154,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Iced tea",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 50,
+        "net_sales": 150,
+        "inventory_depletion_qty": 50
+      },
+      {
+        "sku": "Diet Coke",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 50,
+        "net_sales": 150,
+        "inventory_depletion_qty": 50
+      },
+      {
+        "sku": "Soup",
+        "menu_group": "Soup",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 29,
+        "net_sales": 147,
+        "inventory_depletion_qty": 29
+      },
+      {
+        "sku": "Gyro",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 147,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Sushi Tower",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 8,
+        "net_sales": 146,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Mac-N- Cheese",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 145.5,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Lomo Saltado",
+        "menu_group": "Featured Menu",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 6,
+        "net_sales": 144,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Surf And Turf",
+        "menu_group": "Featured Menu",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 6,
+        "net_sales": 144,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Magic Passion",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 11,
+        "net_sales": 143,
+        "inventory_depletion_qty": 11
+      },
+      {
+        "sku": "Key Lime Pie",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 18,
+        "net_sales": 142,
+        "inventory_depletion_qty": 18
+      },
+      {
+        "sku": "Little Leaf",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 141.35,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Kids Quesadilla",
+        "menu_group": "Kids Menu",
+        "menu": "Kids Menu",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 140,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Jack Daniels",
+        "menu_group": "Whiskey",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 14,
+        "net_sales": 132.5,
+        "inventory_depletion_qty": 14
+      },
+      {
+        "sku": "Budweiser",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 22,
+        "net_sales": 132,
+        "inventory_depletion_qty": 22
+      },
+      {
+        "sku": "Ahi Nachos",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 6,
+        "net_sales": 132,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Zola Bread",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 130,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Londonderry Mule",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 10,
+        "net_sales": 130,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Sip n/a",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 18,
+        "net_sales": 126,
+        "inventory_depletion_qty": 18
+      },
+      {
+        "sku": "Peanut Butter Pie",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 17,
+        "net_sales": 123,
+        "inventory_depletion_qty": 17
+      },
+      {
+        "sku": "Side Little Leaf",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 16,
+        "net_sales": 122.4,
+        "inventory_depletion_qty": 16
+      },
+      {
+        "sku": "Monte Cristo",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 122,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Stowe High n Dry Cider",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 15,
+        "net_sales": 120,
+        "inventory_depletion_qty": 15
+      },
+      {
+        "sku": "Martini",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 8,
+        "net_sales": 118,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Sip O Sunshine",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 13,
+        "net_sales": 117,
+        "inventory_depletion_qty": 13
+      },
+      {
+        "sku": "Spinach/Steak",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 5,
+        "net_sales": 115,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Coke",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 38,
+        "net_sales": 113.4,
+        "inventory_depletion_qty": 38
+      },
+      {
+        "sku": "Goat Curry",
+        "menu_group": "Featured Menu",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 112,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Grilled Jerk Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 112,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Soup",
+        "menu_group": "Soup",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 22,
+        "net_sales": 110,
+        "inventory_depletion_qty": 22
+      },
+      {
+        "sku": "Tokyo Caesar",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 6,
+        "net_sales": 108.8,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Kids Fish & Chips",
+        "menu_group": "Kids Menu",
+        "menu": "Kids Menu",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 108.5,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Coppala Claret Cab",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 9,
+        "net_sales": 108,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Grilled BYO Chicken Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 8,
+        "net_sales": 107.1,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Kids Pasta",
+        "menu_group": "Kids Menu",
+        "menu": "Kids Menu",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 106.4,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Gravlax",
+        "menu_group": "Appetizers",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 100.8,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Lizzy's Cannoli",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 100,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "$5 pour",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 21,
+        "net_sales": 94.5,
+        "inventory_depletion_qty": 21
+      },
+      {
+        "sku": "Old Fashioned",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 90,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Korean Rib App",
+        "menu_group": "Featured Menu",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 5,
+        "net_sales": 90,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Fries",
+        "menu_group": "Sides",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 19,
+        "net_sales": 88.25,
+        "inventory_depletion_qty": 19
+      },
+      {
+        "sku": "Margarita",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 7,
+        "net_sales": 87.5,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Summer Salad",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 86.5,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Narragansett",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 17,
+        "net_sales": 85,
+        "inventory_depletion_qty": 17
+      },
+      {
+        "sku": "Veggie Burger",
+        "menu_group": "Burgers",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 5,
+        "net_sales": 84.75,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Bud Light",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 14,
+        "net_sales": 84,
+        "inventory_depletion_qty": 14
+      },
+      {
+        "sku": "Painkiller",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 84,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Ketel One",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 8,
+        "net_sales": 83,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Valley Deck Life",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 9,
+        "net_sales": 81,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Ahi Nachos",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 80,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Apple Pie",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 10,
+        "net_sales": 80,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Aperol Spritz",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 8,
+        "net_sales": 80,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Brownie Sundae",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 8,
+        "net_sales": 78,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Bacon Jam Chicken Melt",
+        "menu_group": "Lunch Special",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 5,
+        "net_sales": 77.4,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Smirnoff",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 10,
+        "net_sales": 76.5,
+        "inventory_depletion_qty": 10
+      },
+      {
+        "sku": "Tokyo Caesar",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 72,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Fish Grinder",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 72,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "HiPPie JuIcE",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 72,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Chef Salad",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 72,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Josh Cellars CABernet",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 7,
+        "net_sales": 70,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Grey Goose",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 7,
+        "net_sales": 69.5,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Grilled Cordon Bleu Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 69.25,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Bloody Mary",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 5,
+        "net_sales": 66,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Max's Mistake",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 5,
+        "net_sales": 65,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Canadian Club",
+        "menu_group": "Whiskey",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 7,
+        "net_sales": 63,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Chocolate Cake",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 62.5,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Coffee",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 21,
+        "net_sales": 62.4,
+        "inventory_depletion_qty": 21
+      },
+      {
+        "sku": "Root Beer",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 20,
+        "net_sales": 60,
+        "inventory_depletion_qty": 20
+      },
+      {
+        "sku": "Foam Dead Flowers",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 60,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Cosmopolitan",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 4,
+        "net_sales": 57,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Grilled Cheese",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 5,
+        "net_sales": 55.9,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Soda Water",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 27,
+        "net_sales": 54,
+        "inventory_depletion_qty": 27
+      },
+      {
+        "sku": "American Chop Suey",
+        "menu_group": "Lunch Special",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 3,
+        "net_sales": 54,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Crispy Seoul Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 3,
+        "net_sales": 51,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Lawsons Nitro Stout",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 5,
+        "net_sales": 50,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Josh Cellars Rose",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 48,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Clean Slate Riesling",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 48,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "G3 Merlot",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 6,
+        "net_sales": 48,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Shirly Temple",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 16,
+        "net_sales": 47.4,
+        "inventory_depletion_qty": 16
+      },
+      {
+        "sku": "New York Cheesecake",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 46.8,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Chicken Parm Sandwich",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 3,
+        "net_sales": 46.75,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Kids Grilled Chicken Breast",
+        "menu_group": "Kids Menu",
+        "menu": "Kids Menu",
+        "sales_category": "Food",
+        "qty": 8,
+        "net_sales": 45.5,
+        "inventory_depletion_qty": 8
+      },
+      {
+        "sku": "Lemonade",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 15,
+        "net_sales": 45,
+        "inventory_depletion_qty": 15
+      },
+      {
+        "sku": "Ginger Ale",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 15,
+        "net_sales": 45,
+        "inventory_depletion_qty": 15
+      },
+      {
+        "sku": "Captain Morgan",
+        "menu_group": "Rum",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 5,
+        "net_sales": 45,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Vermont Pride",
+        "menu_group": "Sandwiches",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 3,
+        "net_sales": 44,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Don Julio Blanco",
+        "menu_group": "Tequila",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 43.5,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Side Greek",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 36,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Bombay Sapphire",
+        "menu_group": "Gin",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 4,
+        "net_sales": 36,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Makers Mark",
+        "menu_group": "Whiskey",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 34.5,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Hendricks",
+        "menu_group": "Gin",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 33,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Side Greek",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 32.1,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Side Ceasar",
+        "menu_group": "Salads",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 5,
+        "net_sales": 32,
+        "inventory_depletion_qty": 5
+      },
+      {
+        "sku": "Dewars",
+        "menu_group": "Scotch/Bourbon",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 30,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Sprite",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 27,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Focal Banger",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 27,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Absolut",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 27,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Bulleit Burbon",
+        "menu_group": "Whiskey",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 26,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Exotico Blanco",
+        "menu_group": "Tequila",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 25.5,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Patron Silver",
+        "menu_group": "Tequila",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 24,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Elk Cove Pinot Gris",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 24,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Side Little Leaf",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 3,
+        "net_sales": 24,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Mad Hat Tea",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 6,
+        "net_sales": 23.2,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Klinker Brick Cab",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 22,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Arnold Palmer",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 7,
+        "net_sales": 21,
+        "inventory_depletion_qty": 7
+      },
+      {
+        "sku": "Scoop of Ice Cream",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 20,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Little Leaf Salad",
+        "menu_group": "Salads",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 20,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Jameson",
+        "menu_group": "Whiskey",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 19,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Stoli",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 19,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Stoli Orange",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 18,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "$6 Draft",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 3,
+        "net_sales": 18,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Jagermeister",
+        "menu_group": "Liqueurs/Cordials",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 18,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Rickshaw Pinot Noir",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 18,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Heady Topper",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 18,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Lunetta Prosecco",
+        "menu_group": "White",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 18,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Juice",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 6,
+        "net_sales": 17.5,
+        "inventory_depletion_qty": 6
+      },
+      {
+        "sku": "Negroni",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 17,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Potsticker Lunch",
+        "menu_group": "Lunch Plates",
+        "menu": "Lunch",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 17,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Idolmaker Manhattan",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 16,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Apothic Red",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 16,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Chocolate Martini",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 16,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "High Noon Passion",
+        "menu_group": "Can",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 2,
+        "net_sales": 15,
+        "inventory_depletion_qty": 2
+      },
+      {
+        "sku": "Kids Hot Dog",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 14,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Vermont Strong",
+        "menu_group": "Featured Drinks",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 13,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Hot Tea",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 4,
+        "net_sales": 12,
+        "inventory_depletion_qty": 4
+      },
+      {
+        "sku": "Johnnie Walker Black",
+        "menu_group": "Scotch/Bourbon",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 12,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Hess Cab",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 12,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Glenlivet 12",
+        "menu_group": "Scotch/Bourbon",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 12,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Mimosa",
+        "menu_group": "Brunch Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 10,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Molly's Burger and Rice",
+        "menu_group": "Molly's Bowl",
+        "menu": "Dog Bowls",
+        "sales_category": "",
+        "qty": 1,
+        "net_sales": 10,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Moose's chicken and rice",
+        "menu_group": "Moose's Bowl",
+        "menu": "Dog Bowls",
+        "sales_category": "",
+        "qty": 1,
+        "net_sales": 10,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Moscow Mule",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9.5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Irish Coffee",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9.5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Stoli Vanilla",
+        "menu_group": "Vodka",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Prosecco lunetta",
+        "menu_group": "Champagne",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Bacardi",
+        "menu_group": "Rum",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Pindal Malbec",
+        "menu_group": "Reds",
+        "menu": "Wines",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "White Russian",
+        "menu_group": "Cocktails",
+        "menu": "BAR",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 9,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Tanqueray",
+        "menu_group": "Gin",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 8.5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Fireball",
+        "menu_group": "Liqueurs/Cordials",
+        "menu": "Liquor",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 8,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Shot",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Half Pour",
+        "menu_group": "Draft",
+        "menu": "Beer",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Ginger Beer",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 4,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Shot Chilled Espresso",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Liquor",
+        "qty": 1,
+        "net_sales": 4,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Milk",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 3.99,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Hot Cider",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 3.5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Hot Cocoa",
+        "menu_group": "Beverage",
+        "menu": "Beverage",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 3,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Veggies",
+        "menu_group": "Sides",
+        "menu": "Dinner",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 2.99,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Steak",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 2.8,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Salmon",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 2.7,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Patty Only With Buff",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 1.67,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Burger Med American Cheese N Breads Or Lto Braugh",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 1.67,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Burger Patty Med Anerican Only No Lto Or Breads",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 1.67,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Grilled Chicken",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 1.5,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Gift Card",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "",
+        "qty": 3,
+        "net_sales": 0,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Kids Ice Cream",
+        "menu_group": "Desserts",
+        "menu": "Dessert",
+        "sales_category": "Food",
+        "qty": 9,
+        "net_sales": 0,
+        "inventory_depletion_qty": 9
+      },
+      {
+        "sku": "Add Value ($)",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "",
+        "qty": 3,
+        "net_sales": 0,
+        "inventory_depletion_qty": 3
+      },
+      {
+        "sku": "Side Of Bolo Sauce Pretty Please ?",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 0,
+        "inventory_depletion_qty": 1
+      },
+      {
+        "sku": "Goulash",
+        "menu_group": "",
+        "menu": "",
+        "sales_category": "Food",
+        "qty": 1,
+        "net_sales": 0,
+        "inventory_depletion_qty": 1
+      }
+    ],
+    "by_sales_category": {
+      "Food": {
+        "qty": 1974,
+        "net_sales": 29274.84,
+        "sku_count": 141
+      },
+      "Liquor": {
+        "qty": 788,
+        "net_sales": 7532.5,
+        "sku_count": 89
+      },
+      "(none)": {
+        "qty": 8,
+        "net_sales": 20,
+        "sku_count": 4
+      }
+    },
+    "by_menu": {
+      "Lunch": {
+        "qty": 395,
+        "net_sales": 6140.2,
+        "sku_count": 41
+      },
+      "Beer": {
+        "qty": 416,
+        "net_sales": 3383,
+        "sku_count": 22
+      },
+      "Liquor": {
+        "qty": 111,
+        "net_sales": 1088,
+        "sku_count": 26
+      },
+      "Kids Menu": {
+        "qty": 66,
+        "net_sales": 783.8,
+        "sku_count": 6
+      },
+      "Dinner": {
+        "qty": 1110,
+        "net_sales": 20670.14,
+        "sku_count": 57
+      },
+      "BAR": {
+        "qty": 129,
+        "net_sales": 1826.5,
+        "sku_count": 22
+      },
+      "Beverage": {
+        "qty": 288,
+        "net_sales": 842.39,
+        "sku_count": 18
+      },
+      "Wines": {
+        "qty": 130,
+        "net_sales": 1226,
+        "sku_count": 17
+      },
+      "Dessert": {
+        "qty": 106,
+        "net_sales": 812.3,
+        "sku_count": 10
+      },
+      "(none)": {
+        "qty": 17,
+        "net_sales": 35.01,
+        "sku_count": 13
+      },
+      "Dog Bowls": {
+        "qty": 2,
+        "net_sales": 20,
+        "sku_count": 2
+      }
+    },
+    "by_menu_group": {
+      "Sandwiches": {
+        "qty": 140,
+        "net_sales": 2206.9,
+        "sku_count": 16
+      },
+      "Soup": {
+        "qty": 125,
+        "net_sales": 747.5,
+        "sku_count": 4
+      },
+      "Can": {
+        "qty": 111,
+        "net_sales": 774,
+        "sku_count": 10
+      },
+      "Vodka": {
+        "qty": 53,
+        "net_sales": 508.5,
+        "sku_count": 8
+      },
+      "Burgers": {
+        "qty": 222,
+        "net_sales": 3952.8,
+        "sku_count": 5
+      },
+      "Salads": {
+        "qty": 138,
+        "net_sales": 2322.9,
+        "sku_count": 18
+      },
+      "Kids Menu": {
+        "qty": 66,
+        "net_sales": 783.8,
+        "sku_count": 6
+      },
+      "Draft": {
+        "qty": 305,
+        "net_sales": 2609,
+        "sku_count": 12
+      },
+      "Lunch Plates": {
+        "qty": 113,
+        "net_sales": 2050.85,
+        "sku_count": 11
+      },
+      "Appetizers": {
+        "qty": 224,
+        "net_sales": 3218.3,
+        "sku_count": 11
+      },
+      "Cocktails": {
+        "qty": 57,
+        "net_sales": 806.5,
+        "sku_count": 11
+      },
+      "Beverage": {
+        "qty": 288,
+        "net_sales": 842.39,
+        "sku_count": 18
+      },
+      "White": {
+        "qty": 84,
+        "net_sales": 719,
+        "sku_count": 7
+      },
+      "Desserts": {
+        "qty": 106,
+        "net_sales": 812.3,
+        "sku_count": 10
+      },
+      "(none)": {
+        "qty": 17,
+        "net_sales": 35.01,
+        "sku_count": 13
+      },
+      "Entrees": {
+        "qty": 306,
+        "net_sales": 7287.3,
+        "sku_count": 12
+      },
+      "Pasta": {
+        "qty": 119,
+        "net_sales": 2755.2,
+        "sku_count": 8
+      },
+      "Reds": {
+        "qty": 45,
+        "net_sales": 498,
+        "sku_count": 9
+      },
+      "Champagne": {
+        "qty": 1,
+        "net_sales": 9,
+        "sku_count": 1
+      },
+      "Sides": {
+        "qty": 20,
+        "net_sales": 91.24,
+        "sku_count": 2
+      },
+      "Featured Menu": {
+        "qty": 61,
+        "net_sales": 1385.95,
+        "sku_count": 6
+      },
+      "Barbeque": {
+        "qty": 29,
+        "net_sales": 660,
+        "sku_count": 3
+      },
+      "Featured Drinks": {
+        "qty": 71,
+        "net_sales": 1010,
+        "sku_count": 10
+      },
+      "Whiskey": {
+        "qty": 28,
+        "net_sales": 275,
+        "sku_count": 5
+      },
+      "Rum": {
+        "qty": 6,
+        "net_sales": 54,
+        "sku_count": 2
+      },
+      "Liqueurs/Cordials": {
+        "qty": 3,
+        "net_sales": 26,
+        "sku_count": 2
+      },
+      "Gin": {
+        "qty": 8,
+        "net_sales": 77.5,
+        "sku_count": 3
+      },
+      "Tequila": {
+        "qty": 8,
+        "net_sales": 93,
+        "sku_count": 3
+      },
+      "Brunch Cocktails": {
+        "qty": 1,
+        "net_sales": 10,
+        "sku_count": 1
+      },
+      "Scotch/Bourbon": {
+        "qty": 5,
+        "net_sales": 54,
+        "sku_count": 3
+      },
+      "Molly's Bowl": {
+        "qty": 1,
+        "net_sales": 10,
+        "sku_count": 1
+      },
+      "Lunch Special": {
+        "qty": 8,
+        "net_sales": 131.4,
+        "sku_count": 2
+      },
+      "Moose's Bowl": {
+        "qty": 1,
+        "net_sales": 10,
+        "sku_count": 1
+      }
+    }
+  },
+  "totals": {
+    "payable_hours": 108.2,
+    "labor_people": 14,
+    "labor_punches": 15,
+    "sku_count": 234,
+    "units_sold": 2770,
+    "net_sales": 36827.34,
+    "sales_per_labor_hour": 340.36
+  }
+}

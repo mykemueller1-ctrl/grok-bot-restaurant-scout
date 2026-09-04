@@ -1,0 +1,42 @@
+{
+  "name": "Time Entries Sub-Agent",
+  "title": "Never86 report sub \u2014 Labor / Time Entries",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#F4A261",
+  "family": "never86-report-ops",
+  "domain_id": "labor",
+  "report_id": "time-entries",
+  "parent": "labor",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Time Entries report (Toast \u2192 Employee \u2192 Time Entries). Ingests csv, xlsx. Signals: payable_hours, job_title, employee, punches. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Toast \u2192 Employee \u2192 Time Entries",
+  "formats": [
+    "csv",
+    "xlsx"
+  ],
+  "signals": [
+    "payable_hours",
+    "job_title",
+    "employee",
+    "punches"
+  ],
+  "file_globs": [
+    "TimeEntries*.csv",
+    "*time*entr*.xlsx"
+  ],
+  "schema": "schemas/labor-time-entry.json",
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

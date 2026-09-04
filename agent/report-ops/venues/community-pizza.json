@@ -1,0 +1,25 @@
+{
+  "name": "Community Pizza / CTAP Report Scout",
+  "title": "Never86 venue scout \u2014 Community Pizza / CTAP report packs",
+  "role": "venue_scout",
+  "shape": "fox",
+  "color": "#457B9D",
+  "family": "never86-report-ops",
+  "venue_id": "community-pizza",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Community Pizza / CTAP. Source: Google Drive communitypizza2026@gmail.com. Status: drive_indexed.",
+  "aliases": [
+    "CTAP",
+    "Community Pizza",
+    "Community Tap"
+  ],
+  "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
+  "status": "drive_indexed",
+  "skills": [
+    "report-ingest",
+    "report-route",
+    "teach-label"
+  ],
+  "swarm": true
+}

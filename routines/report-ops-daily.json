@@ -1,0 +1,28 @@
+{
+  "name": "report-ops-daily",
+  "schedule": "0 9 * * *",
+  "timezone": "America/Chicago",
+  "description": "Report-ops swarm: ingest CSV/Excel/PDF packs, route to parent/sub agents, teach-batch Myke on Kristen/Grill/Bamba/CTAP reports.",
+  "agent_globs": [
+    "agent/report-ops/teacher.json",
+    "agent/report-ops/parents/*.json",
+    "agent/report-ops/subs/*.json",
+    "agent/report-ops/icp/*.json",
+    "agent/report-ops/venues/*.json"
+  ],
+  "steps_per_agent": [
+    { "skill": "report-ingest", "when": "role == venue_scout or role == sub" },
+    { "skill": "icp-scale-classify", "depends_on": "report-ingest" },
+    { "skill": "report-normalize", "depends_on": "report-ingest", "when": "role == sub" },
+    { "skill": "report-route", "depends_on": "icp-scale-classify", "when": "role == parent" },
+    { "skill": "report-teach-batch", "depends_on": "report-route", "when": "role == teacher" },
+    { "skill": "teach-label", "depends_on": "report-teach-batch", "when": "role == teacher" },
+    { "skill": "recurse-learn", "depends_on": "teach-label" }
+  ],
+  "notify": {
+    "channel": "telegram",
+    "message": "Report-ops ready — teach batches for labor / sales-mix / inventory. Label Kristen Grill + Taco Bamba packs when Gmail is connected."
+  },
+  "approval_required_for": ["outreach", "dm", "email", "publish", "spend"],
+  "swarm_mode": true
+}

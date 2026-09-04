@@ -1,0 +1,266 @@
+{
+  "family": "never86-report-ops",
+  "platform": "Never86",
+  "version": "1.1.0",
+  "swarm_mode": true,
+  "purpose": "Parent / teacher / sub-agent swarm for restaurant sales, labor, and inventory reports \u2014 plus ICP scale subs (owner 1\u20135 vs area-leader vs CFO/CEO). Holy grail: Courser Grill + Taco Bamba packs; CTAP physical labor cards as owner-operator ground truth.",
+  "owner": "mykemueller1-ctrl",
+  "teacher": "teacher.json",
+  "parent_count": 4,
+  "sub_count": 16,
+  "icp_sub_count": 3,
+  "venue_scout_count": 3,
+  "agent_count": 27,
+  "shared_skills": [
+    "report-ingest",
+    "report-route",
+    "report-normalize",
+    "report-teach-batch",
+    "icp-scale-classify",
+    "teach-label",
+    "recurse-learn"
+  ],
+  "parents": [
+    {
+      "id": "icp-scale",
+      "file": "parents/icp-scale.json",
+      "label": "ICP Scale",
+      "sub_count": 3
+    },
+    {
+      "id": "labor",
+      "file": "parents/labor.json",
+      "label": "Labor",
+      "sub_count": 5
+    },
+    {
+      "id": "sales",
+      "file": "parents/sales.json",
+      "label": "Sales / Product Mix",
+      "sub_count": 7
+    },
+    {
+      "id": "inventory",
+      "file": "parents/inventory.json",
+      "label": "Inventory / Par / Ordering",
+      "sub_count": 4
+    }
+  ],
+  "subs": [
+    {
+      "id": "time-entries",
+      "file": "subs/time-entries.json",
+      "parent": "labor",
+      "label": "Time Entries",
+      "formats": [
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "labor-summary",
+      "file": "subs/labor-summary.json",
+      "parent": "labor",
+      "label": "Labor Summary / Cost",
+      "formats": [
+        "csv",
+        "xlsx",
+        "pdf"
+      ]
+    },
+    {
+      "id": "bar-kitchen-schedule",
+      "file": "subs/bar-kitchen-schedule.json",
+      "parent": "labor",
+      "label": "Bar / Kitchen / Driver Schedules",
+      "formats": [
+        "xlsx",
+        "gsheet"
+      ]
+    },
+    {
+      "id": "kitchen-labor-card",
+      "file": "subs/kitchen-labor-card.json",
+      "parent": "labor",
+      "label": "Kitchen Labor Card (paper)",
+      "formats": [
+        "photo",
+        "pdf",
+        "scan"
+      ]
+    },
+    {
+      "id": "paper-weekly-schedule",
+      "file": "subs/paper-weekly-schedule.json",
+      "parent": "labor",
+      "label": "Paper Weekly Schedule",
+      "formats": [
+        "photo",
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "item-selection",
+      "file": "subs/item-selection.json",
+      "parent": "sales",
+      "label": "Item Selection Details",
+      "formats": [
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "menu-sales",
+      "file": "subs/menu-sales.json",
+      "parent": "sales",
+      "label": "Menu Sales Summary",
+      "formats": [
+        "csv",
+        "xlsx",
+        "pdf"
+      ]
+    },
+    {
+      "id": "sales-category",
+      "file": "subs/sales-category.json",
+      "parent": "sales",
+      "label": "Sales Category Mix",
+      "formats": [
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "z-report",
+      "file": "subs/z-report.json",
+      "parent": "sales",
+      "label": "Z-Report / Day End",
+      "formats": [
+        "pdf",
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "weekly-sales-pack",
+      "file": "subs/weekly-sales-pack.json",
+      "parent": "sales",
+      "label": "Weekly Sales Pack",
+      "formats": [
+        "folder",
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "sales-summary",
+      "file": "subs/sales-summary.json",
+      "parent": "sales",
+      "label": "Sales Summary (Toast)",
+      "formats": [
+        "xlsx",
+        "csv"
+      ]
+    },
+    {
+      "id": "multi-unit-sales-labor",
+      "file": "subs/multi-unit-sales-labor.json",
+      "parent": "sales",
+      "label": "Multi-Unit Sales Labor Report (MP)",
+      "formats": [
+        "xlsx"
+      ]
+    },
+    {
+      "id": "sku-depletion",
+      "file": "subs/sku-depletion.json",
+      "parent": "inventory",
+      "label": "SKU Depletion from Product Mix",
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    {
+      "id": "liquor-beer-par",
+      "file": "subs/liquor-beer-par.json",
+      "parent": "inventory",
+      "label": "Liquor / Beer Par & Ordering",
+      "formats": [
+        "xlsx",
+        "gsheet",
+        "pdf"
+      ]
+    },
+    {
+      "id": "vendor-intake",
+      "file": "subs/vendor-intake.json",
+      "parent": "inventory",
+      "label": "Vendor Intake",
+      "formats": [
+        "xlsx",
+        "gsheet"
+      ]
+    },
+    {
+      "id": "vendor-invoice",
+      "file": "subs/vendor-invoice.json",
+      "parent": "inventory",
+      "label": "Distributor / Store Invoice",
+      "formats": [
+        "photo",
+        "pdf",
+        "csv"
+      ]
+    }
+  ],
+  "icp": [
+    {
+      "id": "owner-1-5",
+      "file": "icp/owner-1-5.json",
+      "label": "Owner-Operator 1\u20135",
+      "units": "1\u20135",
+      "buyer": "Owner / GM (still in the building)"
+    },
+    {
+      "id": "area-leader",
+      "file": "icp/area-leader.json",
+      "label": "Area / District Leader Scale",
+      "units": "5\u201315+ under an area leader; brand may be 15\u201350+",
+      "buyer": "Area Leader / District Manager / Dir of Ops"
+    },
+    {
+      "id": "cfo-ceo",
+      "file": "icp/cfo-ceo.json",
+      "label": "CFO / CEO Portfolio",
+      "units": "10\u201350+ (or PE-backed)",
+      "buyer": "CFO / Controller / CEO / COO"
+    }
+  ],
+  "venues": [
+    {
+      "id": "grill",
+      "file": "venues/grill.json",
+      "label": "The New American Grill",
+      "status": "courser_indexed"
+    },
+    {
+      "id": "taco-bamba",
+      "file": "venues/taco-bamba.json",
+      "label": "Taco Bamba",
+      "status": "courser_indexed"
+    },
+    {
+      "id": "community-pizza",
+      "file": "venues/community-pizza.json",
+      "label": "Community Pizza / CTAP",
+      "status": "drive_indexed"
+    }
+  ],
+  "parser": "scripts/parse-toast-reports.mjs",
+  "docs": [
+    "docs/TOAST-REPORTS.md",
+    "docs/ICP-SCALE.md"
+  ]
+}

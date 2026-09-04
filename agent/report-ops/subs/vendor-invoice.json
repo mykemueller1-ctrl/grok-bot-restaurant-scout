@@ -1,0 +1,46 @@
+{
+  "name": "Distributor / Store Invoice Sub-Agent",
+  "title": "Never86 report sub \u2014 Inventory / Par / Ordering / Distributor / Store Invoice",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-report-ops",
+  "domain_id": "inventory",
+  "report_id": "vendor-invoice",
+  "parent": "inventory",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Distributor / Store Invoice report (Beer distributor, grocery, payout slips). Ingests photo, pdf, csv. Signals: vendor, sku, qty, amount, account. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Beer distributor, grocery, payout slips",
+  "formats": [
+    "photo",
+    "pdf",
+    "csv"
+  ],
+  "signals": [
+    "vendor",
+    "sku",
+    "qty",
+    "amount",
+    "account"
+  ],
+  "file_globs": [
+    "*invoice*",
+    "*Hopkins*",
+    "*Distributing*",
+    "*Hy-Vee*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

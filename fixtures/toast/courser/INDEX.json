@@ -1,0 +1,61 @@
+{
+  "folder": "Courser",
+  "folder_id": "1vfUBPuuE6N3tqCMKMNnkLz2fjToTcyxw",
+  "url": "https://drive.google.com/drive/folders/1vfUBPuuE6N3tqCMKMNnkLz2fjToTcyxw",
+  "owner": "mykemueller1@gmail.com",
+  "pulled_at": "2026-09-04",
+  "files": [
+    {
+      "id": "18grWWKJz-ZcL1wczxEQl3gCyGSkF7qGE",
+      "title": "ItemSelectionDetails_2026_08_24-2026_08_30.csv",
+      "report_id": "item-selection",
+      "venue_id": "grill",
+      "parent": "sales"
+    },
+    {
+      "id": "1BX5Vd6eeixXLnsIlq39VMR1NPKe_MEvS",
+      "title": "TimeEntries_2026_08_31.csv",
+      "report_id": "time-entries",
+      "venue_id": "grill",
+      "parent": "labor"
+    },
+    {
+      "id": "1OYCr9ikFofJI7vFqc0V8wliQbZqEC9Rv",
+      "title": "LaborBreakDown_2026-08-31_2026-08-31.xlsx",
+      "report_id": "labor-summary",
+      "venue_id": "grill",
+      "parent": "labor",
+      "signals": ["labor_pct_net", "splh", "cost_by_job"]
+    },
+    {
+      "id": "1cp2Cb-JA3owOT5EQYiYgnfHACnO-0uM5",
+      "title": "SalesSummary_2026-08-31_2026-08-31.xlsx",
+      "report_id": "sales-summary",
+      "venue_id": "grill",
+      "venue_label": "The New American Grill",
+      "parent": "sales"
+    },
+    {
+      "id": "1EaevI-2TexgTETPM0a4Xw7n3nXiaCLmD",
+      "title": "Sales Labor Report (MP) v5.xlsx",
+      "report_id": "multi-unit-sales-labor",
+      "venue_id": "taco-bamba",
+      "parent": "sales",
+      "note": "Multi-unit Daily/WTD board — Herndon, Fair Lakes, Cascades, Nashville, Rockville, …"
+    },
+    {
+      "id": "1j46w7PdZZ5JXCd7YrfAFlC1KJe3_NfkI",
+      "title": "Sales Labor Report (MP) v5.xlsx (duplicate Sep 1)",
+      "report_id": "multi-unit-sales-labor",
+      "venue_id": "taco-bamba",
+      "parent": "sales",
+      "duplicate_of": "1EaevI-2TexgTETPM0a4Xw7n3nXiaCLmD"
+    }
+  ],
+  "normalized": [
+    "normalized/grill-labor-breakdown-2026-08-31.json",
+    "normalized/grill-sales-summary-2026-08-31.json",
+    "normalized/grill-labor-sales-mix.json",
+    "normalized/taco-bamba-sales-labor-mp-v5.json"
+  ]
+}

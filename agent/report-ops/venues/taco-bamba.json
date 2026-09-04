@@ -1,0 +1,25 @@
+{
+  "name": "Taco Bamba Report Scout",
+  "title": "Never86 venue scout \u2014 Taco Bamba report packs",
+  "role": "venue_scout",
+  "shape": "fox",
+  "color": "#457B9D",
+  "family": "never86-report-ops",
+  "venue_id": "taco-bamba",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Taco Bamba. Source: Drive Courser \u2014 Sales Labor Report (MP) v5. Status: courser_indexed.",
+  "aliases": [
+    "Taco Bomb",
+    "Taco Bamba",
+    "Bamba"
+  ],
+  "holy_grail_source": "Drive Courser \u2014 Sales Labor Report (MP) v5",
+  "status": "courser_indexed",
+  "skills": [
+    "report-ingest",
+    "report-route",
+    "teach-label"
+  ],
+  "swarm": true
+}

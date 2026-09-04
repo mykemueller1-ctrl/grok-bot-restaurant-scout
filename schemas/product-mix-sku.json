@@ -1,0 +1,35 @@
+{
+  "$schema_name": "ProductMixSku",
+  "description": "One sold menu item from Toast Item Selection / Menu Sales. Product mix rolls Sales Category → Menu → Menu Group → Menu Item (SKU).",
+  "source_report": "Toast → Reports → Menus → Item Selection Details (Menu Sales / Product Mix)",
+  "hierarchy": ["sales_category", "menu", "menu_group", "menu_item"],
+  "required": ["menu_item", "qty", "net_sales"],
+  "properties": {
+    "order_number": { "type": ["string", "number"] },
+    "sent_at": { "type": "string", "format": "date-time" },
+    "menu_item": {
+      "type": "string",
+      "description": "SKU-level name (Menu Item). Finest grain of product mix."
+    },
+    "menu_group": { "type": "string" },
+    "menu": { "type": "string" },
+    "sales_category": {
+      "type": "string",
+      "description": "Top of mix tree (Food, Liquor, …)"
+    },
+    "unit_net": {
+      "type": "number",
+      "description": "Net $ per unit (line net / qty when qty > 0)"
+    },
+    "qty": { "type": "number" },
+    "net_sales": {
+      "type": "number",
+      "description": "Line net from Toast (already qty-inclusive)"
+    },
+    "void": { "type": "boolean" },
+    "is_placeholder": {
+      "type": "boolean",
+      "description": "True for CourseLine / ****** separators — excluded from SKU mix"
+    }
+  }
+}

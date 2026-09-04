@@ -1,0 +1,4 @@
+# Raw exports may include employee names — keep Drive ids in INDEX.json
+*.csv
+*.xlsx
+!normalized/

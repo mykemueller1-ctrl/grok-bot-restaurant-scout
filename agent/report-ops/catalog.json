@@ -1,0 +1,483 @@
+{
+  "family": "never86-report-ops",
+  "version": "1.1.0",
+  "domains": [
+    {
+      "id": "labor",
+      "label": "Labor",
+      "color": "#F4A261",
+      "job": "Schedule & Labor cards \u2014 who was actually scheduled/clocked",
+      "reports": [
+        {
+          "id": "time-entries",
+          "label": "Time Entries",
+          "source": "Toast \u2192 Employee \u2192 Time Entries",
+          "formats": [
+            "csv",
+            "xlsx"
+          ],
+          "schema": "schemas/labor-time-entry.json",
+          "signals": [
+            "payable_hours",
+            "job_title",
+            "employee",
+            "punches"
+          ],
+          "file_globs": [
+            "TimeEntries*.csv",
+            "*time*entr*.xlsx"
+          ]
+        },
+        {
+          "id": "labor-summary",
+          "label": "Labor Summary / Cost",
+          "source": "Toast \u2192 Labor \u2192 Labor Summary",
+          "formats": [
+            "csv",
+            "xlsx",
+            "pdf"
+          ],
+          "signals": [
+            "labor_percent",
+            "hours_by_job",
+            "overtime"
+          ],
+          "file_globs": [
+            "*Labor*Summary*",
+            "*labor*cost*"
+          ]
+        },
+        {
+          "id": "bar-kitchen-schedule",
+          "label": "Bar / Kitchen / Driver Schedules",
+          "source": "Ops sheets (Google Sheets / Excel)",
+          "formats": [
+            "xlsx",
+            "gsheet"
+          ],
+          "signals": [
+            "shift_grid",
+            "role_coverage"
+          ],
+          "file_globs": [
+            "*SCHEDULE*",
+            "*schedule*"
+          ]
+        },
+        {
+          "id": "kitchen-labor-card",
+          "label": "Kitchen Labor Card (paper)",
+          "source": "Printed AM/PM station card filled by hand",
+          "formats": [
+            "photo",
+            "pdf",
+            "scan"
+          ],
+          "signals": [
+            "day",
+            "shift",
+            "station",
+            "employee"
+          ],
+          "file_globs": [
+            "*Labor*Card*",
+            "*kitchen*labor*"
+          ],
+          "icp_tiers": [
+            "owner-1-5"
+          ]
+        },
+        {
+          "id": "paper-weekly-schedule",
+          "label": "Paper Weekly Schedule",
+          "source": "Calendarpedia / handwritten week grid",
+          "formats": [
+            "photo",
+            "pdf",
+            "xlsx"
+          ],
+          "signals": [
+            "employee",
+            "day",
+            "shift_window",
+            "station_code",
+            "events"
+          ],
+          "file_globs": [
+            "*Weekly schedule*",
+            "*Work Schedule*"
+          ],
+          "icp_tiers": [
+            "owner-1-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "label": "Sales / Product Mix",
+      "color": "#E63946",
+      "job": "POS menu sales \u2192 product mix all the way down to SKUs",
+      "reports": [
+        {
+          "id": "item-selection",
+          "label": "Item Selection Details",
+          "source": "Toast \u2192 Menus \u2192 Item Selection Details",
+          "formats": [
+            "csv",
+            "xlsx"
+          ],
+          "schema": "schemas/product-mix-sku.json",
+          "signals": [
+            "sku",
+            "qty",
+            "net_sales",
+            "menu_group",
+            "sales_category"
+          ],
+          "hierarchy": [
+            "sales_category",
+            "menu",
+            "menu_group",
+            "menu_item"
+          ],
+          "file_globs": [
+            "ItemSelectionDetails*.csv",
+            "*item*selection*",
+            "*product*mix*"
+          ]
+        },
+        {
+          "id": "menu-sales",
+          "label": "Menu Sales Summary",
+          "source": "Toast \u2192 Menus \u2192 Sales",
+          "formats": [
+            "csv",
+            "xlsx",
+            "pdf"
+          ],
+          "signals": [
+            "menu_totals",
+            "category_mix"
+          ],
+          "file_globs": [
+            "*Menu*Sales*",
+            "*menu*sales*"
+          ]
+        },
+        {
+          "id": "sales-category",
+          "label": "Sales Category Mix",
+          "source": "Toast \u2192 Sales \u2192 Sales Category",
+          "formats": [
+            "csv",
+            "xlsx"
+          ],
+          "signals": [
+            "food_vs_liquor",
+            "category_net"
+          ],
+          "file_globs": [
+            "*Sales*Category*",
+            "*category*mix*"
+          ]
+        },
+        {
+          "id": "z-report",
+          "label": "Z-Report / Day End",
+          "source": "POS Historical Prev Day Z Report / ZReport Summary",
+          "formats": [
+            "pdf",
+            "csv",
+            "xlsx"
+          ],
+          "signals": [
+            "day_net",
+            "tenders",
+            "voids",
+            "comps"
+          ],
+          "file_globs": [
+            "*Z_Report*",
+            "*ZReport*",
+            "*z-report*"
+          ]
+        },
+        {
+          "id": "weekly-sales-pack",
+          "label": "Weekly Sales Pack",
+          "source": "Operator folder of daily Z + week rollup",
+          "formats": [
+            "folder",
+            "pdf",
+            "xlsx"
+          ],
+          "signals": [
+            "week_net",
+            "day_parts",
+            "comp_week"
+          ],
+          "file_globs": [
+            "*Weekly sales*",
+            "*weekly*sales*"
+          ]
+        },
+        {
+          "id": "sales-summary",
+          "label": "Sales Summary (Toast)",
+          "source": "Toast \u2192 Sales \u2192 Sales Summary export",
+          "formats": [
+            "xlsx",
+            "csv"
+          ],
+          "signals": [
+            "net_sales",
+            "gross_sales",
+            "tips",
+            "sales_categories",
+            "revenue_centers",
+            "dayparts",
+            "voids"
+          ],
+          "file_globs": [
+            "SalesSummary*",
+            "*Sales*Summary*"
+          ]
+        },
+        {
+          "id": "multi-unit-sales-labor",
+          "label": "Multi-Unit Sales Labor Report (MP)",
+          "source": "Sales Labor Report (MP) v5 \u2014 Daily / WTD / daypart boards",
+          "formats": [
+            "xlsx"
+          ],
+          "signals": [
+            "location",
+            "cy_sales",
+            "py_sales",
+            "cy_checks",
+            "yoy",
+            "region_rollups"
+          ],
+          "file_globs": [
+            "*Sales Labor Report*",
+            "*Sales_Labor_Report*",
+            "*MP*v5*"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inventory",
+      "label": "Inventory / Par / Ordering",
+      "color": "#2A9D8F",
+      "job": "SKU depletion from mix + par/ordering sheets \u2192 theoretical vs actual",
+      "reports": [
+        {
+          "id": "sku-depletion",
+          "label": "SKU Depletion from Product Mix",
+          "source": "Derived from Item Selection qty",
+          "formats": [
+            "json",
+            "csv"
+          ],
+          "schema": "schemas/labor-sales-inventory.json",
+          "signals": [
+            "inventory_depletion_qty",
+            "sku",
+            "net_sales"
+          ],
+          "file_globs": [
+            "labor-sales-inventory.json",
+            "*depletion*"
+          ]
+        },
+        {
+          "id": "liquor-beer-par",
+          "label": "Liquor / Beer Par & Ordering",
+          "source": "Bar ordering Excel / Google Sheets",
+          "formats": [
+            "xlsx",
+            "gsheet",
+            "pdf"
+          ],
+          "signals": [
+            "par_amount",
+            "qty_to_order",
+            "cost",
+            "over_under_budget"
+          ],
+          "file_globs": [
+            "*LIQUOR*",
+            "*BEER*ORDER*",
+            "*PAR*SHEET*",
+            "*Optimization*"
+          ]
+        },
+        {
+          "id": "vendor-intake",
+          "label": "Vendor Intake",
+          "source": "Hospitality vendor intake sheets",
+          "formats": [
+            "xlsx",
+            "gsheet"
+          ],
+          "signals": [
+            "vendor",
+            "sku",
+            "cost",
+            "unit"
+          ],
+          "file_globs": [
+            "*Vendor*Intake*",
+            "*vendor*intake*"
+          ]
+        },
+        {
+          "id": "vendor-invoice",
+          "label": "Distributor / Store Invoice",
+          "source": "Beer distributor, grocery, payout slips",
+          "formats": [
+            "photo",
+            "pdf",
+            "csv"
+          ],
+          "signals": [
+            "vendor",
+            "sku",
+            "qty",
+            "amount",
+            "account"
+          ],
+          "file_globs": [
+            "*invoice*",
+            "*Hopkins*",
+            "*Distributing*",
+            "*Hy-Vee*"
+          ],
+          "icp_tiers": [
+            "owner-1-5",
+            "area-leader",
+            "cfo-ceo"
+          ]
+        }
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "id": "grill",
+      "label": "The New American Grill",
+      "aliases": [
+        "Grill",
+        "the grill",
+        "The New American Grill"
+      ],
+      "holy_grail_source": "Drive Courser folder + Kristen packs",
+      "status": "courser_indexed"
+    },
+    {
+      "id": "taco-bamba",
+      "label": "Taco Bamba",
+      "aliases": [
+        "Taco Bomb",
+        "Taco Bamba",
+        "Bamba"
+      ],
+      "holy_grail_source": "Drive Courser \u2014 Sales Labor Report (MP) v5",
+      "status": "courser_indexed"
+    },
+    {
+      "id": "community-pizza",
+      "label": "Community Pizza / CTAP",
+      "aliases": [
+        "CTAP",
+        "Community Pizza",
+        "Community Tap"
+      ],
+      "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
+      "status": "drive_indexed"
+    }
+  ],
+  "icp_tiers": [
+    {
+      "id": "owner-1-5",
+      "label": "Owner-Operator 1\u20135",
+      "color": "#2A9D8F",
+      "units": "1\u20135",
+      "buyer": "Owner / GM (still in the building)",
+      "job": "Single-owner ops: paper labor cards, weekly schedules, Toast day exports, distributor invoices",
+      "pains": [
+        "owner burnout and cash-flow gut feel",
+        "labor % without group targets",
+        "second unit ~130% ops surface for ~60% revenue capacity",
+        "inventory = invoice photos + Hy-Vee runs"
+      ],
+      "report_ids": [
+        "kitchen-labor-card",
+        "paper-weekly-schedule",
+        "time-entries",
+        "labor-summary",
+        "sales-summary",
+        "item-selection",
+        "liquor-beer-par",
+        "vendor-invoice"
+      ],
+      "example_packs": [
+        "ctap-physical",
+        "courser/grill"
+      ],
+      "never86_wedge": "Daily leak dollars from red-book chaos \u2014 not enterprise BI"
+    },
+    {
+      "id": "area-leader",
+      "label": "Area / District Leader Scale",
+      "color": "#E76F51",
+      "units": "5\u201315+ under an area leader; brand may be 15\u201350+",
+      "buyer": "Area Leader / District Manager / Dir of Ops",
+      "job": "Coach GMs across stores; Daily/WTD CY vs PY boards; region then System rollups",
+      "pains": [
+        "margin lost between locations",
+        "labor swings 8pts across GMs on same brand",
+        "inconsistent coding / wrong labor grain",
+        "must coach not run shifts"
+      ],
+      "report_ids": [
+        "multi-unit-sales-labor",
+        "weekly-sales-pack",
+        "labor-summary",
+        "sales-summary",
+        "z-report"
+      ],
+      "example_packs": [
+        "courser/taco-bamba-sales-labor-mp-v5"
+      ],
+      "never86_wedge": "Store/region exceptions for area leaders \u2014 not 30 unread tabs"
+    },
+    {
+      "id": "cfo-ceo",
+      "label": "CFO / CEO Portfolio",
+      "color": "#1D3557",
+      "units": "10\u201350+ (or PE-backed)",
+      "buyer": "CFO / Controller / CEO / COO",
+      "job": "Location P&Ls weekly, prime cost, SSS, institutional consolidations across POS+labor+ERP",
+      "pains": [
+        "stale Excel consolidations",
+        "days to assemble portfolio view",
+        "no real-time variance alerts",
+        "four-wall EBITDA vs corporate overhead"
+      ],
+      "report_ids": [
+        "multi-unit-sales-labor",
+        "labor-summary",
+        "sales-summary",
+        "sku-depletion",
+        "vendor-intake"
+      ],
+      "example_packs": [
+        "courser/taco-bamba System rollup"
+      ],
+      "never86_wedge": "Faster time-to-leak-dollar across portfolio + action layer"
+    }
+  ]
+}

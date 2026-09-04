@@ -12,18 +12,23 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | --- | --- |
 | `agent/restaurant-scout.json` | Love → buy-now scout |
 | `agent/pain-shoppers/` | 238 vendor pain-shopper agents |
+| `agent/report-ops/` | Parent / teacher / sub agents for labor · sales · inventory reports |
 | `mcp/` | MCP connector definitions (env-based URLs) |
 | `services/pain-leads-api/` | Self-contained Fastify MCP API |
 | `stack/wiring.json` | Canonical URLs, secrets map, import waves |
 | `render.yaml` | Render Blueprint (Postgres + API) |
 | `docs/OPERATOR.md` | Operator playbook |
 | `docs/CODEX-CLOUD.md` | GitHub ↔ Codex Cloud connect steps |
+| `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
 
 ## Build / validate
 
 ```bash
 # Swarm still 238
 python3 agent/pain-shoppers/build_swarm.py
+
+# Report-ops parents + teacher + subs
+python3 agent/report-ops/build_report_swarm.py
 
 # API typecheck/build (needs DATABASE_URL for prisma generate in some envs)
 cd services/pain-leads-api && npm install && npm run build

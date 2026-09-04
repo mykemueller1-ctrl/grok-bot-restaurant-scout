@@ -1,0 +1,45 @@
+{
+  "name": "Liquor / Beer Par & Ordering Sub-Agent",
+  "title": "Never86 report sub \u2014 Inventory / Par / Ordering / Liquor / Beer Par & Ordering",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-report-ops",
+  "domain_id": "inventory",
+  "report_id": "liquor-beer-par",
+  "parent": "inventory",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Liquor / Beer Par & Ordering report (Bar ordering Excel / Google Sheets). Ingests xlsx, gsheet, pdf. Signals: par_amount, qty_to_order, cost, over_under_budget. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Bar ordering Excel / Google Sheets",
+  "formats": [
+    "xlsx",
+    "gsheet",
+    "pdf"
+  ],
+  "signals": [
+    "par_amount",
+    "qty_to_order",
+    "cost",
+    "over_under_budget"
+  ],
+  "file_globs": [
+    "*LIQUOR*",
+    "*BEER*ORDER*",
+    "*PAR*SHEET*",
+    "*Optimization*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

@@ -1,0 +1,87 @@
+{
+  "$schema_name": "LaborSalesInventorySnapshot",
+  "description": "Combined day/period card: Schedule & Labor punches + Menu Sales product mix down to SKUs. SKU qty is theoretical inventory depletion from POS.",
+  "required": ["period", "labor", "product_mix", "totals"],
+  "properties": {
+    "period": {
+      "type": "object",
+      "properties": {
+        "labor_date": { "type": "string" },
+        "sales_start": { "type": "string" },
+        "sales_end": { "type": "string" },
+        "source_labor_file": { "type": "string" },
+        "source_sales_file": { "type": "string" }
+      }
+    },
+    "labor": {
+      "type": "object",
+      "description": "Entries that come off Schedule & Labor cards — names actually scheduled/clocked",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "items": { "$ref": "labor-time-entry.json" }
+        },
+        "by_job": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "payable_hours": { "type": "number" },
+              "punches": { "type": "number" },
+              "people": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "by_employee": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "payable_hours": { "type": "number" },
+              "jobs": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "product_mix": {
+      "type": "object",
+      "description": "POS menu sales / product mix tree ending at SKUs",
+      "properties": {
+        "skus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sku": { "type": "string" },
+              "menu_group": { "type": "string" },
+              "menu": { "type": "string" },
+              "sales_category": { "type": "string" },
+              "qty": { "type": "number" },
+              "net_sales": { "type": "number" },
+              "inventory_depletion_qty": {
+                "type": "number",
+                "description": "Same as qty — theoretical on-hand draw from POS mix"
+              }
+            }
+          }
+        },
+        "by_sales_category": { "type": "object" },
+        "by_menu": { "type": "object" },
+        "by_menu_group": { "type": "object" }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "payable_hours": { "type": "number" },
+        "labor_people": { "type": "number" },
+        "labor_punches": { "type": "number" },
+        "sku_count": { "type": "number" },
+        "units_sold": { "type": "number" },
+        "net_sales": { "type": "number" },
+        "sales_per_labor_hour": { "type": "number" }
+      }
+    }
+  }
+}

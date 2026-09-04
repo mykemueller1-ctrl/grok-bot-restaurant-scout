@@ -1,0 +1,32 @@
+{
+  "name": "Labor Report Parent",
+  "title": "Never86 report parent \u2014 Labor",
+  "role": "parent",
+  "shape": "fox",
+  "color": "#F4A261",
+  "family": "never86-report-ops",
+  "domain_id": "labor",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Parent agent for Labor reports. Schedule & Labor cards \u2014 who was actually scheduled/clocked. Spawns/routes sub-agents: time-entries, labor-summary, bar-kitchen-schedule, kitchen-labor-card, paper-weekly-schedule. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
+  "job_to_be_done": "Schedule & Labor cards \u2014 who was actually scheduled/clocked",
+  "sub_agents": [
+    "time-entries",
+    "labor-summary",
+    "bar-kitchen-schedule",
+    "kitchen-labor-card",
+    "paper-weekly-schedule"
+  ],
+  "skills": [
+    "report-ingest",
+    "report-route",
+    "teach-label",
+    "recurse-learn"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}
