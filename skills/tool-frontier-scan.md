@@ -8,7 +8,7 @@
 - Cursor Cloud Agents, Automations, Skills, Memories
 - Memory layers that help teach/label + ops memory (Mem0, automation memories; watch Zep/Letta)
 - MCP relevant to GTM / social / approvals / research
-- Vertical rivals: Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, Menami, Seekadu, Klikit (APAC), similar
+- Vertical rivals: Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, Menami, Seekadu, Klikit (APAC), OrderPost, Beebz, Seared, Moast, Ainisa, similar
 
 ### Out of scope (skip / verdict `skip`)
 - Historical sales forecasting products
@@ -17,7 +17,7 @@
 - Features inside otherwise-relevant rivals that are forecasting/labor-only (e.g. Menami staff-forecast) — watch the GTM slice only
 
 1. Read `stack/tooling-ledger.json` + prior `stack/tool-hunt-findings/`.
-2. Research (Composio `COMPOSIO_SEARCH_WEB` Active primary; Bright Data when auth works; Context when keys/OAuth ready).
+2. Research (Composio `COMPOSIO_SEARCH_WEB` Active primary + `COMPOSIO_SEARCH_TAVILY` secondary; Bright Data when auth works; Context when keys/OAuth ready).
 3. Write `ToolFinding` JSON files matching `schemas/tool-finding.json`.
 4. Update ledger `last_scan`, `watchlist`, `open_gaps`, `competitors` (vertical + coding).
 5. Cite every factual claim with source URLs.

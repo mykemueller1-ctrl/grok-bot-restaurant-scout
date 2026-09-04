@@ -133,3 +133,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Skipped Cartsense (non-restaurant ecom) and Nailah labor/forecast research.
 - Adopted effective_cost_math on KEEP scorer + fixtures/tool-hunt/pain-scan-doordash-effective-cost.json (statement: 8.37% commission → 18.75% effective cost).
 - Ledger v1.17.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP (Mem0 + Context).
+
+### 2026-09-04 (OrderPost + Tavily + Franklin effective-cost dogfood)
+
+- Watched OrderPost (IG post→order link — top buy-now peer), Beebz (creator/video menus), Seared (first-party KEEP).
+- Adopted COMPOSIO_SEARCH_TAVILY as research secondary; scripts/score-pain-fixtures.mjs CI batch KEEP gate.
+- Dogfood: fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json (statement math → Franklin SalesLead DRAFT).
+- Ledger v1.18.0. Auth still BLOCKED (Mem0 + Context).

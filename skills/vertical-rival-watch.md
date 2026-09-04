@@ -5,13 +5,13 @@
 **Goal:** Track restaurant **social-commerce / anti-marketplace / pain-GTM** rivals — adopt patterns that sharpen Never86, skip forecasting suites.
 
 ### Watch set (seed)
-Owner.com · Trenz · BrandPal · CreatOK · Restomas · Feedia · Straunt · Zayos · PlateAI · Flik AI · Seekadu · TextOrder · Menami · Klikit (APAC) · Outbites · Orderitto · Moast · Ainisa · Seekeasy · Feedo AI
+Owner.com · Trenz · BrandPal · CreatOK · Restomas · Feedia · Straunt · Zayos · PlateAI · Flik AI · Seekadu · TextOrder · Menami · Klikit (APAC) · Outbites · Orderitto · Moast · Ainisa · Seekeasy · Feedo AI · OrderPost · Beebz · Seared
 
 **Skip for hunt research:** Cartsense (non-restaurant TikTok Shop ecom), Nailah labor/demand-forecast features, any historical sales/labor forecasting suite.
 
 ### Steps
 1. Read `stack/tool-hunt-memory.md` + `stack/tooling-ledger.json` competitors.
-2. Research with Composio `COMPOSIO_SEARCH_WEB` / news (preferred when Bright Data 401s); else WebSearch.
+2. Research with Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_TAVILY` / news (preferred when Bright Data 401s); else WebSearch.
 3. For each material change, write a `ToolFinding` (`lane: vertical_gtm`) under `stack/tool-hunt-findings/`.
 4. Ask: does this sharpen **love→buy-now** or **pain→sales-lead**?
    - Yes → `adopt` / `pilot` / `watch` with concrete skill or wedge note

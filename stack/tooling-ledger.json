@@ -1,5 +1,5 @@
 {
-  "version": "1.17.0",
+  "version": "1.18.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -67,7 +67,7 @@
       "approvals",
       "social-connector"
     ],
-    "research_fallback": "Composio COMPOSIO_SEARCH_WEB (Active) when Bright Data/Context unavailable",
+    "research_fallback": "Composio COMPOSIO_SEARCH_WEB + COMPOSIO_SEARCH_TAVILY (Active) when Bright Data/Context unavailable",
     "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)",
     "pain_sales_enrich": "Composio Yelp + Google Maps + SEARCH_WEB (Active) \u2014 Apollo/Clay optional",
     "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts",
@@ -78,14 +78,14 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json (KEEP → SalesLead DRAFT)",
+    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + complaint-sources MCP score_marketplace_keep (incl. effective_cost_math)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP score_marketplace_keep (incl. effective_cost_math)",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
       "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
@@ -337,9 +337,78 @@
       "sources": [
         "https://feedoai.com/"
       ]
+    },
+    {
+      "name": "OrderPost",
+      "lane": "vertical_gtm",
+      "stack": "Upload IG/FB post or flyer \u2192 AI extracts menu \u2192 shareable order link (no catalog)",
+      "memory": "n/a (order pages)",
+      "edge": "Closest social-post\u2192order peer; hosted link close vs Never86 in-app Shop rails",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.orderpost.store/"
+      ]
+    },
+    {
+      "name": "Beebz",
+      "lane": "vertical_gtm",
+      "stack": "F&B creator marketplace + Live Now local promos + QR interactive video menus",
+      "memory": "Creator campaign state",
+      "edge": "Love discovery / video menu adjacent; not TikTok Shop buy-now",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://beebzapp.com/"
+      ]
+    },
+    {
+      "name": "Seared",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free website/app ordering + loyalty + email/SMS; flat monthly for independents",
+      "memory": "Owned guest list",
+      "edge": "Outbites-class first-party KEEP OS; not social Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://seared.io/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "OrderPost IG post\u2192order pages",
+      "lane": "vertical_gtm",
+      "why": "Closest social-post\u2192order rival to love\u2192buy-now; contrast hosted link vs Shop rails",
+      "verdict": "watch"
+    },
+    {
+      "item": "score-pain-fixtures.mjs batch KEEP gate",
+      "lane": "vertical_gtm",
+      "why": "CI ensures pain-scan fixtures stay anti_marketplace_buy_now capable",
+      "verdict": "adopt"
+    },
+    {
+      "item": "COMPOSIO_SEARCH_TAVILY research secondary",
+      "lane": "mcp_connectors",
+      "why": "Active when Bright Data 401 / Context blocked",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Franklin effective-cost pain\u2192SalesLead dogfood",
+      "lane": "vertical_gtm",
+      "why": "Statement-math KEEP + Austin love brand \u2192 DRAFT without Apollo/Mem0",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Beebz creator + video menus",
+      "lane": "vertical_gtm",
+      "why": "Creator GTM / in-store video menu; watch light",
+      "verdict": "watch"
+    },
+    {
+      "item": "Seared first-party KEEP OS",
+      "lane": "vertical_gtm",
+      "why": "Flat-fee anti-DoorDash peer with Outbites/Orderitto",
+      "verdict": "watch"
+    },
     {
       "item": "Effective-cost KEEP signal + DoorDash statement-math pain",
       "lane": "vertical_gtm",

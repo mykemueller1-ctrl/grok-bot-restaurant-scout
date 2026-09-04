@@ -39,11 +39,11 @@ try {
   console.log("memory_tail: (missing stack/tool-hunt-memory.md)");
 }
 
-console.log("active_research: COMPOSIO_SEARCH_WEB + COMPOSIO_SEARCH_NEWS (Bright Data still 401)");
+console.log("active_research: COMPOSIO_SEARCH_WEB + COMPOSIO_SEARCH_TAVILY + COMPOSIO_SEARCH_NEWS (Bright Data still 401)");
 console.log("active_pain: X.search_posts_all + fixtures/tool-hunt/pain-scan-*.json");
 console.log("active_love: Yelp + Maps — fixtures/tool-hunt/*-love-brands.json");
 console.log("active_buy_now: fixtures/tool-hunt/script-draft-franklin-buy-now.json + catalog-sync-franklin-sandbox.json");
-console.log("active_keep_scorer: scripts/score-marketplace-keep.mjs");
+console.log("active_keep_scorer: scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs");
 console.log("next: skills in routines/tool-hunt-weekly.json → write ToolFinding JSON → update ledger");
 if (authReady) {
   console.log("mem0_next: node scripts/unlock-beyond-the-hunt.mjs");

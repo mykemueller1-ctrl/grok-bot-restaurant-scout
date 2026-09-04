@@ -1,0 +1,17 @@
+{
+  "finding_id": "score-pain-fixtures-batch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Adopt score-pain-fixtures.mjs batch KEEP gate",
+  "vendor_or_project": "Never86 KEEP tooling",
+  "urls": [],
+  "what_it_does": "Headless batch scorer over fixtures/tool-hunt/pain-scan-*.json — fails CI if zero anti_marketplace_buy_now hits.",
+  "how_competitors_use_it": "n/a",
+  "what_we_use_today": "Per-snippet score-marketplace-keep.mjs + MCP tool.",
+  "gap": "Closed — CI tool-hunt runs batch gate so pain dogfood cannot rot.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Keeps vendor-pain shopping fixtures KEEP-strong without Mem0/Context.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}
