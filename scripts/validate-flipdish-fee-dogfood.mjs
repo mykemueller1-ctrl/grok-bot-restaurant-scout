@@ -38,6 +38,10 @@ for (const f of files) {
     console.error(`validate-flipdish-fee-dogfood: ${f} complaint_thesis must teach Flipdish 2–7% direct/IG fees`);
     process.exit(1);
   }
+  if (!/0\.50|flat rate|percentage/i.test(lead.complaint_thesis)) {
+    console.error(`validate-flipdish-fee-dogfood: ${f} complaint_thesis must cite Flipdish flat €0.50 + percentage`);
+    process.exit(1);
+  }
   if (!/tiktok shop|6\s*%|shop referral|social_shop/i.test(lead.complaint_thesis)) {
     console.error(`validate-flipdish-fee-dogfood: ${f} complaint_thesis must contrast Shop ~6% buy-now`);
     process.exit(1);

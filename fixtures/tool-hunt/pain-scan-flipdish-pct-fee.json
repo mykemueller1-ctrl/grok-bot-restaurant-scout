@@ -1,17 +1,29 @@
 {
   "scanned_at": "2026-09-04",
-  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
-  "query": "Flipdish 2-7% per-order commission on direct OO KEEP pain",
+  "tools": [
+    "COMPOSIO_SEARCH_TAVILY",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Flipdish flat \u20ac0.50 + percentage per-order fee KEEP pain",
   "hits": [
     {
       "url": "https://menujo.com/compare/flipdish-alternative",
       "posted_at": "2026-09-04",
       "handle": "menujo",
-      "snippet": "Flipdish charges 2-7% per-order commission on direct online orders plus monthly subscription — first-party KEEP cut vs DoorDash Marketplace 25%; Instagram Order Now still taxes every cart",
+      "snippet": "Flipdish charges 2-7% per-order commission on direct online orders plus monthly subscription \u2014 first-party KEEP cut vs DoorDash Marketplace 25%; Instagram Order Now still taxes every cart",
       "pain_id": "flipdish_direct_pct_fee",
       "score": 100,
-      "never86_angle": "IG Order Now + branded OO with 2–7% Flipdish take is still first-party rent — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+      "never86_angle": "IG Order Now + branded OO with 2\u20137% Flipdish take is still first-party rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    },
+    {
+      "url": "https://help.flipdish.com/en/articles/9743789-how-to-read-your-sales-report",
+      "posted_at": "2026-09-04",
+      "handle": "flipdish_flat_pct",
+      "snippet": "Flipdish charges order fees as a flat rate of \u20ac0.50 plus percentage per order vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "flipdish_flat_plus_pct_fee",
+      "score": 100,
+      "never86_angle": "Flat \u20ac0.50 + % on every Flipdish OO ticket is still first-party rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%."
     }
   ],
-  "notes": "Third-party pricing ranges (Menujo/Sauce). Skip Flipdish labor/forecast modules. Bright Data still 401. Not expanding swarm imports."
+  "notes": "Primary: Flipdish Help Center sales report \u2014 flat rate + percentage (example \u20ac0.50 + 9%). Third-party Ordering.Tools cites 7%+\u20ac0.50. Skip Flipdish labor/forecast. Not expanding swarm."
 }

@@ -1,0 +1,12 @@
+{
+  "finding_id": "flipdish-050-flat-pct-refresh-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Flipdish flat \u20ac0.50 + % fee refresh",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary Help Center: flat rate + percentage (example \u20ac0.50 + 9%). Scorer widened for \u20ac amounts. strong_keep 41.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.flipdish.com/en/articles/9743789-how-to-read-your-sales-report"
+  ]
+}

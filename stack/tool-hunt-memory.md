@@ -485,6 +485,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Second pain-scan hit → strong_keep **40**; dogfood theses + validator cite $1.75; `menufy_fee_dogfoods=5`.
 - Watched Orderitto flat $149–$249 (zero per-order). Ledger v1.72.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (Flipdish €0.50 flat + percentage fee refresh)
+
+- Primary Flipdish Help Center: guest platform fee as **flat rate + percentage** (example **€0.50 + 9%**). Scorer widened for euro `(?:\$|€)` + `flat rate` + `€0.50` → `per_order_platform_fee`.
+- Second pain-scan hit → strong_keep **41**; dogfood theses + validator cite €0.50 / $0.50; `flipdish_fee_dogfoods=5`.
+- Watched Ordering.Tools EU 3–5% (Starter 5% / Pro 3%) — no US swarm expand. Ledger v1.73.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
 
 
 
