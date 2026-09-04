@@ -1,5 +1,5 @@
 {
-  "version": "1.92.44",
+  "version": "1.92.45",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -80,7 +80,7 @@
     },
     "pain_sales_dogfood": "multi-market KEEP\u2192SalesLead + keep-grader CHI/ATX/MIA/BNA/DEN (girl-goat/franklin/michaels/husk/rioja)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
-    "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
+    "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp + buy_now_path pass-2 on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "status_printer": "scripts/print-beyond-the-hunt-status.mjs",
@@ -1281,6 +1281,12 @@
   ],
   "watchlist": [
     {
+      "item": "GloriaFood Oracle EOL Apr 30 2027 \u2192 Shop migration wedge",
+      "lane": "vertical_gtm",
+      "why": "Hard LDOS 2027-04-30; new signups closed; FB Order Now still live until then \u2014 keep peer_count 9; Shop close for free Meta-adjacent OO loss",
+      "verdict": "adopt"
+    },
+    {
       "item": "Rioja buy_now_path pass-2 + 5-market live loop complete",
       "lane": "vertical_gtm",
       "why": "Flavor Dojo carryout + phone reservations still live (Yelp 2914); ATX/CHI/MIA/BNA/DEN all pass-2 this hunt",
@@ -1517,7 +1523,7 @@
     {
       "item": "GloriaFood Facebook Start Order / Order Now",
       "lane": "vertical_gtm",
-      "why": "GloriaFood how-to: FB Action Button Start Order + smart link \u2014 Meta-adjacent; watch only \u2014 fee pause",
+      "why": "FB Action Button Start Order + smart link still live; Oracle EOL 2027-04-30 \u2014 keep as FBE peer #9 until shutdown; fee pause",
       "verdict": "watch"
     },
     {
@@ -2423,7 +2429,7 @@
     {
       "item": "GloriaFood free ordering (discontinued)",
       "lane": "vertical_gtm",
-      "why": "No new signups; skip further research",
+      "why": "No new signups; Oracle LDOS 2027-04-30 \u2014 skip product research; EOL\u2192Shop wedge adopted separately",
       "verdict": "skip"
     },
     {

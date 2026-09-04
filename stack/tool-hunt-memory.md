@@ -890,3 +890,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Pass-2: Rioja Flavor Dojo carryout + phone reservations still live (Yelp 2,914). Finding: `2026-09-04-rioja-buy-now-pass2.json`.
 - All five love markets now pass-2 this hunt: Franklin / G&TG / Michaels / Husk / Rioja. KEEP signals hold (strong_keep 65).
 - Ledger v1.92.44. Auth still blocked for unlock READY.
+
+### 2026-09-04 (GloriaFood EOL → Shop wedge)
+
+- Reconfirmed Oracle GloriaFood LDOS **Apr 30, 2027** (new signups closed; no Oracle replacement). FB Order Now how-to still live on gloriafood.com.
+- Adopt teach: Shop migration wedge for restaurants losing free Meta-adjacent OO. **Keep meta_order_food_peer_count at 9** until shutdown — do not inflate Ressto/FoodBooking/Tablevibe CTA successors.
+- Finding: `2026-09-04-gloriafood-eol-shop-wedge.json`. Taught into COMPOSIO-SOCIAL-UNLOCKS + morning-scan pass-2 calibration.
+- Ledger v1.92.45. Auth still blocked for unlock READY.

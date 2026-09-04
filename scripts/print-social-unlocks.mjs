@@ -58,6 +58,8 @@ const out = {
       "GloriaFood",
     ],
     meta_order_food_peer_count: 9,
+    meta_order_food_peer_note:
+      "GloriaFood Oracle EOL 2027-04-30 — keep peer #9 until shutdown; do not inflate Ressto/FoodBooking/Tablevibe CTA successors",
     still_need_for_goal: [
       "MEM0_API_KEY or Mem0 MCP OAuth",
       "CONTEXT_DEV_API_KEY or Context MCP OAuth",

@@ -1,0 +1,24 @@
+{
+  "finding_id": "gloriafood-eol-apr2027-shop-wedge-2026-09",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood Oracle EOL Apr 30 2027 → Shop migration wedge",
+  "vendor_or_project": "GloriaFood (Oracle MICROS)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio SEARCH_WEB + FETCH 2026-09-04 reconfirm: Oracle retires GloriaFood Last Date of Service April 30, 2027; new signups already closed; no Oracle replacement. Facebook Start Order / Order Now how-to still live on gloriafood.com until shutdown. Keep meta_order_food_peer_count at 9 until product dies — do NOT drop early or inflate successors into FBE peers. Never86 in-app Shop is the migration close for restaurants losing free Meta-adjacent OO (plus already-watched Ressto/CloudWaitress/Fleksa successors).",
+  "what_it_does": "Documents hard EOL of a free Meta-adjacent Facebook Order Now rail used by 100k+ independents; sharpens Shop wedge + successor watches without peer_count churn.",
+  "how_competitors_use_it": "Migration blogs (Enacton, Ogent, Ressto, Menuro, YoYumm) pitch commission-free OO replacements; FB Order Now dies with the product.",
+  "what_we_use_today": "Watch GloriaFood as FBE-class peer #9; successors Ressto/CloudWaitress/Fleksa already watched; Meta Order Food peers stay 9",
+  "gap": "Do not dogfood GloriaFood fees (discontinued). Do not bump peer_count for CTA successors. Auth unlock still blocks goal close.",
+  "pivot_speed": "hours",
+  "operator_ask": "No action beyond Mem0/Context unlocks.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.enacton.com/blog/gloriafood-shutting-down/",
+    "https://ogent.ai/gloriafood-shutdown",
+    "https://www.gloriafood.com/facebook-ordering",
+    "https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button"
+  ],
+  "never86_wedge": "in-app Shop buy-now for restaurants losing free GloriaFood Facebook Start Order / website widget before Apr 30 2027",
+  "not_this": "Not a fee dogfood. Not a peer_count change. Not forecasting. Successors stay watch-only CTA/OO peers unless Meta FBE primary cite."
+}
