@@ -373,3 +373,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-popmenu-guest-fee.json ($1/order guest-passable under commission-free OO add-on) → strong_keep 21.
 - Added pain-to-sales-popmenu-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-popmenu-fee-dogfood ≥5.
 - Ledger v1.54.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Flipdish 2–7% + Slice watch)
+
+- Widened first_party_pct_fee for Flipdish-class 2–7% direct commissions (CLI + marketplaceKeepScore.ts).
+- Adopted pain-scan-flipdish-pct-fee.json + 5 flipdish-fee SalesLeads; validate-flipdish-fee-dogfood ≥5 → strong_keep 23.
+- Watched Slice (5% Family / ~$3 card order) — pizza niche only.
+- Ledger v1.55.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

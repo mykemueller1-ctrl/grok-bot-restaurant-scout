@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_WEB", "scripts/score-marketplace-keep.mjs"],
+  "query": "Slice pizzeria $3/order or 5% membership KEEP pain",
+  "hits": [
+    {
+      "url": "https://slice.com/pricing/",
+      "posted_at": "2026-09-04",
+      "handle": "slice_pricing",
+      "snippet": "Slice Family membership about 5% per order platform fee for pizzerias vs DoorDash 25% — Online plan also cited ~$39/mo + ~$3 per credit-card order",
+      "pain_id": "slice_pct_or_per_order_fee",
+      "score": 65,
+      "never86_angle": "Pizza-vertical first-party % / per-order fees still cut KEEP — Never86 Shop buy-now for cult pizza love vs Marketplace rent; watch only (vertical niche)"
+    }
+  ],
+  "notes": "Slice is pizza-specialized. Watch — do not expand swarm. Sources: Slice pricing + LegalClarity/Dinevate via Composio. Skip forecasting."
+}

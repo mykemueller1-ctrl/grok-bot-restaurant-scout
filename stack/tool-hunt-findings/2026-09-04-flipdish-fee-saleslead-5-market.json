@@ -1,0 +1,26 @@
+{
+  "finding_id": "flipdish-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Flipdish 2–7% direct % SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-flipdish-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-flipdish-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-flipdish-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-flipdish-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-flipdish-fee-rioja.json",
+    "scripts/validate-flipdish-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-flipdish-pct-fee.json",
+    "https://menujo.com/compare/flipdish-alternative"
+  ],
+  "what_it_does": "Flipdish ~2–7% per-order commission on direct/IG Order Now → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%. Widened first_party_pct_fee scorer for 2–7% / Flipdish.",
+  "how_competitors_use_it": "Flipdish sells branded web/app + IG Order Now with subscription + % take on direct orders.",
+  "what_we_use_today": "validate-flipdish-fee-dogfood ≥5; first_party_pct_fee now matches Flipdish-class ranges",
+  "gap": "Third-party fee ranges — verify live Flipdish quote before outreach; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Flipdish 2–7% SalesLead dogfoods match five love markets; first_party_pct_fee widened; strong_keep 23.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

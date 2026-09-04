@@ -1,5 +1,5 @@
 {
-  "version": "1.54.0",
+  "version": "1.55.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -101,6 +101,7 @@
     "upmenu_fee_dogfood_gate": "scripts/validate-upmenu-fee-dogfood.mjs (UpMenu $1.90 overage → SalesLead ≥5 markets)",
     "owner_fee_dogfood_gate": "scripts/validate-owner-fee-dogfood.mjs (Owner Flex 5% + guest 5% support → SalesLead ≥5 markets)",
     "popmenu_fee_dogfood_gate": "scripts/validate-popmenu-fee-dogfood.mjs (Popmenu $1/order guest fee → SalesLead ≥5 markets)",
+    "flipdish_fee_dogfood_gate": "scripts/validate-flipdish-fee-dogfood.mjs (Flipdish 2–7% direct % → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -522,11 +523,12 @@
       "lane": "vertical_gtm",
       "stack": "First-party web/app ordering + Instagram Order Now / Stories stickers + AI marketing/POS; marketplace sync dual-run",
       "memory": "Owned diner data for loyalty/SMS/PPC",
-      "edge": "Strong IG→order close + KEEP messaging; contrast vs Never86 TikTok/IG shoppable rails — skip their forecasting/scheduling features in research",
+      "edge": "Strong IG→order close but ~2–7% direct commission still cuts KEEP; contrast vs Never86 TikTok/IG shoppable rails — skip their forecasting/scheduling features in research",
       "updated": "2026-09-04",
       "sources": [
         "https://www.flipdish.com/",
-        "https://www.flipdish.com/us/resources/blog/get-direct-orders-on-instagram"
+        "https://www.flipdish.com/us/resources/blog/get-direct-orders-on-instagram",
+        "https://menujo.com/compare/flipdish-alternative"
       ]
     },
     {
@@ -862,6 +864,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Flipdish 2–7% direct % SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Flipdish/IG Order Now ~2–7% → SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-flipdish-fee-dogfood ≥5; strong_keep 23",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Slice pizzeria 5% / $3-per-order fee",
+      "lane": "vertical_gtm",
+      "why": "Pizza-vertical first-party % or per-order fees; watch only — no swarm expand",
+      "verdict": "watch"
+    },
     {
       "item": "Popmenu $1/order guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",

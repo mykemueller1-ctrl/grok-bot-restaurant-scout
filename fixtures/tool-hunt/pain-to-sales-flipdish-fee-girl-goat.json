@@ -1,0 +1,75 @@
+{
+  "dogfood_id": "pain-to-sales-flipdish-fee-girl-goat-2026-09-04",
+  "purpose": "Flipdish 2–7% per-order commission on direct/IG Order Now → SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts first_party_pct_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Flipdish ~2–7% per-order commission on direct OO",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "flipdish_direct_pct_fee",
+    "vendor_id": "flipdish",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Flipdish pitches branded/IG Order Now OO while taking ~2–7% per-order commission plus subscription. Girl & The Goat-class love should close on Never86 Shop ~6% buy-now — honest platform math without first-party % stack or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "flipdish",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-flipdish-pct-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "flipdish_direct_pct_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Flipdish charges ~2–7% per-order commission on direct online orders (including Instagram Order Now paths) plus monthly subscription — first-party platform percent KEEP cut. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. West Loop love already prints demand — close Shop buy-now, not Flipdish 2–7% on IG Order Now.",
+    "quotes": [
+      "Flipdish ~2–7% per-order commission on direct OO",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Flipdish first-party % OO / IG Order Now",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + social_shop_fee teach: Flipdish IG Order Now still taxes KEEP with 2–7%; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand — close Shop buy-now, not Flipdish 2–7% on IG Order Now.",
+    "sources": [
+      "https://menujo.com/compare/flipdish-alternative",
+      "fixtures/tool-hunt/pain-scan-flipdish-pct-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 76,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Flipdish 2–7% direct % → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-flipdish-pct-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -40,6 +40,8 @@ jobs:
           if (!up.signals.includes('per_order_platform_fee')) throw new Error(JSON.stringify(up));
           const fp = scoreMarketplaceKeep('Owner.com Flex \$249/month plus 5% restaurant fee per order — guests see 5% order support fee; restaurant owners KEEP less');
           if (!fp.signals.includes('first_party_pct_fee') || fp.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(fp));
+          const flip = scoreMarketplaceKeep('Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%');
+          if (!flip.signals.includes('first_party_pct_fee') || flip.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(flip));
           const ddoo = scoreMarketplaceKeep('DoorDash Online Ordering is 0% commission on direct orders — Marketplace still takes 25%; dual-run KEEP');
           if (!ddoo.signals.includes('marketplace_direct_zero')) throw new Error(JSON.stringify(ddoo));
           const uber = scoreMarketplaceKeep('Uber Webshop is commission-free; Grubhub Direct skips marketing commissions on branded sites');
@@ -143,6 +145,7 @@ jobs:
           test -f scripts/validate-upmenu-fee-dogfood.mjs
           test -f scripts/validate-owner-fee-dogfood.mjs
           test -f scripts/validate-popmenu-fee-dogfood.mjs
+          test -f scripts/validate-flipdish-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
@@ -156,6 +159,8 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-owner-pct-fee.json
           test -f fixtures/tool-hunt/pain-scan-owner-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-popmenu-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-flipdish-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-slice-pct-fee.json
           test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
           test -f fixtures/tool-hunt/pain-scan-doordash-online-ordering.json
           test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
@@ -192,6 +197,11 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-rioja.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -204,13 +214,14 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'UpMenu Basic overage $1.90 per order after 75 orders — KEEP leak' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Owner.com Flex $249/month plus 5% restaurant fee per order — guests see 5% order support fee' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'DoorDash Online Ordering is 0% commission on direct orders — Marketplace still 25%' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'Uber Webshop is commission-free on direct orders — Grubhub Direct skips marketing commissions' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25%' | grep -q social_shop_fee
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 21'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 23'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
@@ -220,6 +231,7 @@ jobs:
           node scripts/validate-upmenu-fee-dogfood.mjs | grep -q '"upmenu_fee_dogfoods": 5'
           node scripts/validate-owner-fee-dogfood.mjs | grep -q '"owner_fee_dogfoods": 5'
           node scripts/validate-popmenu-fee-dogfood.mjs | grep -q '"popmenu_fee_dogfoods": 5'
+          node scripts/validate-flipdish-fee-dogfood.mjs | grep -q '"flipdish_fee_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
