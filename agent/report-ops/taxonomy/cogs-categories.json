@@ -55,26 +55,26 @@
     {
       "id": "na_beverage",
       "coa": "5300",
-      "label": "Non-Alcoholic Beverage / Pop COGS",
-      "aliases": ["pop", "soda", "soft drink", "coffee", "juice", "mixer", "tonic", "energy drink", "na bev"],
+      "label": "Pop / NA Beverage COGS",
+      "operator_alias": "pop",
+      "aliases": ["pop", "soda", "soft drink", "milk", "juice", "coffee", "espresso", "mixer", "tonic", "energy drink", "na bev", "lemonade", "tea"],
+      "operator_teach": "cogs-sections#milk-pop-juice-coffee-under-pop",
       "vendor_types": ["beverage", "grocery", "broadline"],
-      "example_vendors": ["Sysco", "Performance Foodservice", "Hy-Vee", "Walmart", "Fareway", "Coca-Cola", "Pepsi"]
+      "example_vendors": ["Sysco", "Performance Foodservice", "Hy-Vee", "Walmart", "Fareway", "Coca-Cola", "Pepsi"],
+      "note": "Operator: milk, pop, juices, and coffee all code to Pop"
     },
     {
-      "id": "paper_packaging",
+      "id": "paper_goods_boxes_chemicals",
       "coa": "5400",
-      "label": "Paper & Packaging",
-      "aliases": ["paper", "packaging", "to-go", "foam", "liner", "napkin", "bag"],
-      "vendor_types": ["restaurant_supply", "broadline", "grocery"],
-      "example_vendors": ["Northern Lights Distributing", "Sysco", "Performance Foodservice"]
-    },
-    {
-      "id": "ops_supplies",
-      "coa": "5700",
-      "label": "Kitchen / Ops Supplies (non-COGS or smallwares)",
-      "aliases": ["supplies", "cleaning", "chemical", "gloves", "smallwares", "hardware"],
-      "vendor_types": ["restaurant_supply", "hardware", "janitorial"],
-      "example_vendors": ["Menards", "Performance Foodservice", "Sysco"]
+      "label": "Paper goods, boxes, chemicals",
+      "cost_bucket": "food_costs",
+      "reports_under": "food",
+      "aliases": ["paper", "boxes", "packaging", "to-go", "foam", "liner", "napkin", "bag", "cleaning", "chemical", "detergent", "sanitizer", "bleach", "soap", "supplies"],
+      "legacy_ids": ["paper_packaging", "ops_supplies"],
+      "operator_teach": "cogs-sections#paper-boxes-chemicals-under-food-costs",
+      "vendor_types": ["restaurant_supply", "broadline", "grocery", "hardware", "janitorial"],
+      "example_vendors": ["Northern Lights Distributing", "Sysco", "Performance Foodservice", "Menards"],
+      "note": "Operator: under food costs as its own section — paper, boxes, cleaning, chemicals"
     },
     {
       "id": "misc_opex",
@@ -99,11 +99,12 @@
     {"name": "Hopkins Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
     {"name": "Confluence Distribution", "vendor_type": "beer_distributor", "default_category": "beer"},
     {"name": "Hy-Vee Wine & Spirits", "vendor_type": "wine_spirits", "default_category": "liquor", "operator_teach": "hy-vee#hyvee-wine-to-liquor-order", "note": "Operator: wine receipts → liquor order"},
-    {"name": "Menards", "vendor_type": "hardware", "default_category": "ops_supplies"},
+    {"name": "Menards", "vendor_type": "hardware", "default_category": "paper_goods_boxes_chemicals", "note": "Operator: paper/boxes/chemicals section under food costs"},
     {"name": "Community Pizza", "vendor_type": "pos_payout", "default_category": null, "note": "Register payout slip — category from Account Name / Description"}
   ],
   "operator_private_teaches": [
-    "agent/report-ops/taxonomy/private-teaches/hy-vee.json"
+    "agent/report-ops/taxonomy/private-teaches/hy-vee.json",
+    "agent/report-ops/taxonomy/private-teaches/cogs-sections.json"
   ],
   "payout_account_map": {
     "4312": "food",

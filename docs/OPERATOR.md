@@ -47,6 +47,8 @@ Photo OCR is the AP spine for small ICPs (email is bonus). Taxonomy + competitiv
 
 **Private teach locked — Hy-Vee:** grocery Hy-Vee → Food. Hy-Vee wine / Wine & Spirits → liquor order (`agent/report-ops/taxonomy/private-teaches/hy-vee.json`).
 
+**Private teach locked — COGS sections:** milk / pop / juice / coffee → Pop. Paper goods, boxes, cleaning & chemicals → own section under food costs (`private-teaches/cogs-sections.json`).
+
 ## Add vendors
 
 Edit `agent/pain-shoppers/build_swarm.py` or `vendors/catalog.json` → `python3 agent/pain-shoppers/build_swarm.py` → import new JSON.

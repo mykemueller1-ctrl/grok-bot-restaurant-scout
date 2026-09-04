@@ -33,16 +33,33 @@
         "wine",
         "liquor",
         "na_beverage",
+        "paper_goods_boxes_chemicals",
         "paper_packaging",
         "ops_supplies",
         "misc_opex",
         "unknown",
         null
-      ]
+      ],
+      "description": "na_beverage = Pop (milk/pop/juice/coffee). paper_goods_boxes_chemicals reports under food costs."
+    },
+    "cost_bucket": {
+      "type": ["string", "null"],
+      "enum": ["food_costs", "beverage_costs", "opex", null],
+      "description": "Rollup bucket; paper_goods_boxes_chemicals → food_costs"
     },
     "category_source": {
       "type": ["string", "null"],
-      "enum": ["vendor_directory", "payout_account", "line_hint", "unmapped", null]
+      "enum": [
+        "vendor_directory",
+        "payout_account",
+        "line_hint",
+        "operator_teach_hyvee_food",
+        "operator_teach_hyvee_wine",
+        "operator_teach_pop",
+        "operator_teach_paper_chem",
+        "unmapped",
+        null
+      ]
     },
     "date": { "type": ["string", "null"], "format": "date" },
     "invoice_num": { "type": ["string", "null"] },

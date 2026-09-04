@@ -61,6 +61,20 @@ HYVEE_WINE_SIGNAL = re.compile(
 )
 HYVEE_FAMILY = re.compile(r"HY[\-\s]?VEE|Hyvee|HV\s*SPIRI", re.I)
 
+# Operator teach: milk/pop/juice/coffee → Pop; paper/boxes/cleaning/chemicals → food-cost section
+POP_SIGNAL = re.compile(
+    r"\b(MILK|2%|WHOLE\s*MILK|SKIM|POP|SODA|COLA|7[\-\s]?UP|SPRITE|JUICE|"
+    r"LEMONADE|SOFT\s*DRINK|COFFEE|ESPRESSO|K[\-\s]?CUP|CREAMER|TONIC|MIXER|"
+    r"GINGER\s*ALE|ENERGY\s*DRINK)\b",
+    re.I,
+)
+PAPER_CHEM_SIGNAL = re.compile(
+    r"\b(PAPER|BOX(?:ES)?|PACKAGING|TO[\-\s]?GO|FOAM|LINER|NAPKIN|BAG|GLOVE|"
+    r"STRAW|CLEAN(?:ING|ER)?|CHEMICAL|DETERGENT|SANITIZER|BLEACH|SOAP|RINSE|"
+    r"DISH\s*SOAP|DEGREASER)\b",
+    re.I,
+)
+
 VENDOR_PATTERNS = [
     (r"PERFORMANCE\s+FOODSERVICE|formance\s+Foodservice|Performance\s+Foodservice", "Performance Foodservice"),
     (r"\bSYSCO\b", "Sysco"),
@@ -113,9 +127,16 @@ LINE_CATEGORY_HINTS = [
     (r"\b(KEG|BBL|DRAFT|BEER|LAGERS?|ALE|IPA|PABST|COORS|BUD|YUENGLING|BUSCH|MIC\s*ULTRA)\b", "beer"),
     (r"\b(VODKA|WHISKEY|WHISKY|TEQUILA|RUM|GIN|LIQUEUR|CORDIAL|SPIRIT|CROWN|TITO|PATRON)\b", "liquor"),
     (r"\b(WINE|PINOT|CHARD|ZINFANDEL|MERLOT|CABERNET|PROSECCO|SPUMANTE)\b", "wine"),
-    (r"\b(SODA|POP|COLA|7UP|SPRITE|TONIC|GINGER\s*BEER|COFFEE|JUICE|MIXER)\b", "na_beverage"),
-    (r"\b(FOAM|LINER|NAPKIN|BAG|GLOVE|STRAW|PAPER|PACKAGING|TO[\-\s]?GO)\b", "paper_packaging"),
-    (r"\b(DETERGENT|SOAP|CHEM|RINSE|CLEAN|SHARPIE|HARDWARE)\b", "ops_supplies"),
+    (
+        r"\b(MILK|2%|WHOLE\s*MILK|SKIM|SODA|POP|COLA|7[\-\s]?UP|SPRITE|TONIC|GINGER\s*(?:BEER|ALE)|"
+        r"COFFEE|ESPRESSO|JUICE|LEMONADE|MIXER|CREAMER|SOFT\s*DRINK|ENERGY\s*DRINK)\b",
+        "na_beverage",
+    ),
+    (
+        r"\b(FOAM|LINER|NAPKIN|BAG|GLOVE|STRAW|PAPER|BOX(?:ES)?|PACKAGING|TO[\-\s]?GO|"
+        r"DETERGENT|SOAP|CHEM(?:ICAL)?|RINSE|CLEAN(?:ING|ER)?|SANITIZER|BLEACH|DEGREASER)\b",
+        "paper_goods_boxes_chemicals",
+    ),
 ]
 
 
@@ -326,80 +347,92 @@ def detect_doc_kind(text: str, vendor: str | None) -> str:
 
 def classify_cogs(vendor: str | None, text: str, account: str | None, description: str | None) -> dict:
     """Map vendor + payout account + line hints → COGS category (food/beer/liquor/pop/…)."""
+    text = text or ""
+
+    def _pack(cat: str, vendor_type: str | None, source: str) -> dict:
+        cost_bucket = "food_costs" if cat in ("food", "paper_goods_boxes_chemicals") else (
+            "beverage_costs" if cat in ("beer", "wine", "liquor", "na_beverage") else "opex"
+        )
+        return {
+            "cogs_category": cat,
+            "vendor_type": vendor_type,
+            "category_source": source,
+            "cost_bucket": cost_bucket,
+        }
+
     # Operator private teach — Hy-Vee family (see private-teaches/hy-vee.json)
     # Plain Hy-Vee → Food. Hy-Vee wine / Wine & Spirits → liquor order.
+    # Grocery Hy-Vee with pop/milk/juice/coffee lines → Pop; paper/chem → food-cost section.
     hyvee_family = bool(
         (vendor and "hy-vee" in vendor.lower())
-        or HYVEE_FAMILY.search(text or "")
+        or HYVEE_FAMILY.search(text)
     )
     if hyvee_family:
-        wine_hit = vendor == "Hy-Vee Wine & Spirits" or bool(HYVEE_WINE_SIGNAL.search(text or ""))
+        wine_hit = vendor == "Hy-Vee Wine & Spirits" or bool(HYVEE_WINE_SIGNAL.search(text))
         if wine_hit:
-            return {
-                "cogs_category": "liquor",
-                "vendor_type": "wine_spirits",
-                "category_source": "operator_teach_hyvee_wine",
-            }
-        # Grocery Hy-Vee: payout Food/Bread still food; default food
+            return _pack("liquor", "wine_spirits", "operator_teach_hyvee_wine")
+        if POP_SIGNAL.search(text):
+            return _pack("na_beverage", "grocery", "operator_teach_pop")
+        if PAPER_CHEM_SIGNAL.search(text):
+            return _pack("paper_goods_boxes_chemicals", "grocery", "operator_teach_paper_chem")
         for key in filter(None, [account, description]):
             for token in re.split(r"[\s/]+", str(key)):
                 mapped = PAYOUT_MAP.get(token.lower())
                 if mapped:
-                    return {
-                        "cogs_category": mapped if mapped == "food" else mapped,
-                        "vendor_type": "grocery",
-                        "category_source": "payout_account",
-                    }
-        return {
-            "cogs_category": "food",
-            "vendor_type": "grocery",
-            "category_source": "operator_teach_hyvee_food",
-        }
+                    return _pack(mapped, "grocery", "payout_account")
+        return _pack("food", "grocery", "operator_teach_hyvee_food")
 
     # 1) Payout account / description wins for Register slips
     for key in filter(None, [account, description]):
         for token in re.split(r"[\s/]+", str(key)):
             mapped = PAYOUT_MAP.get(token.lower())
             if mapped:
-                return {
-                    "cogs_category": mapped,
-                    "vendor_type": VENDOR_DIR.get((vendor or "").lower(), {}).get("vendor_type"),
-                    "category_source": "payout_account",
-                }
+                # Beverage payout → pop; Food payout + paper/chem lines → paper section under food costs
+                if mapped == "food" and PAPER_CHEM_SIGNAL.search(text) and not POP_SIGNAL.search(text):
+                    return _pack("paper_goods_boxes_chemicals", "grocery", "operator_teach_paper_chem")
+                return _pack(
+                    mapped,
+                    VENDOR_DIR.get((vendor or "").lower(), {}).get("vendor_type"),
+                    "payout_account",
+                )
+
+    # Operator teach: milk/pop/juice/coffee → Pop (before vendor default food)
+    meta = VENDOR_DIR.get((vendor or "").lower(), {}) if vendor else {}
+    if POP_SIGNAL.search(text) and meta.get("vendor_type") not in ("beer_distributor", "wine_spirits"):
+        return _pack("na_beverage", meta.get("vendor_type"), "operator_teach_pop")
+    if PAPER_CHEM_SIGNAL.search(text) and meta.get("vendor_type") not in ("beer_distributor", "wine_spirits"):
+        return _pack("paper_goods_boxes_chemicals", meta.get("vendor_type") or "hardware", "operator_teach_paper_chem")
 
     # 2) Vendor directory default
     if vendor:
         meta = VENDOR_DIR.get(vendor.lower())
         if meta and meta.get("default_category"):
+            cat = meta["default_category"]
             # Mixed broadline: peek for beer/liquor/pop line hints
-            for pat, cat in LINE_CATEGORY_HINTS:
-                if re.search(pat, text, re.I) and cat != meta["default_category"]:
-                    # If beer/liquor distributor keywords dominate, override
-                    if cat in ("beer", "wine", "liquor") and meta.get("vendor_type") in (
+            for pat, hint_cat in LINE_CATEGORY_HINTS:
+                if re.search(pat, text, re.I) and hint_cat != cat:
+                    if hint_cat in ("beer", "wine", "liquor") and meta.get("vendor_type") in (
                         "beer_distributor",
                         "wine_spirits",
                         "grocery_liquor",
                     ):
-                        # Operator: wine on Hy-Vee-class spirits still liquor order
-                        if cat == "wine" and meta.get("vendor_type") == "wine_spirits":
-                            cat = "liquor"
-                        return {
-                            "cogs_category": cat,
-                            "vendor_type": meta.get("vendor_type"),
-                            "category_source": "line_hint",
-                        }
-            return {
-                "cogs_category": meta["default_category"],
-                "vendor_type": meta.get("vendor_type"),
-                "category_source": "vendor_directory",
-            }
+                        if hint_cat == "wine" and meta.get("vendor_type") == "wine_spirits":
+                            hint_cat = "liquor"
+                        return _pack(hint_cat, meta.get("vendor_type"), "line_hint")
+            # Normalize legacy ids
+            if cat in ("paper_packaging", "ops_supplies"):
+                cat = "paper_goods_boxes_chemicals"
+            return _pack(cat, meta.get("vendor_type"), "vendor_directory")
 
     # 3) Line hints anywhere
     for pat, cat in LINE_CATEGORY_HINTS:
         if re.search(pat, text, re.I):
-            return {"cogs_category": cat, "vendor_type": None, "category_source": "line_hint"}
+            if cat == "wine":
+                # bare wine with Hy-Vee signals already handled; keep wine otherwise
+                pass
+            return _pack(cat, None, "line_hint")
 
-    return {"cogs_category": "unknown", "vendor_type": None, "category_source": "unmapped"}
+    return _pack("unknown", None, "unmapped")
 
 
 def extract_doc(path: Path, venue_id: str | None, engine: str) -> dict:
@@ -443,6 +476,7 @@ def extract_doc(path: Path, venue_id: str | None, engine: str) -> dict:
         "vendor_type": coding.get("vendor_type"),
         "cogs_category": coding.get("cogs_category"),
         "category_source": coding.get("category_source"),
+        "cost_bucket": coding.get("cost_bucket"),
         "date": detect_date(text),
         "invoice_num": detect_invoice_num(text),
         "amount": amount if amount is not None else 0.0,

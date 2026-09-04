@@ -28,11 +28,13 @@ Comparisons used: [Best restaurant invoice processing 2026](https://restaurantin
 
 See `agent/report-ops/taxonomy/cogs-categories.json`:
 
-- `food` (5100) · `beer` (5200) · `wine` (5210) · `liquor` (5220) · `na_beverage` / pop (5300) · `paper_packaging` (5400) · `ops_supplies` (5700) · `misc_opex` (6900)
+- `food` (5100) · `beer` (5200) · `wine` (5210) · `liquor` (5220) · `na_beverage` / pop (5300) — includes milk, juice, coffee · `paper_goods_boxes_chemicals` (5400, **under food costs**) · `misc_opex` (6900)
 
 CTAP Register #2 payout accounts map: Food/Bread → food, Beverage → na_beverage, Misc → misc_opex.
 
 **Operator private teach (Hy-Vee):** grocery Hy-Vee → `food`. Hy-Vee wine / Wine & Spirits receipts → `liquor` (liquor order). See `agent/report-ops/taxonomy/private-teaches/hy-vee.json`.
+
+**Operator private teach (COGS sections):** milk / pop / juice / coffee → Pop. Paper goods, boxes, cleaning & chemicals → `paper_goods_boxes_chemicals` under food costs. See `private-teaches/cogs-sections.json`.
 
 ## Never86 wedge
 
