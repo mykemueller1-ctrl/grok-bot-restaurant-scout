@@ -715,3 +715,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Live `YELP_SEARCH_BY_PHONE` Franklin ATX (+15126531187) → alias/address/4.5★/6477 — pain→sales enrich Active without Apollo. Finding: `2026-09-04-yelp-phone-enrich-franklin.json`.
 - CI greps `status_snapshot:` from `run-tool-hunt-week.mjs` output. Ledger v1.92.16.
 - Still blocked: Mem0 + Context for unlock READY.
+
+### 2026-09-04 (phone enrich multi-market + lead-shop skill)
+
+- Live `YELP_SEARCH_BY_PHONE`: Franklin ATX, Husk BNA, Rioja DEN (2915). Finding: `2026-09-04-yelp-phone-enrich-multi-market.json`.
+- `lead-shop-enrich` + `sales-lead-form` teach phone-first enrich. Ledger v1.92.17. Auth still blocked.

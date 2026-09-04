@@ -32,4 +32,4 @@ Rules:
 
 **Done when:** `SalesLead` saved and owner notified.
 
-**Active dogfood:** keep-grader→SalesLead across CHI/ATX/MIA/BNA/DEN (`pain-to-sales-keep-grader-girl-goat` + franklin + michaels-genuine + husk + rioja) without Apollo/Mem0.
+**Active dogfood:** keep-grader→SalesLead across CHI/ATX/MIA/BNA/DEN (`pain-to-sales-keep-grader-girl-goat` + franklin + michaels-genuine + husk + rioja) without Apollo/Mem0. Venue identity: Yelp details / `YELP_SEARCH_BY_PHONE` from love-fixture phones.

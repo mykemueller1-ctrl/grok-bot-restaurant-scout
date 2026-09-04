@@ -1,0 +1,22 @@
+{
+  "finding_id": "yelp-phone-enrich-multi-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Yelp phone enrich multi-market (ATX/BNA/DEN)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio YELP_SEARCH_BY_PHONE resolves Franklin ATX, Husk BNA, and Rioja DEN from love-fixture phones — pain→sales identity enrich Active without Apollo/Clay. Wired into lead-shop-enrich skill.",
+  "researched_at": "2026-09-04",
+  "live_proof": {
+    "atx": {"phone": "+15126531187", "alias": "franklin-barbecue-austin", "review_count": 6477},
+    "bna": {"phone": "+16152566565", "alias": "husk-nashville", "review_count": 1987},
+    "den": {"phone": "+13038202282", "alias": "rioja-denver", "review_count": 2915}
+  },
+  "urls": [
+    "skills/lead-shop-enrich.md",
+    "fixtures/tool-hunt/austin-love-brands.json",
+    "fixtures/tool-hunt/nashville-love-brands.json",
+    "fixtures/tool-hunt/denver-love-brands.json",
+    "stack/tool-hunt-findings/2026-09-04-yelp-phone-enrich-franklin.json"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting."
+}

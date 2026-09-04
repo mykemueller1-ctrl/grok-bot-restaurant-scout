@@ -8,14 +8,14 @@
       "yelp_alias": "rioja-denver",
       "phone": "+13038202282",
       "rating": 4.3,
-      "review_count": 2914,
+      "review_count": 2915,
       "transactions": ["pickup"],
       "love_signal": "Chef Jennifer Jasinski / Larimer Square destination / first-party pickup present",
       "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard",
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.3,
-        "review_count": 2914,
+        "review_count": 2915,
         "price": "$$$",
         "transactions": ["pickup"]
       }
@@ -52,7 +52,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Hop Alley / Rioja / Tavernetta / Uncle) 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Rioja Denver 2914 reviews",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Rioja Denver 2915 reviews; YELP_SEARCH_BY_PHONE +13038202282 ok",
   "status": "calibration_only",
   "notes": "Prefer chef/cult narrative + review volume. Fruition restaurant alias not resolved in this scan — skipped."
 }
