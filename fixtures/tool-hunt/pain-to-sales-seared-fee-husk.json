@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-seared-fee-husk-2026-09-04",
+  "purpose": "Seared guest-paid 5% transaction fee ($1.99 min / $7.50 cap) \u2192 SalesLead DRAFT for Husk (Nashville). Contrasts first_party_pct_fee / guest_paid under commission-free claim vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Seared guest 5% transaction fee ($1.99 minimum / $7.50 hard cap)",
+    "guest_paid_platform_fee": "Seared customer pays 5% at checkout (restaurant keeps menu price)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "seared_guest_5pct_199_750",
+    "vendor_id": "seared",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Husk",
+      "city": "Nashville",
+      "market": "Nashville, TN",
+      "yelp_alias": "husk-nashville",
+      "love_signal": "Sean Brock Southern cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Seared markets commission-free OO then guests pay a 5% transaction fee ($1.99 minimum / $7.50 hard cap). Husk-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "guest_paid_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "seared",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-seared-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "seared_guest_5pct_199_750",
+    "account_name": "Husk",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Nashville",
+    "market": "Nashville, TN",
+    "complaint_thesis": "Seared markets commission-free OO then guests pay a 5% transaction fee with a $1.99 minimum and hard cap of $7.50 per order \u2014 first_party_pct_fee / guest_paid KEEP leak under 'keep 100% of menu price' claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Sean Brock cult love already prints demand \u2014 close Shop buy-now, not Seared guest 5% ($1.99 min / $7.50 cap).",
+    "quotes": [
+      "Seared guest 5% transaction fee ($1.99 minimum / $7.50 hard cap)",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Seared guest 5% OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + guest_paid_platform_fee teach: Seared 5% guest fee still taxes conversion under commission-free claim; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Sean Brock cult love already prints demand \u2014 close Shop buy-now, not Seared guest 5% ($1.99 min / $7.50 cap).",
+    "sources": [
+      "https://seared.io/",
+      "fixtures/tool-hunt/pain-scan-seared-guest-fee.json",
+      "https://www.yelp.com/biz/husk-nashville"
+    ],
+    "confidence": 76,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Seared guest 5% ($1.99 min / $7.50 cap) \u2192 SalesLead. Owner-class guest % peer. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-seared-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

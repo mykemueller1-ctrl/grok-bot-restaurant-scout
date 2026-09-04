@@ -545,3 +545,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for 2.5% order processing / 2.5%+$0.29.
 - pain-scan-uber-webshop-fee.json → strong_keep **53**; pain-to-sales-uber-webshop-fee-* ×5; validate-uber-webshop-fee-dogfood ≥5. Distinct from DoorDash OO rate-unpublished processing.
 - Ledger v1.82.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Seared guest 5% SalesLead)
+
+- Primary [seared.io](https://seared.io/) FAQ: guest-paid **5%** transaction fee (**$1.99** minimum / **$7.50** hard cap) under commission-free claim; flat $199/$99 + $500 setup.
+- Widened `first_party_pct_fee` for `5% fee/transaction`, `$1.99 minimum`, `$7.50` cap.
+- pain-scan-seared-guest-fee.json → strong_keep **54**; pain-to-sales-seared-fee-* ×5; validate-seared-fee-dogfood ≥5. Owner-class guest % peer.
+- Ledger v1.83.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
