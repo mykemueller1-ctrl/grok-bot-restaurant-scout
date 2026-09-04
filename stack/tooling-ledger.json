@@ -69,7 +69,7 @@
     ],
     "research_fallback": "Composio COMPOSIO_SEARCH_WEB + COMPOSIO_SEARCH_TAVILY (Active) when Bright Data/Context unavailable",
     "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)",
-    "pain_sales_enrich": "Composio Yelp + Google Maps + SEARCH_WEB (Active) — Apollo/Clay optional",
+    "pain_sales_enrich": "Composio Yelp (search/details/phone) + Google Maps + SEARCH_WEB (Active) — Apollo/Clay optional",
     "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts",
     "mem0": {
       "mcp_file": "mcp/mem0.json",
@@ -1216,6 +1216,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp phone enrich all 5 love markets (CHI/ATX/MIA/BNA/DEN)",
+      "lane": "vertical_gtm",
+      "why": "Primary love-seed phones resolve via YELP_SEARCH_BY_PHONE across full morning-scan set — pain→sales without Apollo",
+      "verdict": "adopt"
+    },
     {
       "item": "Yelp phone enrich multi-market + lead-shop-enrich skill wire",
       "lane": "skills_knowledge",
@@ -2438,5 +2444,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:18:00Z"
+  "updated_at": "2026-09-04T19:20:00Z"
 }

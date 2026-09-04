@@ -39,6 +39,6 @@
     }
   ],
   "source": "Yelp Composio dogfood 2026-09-04",
-  "live_proof": "Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04 — G&TG 10731 reviews",
+  "live_proof": "Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04 — G&TG 10732 reviews; YELP_SEARCH_BY_PHONE +13124926262 ok",
   "status": "calibration_only"
 }
