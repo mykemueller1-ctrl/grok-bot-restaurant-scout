@@ -248,6 +248,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
           node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'UpMenu Basic overage $1.90 per order after 75 orders — KEEP leak' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Outbites is $1 per fulfilled order platform fee — KEEP leak' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Owner.com Flex $249/month plus 5% restaurant fee per order — guests see 5% order support fee' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
           node scripts/score-marketplace-keep.mjs 'DoorDash Online Ordering is 0% commission on direct orders — Marketplace still 25%' | grep -q marketplace_direct_zero
