@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-lagrowthmachine-gtm-system-skills",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.63",
+  "sources": [
+    {
+      "url": "https://github.com/LaGrowthMachine/gtm-system",
+      "title": "LaGrowthMachine/gtm-system — open-source Cursor/Claude GTM skills + MCP",
+      "fetched_via": "composio_search_web",
+      "note": "Open-source GTM skills/MCP for Cursor — peer to Zapier/zarif, Octave lfgtm-cursor, SyncGTM"
+    },
+    {
+      "url": "https://lagrowthmachine.com/mcp/",
+      "title": "Connect AI Agents to Multichannel Outreach | La Growth Machine MCP",
+      "fetched_via": "composio_search_web",
+      "note": "https://mcp.lagrowthmachine.com — adopt only if cite sharpens love→buy-now / pain→sales-lead"
+    }
+  ],
+  "verdict": "watch",
+  "category": "skills_knowledge",
+  "summary": "LaGrowthMachine/gtm-system is an open-source Cursor/Claude GTM skills + MCP pack. Watch under skills_knowledge as peer to Octave lfgtm-cursor, SyncGTM MCP, Zapier/zarif — adopt only pieces that sharpen Never86 love→buy-now / pain→sales-lead without drift into forecasting.",
+  "teach": {
+    "label": "lagrowthmachine_gtm_cursor_skills_watch",
+    "peers": ["octave-lfgtm-cursor", "syncgtm-mcp", "zapier-zarif"],
+    "adopt_filter": "only if cite sharpens love→buy-now or vendor-pain shopping"
+  },
+  "mission_lock": {
+    "yes": ["Cursor memory/skills/MCP", "GTM agent tooling"],
+    "no": ["historical sales/labor forecasting research"]
+  }
+}

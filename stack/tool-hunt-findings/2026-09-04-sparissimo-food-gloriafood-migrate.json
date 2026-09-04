@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-sparissimo-food-gloriafood-migrate",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.63",
+  "sources": [
+    {
+      "url": "https://blog.sparissimofood.com/en/blog/gloriafood-shutting-down",
+      "title": "GloriaFood Is Shutting Down on April 30, 2027 — What Every Restaurant Owner Needs to Do Now — Sparissimo Food",
+      "fetched_via": "composio_search_web",
+      "note": "Published 2026-06-09; EOL primary Apr 30 2027; migrate guide peer"
+    },
+    {
+      "url": "https://blog.sparissimofood.com/en/blog/how-to-migrate-from-gloriafood",
+      "title": "How to Migrate from GloriaFood Without Disruption — Sparissimo Food",
+      "fetched_via": "composio_search_web",
+      "note": "Technical migrate guide; successor/migration peer if product distinct"
+    }
+  ],
+  "verdict": "watch",
+  "category": "vertical_rival",
+  "summary": "Sparissimo Food GloriaFood shutdown migrate guide aligns EOL primary Apr 30 2027. Watch as GloriaFood successor / migration peer alongside Ordering.co, FoodChow, Snappy, Posso UK, Yo!Yumm — fee catalog pause, not FBE peer until Meta Order Food primary cite.",
+  "teach": {
+    "label": "sparissimo_gloriafood_successor_watch",
+    "eol_primary": "2027-04-30",
+    "peer_count_impact": "none until FBE primary cite"
+  },
+  "mission_lock": {
+    "yes": ["vertical rival watch", "EOL wedge context"],
+    "no": ["fee dogfood", "inflate meta_order_food_peer_count"]
+  }
+}

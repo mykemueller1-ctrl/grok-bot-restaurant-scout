@@ -1,0 +1,25 @@
+{
+  "id": "2026-09-04-uber-eats-instagram-delivery-sticker",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.63",
+  "sources": [
+    {
+      "url": "https://help.uber.com/merchants-and-restaurants/article/instagram-delivery-button-+-sticker?nodeId=92d1fcbf-1b65-4a79-9a16-690710e90046",
+      "title": "Instagram Delivery Button + Sticker | Merchants & Restaurants | Uber Help",
+      "fetched_via": "composio_search_web",
+      "note": "Help article live; IG Order Food / Food Orders sticker → Uber Eats Webshop/menu URL (marketplace rent, not first-party FBE)"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Uber Eats Instagram Delivery Button + Sticker is live marketplace rent contrast for love→buy-now teaches: IG CTA that lands on Uber Eats checkout, not Meta Order Food / first-party FBE. Do not inflate meta_order_food_peer_count for this rail.",
+  "teach": {
+    "label": "marketplace_ig_delivery_sticker_vs_first_party_fbe",
+    "love_vs_rent": "Brand IG sticker → Uber Eats = rent; Shop / GloriaFood / Toast OO / Flipdish FBE = first-party order path",
+    "peer_count_impact": "none — marketplace rent, not FBE primary peer"
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now teach", "marketplace vs first-party contrast"],
+    "no": ["inflate meta_order_food_peer_count", "fee dogfood expansion"]
+  }
+}

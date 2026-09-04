@@ -1019,3 +1019,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted Michaels **brand_site_marketplace_leak** pass-5 — UberEats+DoorDash still on miami page. Finding: `2026-09-04-michaels-leak-pass5.json`.
 - Ledger v1.92.62. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Uber IG sticker + GloriaFood FB + linkboo + Sparissimo + LaGrowthMachine)
+
+- Adopted **Uber Eats Instagram Delivery Button + Sticker** as marketplace-rent contrast (IG → Uber Eats, not FBE). Finding: `2026-09-04-uber-eats-instagram-delivery-sticker.json`. peer_count stays 9.
+- Reconfirmed GloriaFood Facebook Start Order how-to — EOL primary **Apr 30 2027**. Finding: `2026-09-04-gloriafood-facebook-start-order.json`.
+- Watched **linkboo** Toast/Resy/OpenTable IG webview cliff (Lenkli peer). Finding: `2026-09-04-linkboo-restaurant-ig-webview.json`.
+- Watched **Sparissimo Food** GloriaFood migrate (Apr 30 2027). Finding: `2026-09-04-sparissimo-food-gloriafood-migrate.json`.
+- Watched **LaGrowthMachine/gtm-system** Cursor/Claude GTM skills + MCP (Octave/SyncGTM/zarif peer). Finding: `2026-09-04-lagrowthmachine-gtm-system-skills.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_JSmBL_WA9OGF (~10 min).
+- Ledger v1.92.63. Auth still blocked for unlock READY.
+

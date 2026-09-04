@@ -1,0 +1,25 @@
+{
+  "id": "2026-09-04-linkboo-restaurant-ig-webview",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.63",
+  "sources": [
+    {
+      "url": "https://link.boo/for/restaurants",
+      "title": "linkboo for restaurants — Toast, Resy, OpenTable, and Instagram-bio order links that survive the in-app browser handoff",
+      "fetched_via": "composio_search_web",
+      "note": "Published 2026-06-02; Toast/Resy/OpenTable IG webview cliff → default-browser redirect"
+    }
+  ],
+  "verdict": "watch",
+  "category": "love_buy_now",
+  "summary": "linkboo reconfirms IG in-app webview cliff for Toast / Resy / OpenTable restaurant links — teach that bio CTAs often fail to complete buy-now unless deep-linked or forced out of webview. Watch as link-in-bio rail (Lenkli peer); not an FBE peer.",
+  "teach": {
+    "label": "ig_webview_cliff_toast_resy_opentable",
+    "rails_at_risk": ["toast_online_ordering", "resy", "opentable"],
+    "peer_count_impact": "none — linker / deep-link helper, not FBE"
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now friction teach", "social CTA completion"],
+    "no": ["meta_order_food_peer_count bump", "fee catalog"]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "version": "1.92.62",
+  "version": "1.92.63",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,36 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Uber Eats IG Delivery Button + Sticker (marketplace rent)",
+      "lane": "vertical_gtm",
+      "why": "help.uber.com Instagram Delivery Button + Sticker still live — IG Order Now/sticker → Uber Eats menu = rent contrast vs first-party FBE; peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "GloriaFood FB Start Order how-to reconfirm (EOL Apr 30 2027)",
+      "lane": "vertical_gtm",
+      "why": "gloriafood.com Facebook online-ordering button how-to still live; Meta → first-party OO; EOL primary Apr 30 2027; peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "linkboo restaurant IG webview cliff (Toast/Resy/OpenTable)",
+      "lane": "vertical_gtm",
+      "why": "link.boo/for/restaurants (updated 2026-06) Toast/Resy/OpenTable bio links break in IG webview — Shop no-handoff wedge; Lenkli peer; not FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "Sparissimo Food GloriaFood migrate (EOL Apr 30 2027)",
+      "lane": "vertical_gtm",
+      "why": "blog.sparissimofood.com shutdown guide cites Apr 30 2027 + no Oracle successor — GloriaFood migrate peer beside Ordering.co/FoodChow/Posso; fee pause; not FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "LaGrowthMachine/gtm-system Cursor GTM skills + MCP",
+      "lane": "skills_knowledge",
+      "why": "Open-source Claude/Cursor GTM skills + mcp.lagrowthmachine.com — peer to Octave/SyncGTM/zarif; adopt only love→buy-now / pain→sales-lead pieces; skip forecast drift",
+      "verdict": "watch"
+    },
     {
       "item": "G&TG reservation_skew pass-4 + Michaels leak pass-5",
       "lane": "vertical_gtm",
