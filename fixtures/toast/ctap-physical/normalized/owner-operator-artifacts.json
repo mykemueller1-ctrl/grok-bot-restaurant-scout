@@ -70,8 +70,9 @@
   "icp_signals": [
     "No area-leader rollup — one store clipboard",
     "Labor planned by station card not Toast labor %",
-    "Inventory arrives as distributor invoice photos",
+    "As-is inventory = phone photos of invoices (human grind)",
+    "Distributors email invoices — coach forward into system, not photograph paper",
     "Owner name on weekly schedule every open shift",
-    "Weekly AP = phone photos of invoices + payout slips stapled to store receipts"
+    "Weekly photo AP is the pain; email → vendor-invoice intake is the wedge"
   ]
 }

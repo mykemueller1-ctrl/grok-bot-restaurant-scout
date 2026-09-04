@@ -60,7 +60,10 @@
       "xls",
       "pdf",
       "google sheets links",
-      "sales reportings"
+      "sales reportings",
+      "forwarded email vendor invoices (preferred AP source)",
+      "phone photos of vendor invoices (as-is pain evidence only)",
+      "payout slips stapled to store receipts"
     ]
   },
   "swarm": true

@@ -9,7 +9,7 @@
   "parent": "icp-scale",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Owns Owner-Operator 1\u20135 (1\u20135). Buyer: Owner / GM (still in the building). Single-owner ops: paper labor cards, weekly schedules, Toast day exports, distributor invoices. Pains: owner burnout and cash-flow gut feel; labor % without group targets; second unit ~130% ops surface for ~60% revenue capacity; inventory = invoice photos + Hy-Vee runs; weekly phone-photo AP: payout slips stapled to store receipts. Wedge: Daily leak dollars from red-book chaos \u2014 not enterprise BI.",
+  "description": "Owns Owner-Operator 1\u20135 (1\u20135). Buyer: Owner / GM (still in the building). Single-owner ops: paper labor cards, weekly schedules, Toast day exports; still photographing paper invoices even when vendors email PDFs. Pains: owner burnout and cash-flow gut feel; labor % without group targets; second unit ~130% ops surface for ~60% revenue capacity; inventory = invoice photos + Hy-Vee runs; weekly phone-photo AP instead of forwarding email invoices; human staple/photograph loop \u2014 not a repeatable system. Wedge: Coach email-invoice intake into a repeatable AP system \u2014 kill the weekly photo/staple grind; daily leak dollars not enterprise BI.",
   "units": "1\u20135",
   "buyer": "Owner / GM (still in the building)",
   "pains": [
@@ -17,7 +17,8 @@
     "labor % without group targets",
     "second unit ~130% ops surface for ~60% revenue capacity",
     "inventory = invoice photos + Hy-Vee runs",
-    "weekly phone-photo AP: payout slips stapled to store receipts"
+    "weekly phone-photo AP instead of forwarding email invoices",
+    "human staple/photograph loop \u2014 not a repeatable system"
   ],
   "report_ids": [
     "kitchen-labor-card",
@@ -33,7 +34,7 @@
     "ctap-physical",
     "courser/grill"
   ],
-  "never86_wedge": "Daily leak dollars from red-book chaos \u2014 not enterprise BI",
+  "never86_wedge": "Coach email-invoice intake into a repeatable AP system \u2014 kill the weekly photo/staple grind; daily leak dollars not enterprise BI",
   "skills": [
     "icp-scale-classify",
     "teach-label",

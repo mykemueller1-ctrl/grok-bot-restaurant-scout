@@ -22,17 +22,19 @@ Ground truth in this repo:
 - POS Z / sales summary when they remember to export
 - Distributor invoices + Hy-Vee runs as the “inventory system”
 - Petty cash / payout slips (Misc / Bread / Beverage / Food)
-- **Weekly invoice photography:** phone snaps of every slip (often rotated, stapled payout↔receipt, shadows/tears) — see `fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json`
+- **As-is weekly AP:** phone snaps of paper slips (rotated, stapled payout↔receipt) — see `fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json`
+- **Truth:** most distributors already **email** invoices; the human still prints / photographs / staples instead of routing email into a system
 
 **Pains (survival → early scale):**
 - Owner burnout; cash-flow and food/labor gut feel ([MarketStreet 2–5 unit survey](https://www.businesswire.com/news/home/20260217728317/en/MarketStreet-Releases-Second-National-Research-Report-on-Independent-Restaurants-Identifies-Widening-Capability-Gap-Between-Survival-and-Scale))
 - Second unit adds ~60% revenue capacity but ~130% ops surface ([Tableview](https://www.tableview.com/blog/multi-location-restaurant-management/))
 - Labor % drift when each GM “runs their own labor” without group targets ([Tableview](https://www.tableview.com/blog/multi-location-restaurant-management/))
 - Independents often ~3–5% store margins; labor mid-30%s FSR ([Factura stats](https://factura.ai/restaurant-industry-profit-margin-statistics/))
+- **Human AP grind:** photographing invoices every week instead of a repeatable email → system loop
 
 **Report agents that matter:** `time-entries`, `labor-summary`, `bar-kitchen-schedule`, `kitchen-labor-card`, `paper-weekly-schedule`, `item-selection`, `sales-summary`, `liquor-beer-par`, `vendor-invoice`
 
-**Never86 wedge:** Replace red-book chaos with daily “oh shit” dollars — not enterprise BI.
+**Never86 wedge:** Coach operators to **forward email invoices** into Never86 (repeatable intake). Kill the photo/staple loop. Store cash runs stay exceptional. Daily “oh shit” dollars — not enterprise BI.
 
 ---
 

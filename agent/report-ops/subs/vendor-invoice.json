@@ -10,12 +10,13 @@
   "parent": "inventory",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Owns the Distributor / Store Invoice report (Weekly phone photos: beer/wine houses, broadline (Sysco/PFS), local meat, Northern Lights, grocery (Hy-Vee/Fareway/Walmart), Menards, Register#2 payout slips). Ingests photo, pdf, csv. Signals: vendor, sku, qty, amount, account, payout_pair, handwritten_credit. Routes findings up to the domain parent; teach labels via Report Teacher.",
-  "source_report": "Weekly phone photos: beer/wine houses, broadline (Sysco/PFS), local meat, Northern Lights, grocery (Hy-Vee/Fareway/Walmart), Menards, Register#2 payout slips",
+  "description": "Owns the Distributor / Store Invoice report (Preferred: emailed PDF/CSV invoices (Sysco, PFS, beer houses, Northern Lights). As-is pain evidence: phone photos + Register#2 payout\u2194store receipts). Ingests email, pdf, csv, photo. Signals: vendor, sku, qty, amount, account, payout_pair, handwritten_credit, email_forward, source_channel. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Preferred: emailed PDF/CSV invoices (Sysco, PFS, beer houses, Northern Lights). As-is pain evidence: phone photos + Register#2 payout\u2194store receipts",
   "formats": [
-    "photo",
+    "email",
     "pdf",
-    "csv"
+    "csv",
+    "photo"
   ],
   "signals": [
     "vendor",
@@ -24,7 +25,9 @@
     "amount",
     "account",
     "payout_pair",
-    "handwritten_credit"
+    "handwritten_credit",
+    "email_forward",
+    "source_channel"
   ],
   "file_globs": [
     "*invoice*",
@@ -65,7 +68,10 @@
       "label": "keep",
       "icp_tier": "owner_1_5",
       "venue_id": "community-pizza",
-      "good_looks_like": "Owner-1-5 weekly AP is a pile of phone photos: broadline invoices, local meat handwritten tickets, beer house invoices with empty credits, and Register#2 payout slips stapled to Fareway/Hy-Vee/Menards receipts \u2014 not a clean AP inbox PDF.",
+      "as_is": "Phone photos of paper invoices + payout slips stapled to store receipts \u2014 human, non-repeatable weekly grind.",
+      "truth": "Distributors already email invoices; operators still print/photograph instead of routing email into a system.",
+      "coach_to": "Forward/auto-route email invoices into Never86 vendor-invoice intake \u2014 remove the human photo/staple loop; store cash runs stay exceptional.",
+      "good_looks_like": "Email PDF/CSV invoices land in a repeatable inbox \u2192 normalized vendor/sku/qty/amount. Phone photos are teach evidence of pain, not the target workflow.",
       "pack": "fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json"
     }
   ]
