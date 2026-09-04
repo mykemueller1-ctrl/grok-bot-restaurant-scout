@@ -506,6 +506,7 @@ jobs:
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"buy_now_rails"'
+          node scripts/validate-social-shop-dogfood.mjs | grep -q '"buy_now_rails"'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
           node scripts/validate-social-shop-dogfood.mjs | grep -q '"social_shop_dogfoods": 5'
           node scripts/validate-guest-fee-dogfood.mjs | grep -q '"guest_fee_dogfoods": 5'

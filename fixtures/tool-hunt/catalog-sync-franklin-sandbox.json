@@ -5,7 +5,7 @@
   "from_draft": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
   "product": {
     "title": "Franklin Barbecue — Smoke-Day Brisket Pack",
-    "description": "Cult Austin BBQ for the feed that already waits in line. Shop the pack the kitchen wants you to buy — Never86 buy-now, not marketplace delivery rent.",
+    "description": "Cult Austin BBQ already sells Shopify merch + first-party preorders. Never86 buy-now closes the feed into those SKUs — not Goldbelly digs or marketplace delivery rent.",
     "images": [],
     "price_cents": null,
     "currency": "USD",
@@ -14,7 +14,20 @@
     "brand": "Franklin Barbecue",
     "market": "Austin, TX",
     "cta": "tap the bag / shop in bio",
-    "anti_rent": true
+    "anti_rent": true,
+    "buy_now_path": {
+      "rails": [
+        "first_party_preorder",
+        "shopify_merch",
+        "goldbelly_ship"
+      ],
+      "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch — Never86 Shop can close feed love into SKU packs",
+      "sources": [
+        "https://preorder.franklinbbq.com/information",
+        "https://shop.franklinbbq.com/"
+      ],
+      "wedge": "shopify_merch + first_party_preorder → social Shop close"
+    }
   },
   "commerce_engine": {
     "endpoint": "POST /products/sync",

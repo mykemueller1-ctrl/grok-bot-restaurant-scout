@@ -766,3 +766,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - All 5 `script-draft-*-buy-now.json` cite live `lead.buy_now_path.rails` (Franklin Shopify, Michaels marketplace leak, etc.).
 - `validate-buy-now-dogfood.mjs` requires rails + anti-rent wedge language. Ledger v1.92.25. Auth still blocked.
+
+### 2026-09-04 (catalog-sync + social-shop buy_now_path)
+
+- Catalog sandboxes + all 5 `pain-to-sales-social-shop-*.json` carry live `buy_now_path` rails; Michaels thesis names brand-site UberEats/DoorDash leak.
+- `lead-shop-enrich` / `catalog-sync` / `sales-lead-form` teach order_rails. Validators enforce. Ledger v1.92.26. Auth still blocked.

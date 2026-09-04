@@ -5,7 +5,7 @@
   "from_draft": "fixtures/tool-hunt/script-draft-husk-buy-now.json",
   "product": {
     "title": "Husk Nashville — Southern Smoke-Day Pack",
-    "description": "Sean Brock Southern for the feed that already books Husk. Shop the pack the kitchen wants you to buy — Never86 buy-now, not padded marketplace delivery menus.",
+    "description": "Sean Brock Southern cult on Resy + Toast gift-card rails. Never86 buy-now closes feed SKUs — not Toast Meta Order Food webviews or DoorDash rent.",
     "images": [],
     "price_cents": null,
     "currency": "USD",
@@ -14,7 +14,21 @@
     "brand": "Husk",
     "market": "Nashville, TN",
     "cta": "tap the bag / shop in bio",
-    "anti_rent": true
+    "anti_rent": true,
+    "buy_now_path": {
+      "rails": [
+        "resy_reservations",
+        "toast_gift_card",
+        "takeout"
+      ],
+      "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) — Toast lock-in; Shop for social SKUs",
+      "sources": [
+        "http://www.husknashville.com/",
+        "https://www.toasttab.com/husk-nashville/findcard",
+        "https://resy.com/cities/nashville-tn/venues/husk-nashville"
+      ],
+      "wedge": "resy + toast_gift_card → Shop social SKUs"
+    }
   },
   "commerce_engine": {
     "endpoint": "POST /products/sync",

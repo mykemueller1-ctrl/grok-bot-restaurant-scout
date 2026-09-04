@@ -5,7 +5,7 @@
   "from_draft": "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json",
   "product": {
     "title": "Girl & The Goat Chicago — West Loop Chef Pack",
-    "description": "Stephanie Izard for the feed that already lines Randolph. Shop the pack the kitchen wants you to buy — Never86 buy-now, not marketplace rent.",
+    "description": "Stephanie Izard West Loop cult — site is OpenTable/reservation-skewed with no first-party OO found. Never86 buy-now fills the missing social close.",
     "images": [],
     "price_cents": null,
     "currency": "USD",
@@ -14,7 +14,19 @@
     "brand": "Girl & The Goat",
     "market": "Chicago, IL",
     "cta": "tap the bag / shop in bio",
-    "anti_rent": true
+    "anti_rent": true,
+    "buy_now_path": {
+      "rails": [
+        "opentable_reservations",
+        "no_first_party_oo_found"
+      ],
+      "note": "Menu/reservations site; OpenTable listing — Shop buy-now fills missing social close",
+      "sources": [
+        "https://www.girlandthegoat.com/chicago",
+        "https://www.opentable.com/r/girl-and-the-goat-chicago"
+      ],
+      "wedge": "opentable_reservations / no_first_party_oo → Shop buy-now"
+    }
   },
   "commerce_engine": {
     "endpoint": "POST /products/sync",

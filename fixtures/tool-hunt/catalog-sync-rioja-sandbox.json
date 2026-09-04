@@ -5,7 +5,7 @@
   "from_draft": "fixtures/tool-hunt/script-draft-rioja-buy-now.json",
   "product": {
     "title": "Rioja Denver — Larimer Square Chef Pack",
-    "description": "Jennifer Jasinski Spanish for the feed that already books Rioja. Shop the pack the kitchen wants you to buy — Never86 buy-now, not padded marketplace menus.",
+    "description": "Jennifer Jasinski Larimer Square cult — Flavor Dojo carryout is in-person. Never86 buy-now closes feed love without bio→webview cliffs.",
     "images": [],
     "price_cents": null,
     "currency": "USD",
@@ -14,7 +14,18 @@
     "brand": "Rioja",
     "market": "Denver, CO",
     "cta": "tap the bag / shop in bio",
-    "anti_rent": true
+    "anti_rent": true,
+    "buy_now_path": {
+      "rails": [
+        "flavor_dojo_carryout_in_person",
+        "phone_reservations"
+      ],
+      "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs",
+      "sources": [
+        "https://www.riojadenver.com/menus/carryout/"
+      ],
+      "wedge": "flavor_dojo_in_person → Shop social close"
+    }
   },
   "commerce_engine": {
     "endpoint": "POST /products/sync",

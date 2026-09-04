@@ -1,5 +1,5 @@
 {
-  "version": "1.92.25",
+  "version": "1.92.26",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1244,6 +1244,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Catalog-sync + social-shop dogfoods cite buy_now_path (5/5)",
+      "lane": "skills_knowledge",
+      "why": "Sandbox catalogs + pain-to-sales-social-shop carry live rails; Michaels brand-site UberEats/DoorDash leak is the smoking-gun SalesLead angle; validators enforce rails",
+      "verdict": "adopt"
+    },
     {
       "item": "Script-draft dogfoods cite live buy_now_path rails (5/5)",
       "lane": "skills_knowledge",

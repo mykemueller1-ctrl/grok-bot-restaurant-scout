@@ -73,7 +73,17 @@ for (const f of catalogs) {
     console.error(`validate-buy-now-dogfood: ${f} from_draft must point at an existing script-draft`);
     process.exit(1);
   }
-  report.catalogs.push({ file: f, brand: data.product?.brand || null, from: data.from_draft });
+  const rails = data.product?.buy_now_path?.rails;
+  if (!Array.isArray(rails) || rails.length < 1) {
+    console.error(`validate-buy-now-dogfood: ${f} product.buy_now_path.rails[] required`);
+    process.exit(1);
+  }
+  report.catalogs.push({
+    file: f,
+    brand: data.product?.brand || null,
+    from: data.from_draft,
+    buy_now_rails: rails,
+  });
 }
 
 console.log(

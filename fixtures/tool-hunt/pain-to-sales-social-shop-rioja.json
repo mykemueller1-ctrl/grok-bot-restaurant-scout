@@ -1,10 +1,14 @@
 {
   "dogfood_id": "pain-to-sales-social-shop-rioja-2026-09-04",
-  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run \u2192 SalesLead DRAFT for Rioja (Denver). Love\u2192buy-now KEEP math dogfood. Not forecasting.",
+  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run → SalesLead DRAFT for Rioja (Denver). Love→buy-now KEEP math dogfood. Not forecasting.",
   "signals": {
     "social_shop_fee": "TikTok Shop US unified referral ~6%",
     "marketplace_direct_zero": "DoorDash Online Ordering / Uber Webshop 0% direct",
-    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+    "marketplace_rent": "DoorDash Marketplace 15–30%",
+    "buy_now_path_rails": [
+      "flavor_dojo_carryout_in_person",
+      "phone_reservations"
+    ]
   },
   "pain_lead": {
     "pain_id": "tiktok_shop_vs_marketplace_keep",
@@ -18,12 +22,13 @@
       "yelp_alias": "rioja-denver",
       "love_signal": "Chef Jennifer Jasinski Denver fine-dining cult"
     },
-    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15\u201330% rent. Rioja-class love should close on TikTok/IG buy-now \u2014 dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
+    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15–30% rent. Rioja-class love should close on TikTok/IG buy-now — dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
     "opportunity_signals": [
       "social_shop_fee",
       "marketplace_direct_zero",
       "cult_chef_ugc",
-      "shoppable_sku_potential"
+      "shoppable_sku_potential",
+      "buy_now_path"
     ],
     "vendors_mentioned": [
       "doordash",
@@ -35,7 +40,17 @@
       "fixtures/tool-hunt/pain-scan-doordash-online-ordering.json",
       "fixtures/tool-hunt/denver-love-brands.json",
       "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
-    ]
+    ],
+    "buy_now_path": {
+      "rails": [
+        "flavor_dojo_carryout_in_person",
+        "phone_reservations"
+      ],
+      "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs",
+      "sources": [
+        "https://www.riojadenver.com/menus/carryout/"
+      ]
+    }
   },
   "sales_lead_draft": {
     "pain_id": "tiktok_shop_vs_marketplace_keep",
@@ -44,31 +59,36 @@
     "role": "owner/GM (needs teach)",
     "city": "Denver",
     "market": "Denver, CO",
-    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15\u201330%. Cult love already prints demand \u2014 Never86 buy-now keeps Shop-class economics on social demand instead of delivery-app rent. DoorDash Online Ordering is 0% on website directs, but Shop closes the feed where the love already lives.",
+    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15–30%. Flavor Dojo carryout is in-person on Larimer — dead for feed love. Never86 Shop ~6% closes social demand vs Marketplace 15–30% rent.",
     "quotes": [
       "TikTok Shop US unified referral ~6%",
-      "DoorDash Marketplace 15\u201330%",
+      "DoorDash Marketplace 15–30%",
       "DoorDash Online Ordering 0% on direct"
     ],
     "vendors_to_displace": [
       "DoorDash Marketplace",
       "Uber Eats Marketplace"
     ],
-    "why_never86_now": "social_shop_fee + marketplace_direct_zero teach: Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now \u2014 not Owner Flex 5%, not Toast OO lock-in, not forecasting.",
+    "why_never86_now": "social_shop_fee + live buy_now_path (flavor_dojo_carryout_in_person, phone_reservations): Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now — not Owner Flex 5%, not Toast Meta Order Food webviews, not forecasting.",
     "suggested_angle": "Draft only: Denver love already prints demand. Never86 buy-now keeps Shop-class economics (~6%) instead of delivery-app rent.",
     "sources": [
       "scripts/score-marketplace-keep.mjs",
       "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
-      "https://www.yelp.com/biz/rioja-denver"
+      "https://www.yelp.com/biz/rioja-denver",
+      "fixtures/tool-hunt/denver-love-brands.json",
+      "https://www.riojadenver.com/menus/carryout/"
     ],
     "confidence": 78,
     "status": "DRAFT",
-    "notes": "Calibration dogfood \u2014 social_shop_fee \u2192 SalesLead. Not live outreach. Not forecasting."
+    "notes": "Calibration dogfood — social_shop_fee → SalesLead. Not live outreach. Not forecasting."
   },
   "tools_used": [
     "scripts/score-marketplace-keep.mjs",
     "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
-    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json",
+    "COMPOSIO_SEARCH_WEB",
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "fixtures/tool-hunt/denver-love-brands.json"
   ],
   "status": "dogfood_complete",
   "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"

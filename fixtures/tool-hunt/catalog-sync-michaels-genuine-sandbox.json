@@ -5,7 +5,7 @@
   "from_draft": "fixtures/tool-hunt/script-draft-michaels-genuine-buy-now.json",
   "product": {
     "title": "Michael's Genuine Miami — Design District Chef Pack",
-    "description": "Michael Schwartz for the feed that already books the Design District. Shop the pack the kitchen wants you to buy — Never86 buy-now, not marketplace statement math.",
+    "description": "Michael Schwartz Design District cult — michaelsgenuine.com still pushes UberEats/DoorDash for delivery. Never86 buy-now displaces that marketplace leak.",
     "images": [],
     "price_cents": null,
     "currency": "USD",
@@ -14,7 +14,20 @@
     "brand": "Michael's Genuine",
     "market": "Miami, FL",
     "cta": "tap the bag / shop in bio",
-    "anti_rent": true
+    "anti_rent": true,
+    "buy_now_path": {
+      "rails": [
+        "ubereats",
+        "doordash",
+        "opentable_reservations",
+        "takeout_cta"
+      ],
+      "note": "Official site pushes UberEats/DoorDash for delivery — marketplace leak on love brand; Shop buy-now displaces rent",
+      "sources": [
+        "https://michaelsgenuine.com/"
+      ],
+      "wedge": "brand-site UberEats/DoorDash leak → Shop displaces rent"
+    }
   },
   "commerce_engine": {
     "endpoint": "POST /products/sync",

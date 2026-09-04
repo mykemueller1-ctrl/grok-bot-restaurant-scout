@@ -40,6 +40,18 @@ for (const f of files) {
     console.error(`validate-social-shop-dogfood: ${f} complaint_thesis must contrast Marketplace rent`);
     process.exit(1);
   }
+  const rails =
+    data.signals?.buy_now_path_rails ||
+    data.pain_lead?.buy_now_path?.rails ||
+    [];
+  if (!Array.isArray(rails) || rails.length < 1) {
+    console.error(`validate-social-shop-dogfood: ${f} needs signals.buy_now_path_rails or pain_lead.buy_now_path.rails`);
+    process.exit(1);
+  }
+  if (!/buy_now_path|shopify|ubereats|doordash|opentable|resy|toast|flavor dojo|preorder|leak|reservation/i.test(lead.complaint_thesis)) {
+    console.error(`validate-social-shop-dogfood: ${f} complaint_thesis must cite live buy_now_path / order-rail wedge`);
+    process.exit(1);
+  }
   const forbidBlob = JSON.stringify([data.notes, lead.notes, data.purpose, data.never].filter(Boolean));
   if (!/forecast/i.test(forbidBlob)) {
     console.error(`validate-social-shop-dogfood: ${f} must explicitly forbid forecasting in notes/purpose`);
@@ -50,6 +62,7 @@ for (const f of files) {
     account: lead.account_name,
     market: lead.market || null,
     signal: "social_shop_fee",
+    buy_now_rails: rails,
   });
 }
 

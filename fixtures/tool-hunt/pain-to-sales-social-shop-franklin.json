@@ -4,7 +4,12 @@
   "signals": {
     "social_shop_fee": "TikTok Shop US unified referral ~6%",
     "marketplace_direct_zero": "DoorDash Online Ordering / Uber Webshop 0% direct",
-    "marketplace_rent": "DoorDash Marketplace 15–30%"
+    "marketplace_rent": "DoorDash Marketplace 15–30%",
+    "buy_now_path_rails": [
+      "first_party_preorder",
+      "shopify_merch",
+      "goldbelly_ship"
+    ]
   },
   "pain_lead": {
     "pain_id": "tiktok_shop_vs_marketplace_keep",
@@ -23,15 +28,33 @@
       "social_shop_fee",
       "marketplace_direct_zero",
       "cult_chef_ugc",
-      "shoppable_sku_potential"
+      "shoppable_sku_potential",
+      "buy_now_path",
+      "existing_shopify_merch"
     ],
-    "vendors_mentioned": ["doordash", "tiktok_shop", "uber_eats"],
+    "vendors_mentioned": [
+      "doordash",
+      "tiktok_shop",
+      "uber_eats"
+    ],
     "sources": [
       "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
       "fixtures/tool-hunt/pain-scan-doordash-online-ordering.json",
       "fixtures/tool-hunt/austin-love-brands.json",
       "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
-    ]
+    ],
+    "buy_now_path": {
+      "rails": [
+        "first_party_preorder",
+        "shopify_merch",
+        "goldbelly_ship"
+      ],
+      "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch — Never86 Shop can close feed love into SKU packs",
+      "sources": [
+        "https://preorder.franklinbbq.com/information",
+        "https://shop.franklinbbq.com/"
+      ]
+    }
   },
   "sales_lead_draft": {
     "pain_id": "tiktok_shop_vs_marketplace_keep",
@@ -40,19 +63,25 @@
     "role": "owner/GM (needs teach)",
     "city": "Austin",
     "market": "Austin, TX",
-    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15–30%. Cult BBQ already prints love — Never86 buy-now keeps Shop-class economics on social demand instead of delivery-app rent. DoorDash Online Ordering is 0% on website directs, but Shop closes the feed where the line culture already lives.",
+    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15–30%. Franklin already sells Shopify merch + first-party preorders — Never86 Shop closes feed love into those SKUs instead of Goldbelly digs or Marketplace 15–30% rent.",
     "quotes": [
       "TikTok Shop US unified referral ~6%",
       "DoorDash Marketplace 15–30%",
       "DoorDash Online Ordering 0% on direct"
     ],
-    "vendors_to_displace": ["DoorDash Marketplace", "Uber Eats Marketplace"],
-    "why_never86_now": "social_shop_fee + marketplace_direct_zero teach: Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns Franklin love into PENDING_APPROVAL buy-now — not Owner Flex 5%, not Toast OO lock-in, not forecasting.",
+    "vendors_to_displace": [
+      "DoorDash Marketplace",
+      "Uber Eats Marketplace"
+    ],
+    "why_never86_now": "social_shop_fee + live buy_now_path (first_party_preorder, shopify_merch, goldbelly_ship): Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now — not Owner Flex 5%, not Toast Meta Order Food webviews, not forecasting.",
     "suggested_angle": "Draft only: Your line is already the content. Never86 turns that love into TikTok/IG buy-now at Shop-class KEEP (~6%) instead of losing 25% to delivery apps.",
     "sources": [
       "scripts/score-marketplace-keep.mjs",
       "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
-      "https://www.yelp.com/biz/franklin-barbecue-austin"
+      "https://www.yelp.com/biz/franklin-barbecue-austin",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "https://preorder.franklinbbq.com/information",
+      "https://shop.franklinbbq.com/"
     ],
     "confidence": 78,
     "status": "DRAFT",
@@ -61,7 +90,10 @@
   "tools_used": [
     "scripts/score-marketplace-keep.mjs",
     "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
-    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
+    "COMPOSIO_SEARCH_WEB",
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "fixtures/tool-hunt/austin-love-brands.json"
   ],
   "status": "dogfood_complete",
   "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"

@@ -1,10 +1,16 @@
 {
   "dogfood_id": "pain-to-sales-social-shop-michaels-genuine-2026-09-04",
-  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run \u2192 SalesLead DRAFT for Michael's Genuine Food & Drink (Miami). Love\u2192buy-now KEEP math dogfood. Not forecasting.",
+  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run → SalesLead DRAFT for Michael's Genuine Food & Drink (Miami). Love→buy-now KEEP math dogfood. Not forecasting.",
   "signals": {
     "social_shop_fee": "TikTok Shop US unified referral ~6%",
     "marketplace_direct_zero": "DoorDash Online Ordering / Uber Webshop 0% direct",
-    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+    "marketplace_rent": "DoorDash Marketplace 15–30%",
+    "buy_now_path_rails": [
+      "ubereats",
+      "doordash",
+      "opentable_reservations",
+      "takeout_cta"
+    ]
   },
   "pain_lead": {
     "pain_id": "tiktok_shop_vs_marketplace_keep",
@@ -18,12 +24,14 @@
       "yelp_alias": "michaels-genuine-food-and-drink-miami",
       "love_signal": "Chef Michael Schwartz Miami genuine brand / local cult"
     },
-    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15\u201330% rent. Michael's Genuine Food & Drink-class love should close on TikTok/IG buy-now \u2014 dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
+    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15–30% rent. Michael's Genuine Food & Drink-class love should close on TikTok/IG buy-now — dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
     "opportunity_signals": [
       "social_shop_fee",
       "marketplace_direct_zero",
       "cult_chef_ugc",
-      "shoppable_sku_potential"
+      "shoppable_sku_potential",
+      "buy_now_path",
+      "brand_site_marketplace_leak"
     ],
     "vendors_mentioned": [
       "doordash",
@@ -35,7 +43,19 @@
       "fixtures/tool-hunt/pain-scan-doordash-online-ordering.json",
       "fixtures/tool-hunt/miami-love-brands.json",
       "fixtures/tool-hunt/script-draft-michaels-genuine-buy-now.json"
-    ]
+    ],
+    "buy_now_path": {
+      "rails": [
+        "ubereats",
+        "doordash",
+        "opentable_reservations",
+        "takeout_cta"
+      ],
+      "note": "Official site pushes UberEats/DoorDash for delivery — marketplace leak on love brand; Shop buy-now displaces rent",
+      "sources": [
+        "https://michaelsgenuine.com/"
+      ]
+    }
   },
   "sales_lead_draft": {
     "pain_id": "tiktok_shop_vs_marketplace_keep",
@@ -44,31 +64,36 @@
     "role": "owner/GM (needs teach)",
     "city": "Miami",
     "market": "Miami, FL",
-    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15\u201330%. Cult love already prints demand \u2014 Never86 buy-now keeps Shop-class economics on social demand instead of delivery-app rent. DoorDash Online Ordering is 0% on website directs, but Shop closes the feed where the love already lives.",
+    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15–30%. Live buy_now_path: michaelsgenuine.com still pushes UberEats/DoorDash for delivery — marketplace leak on a love brand. Never86 Shop ~6% displaces that rent vs Marketplace 15–30%.",
     "quotes": [
       "TikTok Shop US unified referral ~6%",
-      "DoorDash Marketplace 15\u201330%",
-      "DoorDash Online Ordering 0% on direct"
+      "DoorDash Marketplace 15–30%",
+      "michaelsgenuine.com Delivery: UberEats / DoorDash (live buy_now_path)"
     ],
     "vendors_to_displace": [
       "DoorDash Marketplace",
       "Uber Eats Marketplace"
     ],
-    "why_never86_now": "social_shop_fee + marketplace_direct_zero teach: Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now \u2014 not Owner Flex 5%, not Toast OO lock-in, not forecasting.",
-    "suggested_angle": "Draft only: Genuine already wins on love. Never86 closes that love on Shop-class KEEP (~6%) buy-now \u2014 not Marketplace rent.",
+    "why_never86_now": "social_shop_fee + live buy_now_path (ubereats, doordash, opentable_reservations, takeout_cta): Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns love into PENDING_APPROVAL buy-now — not Owner Flex 5%, not Toast Meta Order Food webviews, not forecasting.",
+    "suggested_angle": "Draft only: Your own site still sends delivery to UberEats/DoorDash. Never86 closes Design District love on Shop-class KEEP (~6%) buy-now — displace that leak.",
     "sources": [
       "scripts/score-marketplace-keep.mjs",
       "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
-      "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami"
+      "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami",
+      "fixtures/tool-hunt/miami-love-brands.json",
+      "https://michaelsgenuine.com/"
     ],
     "confidence": 78,
     "status": "DRAFT",
-    "notes": "Calibration dogfood \u2014 social_shop_fee \u2192 SalesLead. Not live outreach. Not forecasting."
+    "notes": "Calibration dogfood — social_shop_fee → SalesLead. Not live outreach. Not forecasting."
   },
   "tools_used": [
     "scripts/score-marketplace-keep.mjs",
     "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
-    "fixtures/tool-hunt/script-draft-michaels-genuine-buy-now.json"
+    "fixtures/tool-hunt/script-draft-michaels-genuine-buy-now.json",
+    "COMPOSIO_SEARCH_WEB",
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "fixtures/tool-hunt/miami-love-brands.json"
   ],
   "status": "dogfood_complete",
   "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
