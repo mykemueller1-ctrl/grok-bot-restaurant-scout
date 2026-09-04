@@ -291,3 +291,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added girl-goat / michaels-genuine / husk / rioja social_shop SalesLeads (with franklin = 5).
 - validate-social-shop-dogfood ≥5; market-coverage chain includes social-shop.
 - Ledger v1.41.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (KEEP grader default Shop ~6%)
+
+- Default `social_fee_pct` 0→6 in keep-channel-grader.mjs + keepChannelGrade.ts (MCP inherits).
+- Updated 5 keep-grader dogfoods + pilot: social keep_pct 94%; teach Shop ~6% vs Marketplace 15–30%.
+- Validator asserts social_fee_pct=6 + quote `social_buy_now keep_pct 94%`.
+- Ledger v1.42.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

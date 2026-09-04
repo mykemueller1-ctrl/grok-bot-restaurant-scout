@@ -35,6 +35,20 @@ for (const f of files) {
     console.error(`validate-keep-grader-dogfood: ${f} grader.mcp_tool must be keep_channel_grade`);
     process.exit(1);
   }
+  const socialFee = Number(data.grader?.mcp_args?.social_fee_pct);
+  if (socialFee !== 6) {
+    console.error(`validate-keep-grader-dogfood: ${f} grader.mcp_args.social_fee_pct must be 6 (Shop referral default)`);
+    process.exit(1);
+  }
+  if (!/--social_fee_pct 6\b/.test(String(data.grader.cli || ""))) {
+    console.error(`validate-keep-grader-dogfood: ${f} grader.cli must pass --social_fee_pct 6`);
+    process.exit(1);
+  }
+  const quotes = data.sales_lead_draft?.quotes || [];
+  if (!quotes.some((q) => /social_buy_now keep_pct 94%/.test(String(q)))) {
+    console.error(`validate-keep-grader-dogfood: ${f} quotes must include social_buy_now keep_pct 94%`);
+    process.exit(1);
+  }
   const lead = data.sales_lead_draft;
   if (!lead.account_name || !lead.complaint_thesis || lead.status !== "DRAFT") {
     console.error(`validate-keep-grader-dogfood: ${f} sales_lead_draft needs account_name/complaint_thesis/status=DRAFT`);

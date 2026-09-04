@@ -1,0 +1,21 @@
+{
+  "id": "2026-09-04-keep-grader-shop-default",
+  "date": "2026-09-04",
+  "lane": "vertical_gtm",
+  "name": "KEEP channel grader default social_fee_pct=6 (TikTok Shop US)",
+  "mission_fit": "love_to_buy_now",
+  "verdict": "adopt",
+  "what_we_use_today": "keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade + 5 keep-grader dogfoods",
+  "summary": "Aligned KEEP grader default with TikTok Shop ~6% unified referral so love\u2192buy-now math matches social_shop_fee teach (94% KEEP vs Marketplace 15\u201330%). Not forecasting.",
+  "never": [
+    "historical_sales_forecasting",
+    "labor_forecasting"
+  ],
+  "sources": [
+    "scripts/keep-channel-grader.mjs",
+    "services/pain-leads-api/src/lib/keepChannelGrade.ts",
+    "fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json",
+    "skills/keep-channel-grader.md"
+  ],
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}

@@ -5,8 +5,9 @@
  * Usage:
  *   node scripts/keep-channel-grader.mjs --dinein 10000 --takeout 5000 \\
  *     --doordash 8000 --doordash_fee_pct 25 --uber 3000 --uber_fee_pct 30 \\
- *     --social_buy_now 2000 --social_fee_pct 0
+ *     --social_buy_now 2000 --social_fee_pct 6
  * Exit 0 always (prints JSON). No network. No secrets. Not forecasting.
+ * Default social_fee_pct=6 = TikTok Shop US unified referral (not 0).
  */
 function arg(name, fallback = 0) {
   const i = process.argv.indexOf(`--${name}`);
@@ -16,6 +17,8 @@ function arg(name, fallback = 0) {
 }
 
 const MARKETPLACE_IDS = new Set(["doordash", "uber_eats", "grubhub"]);
+/** TikTok Shop US unified referral — love→buy-now default (keep in sync with keepChannelGrade.ts) */
+const DEFAULT_SOCIAL_FEE_PCT = 6;
 
 const channels = [
   { id: "dine_in", label: "Dine-in", gmv: arg("dinein"), fee_pct: arg("dinein_fee_pct", 0) },
@@ -27,7 +30,7 @@ const channels = [
     id: "social_buy_now",
     label: "Never86 TikTok/IG buy-now",
     gmv: arg("social_buy_now"),
-    fee_pct: arg("social_fee_pct", 0),
+    fee_pct: arg("social_fee_pct", DEFAULT_SOCIAL_FEE_PCT),
   },
 ].filter((c) => c.gmv > 0);
 
@@ -72,7 +75,7 @@ console.log(
         marketplace_fee_total: Math.round(marketplace_fee * 100) / 100,
         never86_wedge,
         teach:
-          "Biggest GMV channel may not be best KEEP. Shift social demand to Never86 buy-now; dual-run marketplaces for discovery only.",
+          "Biggest GMV channel may not be best KEEP. Shop ~6% social buy-now beats Marketplace 15–30%; dual-run marketplaces for discovery only.",
       },
     },
     null,

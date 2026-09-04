@@ -25,6 +25,8 @@ export type KeepChannelGradeResult = {
 };
 
 const MARKETPLACE_IDS = new Set(["doordash", "uber_eats", "grubhub"]);
+/** TikTok Shop US unified referral — keep in sync with scripts/keep-channel-grader.mjs */
+export const DEFAULT_SOCIAL_FEE_PCT = 6;
 
 export function gradeKeepChannels(channels: KeepChannelInput[]): KeepChannelGradeResult {
   const cleaned = channels.filter((c) => Number(c.gmv) > 0);
@@ -66,7 +68,7 @@ export function gradeKeepChannels(channels: KeepChannelInput[]): KeepChannelGrad
       marketplace_fee_total: Math.round(marketplace_fee * 100) / 100,
       never86_wedge,
       teach:
-        "Biggest GMV channel may not be best KEEP. Shift social demand to Never86 buy-now; dual-run marketplaces for discovery only.",
+        "Biggest GMV channel may not be best KEEP. Shop ~6% social buy-now beats Marketplace 15–30%; dual-run marketplaces for discovery only.",
     },
   };
 }
@@ -87,7 +89,7 @@ export function channelsFromArgs(args: Record<string, unknown>): KeepChannelInpu
       id: "social_buy_now",
       label: "Never86 TikTok/IG buy-now",
       gmv: num("social_buy_now"),
-      fee_pct: num("social_fee_pct", 0),
+      fee_pct: num("social_fee_pct", DEFAULT_SOCIAL_FEE_PCT),
     },
   ].filter((c) => c.gmv > 0);
 }

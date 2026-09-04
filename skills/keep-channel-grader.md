@@ -12,11 +12,12 @@
      --dinein 12000 --takeout 4000 \
      --doordash 9000 --doordash_fee_pct 25 \
      --uber 3500 --uber_fee_pct 30 \
-     --social_buy_now 2500 --social_fee_pct 0
+     --social_buy_now 2500
    ```
+   - Default `--social_fee_pct` is **6** (TikTok Shop US referral). Pass `0` only for true first-party zero-fee rails.
    - MCP (complaint-sources): `keep_channel_grade` with the same keys (`dinein`, `doordash`, `doordash_fee_pct`, …) or a `channels[]` array.
 3. Read `ranked[]` + `summary.never86_wedge`.
-4. Fold into `SalesLead.complaint_thesis` / `suggested_angle`: biggest GMV may be worst KEEP; shift social demand to buy-now; dual-run marketplaces for discovery only.
+4. Fold into `SalesLead.complaint_thesis` / `suggested_angle`: biggest GMV may be worst KEEP; Shop ~6% beats Marketplace 15–30%; dual-run marketplaces for discovery only.
 5. Contrast vs ChowNow/Chowly/Lunchbox web OS and Owner email/SMS — Never86 owns TikTok/IG shoppable close.
 
 **Fixtures:** keep-grader→SalesLead for all 5 love markets — Girl & Goat · Franklin · Michael's Genuine · Husk · Rioja

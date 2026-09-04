@@ -1,8 +1,8 @@
 {
   "dogfood_id": "pain-to-sales-keep-grader-husk-2026-09-04",
-  "purpose": "KEEP channel-rank grader → SalesLead DRAFT for Husk (Nashville). Third-market dogfood after Rioja/Franklin.",
+  "purpose": "KEEP channel-rank grader \u2192 SalesLead DRAFT for Husk (Nashville). Third-market dogfood after Rioja/Franklin.",
   "grader": {
-    "cli": "node scripts/keep-channel-grader.mjs --dinein 14000 --takeout 4500 --doordash 9000 --doordash_fee_pct 25 --uber 3200 --uber_fee_pct 30 --social_buy_now 2800 --social_fee_pct 0",
+    "cli": "node scripts/keep-channel-grader.mjs --dinein 14000 --takeout 4500 --doordash 9000 --doordash_fee_pct 25 --uber 3200 --uber_fee_pct 30 --social_buy_now 2800 --social_fee_pct 6",
     "mcp_tool": "keep_channel_grade",
     "mcp_args": {
       "dinein": 14000,
@@ -12,13 +12,13 @@
       "uber": 3200,
       "uber_fee_pct": 30,
       "social_buy_now": 2800,
-      "social_fee_pct": 0
+      "social_fee_pct": 6
     },
     "expected_wedge": "anti_marketplace_buy_now",
     "marketplace_fee_total": 3210,
     "best_keep_channel": "dine_in",
     "worst_keep_pct_channel": "uber_eats",
-    "teach": "DoorDash #2 GMV bleeds $2,250 KEEP; Uber 70% KEEP. Shift Sean Brock UGC to Never86 buy-now (100% KEEP)."
+    "teach": "DoorDash #2 GMV bleeds $2,250 KEEP; Uber 70% KEEP. Shift Sean Brock UGC to Never86 buy-now (~94% KEEP after Shop ~6%)."
   },
   "pain_lead": {
     "pain_id": "marketplace_commission_keep",
@@ -32,14 +32,17 @@
       "yelp_alias": "husk-nashville",
       "love_signal": "Sean Brock Southern destination / high UGC volume"
     },
-    "complaint_summary": "Calibration: channel KEEP$ rank (not personal Husk complaint). Sample marketplace fee leak $3,210 vs 100% KEEP on dine-in/takeout/social buy-now.",
+    "complaint_summary": "Calibration: channel KEEP$ rank (not personal Husk complaint). Sample marketplace fee leak $3,210 vs 100% KEEP on dine-in/takeout and ~94% KEEP on Never86 social buy-now after Shop ~6%.",
     "opportunity_signals": [
       "rank_by_keep_not_gmv",
       "marketplace_fee_leak",
       "social_buy_now_keep_channel",
       "cult_chef_ugc"
     ],
-    "vendors_mentioned": ["doordash", "uber_eats"],
+    "vendors_mentioned": [
+      "doordash",
+      "uber_eats"
+    ],
     "sources": [
       "fixtures/tool-hunt/keep-channel-grader-pilot.json",
       "fixtures/tool-hunt/nashville-love-brands.json",
@@ -53,15 +56,18 @@
     "role": "owner/GM (needs teach)",
     "city": "Nashville",
     "market": "Nashville, TN",
-    "complaint_thesis": "On a sample month, DoorDash GMV looks strong but keeps only 75% ($2,250 leak); Uber keeps 70%. Dine-in + takeout + Never86 social buy-now keep 100%. Destination Southern love should rank channels by KEEP$, not GMV.",
+    "complaint_thesis": "On a sample month, DoorDash GMV looks strong but keeps only 75% ($2,250 leak); Uber keeps 70%. Dine-in + takeout keep 100%; Never86 social buy-now keeps ~94% after Shop ~6% (vs Marketplace 15\u201330%). Destination Southern love should rank channels by KEEP$, not GMV.",
     "quotes": [
       "marketplace_fee_total $3210",
       "worst_keep_pct uber_eats 70%",
-      "social_buy_now keep_pct 100%"
+      "social_buy_now keep_pct 94%"
     ],
-    "vendors_to_displace": ["DoorDash", "Uber Eats"],
-    "why_never86_now": "KEEP grader = anti_marketplace_buy_now. Brock-class UGC belongs on TikTok/IG shoppable buy-now — not padded menus or BentoBox/Fleksa/Sauce website OS alone.",
-    "suggested_angle": "Draft only: Your Nashville love already prints demand. Never86 ranks what you KEEP after fees — then turns that UGC into shoppable buy-now.",
+    "vendors_to_displace": [
+      "DoorDash",
+      "Uber Eats"
+    ],
+    "why_never86_now": "KEEP grader = anti_marketplace_buy_now. Brock-class UGC belongs on TikTok/IG shoppable buy-now \u2014 not padded menus or BentoBox/Fleksa/Sauce website OS alone.",
+    "suggested_angle": "Draft only: Your Nashville love already prints demand. Never86 ranks what you KEEP after fees \u2014 then turns that UGC into shoppable buy-now.",
     "sources": [
       "scripts/keep-channel-grader.mjs",
       "https://www.yelp.com/biz/husk-nashville",
@@ -69,7 +75,7 @@
     ],
     "confidence": 75,
     "status": "DRAFT",
-    "notes": "Calibration dogfood — grader → SalesLead. Not live outreach. Not forecasting."
+    "notes": "Calibration dogfood \u2014 grader \u2192 SalesLead. Not live outreach. Not forecasting."
   },
   "tools_used": [
     "scripts/keep-channel-grader.mjs",

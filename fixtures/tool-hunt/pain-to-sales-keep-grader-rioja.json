@@ -1,8 +1,8 @@
 {
   "dogfood_id": "pain-to-sales-keep-grader-rioja-2026-09-04",
-  "purpose": "KEEP channel-rank grader → SalesLead DRAFT for Rioja (Denver). Proves keep_channel_grade MCP / CLI folds into complaint_thesis without forecasting or Apollo/Mem0.",
+  "purpose": "KEEP channel-rank grader \u2192 SalesLead DRAFT for Rioja (Denver). Proves keep_channel_grade MCP / CLI folds into complaint_thesis without forecasting or Apollo/Mem0.",
   "grader": {
-    "cli": "node scripts/keep-channel-grader.mjs --dinein 12000 --takeout 4000 --doordash 9000 --doordash_fee_pct 25 --uber 3500 --uber_fee_pct 30 --social_buy_now 2500 --social_fee_pct 0",
+    "cli": "node scripts/keep-channel-grader.mjs --dinein 12000 --takeout 4000 --doordash 9000 --doordash_fee_pct 25 --uber 3500 --uber_fee_pct 30 --social_buy_now 2500 --social_fee_pct 6",
     "mcp_tool": "keep_channel_grade",
     "mcp_args": {
       "dinein": 12000,
@@ -12,13 +12,13 @@
       "uber": 3500,
       "uber_fee_pct": 30,
       "social_buy_now": 2500,
-      "social_fee_pct": 0
+      "social_fee_pct": 6
     },
     "expected_wedge": "anti_marketplace_buy_now",
     "marketplace_fee_total": 3300,
     "best_keep_channel": "dine_in",
     "worst_keep_pct_channel": "uber_eats",
-    "teach": "DoorDash is #2 GMV but bleeds $2,250 KEEP; Uber worst keep_pct (70%). Shift social demand to Never86 buy-now (100% KEEP)."
+    "teach": "DoorDash is #2 GMV but bleeds $2,250 KEEP; Uber worst keep_pct (70%). Shift social demand to Never86 buy-now (~94% KEEP after Shop ~6%)."
   },
   "pain_lead": {
     "pain_id": "marketplace_commission_keep",
@@ -32,14 +32,17 @@
       "yelp_alias": "rioja-denver",
       "love_signal": "Chef Jennifer Jasinski / Larimer Square cult / first-party pickup present"
     },
-    "complaint_summary": "Calibration: channel KEEP$ rank (not personal Rioja complaint). Marketplace fee leak $3,300 on sample month vs 100% KEEP on dine-in/takeout/social buy-now.",
+    "complaint_summary": "Calibration: channel KEEP$ rank (not personal Rioja complaint). Marketplace fee leak $3,300 on sample month vs 100% KEEP on dine-in/takeout and ~94% KEEP on Never86 social buy-now after Shop ~6%.",
     "opportunity_signals": [
       "rank_by_keep_not_gmv",
       "marketplace_fee_leak",
       "social_buy_now_keep_channel",
       "cult_chef_ugc"
     ],
-    "vendors_mentioned": ["doordash", "uber_eats"],
+    "vendors_mentioned": [
+      "doordash",
+      "uber_eats"
+    ],
     "sources": [
       "fixtures/tool-hunt/keep-channel-grader-pilot.json",
       "fixtures/tool-hunt/denver-love-brands.json",
@@ -53,15 +56,18 @@
     "role": "owner/GM (needs teach)",
     "city": "Denver",
     "market": "Denver, CO",
-    "complaint_thesis": "On a sample month, DoorDash GMV looks strong (#2) but keeps only 75% after 25% fees ($2,250 leak); Uber keeps 70%. Dine-in + takeout + Never86 social buy-now keep 100%. Biggest GMV is not best KEEP — shift Larimer Square social demand off padded marketplace menus onto shoppable buy-now.",
+    "complaint_thesis": "On a sample month, DoorDash GMV looks strong (#2) but keeps only 75% after 25% fees ($2,250 leak); Uber keeps 70%. Dine-in + takeout keep 100%; Never86 social buy-now keeps ~94% after Shop ~6% (vs Marketplace 15\u201330%). Biggest GMV is not best KEEP \u2014 shift Larimer Square social demand off padded marketplace menus onto shoppable buy-now.",
     "quotes": [
       "marketplace_fee_total $3300",
       "worst_keep_pct uber_eats 70%",
-      "social_buy_now keep_pct 100%"
+      "social_buy_now keep_pct 94%"
     ],
-    "vendors_to_displace": ["DoorDash", "Uber Eats"],
-    "why_never86_now": "KEEP channel grader shows anti_marketplace_buy_now wedge. Jasinski-class love already prints demand; Never86 TikTok/IG buy-now is the 100% KEEP social close vs ChowNow/Lunchbox/OPA! web OS.",
-    "suggested_angle": "Draft only: Your #2 channel by GMV may be your worst rent. Never86 ranks channels by what you KEEP — then turns Larimer Square love into shoppable buy-now at honest prices.",
+    "vendors_to_displace": [
+      "DoorDash",
+      "Uber Eats"
+    ],
+    "why_never86_now": "KEEP channel grader shows anti_marketplace_buy_now wedge. Jasinski-class love already prints demand; Never86 TikTok/IG buy-now is the ~94% KEEP Shop social close vs ChowNow/Lunchbox/OPA! web OS.",
+    "suggested_angle": "Draft only: Your #2 channel by GMV may be your worst rent. Never86 ranks channels by what you KEEP \u2014 then turns Larimer Square love into shoppable buy-now at honest prices.",
     "sources": [
       "scripts/keep-channel-grader.mjs",
       "https://www.yelp.com/biz/rioja-denver",
@@ -69,7 +75,7 @@
     ],
     "confidence": 74,
     "status": "DRAFT",
-    "notes": "Calibration dogfood — grader → SalesLead. Not live outreach. Not forecasting."
+    "notes": "Calibration dogfood \u2014 grader \u2192 SalesLead. Not live outreach. Not forecasting."
   },
   "tools_used": [
     "scripts/keep-channel-grader.mjs",

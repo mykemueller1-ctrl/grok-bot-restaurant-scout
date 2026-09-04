@@ -1,7 +1,7 @@
 {
   "pilot_id": "keep-channel-grader-2026-09-04",
-  "purpose": "Pilot Zayos-style public wedge: rank channels by KEEP$ after fees (not GMV). Feeds SalesLead teach — not forecasting.",
-  "cli": "node scripts/keep-channel-grader.mjs --dinein 12000 --takeout 4000 --doordash 9000 --doordash_fee_pct 25 --uber 3500 --uber_fee_pct 30 --social_buy_now 2500 --social_fee_pct 0",
+  "purpose": "Pilot Zayos-style public wedge: rank channels by KEEP$ after fees (not GMV). Default social_fee_pct=6 (TikTok Shop US). Feeds SalesLead teach — not forecasting.",
+  "cli": "node scripts/keep-channel-grader.mjs --dinein 12000 --takeout 4000 --doordash 9000 --doordash_fee_pct 25 --uber 3500 --uber_fee_pct 30 --social_buy_now 2500 --social_fee_pct 6",
   "sample_input": {
     "dinein": 12000,
     "takeout": 4000,
@@ -10,13 +10,14 @@
     "uber": 3500,
     "uber_fee_pct": 30,
     "social_buy_now": 2500,
-    "social_fee_pct": 0
+    "social_fee_pct": 6
   },
   "expected_wedge": "anti_marketplace_buy_now",
   "teach_labels": [
     "rank_by_keep_not_gmv",
     "marketplace_fee_leak",
-    "social_buy_now_keep_channel"
+    "social_buy_now_keep_channel",
+    "shop_referral_vs_marketplace"
   ],
   "never": [
     "Not a sales/labor forecasting tool",

@@ -15,5 +15,5 @@
     "keep_channel_grade"
   ],
   "also_use": ["social-trends"],
-  "notes": "Read-only complaint hunting across TikTok, Reddit, FB groups, X, forums. score_marketplace_keep boosts KEEP/commission stubs; keep_channel_grade ranks channels by KEEP$ after fees (not forecasting). Pair with social-trends MCP. No auto-comment or DM from this connector."
+  "notes": "Read-only complaint hunting across TikTok, Reddit, FB groups, X, forums. score_marketplace_keep boosts KEEP/commission stubs; keep_channel_grade ranks channels by KEEP$ after fees (default social_fee_pct=6 Shop referral; not forecasting). Pair with social-trends MCP. No auto-comment or DM from this connector."
 }
