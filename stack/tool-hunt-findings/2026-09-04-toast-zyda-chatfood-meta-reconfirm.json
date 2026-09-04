@@ -1,0 +1,36 @@
+{
+  "id": "2026-09-04-toast-zyda-chatfood-meta-reconfirm",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.68",
+  "sources": [
+    {
+      "url": "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook",
+      "title": "Share Your Online Ordering & eGift Card Links on Social Media | Toast Support",
+      "fetched_via": "composio_search_fetch",
+      "note": "Last updated Jul 7 2026 — Order food → Toast partner + Stories Food Orders sticker still live"
+    },
+    {
+      "url": "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+      "title": "How to connect Order Food Button through Meta | Zyda Help",
+      "fetched_via": "composio_search_fetch",
+      "note": "FBE Order Food bridge Zyda store ↔ IG/FB still documented"
+    },
+    {
+      "url": "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+      "title": "How to activate your Instagram Order Food button and stickers | ChatFood",
+      "fetched_via": "composio_search_fetch",
+      "note": "ChatFood IG Order Food button + Stories stickers docs still live (separate peer post-acquisition)"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Toast OO (updated Jul 7 2026) + Zyda FBE + ChatFood IG Order Food docs still live. Reinforces Meta FBE peer set; meta_order_food_peer_count stays 9 (ChatFood stays separate peer).",
+  "teach": {
+    "label": "toast_zyda_chatfood_meta_paths_hold",
+    "peer_count_impact": "none — already counted"
+  },
+  "mission_lock": {
+    "yes": ["Meta FBE peer reconfirm", "love→buy-now"],
+    "no": ["inflate peer_count", "merge ChatFood into Deliverect"]
+  }
+}

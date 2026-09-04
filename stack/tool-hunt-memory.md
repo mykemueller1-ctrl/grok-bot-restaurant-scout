@@ -1063,3 +1063,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_zl6EuHZYhk3Z (~10 min).
 - Ledger v1.92.67. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Toast/Zyda/ChatFood Meta reconfirm)
+
+- Reconfirmed Toast OO (updated Jul 7 2026) + Zyda FBE + ChatFood IG Order Food — peer_count stays 9. Finding: `2026-09-04-toast-zyda-chatfood-meta-reconfirm.json`.
+- Ledger v1.92.68. Auth still blocked for unlock READY.
+

@@ -1,5 +1,5 @@
 {
-  "version": "1.92.67",
+  "version": "1.92.68",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Toast OO + Zyda + ChatFood Meta Order Food reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Toast Support (updated Jul 7 2026) + Zyda FBE Help + ChatFood IG Order Food docs still live — peer_count stays 9",
+      "verdict": "adopt"
+    },
     {
       "item": "Franklin/Husk/Rioja buy_now_path pass-4/5",
       "lane": "vertical_gtm",
