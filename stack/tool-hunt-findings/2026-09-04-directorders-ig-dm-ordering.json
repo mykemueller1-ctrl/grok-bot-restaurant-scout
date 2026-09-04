@@ -1,0 +1,14 @@
+{
+  "finding_id": "directorders-ig-dm-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DirectOrders Instagram DM / WhatsApp / ChatGPT ordering vs Owner web-app",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "DirectOrders publishes Instagram DM, WhatsApp, ChatGPT, and Perplexity ordering channels alongside branded web/app (0% commission, $0 customer fees on Pro). Public comparison vs Owner.com notes Owner does not list IG DM/WhatsApp/ChatGPT on pricing — sharpens love→buy-now rival set: messaging-native first-party close vs Never86 in-app Shop. Watch only; fee catalog pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.directorders.com/blog/directorders-vs-owner-comparison",
+    "https://www.directorders.com/"
+  ],
+  "not_this": "Not fee dogfood (no published per-order fee to teach). Competitor-authored comparison — treat channel claims as vendor-published, not third-party audit."
+}

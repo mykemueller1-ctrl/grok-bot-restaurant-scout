@@ -1,5 +1,5 @@
 {
-  "version": "1.92.21",
+  "version": "1.92.22",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -569,12 +569,13 @@
     {
       "name": "DirectOrders",
       "lane": "vertical_gtm",
-      "stack": "Zero-commission branded site + ordering/delivery; Instagram/WhatsApp/SMS/AI-search intake; flat subscription",
+      "stack": "Zero-commission branded site + ordering/delivery; Instagram DM / WhatsApp / ChatGPT / Perplexity + Voice AI intake; flat subscription ($0 customer fees on Pro)",
       "memory": "Owned customer data",
-      "edge": "KEEP + multi-channel first-party; messaging/web close vs Never86 Shop rails",
+      "edge": "Messaging-native first-party close (IG DM etc.) vs Owner web/app skew — Never86 Shop still wins in-app buy-now; watch only",
       "updated": "2026-09-04",
       "sources": [
-        "https://www.directorders.com/"
+        "https://www.directorders.com/",
+        "https://www.directorders.com/blog/directorders-vs-owner-comparison"
       ]
     },
     {
@@ -887,16 +888,17 @@
     {
       "name": "BentoBox",
       "lane": "vertical_gtm",
-      "stack": "Website/commerce suite now Clover-only for new customers; QR Order & Pay $19/mo + $0.99 diner fee/order (waived on follow-up from same device); takeout add-on with reported restaurant-paid $0.99/order service fee + processing",
+      "stack": "Website/commerce suite now Clover-only for new customers; QR Order & Pay $19/mo + $0.99 diner fee/order; Meta Business Extension Order Food on FB/IG + Stories Food Orders sticker → Bento Online Ordering / Catering",
       "memory": "Guest/commerce data inside Clover hospitality stack",
-      "edge": "Primary teach: guest-paid $0.99 diner fee on QR Order & Pay (Help Center) — KEEP leak + Clover lock-in; not social buy-now native",
+      "edge": "Dual teach: (1) guest-paid $0.99 QR fee dogfooded; (2) Meta Order Food peer to Deliverect/Zyda/ChatFood — watch GTM only, fee pause",
       "updated": "2026-09-04",
       "sources": [
         "https://getbento.com/",
         "https://orderitto.com/compare/bentobox-pricing",
         "https://www.getsauce.com/post/bentobox-pricing-fees",
         "https://help.getbento.com/en/articles/421057",
-        "https://help.getbento.com/en/articles/418369"
+        "https://help.getbento.com/en/articles/418369",
+        "https://help.getbento.com/en/articles/412673"
       ]
     },
     {
@@ -1240,6 +1242,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "BentoBox Meta Order Food taught across GTM skills + COMPOSIO-SOCIAL-UNLOCKS",
+      "lane": "skills_knowledge",
+      "why": "morning-scan / script-draft / sales-lead-form / frontier-scan / rival-watch + social unlocks now name BentoBox beside Deliverect/Zyda/ChatFood; DirectOrders IG DM called out",
+      "verdict": "adopt"
+    },
+    {
+      "item": "BentoBox Meta Order Food (FB/IG button + Stories sticker)",
+      "lane": "vertical_gtm",
+      "why": "Clover Hospitality Help Center: Meta Business Extension → Bento OO/Catering — US Meta Order Food peer; watch only — fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "DirectOrders IG DM / WhatsApp / ChatGPT ordering",
+      "lane": "vertical_gtm",
+      "why": "Messaging-native first-party channels vs Owner web/app skew — sharpens love→buy-now rival set; watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Smiilen video→delivery marketplace (BiteSight peer)",
       "lane": "vertical_gtm",
@@ -2457,7 +2477,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_OX5RQYqGvxKG (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_5JKgmm1s0io7 (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {

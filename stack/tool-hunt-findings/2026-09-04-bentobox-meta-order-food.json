@@ -1,0 +1,14 @@
+{
+  "finding_id": "bentobox-meta-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "BentoBox Meta Order Food button + Stories sticker",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "BentoBox (Clover Hospitality) Help Center confirms Meta Business Extension: Facebook/Instagram Order Food profile button + IG Stories Food Orders sticker → Bento Online Ordering / Online Catering. Corrects prior edge that BentoBox was 'not social buy-now native'. Deliverect/Zyda/ChatFood peer on Meta rails — US hospitality stack. Watch only; fee catalog pause stands (QR $0.99 guest fee already dogfooded).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.getbento.com/en/articles/412673",
+    "https://www.facebook.com/help/instagram/897533104016091"
+  ],
+  "not_this": "Not new fee dogfood. Not TikTok Shop-native. Not forecasting. Do not re-dogfood QR guest fee."
+}

@@ -742,3 +742,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **ChatFood** (watch): Meta IG Order Food + Facebook Commerce — Deliverect/Zyda peer. Finding: `2026-09-04-chatfood-ig-order-food.json`.
 - **Smiilen** (watch): video→delivery marketplace with creator commissions — BiteSight peer. Finding: `2026-09-04-smiilen-video-delivery.json`.
 - Ledger v1.92.21. Fee pause + Mem0/Context auth-first unchanged.
+
+### 2026-09-04 (BentoBox Meta Order Food + DirectOrders IG DM)
+
+- **BentoBox** (watch): Meta Business Extension Order Food button + Stories sticker → Bento OO/Catering (Help Center primary). Corrects prior “not social buy-now native” edge. Finding: `2026-09-04-bentobox-meta-order-food.json`.
+- **DirectOrders** (watch): IG DM / WhatsApp / ChatGPT ordering vs Owner web/app skew. Finding: `2026-09-04-directorders-ig-dm-ordering.json`.
+- Taught across morning-scan / script-draft / sales-lead-form / frontier-scan / rival-watch + COMPOSIO-SOCIAL-UNLOCKS.
+- Ledger v1.92.22. Fee pause + Mem0/Context auth-first unchanged. Instagram reconnect link refreshed (`lk_5JKgmm1s0io7`, ~10 min).

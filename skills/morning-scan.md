@@ -17,7 +17,7 @@
    - brand / kitchen name if identifiable
    - source URL, score (0–100)
    - Never86 fit note: shoppable SKU potential vs marketplace-only vibe; Shop ~6% KEEP vs delivery rent (watch ~8%)
-   - Rival wedge check: would Owner/Dinevate/Trenz/Menami/Deonde/SWIPEBY/OPA!/Toast OO/Otter/KwickOS/RestauNax first-party OS, Deliverect/Zyda IG/FB Order Food, linkboo webview-escape bio links, BiteSight video marketplace, TextOrder/Ainisa/Ordr DM ordering, Seekadu reservation DMs, Moast Shopify UGC widgets, Seekeasy creator discovery, Klikit Shop POS, or generic AI menu-video (Feedo/PlateAI/Flik/Mooz) own this better — or does **shoppable buy-now + cult proof** win?
+   - Rival wedge check: would Owner/Dinevate/Trenz/Menami/Deonde/SWIPEBY/OPA!/Toast OO/Otter/KwickOS/RestauNax/BentoBox first-party OS, Deliverect/Zyda/ChatFood/BentoBox IG/FB Order Food, DirectOrders IG DM/WhatsApp, linkboo webview-escape bio links, BiteSight/Smiilen video marketplace, TextOrder/Ainisa/Ordr DM ordering, Seekadu reservation DMs, Moast Shopify UGC widgets, Seekeasy creator discovery, Klikit Shop POS, or generic AI menu-video (Feedo/PlateAI/Flik/Mooz) own this better — or does **shoppable buy-now + cult proof** win?
 4. Write results to `CreatorLead` via the commerce engine MCP.
 5. Output a ranked list framed as **onboarding targets**, not content ideas alone.
 
