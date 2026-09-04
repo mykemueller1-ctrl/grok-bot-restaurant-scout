@@ -1,0 +1,30 @@
+{
+  "name": "tool-hunt-weekly",
+  "schedule": "0 9 * * 1",
+  "timezone": "America/Chicago",
+  "description": "Beyond the Hunt — weekly frontier scan of Cursor agents/memory/skills + competitor stacks. Updates tooling ledger and briefs Myke.",
+  "agent": "agent/tool-hunt/beyond-the-hunt.json",
+  "steps": [
+    { "skill": "tool-frontier-scan" },
+    { "skill": "memory-skills-audit", "depends_on": "tool-frontier-scan" },
+    { "skill": "stack-vs-competitors", "depends_on": "tool-frontier-scan" },
+    { "skill": "tool-hunt-brief", "depends_on": ["memory-skills-audit", "stack-vs-competitors"] }
+  ],
+  "notify": {
+    "channel": "telegram",
+    "message": "Beyond the Hunt brief ready — new tools, us vs them, and what needs your OK."
+  },
+  "approval_required_for": [
+    "install_paid_tool",
+    "rotate_secret",
+    "publish_skill_marketplace",
+    "switch_primary_ide",
+    "enable_new_mcp_prod"
+  ],
+  "cursor_automation": {
+    "preferred": true,
+    "docs": "docs/TOOL-HUNT.md",
+    "memories": true,
+    "prompt_hint": "Run the tool-hunt-weekly routine: frontier scan → memory/skills audit → stack vs competitors → brief. Update stack/tooling-ledger.json and write findings under stack/tool-hunt-findings/. Do not commit secrets."
+  }
+}

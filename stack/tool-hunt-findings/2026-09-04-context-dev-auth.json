@@ -1,0 +1,17 @@
+{
+  "finding_id": "context-dev-auth-2026-09",
+  "lane": "mcp_connectors",
+  "name": "Context.dev MCP research redundancy",
+  "vendor_or_project": "Context.dev",
+  "urls": [],
+  "what_it_does": "Live web search/scrape/extract MCP preferred by workspace rules when authenticated.",
+  "how_competitors_use_it": "Ops agents keep dual research MCPs so one 401 does not stop frontier scans.",
+  "what_we_use_today": "Bright Data (401 on batch during this scan) + WebSearch fallback; Context needsAuth.",
+  "gap": "Single-point research fragility when Bright Data auth fails.",
+  "pivot_speed": "hours",
+  "verdict": "needs_auth",
+  "priority": 2,
+  "summary": "Authenticate Context so weekly tool hunt never depends on one SERP provider.",
+  "operator_ask": "Authenticate Context.dev MCP in Cursor.",
+  "researched_at": "2026-09-04"
+}

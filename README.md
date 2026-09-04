@@ -67,6 +67,20 @@ Worker + D1 live under `services/pain-leads-api/` (`src/worker/`, `wrangler.toml
 - `stack/github-secrets.manifest.json` — secret **names** for GitHub Actions + Codex (values never in git)
 - `scripts/codex-cloud-setup.sh` — Codex Cloud environment setup script
 
+## Beyond the Hunt — tooling frontier
+
+Continuous scout for the latest Cursor agents, memories, skills, MCP, and competitor stacks so we can pivot fast.
+
+- Agent: `agent/tool-hunt/beyond-the-hunt.json`
+- Ledger (us vs them): `stack/tooling-ledger.json`
+- Skills: `tool-frontier-scan`, `memory-skills-audit`, `stack-vs-competitors`, `tool-hunt-brief`
+- Routine: `routines/tool-hunt-weekly.json` (Mondays 09:00 America/Chicago)
+- Playbook: **`docs/TOOL-HUNT.md`**
+
+```bash
+node scripts/validate-tooling-ledger.mjs
+```
+
 ## Toast labor + product mix
 
 Operator exports: Schedule & Labor **Time Entries** + Menu Sales **Item Selection Details** (product mix → SKUs). Map + parse: `docs/TOAST-REPORTS.md`, `scripts/parse-toast-reports.mjs`, `fixtures/toast/`.

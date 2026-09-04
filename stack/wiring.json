@@ -62,6 +62,14 @@
     "actions_secrets_url": "https://github.com/mykemueller1-ctrl/grok-bot-restaurant-scout/settings/secrets/actions",
     "secrets_manifest": "stack/github-secrets.manifest.json"
   },
+  "tool_hunt": {
+    "agent": "agent/tool-hunt/beyond-the-hunt.json",
+    "ledger": "stack/tooling-ledger.json",
+    "findings_dir": "stack/tool-hunt-findings",
+    "routine": "routines/tool-hunt-weekly.json",
+    "docs": "docs/TOOL-HUNT.md",
+    "validate_script": "scripts/validate-tooling-ledger.mjs"
+  },
   "import_waves": {
     "wave_1": [
       "agent/pain-shoppers/pos/toast.json",

@@ -18,6 +18,7 @@ You give mindset and direction. Agents wire the stack.
 2. **Teach labels** — keep / reject / wrong_pain when agents surface leads.
 3. **Approve outreach** — nothing sends without your OK via approvals MCP.
 4. **Steer waves** — wave 1 POS + marketplaces + core silos first; expand when quality holds.
+5. **Stay ahead on tools** — read the weekly **Beyond the Hunt** brief (`docs/TOOL-HUNT.md`). Authenticate Mem0 / Context when asked; approve pilots; optionally create the Cursor Automation so research runs every Monday with memories.
 
 You do **not** connect APIs, paste MCP URLs, or hand-wire Postgres.
 

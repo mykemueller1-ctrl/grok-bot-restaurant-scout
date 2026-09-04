@@ -40,7 +40,7 @@ jobs:
           test -f scripts/codex-cloud-setup.sh
           test -f stack/github-secrets.manifest.json
           python3 -c "import json; m=json.load(open('stack/github-secrets.manifest.json')); assert m['codex_cloud_environment']['repo'].endswith('grok-bot-restaurant-scout')"
-          python3 -c "import json; w=json.load(open('stack/wiring.json')); assert 'codex_cloud' in w and 'cloudflare' in w"
+          python3 -c "import json; w=json.load(open('stack/wiring.json')); assert 'codex_cloud' in w and 'cloudflare' in w and 'tool_hunt' in w"
 
   swarm:
     runs-on: ubuntu-latest
@@ -57,3 +57,18 @@ jobs:
         with:
           node-version: "20"
       - run: bash scripts/codex-cloud-setup.sh
+
+  tool-hunt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/validate-tooling-ledger.mjs
+      - name: Tool hunt docs + agent present
+        run: |
+          test -f docs/TOOL-HUNT.md
+          test -f agent/tool-hunt/beyond-the-hunt.json
+          test -f stack/tooling-ledger.json
+          test -f routines/tool-hunt-weekly.json

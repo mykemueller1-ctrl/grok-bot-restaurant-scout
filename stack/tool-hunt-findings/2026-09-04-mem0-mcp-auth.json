@@ -1,0 +1,19 @@
+{
+  "finding_id": "mem0-mcp-auth-gap-2026-09",
+  "lane": "memory",
+  "name": "Mem0 MCP (needs auth)",
+  "vendor_or_project": "Mem0",
+  "urls": [
+    "https://docs.mem0.ai/platform/mem0-mcp"
+  ],
+  "what_it_does": "Hosted MCP memory tools (add/search/update/delete) so agents persist facts across sessions; widely integrated in agent frameworks.",
+  "how_competitors_use_it": "Teams use Mem0 as the default semantic memory layer across Cursor/Claude Desktop via MCP; OpenMemory-style sharing across tools is a common pattern.",
+  "what_we_use_today": "teach_memory + VendorLearnedBank in-repo; Mem0 MCP listed but needsAuth in this environment.",
+  "gap": "Cannot persist cross-session ops memory until Mem0 is authenticated.",
+  "pivot_speed": "hours",
+  "verdict": "needs_auth",
+  "priority": 1,
+  "summary": "Highest-leverage unlock already in the stack — authenticate Mem0; keep teach_memory as GTM source of truth.",
+  "operator_ask": "Authenticate Mem0 MCP in Cursor (do not paste tokens in chat).",
+  "researched_at": "2026-09-04"
+}

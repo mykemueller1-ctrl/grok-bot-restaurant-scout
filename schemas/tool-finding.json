@@ -1,0 +1,54 @@
+{
+  "$schema_name": "ToolFinding",
+  "description": "One frontier tooling finding from Beyond the Hunt. Compare against stack/tooling-ledger.json before recommending adopt/watch/skip.",
+  "required": ["finding_id", "lane", "name", "verdict", "summary", "researched_at"],
+  "properties": {
+    "finding_id": {
+      "type": "string",
+      "description": "slug e.g. memory-zep-graphiti-2026-09"
+    },
+    "lane": {
+      "type": "string",
+      "enum": [
+        "cursor_agents",
+        "memory",
+        "skills_knowledge",
+        "mcp_connectors",
+        "competitor_stacks",
+        "orchestration",
+        "other"
+      ]
+    },
+    "name": { "type": "string" },
+    "vendor_or_project": { "type": "string" },
+    "urls": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "what_it_does": { "type": "string" },
+    "how_competitors_use_it": { "type": "string" },
+    "what_we_use_today": { "type": "string" },
+    "gap": { "type": "string" },
+    "pivot_speed": {
+      "type": "string",
+      "enum": ["hours", "days", "weeks"],
+      "description": "How fast we could adopt if Myke says go"
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["adopt", "pilot", "watch", "skip", "needs_auth"]
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1 = do now, 5 = background watch"
+    },
+    "summary": { "type": "string" },
+    "operator_ask": {
+      "type": "string",
+      "description": "Single concrete ask for Myke, or empty if none"
+    },
+    "researched_at": { "type": "string", "format": "date" }
+  }
+}

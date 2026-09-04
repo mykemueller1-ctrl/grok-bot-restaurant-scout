@@ -13,13 +13,16 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `agent/restaurant-scout.json` | Love → buy-now scout |
 | `agent/pain-shoppers/` | 238 vendor pain-shopper agents |
 | `agent/report-ops/` | Parent / teacher / sub agents for labor · sales · inventory reports |
+| `agent/tool-hunt/` | Beyond the Hunt — Cursor/memory/skills/competitor tooling scout |
 | `mcp/` | MCP connector definitions (env-based URLs) |
 | `services/pain-leads-api/` | Self-contained Fastify MCP API |
 | `stack/wiring.json` | Canonical URLs, secrets map, import waves |
+| `stack/tooling-ledger.json` | What we use vs competitors (agents, memory, skills, MCP) |
 | `render.yaml` | Render Blueprint (Postgres + API) |
 | `docs/OPERATOR.md` | Operator playbook |
 | `docs/CODEX-CLOUD.md` | GitHub ↔ Codex Cloud connect steps |
 | `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
+| `docs/TOOL-HUNT.md` | Continuous AI tooling research loop |
 
 ## Build / validate
 
@@ -35,6 +38,9 @@ cd services/pain-leads-api && npm install && npm run build
 
 # Resolve MCP secret bundle (uses NEVER86_API_URL + MCP_API_TOKEN)
 node scripts/resolve-mcp-config.mjs
+
+# Tooling ledger + Beyond the Hunt findings
+node scripts/validate-tooling-ledger.mjs
 ```
 
 ## Secrets (never commit)
@@ -59,7 +65,8 @@ Fallback only: Render Blueprint (`render.yaml`). Do not use Supabase unless the 
 - Commit API tokens or Cloudflare tokens
 - Ask the operator to manually wire `DATABASE_URL` when Blueprint `fromDatabase` works
 - Expand beyond wave 1 imports until teach quality is stable
-- Change agent purpose away from Never86 love → buy-now / pain → sales-lead
+- Change GTM agent purpose away from Never86 love → buy-now / pain → sales-lead
+- Skip weekly tooling frontier scans when AI platforms are shipping weekly
 
 ## Done means
 
@@ -67,3 +74,4 @@ Fallback only: Render Blueprint (`render.yaml`). Do not use Supabase unless the 
 - `AGENTS.md` + `docs/CODEX-CLOUD.md` present for Codex Cloud
 - Secrets manifest matches what GitHub / Codex / Render expect
 - Health endpoint documented; MCP paths match `stack/wiring.json`
+- `stack/tooling-ledger.json` validates; Beyond the Hunt routine + skills present
