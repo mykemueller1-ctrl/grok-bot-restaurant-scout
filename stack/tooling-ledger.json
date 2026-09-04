@@ -87,7 +87,7 @@
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
-    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔script↔catalog per market)",
+    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔guest-fee↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",

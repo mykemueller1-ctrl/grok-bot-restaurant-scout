@@ -328,3 +328,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added pain-to-sales-guest-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json.
 - validate-guest-fee-dogfood.mjs ≥5; CI wired. Contrasts diner tech fees vs Shop ~6% + Marketplace rent.
 - Ledger v1.47.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (market-coverage includes guest-fee)
+
+- validate-market-coverage chain now love→keep-grader→social-shop→guest-fee→script-draft→catalog-sync.
+- Ledger v1.48.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

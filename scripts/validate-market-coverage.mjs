@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Validate 5-market chain alignment:
- * love-brands ↔ keep-grader dogfood ↔ buy-now script-draft ↔ catalog-sync.
+ * love-brands ↔ keep-grader ↔ social-shop ↔ guest-fee ↔ buy-now script-draft ↔ catalog-sync.
  * Ensures CHI/ATX/MIA/BNA/DEN stay paired by market + yelp_alias.
  * Exit 0 if all 5 markets are fully covered; else 1.
  * No network. No secrets. Not forecasting.
