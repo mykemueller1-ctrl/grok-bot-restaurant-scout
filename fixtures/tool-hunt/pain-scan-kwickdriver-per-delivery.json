@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "KwickDriver $2 flat fee per delivery KEEP pain",
+  "hits": [
+    {
+      "url": "https://kwickos.com/platform/delivery.html",
+      "posted_at": "2026-09-04",
+      "handle": "kwickdriver_pricing",
+      "snippet": "KwickDriver charges a flat $2 fee per delivery plus $6.99 per 5 miles under first-party OO vs DoorDash Marketplace 25% KEEP; restaurant owners still pay per-delivery platform/dispatch fees after quitting commission rent",
+      "pain_id": "kwickdriver_2_flat_delivery",
+      "score": 100,
+      "never86_angle": "KwickDriver $2/delivery is still per_order/dispatch platform rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: kwickos.com/platform/delivery \u2014 $2 flat fee per delivery + $6.99/5mi. Distinct from KwickMenu 0% OO. Skip forecasting."
+}

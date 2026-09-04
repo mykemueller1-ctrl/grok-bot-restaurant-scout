@@ -1,5 +1,5 @@
 {
-  "version": "1.84.0",
+  "version": "1.85.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -129,7 +129,8 @@
     "deonde_fee_dogfood_gate": "scripts/validate-deonde-fee-dogfood.mjs (Deonde Express $0.10/order overage \u2192 SalesLead \u22655 markets)",
     "uber_webshop_fee_dogfood_gate": "scripts/validate-uber-webshop-fee-dogfood.mjs (Uber Webshop 2.5%+$0.29 processing \u2192 SalesLead \u22655 markets)",
     "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap \u2192 SalesLead \u22655 markets)",
-    "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)"
+    "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)",
+    "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -655,12 +656,13 @@
     {
       "name": "KwickOS",
       "lane": "vertical_gtm",
-      "stack": "Restaurant POS (~$59/mo/terminal) with built-in KwickMenu commission-free branded online ordering; optional KwickDriver flat dispatch fees",
+      "stack": "Restaurant POS with built-in KwickMenu commission-free branded OO; KwickDriver flat $2 fee per delivery + $6.99 per 5 miles",
       "memory": "POS-owned guest/order history for loyalty",
-      "edge": "POS-bundled 0% OO KEEP peer \u2014 not TikTok Shop-native; contrast dual-run vs Marketplace rent",
+      "edge": "Published $2/delivery dispatch under first-party KEEP claim \u2014 Uber Direct-class peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://kwickos.com/blog/commission-free-online-ordering.html",
+        "https://kwickos.com/platform/delivery.html",
         "https://kwickos.com/platform/online-ordering.html"
       ]
     },
@@ -1069,6 +1071,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "KwickDriver $2/delivery SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN KwickDriver $2 flat fee per delivery (+ $6.99/5mi) on kwickos.com/platform/delivery \u2192 SalesLead vs Shop ~6%; per_order_platform_fee widened for per-delivery; validate-kwickdriver-fee-dogfood \u22655; strong_keep 56",
+      "verdict": "adopt"
+    },
     {
       "item": "Gegsy Starter $0.40/$1.00 per-order SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",

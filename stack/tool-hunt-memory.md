@@ -558,3 +558,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [gegsy.com/pricing](https://gegsy.com/pricing): Starter Pickup **$0.40** / Delivery **$1.00** per order (Pro $0.20/$1.00; catering 2%/1%) under commission-free Square claim.
 - pain-scan-gegsy-per-order.json → strong_keep **55**; pain-to-sales-gegsy-fee-* ×5; validate-gegsy-fee-dogfood ≥5. Orda/Orderitto-class.
 - Ledger v1.84.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (KwickDriver $2/delivery SalesLead)
+
+- Primary [kwickos.com/platform/delivery](https://kwickos.com/platform/delivery.html): **$2** flat fee per delivery + **$6.99**/5 miles under first-party OO.
+- Widened `per_order_platform_fee` for `per delivery` / `flat $N fee`.
+- pain-scan-kwickdriver-per-delivery.json → strong_keep **56**; pain-to-sales-kwickdriver-fee-* ×5; validate-kwickdriver-fee-dogfood ≥5. Distinct from KwickMenu 0% OO watch.
+- Ledger v1.85.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

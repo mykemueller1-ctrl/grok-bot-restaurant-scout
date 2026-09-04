@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-kwickdriver-fee-husk-2026-09-04",
+  "purpose": "KwickDriver $2 flat fee per delivery (+ $6.99/5mi) \u2192 SalesLead DRAFT for Husk (Nashville). Contrasts restaurant-paid per_order_platform_fee under first-party OO vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "KwickDriver $2 flat fee per delivery (+ $6.99 per 5 miles)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%",
+    "own_ordering_keep": "KwickOS/KwickMenu commission-free first-party claim"
+  },
+  "pain_lead": {
+    "pain_id": "kwickdriver_2_flat_delivery",
+    "vendor_id": "kwickos",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Husk",
+      "city": "Nashville",
+      "market": "Nashville, TN",
+      "yelp_alias": "husk-nashville",
+      "love_signal": "Sean Brock Southern cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: KwickOS pitches first-party KEEP OO then KwickDriver bills a flat $2 fee per delivery (+ $6.99 per 5 miles). Husk-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without dispatch KEEP leaks or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "kwickos",
+      "kwickdriver",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-kwickdriver-per-delivery.json",
+      "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "kwickdriver_2_flat_delivery",
+    "account_name": "Husk",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Nashville",
+    "market": "Nashville, TN",
+    "complaint_thesis": "KwickDriver charges a flat $2 fee per delivery plus $6.99 per 5 miles under KwickOS first-party OO \u2014 restaurant-paid per_order_platform_fee / dispatch KEEP leak that still scales with delivery volume. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Sean Brock cult love already prints demand \u2014 close Shop buy-now, not KwickDriver $2/delivery dispatch.",
+    "quotes": [
+      "KwickDriver $2 flat fee per delivery (+ $6.99 per 5 miles)",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "KwickDriver $2/delivery dispatch",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: KwickDriver $2/delivery is still platform rent on first-party tickets; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Sean Brock cult love already prints demand \u2014 close Shop buy-now, not KwickDriver $2/delivery dispatch.",
+    "sources": [
+      "https://kwickos.com/platform/delivery.html",
+      "fixtures/tool-hunt/pain-scan-kwickdriver-per-delivery.json",
+      "https://www.yelp.com/biz/husk-nashville"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 KwickDriver $2/delivery \u2192 SalesLead. Distinct from KwickMenu 0% OO watch. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-kwickdriver-per-delivery.json",
+    "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

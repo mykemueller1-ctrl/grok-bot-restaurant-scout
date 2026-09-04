@@ -1,0 +1,12 @@
+{
+  "finding_id": "kwickdriver-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "KwickDriver $2/delivery SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary kwickos.com/platform/delivery $2 flat fee per delivery (+ $6.99/5mi) → pain-to-sales-kwickdriver-fee-* ×5; strong_keep 56.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://kwickos.com/platform/delivery.html"
+  ]
+}
