@@ -992,3 +992,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **FoodChow** + **Snappy** GloriaFood successors (0% direct OO; Snappy OO from $79/mo). EOL primary stays **Apr 30 2027** (Snappy blogs say Mar 31 — conflict noted). Finding: `2026-09-04-foodchow-snappy-gloriafood.json`.
 - Reconfirmed BentoBox Meta Order Food Help 412673 — peer_count stays 9. Finding: `2026-09-04-bentobox-meta-order-food-reconfirm.json`.
 - Ledger v1.92.58. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Toast/Zyda Meta + Queek/SyncGTM)
+
+- Reconfirmed Toast OO + Zyda Meta Order Food paths — peer_count stays 9. Finding: `2026-09-04-toast-zyda-meta-reconfirm.json`.
+- Watched **Queek** (WA/IG commerce inbox AI, NG restaurants) + **Sync GTM** Cursor MCP enrich. Finding: `2026-09-04-queek-syncgtm-peers.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_efLtwWNy2dYc (~10 min).
+- Ledger v1.92.59. Auth still blocked for unlock READY.

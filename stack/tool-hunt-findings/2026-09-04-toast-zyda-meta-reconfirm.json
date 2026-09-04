@@ -1,0 +1,18 @@
+{
+  "finding_id": "toast-zyda-meta-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Toast OO + Zyda Meta Order Food path reconfirm",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Live 2026-09-04: Toast Support article still live (last updated Jul 7 2026) — IG Order food partner select Toast + FOOD ORDERS sticker + FB Start Order / Shop Now with Toast OO or eGift links. Zyda Help still documents Facebook Business Extension Order Food button (IG/dashboard/Meta Business Manager paths → Zyda first-party store). peer_count stays 9. Fee pause — GTM watch only.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook",
+    "https://help.zyda.com/en/setting-up-facebook-business-extension-order-food-button",
+    "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta"
+  ],
+  "meta_order_food_peer_count": 9,
+  "peers_touched": ["Toast Online Ordering", "Zyda"],
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting. Does not inflate peer_count."
+}

@@ -1,0 +1,20 @@
+{
+  "finding_id": "queek-syncgtm-peers-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Queek chat-commerce + Sync GTM Cursor MCP watches",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Queek (usequeek.com): unified WA/IG/Messenger commerce inbox + catalog-aware AI Agent → in-thread checkout (Paystack); restaurants & home kitchens called out; NG/Africa skew (Port Harcourt delivery live). TextOrder/Mirar/Ordr-class DM buy-now peer — not Meta FBE. Sync GTM: Cursor MCP (api.syncgtm.com/mcp) for contact enrich / outbound while coding — skills_knowledge peer to Apollo/Clay/Zapier GTM skills; OAuth desktop. Watch only — Never86 wedge stays in-app Shop + pain→sales Yelp path.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://usequeek.com/channels/inbox",
+    "https://usequeek.com/business/orders",
+    "https://docs.syncgtm.com/mcp_server/setup/cursor"
+  ],
+  "lanes": {
+    "queek": "vertical_gtm",
+    "syncgtm": "skills_knowledge"
+  },
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not Meta FBE — do not bump peer_count. Not fee dogfood. Not forecasting. SyncGTM is GTM enrich tooling, not restaurant OO."
+}
