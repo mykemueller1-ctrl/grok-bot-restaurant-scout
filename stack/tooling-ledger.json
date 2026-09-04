@@ -1217,6 +1217,12 @@
   ],
   "watchlist": [
     {
+      "item": "Yelp phone enrich Active for pain→sales (Franklin ATX)",
+      "lane": "vertical_gtm",
+      "why": "YELP_SEARCH_BY_PHONE resolves love-seed phone → venue identity without Apollo/Clay; CI gates weekly status_snapshot",
+      "verdict": "adopt"
+    },
+    {
       "item": "Weekly gate starts with Beyond the Hunt status snapshot",
       "lane": "cursor_agents",
       "why": "run-tool-hunt-week.mjs prints status_snapshot (auth/love/fee/watches) before auth gaps; Automation prompt includes Zyda",
@@ -2426,5 +2432,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:12:00Z"
+  "updated_at": "2026-09-04T19:15:00Z"
 }
