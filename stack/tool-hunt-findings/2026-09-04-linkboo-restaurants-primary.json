@@ -1,0 +1,34 @@
+{
+  "finding_id": "linkboo-restaurants-primary-2026-09",
+  "lane": "vertical_gtm",
+  "name": "linkboo for restaurants primary (Toast/Resy/delivery cliffs)",
+  "vendor_or_project": "linkboo",
+  "verdict": "watch",
+  "priority": 1,
+  "summary": "link.boo/for/restaurants primary names cookie/Apple Pay/universal-link breaks for Resy·OpenTable·Tock·SevenRooms, Toast·Square·ChowNow·BentoBox OO, and DoorDash·UberEats deep links inside social webviews. Confirms Never86 Shop wedge. Watch only.",
+  "what_it_does": "Restaurant-specific webview-escape link wrapper for booking + OO + delivery destinations.",
+  "gap": "Morning-scan / sales-lead already teach cliffs; cite restaurants primary alongside small-business page.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://link.boo/for/restaurants",
+    "https://link.boo/for/small-business",
+    "stack/tool-hunt-findings/2026-09-04-linkboo-webview-reverify.json"
+  ],
+  "broken_destinations_cited": [
+    "Resy",
+    "OpenTable",
+    "Tock",
+    "SevenRooms",
+    "Toast",
+    "Square Online",
+    "ChowNow",
+    "BentoBox",
+    "DoorDash",
+    "UberEats",
+    "Grubhub"
+  ],
+  "never86_wedge": "in-app Shop buy-now avoids bio→webview conversion cliff",
+  "not_this": "Not a fee dogfood. Not forecasting."
+}

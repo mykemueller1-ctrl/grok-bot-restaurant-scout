@@ -1,0 +1,24 @@
+{
+  "finding_id": "nullmark-webview-escape-2026-09",
+  "lane": "vertical_gtm",
+  "name": "NullMark — Instagram/TikTok IAB escape (Apple Pay restore)",
+  "vendor_or_project": "NullMark",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "NullMark smart links detect Instagram/TikTok/Facebook in-app browsers (WKWebView) and force Safari/Chrome so Payment Request API (Apple Pay / Google Pay) works. Primary cites 30–50% checkout drop when Apple Pay missing. Peer to linkboo webview escape — sharpens Never86 in-app Shop wedge (no bio→webview handoff). Watch only — not fee dogfood.",
+  "what_it_does": "Smart-link redirect that escapes social IABs to the system browser in <200ms, restoring Apple Pay, cookies, and payment iframes.",
+  "how_competitors_use_it": "Creators/merchants replace IG bio / Story / DM links with NullMark URLs so checkout doesn't die in Meta webviews.",
+  "what_we_use_today": "Never86 in-app Shop buy-now avoids the bio→webview cliff entirely; linkboo already watched for Toast/Resy cliffs.",
+  "gap": "GTM skills should name NullMark beside linkboo when bio rails are Toast/Square/Shopify/OpenTable/Resy.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://nullmark.tech/guides/apple-pay-in-app-browser",
+    "https://nullmark.tech/fix/instagram-payment-not-working",
+    "https://nullmark.tech/",
+    "https://www.shipit.buzz/products/nullmark"
+  ],
+  "never86_wedge": "in-app Shop buy-now avoids bio→webview conversion cliff",
+  "not_this": "Not a fee dogfood. Not forecasting. Not a Meta FBE peer."
+}

@@ -1,5 +1,5 @@
 {
-  "version": "1.92.37",
+  "version": "1.92.38",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -541,7 +541,20 @@
       "edge": "Proves viral love\u2192order dies in webviews; Never86 in-app Shop avoids the handoff cliff \u2014 watch for GTM messaging",
       "updated": "2026-09-04",
       "sources": [
-        "https://link.boo/for/restaurants"
+        "https://link.boo/for/restaurants",
+        "https://link.boo/for/small-business"
+      ]
+    },
+    {
+      "name": "NullMark",
+      "lane": "vertical_gtm",
+      "stack": "Smart-link IAB escape \u2014 detects Instagram/TikTok/Facebook WKWebView and forces Safari/Chrome so Apple Pay / Google Pay (Payment Request API) works",
+      "memory": "n/a (link infra)",
+      "edge": "linkboo peer for bio\u2192webview checkout cliff; Never86 Shop avoids handoff \u2014 watch only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://nullmark.tech/guides/apple-pay-in-app-browser",
+        "https://nullmark.tech/fix/instagram-payment-not-working"
       ]
     },
     {
@@ -1244,6 +1257,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "NullMark Instagram/TikTok IAB escape (Apple Pay)",
+      "lane": "vertical_gtm",
+      "why": "nullmark.tech primary: WKWebView blocks Payment Request API; smart-link forces Safari/Chrome \u2014 peer to linkboo; Shop wedge",
+      "verdict": "watch"
+    },
+    {
+      "item": "linkboo for restaurants primary (Toast/Resy/delivery)",
+      "lane": "vertical_gtm",
+      "why": "link.boo/for/restaurants cites Resy/OpenTable/Tock + Toast/Square/ChowNow/BentoBox + DoorDash/UberEats webview cliffs",
+      "verdict": "watch"
+    },
+    {
+      "item": "GTM skills teach NullMark beside linkboo webview cliffs",
+      "lane": "skills_knowledge",
+      "why": "morning-scan / sales-lead / rival-watch / frontier-scan + social unlocks name NullMark + restaurants primary",
+      "verdict": "adopt"
+    },
     {
       "item": "morning-scan + sales-lead teach linkboo Toast/Resy webview cliff",
       "lane": "skills_knowledge",

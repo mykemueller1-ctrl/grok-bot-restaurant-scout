@@ -844,3 +844,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - morning-scan + sales-lead-form teach Toast/Square/ChowNow/OpenTable/Resy bio→webview cliffs + LinkScale/FOSA. Finding: `2026-09-04-morning-scan-linkboo-cliff-teach.json`.
 - DirectOrders IG DM/WhatsApp/ChatGPT + RAY IG delivery still live. Finding: `2026-09-04-directorders-ray-reverify.json`.
 - Ledger v1.92.37. Auth still blocked for unlock READY.
+
+### 2026-09-04 (NullMark IAB escape + linkboo restaurants primary)
+
+- Watched NullMark smart-link IAB escape (Apple Pay / Payment Request API restore in Safari/Chrome). Findings: `2026-09-04-nullmark-webview-escape.json`.
+- Re-cited link.boo/for/restaurants (Toast/Resy/Tock + delivery deep-link cliffs). Finding: `2026-09-04-linkboo-restaurants-primary.json`.
+- Taught NullMark beside linkboo in morning-scan / sales-lead / rival-watch / frontier-scan + social unlocks.
+- Instagram reconnect: `lk_Nkytnvh45r-q` (~10 min). Ledger v1.92.38. Auth still blocked.
