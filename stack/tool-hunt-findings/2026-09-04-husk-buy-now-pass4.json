@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-husk-buy-now-pass4",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.67",
+  "sources": [
+    {
+      "url": "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+      "title": "Book Your Husk Nashville Reservation Now on Resy",
+      "fetched_via": "composio_search_fetch",
+      "note": "Resy booking page live"
+    },
+    {
+      "url": "https://www.toasttab.com/husk-nashville/findcard",
+      "title": "Husk Nashville — Toast Find Card",
+      "fetched_via": "composio_search_fetch",
+      "note": "Toast gift-card balance/add-value live; no public Toast OO URL"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Husk buy_now_path pass-4: Resy + Toast gift-card still live; takeout still absent (no Toast OO). Yelp 1987. Resy/Toast = webview cliff teach.",
+  "teach": {
+    "label": "husk_buy_now_path_pass4",
+    "rails": ["resy_reservations", "toast_gift_card"],
+    "yelp_reviews": 1987
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now", "webview cliff teach"],
+    "no": ["reinstate takeout without Toast OO URL"]
+  }
+}

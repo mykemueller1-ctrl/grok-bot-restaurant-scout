@@ -1,0 +1,37 @@
+{
+  "id": "2026-09-04-franklin-buy-now-pass5",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.67",
+  "sources": [
+    {
+      "url": "https://preorder.franklinbbq.com/",
+      "title": "Franklin Curbside Pickup",
+      "fetched_via": "composio_search_fetch",
+      "note": "Preorder pickup calendar live (Sep–Oct windows)"
+    },
+    {
+      "url": "https://shop.franklinbbq.com/",
+      "title": "Franklin Barbecue Store — Shopify",
+      "fetched_via": "composio_search_fetch",
+      "note": "Shopify merch/sauces/e-gift live; Goldbelly ship CTA"
+    },
+    {
+      "url": "https://www.goldbelly.com/restaurants/franklin-barbecue",
+      "title": "Franklin Barbecue — Goldbelly",
+      "fetched_via": "composio_search_fetch",
+      "note": "Nationwide ship storefront live"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Franklin buy_now_path pass-5: preorder + Shopify + Goldbelly still live. Yelp 6477. ATX love calibration holds.",
+  "teach": {
+    "label": "franklin_buy_now_path_pass5",
+    "rails": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+    "yelp_reviews": 6477
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now calibration"],
+    "no": ["forecasting", "fee dogfood"]
+  }
+}

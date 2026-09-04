@@ -1,6 +1,6 @@
 {
   "seed_id": "nashville-love-brands-yelp-2026-09-04",
-  "purpose": "Fourth-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "purpose": "Fourth-market calibration for morning-scan love\u2192buy-now (chef/cult brands). Not forecasting.",
   "market": "Nashville, TN",
   "brands": [
     {
@@ -9,27 +9,35 @@
       "phone": "+16152566565",
       "rating": 3.9,
       "review_count": 1987,
-      "transactions": ["delivery"],
+      "transactions": [
+        "delivery"
+      ],
       "love_signal": "Sean Brock Southern destination / high UGC volume / Rutledge St cult",
-      "never86_fit": "Chef-loved Southern brand → TikTok/IG shoppable SKUs vs marketplace delivery rent",
+      "never86_fit": "Chef-loved Southern brand \u2192 TikTok/IG shoppable SKUs vs marketplace delivery rent",
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 3.9,
         "review_count": 1987,
         "price": "$$$",
-        "transactions": ["delivery"]
+        "transactions": [
+          "delivery"
+        ]
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04T21:05Z",
+        "reverified_at": "2026-09-04T21:30Z",
         "website": "http://www.husknashville.com/",
-        "rails": ["resy_reservations", "toast_gift_card"],
-        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) — Toast/Resy lock-in = webview cliff teach; Shop for social SKUs. Pass-3: Resy + Toast findcard still live; no public Toast OO — takeout rail dropped.",
+        "rails": [
+          "resy_reservations",
+          "toast_gift_card"
+        ],
+        "note": "Resy booking + Toast gift-card rail (toasttab.com/husk-nashville/findcard) \u2014 Toast/Resy lock-in = webview cliff teach; Shop for social SKUs. Pass-3: Resy + Toast findcard still live; no public Toast OO \u2014 takeout rail dropped. Pass-4: Resy + Toast findcard still live; no Toast OO.",
         "sources": [
           "http://www.husknashville.com/",
           "https://www.toasttab.com/husk-nashville/findcard",
           "https://resy.com/cities/nashville-tn/venues/husk-nashville",
-          "stack/tool-hunt-findings/2026-09-04-husk-buy-now-pass3.json"
+          "stack/tool-hunt-findings/2026-09-04-husk-buy-now-pass3.json",
+          "stack/tool-hunt-findings/2026-09-04-husk-buy-now-pass4.json"
         ]
       }
     },
@@ -40,8 +48,8 @@
       "rating": 4.5,
       "review_count": 522,
       "transactions": [],
-      "love_signal": "Chef’s-counter destination / no Yelp marketplace transactions",
-      "never86_fit": "Viral tasting-counter love → limited-drop buy-now without DoorDash rails"
+      "love_signal": "Chef\u2019s-counter destination / no Yelp marketplace transactions",
+      "never86_fit": "Viral tasting-counter love \u2192 limited-drop buy-now without DoorDash rails"
     },
     {
       "name": "Henrietta Red",
@@ -51,7 +59,7 @@
       "review_count": 644,
       "transactions": [],
       "love_signal": "Germantown oyster/chef cult / first-party-leaning (no marketplace txs on Yelp)",
-      "never86_fit": "Local love → social commerce close before OPA!/SWIPEBY web OS"
+      "never86_fit": "Local love \u2192 social commerce close before OPA!/SWIPEBY web OS"
     },
     {
       "name": "Rolf and Daughters",
@@ -59,13 +67,15 @@
       "phone": "+16158669897",
       "rating": 4.3,
       "review_count": 1139,
-      "transactions": ["delivery"],
+      "transactions": [
+        "delivery"
+      ],
       "love_signal": "Germantown New American destination / strong review volume",
-      "never86_fit": "Cult kitchen with delivery present — re-route social demand to owned buy-now"
+      "never86_fit": "Cult kitchen with delivery present \u2014 re-route social demand to owned buy-now"
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Husk / Catbird Seat / Bastion / Henrietta Red) 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Husk Nashville 1987 reviews",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 \u2014 Husk Nashville 1987 reviews",
   "status": "calibration_only",
   "notes": "Prefer chef/cult narrative + review volume. Bastion/Noko watched but skipped for seed (lower volume / less clear buy-now SKU path)."
 }

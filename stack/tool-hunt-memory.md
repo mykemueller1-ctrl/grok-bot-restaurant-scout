@@ -1053,3 +1053,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **Yumzip** IN WA ordering (0%). Finding: `2026-09-04-yumzip-wa-ordering.json`.
 - Ledger v1.92.66. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Franklin/Husk/Rioja pass + Deliverect/Flipdish + Enatega/LocalLeads)
+
+- Adopted Franklin **buy_now_path** pass-5 — preorder + Shopify + Goldbelly. Finding: `2026-09-04-franklin-buy-now-pass5.json`.
+- Adopted Husk **buy_now_path** pass-4 — Resy + Toast gift. Finding: `2026-09-04-husk-buy-now-pass4.json`.
+- Adopted Rioja **buy_now_path** pass-4 — Flavor Dojo + phone. Finding: `2026-09-04-rioja-buy-now-pass4.json`.
+- Reconfirmed Deliverect + Flipdish Meta paths — peer_count stays 9. Finding: `2026-09-04-deliverect-flipdish-meta-reconfirm.json`.
+- Watched **Enatega** GloriaFood white-label + **LocalLeads** Cursor MCP. Findings: `2026-09-04-enatega-gloriafood-watch.json`, `2026-09-04-localleads-cursor-mcp.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_zl6EuHZYhk3Z (~10 min).
+- Ledger v1.92.67. Auth still blocked for unlock READY.
+

@@ -1,0 +1,25 @@
+{
+  "id": "2026-09-04-rioja-buy-now-pass4",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.67",
+  "sources": [
+    {
+      "url": "https://www.riojadenver.com/menus/carryout/",
+      "title": "carryout | Rioja — Flavor Dojo",
+      "fetched_via": "composio_search_fetch",
+      "note": "Flavor Dojo in-person pickup + phone reservations still live on riojadenver.com"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Rioja buy_now_path pass-4: Flavor Dojo carryout + phone reservations still live on riojadenver.com. Yelp 2915. riorestaurant.com remains parked — ignore.",
+  "teach": {
+    "label": "rioja_buy_now_path_pass4",
+    "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
+    "yelp_reviews": 2915
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now calibration"],
+    "no": ["use parked riorestaurant.com"]
+  }
+}

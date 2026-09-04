@@ -1,0 +1,30 @@
+{
+  "id": "2026-09-04-deliverect-flipdish-meta-reconfirm",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.67",
+  "sources": [
+    {
+      "url": "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+      "title": "Deliverect Direct Suite — Instagram Order Food button + stickers",
+      "fetched_via": "composio_search_web",
+      "note": "Direct Suite Instagram Sales channels path still documented"
+    },
+    {
+      "url": "https://help.flipdish.com/en/articles/9585449-link-to-your-flipdish-online-ordering-page-directly-from-instagram-posts",
+      "title": "Flipdish — Instagram Stickers bounce URL",
+      "fetched_via": "composio_search_fetch",
+      "note": "bounce.flipdish.com/{appid} still required for IG stickers (updated Jun 4 2025)"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Deliverect Direct Suite IG Order Food + Flipdish bounce.flipdish.com sticker paths still live. Reinforces FBE peer set; meta_order_food_peer_count stays 9 (contrast Kyte degraded FBE).",
+  "teach": {
+    "label": "deliverect_flipdish_meta_paths_hold",
+    "peer_count_impact": "none — already counted"
+  },
+  "mission_lock": {
+    "yes": ["Meta FBE peer reconfirm"],
+    "no": ["inflate peer_count"]
+  }
+}

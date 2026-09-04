@@ -37,13 +37,14 @@
           "shopify_merch",
           "goldbelly_ship"
         ],
-        "reverified_at": "2026-09-04T22:15Z",
-        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch — Never86 Shop can close feed love into SKU packs. Pass-4: preorder.franklinbbq.com + Shopify store + Goldbelly ship still live.",
+        "reverified_at": "2026-09-04T21:30Z",
+        "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch \u2014 Never86 Shop can close feed love into SKU packs. Pass-4: preorder.franklinbbq.com + Shopify store + Goldbelly ship still live. Pass-5: preorder + Shopify + Goldbelly still live.",
         "sources": [
           "https://preorder.franklinbbq.com/",
           "https://shop.franklinbbq.com/",
           "https://www.goldbelly.com/restaurants/franklin-barbecue",
-          "stack/tool-hunt-findings/2026-09-04-franklin-buy-now-pass4.json"
+          "stack/tool-hunt-findings/2026-09-04-franklin-buy-now-pass4.json",
+          "stack/tool-hunt-findings/2026-09-04-franklin-buy-now-pass5.json"
         ]
       }
     },

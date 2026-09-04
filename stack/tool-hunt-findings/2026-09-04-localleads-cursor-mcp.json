@@ -1,0 +1,25 @@
+{
+  "id": "2026-09-04-localleads-cursor-mcp",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.67",
+  "sources": [
+    {
+      "url": "https://leads.postorbit.io/integrations/cursor",
+      "title": "LocalLeads for Cursor — MCP server for the AI IDE",
+      "fetched_via": "composio_search_fetch",
+      "note": "Hosted MCP https://leadsapi.postorbit.io/mcp — local/venue lead search+enrich inside Cursor"
+    }
+  ],
+  "verdict": "watch",
+  "category": "skills_knowledge",
+  "summary": "LocalLeads (PostOrbit) Cursor MCP targets local business prospecting — closer to restaurant venue ICP than generic B2B enrich. Watch beside mateor96/LeadMagic/DataLayer; Yelp phone enrich stays Active primary for 5 love markets.",
+  "teach": {
+    "label": "localleads_cursor_mcp_venue_enrich_watch",
+    "peers": ["mateor96-gtm-agent-skills", "leadmagic-cursor", "datalayer-mcp", "apollo-composio"],
+    "status_note": "Yelp phone enrich remains Active primary"
+  },
+  "mission_lock": {
+    "yes": ["pain→sales-lead", "Cursor MCP", "local/venue ICP"],
+    "no": ["forecasting", "fee catalog"]
+  }
+}

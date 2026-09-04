@@ -1,5 +1,5 @@
 {
-  "version": "1.92.66",
+  "version": "1.92.67",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Franklin/Husk/Rioja buy_now_path pass-4/5",
+      "lane": "vertical_gtm",
+      "why": "ATX preorder+Shopify+Goldbelly; BNA Resy+Toast gift; DEN Flavor Dojo+phone — love rails hold (Yelp 6477/1987/2915)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Deliverect + Flipdish Meta Order Food reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Deliverect Direct Suite IG path + Flipdish bounce.flipdish.com still live — peer_count stays 9 (contrast Kyte FBE degraded)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Enatega GloriaFood white-label + LocalLeads Cursor MCP",
+      "lane": "vertical_gtm",
+      "why": "Enatega one-time source-code GloriaFood successor (EOL Apr 30 primary); LocalLeads local/venue Cursor MCP enrich — fee pause; Yelp phone stays Active",
+      "verdict": "watch"
+    },
     {
       "item": "G&TG reservation_skew pass-5 + Michaels leak pass-6",
       "lane": "vertical_gtm",
