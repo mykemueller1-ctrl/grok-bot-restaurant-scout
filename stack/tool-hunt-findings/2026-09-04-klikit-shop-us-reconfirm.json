@@ -1,0 +1,18 @@
+{
+  "finding_id": "klikit-tiktok-shop-us-food-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Klikit TikTok Shop US food-delivery guide reconfirm",
+  "vendor_or_project": "Klikit",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "klikit.io US TikTok Shop food guide (May 2026) still live: seller.tiktok.com → menu/SKU imagery → self-fulfill or 3PL delivery. Reinforces Never86 love→buy-now Shop rail + Klikit Shop→POS middleware watch. Not a new FBE peer; grader social_fee_pct stays 6.",
+  "what_it_does": "Documents restaurant path onto TikTok Shop US for food SKUs / delivery handoff.",
+  "gap": "APAC POS peer still secondary for US GTM",
+  "pivot_speed": "days",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://klikit.io/en/learn/tiktok-shop-food-delivery-us"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting."
+}

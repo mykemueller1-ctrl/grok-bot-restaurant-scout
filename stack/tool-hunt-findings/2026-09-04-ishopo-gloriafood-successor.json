@@ -1,0 +1,26 @@
+{
+  "finding_id": "ishopo-gloriafood-successor-ca-2026-09",
+  "lane": "vertical_gtm",
+  "name": "iShopo GloriaFood successor (CA flat $49–$249, 0%)",
+  "vendor_or_project": "iShopo",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "ishopo.ca: Canadian white-label OO + branded iOS/Android app + loyalty; published pricing $49/$149/$249/mo; 0% commission; POS Square/Toast/Clover/Lightspeed+. GloriaFood migration within 24h claimed. Watch with Menuro/Ressto/Ogent — Canada thematic; not Meta FBE; fee pause.",
+  "what_it_does": "Commission-free branded app/web ordering with POS sync for Canadian independents fleeing GloriaFood EOL.",
+  "how_competitors_use_it": "CA restaurants migrate menus from GloriaFood; white-label reseller path available.",
+  "what_we_use_today": "GloriaFood EOL→Shop wedge; successors Ressto/CloudWaitress/Fleksa/Ogent/Menuro watched",
+  "gap": "Canada-first; not Shop-native US TikTok/IG buy-now",
+  "pivot_speed": "days",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://ishopo.ca/",
+    "https://ishopo.ca/gloriafood-alternative/",
+    "https://ishopo.ca/pricing/"
+  ],
+  "also_noted": [
+    "MenuDirect.ca — CA commission-free peer (tertiary)",
+    "Platesready.com — CA OO with 5% platform fee (first_party_pct_fee; tertiary)"
+  ],
+  "not_this": "Not Meta FBE peer. Not fee dogfood. Not forecasting."
+}

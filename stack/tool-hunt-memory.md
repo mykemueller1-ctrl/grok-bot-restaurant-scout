@@ -917,3 +917,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Pass-3 Yelp: all five primaries unchanged (G&TG 10,731 / Franklin 6,477 / Michaels 2,084 / Husk 1,987 / Rioja 2,914). Finding: `2026-09-04-yelp-5market-stable-pass3.json`.
 - Watched **Menuro** GloriaFood-successor 0% OO + branded app (quote monthly). Finding: `2026-09-04-menuro-gloriafood-successor.json`.
 - Ledger v1.92.48. Auth still blocked for unlock READY.
+
+### 2026-09-04 (iShopo + Klikit Shop US + venue-portals note)
+
+- Watched **iShopo** CA GloriaFood successor ($49/$149/$249 flat, 0%). Finding: `2026-09-04-ishopo-gloriafood-successor.json`.
+- Reconfirmed Klikit US TikTok Shop food guide. Finding: `2026-09-04-klikit-shop-us-reconfirm.json`.
+- Noted non-blocking GitHub status `Vercel – never86-venue-portals` failing — no app in this repo; team Deployments = not required. open_gap `vercel-venue-portals-orphan-status`.
+- Ledger v1.92.49. Auth still blocked for unlock READY.
