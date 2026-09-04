@@ -1,0 +1,17 @@
+{
+  "finding_id": "michaels-leak-reverify-2-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Michael's Genuine brand-site marketplace leak re-verified (pass 2)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio FETCH 2026-09-04: michaelsgenuine.com homepage still lists Order Delivery → UberEats + DoorDash beside takeout CTAs and OpenTable reservations. Confirms brand_site_marketplace_leak + MIA buy_now_path rails. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://michaelsgenuine.com/",
+    "fixtures/tool-hunt/miami-love-brands.json",
+    "fixtures/tool-hunt/pain-scan-brand-site-marketplace-leak.json"
+  ],
+  "rails_confirmed": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
+  "tools_used": ["COMPOSIO_SEARCH_FETCH_URL_CONTENT", "COMPOSIO_SEARCH_WEB"],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

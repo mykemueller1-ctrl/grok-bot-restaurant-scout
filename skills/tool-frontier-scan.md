@@ -8,7 +8,7 @@
 - Cursor Cloud Agents, Automations, Skills, Memories
 - Memory layers that help teach/label + ops memory (Mem0, automation memories; watch Zep/Letta)
 - MCP relevant to GTM / social / approvals / research
-- Vertical rivals: Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, Menami, Seekadu, Klikit (APAC+US), Deliverect/Zyda/ChatFood/BentoBox/Toast/Flipdish/Kyte/Square Online/GloriaFood (IG/FB Order Food), DirectOrders/RAY (IG DM), BiteSight/Smiilen (video marketplace), linkboo (webview escape), OrderPost, Beebz, Seared, Moast, Ainisa, similar
+- Vertical rivals: Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, FOSA (Messenger), Menami, Seekadu, Klikit (APAC+US), Deliverect/Zyda/ChatFood/BentoBox/Toast/Flipdish/Kyte/Square Online/GloriaFood (IG/FB Order Food — FBE peer count 9), Ressto/FoodBooking/Tablevibe (CTA linkers only), Menusso (branded app ≠ Meta Order Food), DirectOrders/RAY (IG DM), BiteSight/Smiilen (video marketplace), CheckIt (Shopify shoppable feeds), linkboo (webview escape), OrderPost, Beebz, Seared, Moast, Ainisa, similar
 
 ### Out of scope (skip / verdict `skip`)
 - Historical sales forecasting products

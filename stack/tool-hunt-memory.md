@@ -826,3 +826,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **Menusso** classified NOT Meta Order Food (branded app 0%) — no peer_count bump. Finding: `2026-09-04-menusso-not-meta-order-food.json`.
 - Watched **FOSA** Messenger ordering + **CheckIt** Shopify shoppable feeds as tertiary love→buy-now peers.
 - Ledger v1.92.34. Auth still blocked.
+
+### 2026-09-04 (Michaels leak re-verify pass 2 + skills sync)
+
+- Live re-fetch michaelsgenuine.com still UberEats + DoorDash on Order Delivery. Finding: `2026-09-04-michaels-leak-reverify-2.json`.
+- `skills/vertical-rival-watch.md` documents Menusso≠Meta, FOSA, CheckIt, CTA linkers + peer_count discipline.
+- Ledger v1.92.35. Auth still blocked for unlock READY.
