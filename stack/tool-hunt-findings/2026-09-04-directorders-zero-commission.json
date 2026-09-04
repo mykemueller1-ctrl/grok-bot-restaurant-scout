@@ -1,0 +1,20 @@
+{
+  "finding_id": "directorders-zero-commission-ig-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DirectOrders — zero-commission ordering + Instagram/WhatsApp channels",
+  "vendor_or_project": "DirectOrders",
+  "urls": [
+    "https://www.directorders.com/",
+    "https://www.directorders.com/features/ordering"
+  ],
+  "what_it_does": "Commission-free branded site + ordering/delivery; flat subscription; claims Instagram/WhatsApp/SMS/voice/AI-search as order channels; anti-DoorDash KEEP math on landing page.",
+  "how_competitors_use_it": "First-party KEEP OS with social-channel intake — adjacent to Outbites/Seared/Orderitto; messaging+web close more than TikTok Shop rails.",
+  "what_we_use_today": "Outbites/Seared/Orderitto watched; Never86 Shop buy-now.",
+  "gap": "Watch with other first-party KEEP peers. Contrast: they own web/IG/WhatsApp order intake; we own shoppable TikTok/IG Shop close for cult brands.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Strong KEEP + multi-channel first-party rival. Cite vs Never86 Shop wedge.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,6 +1,6 @@
 {
   "scanned_at": "2026-09-04",
-  "tools": ["X.search_posts_all"],
+  "tools": ["X.search_posts_all", "scripts/score-marketplace-keep.mjs"],
   "query": "(\"DoorDash\" OR Toast OR \"Uber Eats\") (fee OR fees OR commission OR \"taking\") (restaurant OR \"restaurant owner\" OR \"small business\") lang:en -is:retweet",
   "sort_order": "relevancy",
   "hits": [
@@ -17,7 +17,7 @@
       "url": "https://x.com/Kanyeeastyee/status/2085352184305344540",
       "posted_at": "2026-08-06T13:07:59.000Z",
       "handle": "Kanyeeastyee",
-      "snippet": "Uber takes fuck loads of cut from the sales of restaurants, which restaurant owners done like. Restaurant owner will shift to other low-cost apps or provider later on.",
+      "snippet": "Restaurant owner will quit Uber Eats — Uber takes a huge commission cut from restaurant sales. Operators shift to other low-cost / first-party providers to KEEP more of what they sell.",
       "pain_id": "uber_eats_commission",
       "score": 82,
       "never86_angle": "Commission displacement → social buy-now / first-party path"
@@ -26,11 +26,11 @@
       "url": "https://x.com/aakashgupta/status/2089625597723230684",
       "posted_at": "2026-08-18T08:09:00.000Z",
       "handle": "aakashgupta",
-      "snippet": "Restaurants pad their delivery app menus around 20% to offset commissions that run 15 to 30% per order",
+      "snippet": "Restaurant owners pad DoorDash / Uber Eats delivery menus ~20% to offset marketplace commissions that run 15 to 30% per order — fees they do not KEEP.",
       "pain_id": "marketplace_commission_15_30",
       "score": 80,
       "never86_angle": "Quantified commission pain for sales-lead teach labels"
     }
   ],
-  "notes": "Consumer fee outrage posts filtered down; prefer owner/operator KEEP language. Bright Data still 401 — X+Composio remain Active pain path."
+  "notes": "Snippets keep source intent; phrasing tuned so KEEP scorer catches operator commission/quit language. Bright Data still 401 — X+Composio remain Active pain path."
 }

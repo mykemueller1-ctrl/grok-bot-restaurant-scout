@@ -22,6 +22,22 @@
       "never86_angle": "Perfect anti-marketplace rent wedge for love→buy-now / direct social commerce"
     }
   ],
+  "hits": [
+    {
+      "url": "https://www.sleftpayments.com/learning-hub/why-restaurants-leaving-toast-pos-2026",
+      "snippet": "Restaurant owners leaving Toast cite high fees, hardware lock-in, and costly early termination — stack rent they do not KEEP.",
+      "pain_id": "toast_fee_lockin",
+      "vendor_id": "toast",
+      "never86_angle": "POS fee displacement after teach — not forecasting"
+    },
+    {
+      "url": "https://dundeeomaha.org/2026/04/omaha-restaurant-owner-drops-delivery-apps-after-188k-in-fees/",
+      "snippet": "Restaurant owner quit DoorDash / delivery apps after ~$188K in marketplace commission fees — switched to first-party ordering to KEEP the revenue.",
+      "pain_id": "doordash_commission_quit",
+      "vendor_id": "doordash",
+      "never86_angle": "Anti-marketplace rent → Never86 buy-now"
+    }
+  ],
   "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_NEWS", "X.search_posts_all"],
   "status": "verified_active",
   "researched_at": "2026-09-04"

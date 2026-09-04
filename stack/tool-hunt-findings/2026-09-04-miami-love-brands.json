@@ -1,0 +1,17 @@
+{
+  "finding_id": "miami-love-brands-yelp-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Adopt Miami Yelp love-brand calibration",
+  "vendor_or_project": "Never86 morning-scan",
+  "urls": [],
+  "what_it_does": "Third-market Yelp love fixtures (Chef Adrianne's, Michael's Genuine, Carbone, La Fresa Francesa) for morning-scan without Instagram auth.",
+  "how_competitors_use_it": "n/a",
+  "what_we_use_today": "Chicago + Austin love fixtures.",
+  "gap": "Closed — fixtures/tool-hunt/miami-love-brands.json + morning-scan updated.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Expands love→buy-now calibration to Miami without Mem0/Context/IG.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

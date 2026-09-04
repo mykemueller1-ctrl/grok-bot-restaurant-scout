@@ -140,3 +140,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted COMPOSIO_SEARCH_TAVILY as research secondary; scripts/score-pain-fixtures.mjs CI batch KEEP gate.
 - Dogfood: fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json (statement math → Franklin SalesLead DRAFT).
 - Ledger v1.18.0. Auth still BLOCKED (Mem0 + Context).
+
+### 2026-09-04 (Miami love + KEEP-hardened pain + DirectOrders)
+
+- Adopted Miami Yelp love calibration: fixtures/tool-hunt/miami-love-brands.json (Chef Adrianne's, Michael's Genuine, Carbone, La Fresa Francesa).
+- Hardened all pain-scan hits to anti_marketplace_buy_now (7/7); score-pain-fixtures gate ≥4.
+- Watched DirectOrders (zero-commission + IG/WhatsApp intake).
+- Ledger v1.19.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

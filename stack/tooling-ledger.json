@@ -1,5 +1,5 @@
 {
-  "version": "1.18.0",
+  "version": "1.19.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -80,7 +80,7 @@
     },
     "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json + miami-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
@@ -370,9 +370,38 @@
       "sources": [
         "https://seared.io/"
       ]
+    },
+    {
+      "name": "DirectOrders",
+      "lane": "vertical_gtm",
+      "stack": "Zero-commission branded site + ordering/delivery; Instagram/WhatsApp/SMS/AI-search intake; flat subscription",
+      "memory": "Owned customer data",
+      "edge": "KEEP + multi-channel first-party; messaging/web close vs Never86 Shop rails",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.directorders.com/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Miami Yelp love-brand calibration",
+      "lane": "vertical_gtm",
+      "why": "Third-market morning-scan seed without Instagram auth",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Pain fixtures KEEP-hardened (≥4 strong hits)",
+      "lane": "vertical_gtm",
+      "why": "score-pain-fixtures requires ≥4 anti_marketplace_buy_now; toast+DoorDash+KEEP all strong",
+      "verdict": "adopt"
+    },
+    {
+      "item": "DirectOrders zero-commission + IG/WhatsApp",
+      "lane": "vertical_gtm",
+      "why": "First-party KEEP peer with social-channel intake",
+      "verdict": "watch"
+    },
     {
       "item": "OrderPost IG post\u2192order pages",
       "lane": "vertical_gtm",

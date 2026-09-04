@@ -54,8 +54,8 @@ for (const f of files) {
 
 console.log(JSON.stringify({ files: files.length, hits_scored: rows.length, strong_keep: strong, rows }, null, 2));
 
-if (strong < 1) {
-  console.error("score-pain-fixtures: need ≥1 anti_marketplace_buy_now hit across pain-scan fixtures");
+if (strong < 4) {
+  console.error("score-pain-fixtures: need ≥4 anti_marketplace_buy_now hits across pain-scan fixtures");
   process.exit(1);
 }
 process.exit(0);
