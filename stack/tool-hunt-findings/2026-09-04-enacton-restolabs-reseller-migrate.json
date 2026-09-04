@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-enacton-restolabs-reseller-migrate",
+  "lane": "vertical_gtm",
+  "name": "Enacton checklist + Restolabs reseller GloriaFood migrate",
+  "verdict": "watch",
+  "summary": "Enacton May 2026 partner migration checklist + Restolabs gloria-food-alternative reseller page both push white-label books to migrate before Apr 30 2027. Agency/reseller EOL wedge; fee pause; not FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-enacton-restolabs-reseller-migrate",
+  "source_urls": [
+    "https://www.enacton.com/blog/gloriafood-migration-checklist/",
+    "https://www.restolabs.com/gloria-food-alternative"
+  ],
+  "memory_tags": [
+    "enacton",
+    "restolabs",
+    "gloriafood-reseller",
+    "eol-2027-04-30"
+  ]
+}

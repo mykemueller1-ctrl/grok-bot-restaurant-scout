@@ -1,0 +1,24 @@
+{
+  "finding_id": "2026-09-04-toast-zyda-chatfood-bentobox-meta-pass",
+  "lane": "vertical_gtm",
+  "name": "Toast + Zyda + ChatFood + BentoBox Meta Order Food",
+  "verdict": "adopt",
+  "summary": "Toast Support (updated Jul 7 2026) Order food→Toast partner + stickers; Zyda FBE Order Food Help still live; ChatFood IG Order Food docs still live; BentoBox Help getbento Meta Business Extension (edited Jan 15 2026) still live (facebook.com/business/help/412673 fetch 404 — use Bento primary). peer_count stays 9.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-toast-zyda-chatfood-bentobox-meta-pass",
+  "ledger_version": "1.92.73",
+  "source_urls": [
+    "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook",
+    "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://help.getbento.com/en/articles/412673"
+  ],
+  "memory_tags": [
+    "toast",
+    "zyda",
+    "chatfood",
+    "bentobox",
+    "meta-fbe",
+    "peer-count-9"
+  ]
+}

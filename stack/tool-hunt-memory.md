@@ -1109,3 +1109,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Restaurant MCP Server + Bingeljell lead-gen-mcp. Findings: `2026-09-04-restaurant-mcp-server-aadesh.json`, `2026-09-04-bingeljell-lead-gen-mcp.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_qRDZmWg_tzSV (~10 min).
 - Ledger v1.92.72. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Toast/Zyda/ChatFood/Bento Meta + GloriaFood reseller + webview)
+
+- Reconfirmed Toast (Jul 7 2026) + Zyda + ChatFood + BentoBox Meta Order Food — peer_count stays 9. Finding: `2026-09-04-toast-zyda-chatfood-bentobox-meta-pass.json`.
+- Yelp pass-8 stable: G&TG 10731 / Rioja 2914. Finding: `2026-09-04-yelp-gtg-rioja-stable-pass8.json`.
+- Watched Ogent/Enacton/Restolabs GloriaFood **reseller** migrate. Findings: `2026-09-04-ogent-gloriafood-reseller.json`, `2026-09-04-enacton-restolabs-reseller-migrate.json`.
+- Adopted linkboo + plugwith.me webview escape. Finding: `2026-09-04-linkboo-plugwith-webview.json`.
+- Watched Menujo IG bio + LeadHub + cursor-for-gtm-demo + impecablemee/gtm-mcp. Findings: `2026-09-04-menujo-instagram-bio-menu.json`, `2026-09-04-leadhub-mcp-cursor.json`, `2026-09-04-cursor-gtm-demo-impecablemee.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_52a4tjJSpCQz (~10 min).
+- Ledger v1.92.73. Auth still blocked for unlock READY.

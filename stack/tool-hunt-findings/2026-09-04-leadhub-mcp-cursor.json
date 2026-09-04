@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-leadhub-mcp-cursor",
+  "lane": "skills_knowledge",
+  "name": "LeadHub MCP (Harvey-Yuan)",
+  "verdict": "watch",
+  "summary": "Harvey-Yuan/leadhub: open-source Cursor MCP one-shot B2B lead discovery (no LLM inside tool). Skills peer for pain→sales-lead; Yelp phone stays Active; auth-first.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-leadhub-mcp-cursor",
+  "source_urls": [
+    "https://github.com/Harvey-Yuan/leadhub"
+  ],
+  "memory_tags": [
+    "leadhub",
+    "mcp",
+    "cursor",
+    "b2b-leads"
+  ]
+}

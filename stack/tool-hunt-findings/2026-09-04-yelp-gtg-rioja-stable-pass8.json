@@ -1,0 +1,16 @@
+{
+  "finding_id": "2026-09-04-yelp-gtg-rioja-stable-pass8",
+  "lane": "vertical_gtm",
+  "name": "Yelp G&TG/Rioja stable pass-8",
+  "verdict": "adopt",
+  "summary": "Yelp details pass-8: Girl & The Goat still 10731; Rioja still 2914 — love calibration holds after pass-7 churn.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-yelp-gtg-rioja-stable-pass8",
+  "teach": {
+    "label": "yelp_love_stable",
+    "counts": {
+      "gtg": 10731,
+      "rioja": 2914
+    }
+  }
+}

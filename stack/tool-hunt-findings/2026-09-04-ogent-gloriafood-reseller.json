@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-ogent-gloriafood-reseller",
+  "lane": "vertical_gtm",
+  "name": "Ogent GloriaFood white-label reseller migrate",
+  "verdict": "watch",
+  "summary": "Ogent pitches GloriaFood reseller/TSP white-label alternative: AI menu rebuild from ordering link (~30s), commission-free PAYG for restaurants, Apr 30 2027 deadline. Watch GloriaFood agency migrate peer; fee pause (4% PAYG already noted); not FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-ogent-gloriafood-reseller",
+  "source_urls": [
+    "https://ogent.ai/gloriafood-white-label-alternative"
+  ],
+  "memory_tags": [
+    "ogent",
+    "gloriafood-reseller",
+    "eol-2027-04-30",
+    "fee-pause"
+  ]
+}

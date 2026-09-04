@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-cursor-gtm-demo-impecablemee",
+  "lane": "skills_knowledge",
+  "name": "cursor-for-gtm-demo + impecablemee/gtm-mcp",
+  "verdict": "watch",
+  "summary": "bcharleson/cursor-for-gtm-demo (cold email Cursor skills + Instantly) + impecablemee/gtm-mcp (Apollo+SmartLead B2B outreach for Claude/Cursor). GTM skills peers; Yelp Active primary for venues; auth-first before adopt.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-cursor-gtm-demo-impecablemee",
+  "source_urls": [
+    "https://github.com/bcharleson/cursor-for-gtm-demo",
+    "https://github.com/impecablemee/gtm-mcp"
+  ],
+  "memory_tags": [
+    "cursor-gtm",
+    "gtm-mcp",
+    "cold-email",
+    "skills"
+  ]
+}

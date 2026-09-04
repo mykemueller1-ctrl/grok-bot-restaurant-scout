@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-linkboo-plugwith-webview",
+  "lane": "vertical_gtm",
+  "name": "linkboo + plugwith.me IG webview escape",
+  "verdict": "adopt",
+  "summary": "linkboo for restaurants (updated Jun 2026) still documents Toast/Resy/OpenTable IG webview cliffs; plugwith.me Jul 2026 technical guide covers Instagram extbrowser escape (x-safari broken on Meta). Shop no-handoff wedge; not FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-linkboo-plugwith-webview",
+  "source_urls": [
+    "https://link.boo/for/restaurants",
+    "https://plugwith.me/escape-in-app-browser/"
+  ],
+  "memory_tags": [
+    "linkboo",
+    "plugwith",
+    "webview-escape",
+    "instagram"
+  ]
+}
