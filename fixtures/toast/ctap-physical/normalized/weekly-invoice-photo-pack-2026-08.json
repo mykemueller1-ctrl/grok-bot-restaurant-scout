@@ -7,7 +7,7 @@
   "window": {
     "start": "2026-08-11",
     "end": "2026-08-20",
-    "note": "As-is pain pack: one week of phone photos. Preferred future source = emailed distributor invoices into a repeatable system."
+    "note": "Photo firehose pack — primary owner-1-5 AP intake. OCR spine: scripts/ocr-vendor-invoice.py → ocr-batch-2026-08.json. Email forwards are bonus."
   },
   "capture_pattern": {
     "role": "as_is_pain_evidence",
@@ -42,16 +42,16 @@
     ]
   },
   "coaching": {
-    "preferred_source": "email_invoice",
-    "truth": "Most distributor invoices already arrive by email (PDF/CSV). The phone-photo pile is optional human work — not required by the vendor.",
+    "preferred_source": "photo_ocr",
+    "truth": "Small ICPs will suck at email discipline and dump millions of invoice photos. Never86 must OCR that firehose.",
     "coach_to": [
-      "Forward / auto-route email invoices into Never86 vendor-invoice intake",
-      "Normalize vendor + sku + qty + amount from email PDFs every delivery — no camera",
-      "Remove staple/photograph/payout coding loop for distributor lines",
-      "Keep store cash runs (Hy-Vee/Fareway/Menards) as exceptional capture — not the spine"
+      "Ingest every photo via invoice-photo-ocr (auto-rotate, confidence flags)",
+      "Normalize vendor + date + amount + account into vendor-invoice schema",
+      "Teach-batch low-confidence / unknown vendor docs to Myke",
+      "Offer email forward later as an upgrade — not a prerequisite"
     ],
-    "repeatable_system": "email → inbox → vendor-invoice agent → normalized COGS signals → daily leak dollars",
-    "anti_pattern": "Treating countertop photo OCR as the product — that locks in the human grind"
+    "repeatable_system": "photo dump → OCR → vendor-invoice agent → COGS signals → daily leak dollars",
+    "anti_pattern": "Waiting for operators to forward email invoices before COGS works"
   },
   "documents": [
     {
@@ -377,5 +377,6 @@
       "note": "payout-coded grocery + ops"
     }
   ],
-  "good_looks_like": "Email PDF/CSV invoices land in a repeatable inbox → normalized vendor/sku/qty/amount. Phone photos are teach evidence of the human grind to coach away from — not the target workflow."
+  "good_looks_like": "Photo batch OCR → vendor/date/amount/account rows with confidence. Email PDF is bonus when they bother.",
+  "ocr_batch": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json"
 }

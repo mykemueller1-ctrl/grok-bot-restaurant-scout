@@ -10,13 +10,13 @@
   "parent": "inventory",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Owns the Distributor / Store Invoice report (Preferred: emailed PDF/CSV invoices (Sysco, PFS, beer houses, Northern Lights). As-is pain evidence: phone photos + Register#2 payout\u2194store receipts). Ingests email, pdf, csv, photo. Signals: vendor, sku, qty, amount, account, payout_pair, handwritten_credit, email_forward, source_channel. Routes findings up to the domain parent; teach labels via Report Teacher.",
-  "source_report": "Preferred: emailed PDF/CSV invoices (Sysco, PFS, beer houses, Northern Lights). As-is pain evidence: phone photos + Register#2 payout\u2194store receipts",
+  "description": "Owns the Distributor / Store Invoice report (Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.). Ingests photo, email, pdf, csv. Signals: vendor, sku, qty, amount, account, payout_pair, handwritten_credit, email_forward, source_channel, ocr_confidence, rotation_deg. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.",
   "formats": [
+    "photo",
     "email",
     "pdf",
-    "csv",
-    "photo"
+    "csv"
   ],
   "signals": [
     "vendor",
@@ -27,7 +27,9 @@
     "payout_pair",
     "handwritten_credit",
     "email_forward",
-    "source_channel"
+    "source_channel",
+    "ocr_confidence",
+    "rotation_deg"
   ],
   "file_globs": [
     "*invoice*",
@@ -45,14 +47,20 @@
     "*Confluence*",
     "*Humes*",
     "*Pay Out*",
-    "*payout*"
+    "*payout*",
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.heic",
+    "*.webp"
   ],
-  "schema": null,
+  "schema": "schemas/vendor-invoice.json",
   "hierarchy": null,
   "skills": [
     "report-ingest",
     "report-normalize",
-    "teach-label"
+    "teach-label",
+    "invoice-photo-ocr"
   ],
   "venues": [
     "grill",
@@ -61,18 +69,19 @@
   ],
   "swarm": true,
   "example_packs": [
-    "ctap-physical/weekly-invoice-photo-pack-2026-08"
+    "ctap-physical/weekly-invoice-photo-pack-2026-08",
+    "ctap-physical/ocr-batch-2026-08"
   ],
   "teach_memory": [
     {
       "label": "keep",
       "icp_tier": "owner_1_5",
       "venue_id": "community-pizza",
-      "as_is": "Phone photos of paper invoices + payout slips stapled to store receipts \u2014 human, non-repeatable weekly grind.",
-      "truth": "Distributors already email invoices; operators still print/photograph instead of routing email into a system.",
-      "coach_to": "Forward/auto-route email invoices into Never86 vendor-invoice intake \u2014 remove the human photo/staple loop; store cash runs stay exceptional.",
-      "good_looks_like": "Email PDF/CSV invoices land in a repeatable inbox \u2192 normalized vendor/sku/qty/amount. Phone photos are teach evidence of pain, not the target workflow.",
-      "pack": "fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json"
+      "as_is": "Small ICPs dump phone photos of every invoice \u2014 rotated, stapled payout\u2194receipt, shadows, blur. Millions of them.",
+      "truth": "Email invoices exist, but most owner-1-5 ops will not reliably forward them. Photo OCR must work.",
+      "coach_to": "Ingest the photo firehose via invoice-photo-ocr \u2192 vendor-invoice schema. Offer email forward as a later upgrade, not a prerequisite.",
+      "good_looks_like": "Photo batch \u2192 auto-rotate OCR \u2192 vendor/date/amount/account rows with confidence flags. Low-confidence docs teach-batch to Myke.",
+      "pack": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json"
     }
   ]
 }

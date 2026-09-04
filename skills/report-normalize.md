@@ -21,8 +21,9 @@ Extract par, qty to order, cost, over/under budget by SKU.
 Copy product-mix qty → `inventory_depletion_qty` on the combined snapshot schema.
 
 ## Vendor Invoice
-Prefer `source_channel: email` (forwarded PDF/CSV). Emit vendor, sku, qty, amount, account.
-Photo packs are as-is pain evidence — normalize when useful, tag `source_channel: photo`, do not invent email fields.
+Primary path for owner 1–5: `source_channel: photo` via `scripts/ocr-vendor-invoice.py` / skill `invoice-photo-ocr`.
+Emit vendor, date, amount, account, employee, invoice_num, ocr_confidence, rotation_deg, quality_flags.
+Email/PDF (`source_channel: email`) when present — bonus.
 Handwritten credits / adjusted totals beat printed totals when present.
 
 **Done when:** normalized payload validates against the sub-agent's schema/signals list.

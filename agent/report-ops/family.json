@@ -209,10 +209,10 @@
       "parent": "inventory",
       "label": "Distributor / Store Invoice",
       "formats": [
+        "photo",
         "email",
         "pdf",
-        "csv",
-        "photo"
+        "csv"
       ]
     }
   ],
