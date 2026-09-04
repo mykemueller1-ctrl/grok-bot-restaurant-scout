@@ -1,5 +1,5 @@
 {
-  "version": "1.92.35",
+  "version": "1.92.36",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1244,6 +1244,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "linkboo webview escape re-verified (Toast/Square/Resy cliffs)",
+      "lane": "vertical_gtm",
+      "why": "IG webview breaks Toast/Square/ChowNow Apple Pay + OpenTable/Resy cookies \u2014 sharpens Never86 in-app Shop wedge",
+      "verdict": "watch"
+    },
+    {
+      "item": "LinkScale restaurant link-in-bio (Uber Eats hub)",
+      "lane": "vertical_gtm",
+      "why": "Bio hub for menu/book/orders that can still route marketplace OO \u2014 watch vs Shop + linkboo",
+      "verdict": "watch"
+    },
+    {
+      "item": "BiteSight + Smiilen video\u2192order marketplaces re-verified",
+      "lane": "vertical_gtm",
+      "why": "Video discovery\u2192delivery still live; marketplace-rent adjacent vs Never86 Shop",
+      "verdict": "watch"
+    },
     {
       "item": "Michael's Genuine brand-site marketplace leak re-verified (pass 2)",
       "lane": "vertical_gtm",

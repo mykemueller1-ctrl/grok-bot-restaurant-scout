@@ -1,0 +1,15 @@
+{
+  "finding_id": "bitesight-smiilen-video-marketplace-reverify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "BiteSight + Smiilen video→order marketplaces re-verified",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "bitesight.com still live: TikTok-meets-DoorDash video discovery→order (claims 19.5K+ restaurants). smiilen.com still live: short-form video→checkout→delivery; restaurants pay per order / creators earn commission on orders — marketplace-rent adjacent. Watch as video-marketplace love→order peers vs Never86 Shop. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.bitesight.com/",
+    "https://www.smiilen.com/",
+    "https://www.ycombinator.com/companies/bitesight"
+  ],
+  "not_this": "Not Meta FBE. Not a fee dogfood expansion. Not forecasting."
+}

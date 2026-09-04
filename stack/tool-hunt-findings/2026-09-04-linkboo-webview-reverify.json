@@ -1,0 +1,17 @@
+{
+  "finding_id": "linkboo-webview-reverify-toast-resy-2026-09",
+  "lane": "vertical_gtm",
+  "name": "linkboo webview escape re-verified (Toast/Square/Resy cliffs)",
+  "verdict": "watch",
+  "priority": 1,
+  "summary": "link.boo/for/small-business primary (2026-06): Instagram webview breaks Toast / Square Online / ChowNow OO (Apple Pay no-render) and OpenTable/Resy booking-history cookies. linkboo escapes to Safari/Chrome. Sharpens Never86 in-app Shop buy-now (no bio→webview handoff). Watch only — not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://link.boo/for/small-business",
+    "https://link.boo/for/instagram",
+    "stack/tool-hunt-findings/2026-09-04-linkboo-social-webview-escape.json"
+  ],
+  "broken_destinations_cited": ["Toast", "Square Online", "ChowNow", "OpenTable", "Resy", "Shopify"],
+  "never86_wedge": "in-app Shop buy-now avoids bio→webview conversion cliff",
+  "not_this": "Not a fee dogfood. Not forecasting."
+}

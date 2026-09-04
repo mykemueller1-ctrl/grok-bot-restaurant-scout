@@ -1,0 +1,12 @@
+{
+  "finding_id": "linkscale-restaurant-link-in-bio-2026-09",
+  "lane": "vertical_gtm",
+  "name": "LinkScale restaurant link-in-bio (menu/book/Uber Eats)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "linkscale.to/solutions/restaurants: Instagram/FB/TikTok bio hub for menu, bookings, online orders — explicitly links Uber Eats / Deliveroo or own ordering. Link-in-bio OS without webview-escape claim; can reinforce marketplace rent from social. Watch vs Never86 Shop + linkboo escape thesis. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": ["https://linkscale.to/solutions/restaurants"],
+  "never86_wedge": "in-app Shop buy-now vs bio hub that still routes marketplace OO",
+  "not_this": "Not Meta FBE. Not a fee dogfood. Not forecasting."
+}

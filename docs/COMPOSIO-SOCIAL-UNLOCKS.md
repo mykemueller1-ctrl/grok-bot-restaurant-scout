@@ -59,11 +59,11 @@ Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, *
 
 **Not Meta Order Food:** **Menusso** is a branded restaurant app / 0% commission OS ([menusso.com/us](https://menusso.com/us/)) — watch separately; do not inflate `meta_order_food_peer_count`.
 
-Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch; also watch video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products (BentoBox QR $0.99 / Flipdish €0.50+% already in catalog).
+Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see **linkboo** watch: Toast/Square/ChowNow/OpenTable/Resy break in IG webview per [link.boo/for/small-business](https://link.boo/for/small-business); also watch **LinkScale** restaurant bio hubs that still route Uber Eats; video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products (BentoBox QR $0.99 / Flipdish €0.50+% already in catalog).
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_PmzEO0vowyQV) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_y6WK90WQYZ4-) — Business/Creator only. Reply `instagram connected` when done.
 
 ## Still required for Beyond the Hunt READY
 

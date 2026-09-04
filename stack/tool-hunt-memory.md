@@ -832,3 +832,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Live re-fetch michaelsgenuine.com still UberEats + DoorDash on Order Delivery. Finding: `2026-09-04-michaels-leak-reverify-2.json`.
 - `skills/vertical-rival-watch.md` documents Menusso≠Meta, FOSA, CheckIt, CTA linkers + peer_count discipline.
 - Ledger v1.92.35. Auth still blocked for unlock READY.
+
+### 2026-09-04 (linkboo Toast/Resy cliff + LinkScale + BiteSight/Smiilen)
+
+- linkboo small-business primary cites Toast/Square/ChowNow Apple Pay + OpenTable/Resy cookie breaks in IG webview — Shop wedge. Finding: `2026-09-04-linkboo-webview-reverify.json`.
+- Watched LinkScale restaurant bio hub (can route Uber Eats). BiteSight + Smiilen video→order still live.
+- Instagram reconnect: `lk_y6WK90WQYZ4-` (~10 min). Ledger v1.92.36. Auth still blocked.
