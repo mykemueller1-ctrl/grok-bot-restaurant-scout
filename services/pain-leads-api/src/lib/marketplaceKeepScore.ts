@@ -8,12 +8,14 @@ export type MarketplaceKeepResult = {
 const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /\bkeep\b/i, signal: "keep_language", w: 25 },
   { re: /commission/i, signal: "commission", w: 20 },
-  { re: /\b(15|20|25|30)\s*%|\b\d{2}\s*%\s*commission/i, signal: "commission_pct", w: 20 },
+  { re: /\b(15|20|25|30)\s*%|\b\d{1,2}(?:\.\d+)?\s*%\s*(commission|cost|fee)?/i, signal: "commission_pct", w: 20 },
   { re: /doordash|uber\s*eats|grubhub|marketplace/i, signal: "marketplace_named", w: 15 },
   { re: /quit|quitt?ing|ditch|leaving|drop(ped)?/i, signal: "quit_switch", w: 20 },
   { re: /fee|fees|rent|cut from/i, signal: "fee_rent", w: 15 },
   { re: /first[\s-]?party|direct order|own(ed)? (the )?customer/i, signal: "first_party", w: 15 },
   { re: /restaurant owner|operator|gm\b/i, signal: "operator_voice", w: 10 },
+  // Statement math: headline commission ≠ take-home (Never86 anti-rent teach signal)
+  { re: /effective cost|left with|lives on|what (is|you'?re? )left|statement:/i, signal: "effective_cost_math", w: 20 },
 ];
 
 export function scoreMarketplaceKeep(snippet: string): MarketplaceKeepResult {

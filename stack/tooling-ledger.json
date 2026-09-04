@@ -1,5 +1,5 @@
 {
-  "version": "1.16.0",
+  "version": "1.17.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -79,13 +79,13 @@
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
     "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json (KEEP → SalesLead DRAFT)",
-    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json)",
+    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + complaint-sources MCP score_marketplace_keep",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + complaint-sources MCP score_marketplace_keep (incl. effective_cost_math)",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
       "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
@@ -291,9 +291,85 @@
         "https://orderitto.com/",
         "https://orderitto.com/platform"
       ]
+    },
+    {
+      "name": "Moast",
+      "lane": "vertical_gtm",
+      "stack": "Shoppable TikTok/IG UGC video widgets on Shopify PDPs for F&B brands",
+      "memory": "n/a (Shopify widget)",
+      "edge": "Proves UGC taste-reaction \u2192 buy; closes on Shopify not restaurant TikTok Shop kitchen rails",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.moast.io/solutions/food-beverage",
+        "https://apps.shopify.com/moast-interactive-ugc"
+      ]
+    },
+    {
+      "name": "Ainisa",
+      "lane": "vertical_gtm",
+      "stack": "AI agent for restaurant FAQ + reservations + food orders via website/WhatsApp/IG/TikTok DMs",
+      "memory": "Conversation state + Sheets lead store",
+      "edge": "Messaging-channel order close (TextOrder peer); not Shop rails",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://ainisa.com/en/use-cases/1-ai-agent-for-restaurants",
+        "https://docs.ainisa.com/integrations/tiktok.html"
+      ]
+    },
+    {
+      "name": "Seekeasy",
+      "lane": "vertical_gtm",
+      "stack": "Creator trend intelligence + local creator matching + Content APIs for dining discovery",
+      "memory": "Creator content graph",
+      "edge": "Love discovery / morning-scan adjacent; skip their Forecasting product feature in hunt research",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://seekeasy.ai/"
+      ]
+    },
+    {
+      "name": "Feedo AI",
+      "lane": "vertical_gtm",
+      "stack": "Dish photo \u2192 week of Instagram posts/captions; multi-aggregator listing compatibility",
+      "memory": "n/a (content gen)",
+      "edge": "Content-only peer (PlateAI-class); claims IG\u2192direct delivery share but no Shop close",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://feedoai.com/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Effective-cost KEEP signal + DoorDash statement-math pain",
+      "lane": "vertical_gtm",
+      "why": "score_marketplace_keep detects effective cost / lives-on-what-is-left; fixture pain-scan-doordash-effective-cost.json",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Moast Shopify shoppable UGC (F&B)",
+      "lane": "vertical_gtm",
+      "why": "UGC\u2192buy on PDPs; contrast vs Never86 in-app Shop rails",
+      "verdict": "watch"
+    },
+    {
+      "item": "Ainisa TikTok/IG DM order agent",
+      "lane": "vertical_gtm",
+      "why": "Messaging order close peer to TextOrder",
+      "verdict": "watch"
+    },
+    {
+      "item": "Seekeasy creator trend GTM",
+      "lane": "vertical_gtm",
+      "why": "Love discovery; skip forecasting feature research",
+      "verdict": "watch"
+    },
+    {
+      "item": "Feedo AI Instagram content autopilot",
+      "lane": "vertical_gtm",
+      "why": "Content-only; watch light next to PlateAI/Flik",
+      "verdict": "watch"
+    },
     {
       "item": "MCP score_marketplace_keep on complaint-sources",
       "lane": "mcp_connectors",
@@ -303,7 +379,7 @@
     {
       "item": "Marketplace KEEP snippet scorer",
       "lane": "vertical_gtm",
-      "why": "scripts/score-marketplace-keep.mjs boosts pain stubs with KEEP/commission/quit language — no auth",
+      "why": "scripts/score-marketplace-keep.mjs boosts pain stubs with KEEP/commission/quit/effective-cost language — no auth",
       "verdict": "adopt"
     },
     {

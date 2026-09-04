@@ -1,0 +1,19 @@
+{
+  "finding_id": "seekeasy-creator-trend-gtm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Seekeasy — creator trends → restaurant foot traffic",
+  "vendor_or_project": "Seekeasy",
+  "urls": [
+    "https://seekeasy.ai/"
+  ],
+  "what_it_does": "Dining/hospitality creator intelligence: detects emerging dish/city trends on IG/TikTok, matches local creators, Content APIs to embed creator video for discovery→action.",
+  "how_competitors_use_it": "Restaurant brands use creator matching + trend signals to drive covers / local demand — love discovery adjacent to morning-scan.",
+  "what_we_use_today": "Yelp love-brand fixtures (Chicago/Austin) + script-draft for buy-now close.",
+  "gap": "Watch creator-match + Content API for love discovery. Skip their product 'Forecasting' feature as a research lane — never expand Beyond the Hunt into demand forecasting.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Creator-led love discovery rival for dining. Useful contrast for morning-scan; do not chase their forecasting suite.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

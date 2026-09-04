@@ -1,0 +1,30 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["X.search_posts_all", "scripts/score-marketplace-keep.mjs"],
+  "query": "(\"DoorDash commission\" OR \"Uber Eats fees\" OR \"keep what we sell\" OR \"quit DoorDash\") (restaurant OR restaurantowner) -is:retweet lang:en",
+  "sort_order": "recency",
+  "hits": [
+    {
+      "url": "https://x.com/myke86d/status/2084843820680708466",
+      "posted_at": "2026-08-05T03:27:56.000Z",
+      "handle": "myke86d",
+      "snippet": "Your DoorDash commission is not your DoorDash cost. One restaurant statement: $9,411.15 sales / $787.55 commission / $976.74 other fees → $7,646.86 left. Commission rate 8.37%; effective cost 18.75%. The dashboard celebrates sales. The restaurant lives on what is left.",
+      "pain_id": "doordash_effective_cost",
+      "keep_score": 90,
+      "signals": ["commission", "commission_pct", "marketplace_named", "fee_rent", "effective_cost_math"],
+      "never86_wedge": "anti_marketplace_buy_now",
+      "never86_angle": "Teach labels: headline commission ≠ take-home — pitch Never86 buy-now as keep-what-you-sell vs statement math"
+    },
+    {
+      "url": "https://x.com/Alvin1492840/status/2095441515518607727",
+      "posted_at": "2026-09-03T09:19:23.000Z",
+      "handle": "Alvin1492840",
+      "snippet": "What changed after the audit. They didn't stop using DoorDash entirely. They changed how they use it. Restaurants within 10 minutes: pickup through DoorDash. No delivery fee. No tip. Reduced service fee. Two of their three weekly orders shifted to pickup.",
+      "pain_id": "doordash_dual_run_pickup",
+      "keep_score": 50,
+      "never86_wedge": "anti_marketplace_buy_now",
+      "never86_angle": "Dual-run pattern (Outbites-class): shrink marketplace spend — Never86 owns social buy-now for repeats"
+    }
+  ],
+  "notes": "Prefer statement-math / effective-cost language for sales-lead teach. Bright Data still 401 — X+Composio Active."
+}

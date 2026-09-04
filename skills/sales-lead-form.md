@@ -17,13 +17,13 @@ Fill and save `SalesLead`:
 | `quotes` | raw |
 | `vendors_to_displace` | Toast, DoorDash, etc. |
 | `why_never86_now` | map pain → Never86 wedge (buy-now / social commerce / leave marketplace tax / stack pain) |
-| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Outbites/Orderitto first-party web-QR ordering, Menami/TextOrder DM agents, Seekadu reservations, or content-only AI Reels |
+| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Outbites/Orderitto first-party web-QR ordering, Menami/TextOrder/Ainisa DM agents, Seekadu reservations, Moast Shopify UGC widgets, Seekeasy creator discovery, or content-only AI Reels (Feedo/PlateAI) |
 | `sources` | URLs |
 | `confidence` | score + teach history |
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
 
 Rules:
-- Prefer **KEEP / commission % / quit marketplace** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-to-sales-keep-girl-goat.json`).
+- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-to-sales-keep-girl-goat.json`).
 - Draft outreach copy may be suggested; **sending** requires approvals MCP.
 - Same human/venue across pain agents → merge / link, don't spam duplicate leads.
 - Never pitch labor/sales **forecasting** as the Never86 product.

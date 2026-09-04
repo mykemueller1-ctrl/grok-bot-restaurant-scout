@@ -15,12 +15,14 @@ if (!text) {
 const rules = [
   { re: /\bkeep\b/, signal: "keep_language", w: 25 },
   { re: /commission/, signal: "commission", w: 20 },
-  { re: /\b(15|20|25|30)\s*%|\b\d{2}\s*%\s*commission/, signal: "commission_pct", w: 20 },
+  { re: /\b(15|20|25|30)\s*%|\b\d{1,2}(?:\.\d+)?\s*%\s*(commission|cost|fee)?/, signal: "commission_pct", w: 20 },
   { re: /doordash|uber\s*eats|grubhub|marketplace/, signal: "marketplace_named", w: 15 },
   { re: /quit|quitt?ing|ditch|leaving|drop(ped)?/, signal: "quit_switch", w: 20 },
   { re: /fee|fees|rent|cut from/, signal: "fee_rent", w: 15 },
   { re: /first[\s-]?party|direct order|own(ed)? (the )?customer/, signal: "first_party", w: 15 },
   { re: /restaurant owner|operator|gm\b/, signal: "operator_voice", w: 10 },
+  // Statement math: headline commission ≠ take-home (Never86 anti-rent teach signal)
+  { re: /effective cost|left with|lives on|what (is|you'?re? )left|statement:/, signal: "effective_cost_math", w: 20 },
 ];
 
 const signals = [];

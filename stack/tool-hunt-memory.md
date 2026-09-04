@@ -126,3 +126,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added scripts/unlock-beyond-the-hunt.mjs (READY → Mem0 import + Context smoke).
 - Worker KEEP scorer now imports shared marketplaceKeepScore lib.
 - CI pain-leads-api runs KEEP scorer smoke after build. Auth still blocked.
+
+### 2026-09-04 (Moast/Ainisa/Seekeasy + effective-cost KEEP)
+
+- Weekly rival scan (Composio SEARCH_WEB; Bright Data still 401): watched Moast (Shopify shoppable UGC), Ainisa (TikTok/IG DM orders), Seekeasy (creator trends — skip their Forecasting feature), Feedo (content-only).
+- Skipped Cartsense (non-restaurant ecom) and Nailah labor/forecast research.
+- Adopted effective_cost_math on KEEP scorer + fixtures/tool-hunt/pain-scan-doordash-effective-cost.json (statement: 8.37% commission → 18.75% effective cost).
+- Ledger v1.17.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP (Mem0 + Context).

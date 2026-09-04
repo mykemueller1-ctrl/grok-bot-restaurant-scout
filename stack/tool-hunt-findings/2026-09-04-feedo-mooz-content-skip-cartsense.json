@@ -1,0 +1,22 @@
+{
+  "finding_id": "feedo-mooz-cartsense-nailah-triage-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Triage: Feedo/Mooz watch · Cartsense/Nailah skip",
+  "vendor_or_project": "Feedo AI / Mooz / Cartsense / Nailah",
+  "urls": [
+    "https://feedoai.com/",
+    "https://www.mooz.tech/",
+    "https://cartsense.ai/",
+    "https://nailah.ai/"
+  ],
+  "what_it_does": "Feedo: dish-photo → week of Instagram posts (claims IG→direct delivery share). Mooz: Bali F&B daily cross-platform posting beta. Cartsense: TikTok Shop ops for general ecom (not restaurants). Nailah: F&B AI OS with inventory, labor reports, demand forecast.",
+  "how_competitors_use_it": "Content-only social automation (Feedo/Mooz) vs ecom Shop middleware (Cartsense) vs full ops OS (Nailah).",
+  "what_we_use_today": "PlateAI/Flik already watched for content-only; Never86 closes shoppable sales.",
+  "gap": "Feedo/Mooz → watch as content peers (no Shop close). Cartsense → skip (not restaurant vertical). Nailah → skip for Beyond the Hunt (labor/forecast drift); do not research their forecast features.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 4,
+  "summary": "Feedo/Mooz = content-only peers (watch light). Cartsense = skip (not restaurants). Nailah = skip Beyond the Hunt (labor/forecast).",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

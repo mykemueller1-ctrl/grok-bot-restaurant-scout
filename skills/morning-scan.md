@@ -16,7 +16,7 @@
    - brand / kitchen name if identifiable
    - source URL, score (0–100)
    - Never86 fit note: shoppable SKU potential vs marketplace-only vibe
-   - Rival wedge check: would Owner/Trenz/Menami first-party OS, TextOrder DM/SMS ordering, Seekadu reservation DMs, Klikit Shop POS, or generic AI menu-video (PlateAI/Flik) own this better — or does **shoppable buy-now + cult proof** win?
+   - Rival wedge check: would Owner/Trenz/Menami first-party OS, TextOrder/Ainisa DM ordering, Seekadu reservation DMs, Moast Shopify UGC widgets, Seekeasy creator discovery, Klikit Shop POS, or generic AI menu-video (Feedo/PlateAI/Flik/Mooz) own this better — or does **shoppable buy-now + cult proof** win?
 4. Write results to `CreatorLead` via the commerce engine MCP.
 5. Output a ranked list framed as **onboarding targets**, not content ideas alone.
 

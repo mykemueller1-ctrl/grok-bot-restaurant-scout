@@ -1,0 +1,21 @@
+{
+  "finding_id": "moast-shoppable-ugc-shopify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Moast — shoppable TikTok/IG UGC on Shopify PDPs",
+  "vendor_or_project": "Moast",
+  "urls": [
+    "https://www.moast.io/solutions/food-beverage",
+    "https://www.moast.io/",
+    "https://apps.shopify.com/moast-interactive-ugc"
+  ],
+  "what_it_does": "Imports TikTok/Instagram Reels + UGC into shoppable video widgets on Shopify product/collection pages; product tags convert in-video for F&B CPG brands.",
+  "how_competitors_use_it": "Food & beverage DTC brands close taste-reaction / recipe content on owned Shopify PDPs — adjacent love→buy, but not restaurant TikTok Shop kitchen rails.",
+  "what_we_use_today": "Never86 script-draft + catalog-sync for TikTok/IG buy-now (Franklin sandbox dogfood).",
+  "gap": "Watch as Shopify shoppable-UGC pattern. Never86 wedge stays in-app social commerce for chef kitchens, not Shopify widget for packaged goods.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Strong shoppable-video proof for F&B UGC→buy. Contrast in script-draft: they close on Shopify PDPs; we close on TikTok/IG Shop rails.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}
