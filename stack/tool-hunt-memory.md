@@ -380,3 +380,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-flipdish-pct-fee.json + 5 flipdish-fee SalesLeads; validate-flipdish-fee-dogfood ≥5 → strong_keep 23.
 - Watched Slice (5% Family / ~$3 card order) — pizza niche only.
 - Ledger v1.55.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Lunchbox guest convenience fee + Olo refresh)
+
+- Adopted pain-scan-lunchbox-guest-fee.json (free/no-commission OO, guest pays convenience fee) → strong_keep 24.
+- Added pain-to-sales-lunchbox-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-lunchbox-fee-dogfood ≥5.
+- Olo App 0% + Order with Google fee → watch refresh (enterprise).
+- Ledger v1.56.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

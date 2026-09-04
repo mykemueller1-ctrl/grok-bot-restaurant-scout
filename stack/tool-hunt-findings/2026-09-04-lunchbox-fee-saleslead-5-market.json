@@ -1,0 +1,26 @@
+{
+  "finding_id": "lunchbox-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Lunchbox guest convenience fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-lunchbox-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-lunchbox-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-lunchbox-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-lunchbox-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-lunchbox-fee-rioja.json",
+    "scripts/validate-lunchbox-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-lunchbox-guest-fee.json",
+    "https://zay-os.com/how-much-does-lunchbox-cost"
+  ],
+  "what_it_does": "Lunchbox small-operator 'free'/no-commission OO with guest convenience fee → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "Lunchbox splits free SMB product (guest convenience fee) vs enterprise Lunchbox 2.0 quote-only; OPA! partner for marketplace alternative.",
+  "what_we_use_today": "validate-lunchbox-fee-dogfood ≥5; guest_paid_platform_fee signal",
+  "gap": "Convenience fee $ amount not public — teach pattern not dollar quote; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Lunchbox guest convenience-fee SalesLead dogfoods match five love markets; strong_keep 24.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

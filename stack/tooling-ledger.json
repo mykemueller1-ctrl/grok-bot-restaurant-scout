@@ -1,5 +1,5 @@
 {
-  "version": "1.55.0",
+  "version": "1.56.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -102,6 +102,7 @@
     "owner_fee_dogfood_gate": "scripts/validate-owner-fee-dogfood.mjs (Owner Flex 5% + guest 5% support → SalesLead ≥5 markets)",
     "popmenu_fee_dogfood_gate": "scripts/validate-popmenu-fee-dogfood.mjs (Popmenu $1/order guest fee → SalesLead ≥5 markets)",
     "flipdish_fee_dogfood_gate": "scripts/validate-flipdish-fee-dogfood.mjs (Flipdish 2–7% direct % → SalesLead ≥5 markets)",
+    "lunchbox_fee_dogfood_gate": "scripts/validate-lunchbox-fee-dogfood.mjs (Lunchbox guest convenience fee → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -458,13 +459,14 @@
     {
       "name": "Lunchbox",
       "lane": "vertical_gtm",
-      "stack": "Enterprise branded web/app first-party ordering + free marketplace order aggregation into POS + marketing CRM; OPA! partner",
+      "stack": "SMB free OO (guest convenience fee) + enterprise Lunchbox 2.0 quote-only branded web/app + marketplace aggregation; OPA! partner",
       "memory": "Guest/order data for email/SMS loyalty",
-      "edge": "Chain-scale first-party KEEP + aggregation — not TikTok Shop-native; contrast in script-draft",
+      "edge": "Guest convenience fee on 'free' SMB OO + chain-scale first-party — not TikTok Shop-native; contrast in script-draft",
       "updated": "2026-09-04",
       "sources": [
         "https://lunchbox.io/",
         "https://lunchbox.io/ordering",
+        "https://zay-os.com/how-much-does-lunchbox-cost",
         "https://www.prnewswire.com/news-releases/restaurants-are-racing-to-launch-nick-the-greek-pei-wei-and-more-tap-lunchbox-for-fast-first-party-growth-302504843.html"
       ]
     },
@@ -864,6 +866,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Lunchbox guest convenience fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN free/no-commission OO with guest convenience fee → SalesLead vs Shop ~6%; validate-lunchbox-fee-dogfood ≥5; strong_keep 24",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Olo App 0% + Order with Google fee refresh",
+      "lane": "vertical_gtm",
+      "why": "Second-party 0% app watch; Google-originated orders still bill per-order fee via Olo — enterprise skew",
+      "verdict": "watch"
+    },
     {
       "item": "Flipdish 2–7% direct % SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
