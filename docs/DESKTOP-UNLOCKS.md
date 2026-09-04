@@ -40,3 +40,7 @@ node scripts/unlock-beyond-the-hunt.mjs   # after READY: Mem0 import + Context s
 ```
 
 Reply in this cloud agent when secrets/OAuth are done.
+
+## 4. Composio social (love→buy-now UGC)
+
+See `docs/COMPOSIO-SOCIAL-UNLOCKS.md` (`node scripts/print-social-unlocks.mjs`). Yelp love fixtures stay Active without IG/TikTok.

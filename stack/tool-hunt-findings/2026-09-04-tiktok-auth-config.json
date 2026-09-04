@@ -1,0 +1,14 @@
+{
+  "finding_id": "composio-tiktok-auth-config-2026-09",
+  "lane": "mcp_connectors",
+  "name": "TikTok Composio org auth-config required",
+  "verdict": "needs_auth",
+  "priority": 1,
+  "summary": "Composio has no managed auth for TikTok \u2014 operator must set auth config at dashboard then reconnect. Morning-scan stays on Yelp until then.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true",
+    "docs/COMPOSIO-SOCIAL-UNLOCKS.md"
+  ],
+  "operator_ask": "Open https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true \u2014 complete auth config, then reply tiktok connected"
+}

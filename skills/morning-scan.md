@@ -10,6 +10,7 @@
    - **Active public seed (no social auth):** Composio `YELP_SEARCH_BUSINESSES` → `YELP_GET_BUSINESS_DETAILS` for chef/cult venues by city (calibration: `fixtures/tool-hunt/chicago-love-brands.json`, `austin-love-brands.json`, `miami-love-brands.json`, `nashville-love-brands.json`, `denver-love-brands.json`). Prefer high review_count + chef/cult narrative over generic high-rating trucks.
    - Else Composio `COMPOSIO_SEARCH_WEB` / public SERP for recent chef/cult kitchen UGC (Bright Data if auth’d).
    - When Instagram Composio `never86` is Active, sample Business/Creator media for food love proofs (read-only).
+   - Social connect steps: `docs/COMPOSIO-SOCIAL-UNLOCKS.md` (TikTok needs org auth-config first). **Do not block the scan on IG/TikTok** — Yelp seed is enough for love→buy-now calibration.
 3. For each of top 5, capture:
    - handle, followers, niche tags
    - hook summary + why people love it (UGC signal)

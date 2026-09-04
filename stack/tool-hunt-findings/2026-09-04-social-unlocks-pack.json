@@ -1,0 +1,12 @@
+{
+  "finding_id": "composio-social-unlocks-pack-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Composio social unlocks pack (IG+TikTok) with Yelp Active seed",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "docs/COMPOSIO-SOCIAL-UNLOCKS.md + print-social-unlocks.mjs \u2014 documents IG connect + TikTok auth-config; proves Yelp love fixtures Active for morning-scan without social auth.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "docs/COMPOSIO-SOCIAL-UNLOCKS.md"
+  ]
+}

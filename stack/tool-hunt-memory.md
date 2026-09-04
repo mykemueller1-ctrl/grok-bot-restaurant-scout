@@ -646,3 +646,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Shipped `fixtures/tool-hunt/keep-grader/index.html` — Never86 KEEP$ channel rank (Shop ~6% vs Marketplace).
 - `scripts/validate-keep-grader-ui.mjs` gates CLI parity (G&TG sample marketplace_fee_total $3640).
 - Closes vertical-grader-wedge public surface without expanding import waves. Fee catalog still paused. Auth still blocked.
+
+### 2026-09-04 (Composio social unlocks pack)
+
+- Added `docs/COMPOSIO-SOCIAL-UNLOCKS.md` + `scripts/print-social-unlocks.mjs`.
+- TikTok confirmed: needs org auth-config (no managed auth) before Connect.
+- Fresh Instagram Composio link issued. Yelp love fixtures remain Active seed for morning-scan.
+- Fee catalog still paused. Mem0/Context still blocked.

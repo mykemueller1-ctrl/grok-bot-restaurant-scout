@@ -1,5 +1,5 @@
 {
-  "version": "1.92.5",
+  "version": "1.92.6",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -140,7 +140,8 @@
     "tenvito_fee_dogfood_gate": "scripts/validate-tenvito-fee-dogfood.mjs (Tenvito Open 3.9% / Service 2.9% per order → SalesLead ≥5 markets; EU thematic)",
     "automation_pack": "docs/CURSOR-AUTOMATION-TOOL-HUNT.md + scripts/print-tool-hunt-automation.mjs",
     "sync_skills_pack": "docs/CURSOR-SYNC-SKILLS.md + scripts/print-sync-skills-checklist.mjs",
-    "keep_grader_ui": "fixtures/tool-hunt/keep-grader/index.html + scripts/validate-keep-grader-ui.mjs"
+    "keep_grader_ui": "fixtures/tool-hunt/keep-grader/index.html + scripts/validate-keep-grader-ui.mjs",
+    "social_unlocks_pack": "docs/COMPOSIO-SOCIAL-UNLOCKS.md + scripts/print-social-unlocks.mjs"
   },
   "competitors": [
     {
@@ -1161,6 +1162,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Composio social unlocks pack (IG+TikTok) with Yelp Active seed",
+      "lane": "vertical_gtm",
+      "why": "Morning-scan love→buy-now stays unblocked via Yelp fixtures; IG link + TikTok auth-config documented for UGC upgrade",
+      "verdict": "adopt"
+    },
     {
       "item": "KEEP channel grader thin public UI",
       "lane": "vertical_gtm",
@@ -2258,13 +2265,13 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_uWBIp4ZMj9uk (expires ~10 min) → Active Instagram; then morning-scan UGC proofs",
+      "action": "Open https://connect.composio.dev/link/lk_X44BlLfaH2eG (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp love fixtures Active until connected.",
       "priority": 1
     },
     {
       "id": "composio-tiktok-auth-config",
       "gap": "TikTok Composio needs org auth-config before connect",
-      "action": "https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true then reconnect",
+      "action": "https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true — set auth config, then reconnect. See docs/COMPOSIO-SOCIAL-UNLOCKS.md",
       "priority": 3
     },
     {
@@ -2293,5 +2300,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T02:05:00Z"
+  "updated_at": "2026-09-05T02:15:00Z"
 }

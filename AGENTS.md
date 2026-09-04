@@ -27,6 +27,7 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` | Paste-ready weekly Beyond the Hunt Automation |
 | `docs/CURSOR-SYNC-SKILLS.md` | Desktop Sync Skills for Cloud Agents checklist |
 | `fixtures/tool-hunt/keep-grader/` | Thin public KEEP channel grader (love→buy-now) |
+| `docs/COMPOSIO-SOCIAL-UNLOCKS.md` | IG + TikTok Composio unlocks; Yelp Active seed |
 | `docs/CTAP-SEATS.md` | CTAP sold seats + front-door login |
 
 ## Build / validate
