@@ -339,3 +339,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted guest_paid_platform_fee on KEEP scorer (CLI + keepChannelGrade sibling marketplaceKeepScore.ts).
 - CI smoke for DevourNow-class “customers pay $2.99 tech fee”. Distinct from restaurant-paid per_order fees.
 - Ledger v1.49.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Otter per-order SalesLead + IG checkout refresh)
+
+- Added pain-to-sales-otter-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json (restaurant-paid ~$0.15+/order under 0% OO claim).
+- validate-otter-fee-dogfood.mjs ≥5; CI wired as parallel gate (not yet in market-coverage chain).
+- IG Shopping 2026: native Checkout still cited at 5%/$0.40 min; link-out often $0 Meta selling fee — watch only; keep social_fee_pct=6.
+- Ledger v1.50.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

@@ -1,5 +1,5 @@
 {
-  "version": "1.49.0",
+  "version": "1.50.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -97,6 +97,7 @@
     "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs",
     "social_shop_dogfood_gate": "scripts/validate-social-shop-dogfood.mjs (Shop ~6% → SalesLead ≥5 markets)",
     "guest_fee_dogfood_gate": "scripts/validate-guest-fee-dogfood.mjs (DevourNow-class guest tech fee → SalesLead ≥5 markets)",
+    "otter_fee_dogfood_gate": "scripts/validate-otter-fee-dogfood.mjs (Otter restaurant-paid per-order txn fee → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -856,6 +857,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Otter restaurant-paid per-order fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Otter ~$0.15+/order restaurant-paid txn → SalesLead vs Shop ~6%; validate-otter-fee-dogfood ≥5; distinct from guest_paid",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Instagram Shopping checkout ~5% vs link-out $0 Meta selling fee (2026 refresh)",
+      "lane": "vertical_gtm",
+      "why": "Native Checkout still cited at 5%/$0.40 min; much commerce is merchant link-out — reinforce Shop ~6% / own-checkout; keep grader default 6",
+      "verdict": "watch"
+    },
     {
       "item": "guest_paid_platform_fee KEEP signal (DevourNow-class diner tech fees)",
       "lane": "vertical_gtm",
