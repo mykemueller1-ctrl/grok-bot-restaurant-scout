@@ -129,6 +129,8 @@ jobs:
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-rioja-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-girl-goat-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-michaels-genuine-sandbox.json
           test -f fixtures/tool-hunt/pain-scan-dual-run.json
           test -f fixtures/tool-hunt/pain-scan-bentobox-per-order.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
@@ -145,7 +147,7 @@ jobs:
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 11'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
-          node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 3'
+          node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
