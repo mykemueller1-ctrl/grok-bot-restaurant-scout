@@ -1,0 +1,29 @@
+{
+  "finding_id": "yelp-5market-love-stable-pass3-2026-09",
+  "lane": "vertical_gtm",
+  "name": "5-market Yelp love counts stable (pass-3)",
+  "vendor_or_project": "Yelp love fixtures",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Composio Yelp 2026-09-04 reconfirm: Girl & The Goat 10,731; Franklin Barbecue 6,477; Michael's Genuine 2,084; Husk 1,987; Rioja 2,914 — unchanged vs fixture live_yelp. Love→buy-now calibration holds; no fixture rewrite needed.",
+  "what_it_does": "Live proof that CHI/ATX/MIA/BNA/DEN primary love seeds remain stable for morning-scan.",
+  "gap": "",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.yelp.com/biz/girl-and-the-goat-chicago",
+    "https://www.yelp.com/biz/franklin-barbecue-austin",
+    "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami",
+    "https://www.yelp.com/biz/husk-nashville",
+    "https://www.yelp.com/biz/rioja-denver"
+  ],
+  "counts": {
+    "girl_and_the_goat": 10731,
+    "franklin_barbecue": 6477,
+    "michaels_genuine": 2084,
+    "husk": 1987,
+    "rioja": 2914
+  },
+  "not_this": "Not forecasting. Not a fee dogfood."
+}

@@ -1,0 +1,23 @@
+{
+  "finding_id": "menuro-gloriafood-successor-0pct-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menuro GloriaFood successor (0% commission + branded app)",
+  "vendor_or_project": "Menuro",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "menuro.io: North America independent growth OS — commission-free website/app ordering, branded iOS/Android app, loyalty, SMS/push, analytics. Pricing is quote-based monthly (solutions × locations); 0% commission on direct orders; card processing at cost. GloriaFood shutdown blog pitches Menuro as ownership upgrade vs free OO. Watch with Ressto/CloudWaitress/Ogent/Fleksa — not Meta FBE; fee pause (no dogfood).",
+  "what_it_does": "Branded app + 0% OO + loyalty/marketing for independents escaping marketplace rent and GloriaFood EOL.",
+  "how_competitors_use_it": "BC/NA independents migrate from delivery apps / GloriaFood; done-for-you launch in 1–2 weeks claimed.",
+  "what_we_use_today": "GloriaFood EOL→Shop wedge; successors Ressto/CloudWaitress/Fleksa/Ogent watched",
+  "gap": "Not Shop-native TikTok/IG buy-now; quote-only pricing opaque vs Never86 Shop KEEP math",
+  "pivot_speed": "days",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://menuro.io/",
+    "https://menuro.io/solutions-online-ordering",
+    "https://menuro.io/pricing",
+    "https://menuro.io/blog/gloriafood-shutting-down-2027/"
+  ],
+  "not_this": "Not Meta FBE peer. Not fee dogfood. Not forecasting. Tertiary peers Meni.ge / iShopo noted in GloriaFood alt blogs — skip unless US GTM cite."
+}

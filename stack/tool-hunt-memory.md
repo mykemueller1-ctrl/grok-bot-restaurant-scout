@@ -911,3 +911,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed TikTok Shop Oct 2026 fee reports + consumables <$15 ~5% carve-out; Food&Bev Dashboardly still 6% — grader stays 6. Finding: `2026-09-04-tiktok-shop-fee-food-carveout.json`.
 - Fresh Instagram reconnect: `https://connect.composio.dev/link/lk_KXRNlzyKe7d3` (~10 min).
 - Ledger v1.92.47. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp love stable + Menuro)
+
+- Pass-3 Yelp: all five primaries unchanged (G&TG 10,731 / Franklin 6,477 / Michaels 2,084 / Husk 1,987 / Rioja 2,914). Finding: `2026-09-04-yelp-5market-stable-pass3.json`.
+- Watched **Menuro** GloriaFood-successor 0% OO + branded app (quote monthly). Finding: `2026-09-04-menuro-gloriafood-successor.json`.
+- Ledger v1.92.48. Auth still blocked for unlock READY.
