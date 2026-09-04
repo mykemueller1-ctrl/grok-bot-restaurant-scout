@@ -1,0 +1,50 @@
+{
+  "seed_id": "denver-love-brands-yelp-2026-09-04",
+  "purpose": "Fifth-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "market": "Denver, CO",
+  "brands": [
+    {
+      "name": "Rioja",
+      "yelp_alias": "rioja-denver",
+      "phone": "+13038202282",
+      "rating": 4.3,
+      "review_count": 2914,
+      "transactions": ["pickup"],
+      "love_signal": "Chef Jennifer Jasinski / Larimer Square destination / first-party pickup present",
+      "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard"
+    },
+    {
+      "name": "Hop Alley",
+      "yelp_alias": "hop-alley-denver",
+      "phone": "+17203798340",
+      "rating": 4.1,
+      "review_count": 613,
+      "transactions": ["delivery", "restaurant_reservation"],
+      "love_signal": "RiNo Chinese cult / chef-driven / high UGC potential",
+      "never86_fit": "Viral demand → shoppable SKUs vs marketplace delivery rent"
+    },
+    {
+      "name": "Tavernetta",
+      "yelp_alias": "tavernetta-denver",
+      "phone": "+17206051889",
+      "rating": 4.5,
+      "review_count": 970,
+      "transactions": ["delivery", "pickup"],
+      "love_signal": "Frasca family Italian / Union Station destination",
+      "never86_fit": "National-class love → social commerce close before ChowNow/Lunchbox web OS"
+    },
+    {
+      "name": "Uncle",
+      "yelp_alias": "uncle-denver",
+      "phone": "+13034333263",
+      "rating": 4.1,
+      "review_count": 1577,
+      "transactions": ["delivery"],
+      "love_signal": "Highlands ramen cult / strong review volume",
+      "never86_fit": "Local love with delivery present — re-route social demand to owned buy-now"
+    }
+  ],
+  "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Hop Alley / Rioja / Tavernetta / Uncle) 2026-09-04",
+  "status": "calibration_only",
+  "notes": "Prefer chef/cult narrative + review volume. Fruition restaurant alias not resolved in this scan — skipped."
+}

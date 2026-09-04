@@ -173,3 +173,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted script-draft-husk-buy-now.json + catalog-sync-husk-sandbox.json (PENDING_APPROVAL / SANDBOX).
 - Watched Lunchbox (first-party web/app + marketplace aggregation; OPA! partner). Skip forecasting.
 - Ledger v1.23.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP (Mem0 + Context).
+
+### 2026-09-04 (Denver love + ChowNow + buy-now dogfood gate)
+
+- Adopted denver-love-brands.json (Rioja, Hop Alley, Tavernetta, Uncle); validate-love markets=5.
+- Dogfood: pain-to-sales-denver-rioja.json. Adopted scripts/validate-buy-now-dogfood.mjs CI gate.
+- Watched ChowNow (commission-free first-party + dual-run DoorDash). Skip forecasting.
+- Ledger v1.24.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

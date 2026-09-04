@@ -93,6 +93,7 @@ jobs:
           test -f fixtures/tool-hunt/austin-love-brands.json
           test -f fixtures/tool-hunt/miami-love-brands.json
           test -f fixtures/tool-hunt/nashville-love-brands.json
+          test -f fixtures/tool-hunt/denver-love-brands.json
           test -f fixtures/tool-hunt/pain-scan-marketplace-keep.json
           test -f fixtures/tool-hunt/pain-scan-doordash-effective-cost.json
           test -f fixtures/tool-hunt/pain-scan-menu-markup.json
@@ -100,6 +101,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json
           test -f fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-nashville-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-denver-rioja.json
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
           test -f scripts/mem0-import-tool-hunt-memory.mjs
@@ -107,6 +109,7 @@ jobs:
           test -f scripts/score-marketplace-keep.mjs
           test -f scripts/score-pain-fixtures.mjs
           test -f scripts/validate-love-fixtures.mjs
+          test -f scripts/validate-buy-now-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
@@ -118,7 +121,8 @@ jobs:
           node scripts/score-marketplace-keep.mjs "pad DoorDash menus 20% menu markup to offset commissions" | grep -q menu_markup_pain
           node scripts/score-marketplace-keep.mjs "Own your ordering commission-free KEEP more profit" | grep -q own_ordering_keep
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 9'
-          node scripts/validate-love-fixtures.mjs | grep -q '"markets": 4'
+          node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
+          node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 2'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then

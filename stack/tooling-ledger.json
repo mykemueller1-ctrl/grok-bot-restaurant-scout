@@ -1,5 +1,5 @@
 {
-  "version": "1.23.0",
+  "version": "1.24.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -78,21 +78,22 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json + pain-to-sales-miami-michaels-genuine.json + pain-to-sales-nashville-husk.json",
+    "pain_sales_dogfood": "yelp-enrich-girl-goat + pain-to-sales-keep-girl-goat + franklin + miami-michaels-genuine + nashville-husk + denver-rioja",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json + pain-scan-menu-markup.json)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json + miami-love-brands.json + nashville-love-brands.json (Yelp Active)",
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin + miami + nashville + denver-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json + script-draft-husk-buy-now.json",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json + catalog-sync-husk-sandbox.json",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP (effective_cost_math + pos_fee_lockin + menu_markup_pain + own_ordering_keep)",
-    "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA)",
+    "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
       "headless_rest": "CONTEXT_DEV_API_KEY → scripts/context-search.mjs POST /v1/web/search",
       "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
-    }
+    },
+    "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs"
   },
   "competitors": [
     {
@@ -454,9 +455,39 @@
         "https://lunchbox.io/ordering",
         "https://www.prnewswire.com/news-releases/restaurants-are-racing-to-launch-nick-the-greek-pei-wei-and-more-tap-lunchbox-for-fast-first-party-growth-302504843.html"
       ]
+    },
+    {
+      "name": "ChowNow",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free flat-fee direct ordering + diner data ownership + Discovery Network; dual-run with DoorDash",
+      "memory": "Owned diner contact / order history for remarketing",
+      "edge": "Independent first-party KEEP peer — not TikTok Shop-native; contrast in sales/script",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers",
+        "https://get.chownow.com/blog/restaurant-marketing-reviews"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Denver Yelp love + Rioja SalesLead dogfood",
+      "lane": "vertical_gtm",
+      "why": "Fifth-market morning-scan + KEEP→DRAFT without Apollo/Mem0",
+      "verdict": "adopt"
+    },
+    {
+      "item": "validate-buy-now-dogfood.mjs script+catalog gate",
+      "lane": "cursor_agents",
+      "why": "CI ensures Franklin+Husk buy-now dogfood pairs stay PENDING_APPROVAL/SANDBOX",
+      "verdict": "adopt"
+    },
+    {
+      "item": "ChowNow commission-free first-party OS",
+      "lane": "vertical_gtm",
+      "why": "Independent KEEP peer next to Lunchbox/OPA!/Outbites; watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Husk Nashville buy-now script + catalog sandbox",
       "lane": "vertical_gtm",

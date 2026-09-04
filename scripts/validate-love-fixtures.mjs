@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Validate love-brand calibration fixtures (Chicago / Austin / Miami / Nashville).
+ * Validate love-brand calibration fixtures (Chicago / Austin / Miami / Nashville / Denver).
  * Ensures morning-scan seeds stay multi-market without Instagram auth.
  * Exit 0 if each *-love-brands.json has ≥3 brands; else 1.
  */
@@ -19,6 +19,7 @@ const required = [
   "austin-love-brands.json",
   "miami-love-brands.json",
   "nashville-love-brands.json",
+  "denver-love-brands.json",
 ];
 for (const r of required) {
   if (!files.includes(r)) {
