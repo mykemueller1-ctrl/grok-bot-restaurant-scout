@@ -1,0 +1,85 @@
+{
+  "dogfood_id": "pain-to-sales-miami-michaels-genuine-2026-09-04",
+  "purpose": "Third-market Active path: KEEP / effective-cost pain + Miami chef love (Michael's Genuine, pickup present) → SalesLead DRAFT. No Apollo/Mem0/Context/IG required.",
+  "pain_stubs": [
+    {
+      "source": "x",
+      "url": "https://x.com/myke86d/status/2084843820680708466",
+      "snippet": "Your DoorDash commission is not your DoorDash cost. Commission rate 8.37%; effective cost 18.75%. The restaurant lives on what is left.",
+      "pain_id": "doordash_effective_cost",
+      "keep_score": 90,
+      "never86_wedge": "anti_marketplace_buy_now"
+    },
+    {
+      "source": "web",
+      "url": "https://dundeeomaha.org/2026/04/omaha-restaurant-owner-drops-delivery-apps-after-188k-in-fees/",
+      "snippet": "Restaurant owner quit DoorDash after ~$188K in marketplace commission fees — first-party to KEEP revenue.",
+      "pain_id": "doordash_commission_quit",
+      "keep_score": 100,
+      "never86_wedge": "anti_marketplace_buy_now"
+    }
+  ],
+  "pain_lead": {
+    "pain_id": "doordash_effective_cost",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Michael's Genuine Food & Drink",
+      "city": "Miami",
+      "market": "Miami, FL",
+      "yelp_alias": "michaels-genuine-food-and-drink-miami",
+      "phone": "+13056760894",
+      "rating": 4.0,
+      "review_count": 2084,
+      "transactions": ["pickup"],
+      "love_signal": "Chef Michael Schwartz / Design District cult / first-party pickup present"
+    },
+    "complaint_summary": "Industry KEEP / effective-cost signal (not a personal Michael's Genuine complaint). Design District chef brand already has pickup — Never86 buy-now owns social demand before DirectOrders/OrderPost/Owner close the channel.",
+    "opportunity_signals": [
+      "cult_chef_ugc",
+      "first_party_pickup_present",
+      "marketplace_effective_cost_pain",
+      "shoppable_sku_potential"
+    ],
+    "vendors_mentioned": ["doordash"],
+    "sources": [
+      "https://x.com/myke86d/status/2084843820680708466",
+      "fixtures/tool-hunt/miami-love-brands.json",
+      "fixtures/tool-hunt/pain-scan-doordash-effective-cost.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "doordash_effective_cost",
+    "account_name": "Michael's Genuine Food & Drink",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Miami",
+    "market": "Miami, FL",
+    "complaint_thesis": "Marketplace dashboards celebrate GMV while statement math shows ~18.75% effective DoorDash cost. Chef-loved Miami brands with pickup already first-party should route viral social demand to shoppable buy-now — not delivery-app KEEP losers.",
+    "quotes": [
+      "Your DoorDash commission is not your DoorDash cost",
+      "Effective cost: 18.75%",
+      "The restaurant lives on what is left"
+    ],
+    "vendors_to_displace": ["DoorDash"],
+    "why_never86_now": "Michael Schwartz-class love + Yelp pickup already first-party → Never86 TikTok/IG buy-now closes Design District demand without marketplace rent. Contrast vs DirectOrders/Seared web OS, OrderPost hosted links, Ainisa DM agents.",
+    "suggested_angle": "Draft only: Your Design District love already prints demand. Never86 turns it into shoppable buy-now so fans pay you — not an 18% effective DoorDash statement.",
+    "sources": [
+      "https://x.com/myke86d/status/2084843820680708466",
+      "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami",
+      "fixtures/tool-hunt/miami-love-brands.json"
+    ],
+    "confidence": 73,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — not live outreach. Third market after Chicago G&TG + Austin Franklin."
+  },
+  "tools_used": [
+    "YELP_SEARCH_BUSINESSES",
+    "scripts/score-marketplace-keep.mjs",
+    "X.search_posts_all",
+    "fixtures/tool-hunt/miami-love-brands.json"
+  ],
+  "status": "verified_active",
+  "researched_at": "2026-09-04"
+}

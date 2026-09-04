@@ -23,6 +23,8 @@ const rules = [
   { re: /restaurant owner|operator|gm\b/, signal: "operator_voice", w: 10 },
   // Statement math: headline commission ≠ take-home (Never86 anti-rent teach signal)
   { re: /effective cost|left with|lives on|what (is|you'?re? )left|statement:/, signal: "effective_cost_math", w: 20 },
+  // POS lock-in (Toast etc.) — stack pain for sales forms, not forecasting
+  { re: /\btoast\b.*(fee|fees|lock|terminat)|leaving toast|toast pos/, signal: "pos_fee_lockin", w: 15 },
 ];
 
 const signals = [];

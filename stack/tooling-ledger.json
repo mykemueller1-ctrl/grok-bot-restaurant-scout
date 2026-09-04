@@ -1,5 +1,5 @@
 {
-  "version": "1.19.0",
+  "version": "1.20.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -78,14 +78,15 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json",
+    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json + pain-to-sales-miami-michaels-genuine.json",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json + miami-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP score_marketplace_keep (incl. effective_cost_math)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP (effective_cost_math + pos_fee_lockin)",
+    "love_fixture_gate": "scripts/validate-love-fixtures.mjs",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
       "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
@@ -381,9 +382,44 @@
       "sources": [
         "https://www.directorders.com/"
       ]
+    },
+    {
+      "name": "Gegsy",
+      "lane": "vertical_gtm",
+      "stack": "Branded iOS/Android + web storefront for Square sellers; Nash/DoorDash Drive delivery; from $69/mo",
+      "memory": "Square catalog sync",
+      "edge": "Orderitto-class Square app OS; KEEP messaging, not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://gegsy.com/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Toast POS fee-lockin KEEP signal",
+      "lane": "vertical_gtm",
+      "why": "pos_fee_lockin on KEEP scorer boosts Toast leaving/fee stubs for sales forms",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Miami Michael's Genuine KEEP→SalesLead dogfood",
+      "lane": "vertical_gtm",
+      "why": "Third-market love+pain→DRAFT without Apollo/Mem0/IG",
+      "verdict": "adopt"
+    },
+    {
+      "item": "validate-love-fixtures.mjs multi-market gate",
+      "lane": "vertical_gtm",
+      "why": "CI ensures Chicago/Austin/Miami love seeds stay ≥3 brands each",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Gegsy Square branded apps",
+      "lane": "vertical_gtm",
+      "why": "First-party Square app OS; watch light with Orderitto",
+      "verdict": "watch"
+    },
     {
       "item": "Miami Yelp love-brand calibration",
       "lane": "vertical_gtm",

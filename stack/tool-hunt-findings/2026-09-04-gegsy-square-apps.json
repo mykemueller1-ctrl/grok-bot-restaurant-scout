@@ -1,0 +1,19 @@
+{
+  "finding_id": "gegsy-square-branded-apps-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Gegsy — branded Square ordering app + web storefront",
+  "vendor_or_project": "Gegsy",
+  "urls": [
+    "https://gegsy.com/"
+  ],
+  "what_it_does": "Branded iOS/Android + web storefront for Square sellers; real-time Square sync; delivery via Nash/DoorDash Drive; from $69/mo; no commission.",
+  "how_competitors_use_it": "Orderitto-class first-party app OS tied to Square — KEEP messaging, not TikTok Shop-native.",
+  "what_we_use_today": "Orderitto/Outbites/Seared/DirectOrders watched.",
+  "gap": "Watch light with other first-party KEEP app builders.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 4,
+  "summary": "Square-native branded ordering peer. Cite vs Never86 Shop close.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

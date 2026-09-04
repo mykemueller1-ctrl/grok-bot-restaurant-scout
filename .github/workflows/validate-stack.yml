@@ -32,9 +32,11 @@ jobs:
           if (a.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(a));
           const eff = scoreMarketplaceKeep('DoorDash commission is not your cost — statement: effective cost 18.75%; restaurant lives on what is left');
           if (!eff.signals.includes('effective_cost_math') || eff.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(eff));
+          const toast = scoreMarketplaceKeep('Restaurant owners leaving Toast cite high fees lock-in — rent they do not KEEP');
+          if (!toast.signals.includes('pos_fee_lockin') || toast.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(toast));
           const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
           if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
-          console.log('KEEP scorer smoke ok', a.score, eff.score, b.score);
+          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, b.score);
           "
 
   wiring:
@@ -94,16 +96,20 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-doordash-effective-cost.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json
           test -f fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f scripts/mem0-import-tool-hunt-memory.mjs
           test -f scripts/mem0-smoke.mjs
           test -f scripts/score-marketplace-keep.mjs
           test -f scripts/score-pain-fixtures.mjs
+          test -f scripts/validate-love-fixtures.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           node scripts/score-marketplace-keep.mjs "KEEP DoorDash commission quit" | grep -q anti_marketplace_buy_now
           node scripts/score-marketplace-keep.mjs "DoorDash commission is not your cost — statement effective cost 18.75% restaurant lives on what is left" | grep -q effective_cost_math
+          node scripts/score-marketplace-keep.mjs "Restaurant owners leaving Toast cite high fees lock-in — rent they do not KEEP" | grep -q pos_fee_lockin
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 7'
+          node scripts/validate-love-fixtures.mjs | grep -q '"markets": 3'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
             echo "unlock READY"

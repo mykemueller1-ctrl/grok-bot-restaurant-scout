@@ -31,4 +31,4 @@ Rules:
 
 **Done when:** `SalesLead` saved and owner notified.
 
-**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` prove Yelp/Maps/X/KEEP → SalesLead DRAFT without Apollo/Mem0.
+**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` + `fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json` prove multi-market Yelp/Maps/X/KEEP → SalesLead DRAFT without Apollo/Mem0.

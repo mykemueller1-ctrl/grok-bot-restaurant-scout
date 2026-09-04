@@ -16,6 +16,8 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /restaurant owner|operator|gm\b/i, signal: "operator_voice", w: 10 },
   // Statement math: headline commission ≠ take-home (Never86 anti-rent teach signal)
   { re: /effective cost|left with|lives on|what (is|you'?re? )left|statement:/i, signal: "effective_cost_math", w: 20 },
+  // POS lock-in (Toast etc.) — stack pain for sales forms, not forecasting
+  { re: /\btoast\b.*(fee|fees|lock|terminat)|leaving toast|toast pos/i, signal: "pos_fee_lockin", w: 15 },
 ];
 
 export function scoreMarketplaceKeep(snippet: string): MarketplaceKeepResult {

@@ -147,3 +147,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Hardened all pain-scan hits to anti_marketplace_buy_now (7/7); score-pain-fixtures gate ≥4.
 - Watched DirectOrders (zero-commission + IG/WhatsApp intake).
 - Ledger v1.19.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Toast pos_fee_lockin + Miami sales dogfood + Gegsy)
+
+- Adopted pos_fee_lockin on KEEP scorer (Toast fee/lock-in); validate-love-fixtures.mjs CI gate (CHI/ATX/MIA).
+- Dogfood: pain-to-sales-miami-michaels-genuine.json (KEEP + Design District pickup → SalesLead DRAFT).
+- Watched Gegsy (Square branded apps). Ledger v1.20.0. Auth still BLOCKED.
