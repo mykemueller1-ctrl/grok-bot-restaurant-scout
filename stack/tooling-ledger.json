@@ -1,5 +1,5 @@
 {
-  "version": "1.38.0",
+  "version": "1.39.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -85,7 +85,7 @@
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
@@ -264,13 +264,14 @@
     {
       "name": "Klikit",
       "lane": "vertical_gtm",
-      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda)",
+      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); US TikTok Shop food guides cite ~6% Shop referral vs 15–30% delivery apps",
       "memory": "n/a (ops middleware)",
-      "edge": "Validates TikTok Shop F&B fulfillment tooling; low US priority unless expanding APAC",
+      "edge": "TikTok Shop F&B middleware — Shop ~6% KEEP math sharpens Never86 buy-now vs DoorDash; watch US expansion",
       "updated": "2026-09-04",
       "sources": [
         "https://klikit.io/en/integrations/tiktok-shop",
-        "https://klikit.io/en/learn/tiktok-shop-restaurant-guide-2026"
+        "https://klikit.io/en/learn/tiktok-shop-restaurant-guide-2026",
+        "https://klikit.io/en/learn/tiktok-shop-food-delivery-us"
       ]
     },
     {
@@ -767,9 +768,32 @@
       "sources": [
         "https://menusso.com/us/"
       ]
+    },
+    {
+      "name": "Toast Online Ordering",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free direct OO into Toast POS; software + processing still apply; deepens Toast lock-in",
+      "memory": "Toast POS + OO",
+      "edge": "POS-bundled 0% commission peer — pairs with pos_fee_lockin; skip Toast labor/forecast products",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://pos.toasttab.com/products/online-ordering"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "TikTok Shop ~6% social_shop_fee KEEP teach",
+      "lane": "vertical_gtm",
+      "why": "Shop 6% vs Marketplace 15-30% sharpens love→buy-now; strong_keep 16",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Toast Online Ordering 0% commission + POS lock-in",
+      "lane": "vertical_gtm",
+      "why": "POS-bundled KEEP OO peer; watch only — skip labor/forecast",
+      "verdict": "watch"
+    },
     {
       "item": "Uber Webshop + Grubhub Direct marketplace_direct_zero widen",
       "lane": "vertical_gtm",

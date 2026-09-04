@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "TikTok Shop US 6% referral vs DoorDash 25% KEEP for love→buy-now",
+  "hits": [
+    {
+      "url": "https://canopymanagement.com/tiktok-shop-eligibility-what-you-need-to-get-started",
+      "posted_at": "2026-09-04",
+      "handle": "tiktok_shop_fees",
+      "snippet": "Restaurant owners: TikTok Shop US unified referral fee is ~6% (commission + processing) vs DoorDash Marketplace 15-30%. Love→buy-now on TikTok Shop keeps far more than delivery apps — still teach the shop referral fee, quit Marketplace rent, not forecasting.",
+      "pain_id": "tiktok_shop_vs_marketplace_keep",
+      "score": 90,
+      "never86_angle": "social_shop_fee teaches Shop ~6% vs Marketplace rent — Never86 script-draft/buy-now path owns the love→close wedge"
+    }
+  ],
+  "notes": "Sources: SacBee/HiveHQ/ConstantHire/Canopy TikTok Shop fee guides via Composio. Affiliate creator % is separate variable. Bright Data still 401. Skip forecasting."
+}

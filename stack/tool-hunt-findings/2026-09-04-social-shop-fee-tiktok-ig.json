@@ -1,0 +1,21 @@
+{
+  "finding_id": "social-shop-fee-tiktok-ig-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TikTok Shop ~6% + IG checkout 5% → social_shop_fee / first_party_pct widen",
+  "vendor_or_project": "TikTok Shop / Instagram Shopping",
+  "urls": [
+    "https://canopymanagement.com/tiktok-shop-eligibility-what-you-need-to-get-started",
+    "https://www.hivehq.ai/blog/tik-tok-shop-fee-breakdown-explained",
+    "https://www.nevuto.com/blog/instagram-shop-complete-guide-2026"
+  ],
+  "what_it_does": "US TikTok Shop unified referral ~6% (all-in platform take for many categories). Instagram native checkout often 5% selling fee (min ~$0.40); link-out tagging has no Meta selling fee.",
+  "how_competitors_use_it": "Klikit/MPAAS route TikTok Shop food into POS; Owner/IG path skews website checkout. Never86 love→buy-now sits on Shop/sandbox with better KEEP math than DoorDash.",
+  "what_we_use_today": "script-draft + catalog-sync dogfood; new social_shop_fee signal + widened first_party_pct_fee for IG 5% selling",
+  "gap": "Affiliate creator commissions (~13% avg) are separate — teach platform fee vs creator payout distinctly",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted social_shop_fee so Shop ~6% vs Marketplace 25% surfaces in pain→sales and buy-now teach; strong_keep 16.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

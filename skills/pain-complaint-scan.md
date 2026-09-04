@@ -11,7 +11,7 @@
 2. Expand queries with aliases + `vendors/catalog.json` complaint signal templates (`fuck {vendor}`, `leaving {vendor}`, …).
 3. Search connected sources:
    - Primary: complaint-sources + social-trends MCP
-   - Fallback (verified Active): Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_NEWS` + X `search_posts_all` for recent operator complaints (see `fixtures/tool-hunt/pain-scan-toast-doordash.json`, `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `fixtures/tool-hunt/pain-scan-doordash-effective-cost.json`, `fixtures/tool-hunt/pain-scan-menu-markup.json`, `fixtures/tool-hunt/pain-scan-owner-pct-fee.json`, `fixtures/tool-hunt/pain-scan-doordash-online-ordering.json`)
+   - Fallback (verified Active): Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_NEWS` + X `search_posts_all` for recent operator complaints (see `fixtures/tool-hunt/pain-scan-toast-doordash.json`, `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `fixtures/tool-hunt/pain-scan-doordash-effective-cost.json`, `fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json`, `fixtures/tool-hunt/pain-scan-menu-markup.json`, `fixtures/tool-hunt/pain-scan-owner-pct-fee.json`, `fixtures/tool-hunt/pain-scan-doordash-online-ordering.json`)
 4. Prefer posts/articles with **fee $, commission %, leaving/switching, keep-what-you-sell / channel ranking, effective cost / statement math, padded delivery menus / menu markup, own-your-ordering / commission-free, dual-run discovery** language from owners/GMs.
 5. Score KEEP language (optional Active helper):
    - Local: `node scripts/score-marketplace-keep.mjs "<snippet>"`

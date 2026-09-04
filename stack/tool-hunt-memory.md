@@ -271,3 +271,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Noted Uber Marketplace Lite ~20% after Mar 2026 hike.
 - Watched Olo Network (second-party 0% commission app) + Menusso branded app.
 - Ledger v1.38.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (TikTok Shop 6% social_shop_fee + Toast OO watch)
+
+- Adopted social_shop_fee (TikTok Shop US ~6% unified referral vs Marketplace 15–30%) + widened first_party_pct_fee for IG checkout 5% selling fee (strong_keep 16).
+- Updated script-draft anti-rent teach with Shop KEEP math.
+- Watched Toast Online Ordering (0% commission + POS lock-in). Skip labor/forecast.
+- Ledger v1.39.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
