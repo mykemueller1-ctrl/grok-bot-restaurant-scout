@@ -35,6 +35,8 @@ const rules = [
   { re: /\$\d+(?:\.\d{2})?\s*(per[\s-]?order|\/\s*order)|per[\s-]?order (fee|charge|service fee|overage)|online order service fee/, signal: "per_order_platform_fee", w: 15 },
   // First-party OS still takes a % (Owner Flex 5% restaurant fee / guest order support fee)
   { re: /5%\s*(restaurant|per[\s-]?order|platform|order support)|restaurant fee per order|order support fee|owner\.com.*5%|\$249.*5%/, signal: "first_party_pct_fee", w: 15 },
+  // Marketplace vendor's own 0% direct channel (DoorDash Online Ordering) — dual-run KEEP teach
+  { re: /doordash online ordering|0%\s*commission on direct|online ordering.*(0%|zero)\s*commission|(0%|zero)\s*commission.*(direct|own (site|website|channel))|drive on-demand/, signal: "marketplace_direct_zero", w: 15 },
 ];
 
 const signals = [];

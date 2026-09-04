@@ -1,5 +1,5 @@
 {
-  "version": "1.36.0",
+  "version": "1.37.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -85,7 +85,7 @@
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
@@ -674,9 +674,80 @@
       "sources": [
         "https://muncho.app/"
       ]
+    },
+    {
+      "name": "DoorDash Online Ordering",
+      "lane": "vertical_gtm",
+      "stack": "0% commission direct OO via restaurant website/social/Google; Marketplace still 15–30%; Drive On-Demand flat fulfillment",
+      "memory": "DoorDash merchant portal + dual-channel",
+      "edge": "Marketplace vendor's own 0% direct — dual-run KEEP teach; not TikTok Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://merchants.doordash.com/en-us/products/online-ordering",
+        "https://merchants.doordash.com/en-us/pricing"
+      ]
+    },
+    {
+      "name": "Restolabs",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free online ordering from ~$45–55/mo (Basic/Growth tiers); loyalty/QR add-ons",
+      "memory": "Owned diner contacts",
+      "edge": "Flat-fee KEEP peer — website OS not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.restolabs.com/blog/commission-free-online-ordering-for-restaurants",
+        "https://www.capterra.com/p/140085/Restolabs"
+      ]
+    },
+    {
+      "name": "MenuForma",
+      "lane": "vertical_gtm",
+      "stack": "AI QR menu + online ordering; 0% commission; ~$9.9/mo + Stripe processing",
+      "memory": "QR menu session",
+      "edge": "Low-cost QR KEEP peer — not shoppable TikTok/IG cart",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://menuforma.com/",
+        "https://menuforma.com/restaurant-qr-ordering"
+      ]
+    },
+    {
+      "name": "Clover Restaurant Online Ordering",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free OO on Restaurant Growth plan (~$89.95/mo); orders into Clover POS/kitchen",
+      "memory": "Clover POS catalog",
+      "edge": "POS-bundled KEEP OO with Clover lock-in — pairs with BentoBox pos_fee_lockin; skip labor modules",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.limelightpayments.com/clover-for-restaurants"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "DoorDash Online Ordering 0% direct KEEP signal",
+      "lane": "vertical_gtm",
+      "why": "marketplace_direct_zero teaches dual-run vs Marketplace 15-30%; strong_keep 14",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Restolabs commission-free OO ~$45–55/mo",
+      "lane": "vertical_gtm",
+      "why": "Flat-fee KEEP peer; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "MenuForma QR menu + 0% commission ordering",
+      "lane": "vertical_gtm",
+      "why": "Low-cost QR KEEP peer; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "Clover Restaurant Growth commission-free OO",
+      "lane": "vertical_gtm",
+      "why": "OO bundled ~$89.95/mo with Clover POS lock-in; watch with BentoBox signal",
+      "verdict": "watch"
+    },
     {
       "item": "UpMenu $1.90/order overage KEEP widen",
       "lane": "vertical_gtm",

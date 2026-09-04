@@ -9,7 +9,7 @@ Continuous research so Never86 runs the **best tools in our vertical**: love→b
 | Social commerce GTM | TikTok/IG shoppable, UGC scout, buy-now scripts, creator→onboard |
 | Pain → sales lead | Vendor complaint shoppers, teach/label, sales forms |
 | Agent stack | Cursor Automations, memories, skills, MCP, Mem0 |
-| Vertical rivals | Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, Menami, Seekadu, Klikit, Popmenu, Flipdish, Sauce, Fleksa, BentoBox, Ressto, Eatsy Orders, FlavorFeed, Restos.io, INFI, WhatsMenu, Square AI-channel, UpMenu, DineOpen, Muncho |
+| Vertical rivals | Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, Menami, Seekadu, Klikit, Popmenu, Flipdish, Sauce, Fleksa, BentoBox, Ressto, Eatsy Orders, FlavorFeed, Restos.io, INFI, WhatsMenu, Square AI-channel, UpMenu, DineOpen, Muncho, DoorDash OO, Restolabs, MenuForma, Clover OO |
 
 ## What we are NOT hunting (no)
 

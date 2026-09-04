@@ -1,0 +1,21 @@
+{
+  "finding_id": "doordash-online-ordering-keep-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DoorDash Online Ordering 0% direct → marketplace_direct_zero KEEP",
+  "vendor_or_project": "DoorDash",
+  "urls": [
+    "https://merchants.doordash.com/en-us/products/online-ordering",
+    "https://merchants.doordash.com/en-us/pricing",
+    "https://merchants.doordash.com/en-us/learning-center/delivery-commission"
+  ],
+  "what_it_does": "DoorDash Online Ordering: 0% commission on restaurant website/social/Google direct orders (processing only); Marketplace still 15/25/30% delivery + 6% pickup; Drive On-Demand flat fulfillment.",
+  "how_competitors_use_it": "DoorDash pitches dual-run: keep Marketplace for discovery, shift volume to OO direct. Competes with ChowNow/Owner first-party narrative.",
+  "what_we_use_today": "dual_run_marketplace signal + KEEP grader; new marketplace_direct_zero + pain-scan-doordash-online-ordering.json",
+  "gap": "Teach labels comparing DD OO vs Never86 buy-now KEEP$ on cult brands — Mem0 still blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted marketplace_direct_zero so DoorDash's own 0% direct channel surfaces in pain→sales dual-run teaching.",
+  "operator_ask": "Optional: teach one DD OO vs buy-now KEEP$ label when auth unlocks.",
+  "researched_at": "2026-09-04"
+}

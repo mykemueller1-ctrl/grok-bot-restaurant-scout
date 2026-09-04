@@ -258,3 +258,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened per_order_platform_fee for $1.90-style overages; UpMenu fixture (strong_keep 13).
 - Watched DineOpen + Muncho (AI/QR KEEP peers). Skip labor-forecast deep dives.
 - Ledger v1.36.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (DoorDash Online Ordering KEEP + Restolabs/MenuForma/Clover OO)
+
+- Adopted marketplace_direct_zero KEEP signal (DoorDash OO 0% direct vs Marketplace 15–30%) + pain-scan-doordash-online-ordering.json (strong_keep 14).
+- Watched Restolabs, MenuForma, Clover Restaurant OO (POS lock-in note). Skip labor modules.
+- Ledger v1.37.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
