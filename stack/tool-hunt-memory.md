@@ -736,3 +736,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added `lead-shop-enrich` + `sales-lead-form` to Sync Skills hunt-critical list.
 - TOOL-HUNT: Active-without-Mem0 table (love Yelp + phone enrich + status).
 - Tip CI green on status phone enrich. Ledger v1.92.20. Auth still blocked.
+
+### 2026-09-04 (ChatFood + Smiilen watch)
+
+- **ChatFood** (watch): Meta IG Order Food + Facebook Commerce — Deliverect/Zyda peer. Finding: `2026-09-04-chatfood-ig-order-food.json`.
+- **Smiilen** (watch): video→delivery marketplace with creator commissions — BiteSight peer. Finding: `2026-09-04-smiilen-video-delivery.json`.
+- Ledger v1.92.21. Fee pause + Mem0/Context auth-first unchanged.

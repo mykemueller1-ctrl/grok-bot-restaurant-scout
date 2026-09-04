@@ -43,8 +43,9 @@ Do **not** auto-publish. Morning-scan is read/discover; publish stays approval-g
 IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not TikTok Shop):
 - **Deliverect** Social Media Ordering / Direct Suite
 - **Zyda** Meta Business Extension → first-party Zyda store
+- **ChatFood** Instagram Order Food button + Stories stickers (+ Facebook Commerce)
 
-Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch). Fee catalog pause still applies — do not dogfood these as fee products.
+Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch; also watch video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products.
 
 ## Still required for Beyond the Hunt READY
 

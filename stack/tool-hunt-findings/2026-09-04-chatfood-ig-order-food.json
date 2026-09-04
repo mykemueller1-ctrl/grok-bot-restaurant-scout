@@ -1,0 +1,15 @@
+{
+  "finding_id": "chatfood-ig-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChatFood Instagram Order Food button + stickers",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "ChatFood is a Meta Instagram Order Food partner — profile button + Stories Food Orders sticker → ChatFood ordering link; also Facebook Commerce / Instagram Shops catalog sync. Deliverect/Zyda peer on Meta rails. Watch only; fee catalog pause stands.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://docs.chatfood.io/en/articles/5190405-how-to-set-up-facebook-commerce-instagram-and-facebook-shops",
+    "http://order.chatfood.io/"
+  ],
+  "not_this": "Not fee dogfood. Not TikTok Shop-native. Not forecasting."
+}

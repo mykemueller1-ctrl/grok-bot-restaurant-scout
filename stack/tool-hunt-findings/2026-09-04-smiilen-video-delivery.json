@@ -1,0 +1,13 @@
+{
+  "finding_id": "smiilen-video-delivery-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Smiilen — short-form food video → delivery orders",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Smiilen is a video-first food delivery marketplace: creators/diners post food clips → one-tap checkout → Smiilen delivers; restaurants pay on performance; creators earn commissions. Adjacent to BiteSight (TikTok-meets-DoorDash class). Sharpens Never86 first-party Shop buy-now vs another marketplace with UGC discovery. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.smiilen.com/"
+  ],
+  "not_this": "Not first-party Shop. Not fee dogfood. Not forecasting."
+}

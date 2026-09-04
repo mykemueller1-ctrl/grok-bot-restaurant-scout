@@ -496,6 +496,19 @@
       ]
     },
     {
+      "name": "ChatFood",
+      "lane": "vertical_gtm",
+      "stack": "Mobile ordering + Meta Instagram Order Food button/stickers + Facebook Commerce / Instagram Shops catalog sync + Commerce Inbox DMs",
+      "memory": "n/a (ops ordering)",
+      "edge": "Meta Order Food partner peer to Deliverect/Zyda — watch GTM only; not TikTok Shop",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+        "https://docs.chatfood.io/en/articles/5190405-how-to-set-up-facebook-commerce-instagram-and-facebook-shops",
+        "http://order.chatfood.io/"
+      ]
+    },
+    {
       "name": "BiteSight",
       "lane": "vertical_gtm",
       "stack": "YC video-first food delivery marketplace — scroll short-form restaurant food video → order delivery (TikTok-meets-DoorDash UX; SF live / NYC expanding)",
@@ -507,6 +520,17 @@
         "https://www.ycombinator.com/companies/bitesight",
         "https://apps.apple.com/us/app/bitesight-food-delivery/id6476070829",
         "https://techcrunch.com/2025/07/24/how-a-y-combinator-food-delivery-app-used-tiktok-to-soar-in-the-app-store/"
+      ]
+    },
+    {
+      "name": "Smiilen",
+      "lane": "vertical_gtm",
+      "stack": "Short-form food video + delivery marketplace — creators post clips → one-tap order → Smiilen logistics; restaurants pay on performance; creators earn commissions",
+      "memory": "n/a (consumer app)",
+      "edge": "BiteSight-class video→delivery marketplace — differentiate Never86 first-party Shop buy-now; watch only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.smiilen.com/"
       ]
     },
     {
