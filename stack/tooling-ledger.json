@@ -1,5 +1,5 @@
 {
-  "version": "1.90.0",
+  "version": "1.91.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -135,7 +135,8 @@
     "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)",
     "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee \u2192 SalesLead \u22655 markets)",
     "foodappfast_fee_dogfood_gate": "scripts/validate-foodappfast-fee-dogfood.mjs (Food App Fast 8% commission \u2192 SalesLead \u22655 markets)",
-    "chownow_discovery_fee_dogfood_gate": "scripts/validate-chownow-discovery-fee-dogfood.mjs (ChowNow Discovery Network 15.5% marketing fee \u2192 SalesLead \u22655 markets)"
+    "chownow_discovery_fee_dogfood_gate": "scripts/validate-chownow-discovery-fee-dogfood.mjs (ChowNow Discovery Network 15.5% marketing fee \u2192 SalesLead \u22655 markets)",
+    "addmi_fee_dogfood_gate": "scripts/validate-addmi-fee-dogfood.mjs (Addmi OO 38\u00a2 guest fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -719,6 +720,28 @@
       ]
     },
     {
+      "name": "Addmi",
+      "lane": "vertical_gtm",
+      "stack": "No monthly fee POS + QR OO; guest-paid POS 19\u00a2 / OO 38\u00a2; membership/invoicing 2%; event ticketing 3% cap $39",
+      "memory": "Loyalty + email + gift cards included",
+      "edge": "Published 38\u00a2 OO guest fee under no-monthly claim \u2014 FoodScout/BentoBox-class flat guest peer; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://addmi.com/pricing"
+      ]
+    },
+    {
+      "name": "Tenvito",
+      "lane": "vertical_gtm",
+      "stack": "EU OO Free 3.9%/order or Service \u20ac29/mo + 2.9%/order on top of Stripe; optional merchant-kept convenience fee",
+      "memory": "Orders + payments + customers + marketing",
+      "edge": "Published 2.9\u20133.9% per-order under free/low monthly \u2014 FoxiFood-class EU KEEP peer; thematic US teach only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://tenvito.com/pricing"
+      ]
+    },
+    {
       "name": "Anytable",
       "lane": "vertical_gtm",
       "stack": "$29.99/mo flat 0% Anytable commission OO; diner convenience fee at checkout (legacy pages cited $1.95; live page softens to 'modest/small')",
@@ -1134,6 +1157,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Addmi 38\u00a2 OO guest fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Addmi OO 38\u00a2 (POS 19\u00a2) guest-paid on addmi.com/pricing under no-monthly claim \u2192 SalesLead vs Shop ~6%; per_order widened for 38 cents; validate-addmi-fee-dogfood \u22655; strong_keep 62",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Tenvito EU 2.9\u20133.9% per-order (watch)",
+      "lane": "vertical_gtm",
+      "why": "tenvito.com/pricing Free 3.9%/order or \u20ac29+2.9%/order on top of Stripe \u2014 FoxiFood-class EU peer; thematic only, no US swarm expand yet",
+      "verdict": "watch"
+    },
     {
       "item": "ChowNow Discovery Network 15.5% marketing fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2224,5 +2259,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T00:30:00Z"
+  "updated_at": "2026-09-05T00:45:00Z"
 }

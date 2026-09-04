@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Addmi online ordering 38 cents guest fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://addmi.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "addmi_pricing",
+      "snippet": "Addmi online ordering charges customers 38 cents per order under no monthly fees vs DoorDash Marketplace 25% KEEP \u2014 guests pay tech fee; restaurant owners keep menu price while diner sticker shock taxes conversion",
+      "pain_id": "addmi_38c_oo_guest",
+      "score": 100,
+      "never86_angle": "Addmi 38\u00a2 OO guest fee is still per_order / guest_paid KEEP leak under no-monthly claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: addmi.com/pricing \u2014 POS 19\u00a2 / OO 38\u00a2 guest-paid; membership/invoicing 2%; event ticketing 3% cap $39. USA available. Skip forecasting."
+}

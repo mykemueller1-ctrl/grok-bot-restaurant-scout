@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-addmi-fee-rioja-2026-09-04",
+  "purpose": "Addmi guest-paid 38¢ OO fee → SalesLead DRAFT for Rioja (Denver). Contrasts per_order_platform_fee / guest_paid under no-monthly claim vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Addmi online ordering 38 cents per order (guest-paid)",
+    "guest_paid_platform_fee": "Addmi POS 19¢ / OO 38¢ passed to customers",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "addmi_38c_oo_guest",
+    "vendor_id": "addmi",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Rioja",
+      "city": "Denver",
+      "market": "Denver, CO",
+      "yelp_alias": "rioja-denver",
+      "love_signal": "Jennifer Jasinski LoDo cult / UGC"
+    },
+    "complaint_summary": "Calibration: Addmi markets no monthly fees then guests pay 38 cents per online order (POS 19¢). Rioja-class love should close on Never86 Shop ~6% buy-now — honest platform math without diner sticker shock or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "addmi",
+      "doordash",
+      "tiktok_shop",
+      "toast"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-addmi-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "addmi_38c_oo_guest",
+    "account_name": "Rioja",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Denver",
+    "market": "Denver, CO",
+    "complaint_thesis": "Addmi markets no monthly fees then online ordering charges customers 38 cents per order (POS 19¢) — per_order_platform_fee / guest_paid KEEP leak under 'pass a minimal fee' claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. Larimer Square love already prints demand — close Shop buy-now, not Addmi 38¢ OO guest fee.",
+    "quotes": [
+      "Addmi online ordering 38 cents per order (guest-paid)",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Addmi 38¢ OO guest fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_platform_fee teach: Addmi 38¢ still taxes every OO ticket under no-monthly claim; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: Larimer Square love already prints demand — close Shop buy-now, not Addmi 38¢ OO guest fee.",
+    "sources": [
+      "https://addmi.com/pricing",
+      "fixtures/tool-hunt/pain-scan-addmi-guest-fee.json",
+      "https://www.yelp.com/biz/rioja-denver"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Addmi 38¢ OO → SalesLead. FoodScout/BentoBox-class flat guest fee peer. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-addmi-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

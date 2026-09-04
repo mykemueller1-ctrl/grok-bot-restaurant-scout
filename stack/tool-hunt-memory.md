@@ -601,3 +601,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for `15.5%` / marketing fee / Order Better Network.
 - pain-scan-chownow-discovery-fee.json → strong_keep **61**; pain-to-sales-chownow-discovery-fee-* ×5; validate-chownow-discovery-fee-dogfood ≥5. Distinct from Support Local + Catering dogfoods.
 - Ledger v1.90.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Addmi 38¢ OO guest SalesLead)
+
+- Primary [addmi.com/pricing](https://addmi.com/pricing): OO **38 cents** (POS **19 cents**) guest-paid under no monthly fees.
+- Widened `per_order_platform_fee` for `38 cents` / `$0.38` / `19 cents`.
+- pain-scan-addmi-guest-fee.json → strong_keep **62**; pain-to-sales-addmi-fee-* ×5; validate-addmi-fee-dogfood ≥5.
+- Watched Tenvito EU 2.9–3.9%/order (no US swarm yet). Per Diem still watch (primary $99/mo; per-order cites not on pricing page).
+- Ledger v1.91.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
