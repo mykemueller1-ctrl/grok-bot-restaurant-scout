@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-sohungry-fee-franklin-2026-09-04",
+  "purpose": "SoHungry Free $1.25/order guest convenience fee \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "SoHungry Free $1.25 convenience fee per order (guest-paid; Premium $0.60 / $0.85 Clover)",
+    "guest_paid_tech_fee": "SoHungry $1.25 per-order convenience fee paid by the customer on Free plan",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "sohungry_guest_convenience_fee",
+    "vendor_id": "sohungry",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "Aaron Franklin cult BBQ / line UGC"
+    },
+    "complaint_summary": "Calibration: SoHungry Free plan is $0/mo for restaurants while guests pay a $1.25 convenience fee per order (Premium $0.60; $0.85 Clover). Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "sohungry",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-sohungry-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "sohungry_guest_convenience_fee",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "SoHungry Free plan markets $0/mo OO for restaurants while charging guests a $1.25 convenience fee per order (Premium $0.60; $0.85 Clover) \u2014 guest-paid per_order_platform_fee KEEP leak. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Franklin-class love already prints demand \u2014 close Shop buy-now, not SoHungry $1.25 guest fees on every OO ticket.",
+    "quotes": [
+      "SoHungry Free $1.25 convenience fee per order, paid by the customer",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "SoHungry $1.25 guest OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: SoHungry $1.25 guest convenience fee is still platform rent on 'free for restaurants' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Franklin-class love already prints demand \u2014 close Shop buy-now, not SoHungry $1.25 guest fees on every OO ticket.",
+    "sources": [
+      "https://sohungry.net/faqs.aspx",
+      "https://sohungry.net/plans.aspx",
+      "fixtures/tool-hunt/pain-scan-sohungry-guest-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 SoHungry Free $1.25 guest convenience fee \u2192 SalesLead. Premium $0.60/$0.85 is alt tier, not the primary teach. Map-first SMB niche. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-sohungry-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,13 @@
+{
+  "finding_id": "sohungry-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "SoHungry $1.25 guest convenience fee SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary sohungry.net Free $1.25 / Premium $0.60 guest convenience fee \u2192 pain-to-sales-sohungry-fee-* \u00d75; strong_keep 44 (2 pain-scan hits).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://sohungry.net/faqs.aspx",
+    "https://sohungry.net/plans.aspx"
+  ]
+}

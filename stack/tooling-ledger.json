@@ -1,5 +1,5 @@
 {
-  "version": "1.75.0",
+  "version": "1.76.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -120,7 +120,8 @@
     "slice_fee_dogfood_gate": "scripts/validate-slice-fee-dogfood.mjs (Slice Online $3/order / Family $2/order \u2192 SalesLead \u22655 markets; pizza niche)",
     "olo_fee_dogfood_gate": "scripts/validate-olo-fee-dogfood.mjs (Olo Order with Google Fee 5% \u2192 SalesLead \u22655 markets)",
     "bentobox_fee_dogfood_gate": "scripts/validate-bentobox-fee-dogfood.mjs (BentoBox QR Order & Pay $0.99 diner fee \u2192 SalesLead \u22655 markets)",
-    "kontactless_fee_dogfood_gate": "scripts/validate-kontactless-fee-dogfood.mjs (Kontactless $0.50\u2013$1.00/order guest convenience fee \u2192 SalesLead \u22655 markets)"
+    "kontactless_fee_dogfood_gate": "scripts/validate-kontactless-fee-dogfood.mjs (Kontactless $0.50\u2013$1.00/order guest convenience fee \u2192 SalesLead \u22655 markets)",
+    "sohungry_fee_dogfood_gate": "scripts/validate-sohungry-fee-dogfood.mjs (SoHungry Free $1.25/order guest convenience fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -1008,20 +1009,32 @@
       "sources": [
         "https://www.kontactless.io/"
       ]
+    },
+    {
+      "name": "SoHungry",
+      "lane": "vertical_gtm",
+      "stack": "Map-first SMB online ordering; Free $0/mo + $1.25 guest convenience fee/order; Premium ~$29\u2013$45/mo drops fee to $0.60 ($0.85 Clover)",
+      "memory": "Order/customer contacts via Square/PayPal/Clover pass-through",
+      "edge": "Guest-paid $1.25 convenience fee under free-for-restaurants claim \u2014 Menufy/Kontactless-class KEEP peer; map niche; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://sohungry.net/faqs.aspx",
+        "https://sohungry.net/plans.aspx"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "SoHungry $1.25 guest convenience fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN SoHungry Free $1.25 (Premium $0.60/$0.85 Clover) guest convenience fee \u2192 SalesLead vs Shop ~6%; validate-sohungry-fee-dogfood \u22655; 2 pain-scan hits \u2192 strong_keep 45",
+      "verdict": "adopt"
+    },
     {
       "item": "Kontactless $0.50\u2013$1.00 guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN Kontactless Classic $0.50 / Pay-as-you-go $1.00 per-order guest fee (kontactless.io primary) \u2192 SalesLead vs Shop ~6%; validate-kontactless-fee-dogfood \u22655; strong_keep 43",
       "verdict": "adopt"
-    },
-    {
-      "item": "SoHungry Free $1.25 / Premium $0.60 guest convenience fee",
-      "lane": "vertical_gtm",
-      "why": "sohungry.net map-first SMB OO \u2014 Free $1.25 customer convenience fee; Premium $0.60 ($0.85 Clover). Watch before dogfood / swarm expand",
-      "verdict": "watch"
     },
     {
       "item": "ChowNow Catering 5% direct commission",
@@ -2011,5 +2024,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:00:00Z"
+  "updated_at": "2026-09-04T21:25:00Z"
 }

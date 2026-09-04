@@ -502,3 +502,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [kontactless.io](https://www.kontactless.io/): Classic/POS Plus **$0.50**/order guest convenience fee (operator may absorb); Pay-as-you-go **$1.00**/order; $399/mo flat alt.
 - pain-scan-kontactless-guest-fee.json → strong_keep **43**; pain-to-sales-kontactless-fee-* ×5; validate-kontactless-fee-dogfood ≥5 (`kontactless_fee_dogfoods`).
 - Watched SoHungry Free **$1.25** / Premium **$0.60** guest convenience fee + ChowNow Catering **5%** direct commission (distinct from $0.99 + 7.5% dogfood). Ledger v1.75.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (SoHungry $1.25 guest convenience fee SalesLead)
+
+- Primary [sohungry.net FAQs](https://sohungry.net/faqs.aspx) + [plans](https://sohungry.net/plans.aspx): Free **$1.25**/order guest convenience fee; Premium **$0.60** ($0.85 Clover).
+- pain-scan-sohungry-guest-fee.json (2 hits) → strong_keep **45**; pain-to-sales-sohungry-fee-* ×5; validate-sohungry-fee-dogfood ≥5 (`sohungry_fee_dogfoods`).
+- Ledger v1.76.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
