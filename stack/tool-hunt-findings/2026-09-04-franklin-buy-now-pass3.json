@@ -1,0 +1,24 @@
+{
+  "finding_id": "franklin-buy-now-pass3-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Franklin Barbecue buy_now_path pass-3",
+  "vendor_or_project": "Franklin Barbecue Austin (love fixture)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Live 2026-09-04: (1) **Curbside preorder** preorder.franklinbbq.com still live — 5–30 lb meat, available 56 days out, pay in full. (2) **Shopify merch** shop.franklinbbq.com still live (sauces/rubs/pits/merch) + Goldbelly ship CTA. (3) Brand site franklinbbq.com promotes e-gift cards for restaurant/preorder and Goldbelly for shipping. Positive love→SKU `buy_now_path` calibration. Yelp **6477** stable.",
+  "what_it_does": "Love fixture showing chef-loved kitchen with first-party preorder + merch + ship rails.",
+  "gap": "",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://preorder.franklinbbq.com/",
+    "https://shop.franklinbbq.com/",
+    "https://franklinbbq.com/",
+    "https://www.goldbelly.com/restaurants/franklin-barbecue"
+  ],
+  "keep_signals": [
+    "buy_now_path"
+  ],
+  "not_this": "Not forecasting. Not fee dogfood."
+}

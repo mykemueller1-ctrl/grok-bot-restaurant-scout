@@ -1,0 +1,20 @@
+{
+  "finding_id": "kyte-ig-sticker-unavailable-fb-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Kyte IG Food Orders sticker unavailable — FB Order Food still peer",
+  "vendor_or_project": "Kyte",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Kyte Help (updated 2024-07-24, still live 2026-09-04) banners: Instagram Food Orders sticker integration is **currently unavailable**; fallback is Facebook **Start Order / Order Food** action button after FBE connect. Once FB food orders linked, Order Food button still appears on synced FB + IG profiles. Do NOT drop Kyte from meta_order_food_peer_count (stays **9**) — profile Order Food path remains; Stories sticker path is the gap. Shop wedge unchanged.",
+  "what_it_does": "Documents Meta FBE peer with degraded Stories sticker vs intact profile Order Food button.",
+  "gap": "Sticker unreliability across partners reinforces Never86 Shop as durable buy-now vs Meta sticker fragility",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://docs.kyteapp.com/en/articles/7861178-activating-the-instagram-order-food-sticker",
+    "https://docs.kyteapp.com/en/articles/7861141-setting-up-order-food-on-facebook",
+    "https://www.kyteapp.com/apps/fbe"
+  ],
+  "not_this": "Not a peer_count drop. Not fee dogfood. Not forecasting."
+}

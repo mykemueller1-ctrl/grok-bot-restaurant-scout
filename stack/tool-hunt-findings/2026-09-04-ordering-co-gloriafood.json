@@ -1,0 +1,21 @@
+{
+  "finding_id": "ordering-co-gloriafood-successor-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ordering.co GloriaFood successor (price-match migration)",
+  "vendor_or_project": "Ordering.co",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Ordering.co pitches same-day GloriaFood migration (free menu/customer/promo move), **price-match or beat GloriaFood invoice**, branded app + ordering website, 0% commission on direct orders, delivery suite, AI agents, 5,000+ integrations. Lock rate 12 months if migrate before Oracle sunset. Watch with iShopo/Menuro/Ogent/Hyperzod/Ressto; not Meta FBE; fee pause. Skip any BI/forecast modules if present.",
+  "what_it_does": "Commission-free branded OO OS targeting GloriaFood refugees with white-glove migration.",
+  "how_competitors_use_it": "Independents flip domain + app in one afternoon after Oracle LDOS FOMO.",
+  "what_we_use_today": "GloriaFood EOL Shop wedge; successor watch set",
+  "gap": "Another successor validates Shop migration wedge for Meta-adjacent free OO loss",
+  "pivot_speed": "days",
+  "operator_ask": "No fee dogfood. Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.ordering.co/move-your-restaurant-to-ordering-in-a-day-from-gloriafood",
+    "https://www.ordering.co/the-best-gloriafood-alternatives-2026"
+  ],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting."
+}

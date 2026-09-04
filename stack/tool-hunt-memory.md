@@ -970,3 +970,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Square Online Meta Order Food path — peer_count stays 9. Finding: `2026-09-04-square-meta-order-food-reconfirm.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_YDSVUYgQ9Xrl (~10 min).
 - Ledger v1.92.55. Auth still blocked for unlock READY.
+
+### 2026-09-04 (G&TG/Franklin pass-3 + Ordering.co + Kyte sticker gap)
+
+- Adopted G&TG **reservation_skew** pass-3 + Franklin **buy_now_path** pass-3. Findings: `2026-09-04-gtg-reservation-skew-pass3.json`, `2026-09-04-franklin-buy-now-pass3.json`.
+- Watched **Ordering.co** GloriaFood price-match successor. Finding: `2026-09-04-ordering-co-gloriafood.json`.
+- Adopted Kyte nuance: IG Stories sticker **unavailable**; FB Order Food still peer — peer_count stays 9. Finding: `2026-09-04-kyte-ig-sticker-unavailable.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_g48XCJfFBuxc (~10 min).
+- Ledger v1.92.56. Auth still blocked for unlock READY.

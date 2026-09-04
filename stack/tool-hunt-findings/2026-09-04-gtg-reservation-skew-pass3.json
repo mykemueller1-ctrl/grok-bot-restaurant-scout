@@ -1,0 +1,23 @@
+{
+  "finding_id": "gtg-reservation-skew-pass3-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Girl & The Goat reservation_skew pass-3",
+  "vendor_or_project": "Girl & The Goat Chicago (love fixture)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Live brand site 2026-09-04: girlandthegoat.com/chicago still surfaces address/hours/contact/brunch/chef-counter — **no first-party Order/Takeout/Shop CTA**. Reservations remain OpenTable-primary. Confirms `reservation_skew_no_buy_now` love teach. Yelp **10731** stable. Shop wedge: chef-loved kitchen with social love but no buy-now rail on brand site.",
+  "what_it_does": "Love fixture for kitchens that convert demand into reservations instead of first-party OO/Shop.",
+  "gap": "social-shop dogfood reservation_skew gate stays valid",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.girlandthegoat.com/chicago",
+    "https://www.opentable.com/r/girl-and-the-goat-chicago",
+    "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+  ],
+  "keep_signals": [
+    "reservation_skew_no_buy_now"
+  ],
+  "not_this": "Not forecasting. Not fee dogfood. Tertiary NetWaiter URLs are not brand-site buy-now."
+}
