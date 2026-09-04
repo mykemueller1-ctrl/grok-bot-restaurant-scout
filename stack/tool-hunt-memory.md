@@ -85,3 +85,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Bright Data still HTTP 401 despite namespace ready — Composio SEARCH_WEB stays research primary.
 - Dogfood X pain: fixtures/tool-hunt/pain-scan-marketplace-keep.json (rank channels by KEEP / Uber cut / 15–30% commissions).
 - Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Austin love calibration + weekly gate)
+
+- Adopted multi-market Yelp morning-scan: fixtures/tool-hunt/austin-love-brands.json (Uchi, Franklin, Intero, Eldorado).
+- Added scripts/run-tool-hunt-week.mjs headless gate (auth + ledger); CI tool-hunt runs it.
+- Auth still blocked (Mem0/Context).

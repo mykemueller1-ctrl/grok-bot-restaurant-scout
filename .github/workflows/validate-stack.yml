@@ -66,9 +66,14 @@ jobs:
         with:
           node-version: "20"
       - run: node scripts/validate-tooling-ledger.mjs
+      - run: node scripts/run-tool-hunt-week.mjs
       - name: Tool hunt docs + agent present
         run: |
           test -f docs/TOOL-HUNT.md
           test -f agent/tool-hunt/beyond-the-hunt.json
           test -f stack/tooling-ledger.json
           test -f routines/tool-hunt-weekly.json
+          test -f scripts/run-tool-hunt-week.mjs
+          test -f scripts/context-search.mjs
+          test -f fixtures/tool-hunt/austin-love-brands.json
+          test -f fixtures/tool-hunt/pain-scan-marketplace-keep.json

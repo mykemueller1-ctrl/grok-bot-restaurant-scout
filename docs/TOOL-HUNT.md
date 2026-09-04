@@ -9,7 +9,7 @@ Continuous research so Never86 runs the **best tools in our vertical**: love→b
 | Social commerce GTM | TikTok/IG shoppable, UGC scout, buy-now scripts, creator→onboard |
 | Pain → sales lead | Vendor complaint shoppers, teach/label, sales forms |
 | Agent stack | Cursor Automations, memories, skills, MCP, Mem0 |
-| Vertical rivals | Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos |
+| Vertical rivals | Owner, Trenz, Restomas, Feedia, BrandPal, CreatOK, Straunt, Zayos, TextOrder, Menami, Seekadu, Klikit |
 
 ## What we are NOT hunting (no)
 
@@ -44,6 +44,9 @@ Vertical AI moves weekly. Guessing loses. This loop:
 | `docs/DESKTOP-UNLOCKS.md` | Auth clicks cloud agents cannot do |
 | `schemas/tool-finding.json` | Finding schema |
 | `routines/tool-hunt-weekly.json` | Monday 09:00 America/Chicago |
+| `scripts/run-tool-hunt-week.mjs` | Headless weekly gate (auth soft-check + ledger validate) |
+| `scripts/context-search.mjs` | Context REST research when `CONTEXT_DEV_API_KEY` set |
+| `scripts/mem0-smoke.mjs` | Mem0 smoke when `MEM0_API_KEY` set |
 
 ## Desktop unlocks (cloud agents cannot click these)
 
@@ -58,8 +61,11 @@ tool-frontier-scan → memory-skills-audit → stack-vs-competitors → tool-hun
 ```
 
 ```bash
+node scripts/run-tool-hunt-week.mjs   # auth soft-check + ledger validate
 node scripts/validate-tooling-ledger.mjs
 ```
+
+Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, continue with Active Composio/X/Yelp paths.
 
 ## Decision rules
 

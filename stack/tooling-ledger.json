@@ -1,5 +1,5 @@
 {
-  "version": "1.9.0",
+  "version": "1.10.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -79,7 +79,8 @@
     },
     "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json",
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
+    "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
       "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
@@ -263,6 +264,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp multi-market love-brand calibration",
+      "lane": "vertical_gtm",
+      "why": "Chicago + Austin fixtures seed morning-scan without Instagram auth",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Headless weekly hunt gate (run-tool-hunt-week.mjs)",
+      "lane": "cursor_agents",
+      "why": "CI + cloud can soft-check auth + ledger before skill loop",
+      "verdict": "adopt"
+    },
     {
       "item": "Pain-scan Composio+X fallback",
       "lane": "vertical_gtm",
