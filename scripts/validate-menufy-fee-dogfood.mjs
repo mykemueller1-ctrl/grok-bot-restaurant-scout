@@ -38,6 +38,10 @@ for (const f of files) {
     console.error(`validate-menufy-fee-dogfood: ${f} complaint_thesis must teach Menufy guest fee / hybrid`);
     process.exit(1);
   }
+  if (!/\\$1\.75|1\.75/.test(lead.complaint_thesis)) {
+    console.error(`validate-menufy-fee-dogfood: ${f} complaint_thesis must cite Menufy $1.75 convenience fee`);
+    process.exit(1);
+  }
   if (!/tiktok shop|6\s*%|shop referral|social_shop/i.test(lead.complaint_thesis)) {
     console.error(`validate-menufy-fee-dogfood: ${f} complaint_thesis must contrast Shop ~6% buy-now`);
     process.exit(1);

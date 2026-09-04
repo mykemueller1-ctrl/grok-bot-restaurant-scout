@@ -479,6 +479,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for Order with Google Fee / 5% charged on; pain-scan-olo-google-fee.json → strong_keep 39; pain-to-sales-olo-fee-* ×5; validate-olo-fee-dogfood ≥5 (`olo_fee_dogfoods`).
 - IG native Checkout retired Aug 2025 — do not dogfood legacy 5%/$0.40. Ledger v1.71.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (Menufy $1.75 convenience fee refresh)
+
+- Confirmed Menufy **$1.75/order convenience fee** (restaurant absorb or guest-paid) via Orderitto/CostBench 2026 cites; still no Menufy.com primary amount published.
+- Second pain-scan hit → strong_keep **40**; dogfood theses + validator cite $1.75; `menufy_fee_dogfoods=5`.
+- Watched Orderitto flat $149–$249 (zero per-order). Ledger v1.72.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+
 
 
 

@@ -1,17 +1,29 @@
 {
   "scanned_at": "2026-09-04",
-  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "tools": [
+    "COMPOSIO_SEARCH_TAVILY",
+    "scripts/score-marketplace-keep.mjs"
+  ],
   "query": "Menufy guest convenience fee on direct OO + 12.5% hybrid marketplace KEEP pain",
   "hits": [
     {
       "url": "https://restaurant.menufy.com/article/restaurant-delivery-app-fees",
       "posted_at": "2026-09-04",
       "handle": "menufy",
-      "snippet": "Menufy direct ordering guests pay a convenience fee at checkout under commission-free claim vs DoorDash Marketplace 25%; hybrid also negotiates ~12.5% DoorDash/Uber fulfillment",
+      "snippet": "Menufy direct ordering guests pay a convenience fee at checkout under commission-free claim vs DoorDash Marketplace 25% KEEP; hybrid also negotiates ~12.5% DoorDash/Uber fulfillment; dual-run discovery then Never86 buy-now",
       "pain_id": "menufy_guest_convenience_fee",
       "score": 100,
-      "never86_angle": "Guest convenience fee on Menufy 'commission-free' direct + 12.5% hybrid still taxes KEEP/conversion — Never86 Shop ~6% buy-now keeps love→buy-now math honest"
+      "never86_angle": "Guest convenience fee on Menufy 'commission-free' direct + 12.5% hybrid still taxes KEEP/conversion \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest"
+    },
+    {
+      "url": "https://orderitto.com/compare/menufy-pricing",
+      "posted_at": "2026-09-04",
+      "handle": "menufy_175",
+      "snippet": "Menufy charges a $1.75 convenience fee per order on direct OO vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "menufy_175_convenience_fee",
+      "score": 100,
+      "never86_angle": "$1.75 guest/restaurant convenience fee on every Menufy direct order still taxes KEEP checkout \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest."
     }
   ],
-  "notes": "Sources: Menufy delivery-fees article + Chowly/Dinevate 2026 pricing via Composio. Flat $149/$179 + guest fee + optional 12.5% hybrid. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+  "notes": "Primary/secondary: Menufy delivery-fees article + Orderitto/CostBench 2026 cite $1.75 convenience fee (restaurant absorb or guest-paid). Flat $149/$179 + optional 12.5% hybrid. Skip forecasting."
 }

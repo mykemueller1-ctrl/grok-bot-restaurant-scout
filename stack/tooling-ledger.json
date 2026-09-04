@@ -1,5 +1,5 @@
 {
-  "version": "1.71.0",
+  "version": "1.72.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -996,6 +996,18 @@
   ],
   "watchlist": [
     {
+      "item": "Menufy $1.75 convenience fee refresh (second pain-scan hit)",
+      "lane": "vertical_gtm",
+      "why": "Confirmed $1.75/order convenience fee (Orderitto/CostBench 2026); pain-scan second hit \u2192 strong_keep 40; dogfood theses cite $1.75",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Orderitto flat $149\u2013$249/mo zero per-order",
+      "lane": "vertical_gtm",
+      "why": "orderitto.com/pricing \u2014 zero per-order commission; watch as flat KEEP peer vs Menufy $1.75",
+      "verdict": "watch"
+    },
+    {
       "item": "Olo Order with Google 5% SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN Olo OwG Fee 5% on subtotal (Google enhanced redirect) \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-olo-fee-dogfood \u22655; strong_keep 39. Enterprise thematic.",
@@ -1941,5 +1953,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:45:00Z"
+  "updated_at": "2026-09-04T19:55:00Z"
 }
