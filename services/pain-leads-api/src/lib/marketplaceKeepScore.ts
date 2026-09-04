@@ -24,8 +24,8 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /own your ordering|commission[\s-]?free|100%\s*of\s*(the\s*)?revenue|keep more profit/i, signal: "own_ordering_keep", w: 15 },
   // Dual-run: keep marketplace for discovery, own channel for KEEP guests
   { re: /dual[\s-]?run|run both|marketplaces? for (new|discovery)|discovery.*(direct|first[\s-]?party)/i, signal: "dual_run_marketplace", w: 15 },
-  // Website/OS per-order platform fees (BentoBox $0.99/order style) — not marketplace % but still KEEP leak
-  { re: /\$0\.\d{2}\s*(per[\s-]?order|\/\s*order)|per[\s-]?order (fee|charge|service fee)|online order service fee/i, signal: "per_order_platform_fee", w: 15 },
+  // Website/OS per-order platform fees (BentoBox $0.99/order, UpMenu $1.90 overage) — not marketplace % but still KEEP leak
+  { re: /\$\d+(?:\.\d{2})?\s*(per[\s-]?order|\/\s*order)|per[\s-]?order (fee|charge|service fee|overage)|online order service fee/i, signal: "per_order_platform_fee", w: 15 },
   // First-party OS still takes a % (Owner Flex 5% restaurant fee / guest order support fee)
   { re: /5%\s*(restaurant|per[\s-]?order|platform|order support)|restaurant fee per order|order support fee|owner\.com.*5%|\$249.*5%/i, signal: "first_party_pct_fee", w: 15 },
 ];

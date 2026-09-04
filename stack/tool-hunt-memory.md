@@ -251,3 +251,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted first_party_pct_fee KEEP signal (Owner Flex $249 + 5% restaurant fee / guest order support fee) + pain-scan-owner-pct-fee.json (strong_keep 12).
 - Watched FlavorFeed AI (POS+IG/TikTok content+ordering), Restos.io (€0/€29 commission-free), INFI ONLINE (0% commission), WhatsMenu (owned storefront vs TikTok Shop).
 - Ledger v1.35.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Square AI-channel + UpMenu overage + DineOpen/Muncho)
+
+- Watched Square ChatGPT/Claude ordering (Jul 2026, 0% marketplace commission into POS).
+- Widened per_order_platform_fee for $1.90-style overages; UpMenu fixture (strong_keep 13).
+- Watched DineOpen + Muncho (AI/QR KEEP peers). Skip labor-forecast deep dives.
+- Ledger v1.36.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

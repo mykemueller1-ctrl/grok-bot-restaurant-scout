@@ -1,5 +1,5 @@
 {
-  "version": "1.35.0",
+  "version": "1.36.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -628,9 +628,79 @@
         "https://whatsmenu.page/en/",
         "https://whatsmenu.page/resources/whatsmenu-vs-tiktok-shop"
       ]
+    },
+    {
+      "name": "Square AI-channel ordering",
+      "lane": "vertical_gtm",
+      "stack": "ChatGPT/Claude restaurant ordering (Jul 2026) into Square POS/KDS; 0% marketplace commission (processing only)",
+      "memory": "Square seller + AI assistant session",
+      "edge": "Agentic discovery→order KEEP peer on huge Square install base — not TikTok Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.digitalapplied.com/blog/square-chatgpt-claude-ordering-agentic-commerce-2026"
+      ]
+    },
+    {
+      "name": "UpMenu",
+      "lane": "vertical_gtm",
+      "stack": "Flat-fee online ordering $49/$89/$169 with order caps; ~$1.90/order overage; branded app add-on",
+      "memory": "Owned diner list",
+      "edge": "Commission-free headline with per-order overage KEEP leak — website OS not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.upmenu.com/pricing/",
+        "https://www.upmenu.com/alternatives/"
+      ]
+    },
+    {
+      "name": "DineOpen",
+      "lane": "vertical_gtm",
+      "stack": "AI restaurant OS from ~$10/mo: POS, voice/WhatsApp ordering, QR menus, commission-free online ordering shareable in IG/TikTok bio",
+      "memory": "AI agent + POS session",
+      "edge": "Bio-link commission-free peer — skip any labor/forecast modules if present",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.dineopen.com/",
+        "https://www.dineopen.com/products/orders/online"
+      ]
+    },
+    {
+      "name": "Muncho",
+      "lane": "vertical_gtm",
+      "stack": "QR order & pay, 0% commission direct delivery, AI phone agents",
+      "memory": "Table/QR + AI agent state",
+      "edge": "QR/table KEEP peer — not TikTok Shop buy-now",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://muncho.app/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "UpMenu $1.90/order overage KEEP widen",
+      "lane": "vertical_gtm",
+      "why": "per_order_platform_fee now matches $N.NN overages; strong_keep 13",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Square ChatGPT/Claude AI-channel ordering",
+      "lane": "vertical_gtm",
+      "why": "0% marketplace commission agentic commerce into Square POS; watch only — skip labor tools",
+      "verdict": "watch"
+    },
+    {
+      "item": "DineOpen AI POS + IG/TikTok bio ordering",
+      "lane": "vertical_gtm",
+      "why": "Low-cost AI OS with commission-free bio-link orders; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "Muncho QR + 0% commission delivery + AI agents",
+      "lane": "vertical_gtm",
+      "why": "QR/table KEEP peer with AI phone agents; watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Owner.com Flex 5% restaurant fee KEEP signal",
       "lane": "vertical_gtm",

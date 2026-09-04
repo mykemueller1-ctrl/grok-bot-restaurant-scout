@@ -36,13 +36,15 @@ jobs:
           if (!toast.signals.includes('pos_fee_lockin') || toast.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(toast));
           const po = scoreMarketplaceKeep('BentoBox charges \$0.99 per order Online Order Service Fee — Clover POS required');
           if (!po.signals.includes('per_order_platform_fee') || !po.signals.includes('pos_fee_lockin')) throw new Error(JSON.stringify(po));
+          const up = scoreMarketplaceKeep('UpMenu Basic overage \$1.90 per order after 75 orders — restaurant owners KEEP less');
+          if (!up.signals.includes('per_order_platform_fee')) throw new Error(JSON.stringify(up));
           const fp = scoreMarketplaceKeep('Owner.com Flex \$249/month plus 5% restaurant fee per order — guests see 5% order support fee; restaurant owners KEEP less');
           if (!fp.signals.includes('first_party_pct_fee') || fp.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(fp));
           const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
           if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
           const g = await dispatchSourceTool('keep_channel_grade', { dinein: 12000, doordash: 9000, doordash_fee_pct: 25, social_buy_now: 2500 });
           if (!g.ok || g.summary?.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(g));
-          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, fp.score, b.score, g.summary.marketplace_fee_total);
+          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, up.score, fp.score, b.score, g.summary.marketplace_fee_total);
           "
 
   wiring:
@@ -137,6 +139,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-dual-run.json
           test -f fixtures/tool-hunt/pain-scan-bentobox-per-order.json
           test -f fixtures/tool-hunt/pain-scan-owner-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -147,10 +150,11 @@ jobs:
           node scripts/score-marketplace-keep.mjs "Own your ordering commission-free KEEP more profit" | grep -q own_ordering_keep
           node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
           node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'UpMenu Basic overage $1.90 per order after 75 orders — KEEP leak' | grep -q per_order_platform_fee
           node scripts/score-marketplace-keep.mjs 'Owner.com Flex $249/month plus 5% restaurant fee per order — guests see 5% order support fee' | grep -q first_party_pct_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 12'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 13'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
