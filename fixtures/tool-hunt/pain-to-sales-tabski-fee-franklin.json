@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-tabski-fee-franklin-2026-09-04",
+  "purpose": "Tabski $0.99/order guest convenience fee (alt $59/mo SaaS) under commission-free digital OO \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Tabski $0.99 per order convenience fee (guest) or $59/mo SaaS",
+    "guest_paid_tech_fee": "Tabski guests pay $0.99 convenience fee at checkout",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "tabski_guest_per_order_fee",
+    "vendor_id": "tabski",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "National cult BBQ / line culture / chef Aaron Franklin"
+    },
+    "complaint_summary": "Calibration: Tabski pitches commission-free digital OO while guests can pay $0.99 per order convenience fee (or restaurant pays $59/mo SaaS). Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "tabski",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-tabski-guest-fee.json",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "tabski_guest_per_order_fee",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "Tabski markets commission-free digital OO while offering a $0.99 per order guest convenience fee (alt $59/mo SaaS so guests see no fee) \u2014 diner tech fee under a zero-commission claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Line-culture love already prints demand \u2014 close Shop buy-now, not Tabski $0.99 diner fees stacked on off-platform OO.",
+    "quotes": [
+      "Tabski guests pay $0.99 per order convenience fee",
+      "Tabski alt $59/mo SaaS (no guest fee)",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Tabski $0.99 guest convenience fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Tabski $0.99 guest fee is still platform rent on 'commission-free' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Line-culture love already prints demand \u2014 close Shop buy-now, not Tabski $0.99 diner fees stacked on off-platform OO.",
+    "sources": [
+      "https://tabski.com/platform-fees",
+      "fixtures/tool-hunt/pain-scan-tabski-guest-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 72,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Tabski $0.99 guest convenience fee \u2192 SalesLead. Food-hall skew noted. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-tabski-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

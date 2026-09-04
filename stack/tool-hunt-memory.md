@@ -412,3 +412,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened per_order_platform_fee for “per fulfilled order”; pain-scan-outbites-per-order.json → strong_keep 28.
 - Added pain-to-sales-outbites-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-outbites-fee-dogfood ≥5.
 - Promoted Outbites watch→adopt. Ledger v1.60.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Tabski $0.99 guest convenience fee SalesLead)
+
+- Adopted pain-scan-tabski-guest-fee.json ($0.99/order guest fee or $59/mo SaaS under commission-free digital OO) → strong_keep 29.
+- Added pain-to-sales-tabski-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-tabski-fee-dogfood ≥5.
+- Watched GoTab guest 1%+$0.25 (secondary cite). Ledger v1.61.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

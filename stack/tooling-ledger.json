@@ -1,5 +1,5 @@
 {
-  "version": "1.60.0",
+  "version": "1.61.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -107,6 +107,7 @@
     "zayos_fee_dogfood_gate": "scripts/validate-zayos-fee-dogfood.mjs (Zay-OS guest $1.99–$3.99/order → SalesLead ≥5 markets)",
     "waiter247_fee_dogfood_gate": "scripts/validate-247waiter-fee-dogfood.mjs (247waiter $45/mo + $0.25/order transmission → SalesLead ≥5 markets)",
     "outbites_fee_dogfood_gate": "scripts/validate-outbites-fee-dogfood.mjs (Outbites $1/fulfilled-order Pass → SalesLead ≥5 markets)",
+    "tabski_fee_dogfood_gate": "scripts/validate-tabski-fee-dogfood.mjs (Tabski $0.99 guest convenience fee → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -212,6 +213,18 @@
       "sources": [
         "https://www.247waiter.com/online-ordering-system-cost",
         "https://www.247waiter.com/"
+      ]
+    },
+    {
+      "name": "Tabski",
+      "lane": "vertical_gtm",
+      "stack": "Food-hall/restaurant digital OO + POS; $0.99/order guest convenience fee or $59/mo SaaS; commission-free pitch",
+      "memory": "n/a",
+      "edge": "Guest $0.99 convenience fee under zero-commission claim — BentoBox/Outbites-class KEEP peer; food-hall skew",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://tabski.com/platform-fees",
+        "https://tabski.com/"
       ]
     },
     {
@@ -885,6 +898,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Tabski $0.99 guest convenience fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN $0.99/order guest fee (alt $59/mo SaaS) under commission-free digital OO → SalesLead vs Shop ~6%; validate-tabski-fee-dogfood ≥5; strong_keep 29",
+      "verdict": "adopt"
+    },
+    {
+      "item": "GoTab guest-paid 1% + $0.25 digital fee",
+      "lane": "vertical_gtm",
+      "why": "Secondary cite via Tabski comparison — verify primary pricing before dogfood",
+      "verdict": "watch"
+    },
     {
       "item": "Outbites $1/fulfilled-order Pass fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
