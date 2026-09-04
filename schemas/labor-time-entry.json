@@ -1,0 +1,22 @@
+{
+  "$schema_name": "LaborTimeEntry",
+  "description": "One punch from Toast Schedule & Labor → Time Entries. Labor cards are the people who were actually scheduled / clocked.",
+  "source_report": "Toast → Reports → Employee → Time Entries (Schedule & Labor)",
+  "required": ["employee", "job_title", "in_at", "out_at", "payable_hours"],
+  "properties": {
+    "employee": {
+      "type": "string",
+      "description": "Display name as scheduled on the labor card (Last, First)"
+    },
+    "job_title": {
+      "type": "string",
+      "description": "Scheduled job / role on the labor card (Cook, Server, Host, …)"
+    },
+    "in_at": { "type": "string", "format": "date-time" },
+    "out_at": { "type": "string", "format": "date-time" },
+    "total_hours": { "type": "number" },
+    "unpaid_break_hours": { "type": "number" },
+    "paid_break_hours": { "type": "number" },
+    "payable_hours": { "type": "number" }
+  }
+}

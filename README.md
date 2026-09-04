@@ -67,6 +67,10 @@ Worker + D1 live under `services/pain-leads-api/` (`src/worker/`, `wrangler.toml
 - `stack/github-secrets.manifest.json` — secret **names** for GitHub Actions + Codex (values never in git)
 - `scripts/codex-cloud-setup.sh` — Codex Cloud environment setup script
 
+## Toast labor + product mix
+
+Operator exports: Schedule & Labor **Time Entries** + Menu Sales **Item Selection Details** (product mix → SKUs). Map + parse: `docs/TOAST-REPORTS.md`, `scripts/parse-toast-reports.mjs`, `fixtures/toast/`.
+
 ## Setup
 
 See `SETUP.md`.
