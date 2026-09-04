@@ -65,7 +65,7 @@ Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_1v0SMn4lsIQg) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_cPTBrc4wYNVY) — Business/Creator only. Reply `instagram connected` when done.
 
 ## Still required for Beyond the Hunt READY
 

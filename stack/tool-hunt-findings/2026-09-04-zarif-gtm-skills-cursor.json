@@ -1,0 +1,21 @@
+{
+  "finding_id": "zarif-gtm-skills-cursor-peer-2026-09",
+  "lane": "skills_knowledge",
+  "name": "zarif3624/gtm-skills — Cursor/Codex GTM skills peer",
+  "vendor_or_project": "zarif3624/gtm-skills",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Open-source **25 evidence-first GTM/sales skills** for AI agents (`npx skills add zarif3624/gtm-skills`); MIT; skills.sh / Claude Code / Codex / Cursor-compatible. Covers ICP, research, outbound, discovery, deal strategy, pipeline — peer to Zapier gtm-cheat-codes watch. Explicitly anti-hallucination / defendable artifacts. **Skip** RevOps forecast-heavy playbooks for Beyond the Hunt (mission_no forecasting). Optional install when Sync Skills is on; do not auto-expand swarm.",
+  "what_it_does": "Composable agent skills that produce audited GTM artifacts from shared gtm-context.",
+  "how_competitors_use_it": "Founders/AEs/SDRs install into .cursor/skills or via skills.sh for sales workflows.",
+  "what_we_use_today": "Zapier GTM Cheat Codes watch; repo skills/*.md; Sync Skills checklist",
+  "gap": "Optional peer pack for Cursor memory/skills lane — operator Sync Skills still open_gap",
+  "pivot_speed": "hours",
+  "operator_ask": "Optional: npx skills add zarif3624/gtm-skills after Sync Skills on. Skip forecast skills.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://github.com/zarif3624/gtm-skills",
+    "https://skills.sh/zarif3624/gtm-skills"
+  ],
+  "not_this": "Not forecasting research. Not Meta FBE. Not fee dogfood."
+}

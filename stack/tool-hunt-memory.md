@@ -954,3 +954,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **Menuthere** + **OrderOnWhats** + **Waplify** WA peers (skip OrderOnWhats demand-forecast). Finding: `2026-09-04-menuthere-orderonwhats-waplify-wa.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_1v0SMn4lsIQg (~10 min).
 - Ledger v1.92.53. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Shop 6% reconfirm + WhatsOrder/AudienceJet + gtm-skills)
+
+- Reconfirmed TikTok Shop Food & Bev **6%** (Dashboardly) — grader stays 6. Finding: `2026-09-04-tiktok-shop-foodbev-6pct-reconfirm.json`.
+- Watched **WhatsOrder** ($1.67/mo 0%) + **AudienceJet** (1–2% MENA — fee pause) + **Order in Whats** (€25/mo). Finding: `2026-09-04-whatsorder-audiencejet-orderinwhats-wa.json`.
+- Watched **zarif3624/gtm-skills** Cursor GTM pack (skip forecast playbooks). Finding: `2026-09-04-zarif-gtm-skills-cursor.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_cPTBrc4wYNVY (~10 min).
+- Ledger v1.92.54. Auth still blocked for unlock READY.

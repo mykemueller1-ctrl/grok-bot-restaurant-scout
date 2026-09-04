@@ -1,0 +1,18 @@
+{
+  "finding_id": "tiktok-shop-foodbev-6pct-dashboardly-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TikTok Shop Food & Beverages 6% referral reconfirm",
+  "vendor_or_project": "TikTok Shop / Dashboardly",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Dashboardly Food & Beverages category guide still lists US **6% referral fee** for Food & Beverages (source updated **2026-05-14**, checked **2026-07-29**). Reinforces Never86 Shop KEEP grader default **6** vs marketplace 15–30%. Oct 2026 standard-category hike reports (6%→8%) remain watch-only until Food&Bev table changes. Not fee dogfood expansion — reconfirm only under fee catalog pause.",
+  "what_it_does": "Documents TikTok Shop US category referral fee for Food & Beverages sellers.",
+  "gap": "Grader stays 6; continue watching Oct hike + consumables carve-out without changing defaults",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.dashboardly.io/tiktok-shop/food-beverages"
+  ],
+  "not_this": "Not a fee dogfood. Not forecasting. Does not bump Meta peer_count."
+}

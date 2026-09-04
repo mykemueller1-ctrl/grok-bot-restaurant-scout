@@ -1,0 +1,25 @@
+{
+  "finding_id": "whatsorder-audiencejet-orderinwhats-wa-2026-09",
+  "lane": "vertical_gtm",
+  "name": "WhatsOrder + AudienceJet + Order in Whats WA peers",
+  "vendor_or_project": "WhatsOrder / AudienceJet / Order in Whats",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Three more WhatsApp OO peers (Composio FETCH 2026-09-04): (1) **WhatsOrder** — Google-Sheets→WA order form; **0% commission**; published **US$1.67/mo**; QR/table ordering; embeddable. (2) **AudienceJet** (MENA) — WA AI chatbot OO + MyFatoorah/Tap; markets **1–2% platform fee** vs 15–30% aggregators — `first_party_pct_fee` KEEP contrast; fee pause (do NOT dogfood). (3) **Order in Whats** (NothingApps) — official WA Business API catalog bot; Free ≤50 orders then **€25/mo**; payment-link checkout. Watch with Menuthere/ChatOrder/WaveOrder; not Meta FBE.",
+  "what_it_does": "WhatsApp-native restaurant ordering from ultra-cheap Sheets forms to API chatbots with % or flat SaaS pricing.",
+  "how_competitors_use_it": "Share WA link/QR; diners order in-chat; kitchens confirm via dashboard.",
+  "what_we_use_today": "Menuthere/OrderOnWhats/Waplify/ChatOrder/MyFojo WA watches; Owner Flex 5% already catalogued",
+  "gap": "AudienceJet 1–2% sharpens KEEP teach but fee catalog pause blocks new SalesLead dogfood",
+  "pivot_speed": "days",
+  "operator_ask": "No fee dogfood for AudienceJet 1–2%. Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://whatsorder.com/",
+    "https://audiencejet.com/",
+    "https://www.orderinwhats.com/en"
+  ],
+  "keep_signals": [
+    "first_party_pct_fee"
+  ],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting."
+}
