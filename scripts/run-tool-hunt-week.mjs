@@ -19,6 +19,19 @@ function run(cmd, args) {
 console.log("tool-hunt-week: Beyond the Hunt gate");
 console.log("scope: love→buy-now + pain→sales-lead + Cursor memory/skills — NOT forecasting");
 
+const status = run(process.execPath, ["scripts/print-beyond-the-hunt-status.mjs"]);
+if (status.stdout) {
+  try {
+    const s = JSON.parse(status.stdout);
+    console.log(
+      `status_snapshot: ledger=${s.ledger_version} auth=${s.auth?.status} fee_pause=${s.fee_catalog_pause} love_markets=${s.love_live_proof?.markets ?? "n/a"} watches=${(s.top_watch_rivals || []).length}`
+    );
+  } catch {
+    process.stdout.write(status.stdout);
+  }
+}
+if (status.stderr) process.stderr.write(status.stderr);
+
 const auth = run(process.execPath, ["scripts/check-auth-gaps.mjs"]);
 process.stdout.write(auth.stdout || "");
 if (auth.stderr) process.stderr.write(auth.stderr);

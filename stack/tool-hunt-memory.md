@@ -703,3 +703,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Wired Zyda beside Deliverect in script-draft, sales-lead-form, tool-frontier-scan.
 - COMPOSIO-SOCIAL-UNLOCKS: Meta Order Food rivals section (Deliverect/Zyda) + status printer pointer.
 - Tip CI green on Zyda watch + status rivals. Ledger v1.92.14. Auth still blocked.
+
+### 2026-09-04 (weekly gate status snapshot + Zyda in Automation)
+
+- `run-tool-hunt-week.mjs` now prints `status_snapshot` from `print-beyond-the-hunt-status.mjs` first.
+- Automation prompt_hint + paste doc include Zyda beside Deliverect.
+- Ledger v1.92.15. Auth still blocked for unlock READY.
