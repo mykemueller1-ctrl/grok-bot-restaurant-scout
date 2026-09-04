@@ -1,0 +1,32 @@
+{
+  "finding_id": "yelp-chi-live-morning-scan-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Live Yelp CHI morning-scan love proof (G&TG)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS (auth-free Active) reconfirmed Girl & The Goat Chicago as top love seed: alias girl-and-the-goat-chicago, rating 4.4, review_count 10731, phone +13124926262. Purple Pig (9046) co-appears. Proves morning-scan love→buy-now path without Instagram/TikTok.",
+  "researched_at": "2026-09-04",
+  "live_proof": {
+    "tool": "YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS",
+    "query": "Girl and the Goat / Chicago, IL",
+    "girl_and_the_goat": {
+      "alias": "girl-and-the-goat-chicago",
+      "rating": 4.4,
+      "review_count": 10731,
+      "phone": "+13124926262",
+      "price": "$$$",
+      "address": "809 W Randolph, Chicago, IL 60607"
+    },
+    "also_seen": [
+      {"name": "The Purple Pig", "alias": "the-purple-pig-chicago", "review_count": 9046},
+      {"name": "Bavette's Bar & Boeuf", "alias": "bavettes-bar-and-boeuf-chicago", "review_count": 3562}
+    ]
+  },
+  "urls": [
+    "https://www.yelp.com/biz/girl-and-the-goat-chicago",
+    "fixtures/tool-hunt/chicago-love-brands.json",
+    "skills/morning-scan.md",
+    "docs/COMPOSIO-SOCIAL-UNLOCKS.md"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting. IG/TikTok still optional UGC upgrade."
+}

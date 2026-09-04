@@ -7,7 +7,7 @@
 1. Read configured city + cuisine tags from the commerce engine.
 2. Discover love signals:
    - Prefer social plugin (OmniSocials/Blotato/Zernio) when connected.
-   - **Active public seed (no social auth):** Composio `YELP_SEARCH_BUSINESSES` → `YELP_GET_BUSINESS_DETAILS` for chef/cult venues by city (calibration: `fixtures/tool-hunt/chicago-love-brands.json`, `austin-love-brands.json`, `miami-love-brands.json`, `nashville-love-brands.json`, `denver-love-brands.json`). Prefer high review_count + chef/cult narrative over generic high-rating trucks.
+   - **Active public seed (no social auth):** Composio `YELP_SEARCH_BUSINESSES` → `YELP_GET_BUSINESS_DETAILS` for chef/cult venues by city (calibration: `fixtures/tool-hunt/chicago-love-brands.json`, `austin-love-brands.json`, `miami-love-brands.json`, `nashville-love-brands.json`, `denver-love-brands.json`). Prefer high review_count + chef/cult narrative over generic high-rating trucks. **Do not block on Instagram/TikTok.** Live 2026-09-04 CHI proof: Girl & The Goat **10,731** reviews (see fixture `live_yelp` + finding `2026-09-04-yelp-chi-live-morning-scan.json`).
    - Else Composio `COMPOSIO_SEARCH_WEB` / public SERP for recent chef/cult kitchen UGC (Bright Data if auth’d).
    - When Instagram Composio `never86` is Active, sample Business/Creator media for food love proofs (read-only).
    - Social connect steps: `docs/COMPOSIO-SOCIAL-UNLOCKS.md` (TikTok needs org auth-config first). **Do not block the scan on IG/TikTok** — Yelp seed is enough for love→buy-now calibration.

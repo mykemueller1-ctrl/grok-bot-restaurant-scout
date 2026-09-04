@@ -1,5 +1,5 @@
 {
-  "version": "1.92.6",
+  "version": "1.92.7",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -80,7 +80,7 @@
     },
     "pain_sales_dogfood": "multi-market KEEP→SalesLead + keep-grader CHI/ATX/MIA/BNA/DEN (girl-goat/franklin/michaels/husk/rioja)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin + miami + nashville + denver-love-brands.json (Yelp Active)",
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json (+ live_yelp G&TG 10731) + austin + miami + nashville + denver-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
@@ -372,15 +372,16 @@
     {
       "name": "Klikit",
       "lane": "vertical_gtm",
-      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); US TikTok Shop food guides cite ~6% Shop referral vs 15–30% delivery apps",
+      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); primary guide cites TikTok Shop instant delivery typically 5–10% of GMV vs 15–30% traditional delivery",
       "memory": "n/a (ops middleware)",
-      "edge": "TikTok Shop F&B middleware — Shop ~6% KEEP math sharpens Never86 buy-now vs DoorDash; watch US expansion",
+      "edge": "TikTok Shop F&B middleware — KEEP-math peer to Never86 Shop ~6% buy-now vs DoorDash rent; APAC-only today; watch US expansion. Not a fee-dogfood target (catalog pause).",
       "updated": "2026-09-04",
       "sources": [
         "https://klikit.io/en/integrations/tiktok-shop",
         "https://klikit.io/en/learn/tiktok-shop-food-delivery",
         "https://klikit.io/en/learn/tiktok-shop-integration-guide-restaurants-apac",
-        "https://klikit.io/en/learn/tiktok-shop-vs-grabfood-foodpanda-restaurants"
+        "https://klikit.io/en/learn/tiktok-shop-vs-grabfood-foodpanda-restaurants",
+        "https://klikit.io/en/help/how-will-you-bill-me-for-the-use-of-klikit"
       ]
     },
     {
@@ -1162,6 +1163,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Live Yelp CHI morning-scan love proof (G&TG 10731 reviews)",
+      "lane": "vertical_gtm",
+      "why": "Composio Yelp Active reconfirmed Girl & The Goat + Purple Pig against chicago-love-brands — morning-scan love→buy-now without IG/TikTok",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Klikit TikTok Shop KEEP-math rival (5–10% vs 15–30% delivery)",
+      "lane": "vertical_gtm",
+      "why": "Primary APAC guide sharpens Shop ~6% buy-now wedge; watch only — not fee dogfood; catalog pause stands",
+      "verdict": "watch"
+    },
     {
       "item": "Composio social unlocks pack (IG+TikTok) with Yelp Active seed",
       "lane": "vertical_gtm",
@@ -2265,7 +2278,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_X44BlLfaH2eG (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp love fixtures Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_XmG82QNx7g4Y (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp live CHI proof Active until connected.",
       "priority": 1
     },
     {
@@ -2300,5 +2313,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T02:15:00Z"
+  "updated_at": "2026-09-04T18:45:00Z"
 }

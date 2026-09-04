@@ -653,3 +653,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - TikTok confirmed: needs org auth-config (no managed auth) before Connect.
 - Fresh Instagram Composio link issued. Yelp love fixtures remain Active seed for morning-scan.
 - Fee catalog still paused. Mem0/Context still blocked.
+
+### 2026-09-04 (Yelp CHI live + Klikit KEEP-math)
+
+- Live Composio Yelp: Girl & The Goat Chicago **10,731** reviews / 4.4★ / +13124926262 — matches `chicago-love-brands.json`; Purple Pig 9,046 co-seen. Finding: `stack/tool-hunt-findings/2026-09-04-yelp-chi-live-morning-scan.json`.
+- Klikit primary guide: TikTok Shop typically **5–10%** GMV vs **15–30%** delivery — KEEP-math peer to Shop ~6%; **watch only** (not fee dogfood). Finding: `2026-09-04-klikit-tiktok-shop-keep-math.json`. Ledger v1.92.7.
+- Fresh Instagram link: https://connect.composio.dev/link/lk_XmG82QNx7g4Y (~10 min).
+- Still blocked: `MEM0_API_KEY` + `CONTEXT_DEV_API_KEY` → unlock READY.

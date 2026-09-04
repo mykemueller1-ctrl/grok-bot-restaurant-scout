@@ -9,7 +9,13 @@
       "phone": "+13124926262",
       "website": "https://www.girlandthegoat.com/chicago",
       "love_signal": "Chef Stephanie Izard / high UGC / cult following",
-      "never86_fit": "shoppable SKU + social buy-now onboard"
+      "never86_fit": "shoppable SKU + social buy-now onboard",
+      "live_yelp": {
+        "verified_at": "2026-09-04",
+        "rating": 4.4,
+        "review_count": 10731,
+        "price": "$$$"
+      }
     },
     {
       "name": "S.K.Y.",
@@ -23,9 +29,16 @@
       "yelp_alias": "the-purple-pig-chicago",
       "phone": "+13124641744",
       "love_signal": "High review volume / tourist+local love",
-      "never86_fit": "SKU pack potential if UGC strong"
+      "never86_fit": "SKU pack potential if UGC strong",
+      "live_yelp": {
+        "verified_at": "2026-09-04",
+        "rating": 4.3,
+        "review_count": 9046,
+        "price": "$$$"
+      }
     }
   ],
   "source": "Yelp Composio dogfood 2026-09-04",
+  "live_proof": "Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04 — G&TG 10731 reviews",
   "status": "calibration_only"
 }

@@ -2,6 +2,8 @@
 
 Close Instagram + TikTok so morning-scan can pull UGC proofs. Until then, **Yelp love fixtures remain the Active public seed** (no social auth required).
 
+**Live proof (2026-09-04):** Composio `YELP_SEARCH_BUSINESSES` + details reconfirmed Girl & The Goat Chicago — **10,731** reviews, 4.4★, phone matches fixture. Morning-scan love→buy-now does **not** block on IG/TikTok.
+
 **Scope:** Never86 shoppable TikTok/IG buy-now  
 **Out:** forecasting · fee-dogfood expansion (paused at strong_keep 63)
 

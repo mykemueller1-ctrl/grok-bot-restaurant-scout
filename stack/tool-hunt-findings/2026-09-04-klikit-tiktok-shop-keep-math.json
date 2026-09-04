@@ -1,0 +1,22 @@
+{
+  "finding_id": "klikit-tiktok-shop-keep-math-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Klikit TikTok Shop KEEP-math rival (APAC POS; not fee dogfood)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Primary Klikit guide claims TikTok Shop instant delivery commission typically 5–10% of GMV vs 15–30% traditional delivery — KEEP-math peer to Never86 Shop ~6% buy-now wedge. Klikit is APAC POS middleware (PH/ID/TH/SG/MY) with native TikTok Shop sync, not a US OO fee product. Refresh competitor row only; do not expand fee catalog.",
+  "researched_at": "2026-09-04",
+  "keep_math": {
+    "tiktok_shop_commission_claim": "5-10% of GMV",
+    "traditional_delivery_claim": "15-30%",
+    "never86_compare": "Shop ~6% SalesLead KEEP scorer already teaches this wedge",
+    "klikit_own_fees": "Subscription per location + optional Webshop % (2% dine-in / 3% pickup / 5% delivery) — separate from TikTok Shop platform fee"
+  },
+  "urls": [
+    "https://klikit.io/en/learn/tiktok-shop-integration-guide-restaurants-apac",
+    "https://klikit.io/en/learn/tiktok-shop-food-delivery",
+    "https://klikit.io/en/integrations/tiktok-shop",
+    "https://klikit.io/en/help/how-will-you-bill-me-for-the-use-of-klikit"
+  ],
+  "not_this": "Not a new fee dogfood. Fee catalog pause stands. No US swarm expand. Not forecasting."
+}
