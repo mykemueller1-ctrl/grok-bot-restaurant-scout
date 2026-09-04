@@ -1,5 +1,5 @@
 {
-  "version": "1.85.0",
+  "version": "1.86.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -130,7 +130,8 @@
     "uber_webshop_fee_dogfood_gate": "scripts/validate-uber-webshop-fee-dogfood.mjs (Uber Webshop 2.5%+$0.29 processing \u2192 SalesLead \u22655 markets)",
     "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap \u2192 SalesLead \u22655 markets)",
     "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)",
-    "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)"
+    "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)",
+    "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -667,6 +668,17 @@
       ]
     },
     {
+      "name": "S4VOR",
+      "lane": "vertical_gtm",
+      "stack": "$0/mo commission-free OO/POS/waitlist/reservations; guest-paid 1.9% service fee capped at $2.00 per order",
+      "memory": "Owned order/customer tracking + loyalty",
+      "edge": "Published guest 1.9%/$2 cap under $0/mo KEEP claim \u2014 Seared/Owner-class guest % peer with hard dollar cap; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.s4vor.com/"
+      ]
+    },
+    {
       "name": "Otter",
       "lane": "vertical_gtm",
       "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198\u2013$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
@@ -1071,6 +1083,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "S4VOR guest 1.9%/$2 cap SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN S4VOR guest 1.9% service fee capped at $2.00 on s4vor.com under $0/mo commission-free claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 1.9%/$2 cap; validate-s4vor-fee-dogfood \u22655; strong_keep 57",
+      "verdict": "adopt"
+    },
     {
       "item": "KwickDriver $2/delivery SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2125,5 +2143,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T23:00:00Z"
+  "updated_at": "2026-09-04T23:30:00Z"
 }

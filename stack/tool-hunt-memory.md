@@ -565,3 +565,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `per_order_platform_fee` for `per delivery` / `flat $N fee`.
 - pain-scan-kwickdriver-per-delivery.json → strong_keep **56**; pain-to-sales-kwickdriver-fee-* ×5; validate-kwickdriver-fee-dogfood ≥5. Distinct from KwickMenu 0% OO watch.
 - Ledger v1.85.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (S4VOR guest 1.9%/$2 cap SalesLead)
+
+- Primary [s4vor.com](https://www.s4vor.com/) Our Model: guest-paid **1.9%** service fee **capped at $2.00** under $0/mo commission-free claim.
+- Widened `first_party_pct_fee` for `1.9%` / `capped at $2` / `max $2`.
+- pain-scan-s4vor-guest-fee.json → strong_keep **57**; pain-to-sales-s4vor-fee-* ×5; validate-s4vor-fee-dogfood ≥5. Seared/Owner-class guest % peer with hard $2 cap.
+- Ledger v1.86.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
