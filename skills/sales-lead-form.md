@@ -17,13 +17,13 @@ Fill and save `SalesLead`:
 | `quotes` | raw |
 | `vendors_to_displace` | Toast, DoorDash, etc. |
 | `why_never86_now` | map pain → Never86 wedge (buy-now / social commerce / leave marketplace tax / stack pain) |
-| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Outbites/Orderitto/Seared first-party web-QR ordering, Menami/TextOrder/Ainisa DM agents, OrderPost post→order links, Seekadu reservations, Moast Shopify UGC widgets, Seekeasy/Beebz creator discovery, or content-only AI Reels (Feedo/PlateAI) |
+| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Outbites/Orderitto/Seared/Deonde/SWIPEBY/OPA! first-party web-QR ordering, Menami/TextOrder/Ainisa/Ordr DM agents, OrderPost post→order links, Seekadu reservations, Moast Shopify UGC widgets, Seekeasy/Beebz creator discovery, or content-only AI Reels (Feedo/PlateAI) |
 | `sources` | URLs |
 | `confidence` | score + teach history |
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
 
 Rules:
-- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-to-sales-keep-girl-goat.json`).
+- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-to-sales-keep-girl-goat.json`).
 - Draft outreach copy may be suggested; **sending** requires approvals MCP.
 - Same human/venue across pain agents → merge / link, don't spam duplicate leads.
 - Never pitch labor/sales **forecasting** as the Never86 product.
@@ -31,4 +31,4 @@ Rules:
 
 **Done when:** `SalesLead` saved and owner notified.
 
-**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` + `fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json` prove multi-market Yelp/Maps/X/KEEP → SalesLead DRAFT without Apollo/Mem0.
+**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` + `fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json` + `fixtures/tool-hunt/pain-to-sales-nashville-husk.json` prove multi-market Yelp/Maps/X/KEEP → SalesLead DRAFT without Apollo/Mem0.

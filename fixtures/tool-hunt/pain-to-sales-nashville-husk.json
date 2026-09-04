@@ -1,0 +1,86 @@
+{
+  "dogfood_id": "pain-to-sales-nashville-husk-2026-09-04",
+  "purpose": "Fourth-market Active path: menu-markup KEEP + Nashville chef love (Husk) → SalesLead DRAFT. No Apollo/Mem0/Context/IG required.",
+  "pain_stubs": [
+    {
+      "source": "x",
+      "url": "https://x.com/aakashgupta/status/2089625597723230684",
+      "snippet": "Restaurant owners pad DoorDash / Uber Eats delivery menus ~20% menu markup to offset marketplace commissions that run 15 to 30% per order — fees they do not KEEP.",
+      "pain_id": "marketplace_menu_markup",
+      "keep_score": 95,
+      "never86_wedge": "anti_marketplace_buy_now"
+    },
+    {
+      "source": "x",
+      "url": "https://x.com/talk2cc/status/2094864157204152404",
+      "snippet": "Restaurant owners: rank your sales channels by what you KEEP, not what they sell. Own your ordering / commission-free first-party vs DoorDash rent.",
+      "pain_id": "channel_rank_own_ordering",
+      "keep_score": 90,
+      "never86_wedge": "anti_marketplace_buy_now"
+    }
+  ],
+  "pain_lead": {
+    "pain_id": "marketplace_menu_markup",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Husk",
+      "city": "Nashville",
+      "market": "Nashville, TN",
+      "yelp_alias": "husk-nashville",
+      "phone": "+16152566565",
+      "rating": 3.9,
+      "review_count": 1987,
+      "transactions": ["delivery"],
+      "love_signal": "Sean Brock Southern destination / high UGC volume"
+    },
+    "complaint_summary": "Industry menu-markup KEEP signal (not a personal Husk complaint). Destination Southern brand with Yelp delivery present — Never86 buy-now owns social demand before Deonde/OPA!/SWIPEBY/Ordr web+DM peers close the channel.",
+    "opportunity_signals": [
+      "cult_chef_ugc",
+      "marketplace_delivery_present",
+      "menu_markup_pain",
+      "shoppable_sku_potential"
+    ],
+    "vendors_mentioned": ["doordash", "uber_eats"],
+    "sources": [
+      "https://x.com/aakashgupta/status/2089625597723230684",
+      "fixtures/tool-hunt/nashville-love-brands.json",
+      "fixtures/tool-hunt/pain-scan-menu-markup.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "marketplace_menu_markup",
+    "account_name": "Husk",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Nashville",
+    "market": "Nashville, TN",
+    "complaint_thesis": "Operators pad delivery menus ~20% to offset 15–30% marketplace commissions — then guests feel the markup and blame the restaurant. Chef-loved Nashville brands should route viral social demand to honest shoppable buy-now, not padded DoorDash menus.",
+    "quotes": [
+      "pad DoorDash / Uber Eats delivery menus ~20%",
+      "commissions that run 15 to 30% per order",
+      "rank your sales channels by what you KEEP"
+    ],
+    "vendors_to_displace": ["DoorDash", "Uber Eats"],
+    "why_never86_now": "Sean Brock-class love + delivery already on Yelp → Never86 TikTok/IG buy-now closes Nashville demand without menu-markup rent. Contrast vs Deonde white-label apps, OPA!/SWIPEBY first-party OS, Ordr WhatsApp/IG assistants.",
+    "suggested_angle": "Draft only: Your Rutledge St love already prints demand. Never86 turns it into shoppable buy-now at honest prices — so fans pay you, not a padded delivery menu.",
+    "sources": [
+      "https://x.com/aakashgupta/status/2089625597723230684",
+      "https://www.yelp.com/biz/husk-nashville",
+      "fixtures/tool-hunt/nashville-love-brands.json"
+    ],
+    "confidence": 72,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — not live outreach. Fourth market after Chicago G&TG + Austin Franklin + Miami Michael's Genuine."
+  },
+  "tools_used": [
+    "YELP_SEARCH_BUSINESSES",
+    "scripts/score-marketplace-keep.mjs",
+    "X.search_posts_all",
+    "COMPOSIO_SEARCH_TAVILY",
+    "fixtures/tool-hunt/nashville-love-brands.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}

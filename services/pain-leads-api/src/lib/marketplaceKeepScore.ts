@@ -18,6 +18,10 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /effective cost|left with|lives on|what (is|you'?re? )left|statement:/i, signal: "effective_cost_math", w: 20 },
   // POS lock-in (Toast etc.) — stack pain for sales forms, not forecasting
   { re: /\btoast\b.*(fee|fees|lock|terminat)|leaving toast|toast pos/i, signal: "pos_fee_lockin", w: 15 },
+  // Delivery-menu padding / consumer markup backlash (operator + guest pain)
+  { re: /pad(ded)?|menu markup|inflat(ed|e) menu|markup (on|to offset)/i, signal: "menu_markup_pain", w: 15 },
+  // First-party OS KEEP peers (Deonde/OPA!/SWIPEBY language)
+  { re: /own your ordering|commission[\s-]?free|100%\s*of\s*(the\s*)?revenue|keep more profit/i, signal: "own_ordering_keep", w: 15 },
 ];
 
 export function scoreMarketplaceKeep(snippet: string): MarketplaceKeepResult {

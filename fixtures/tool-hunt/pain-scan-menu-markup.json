@@ -1,0 +1,27 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["X.search_posts_all", "scripts/score-marketplace-keep.mjs"],
+  "query": "(\"DoorDash\" OR \"Uber Eats\" OR Grubhub) (commission OR fee OR \"keep\" OR quit OR \"effective cost\") (restaurant OR owner) -is:retweet lang:en",
+  "sort_order": "relevancy",
+  "hits": [
+    {
+      "url": "https://x.com/aakashgupta/status/2089625597723230684",
+      "posted_at": "2026-08-18T08:09:00.000Z",
+      "handle": "aakashgupta",
+      "snippet": "Restaurant owners pad DoorDash / Uber Eats delivery menus ~20% menu markup to offset marketplace commissions that run 15 to 30% per order — fees they do not KEEP. A $20 delivered burrito starts from padded menus.",
+      "pain_id": "marketplace_menu_markup",
+      "score": 95,
+      "never86_angle": "Menu-markup backlash → first-party buy-now at honest prices; teach sales leads the pad math"
+    },
+    {
+      "url": "https://x.com/talk2cc/status/2094864157204152404",
+      "posted_at": "2026-09-01T19:05:10.000Z",
+      "handle": "talk2cc",
+      "snippet": "Restaurant owners: rank your sales channels by what you KEEP, not what they sell. Dine-in. Takeout. DoorDash. Uber Eats. Own your ordering / commission-free first-party so you KEEP more profit vs marketplace rent.",
+      "pain_id": "channel_rank_own_ordering",
+      "score": 90,
+      "never86_angle": "Channel KEEP ranking + own-ordering language from Deonde/OPA!/SWIPEBY peers"
+    }
+  ],
+  "notes": "Fresh X relevancy scan 2026-09-04. Consumer markup posts exist but operator KEEP + pad language wins for SalesLead teach. Bright Data still 401."
+}

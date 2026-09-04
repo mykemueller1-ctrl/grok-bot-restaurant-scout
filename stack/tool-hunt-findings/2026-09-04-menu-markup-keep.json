@@ -1,0 +1,20 @@
+{
+  "finding_id": "menu-markup-own-ordering-keep-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menu-markup + own-ordering KEEP signals",
+  "vendor_or_project": "score_marketplace_keep",
+  "urls": [
+    "https://x.com/aakashgupta/status/2089625597723230684",
+    "https://x.com/talk2cc/status/2094864157204152404"
+  ],
+  "what_it_does": "KEEP scorer detects padded delivery menus (~20%) and own-your-ordering / commission-free language for SalesLead teach.",
+  "how_competitors_use_it": "Deonde/OPA!/SWIPEBY market 'own ordering / KEEP more profit'; we weaponize the same language in pain stubs.",
+  "what_we_use_today": "effective_cost_math + pos_fee_lockin + KEEP/commission rules",
+  "gap": "Closed — menu_markup_pain + own_ordering_keep on CLI + Fastify/Worker lib; pain-scan-menu-markup.json.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted menu_markup_pain + own_ordering_keep; X fixture scores strong anti_marketplace_buy_now.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

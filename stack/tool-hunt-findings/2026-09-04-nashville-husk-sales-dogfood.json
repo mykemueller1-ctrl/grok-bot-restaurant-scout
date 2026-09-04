@@ -1,0 +1,20 @@
+{
+  "finding_id": "nashville-husk-sales-dogfood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Nashville Husk menu-markup → SalesLead dogfood",
+  "vendor_or_project": "Never86 pain→sales",
+  "urls": [
+    "https://www.yelp.com/biz/husk-nashville",
+    "fixtures/tool-hunt/pain-to-sales-nashville-husk.json"
+  ],
+  "what_it_does": "Closes fourth-market Active loop: X menu-markup KEEP + Yelp Husk love → SalesLead DRAFT.",
+  "how_competitors_use_it": "n/a (our dogfood)",
+  "what_we_use_today": "Chicago G&TG + Austin Franklin + Miami Michael's Genuine dogfoods",
+  "gap": "Closed — fixtures/tool-hunt/pain-to-sales-nashville-husk.json",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Fourth-market pain→SalesLead dogfood without Apollo/Mem0/IG.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

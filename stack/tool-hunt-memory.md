@@ -159,3 +159,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted scripts/tool-hunt-brief.mjs --write → stack/tool-hunt-briefs/2026-09-04.md; weekly gate previews brief.
 - MEM0_API_KEY + CONTEXT_DEV_API_KEY marked optional:false in github-secrets.manifest.json.
 - Ledger v1.21.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Nashville + menu-markup KEEP + Deonde/OPA!/SWIPEBY/Ordr)
+
+- Adopted Nashville Yelp love calibration: fixtures/tool-hunt/nashville-love-brands.json (Husk, Catbird Seat, Henrietta Red, Rolf and Daughters); validate-love markets=4.
+- Adopted menu_markup_pain + own_ordering_keep on KEEP scorer (CLI + Fastify/Worker); pain-scan-menu-markup.json (9/9 strong).
+- Dogfood: pain-to-sales-nashville-husk.json (menu-markup KEEP → SalesLead DRAFT).
+- Watched Deonde (white-label own ordering), SWIPEBY + OPA! (first-party KEEP), Ordr (WhatsApp/IG AI orders). Skip forecasting.
+- Bright Data still 401 — Composio SEARCH_WEB/Tavily + X Active. Ledger v1.22.0. Auth still BLOCKED (Mem0 + Context).

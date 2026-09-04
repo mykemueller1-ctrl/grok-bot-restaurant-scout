@@ -1,5 +1,5 @@
 {
-  "version": "1.21.0",
+  "version": "1.22.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -78,15 +78,15 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json + pain-to-sales-miami-michaels-genuine.json",
-    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json + miami-love-brands.json (Yelp Active)",
+    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json + pain-to-sales-effective-cost-franklin.json + pain-to-sales-miami-michaels-genuine.json + pain-to-sales-nashville-husk.json",
+    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json + pain-scan-doordash-effective-cost.json + pain-scan-menu-markup.json)",
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json + miami-love-brands.json + nashville-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP (effective_cost_math + pos_fee_lockin)",
-    "love_fixture_gate": "scripts/validate-love-fixtures.mjs",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP (effective_cost_math + pos_fee_lockin + menu_markup_pain + own_ordering_keep)",
+    "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
@@ -394,9 +394,92 @@
       "sources": [
         "https://gegsy.com/"
       ]
+    },
+    {
+      "name": "Deonde",
+      "lane": "vertical_gtm",
+      "stack": "White-label branded restaurant ordering / delivery OS pitched as DoorDash alternative — own your ordering dashboard",
+      "memory": "Operator backend / payouts / drivers",
+      "edge": "Anti-commission white-label apps — not TikTok Shop-native; watch KEEP messaging only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://deonde.co/doordash-alternative.shtml",
+        "https://deonde.co/"
+      ]
+    },
+    {
+      "name": "SWIPEBY",
+      "lane": "vertical_gtm",
+      "stack": "First-party online ordering + email/loyalty; DoorDash-alternative KEEP-more-profit narrative",
+      "memory": "Owned guest list / catering ordering",
+      "edge": "Web first-party KEEP peer next to Outbites/OPA!; contrast vs Never86 social buy-now",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://swipe.by/blog/7-doordash-alternatives-for-restaurants-that-want-to-keep-more-profit",
+        "https://swipe.by/"
+      ]
+    },
+    {
+      "name": "OPA!",
+      "lane": "vertical_gtm",
+      "stack": "Restaurant-first marketplace / first-party ordering (Lunchbox partner); commission-transparent pitch",
+      "memory": "Customer data owned by restaurant",
+      "edge": "First-party KEEP education content; adjacent to Zayos/Outbites — watch GTM only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://opalink.com/learn/what-is-first-party-ordering",
+        "https://www.prnewswire.com/news-releases/lunchbox-and-opa-partner-to-redefine-marketplace-ordering-for-restaurants-302659934.html"
+      ]
+    },
+    {
+      "name": "Ordr",
+      "lane": "vertical_gtm",
+      "stack": "AI ordering assistant for F&B via WhatsApp / Instagram / Messenger",
+      "memory": "In-thread order state",
+      "edge": "Messaging close peer to TextOrder/Ainisa — not Shop rails",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.linkedin.com/posts/yasmin-reda-69678172_meet-ordr-our-ai-ordering-assistant-at-activity-7396258887915536384-zQh1"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Nashville Yelp love-brand calibration",
+      "lane": "vertical_gtm",
+      "why": "Fourth-market morning-scan seed (Husk / Catbird Seat / Henrietta Red / Rolf and Daughters)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Menu-markup + own-ordering KEEP signals",
+      "lane": "vertical_gtm",
+      "why": "menu_markup_pain + own_ordering_keep on KEEP scorer; pain-scan-menu-markup.json",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Nashville Husk menu-markup → SalesLead dogfood",
+      "lane": "vertical_gtm",
+      "why": "Fourth-market love+pain→DRAFT without Apollo/Mem0/IG",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Deonde white-label own ordering",
+      "lane": "vertical_gtm",
+      "why": "DoorDash-alternative branded apps; watch KEEP messaging only",
+      "verdict": "watch"
+    },
+    {
+      "item": "SWIPEBY / OPA! first-party KEEP OS",
+      "lane": "vertical_gtm",
+      "why": "Commission-free / own-customer peers next to Outbites/Zayos",
+      "verdict": "watch"
+    },
+    {
+      "item": "Ordr WhatsApp/IG AI ordering",
+      "lane": "vertical_gtm",
+      "why": "Messaging order close peer to TextOrder/Ainisa",
+      "verdict": "watch"
+    },
     {
       "item": "tool-hunt-brief.mjs headless ops brief",
       "lane": "cursor_agents",

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Validate love-brand calibration fixtures (Chicago / Austin / Miami).
+ * Validate love-brand calibration fixtures (Chicago / Austin / Miami / Nashville).
  * Ensures morning-scan seeds stay multi-market without Instagram auth.
  * Exit 0 if each *-love-brands.json has ≥3 brands; else 1.
  */
@@ -14,7 +14,12 @@ const files = readdirSync(dir)
   .filter((f) => f.endsWith("-love-brands.json"))
   .sort();
 
-const required = ["chicago-love-brands.json", "austin-love-brands.json", "miami-love-brands.json"];
+const required = [
+  "chicago-love-brands.json",
+  "austin-love-brands.json",
+  "miami-love-brands.json",
+  "nashville-love-brands.json",
+];
 for (const r of required) {
   if (!files.includes(r)) {
     console.error(`validate-love-fixtures: missing ${r}`);
