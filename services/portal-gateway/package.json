@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node src/server.mjs",
     "test": "node --test test/*.test.mjs",
-    "hash-code": "node ../../scripts/hash-house-code.mjs"
+    "hash-code": "node ../../scripts/hash-house-code.mjs",
+    "sync-portals": "bash ../../scripts/sync-portal-bundle.sh"
   },
   "engines": {
     "node": ">=20"

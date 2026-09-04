@@ -1,0 +1,150 @@
+{
+  "venue_id": "community-pizza",
+  "venue_name": "Community Tap & Pizza",
+  "aliases": [
+    "CTAP",
+    "Community Pizza",
+    "Community Tap"
+  ],
+  "product": "Never 86'd Action Shift",
+  "pricing_rule": "One location + one owner seat free. Manager FOH and Manager BOH are paid seats.",
+  "demo_sale": {
+    "pretend": true,
+    "sold_at": "2026-09-04",
+    "sold_by": "never86-gtm",
+    "note": "Demo close while invoice OCR wires in parallel. Three seats sold for CTAP Fort Dodge."
+  },
+  "location": {
+    "id": "loc-fort-dodge",
+    "name": "Community Tap & Pizza \u2014 Fort Dodge",
+    "plan": "owner_1_5",
+    "status": "active"
+  },
+  "seats": [
+    {
+      "seat_id": "seat-owner-myke",
+      "sku": "action-shift-owner",
+      "role": "owner",
+      "label": "Owner seat",
+      "house": "ops",
+      "price": "free",
+      "status": "sold",
+      "assignee": {
+        "name": "Mychael Mueller",
+        "aka": [
+          "Myke",
+          "Mychael \"Myke\" Mueller"
+        ],
+        "email_hint": "mykemueller1@gmail.com"
+      },
+      "owns": [
+        "prime cost",
+        "3P",
+        "books",
+        "approve the card",
+        "release Humes"
+      ],
+      "routes": [
+        "prime",
+        "3p",
+        "blended_labor",
+        "two_house_escalation"
+      ],
+      "login_id": "myke"
+    },
+    {
+      "seat_id": "seat-foh-kenzy",
+      "sku": "manager-foh",
+      "role": "manager_foh",
+      "label": "Manager FOH",
+      "house": "front",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "Kenzy Thompson",
+        "aka": [
+          "Kenzy",
+          "Ctap Manger"
+        ],
+        "title": "Bar / front-of-house manager"
+      },
+      "owns": [
+        "beer orders",
+        "liquor orders",
+        "drink specials",
+        "FOH staffing",
+        "Hy-Vee one-tap"
+      ],
+      "routes": [
+        "beer",
+        "liquor",
+        "foh_labor",
+        "drink_special"
+      ],
+      "login_id": "kenzy"
+    },
+    {
+      "seat_id": "seat-boh-tom",
+      "sku": "manager-boh",
+      "role": "manager_boh",
+      "label": "Manager BOH",
+      "house": "back",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "Tom Dorothy",
+        "aka": [
+          "Tom",
+          "Thomas Dorothy"
+        ],
+        "title": "Kitchen / back-of-house manager"
+      },
+      "owns": [
+        "food vendor orders",
+        "kitchen specials",
+        "BOH staffing",
+        "Sysco / PFG / Northern Lights / Sawyer"
+      ],
+      "routes": [
+        "food",
+        "boh_labor",
+        "kitchen_special"
+      ],
+      "login_id": "tom"
+    }
+  ],
+  "cockpit_rooms": [
+    {
+      "id": "shift",
+      "label": "Shift",
+      "state": "Paper week through Fri 9/4 (live book ends Sat 9/6)"
+    },
+    {
+      "id": "sales",
+      "label": "Sales",
+      "state": "Live book 8/31\u20139/6 \u00b7 as of Fri 9/4 only"
+    },
+    {
+      "id": "buy",
+      "label": "Buy",
+      "state": "Kenzy one-tap \u00b7 Tom food vendors"
+    },
+    {
+      "id": "invoices",
+      "label": "Invoices",
+      "state": "OCR in flight (parallel agent)"
+    },
+    {
+      "id": "calendar",
+      "label": "Calendar",
+      "state": "Smash $11.99 \u00b7 Thu pizza $17.99"
+    }
+  ],
+  "front_door": {
+    "path": "fixtures/portals/community-pizza/login.html",
+    "serve": "python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals",
+    "url": "http://127.0.0.1:5174/community-pizza/login.html"
+  },
+  "historical_sales": "fixtures/portals/community-pizza/data/historical-sales.json",
+  "tenant": "fixtures/portals/community-pizza/tenant.json"
+}

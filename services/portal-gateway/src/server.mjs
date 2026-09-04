@@ -33,10 +33,18 @@ import { createRateLimiter } from "./rate-limit.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "../../..");
-const PORTALS_ROOT = join(ROOT, "fixtures/portals");
+/** Prefer packaged portals (Vercel/Render); fall back to repo fixtures for local monorepo. */
+function resolvePortalsRoot() {
+  const bundled = join(__dirname, "../portals");
+  if (existsSync(join(bundled, "tenants.json"))) return bundled;
+  return join(ROOT, "fixtures/portals");
+}
+const PORTALS_ROOT = resolvePortalsRoot();
 const SHARED_ROOT = join(PORTALS_ROOT, "shared");
 const PORT = Number(process.env.PORT || process.env.PORTAL_PORT || 5174);
 const HOST = process.env.HOST || "0.0.0.0";
+const ON_HTTPS =
+  process.env.VERCEL === "1" || process.env.PORTAL_COOKIE_SECURE === "1";
 
 const loginLimiter = createRateLimiter({ windowMs: 60_000, max: 8 });
 
@@ -174,7 +182,7 @@ async function handleAuthLogin(req, res) {
     {
       headers: {
         "Set-Cookie": sessionCookie(token, {
-          secure: process.env.PORTAL_COOKIE_SECURE === "1",
+          secure: ON_HTTPS,
         }),
       },
     }
@@ -197,7 +205,7 @@ function handleAuthLogout(req, res) {
     {
       headers: {
         "Set-Cookie": clearSessionCookie({
-          secure: process.env.PORTAL_COOKIE_SECURE === "1",
+          secure: ON_HTTPS,
         }),
       },
     }

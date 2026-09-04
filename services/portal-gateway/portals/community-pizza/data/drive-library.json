@@ -1,0 +1,179 @@
+{
+  "venue_id": "community-pizza",
+  "venue_name": "Community Tap & Pizza",
+  "pulled_at": "2026-09-04T18:32:00Z",
+  "drive_account": "communitypizza2026@gmail.com",
+  "note": "Live pull from Google Drive into Community's exclusive data boundary. CTAP ACCOUNTS (POS station passwords) intentionally excluded from portal packs.",
+  "summary": {
+    "z_reports_indexed": 10,
+    "archive_week_net": 40274.06,
+    "packs": 5,
+    "excluded": ["CTAP ACCOUNTS — POS credentials stay in Drive vault only"]
+  },
+  "packs": [
+    {
+      "id": "weekly-sales-archive",
+      "title": "Ctap Weekly sales 9-14-25 to 9-20-25",
+      "folder_id": "15Ml7HIODw6MebTSytp3x2t-MvATryiow",
+      "kind": "archive_z_week",
+      "files": [
+        {
+          "date": "2025-09-14",
+          "id": "1IC31VS0cMXY_On3uCAwkVTHePJDo1xS1",
+          "title": "9-14-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 6105.72,
+          "labor": 1518.44
+        },
+        {
+          "date": "2025-09-15",
+          "id": "1VM2TTF18sI0nTo5gfyGVd4-qgYBlNrjl",
+          "title": "9-15-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 2806.86,
+          "labor": 1197.7
+        },
+        {
+          "date": "2025-09-16",
+          "id": "1XXxGYE-09CicfknFtm2fiHR114s0U9I4",
+          "title": "9-16-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 5425.29,
+          "labor": 1312.66
+        },
+        {
+          "date": "2025-09-17",
+          "id": "1ZrCXY2CokyFUo_ddUqO2TUFS6o-A-ZGi",
+          "title": "9-17-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 4911.69,
+          "labor": 1305.88
+        },
+        {
+          "date": "2025-09-18",
+          "id": "1VZcaPEk2L3XOUcYXWx9DsrvWUGABhKRU",
+          "title": "9-18-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 5597.25,
+          "labor": 1654.37
+        },
+        {
+          "date": "2025-09-19",
+          "id": "1_Jezqkzooaun5RqOtU--XwIpihvqsYaB",
+          "title": "9-19-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 8161.19,
+          "labor": 2143.37
+        },
+        {
+          "date": "2025-09-20",
+          "id": "13fe_oCwz3vvVMYKmd4i_YjT3ichXg82F",
+          "title": "9-20-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 7266.06,
+          "labor": 1929.9
+        }
+      ]
+    },
+    {
+      "id": "sample-zs-2026",
+      "title": "Recent ZReport_Summary (2026)",
+      "kind": "sample_z",
+      "files": [
+        {
+          "date": "2026-07-15",
+          "id": "1enGB2QwbyBo7xib8x7CSQrFqWVDzFWcx",
+          "title": "7-15-2026 ZReport_Summary",
+          "grandTotal": 5738.03,
+          "labor": 1335.7
+        },
+        {
+          "date": "2026-07-16",
+          "id": "18rBcvrJt5tNBwtqe_b1o4qEVBTEGCqka",
+          "title": "7-16-2026 ZReport_Summary",
+          "grandTotal": 4645.04,
+          "labor": 1429.94
+        },
+        {
+          "date": "2025-10-05",
+          "id": "1h1zV2SwSY8skarpH1W-aVNzLGmjFZuzB",
+          "title": "10-5-2025 Historical_Prev_Day_Z_Report",
+          "grandTotal": 8106.25,
+          "labor": 1698.18
+        }
+      ]
+    },
+    {
+      "id": "bar-ordering",
+      "title": "CTAP BAR ORDERING DOCS",
+      "folder_id": "1PUHGW1VhKSqOHxXgnbSn57Q7T1bnq5sD",
+      "kind": "inventory_par",
+      "files": [
+        {
+          "id": "1_gAesi5ufLOHsQ_uan3PEfzcOaVg4gxP8P7F_YHMHbU",
+          "title": "CTAP LIQUOR / BEER ORDERING SHEET (live sheet)",
+          "note": "Last liquor order total ~$1,367 \u00b7 beer ~$2,006"
+        },
+        {
+          "id": "1Yj_kt-nWp5UwVIU1sX-SoOTQzVXIFl5U",
+          "title": "CTAP LIQUOR _ BEER ORDERING SHEET BLANK.xlsx"
+        },
+        {
+          "id": "1Xg68M-11VoCJqPIbWIzBnzQYreJ8wWpb",
+          "title": "CTAP Liquor Beer Optimization Sheet.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "schedules",
+      "title": "FOH / BOH schedules",
+      "kind": "labor_schedule",
+      "files": [
+        {
+          "id": "1tl_3fecZJgavQu827tNnODDPcyIn0NLQBYDp3JTQjbo",
+          "title": "CTAP BAR SCHEDULE",
+          "week": "2026-08-30 \u2192 2026-09-05",
+          "names": [
+            "Mychael Mueller",
+            "Kenzy Thompson",
+            "Jessica Gailey",
+            "Bryson Cook"
+          ]
+        },
+        {
+          "id": "1DnwdaQRe9kUMOXKtAZ2wmOp5xyRGKWqrp92DhQeyM5M",
+          "title": "CTAP BAR SCHEDULE X1 WEEK"
+        },
+        {
+          "id": "1iZSUELvxnk9L98-3HXG5FlsuRIALjBcz2rqqjI3ZTPo",
+          "title": "CTAP KITCHEN SCHEDULE"
+        },
+        {
+          "id": "1jVTr_4r4HMUbF82s2sDHdxVsjHGMcra1UNitbccb9VI",
+          "title": "CTAP DRIVER SCHEDULE"
+        }
+      ]
+    },
+    {
+      "id": "ops-docs",
+      "title": "Ops guides + menu",
+      "kind": "ops",
+      "files": [
+        {
+          "id": "19iLs8URZPH2lRwzPZlrTTPGPZ2vCEEJC",
+          "title": "Community_Tap_Weekly_Numbers_Tracking_Guide.docx"
+        },
+        {
+          "id": "12-8hT5FdSaOcALKBEyBBpkwJxU--bB50Eg7HdYuO2-0",
+          "title": "HOW TO INPUT WEEKLY SCHEDULES"
+        },
+        {
+          "id": "1_q1GzAhLBPFbW6y3pNre61iOIUHGXe4Y",
+          "title": "CTAP_Updated_Menu.docx"
+        },
+        {
+          "id": "1q4EvH2tso3ceUYty0XH33taYUmCA0dI6Qfmy1tEnng0",
+          "title": "Fort Dodge_Vendor_Intake"
+        },
+        {
+          "id": "1oa89cix03EzvUpjTmjN3-z5SwAGYxRH8E142CZ1S2aM",
+          "title": "ctap gronk 9-20"
+        }
+      ]
+    }
+  ],
+  "physical_artifacts": "fixtures/toast/ctap-physical/normalized/owner-operator-artifacts.json"
+}

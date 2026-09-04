@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Never 86'd — secure venue portals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #101820;
+        --paper: #e8eef2;
+        --card: #f7fafc;
+        --line: rgba(16, 24, 32, 0.12);
+        --live: #1f6f4a;
+        --ready: #8a5a12;
+        --accent: #0b6e6e;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: "Source Sans 3", system-ui, sans-serif;
+        background:
+          radial-gradient(900px 500px at 0% 0%, rgba(11, 110, 110, 0.18), transparent 55%),
+          radial-gradient(800px 480px at 100% 100%, rgba(16, 24, 32, 0.12), transparent 50%),
+          linear-gradient(165deg, #d9e4ea 0%, #eef3f6 45%, #d3dde4 100%);
+      }
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+      h1 {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -0.03em;
+        margin: 0 0 8px;
+      }
+      .lede {
+        max-width: 54ch;
+        color: rgba(16, 24, 32, 0.72);
+        margin: 0 0 28px;
+        font-size: 1.05rem;
+      }
+      .rule {
+        font-size: 0.9rem;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.55);
+        margin-bottom: 22px;
+      }
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
+      a.tenant {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 18px 18px 16px;
+        transition: transform 180ms ease, border-color 180ms ease;
+      }
+      a.tenant:hover {
+        transform: translateY(-2px);
+        border-color: rgba(11, 110, 110, 0.45);
+      }
+      a.tenant.pending {
+        opacity: 0.88;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+      }
+      .name {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.35rem;
+        margin: 0;
+      }
+      .badge {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 4px 8px;
+        border: 1px solid currentColor;
+      }
+      .badge.live { color: var(--live); }
+      .badge.ready { color: var(--ready); }
+      .meta {
+        margin: 8px 0 0;
+        color: rgba(16, 24, 32, 0.68);
+        font-size: 0.95rem;
+      }
+      .fine {
+        margin-top: 28px;
+        font-size: 0.85rem;
+        color: rgba(16, 24, 32, 0.55);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Secure venue portals</h1>
+      <p class="lede">
+        Each house gets its own door and its own data. Community and Taco Bamba are live demos.
+        Grill is staged from Kristen’s packs and opens after Community’s pattern is proven.
+      </p>
+      <div class="rule">
+        Isolation: a portal may only read JSON inside its own folder. No shared tenant dump.
+      </div>
+      <div class="grid" id="list"></div>
+      <p class="fine">Serve via gateway: <code>PORTAL_SESSION_SECRET=… node services/portal-gateway/src/server.mjs</code> · see <code>docs/PORTAL-SECURITY.md</code></p>
+    </main>
+    <script src="./shared/index.js"></script>
+  </body>
+</html>

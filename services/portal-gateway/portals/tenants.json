@@ -1,0 +1,46 @@
+{
+  "product": "Never 86'd Action Shift \u2014 secure venue portals",
+  "as_of": "2026-09-04",
+  "isolation_rule": "Server-side exclusive boundary via portal-gateway. Hashed house codes. Venue-scoped HttpOnly sessions. Each portal may only receive JSON for its own venue_id.",
+  "serve": "PORTAL_SESSION_SECRET=\u2026 node services/portal-gateway/src/server.mjs",
+  "url": "http://127.0.0.1:5174/",
+  "tenants": [
+    {
+      "venue_id": "community-pizza",
+      "slug": "community-pizza",
+      "name": "Community Tap & Pizza",
+      "icp": "owner-1-5",
+      "security": "secure",
+      "status": "live_demo",
+      "path": "community-pizza/",
+      "front_door": "community-pizza/login.html",
+      "priority": 1,
+      "note": "Living lab. Owner + FOH + BOH seats sold. Own data boundary."
+    },
+    {
+      "venue_id": "taco-bamba",
+      "slug": "taco-bamba",
+      "name": "Taco Bamba",
+      "icp": "area-leader",
+      "security": "secure",
+      "status": "live_demo",
+      "path": "taco-bamba/",
+      "front_door": "taco-bamba/login.html",
+      "priority": 2,
+      "note": "Secure multi-unit portal. Area-leader board. Own data boundary \u2014 never mixed with CTAP or Grill."
+    },
+    {
+      "venue_id": "grill",
+      "slug": "grill",
+      "name": "The New American Grill",
+      "icp": "owner-1-5",
+      "security": "secure_ready",
+      "status": "ready_after_community",
+      "path": "grill/",
+      "front_door": "grill/login.html",
+      "priority": 3,
+      "note": "Comes after Community. Kristen packs staged. When Community pattern is proven, drop Kristen work into Grill the same way Community holds its book."
+    }
+  ],
+  "security_doc": "docs/PORTAL-SECURITY.md"
+}

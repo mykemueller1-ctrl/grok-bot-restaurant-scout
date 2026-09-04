@@ -1,0 +1,149 @@
+{
+  "venue_id": "taco-bamba",
+  "venue_name": "Taco Bamba",
+  "aliases": [
+    "Taco Bomb",
+    "Bamba"
+  ],
+  "product": "Never 86'd Action Shift",
+  "pricing_rule": "Multi-unit: system ops seat + area-leader seats. Store GMs sit under their area leader.",
+  "demo_sale": {
+    "pretend": true,
+    "sold_at": "2026-09-04",
+    "sold_by": "never86-gtm",
+    "note": "Secure multi-unit portal demo. Seats map to Sales Labor Report (MP) v5 area leaders."
+  },
+  "location": {
+    "id": "loc-bamba-multi",
+    "name": "Taco Bamba \u2014 System",
+    "plan": "area_leader",
+    "status": "active"
+  },
+  "seats": [
+    {
+      "seat_id": "seat-system-ops",
+      "sku": "action-shift-owner",
+      "role": "system_ops",
+      "label": "System ops",
+      "house": "ops",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "System desk",
+        "aka": [
+          "Portfolio",
+          "System"
+        ],
+        "title": "System rollup"
+      },
+      "owns": [
+        "system sales",
+        "system checks",
+        "exception rollup",
+        "area variance"
+      ],
+      "routes": [
+        "system",
+        "cross_region"
+      ],
+      "login_id": "system"
+    },
+    {
+      "seat_id": "seat-area-john",
+      "sku": "manager-area",
+      "role": "area_leader",
+      "label": "Area \u00b7 John",
+      "house": "region",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "John",
+        "title": "Area leader"
+      },
+      "owns": [
+        "Herndon",
+        "Fair Lakes",
+        "Cascades",
+        "Nashville"
+      ],
+      "routes": [
+        "region_john"
+      ],
+      "login_id": "john"
+    },
+    {
+      "seat_id": "seat-area-red",
+      "sku": "manager-area",
+      "role": "area_leader",
+      "label": "Area \u00b7 Red",
+      "house": "region",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "Red",
+        "title": "Area leader"
+      },
+      "owns": [
+        "Rockville",
+        "Gaithersburg",
+        "Ridgewood",
+        "City Ridge",
+        "Willow Lawn"
+      ],
+      "routes": [
+        "region_red"
+      ],
+      "login_id": "red"
+    },
+    {
+      "seat_id": "seat-area-travis",
+      "sku": "manager-area",
+      "role": "area_leader",
+      "label": "Area \u00b7 Travis",
+      "house": "region",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "Travis",
+        "title": "Area leader"
+      },
+      "owns": [
+        "Falls Church",
+        "Springfield",
+        "Landmark"
+      ],
+      "routes": [
+        "region_travis"
+      ],
+      "login_id": "travis"
+    },
+    {
+      "seat_id": "seat-area-yas",
+      "sku": "manager-area",
+      "role": "area_leader",
+      "label": "Area \u00b7 Yas",
+      "house": "region",
+      "price": "paid",
+      "status": "sold",
+      "assignee": {
+        "name": "Yas",
+        "title": "Area leader"
+      },
+      "owns": [
+        "Vienna",
+        "Fairfax",
+        "Ballston",
+        "Shirlington"
+      ],
+      "routes": [
+        "region_yas"
+      ],
+      "login_id": "yas"
+    }
+  ],
+  "front_door": {
+    "path": "fixtures/portals/taco-bamba/login.html",
+    "url": "http://127.0.0.1:5174/taco-bamba/login.html"
+  },
+  "board": "data/multi-unit-board.json"
+}

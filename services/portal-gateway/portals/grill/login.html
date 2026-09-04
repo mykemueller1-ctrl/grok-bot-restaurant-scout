@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>The New American Grill — ready after Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1b1a17;
+        --panel: #f0ebe3;
+        --steel: #3d4a55;
+        --gold: #b08d57;
+        --muted: #6b645a;
+        --line: rgba(27, 26, 23, 0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: "Manrope", system-ui, sans-serif;
+        background:
+          radial-gradient(900px 520px at 90% 0%, rgba(176, 141, 87, 0.22), transparent 55%),
+          linear-gradient(165deg, #2b3036 0%, #1b1f24 40%, #12151a 100%);
+      }
+      .stage {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 28px 16px 48px;
+      }
+      .door, .desk {
+        width: min(520px, 100%);
+        background: var(--panel);
+        border: 1px solid rgba(240, 235, 227, 0.2);
+        padding: 30px 26px 24px;
+        animation: rise 650ms ease both;
+      }
+      .desk { display: none; width: min(720px, 100%); }
+      .desk.on { display: block; }
+      .door.off { display: none; }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: none; }
+      }
+      .os {
+        color: var(--steel);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-family: "Libre Baskerville", Georgia, serif;
+        font-size: clamp(1.5rem, 3.5vw, 1.9rem);
+        margin: 0 0 10px;
+        line-height: 1.15;
+      }
+      .lede { margin: 0 0 18px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+      .field { margin-bottom: 12px; }
+      label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; }
+      select, input {
+        width: 100%;
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 12px;
+        font: inherit;
+      }
+      .go {
+        width: 100%;
+        border: 0;
+        margin-top: 8px;
+        padding: 13px 14px;
+        font: inherit;
+        font-weight: 700;
+        background: var(--steel);
+        color: #fff;
+        cursor: pointer;
+      }
+      .fine { margin: 12px 0 0; font-size: 12px; color: var(--muted); }
+      .err { color: #8a2f1d; font-size: 13px; margin-top: 10px; min-height: 18px; }
+      .banner {
+        background: rgba(176, 141, 87, 0.18);
+        border: 1px solid rgba(176, 141, 87, 0.35);
+        padding: 12px 14px;
+        margin-bottom: 14px;
+        font-size: 13px;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 12px;
+      }
+      @media (max-width: 640px) { .stats { grid-template-columns: 1fr; } }
+      .stat {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 12px;
+      }
+      .stat b {
+        display: block;
+        font-family: "Libre Baskerville", Georgia, serif;
+        font-size: 20px;
+      }
+      .stat span { font-size: 12px; color: var(--muted); }
+      .signout {
+        border: 1px solid var(--line);
+        background: transparent;
+        padding: 8px 12px;
+        cursor: pointer;
+        font: inherit;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+      .mark {
+        font-family: "Libre Baskerville", Georgia, serif;
+        font-size: 22px;
+      }
+      .meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="door" id="door">
+        <div class="os">Secure ready · after Community</div>
+        <h1>The New American Grill</h1>
+        <p class="lede">
+          Portal shell is ready. Kristen’s Courser packs are staged. When Community is made, we throw
+          Kristen’s work into Grill the same way Community holds its book.
+        </p>
+        <form id="login">
+          <div class="field">
+            <label for="gate">House code</label>
+            <input id="gate" type="password" placeholder="••••••••" autocomplete="current-password" required />
+          </div>
+          <div class="field">
+            <label for="seat">Draft seat</label>
+            <select id="seat" required>
+              <option value="">Choose a seat…</option>
+            </select>
+          </div>
+          <button class="go" type="submit">Open staged desk</button>
+          <div class="err" id="err"></div>
+          <p class="fine">Staged · Kristen packs · enterprise boundary · after Community</p>
+        </form>
+      </section>
+      <section class="desk" id="desk" aria-live="polite"></section>
+    </main>
+    <script src="../shared/isolation.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

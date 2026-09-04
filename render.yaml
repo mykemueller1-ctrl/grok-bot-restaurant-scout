@@ -31,3 +31,22 @@ services:
           name: never86-pain-leads-db
           property: connectionString
       - fromGroup: never86-grok-bot-stack
+
+  - type: web
+    name: never86-venue-portals
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: services/portal-gateway
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: PORTAL_SESSION_SECRET
+        generateValue: true
+      - key: PORTAL_COOKIE_SECURE
+        value: "1"
+      - key: PORTAL_HSTS
+        value: "1"
+      - key: NODE_ENV
+        value: production
