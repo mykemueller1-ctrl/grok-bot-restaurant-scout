@@ -21,7 +21,8 @@ Ground truth in this repo:
 - Handwritten **weekly schedules** (open→close, R/O, station letters W/B/P)
 - POS Z / sales summary when they remember to export
 - Distributor invoices + Hy-Vee runs as the “inventory system”
-- Petty cash / payout slips (Misc / Bread / Beverage)
+- Petty cash / payout slips (Misc / Bread / Beverage / Food)
+- **Weekly invoice photography:** phone snaps of every slip (often rotated, stapled payout↔receipt, shadows/tears) — see `fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json`
 
 **Pains (survival → early scale):**
 - Owner burnout; cash-flow and food/labor gut feel ([MarketStreet 2–5 unit survey](https://www.businesswire.com/news/home/20260217728317/en/MarketStreet-Releases-Second-National-Research-Report-on-Independent-Restaurants-Identifies-Widening-Capability-Gap-Between-Survival-and-Scale))

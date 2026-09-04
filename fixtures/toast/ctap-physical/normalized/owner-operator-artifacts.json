@@ -51,14 +51,19 @@
         {"vendor": "Hopkins Distributing", "date": "2026-08-25", "customer": "Community Tap & Pizza", "total": 527.4, "beer": 607.6, "credits": -85.2},
         {"vendor": "FT Dodge Distributing", "date": "2022-08-25", "customer": "Community Tavern", "total": 380.0, "items": "Yuengling Oktoberfest 1/4 BBL x3"},
         {"vendor": "Hy-Vee", "date": "2026-08-25", "total": 82.41, "note": "Bread/buns run — matched payout account Bread $82.41"}
-      ]
+      ],
+      "weekly_photo_pack": "fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json"
     },
     {
       "type": "payout-slip",
       "samples": [
         {"employee": "Kenzy Thompson", "account": "Miscellaneous", "amount": 4.0, "note": "Out Town → Josue"},
         {"employee": "Jessica Gailey", "account": "Bread", "amount": 82.41, "description": "Hyvee"},
-        {"employee": "Jessica Gailey", "account": "Beverage", "amount": 6.0, "description": "Store"}
+        {"employee": "Jessica Gailey", "account": "Beverage", "amount": 6.0, "description": "Store"},
+        {"employee": "Jessica Gailey", "account": "Food", "amount": 32.0, "description": "Hyvee", "week": "2026-08-18"},
+        {"employee": "Jessica Gailey", "account": "Miscellaneous", "amount": 76.0, "description": "Menards", "week": "2026-08-18"},
+        {"employee": "Kenzy Thompson", "account": "Food", "amount": 64.18, "description": "Fareway", "week": "2026-08-20"},
+        {"employee": "Bryson Cook", "account": "Miscellaneous", "amount": 40.0, "description": "Steve N"}
       ]
     }
   ],
@@ -66,6 +71,7 @@
     "No area-leader rollup — one store clipboard",
     "Labor planned by station card not Toast labor %",
     "Inventory arrives as distributor invoice photos",
-    "Owner name on weekly schedule every open shift"
+    "Owner name on weekly schedule every open shift",
+    "Weekly AP = phone photos of invoices + payout slips stapled to store receipts"
   ]
 }

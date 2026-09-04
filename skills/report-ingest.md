@@ -7,10 +7,11 @@
 
 1. Match filename + headers against `agent/report-ops/catalog.json` `file_globs` and known schemas.
 2. Detect venue hints: Grill, Taco Bamba / Taco Bomb, Community Pizza / CTAP.
-3. Route to sub-agent (`time-entries`, `item-selection`, `z-report`, `liquor-beer-par`, …).
+3. Route to sub-agent (`time-entries`, `item-selection`, `z-report`, `liquor-beer-par`, `vendor-invoice`, …).
 4. For Toast Time Entries + Item Selection pairs, run:
    `node scripts/parse-toast-reports.mjs --labor … --sales … --out … [--anonymize]`
-5. Persist a snapshot under `fixtures/toast/` or venue folder; never commit raw PII without `--anonymize`.
-6. Queue `report-teach-batch` for anything Kristen-sourced or unlabeled.
+5. For owner-1-5 invoice **photos** (countertop snaps, often rotated, payout↔receipt stapled): route `vendor-invoice`, normalize into the weekly photo pack shape (`fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json`). Keep blurry/stained shots as capture evidence — do not reject solely for OCR failure.
+6. Persist a snapshot under `fixtures/toast/` or venue folder; never commit raw card PANs / full account secrets.
+7. Queue `report-teach-batch` for anything Kristen-sourced or unlabeled.
 
 **Done when:** file has `report_id`, `venue_id` (or `needs_research`), and normalized JSON.

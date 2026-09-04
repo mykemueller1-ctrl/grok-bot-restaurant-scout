@@ -1,0 +1,303 @@
+{
+  "venue_id": "community-pizza",
+  "icp_tier": "owner_1_5",
+  "report_id": "vendor-invoice",
+  "teach_label": "keep",
+  "pack": "ctap-weekly-invoice-photos",
+  "window": {
+    "start": "2026-08-11",
+    "end": "2026-08-20",
+    "note": "One small independent ops week — phone photos of every distributor invoice, grocery receipt, and POS payout slip."
+  },
+  "capture_pattern": {
+    "how": "Phone camera on countertop; often landscape of a portrait slip (rotate 90°); staple payout slip to store receipt; shadow from photographer; tears, stains, blur, redactions tops common",
+    "cadence": "Every delivery / run during the week — not a tidy month-end PDF dump",
+    "pairings": [
+      "Community Pizza payout slip ↔ grocery/hardware receipt (Fareway, Hy-Vee, Menards, Walmart)",
+      "Distributor invoice ↔ occasional empty-keg / bottle credit annotation",
+      "Wholesale liquor invoice ↔ Hy-Vee Wine & Spirits register receipt (same total)"
+    ],
+    "account_codes_seen": [
+      {"account": "4312", "name": "Food"},
+      {"account": "4311", "name": "Bread"},
+      {"account": "5699", "name": "Miscellaneous"}
+    ],
+    "icp_signals": [
+      "Inventory system = invoice photos + store runs",
+      "Petty cash payout slips are first-class AP docs",
+      "Handwritten totals/credits beat the printed total when empties returned",
+      "Multi-vendor week: broadline + local meat + beer/wine + grocery + restaurant supply + hardware",
+      "No ERP — Register #2 payout ticket is the coding layer"
+    ]
+  },
+  "documents": [
+    {
+      "id": "walmart-2026-08-19",
+      "kind": "store_receipt",
+      "vendor": "Walmart Supercenter",
+      "date": "2026-08-19",
+      "total": 104.64,
+      "payment": "Mastercard",
+      "notes": "Produce, OJ, cream, hot sauce, trash liners, soda + IA deposit",
+      "source_images": ["assets/01a06a6c-c53b-7180-8d49-b479c14b1329.jpg"]
+    },
+    {
+      "id": "pfs-239335",
+      "kind": "distributor_invoice",
+      "vendor": "Performance Foodservice - Cedar Rapids",
+      "date": "2026-08-18",
+      "invoice_num": "239335",
+      "customer": "COMMUNITY TAP",
+      "terms": "EFT 21 Day",
+      "notes": "Multi-page — pizza boxes, fries, wings, cheese, dish chem, fuel surcharge; page photos cut totals",
+      "source_images": [
+        "assets/01a06a6c-c5e0-7c7c-93bc-c2481ab2f6c2.jpg",
+        "assets/01a06a6c-c687-73f5-815b-460ea31c2ed2.jpg"
+      ]
+    },
+    {
+      "id": "sysco-439547404",
+      "kind": "distributor_invoice",
+      "vendor": "Sysco Iowa",
+      "date": "2026-08-18",
+      "invoice_num": "439547404",
+      "customer": "COMMUNITY TAP",
+      "sold_to": "SMOKEWORK LLC",
+      "total": 1240.2,
+      "tax": 6.75,
+      "notes": "Dairy/mozz heavy; flour; gloves; fuel surcharge $10; handwritten broke-case note",
+      "source_images": [
+        "assets/01a06a6c-c723-7432-a2a4-8b0f43941d22.jpg",
+        "assets/01a06a6c-c7c9-7b72-bac8-3ce89ed0b033.jpg"
+      ]
+    },
+    {
+      "id": "northern-lights-699091",
+      "kind": "distributor_invoice",
+      "vendor": "Northern Lights Distributing",
+      "date": "2026-08-17",
+      "invoice_num": "699091",
+      "customer": "COMMUNITY PIZZA, INC.",
+      "total": 173.72,
+      "po": "PU MON. 8-17",
+      "notes": "Breading, pizza circles, pepperoni, fish",
+      "source_images": ["assets/01a06a6c-c860-7bd9-b8ce-b0018af265af.jpg"]
+    },
+    {
+      "id": "northern-lights-699116",
+      "kind": "distributor_invoice",
+      "vendor": "Northern Lights Distributing",
+      "date": "2026-08-18",
+      "invoice_num": "699116",
+      "customer": "COMMUNITY PIZZA, INC.",
+      "total": 480.85,
+      "po": "Verbal",
+      "notes": "Canadian bacon, peppers, onions, cheese sauce, pan liners, foam, pepperoni",
+      "source_images": ["assets/01a06a6c-c8f7-7159-ab0e-6bf863855038.jpg"]
+    },
+    {
+      "id": "payout-jessica-misc-9",
+      "kind": "payout_slip",
+      "vendor": "Community Pizza Register #2",
+      "date": null,
+      "employee": "Jessica Gailey",
+      "account": "5699 Miscellaneous",
+      "amount": 9.0,
+      "source_images": ["assets/01a06a6c-c98f-7b07-82d8-95093dda5894.jpg"]
+    },
+    {
+      "id": "payout-jessica-food-hyvee-32",
+      "kind": "payout_slip_plus_receipt",
+      "vendor": "Hy-Vee",
+      "date": "2026-08-18",
+      "employee": "Jessica Gailey",
+      "account": "4312 Food",
+      "description": "Hyvee",
+      "payout_amount": 32.0,
+      "receipt_total": 31.92,
+      "notes": "8× hamburger buns; payout rounded vs receipt",
+      "source_images": [
+        "assets/01a06a6c-ca2a-7e07-b95c-ad376a4fe778.jpg",
+        "assets/01a06a6c-cac1-7924-8bb4-10116bb9ab7e.jpg"
+      ]
+    },
+    {
+      "id": "payout-jessica-misc-menards-76",
+      "kind": "payout_slip_plus_receipt",
+      "vendor": "Menards",
+      "date": "2026-08-18",
+      "employee": "Jessica Gailey",
+      "account": "5699 Miscellaneous",
+      "description": "Menards",
+      "payout_amount": 76.0,
+      "receipt_total": 75.16,
+      "notes": "Cleaning / soap / Sharpies / Mean Green — ops supplies not food",
+      "source_images": [
+        "assets/01a06a6c-cb5c-74bf-bd89-98518048c4b9.jpg",
+        "assets/01a06a6c-cbfc-71ef-a5ef-384ef882666c.jpg"
+      ]
+    },
+    {
+      "id": "fareway-pork-belly-64",
+      "kind": "payout_slip_plus_receipt",
+      "vendor": "Fareway Meat & Grocery",
+      "date": "2026-08-20",
+      "employee": "Kenzy Thompson",
+      "account": "4312 Food",
+      "description": "Fareway",
+      "payout_amount": 64.18,
+      "receipt_total": 64.18,
+      "notes": "2× half pork belly; debit contactless",
+      "source_images": [
+        "assets/01a06a6c-cdc1-74ca-8bcf-ebdd8a3d001a.jpg",
+        "assets/01a06a6c-ce5b-7af6-9687-f6a08e8bf4f9.jpg"
+      ]
+    },
+    {
+      "id": "payout-bryson-misc-steve-n-40",
+      "kind": "payout_slip",
+      "vendor": "Community Pizza Register #2",
+      "date": null,
+      "employee": "Bryson Cook",
+      "account": "5699 Miscellaneous",
+      "description": "Steve N",
+      "amount": 40.0,
+      "notes": "Manager sign Steve N in blue ink",
+      "source_images": ["assets/01a06a6c-cef8-7bc1-a1dc-535e61179439.jpg"]
+    },
+    {
+      "id": "fareway-blur-reject-quality",
+      "kind": "store_receipt",
+      "vendor": "Fareway",
+      "date": null,
+      "total": null,
+      "notes": "Teach: blur + stain — still a real weekly capture; OCR may fail; keep as capture-pattern evidence not clean extract",
+      "quality": "poor",
+      "source_images": ["assets/01a06a6c-cf95-7610-ae0a-270009651ca3.jpg"]
+    },
+    {
+      "id": "fareway-kenzy-55",
+      "kind": "payout_slip_plus_receipt",
+      "vendor": "Fareway",
+      "date": "2026-08-20",
+      "employee": "Kenzy Thompson",
+      "account": "4312 Food",
+      "description": "Fareway",
+      "payout_amount": 55.36,
+      "source_images": ["assets/01a06a6c-d02f-7c8b-a5ea-5c43b8dda4a1.jpg"]
+    },
+    {
+      "id": "hyvee-wine-spirits-16775",
+      "kind": "wholesale_invoice_plus_receipt",
+      "vendor": "Fort Dodge Hy-Vee Wine & Spirits",
+      "date": "2026-08-17",
+      "invoice_num": "16775",
+      "customer": "Community / Sally Hart",
+      "total": 1247.62,
+      "payment": "Check",
+      "tax_exempt_id": "832017501",
+      "notes": "59 items; receipt total circled to match invoice; handwritten Check / Thank you",
+      "source_images": [
+        "assets/01a06a6c-d0c2-7c75-8645-9c48f2de0aa7.jpg",
+        "assets/01a06a6c-d15e-7800-809b-61e1719c0e42.jpg",
+        "assets/01a06a6c-d3c9-752a-b254-18d87c4432b9.jpg"
+      ]
+    },
+    {
+      "id": "northern-lights-699510",
+      "kind": "distributor_invoice",
+      "vendor": "Northern Lights Distributing",
+      "date": "2026-08-18",
+      "invoice_num": "699510",
+      "customer": "COMMUNITY PIZZA, INC.",
+      "total": 32.74,
+      "po": "PU TUES. 8-18",
+      "notes": "Pizza Liner Perfect Crusts 10\" 250ct + tax",
+      "source_images": ["assets/01a06a6c-d291-7595-93e2-3bc8d622e645.jpg"]
+    },
+    {
+      "id": "confluence-227930",
+      "kind": "distributor_invoice",
+      "vendor": "Confluence Distribution / Brewing",
+      "date": "2026-08-17",
+      "invoice_num": "227930",
+      "customer": "Community Tap and Pizza",
+      "printed_total": 216.0,
+      "adjusted_total": 186.0,
+      "notes": "Handwritten 1 Empty = -$30; COD; Scan to Pay QR",
+      "source_images": ["assets/01a06a6c-d463-7690-8598-5f1b6bb827b0.jpg"]
+    },
+    {
+      "id": "sawyers-41032",
+      "kind": "handwritten_invoice",
+      "vendor": "Sawyer's Meats of Iowa",
+      "date": "2026-08-17",
+      "invoice_num": "41032",
+      "customer": "Community Tap",
+      "total": 792.31,
+      "notes": "10-1, corned ham, turkey, ground beef, pork butt, ribs, sausage, chicken",
+      "source_images": ["assets/01a06a6c-d4fd-7f76-8e75-9fea43522472.jpg"]
+    },
+    {
+      "id": "sawyers-41067",
+      "kind": "handwritten_invoice",
+      "vendor": "Sawyer's Meats of Iowa",
+      "date": "2026-08-19",
+      "invoice_num": "41067",
+      "customer": "C-TAP",
+      "total": 81.07,
+      "notes": "Struck bacon/ribs line; pork patty + pork loin kept",
+      "source_images": ["assets/01a06a6c-d59b-7fe7-aaaf-b2cbae41c4c1.jpg"]
+    },
+    {
+      "id": "ft-dodge-dist-w-402581",
+      "kind": "distributor_invoice",
+      "vendor": "FT Dodge Distributing",
+      "date": "2026-08-18",
+      "invoice_num": "W-402581",
+      "customer": "COMMUNITY TAVERN",
+      "total": 651.7,
+      "notes": "Beer/seltzer + keg deposits/empties + bottle returns + fuel surcharge",
+      "source_images": ["assets/01a06a6c-d637-7cdc-8b2b-f111fbc580bf.jpg"]
+    },
+    {
+      "id": "humes-199980",
+      "kind": "distributor_invoice",
+      "vendor": "Humes Distributing",
+      "date": "2026-08-18",
+      "invoice_num": "199980",
+      "customer": "Community Tap & Pizza",
+      "total": 554.1,
+      "notes": "Busch/Mich Ultra/Carbliss; -1 half-bbl return; -25 unsorted bottle; fuel $5",
+      "source_images": ["assets/01a06a6c-d6ce-7a4f-9f8e-35c8dc76edf1.jpg"]
+    },
+    {
+      "id": "payout-jessica-bread-hyvee-91",
+      "kind": "payout_slip_plus_receipt",
+      "vendor": "Hy-Vee",
+      "date": "2026-08-11",
+      "employee": "Jessica Gailey",
+      "account": "4311 Bread",
+      "description": "Hyvee",
+      "payout_amount": 91.3,
+      "receipt_total": 46.9,
+      "notes": "Visible bread receipt is partial/earlier run vs payout; teach: pair may not 1:1 match in one photo",
+      "source_images": [
+        "assets/01a06a6c-d76a-7128-a7ff-a2c086d03b05.jpg",
+        "assets/01a06a6c-d804-7e60-85e0-21ce33514b8e.jpg"
+      ]
+    }
+  ],
+  "vendor_rollups": [
+    {"vendor": "Sysco Iowa", "approx_total": 1240.2},
+    {"vendor": "Hy-Vee Wine & Spirits", "approx_total": 1247.62},
+    {"vendor": "Sawyer's Meats", "approx_total": 873.38},
+    {"vendor": "FT Dodge Distributing", "approx_total": 651.7},
+    {"vendor": "Humes Distributing", "approx_total": 554.1},
+    {"vendor": "Northern Lights Distributing", "approx_total": 687.31},
+    {"vendor": "Confluence", "approx_total": 186.0},
+    {"vendor": "Performance Foodservice", "approx_total": null, "note": "multi-page; total cut off in photos"},
+    {"vendor": "Fareway / Hy-Vee / Walmart / Menards store runs", "approx_total": 400.0, "note": "payout-coded grocery + ops"}
+  ],
+  "good_looks_like": "Owner-1-5 weekly AP is a pile of phone photos: broadline invoices, local meat handwritten tickets, beer house invoices with empty credits, and Register#2 payout slips stapled to Fareway/Hy-Vee/Menards receipts — not a clean AP inbox PDF."
+}

@@ -10,8 +10,8 @@
   "parent": "inventory",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Owns the Distributor / Store Invoice report (Beer distributor, grocery, payout slips). Ingests photo, pdf, csv. Signals: vendor, sku, qty, amount, account. Routes findings up to the domain parent; teach labels via Report Teacher.",
-  "source_report": "Beer distributor, grocery, payout slips",
+  "description": "Owns the Distributor / Store Invoice report (Weekly phone photos: beer/wine houses, broadline (Sysco/PFS), local meat, Northern Lights, grocery (Hy-Vee/Fareway/Walmart), Menards, Register#2 payout slips). Ingests photo, pdf, csv. Signals: vendor, sku, qty, amount, account, payout_pair, handwritten_credit. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Weekly phone photos: beer/wine houses, broadline (Sysco/PFS), local meat, Northern Lights, grocery (Hy-Vee/Fareway/Walmart), Menards, Register#2 payout slips",
   "formats": [
     "photo",
     "pdf",
@@ -22,13 +22,27 @@
     "sku",
     "qty",
     "amount",
-    "account"
+    "account",
+    "payout_pair",
+    "handwritten_credit"
   ],
   "file_globs": [
     "*invoice*",
     "*Hopkins*",
     "*Distributing*",
-    "*Hy-Vee*"
+    "*Hy-Vee*",
+    "*Hyvee*",
+    "*Fareway*",
+    "*Walmart*",
+    "*Menards*",
+    "*Sawyer*",
+    "*Sysco*",
+    "*Performance*Food*",
+    "*Northern*Lights*",
+    "*Confluence*",
+    "*Humes*",
+    "*Pay Out*",
+    "*payout*"
   ],
   "schema": null,
   "hierarchy": null,
@@ -42,5 +56,17 @@
     "taco-bamba",
     "community-pizza"
   ],
-  "swarm": true
+  "swarm": true,
+  "example_packs": [
+    "ctap-physical/weekly-invoice-photo-pack-2026-08"
+  ],
+  "teach_memory": [
+    {
+      "label": "keep",
+      "icp_tier": "owner_1_5",
+      "venue_id": "community-pizza",
+      "good_looks_like": "Owner-1-5 weekly AP is a pile of phone photos: broadline invoices, local meat handwritten tickets, beer house invoices with empty credits, and Register#2 payout slips stapled to Fareway/Hy-Vee/Menards receipts \u2014 not a clean AP inbox PDF.",
+      "pack": "fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json"
+    }
+  ]
 }

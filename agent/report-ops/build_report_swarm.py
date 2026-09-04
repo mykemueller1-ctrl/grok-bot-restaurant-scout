@@ -25,6 +25,7 @@ ICP_TIERS = [
             "labor % without group targets",
             "second unit ~130% ops surface for ~60% revenue capacity",
             "inventory = invoice photos + Hy-Vee runs",
+            "weekly phone-photo AP: payout slips stapled to store receipts",
         ],
         "report_ids": [
             "kitchen-labor-card",
@@ -255,11 +256,38 @@ DOMAINS = [
             {
                 "id": "vendor-invoice",
                 "label": "Distributor / Store Invoice",
-                "source": "Beer distributor, grocery, payout slips",
+                "source": "Weekly phone photos: beer/wine houses, broadline (Sysco/PFS), local meat, Northern Lights, grocery (Hy-Vee/Fareway/Walmart), Menards, Register#2 payout slips",
                 "formats": ["photo", "pdf", "csv"],
-                "signals": ["vendor", "sku", "qty", "amount", "account"],
-                "file_globs": ["*invoice*", "*Hopkins*", "*Distributing*", "*Hy-Vee*"],
+                "signals": ["vendor", "sku", "qty", "amount", "account", "payout_pair", "handwritten_credit"],
+                "file_globs": [
+                    "*invoice*",
+                    "*Hopkins*",
+                    "*Distributing*",
+                    "*Hy-Vee*",
+                    "*Hyvee*",
+                    "*Fareway*",
+                    "*Walmart*",
+                    "*Menards*",
+                    "*Sawyer*",
+                    "*Sysco*",
+                    "*Performance*Food*",
+                    "*Northern*Lights*",
+                    "*Confluence*",
+                    "*Humes*",
+                    "*Pay Out*",
+                    "*payout*",
+                ],
                 "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
+                "example_packs": ["ctap-physical/weekly-invoice-photo-pack-2026-08"],
+                "teach_memory": [
+                    {
+                        "label": "keep",
+                        "icp_tier": "owner_1_5",
+                        "venue_id": "community-pizza",
+                        "good_looks_like": "Owner-1-5 weekly AP is a pile of phone photos: broadline invoices, local meat handwritten tickets, beer house invoices with empty credits, and Register#2 payout slips stapled to Fareway/Hy-Vee/Menards receipts — not a clean AP inbox PDF.",
+                        "pack": "fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json",
+                    }
+                ],
             },
         ],
     },
@@ -368,14 +396,23 @@ def teacher_agent() -> dict:
             "inbox": "mykemueller1@gmail.com (Mike Mueller Gmail)",
             "from": "Kristen",
             "venues": ["grill", "taco-bamba"],
-            "want": ["csv", "xlsx", "xls", "pdf", "google sheets links", "sales reportings"],
+            "want": [
+                "csv",
+                "xlsx",
+                "xls",
+                "pdf",
+                "google sheets links",
+                "sales reportings",
+                "phone photos of vendor invoices",
+                "payout slips stapled to store receipts",
+            ],
         },
         "swarm": True,
     }
 
 
 def sub_agent(domain: dict, report: dict) -> dict:
-    return {
+    agent = {
         "name": f"{report['label']} Sub-Agent",
         "title": f"Never86 report sub — {domain['label']} / {report['label']}",
         "role": "sub",
@@ -403,6 +440,11 @@ def sub_agent(domain: dict, report: dict) -> dict:
         "venues": [v["id"] for v in VENUES],
         "swarm": True,
     }
+    if report.get("example_packs"):
+        agent["example_packs"] = report["example_packs"]
+    if report.get("teach_memory"):
+        agent["teach_memory"] = report["teach_memory"]
+    return agent
 
 
 def icp_parent() -> dict:
