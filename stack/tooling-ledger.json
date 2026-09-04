@@ -1217,6 +1217,12 @@
   ],
   "watchlist": [
     {
+      "item": "Status printer surfaces 5-market phone enrich Active",
+      "lane": "cursor_agents",
+      "why": "print-beyond-the-hunt-status.mjs pain_sales_enrich.phone_enrich_markets=5 — operator sees pain→sales path without Apollo",
+      "verdict": "adopt"
+    },
+    {
       "item": "Yelp phone enrich all 5 love markets (CHI/ATX/MIA/BNA/DEN)",
       "lane": "vertical_gtm",
       "why": "Primary love-seed phones resolve via YELP_SEARCH_BY_PHONE across full morning-scan set — pain→sales without Apollo",
@@ -2444,5 +2450,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:20:00Z"
+  "updated_at": "2026-09-04T19:22:00Z"
 }
