@@ -1,5 +1,5 @@
 {
-  "version": "1.45.0",
+  "version": "1.46.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -523,6 +523,30 @@
       ]
     },
     {
+      "name": "DevourNow",
+      "lane": "vertical_gtm",
+      "stack": "$0/mo commission-free OO: Essential guest pays $2.99/order (store 3.5% txn); Plus guest $1+5%; Zero guest $1+8% (store 0% txn); local marketplace listing",
+      "memory": "Claims 100% customer data ownership + next-day payout",
+      "edge": "Diner-paid tech fees under 0% commission claim — KEEP for restaurant but checkout friction; Zero plan guest 8% approaches Shop fee band; not TikTok Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://getdevournow.com/pricing/",
+        "https://devournow.com/business/"
+      ]
+    },
+    {
+      "name": "OrderOut",
+      "lane": "vertical_gtm",
+      "stack": "Flat-fee delivery + online + AI-phone orders routed into existing POS (Clover/Square free start; Pecan+); no extra tablet vs Otter",
+      "memory": "One queue across channels into POS",
+      "edge": "Dual-run ops KEEP peer (aggregation, not Shop checkout) — watch only; skip forecasting",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.orderout.co/compare/orderout-vs-otter",
+        "https://www.orderout.co/"
+      ]
+    },
+    {
       "name": "KwickOS",
       "lane": "vertical_gtm",
       "stack": "Restaurant POS (~$59/mo/terminal) with built-in KwickMenu commission-free branded online ordering; optional KwickDriver flat dispatch fees",
@@ -831,6 +855,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "DevourNow guest-paid per-order tech fee KEEP pain-scan",
+      "lane": "vertical_gtm",
+      "why": "pain-scan-devournnow-guest-fee.json; $2.99 or $1+% diner fees under 0% commission claim; strong_keep 18",
+      "verdict": "adopt"
+    },
+    {
+      "item": "OrderOut flat-fee delivery/online → POS (vs Otter tablet)",
+      "lane": "vertical_gtm",
+      "why": "Lightweight dual-run ops peer free on Clover/Square; not Shop-native — watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Otter per-order txn fee KEEP pain-scan dogfood",
       "lane": "vertical_gtm",

@@ -316,3 +316,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-otter-per-order.json → `per_order_platform_fee` (strong_keep 17).
 - Morning-scan / script-draft / sales-lead-form teach Shop 6% (watch ~8%) + Otter/KwickOS/RestauNax peers.
 - Ledger v1.45.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (DevourNow guest-fee adopt + OrderOut watch)
+
+- Adopted pain-scan-devournnow-guest-fee.json ($2.99 / $1+5% / $1+8% diner tech fees under 0% commission) → strong_keep 18.
+- Watched OrderOut flat-fee POS router vs Otter tablet. Skip forecasting.
+- Ledger v1.46.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

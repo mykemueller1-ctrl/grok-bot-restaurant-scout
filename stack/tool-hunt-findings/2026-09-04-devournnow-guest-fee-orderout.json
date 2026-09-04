@@ -1,0 +1,22 @@
+{
+  "finding_id": "devournnow-guest-fee-orderout-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DevourNow guest-paid tech fees (adopt pain-scan) + OrderOut flat-fee POS router (watch)",
+  "vendor_or_project": "DevourNow / OrderOut",
+  "urls": [
+    "https://getdevournow.com/pricing/",
+    "https://devournow.com/business/",
+    "https://www.orderout.co/compare/orderout-vs-otter",
+    "fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json"
+  ],
+  "what_it_does": "DevourNow: $0/mo restaurant fee, 0% food commission, guest pays $2.99 or $1+% per order (store may still pay 3.5% txn on Essential/Plus). OrderOut: flat-fee delivery/online/AI-phone → existing POS (free start on Clover/Square).",
+  "how_competitors_use_it": "DevourNow sells anti-DoorDash KEEP via diner-paid tech fees; OrderOut sells lightweight dual-run ops without Otter tablet stack.",
+  "what_we_use_today": "per_order_platform_fee KEEP signal + new pain-scan-devournnow-guest-fee.json; OrderOut watch only",
+  "gap": "DevourNow Zero plan ($1+8% guest / 0% store txn) approaches Shop fee band — teach guest friction vs Shop referral honestly. Neither is TikTok Shop-native.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted DevourNow guest-paid per-order fee KEEP pain-scan (strong_keep +1). Watched OrderOut as Otter-light POS router. Not forecasting. Auth still blocked.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

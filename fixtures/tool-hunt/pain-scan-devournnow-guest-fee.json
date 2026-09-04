@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT", "scripts/score-marketplace-keep.mjs"],
+  "query": "DevourNow $0/mo 0% commission + guest-paid per-order tech fee KEEP friction",
+  "hits": [
+    {
+      "url": "https://getdevournow.com/pricing/",
+      "posted_at": "2026-09-04",
+      "handle": "devournnow_pricing",
+      "snippet": "DevourNow Essential is $0/mo with 0% commission but customers pay $2.99 per order tech fee and the store still pays 3.5% — restaurant owners KEEP less guest conversion vs DoorDash 25% marketplace; dual-run then Never86 buy-now (Shop ~6%)",
+      "pain_id": "devournnow_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "Diner-paid tech fees preserve restaurant 0% commission but add checkout friction — Never86 Shop ~6% buy-now is honest platform math on social demand without $2.99 guest sticker shock"
+    }
+  ],
+  "notes": "Primary: getdevournow.com/pricing (Essential $2.99 guest / Plus $1+5% / Zero $1+8%). Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

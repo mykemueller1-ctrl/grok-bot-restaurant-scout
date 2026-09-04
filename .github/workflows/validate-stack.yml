@@ -151,6 +151,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
           test -f fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json
           test -f fixtures/tool-hunt/pain-scan-otter-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json
           test -f fixtures/tool-hunt/pain-to-sales-social-shop-franklin.json
           test -f fixtures/tool-hunt/pain-to-sales-social-shop-girl-goat.json
           test -f fixtures/tool-hunt/pain-to-sales-social-shop-husk.json
@@ -173,7 +174,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25%' | grep -q social_shop_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 17'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 18'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
