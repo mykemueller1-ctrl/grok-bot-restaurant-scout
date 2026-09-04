@@ -1,0 +1,21 @@
+{
+  "finding_id": "lenkli-webview-escape-linkboo-peer-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Lenkli in-app browser escape (linkboo peer)",
+  "vendor_or_project": "Lenkli",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Lenkli smart links detect Instagram/TikTok/Facebook (17 in-app browsers) and try to hand off to Safari/Chrome; honest Copy-link fallback when iOS WKWebView blocks auto-switch. Positions booking/checkout/Apple Pay recovery for restaurant bio links — direct peer to linkboo/NullMark webview-escape teach. Never86 Shop wedge: native buy-now avoids handoff cliffs. Watch only.",
+  "what_it_does": "Short links with bypass-in-app-browser that open destination in the system browser when social webviews block payments/autofill.",
+  "how_competitors_use_it": "Restaurants/salons put Lenkli links in IG/TikTok bios so Toast/Resy/Shopify checkout completes outside the social webview.",
+  "what_we_use_today": "linkboo + NullMark webview-escape watches; Shop avoids handoff",
+  "gap": "Competing escape middleware validates the cliff — sharpens Shop differentiation teach",
+  "pivot_speed": "hours",
+  "operator_ask": "Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://lenkli.com/open-in-browser",
+    "https://link.boo/for/restaurants"
+  ],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting."
+}

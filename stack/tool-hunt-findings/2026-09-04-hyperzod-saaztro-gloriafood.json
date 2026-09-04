@@ -1,0 +1,22 @@
+{
+  "finding_id": "hyperzod-saaztro-gloriafood-successors-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Hyperzod + Saaztro GloriaFood white-label successors",
+  "vendor_or_project": "Hyperzod / Saaztro",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Two white-label GloriaFood migration peers (Composio FETCH 2026-09-04): (1) **Hyperzod** — app-first OO + driver/merchant apps, GloriaFood menu import (XML/CSV), multi-location, zero-downtime migration pitch; owns gloriafoodalternative.com. (2) **Saaztro** — white-label customer/driver/restaurant apps, multi-branch, GPS delivery, loyalty — positioned as GloriaFood growth alternative. Watch with iShopo/Menuro/Ogent/Ressto/Platesready; not Meta FBE; fee pause (no published % dogfood from these pages).",
+  "what_it_does": "Branded restaurant ordering + delivery OS replacing GloriaFood ahead of Oracle LDOS.",
+  "how_competitors_use_it": "Independents and multi-branch brands migrate GloriaFood menus into owned apps before EOL.",
+  "what_we_use_today": "GloriaFood EOL Shop wedge adopt; iShopo/Menuro/Ogent/Ressto successor watches",
+  "gap": "White-label OS class expands GloriaFood successor set — Shop close still strongest for Meta-adjacent free OO loss",
+  "pivot_speed": "days",
+  "operator_ask": "No fee dogfood. Auth unlocks still priority. Keep GloriaFood LDOS from Oracle primary (2027-04-30) — ignore vendor-page date drift.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.hyperzod.com/gloriafood-alternative",
+    "https://gloriafoodalternative.com/",
+    "https://www.saaztro.co/blog/best-gloriafood-alternative"
+  ],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting. Do not change Oracle LDOS date from vendor blogs."
+}

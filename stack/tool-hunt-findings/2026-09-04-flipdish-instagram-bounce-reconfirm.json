@@ -1,0 +1,19 @@
+{
+  "finding_id": "flipdish-instagram-bounce-sticker-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Flipdish Instagram bounce URL / sticker path reconfirm",
+  "vendor_or_project": "Flipdish",
+  "verdict": "adopt",
+  "priority": 3,
+  "summary": "Flipdish Help (updated 2025-06-04, still live 2026-09-04) documents Instagram Stickers → Flipdish OO via bounce URL `https://bounce.flipdish.com/{appid}` (custom domains only; `?path=` for non-/order paths). Reinforces Flipdish as Meta Order Food peer beside Deliverect/BentoBox/Toast/Kyte. Do NOT bump meta_order_food_peer_count (stays 9). Fee pause — no Flipdish fee dogfood.",
+  "what_it_does": "Routes IG Stories/post sticker clicks through Flipdish bounce domain onto branded OO.",
+  "gap": "",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.flipdish.com/en/articles/9585449-link-to-your-flipdish-online-ordering-page-directly-from-instagram-posts",
+    "https://help.instagram.com/661624171320775"
+  ],
+  "not_this": "Not a peer_count change. Not fee dogfood. Not forecasting."
+}

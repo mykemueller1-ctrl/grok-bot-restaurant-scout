@@ -1,5 +1,5 @@
 {
-  "version": "1.92.51",
+  "version": "1.92.52",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Lenkli in-app browser escape (linkboo peer)",
+      "lane": "vertical_gtm",
+      "why": "17-webview smart links + Copy-link fallback — peer to linkboo/NullMark; sharpens Shop no-handoff wedge",
+      "verdict": "watch"
+    },
+    {
+      "item": "Hyperzod + Saaztro GloriaFood white-label successors",
+      "lane": "vertical_gtm",
+      "why": "App-first / multi-branch GloriaFood migration peers beside iShopo/Menuro/Ogent/Ressto; not FBE; fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "Flipdish Instagram bounce URL sticker reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Help still live: bounce.flipdish.com/{appid} for IG stickers — Meta Order Food peer path; peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "5-market Yelp love counts stable (pass-4)",
+      "lane": "vertical_gtm",
+      "why": "G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914 unchanged — love calibration holds",
+      "verdict": "adopt"
+    },
     {
       "item": "TikTok Dining SaaS / TTGo APIs (US merchants)",
       "lane": "vertical_gtm",
@@ -2947,7 +2971,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_5JKgmm1s0io7 (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk__zyBLakBGSNc (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -2982,5 +3006,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T20:55:00Z"
+  "updated_at": "2026-09-04T21:00:00Z"
 }

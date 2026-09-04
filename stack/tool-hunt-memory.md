@@ -938,3 +938,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted cite: TikTok **Dining SaaS / TTGo** developer APIs for US merchants (updated 2026-08-04) — Shop/Product/Voucher. Finding: `2026-09-04-tiktok-dining-saas-api.json`.
 - Yelp spot-check: Girl & The Goat **10731**, Franklin **6477** still stable.
 - Ledger v1.92.51. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Lenkli + Hyperzod/Saaztro + Flipdish bounce + Yelp pass-4)
+
+- Watched **Lenkli** webview escape (linkboo peer). Finding: `2026-09-04-lenkli-webview-escape.json`.
+- Watched **Hyperzod** + **Saaztro** GloriaFood white-label successors. Finding: `2026-09-04-hyperzod-saaztro-gloriafood.json`.
+- Reconfirmed Flipdish IG bounce URL sticker path — peer_count stays 9. Finding: `2026-09-04-flipdish-instagram-bounce-reconfirm.json`.
+- Yelp pass-4: G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914 stable. Finding: `2026-09-04-yelp-5market-stable-pass4.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk__zyBLakBGSNc (~10 min).
+- Ledger v1.92.52. Auth still blocked for unlock READY.

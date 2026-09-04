@@ -1,0 +1,26 @@
+{
+  "finding_id": "yelp-5market-stable-pass4-2026-09",
+  "lane": "vertical_gtm",
+  "name": "5-market Yelp love counts stable (pass-4)",
+  "vendor_or_project": "Yelp love fixtures",
+  "verdict": "adopt",
+  "priority": 3,
+  "summary": "Live Yelp Fusion lookup 2026-09-04 pass-4: Girl & The Goat Chicago **10731**, Franklin Barbecue Austin **6477**, Michael's Genuine Miami **2084**, Husk Nashville **1987**, Rioja Denver **2914** — unchanged vs pass-3. Love calibration holds for reservation_skew / buy_now_path / brand_site_marketplace_leak teaches.",
+  "what_it_does": "Anchor love-market review counts for KEEP scorer fixtures.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.yelp.com/biz/girl-and-the-goat-chicago",
+    "https://www.yelp.com/biz/franklin-barbecue-austin",
+    "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami",
+    "https://www.yelp.com/biz/husk-nashville",
+    "https://www.yelp.com/biz/rioja-denver"
+  ],
+  "counts": {
+    "girl_and_the_goat_chicago": 10731,
+    "franklin_barbecue_austin": 6477,
+    "michaels_genuine_miami": 2084,
+    "husk_nashville": 1987,
+    "rioja_denver": 2914
+  },
+  "not_this": "Not forecasting. Not fee dogfood."
+}
