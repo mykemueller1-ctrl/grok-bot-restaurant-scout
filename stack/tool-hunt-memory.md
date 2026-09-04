@@ -579,3 +579,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for `2%+€0.45`; `per_order_platform_fee` for `€0.45` / `0.45 €`.
 - pain-scan-foxifood-card-fee.json → strong_keep **58**; pain-to-sales-foxifood-fee-* ×5; validate-foxifood-fee-dogfood ≥5. Ordering.Tools-class EU thematic — no US swarm expand.
 - Ledger v1.87.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Ser.vi guest 5% convenience SalesLead)
+
+- Primary [get.ser.vi/pricing](https://get.ser.vi/pricing/) FAQ: guest-paid **5% convenience fee** at checkout under $0 mo POS / zero commission (covers platform + card).
+- Widened `first_party_pct_fee` for `5% convenience fee`.
+- pain-scan-servi-guest-fee.json → strong_keep **59**; pain-to-sales-servi-fee-* ×5; validate-servi-fee-dogfood ≥5. Seared/Owner/S4VOR-class guest % peer.
+- Ledger v1.88.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

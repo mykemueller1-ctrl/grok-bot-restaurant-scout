@@ -1,5 +1,5 @@
 {
-  "version": "1.87.0",
+  "version": "1.88.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -132,7 +132,8 @@
     "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)",
     "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)",
     "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)",
-    "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)"
+    "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)",
+    "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -692,6 +693,18 @@
       ]
     },
     {
+      "name": "Ser.vi",
+      "lane": "vertical_gtm",
+      "stack": "$0/mo POS + zero-commission OO; guest-paid 5% convenience fee at checkout (covers platform + card); optional marketing $249\u2013$749/mo",
+      "memory": "Direct order + customer data for marketing",
+      "edge": "Published guest 5% convenience under $0 mo / zero commission claim \u2014 Seared/Owner/S4VOR-class guest % peer; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://get.ser.vi/pricing/",
+        "https://get.ser.vi/"
+      ]
+    },
+    {
       "name": "Otter",
       "lane": "vertical_gtm",
       "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198\u2013$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
@@ -1096,6 +1109,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Ser.vi guest 5% convenience fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Ser.vi guest 5% convenience fee on get.ser.vi/pricing under $0 mo / zero commission claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 5% convenience fee; validate-servi-fee-dogfood \u22655; strong_keep 59",
+      "verdict": "adopt"
+    },
     {
       "item": "FoxiFood 2%+\u20ac0.45 card fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2162,5 +2181,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T23:45:00Z"
+  "updated_at": "2026-09-05T00:00:00Z"
 }
