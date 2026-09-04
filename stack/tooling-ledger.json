@@ -499,12 +499,13 @@
     {
       "name": "Menufy",
       "lane": "vertical_gtm",
-      "stack": "Flat-fee first-party ordering (~$149/mo, no per-order commission) + negotiated ~12.5% DoorDash/Uber dual-run",
+      "stack": "Flat-fee first-party ordering (~$149/$179/mo) with guest convenience fee on direct + negotiated ~12.5% DoorDash/Uber dual-run",
       "memory": "Owned guest list / email+SMS marketing",
-      "edge": "Hybrid discovery+KEEP peer — not TikTok Shop-native; swarm already has Menufy pain-shopper",
+      "edge": "Hybrid discovery+KEEP peer with diner convenience fee — not TikTok Shop-native; swarm already has Menufy pain-shopper",
       "updated": "2026-09-04",
       "sources": [
         "https://restaurant.menufy.com/article/2026/direct-vs-third-party-ordering",
+        "https://restaurant.menufy.com/article/restaurant-delivery-app-fees",
         "https://restaurant.menufy.com/pricing"
       ]
     },

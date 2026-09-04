@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-zayos-fee-girl-goat-2026-09-04",
+  "purpose": "Zay-OS commission-free OO with guest $1.99–$3.99 per-order fee → SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts guest_paid vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "guest_paid_tech_fee": "Zay-OS guest per-order fee typically $1.99–$3.99 at checkout",
+    "per_order_platform_fee": "Commission-free OO that shifts platform cost to diner per order",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "zayos_guest_per_order_fee",
+    "vendor_id": "zayos",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Zay-OS markets commission-free OO while guests pay ~$1.99–$3.99 per-order fees at checkout. Girl & The Goat-class love should close on Never86 Shop ~6% buy-now — honest platform math without diner sticker shock or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "guest_paid_tech_fee",
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "zayos",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-zayos-guest-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "zayos_guest_per_order_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Zay-OS commission-free OO still has guests pay a small per-order fee at checkout (typically $1.99–$3.99) — diner tech fee under a first-party claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. West Loop love already prints demand — close Shop buy-now, not Zay-OS guest $1.99–$3.99 fees.",
+    "quotes": [
+      "Zay-OS guest per-order fee typically $1.99–$3.99",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Zay-OS guest per-order fee OO",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "guest_paid_tech_fee + social_shop_fee teach: shifting platform cost to diners still kills conversion; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand — close Shop buy-now, not Zay-OS guest $1.99–$3.99 fees.",
+    "sources": [
+      "https://zay-os.com/commission-free-online-ordering-guide",
+      "fixtures/tool-hunt/pain-scan-zayos-guest-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 73,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Zay-OS guest per-order fee → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-zayos-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

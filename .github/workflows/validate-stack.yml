@@ -148,6 +148,7 @@ jobs:
           test -f scripts/validate-flipdish-fee-dogfood.mjs
           test -f scripts/validate-lunchbox-fee-dogfood.mjs
           test -f scripts/validate-menufy-fee-dogfood.mjs
+          test -f scripts/validate-zayos-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json

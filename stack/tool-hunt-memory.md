@@ -394,3 +394,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added pain-to-sales-menufy-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-menufy-fee-dogfood ≥5.
 - Watched CloudWaitress as GloriaFood EOL successor (~$39/mo 0%).
 - Ledger v1.57.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Zay-OS guest per-order fee SalesLead)
+
+- Adopted pain-scan-zayos-guest-fee.json (guests pay ~$1.99–$3.99/order under commission-free claim) → strong_keep 26.
+- Added pain-to-sales-zayos-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-zayos-fee-dogfood ≥5.
+- Ledger v1.58.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

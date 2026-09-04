@@ -1,0 +1,26 @@
+{
+  "finding_id": "zayos-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Zay-OS guest $1.99–$3.99 per-order fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-zayos-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-zayos-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-zayos-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-zayos-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-zayos-fee-rioja.json",
+    "scripts/validate-zayos-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-zayos-guest-fee.json",
+    "https://zay-os.com/commission-free-online-ordering-guide"
+  ],
+  "what_it_does": "Zay-OS 'commission-free' OO with guest ~$1.99–$3.99/order → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; category teach for diner-paid platform cost; contrasts Shop ~6%.",
+  "how_competitors_use_it": "Zay-OS / several commission-free vendors shift platform cost to diner checkout fees while restaurants KEEP food revenue.",
+  "what_we_use_today": "validate-zayos-fee-dogfood ≥5; guest_paid + per_order signals",
+  "gap": "Fee band is category guidance from buyer guide — verify live quote; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Zay-OS guest per-order fee SalesLead dogfoods match five love markets; strong_keep 26.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}
