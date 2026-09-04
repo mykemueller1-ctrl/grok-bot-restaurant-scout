@@ -1,0 +1,78 @@
+{
+  "dogfood_id": "pain-to-sales-onestoporder-fee-husk-2026-09-04",
+  "purpose": "1 Stop Order Free 2% / Pro 1% guest convenience fee \u2192 SalesLead DRAFT for Husk (Nashville). Contrasts first_party_pct_fee + guest_paid vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "1 Stop Order Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer (min $0.50)",
+    "guest_paid_tech_fee": "1 Stop Order convenience fee charged to the customer at checkout",
+    "per_order_platform_fee": "Minimum $0.50 convenience fee per order regardless of plan",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "onestoporder_2pct_guest_fee",
+    "vendor_id": "onestoporder",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Husk",
+      "city": "Nashville",
+      "market": "Nashville, TN",
+      "yelp_alias": "husk-nashville",
+      "love_signal": "Sean Brock Southern cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: 1 Stop Order Free plan is $0/mo while guests pay a 2% convenience fee per order (Pro/Custom 1%; minimum $0.50). Husk-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner % sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "guest_paid_tech_fee",
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "onestoporder",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-onestoporder-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "onestoporder_2pct_guest_fee",
+    "account_name": "Husk",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Nashville",
+    "market": "Nashville, TN",
+    "complaint_thesis": "1 Stop Order Free plan markets $0/mo OO while charging guests a 2% convenience fee per order (Pro/Custom 1%; minimum $0.50) \u2014 first_party_pct_fee + guest-paid KEEP leak. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Husk-class love already prints demand \u2014 close Shop buy-now, not 1 Stop Order 1\u20132% guest fees on every OO ticket.",
+    "quotes": [
+      "1 Stop Order Free 2% / Pro 1% convenience fee charged to the customer (min $0.50)",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "1 Stop Order 1\u20132% guest OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + guest_paid_tech_fee + social_shop_fee teach: 1 Stop Order 1\u20132% guest convenience fee is still platform rent on free OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Husk-class love already prints demand \u2014 close Shop buy-now, not 1 Stop Order 1\u20132% guest fees on every OO ticket.",
+    "sources": [
+      "https://www.1stoporder.com/pricing",
+      "https://www.1stoporder.com/",
+      "fixtures/tool-hunt/pain-scan-onestoporder-guest-fee.json",
+      "https://www.yelp.com/biz/husk-nashville"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 1 Stop Order Free 2% / Pro 1% guest convenience fee \u2192 SalesLead. Processing 2.9%+30\u00a2 is separate. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-onestoporder-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

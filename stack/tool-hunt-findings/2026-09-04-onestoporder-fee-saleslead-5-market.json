@@ -1,0 +1,13 @@
+{
+  "finding_id": "onestoporder-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "1 Stop Order 1\u20132% guest convenience fee SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary 1stoporder.com: Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer (min $0.50); first_party_pct_fee widened; strong_keep 49 (2 hits).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.1stoporder.com/pricing",
+    "https://www.1stoporder.com/"
+  ]
+}

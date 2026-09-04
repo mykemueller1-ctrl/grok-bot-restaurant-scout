@@ -1,5 +1,5 @@
 {
-  "version": "1.78.0",
+  "version": "1.79.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -123,7 +123,8 @@
     "kontactless_fee_dogfood_gate": "scripts/validate-kontactless-fee-dogfood.mjs (Kontactless $0.50\u2013$1.00/order guest convenience fee \u2192 SalesLead \u22655 markets)",
     "sohungry_fee_dogfood_gate": "scripts/validate-sohungry-fee-dogfood.mjs (SoHungry Free $1.25/order guest convenience fee \u2192 SalesLead \u22655 markets)",
     "foodscout_fee_dogfood_gate": "scripts/validate-foodscout-fee-dogfood.mjs (FoodScout GO $0.99/order guest service fee \u2192 SalesLead \u22655 markets)",
-    "chownow_catering_fee_dogfood_gate": "scripts/validate-chownow-catering-fee-dogfood.mjs (ChowNow Catering 5% direct \u2192 SalesLead \u22655 markets)"
+    "chownow_catering_fee_dogfood_gate": "scripts/validate-chownow-catering-fee-dogfood.mjs (ChowNow Catering 5% direct \u2192 SalesLead \u22655 markets)",
+    "onestoporder_fee_dogfood_gate": "scripts/validate-onestoporder-fee-dogfood.mjs (1 Stop Order Free 2% / Pro 1% guest convenience fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -1034,9 +1035,33 @@
       "sources": [
         "https://foodscoutgo.com/pricing"
       ]
+    },
+    {
+      "name": "1 Stop Order",
+      "lane": "vertical_gtm",
+      "stack": "SMB online ordering; Free $0/mo + 2% customer convenience fee/order; Pro $69/mo + 1%; Custom $109/mo + 1%; min 50\u00a2; Stripe-like 2.9%+30\u00a2",
+      "memory": "Direct order customer list",
+      "edge": "Guest-paid 1\u20132% convenience fee under free/low monthly claim \u2014 Owner/ChowNow-class % KEEP peer; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.1stoporder.com/pricing",
+        "https://www.1stoporder.com/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "1 Stop Order 1\u20132% guest convenience fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN 1 Stop Order Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer (min $0.50) \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-onestoporder-fee-dogfood \u22655; strong_keep 49",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Appetier flat $199\u2013$249/mo zero diner fees",
+      "lane": "vertical_gtm",
+      "why": "appetier.com/pricing commission-free flat monthly, no diner service fees \u2014 watch as flat KEEP peer vs 1 Stop Order %",
+      "verdict": "watch"
+    },
     {
       "item": "ChowNow Catering 5% SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -1078,12 +1103,6 @@
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN BentoBox QR Order & Pay $0.99 diner fee (Help Center primary) \u2192 SalesLead vs Shop ~6%; validate-bentobox-fee-dogfood \u22655; second pain-scan hit \u2192 strong_keep 42",
       "verdict": "adopt"
-    },
-    {
-      "item": "1 Stop Order guest convenience fee 1\u20132%",
-      "lane": "vertical_gtm",
-      "why": "1stoporder.com/pricing Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer \u2014 percentage guest fee; watch before dogfood",
-      "verdict": "watch"
     },
     {
       "item": "Flipdish \u20ac0.50 flat + percentage fee refresh (second pain-scan hit)",
@@ -2055,5 +2074,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T22:00:00Z"
+  "updated_at": "2026-09-04T22:20:00Z"
 }

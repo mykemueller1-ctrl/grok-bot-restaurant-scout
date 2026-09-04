@@ -520,3 +520,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary ChowNow FAQ: **5% fee per catering order** on direct branded channel ([FAQ](https://get.chownow.com/blog/chownow-for-restaurants-your-top-faqs/)). Widened `first_party_pct_fee` for catering 5%.
 - pain-scan-chownow-catering-fee.json → strong_keep **47**; pain-to-sales-chownow-catering-fee-* ×5; validate-chownow-catering-fee-dogfood ≥5. Distinct from $0.99 + 7.5% Support Local dogfood.
 - Watched Hotplate cottage 5%+$0.55 (not core restaurant GTM). Ledger v1.78.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (1 Stop Order 1–2% guest convenience fee SalesLead)
+
+- Primary [1stoporder.com/pricing](https://www.1stoporder.com/pricing): Free **2%** / Pro·Custom **1%** convenience fee charged to customer (minimum **$0.50**). Widened `first_party_pct_fee` for 1–2% charged-to-customer convenience fees.
+- pain-scan-onestoporder-guest-fee.json (2 hits) → strong_keep **49**; pain-to-sales-onestoporder-fee-* ×5; validate-onestoporder-fee-dogfood ≥5.
+- Watched Appetier flat $199–$249 (no diner fees). Ledger v1.79.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

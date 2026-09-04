@@ -1,0 +1,12 @@
+{
+  "finding_id": "appetier-flat-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Appetier flat $199\u2013$249/mo zero diner fees (watch)",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "appetier.com/pricing: $199\u2013$249/mo commission-free, no diner service fees \u2014 flat KEEP peer vs 1 Stop Order % fees; watch only.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://appetier.com/pricing"
+  ]
+}

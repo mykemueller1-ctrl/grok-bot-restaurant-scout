@@ -1,0 +1,29 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "1 Stop Order 1\u20132% guest convenience fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.1stoporder.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "1stoporder_pricing",
+      "snippet": "1 Stop Order Free plan charges a 2% convenience fee per order charged to the customer (minimum $0.50) vs DoorDash Marketplace 25% KEEP; guests pay tech fee under free monthly OO claim",
+      "pain_id": "onestoporder_2pct_guest_fee",
+      "score": 100,
+      "never86_angle": "Guest-paid 2% convenience fee (min $0.50) is still platform rent on free OO \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    },
+    {
+      "url": "https://www.1stoporder.com/",
+      "posted_at": "2026-09-04",
+      "handle": "1stoporder_home",
+      "snippet": "1 Stop Order Volume/Pro plans charge a 1% convenience fee per order to the customer (minimum 50\u00a2) vs DoorDash Marketplace 25% KEEP; still guest-paid first-party percent on every cart",
+      "pain_id": "onestoporder_1pct_guest_fee",
+      "score": 100,
+      "never86_angle": "1% guest convenience fee still taxes every ticket \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: 1stoporder.com/pricing + homepage \u2014 Free 2% / Pro\u00b7Custom 1% convenience fee charged to customer; min 50\u00a2. Stripe-like 2.9%+30\u00a2 separate. Skip forecasting. Not expanding swarm."
+}
