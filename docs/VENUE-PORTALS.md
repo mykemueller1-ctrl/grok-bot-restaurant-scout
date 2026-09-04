@@ -26,7 +26,12 @@ node services/portal-gateway/src/server.mjs
 
 Self-contained pack lives in `services/portal-gateway/portals/` (sync with `bash scripts/sync-portal-bundle.sh`).
 
-- Community login: `https://<project>.vercel.app/community-pizza/login.html`
+```bash
+cd services/portal-gateway
+npx vercel deploy --temporary --yes --prod   # or claim into your Vercel team for a lasting URL
+```
+
+- Community login path: `/community-pizza/login.html`
 - House code: `ctap-fort-dodge`
 - Seats: **myke** (owner) · **kenzy** (FOH) · **tom** (BOH)
 
