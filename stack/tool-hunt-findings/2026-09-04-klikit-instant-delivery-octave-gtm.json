@@ -1,0 +1,21 @@
+{
+  "finding_id": "klikit-instant-delivery-octave-gtm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Klikit TikTok Instant Delivery + Octave Cursor GTM watches",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Klikit Instant Delivery guide (updated 2026-08-28): TikTok Shop Instant Delivery for restaurants — US early pilot; POS/KDS aggregation peer to Shop food ops (grader stays 6). Octave lfgtm-cursor: Cursor plugin + mcp.octavehq.com for personas/Motions/battlecards — skills_knowledge peer to SyncGTM/Zapier/zarif GTM packs. Watch only — sharpen Shop + Cursor GTM stack; not forecasting.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://klikit.io/en/learn/instant-delivery",
+    "https://klikit.io/en/learn/tiktok-shop-food-delivery-us",
+    "https://github.com/octavehq/lfgtm-cursor",
+    "https://github.com/octavehq/lfgtm"
+  ],
+  "lanes": {
+    "klikit_instant_delivery": "vertical_gtm",
+    "octave_cursor": "skills_knowledge"
+  },
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting. Does not change Shop grader 6. Not Meta FBE."
+}

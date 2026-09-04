@@ -999,3 +999,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **Queek** (WA/IG commerce inbox AI, NG restaurants) + **Sync GTM** Cursor MCP enrich. Finding: `2026-09-04-queek-syncgtm-peers.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_efLtwWNy2dYc (~10 min).
 - Ledger v1.92.59. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp pass-5 + Klikit Instant Delivery + Octave)
+
+- Yelp pass-5: all five primaries unchanged (G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914). Finding: `2026-09-04-yelp-5market-stable-pass5.json`.
+- Watched **Klikit Instant Delivery** (TikTok Shop US pilot) + **Octave lfgtm-cursor** GTM plugin. Finding: `2026-09-04-klikit-instant-delivery-octave-gtm.json`.
+- Ledger v1.92.60. Auth still blocked for unlock READY.

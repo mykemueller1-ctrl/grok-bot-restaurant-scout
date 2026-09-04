@@ -1,0 +1,18 @@
+{
+  "finding_id": "yelp-5market-stable-pass5-2026-09",
+  "lane": "vertical_gtm",
+  "name": "5-market Yelp love counts stable (pass-5)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 5 (2026-09-04T22:05Z) YELP_SEARCH_BUSINESSES: G&TG 10,731 / Franklin 6,477 / Michaels 2,084 / Husk 1,987 / Rioja 2,914 — all unchanged since pass-4. Love calibration holds across CHI/ATX/MIA/BNA/DEN.",
+  "researched_at": "2026-09-04",
+  "live_yelp": {
+    "girl_and_the_goat": { "review_count": 10731, "rating": 4.4 },
+    "franklin_barbecue": { "review_count": 6477, "rating": 4.5 },
+    "michaels_genuine": { "review_count": 2084, "rating": 4.0 },
+    "husk": { "review_count": 1987, "rating": 3.9 },
+    "rioja": { "review_count": 2914, "rating": 4.3 }
+  },
+  "tools_used": ["YELP_SEARCH_BUSINESSES"],
+  "not_this": "Not forecasting. Not fee dogfood."
+}
