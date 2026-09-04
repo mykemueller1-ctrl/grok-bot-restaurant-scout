@@ -1,5 +1,5 @@
 {
-  "version": "1.92.8",
+  "version": "1.92.9",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1178,6 +1178,12 @@
   ],
   "watchlist": [
     {
+      "item": "Deliverect wired into GTM skills (morning-scan / rival-watch / script-draft)",
+      "lane": "skills_knowledge",
+      "why": "Meta Order Food rival now taught in hunt skills so love→buy-now wedge checks include IG button path vs Never86 Shop",
+      "verdict": "adopt"
+    },
+    {
       "item": "Live Yelp 5-market morning-scan love seeds (CHI/ATX/MIA/BNA/DEN)",
       "lane": "vertical_gtm",
       "why": "Primary love brands live-verified via Composio Yelp details — morning-scan unblocked without IG/TikTok",
@@ -2304,7 +2310,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_XmG82QNx7g4Y (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp live CHI proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_OX5RQYqGvxKG (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -2339,5 +2345,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T18:50:00Z"
+  "updated_at": "2026-09-04T18:52:00Z"
 }

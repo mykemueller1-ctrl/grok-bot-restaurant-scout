@@ -666,3 +666,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Live Yelp details: Franklin ATX 6477 · Michaels MIA 2084 · Husk BNA 1987 · Rioja DEN 2914 (+ prior G&TG CHI 10731). Finding: `2026-09-04-yelp-5market-live-love-seeds.json`.
 - Deliverect Social Media Ordering = IG/FB/WA Order Food button rival (watch). Finding: `2026-09-04-deliverect-ig-order-food.json`. Klikit US Shop guide added to competitor sources.
 - Ledger v1.92.8. Fee catalog pause + Mem0/Context auth-first unchanged.
+
+### 2026-09-04 (Deliverect into skills + IG refresh)
+
+- Wired Deliverect IG/FB/WA Order Food into `vertical-rival-watch`, `morning-scan`, `script-draft`, `sales-lead-form`, `tool-frontier-scan`.
+- Fresh Instagram Composio link: https://connect.composio.dev/link/lk_OX5RQYqGvxKG (~10 min).
+- Ledger v1.92.9. Tip CI green on 5-market Yelp live. Still blocked on Mem0/Context for unlock READY.
