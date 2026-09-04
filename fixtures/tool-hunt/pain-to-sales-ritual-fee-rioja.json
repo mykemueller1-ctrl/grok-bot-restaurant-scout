@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-ritual-fee-rioja-2026-09-04",
+  "purpose": "Ritual guest service fee $0.15\u2013$0.99 (<$30) / $1.99 (>$30) \u2192 SalesLead DRAFT for Rioja (Denver). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Ritual guest service fee $0.15\u2013$0.99 / $1.99 per order",
+    "guest_paid_tech_fee": "Ritual guest service fee displayed at checkout",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "ritual_guest_service_fee",
+    "vendor_id": "ritual",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Rioja",
+      "city": "Denver",
+      "market": "Denver, CO",
+      "yelp_alias": "rioja-denver",
+      "love_signal": "Jennifer Jasinski LoDo cult / UGC"
+    },
+    "complaint_summary": "Calibration: Ritual charges guests $0.15\u2013$0.99 on orders under $30 and $1.99 above $30 (Companies exempt). Rioja-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "ritual",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-ritual-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "ritual_guest_service_fee",
+    "account_name": "Rioja",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Denver",
+    "market": "Denver, CO",
+    "complaint_thesis": "Ritual applies a guest service fee of $0.15\u2013$0.99 per order under $30 and $1.99 above $30 \u2014 guest-paid per_order_platform_fee KEEP leak on pickup OO (Companies exempt). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. LoDo Rioja love already prints demand \u2014 close Shop buy-now, not Ritual $0.15\u2013$1.99 guest service fees on every pickup ticket.",
+    "quotes": [
+      "Ritual guest service fee $0.15\u2013$0.99 / $1.99 per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Ritual guest service fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Ritual guest fees are still platform rent on pickup OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: LoDo Rioja love already prints demand \u2014 close Shop buy-now, not Ritual $0.15\u2013$1.99 guest service fees on every pickup ticket.",
+    "sources": [
+      "https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees",
+      "fixtures/tool-hunt/pain-scan-ritual-guest-fee.json",
+      "https://www.yelp.com/biz/rioja-denver"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Ritual guest service fee \u2192 SalesLead. Distinct from Ritual Online Ordering $69/mo first-party product. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-ritual-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

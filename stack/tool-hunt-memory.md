@@ -455,5 +455,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-scan-ginger-guest-fee.json → strong_keep 35; pain-to-sales-ginger-fee-* ×5; validate-ginger-fee-dogfood ≥5 (`ginger_fee_dogfoods`).
 - Watched Semperi flat $99–$499 and FOLOS flat OO (no per-order teach). Ledger v1.67.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (Ritual guest service fee SalesLead)
+
+- Ritual guest service fee **$0.15–$0.99** (<$30) / **$1.99** (>$30); Companies exempt ([help.ritual.co](https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees)). Distinct from Ritual Online Ordering ~$69/mo first-party product.
+- pain-scan-ritual-guest-fee.json → strong_keep 36; pain-to-sales-ritual-fee-* ×5; validate-ritual-fee-dogfood ≥5 (`ritual_fee_dogfoods`).
+- Watched Toast ~$0.49 OO guest fee (secondary 2026 cites; $0.99 removed 2023). Ledger v1.68.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+
 
 

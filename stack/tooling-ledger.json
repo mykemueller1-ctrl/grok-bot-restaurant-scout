@@ -1,5 +1,5 @@
 {
-  "version": "1.67.0",
+  "version": "1.68.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -114,7 +114,8 @@
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs",
     "sauce_fee_dogfood_gate": "scripts/validate-sauce-fee-dogfood.mjs (Sauce under-$2/order guest fee / 0% commission \u2192 SalesLead \u22655 markets)",
     "velobite_fee_dogfood_gate": "scripts/validate-velobite-fee-dogfood.mjs (VeloBite Growth $0.75/order \u2192 SalesLead \u22655 markets)",
-    "ginger_fee_dogfood_gate": "scripts/validate-ginger-fee-dogfood.mjs (Ginger $1/order guest platform fee \u2192 SalesLead \u22655 markets)"
+    "ginger_fee_dogfood_gate": "scripts/validate-ginger-fee-dogfood.mjs (Ginger $1/order guest platform fee \u2192 SalesLead \u22655 markets)",
+    "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15\u2013$1.99 \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -963,9 +964,33 @@
         "https://www.gingerserve.com/pricing",
         "https://www.gingerserve.com"
       ]
+    },
+    {
+      "name": "Ritual",
+      "lane": "vertical_gtm",
+      "stack": "Pickup marketplace app with guest service fees ($0.15\u2013$1.99) + separate Ritual Online Ordering ~$69/mo first-party product",
+      "memory": "Guest/order data on Ritual rails",
+      "edge": "Guest service fee KEEP leak teach (dogfood ritual_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees",
+        "https://ritual.co/faq"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Ritual guest service fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Ritual $0.15\u2013$0.99 (<$30) / $1.99 (>$30) guest service fee \u2192 SalesLead vs Shop ~6%; validate-ritual-fee-dogfood \u22655; strong_keep 36. Distinct from Ritual OO $69/mo product.",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Toast ~$0.49 online guest fee (secondary)",
+      "lane": "vertical_gtm",
+      "why": "$0.99 guest fee removed 2023; secondary 2026 cites ~$0.49 \u2014 not on toasttab.com. Watch only alongside Toast OO 0% + POS lock-in.",
+      "verdict": "watch"
+    },
     {
       "item": "Ginger $1 guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -1864,5 +1889,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:05:00Z"
+  "updated_at": "2026-09-04T19:15:00Z"
 }

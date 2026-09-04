@@ -1,0 +1,17 @@
+{
+  "finding_id": "ritual-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ritual guest service fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain\u2192sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-ritual-fee-girl-goat.json",
+    "scripts/validate-ritual-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-ritual-guest-fee.json",
+    "https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees"
+  ],
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Ritual $0.15\u2013$1.99 guest fee SalesLead dogfoods; strong_keep 36.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}
