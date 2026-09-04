@@ -42,6 +42,7 @@ node scripts/resolve-mcp-config.mjs
 
 # Tooling ledger + Beyond the Hunt findings
 node scripts/validate-tooling-ledger.mjs
+node scripts/run-tool-hunt-week.mjs
 ```
 
 ## Secrets (never commit)
