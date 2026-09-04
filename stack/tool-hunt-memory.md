@@ -586,3 +586,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for `5% convenience fee`.
 - pain-scan-servi-guest-fee.json → strong_keep **59**; pain-to-sales-servi-fee-* ×5; validate-servi-fee-dogfood ≥5. Seared/Owner/S4VOR-class guest % peer.
 - Ledger v1.88.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Food App Fast 8% SalesLead)
+
+- Primary [foodappfast.com/pricing](https://www.foodappfast.com/pricing): **8%** monthly commission (often passed as guest convenience / online ordering fee); no setup / no set monthly.
+- Widened `first_party_pct_fee` for `8%` commission / online ordering fee.
+- pain-scan-foodappfast-pct-fee.json → strong_keep **60**; pain-to-sales-foodappfast-fee-* ×5; validate-foodappfast-fee-dogfood ≥5.
+- Watched Anytable: live pricing softens exact $ convenience fee (legacy $1.95) — no dogfood yet.
+- Ledger v1.89.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

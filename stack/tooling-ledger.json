@@ -1,5 +1,5 @@
 {
-  "version": "1.88.0",
+  "version": "1.89.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -133,7 +133,8 @@
     "kwickdriver_fee_dogfood_gate": "scripts/validate-kwickdriver-fee-dogfood.mjs (KwickDriver $2/delivery + $6.99/5mi \u2192 SalesLead \u22655 markets)",
     "s4vor_fee_dogfood_gate": "scripts/validate-s4vor-fee-dogfood.mjs (S4VOR guest 1.9% capped at $2.00 \u2192 SalesLead \u22655 markets)",
     "foxifood_fee_dogfood_gate": "scripts/validate-foxifood-fee-dogfood.mjs (FoxiFood 2%+\u20ac0.45 per card \u2192 SalesLead \u22655 markets; EU thematic)",
-    "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee \u2192 SalesLead \u22655 markets)"
+    "servi_fee_dogfood_gate": "scripts/validate-servi-fee-dogfood.mjs (Ser.vi guest 5% convenience fee \u2192 SalesLead \u22655 markets)",
+    "foodappfast_fee_dogfood_gate": "scripts/validate-foodappfast-fee-dogfood.mjs (Food App Fast 8% commission \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -705,6 +706,28 @@
       ]
     },
     {
+      "name": "Food App Fast",
+      "lane": "vertical_gtm",
+      "stack": "No setup / no set monthly; 8% monthly commission on food subtotal (often passed as guest convenience / online ordering fee)",
+      "memory": "Custom ordering link + optional app stores",
+      "edge": "Published 8% first-party rent under no-monthly claim \u2014 Flipdish/Ordering.Tools-class; not Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.foodappfast.com/pricing"
+      ]
+    },
+    {
+      "name": "Anytable",
+      "lane": "vertical_gtm",
+      "stack": "$29.99/mo flat 0% Anytable commission OO; diner convenience fee at checkout (legacy pages cited $1.95; live page softens to 'modest/small')",
+      "memory": "Branded ordering + website",
+      "edge": "Guest convenience fee exists but exact $ unpublished on current pricing \u2014 watch before dogfood",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.anytable.com/pricing/"
+      ]
+    },
+    {
       "name": "Otter",
       "lane": "vertical_gtm",
       "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198\u2013$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
@@ -1109,6 +1132,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Food App Fast 8% commission SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Food App Fast 8% monthly commission (often guest online ordering fee) on foodappfast.com/pricing under no-monthly claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 8%/online ordering fee; validate-foodappfast-fee-dogfood \u22655; strong_keep 60",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Anytable guest convenience fee (exact $ soft on live page)",
+      "lane": "vertical_gtm",
+      "why": "anytable.com/pricing $29.99/mo + diner convenience fee; legacy cache cited $1.95 but live page says modest/small only \u2014 watch until exact $ republished",
+      "verdict": "watch"
+    },
     {
       "item": "Ser.vi guest 5% convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -2181,5 +2216,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T00:00:00Z"
+  "updated_at": "2026-09-05T00:15:00Z"
 }
