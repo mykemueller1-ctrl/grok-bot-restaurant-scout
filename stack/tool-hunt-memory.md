@@ -245,3 +245,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added scripts/validate-market-coverage.mjs — love↔keep-grader↔script-draft↔catalog-sync per CHI/ATX/MIA/BNA/DEN (shared yelp_alias).
 - Wired into validate-stack.yml CI.
 - Ledger v1.34.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Owner 5% KEEP signal + FlavorFeed/Restos/INFI/WhatsMenu watch)
+
+- Adopted first_party_pct_fee KEEP signal (Owner Flex $249 + 5% restaurant fee / guest order support fee) + pain-scan-owner-pct-fee.json (strong_keep 12).
+- Watched FlavorFeed AI (POS+IG/TikTok content+ordering), Restos.io (€0/€29 commission-free), INFI ONLINE (0% commission), WhatsMenu (owned storefront vs TikTok Shop).
+- Ledger v1.35.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

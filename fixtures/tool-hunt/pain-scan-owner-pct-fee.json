@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Owner.com Flex $249 + 5% restaurant fee KEEP pain vs Never86 buy-now",
+  "hits": [
+    {
+      "url": "https://www.owner.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "owner_pricing",
+      "snippet": "Restaurant owners on Owner.com Flex pay $249/month plus 5% restaurant fee per order — guests also see a 5% order support fee. First-party OS still cuts KEEP; quit DoorDash commission for buy-now that does not take another platform percent.",
+      "pain_id": "owner_first_party_pct_fee",
+      "score": 90,
+      "never86_angle": "Even first-party OS can tax every cart — teach Owner Flex 5% vs Never86 TikTok/IG buy-now KEEP math"
+    }
+  ],
+  "notes": "Sources: Owner pricing page + Restolabs/Certus/Sauce fee breakdowns via Composio Tavily. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

@@ -33,6 +33,8 @@ const rules = [
   { re: /dual[\s-]?run|run both|marketplaces? for (new|discovery)|discovery.*(direct|first[\s-]?party)/, signal: "dual_run_marketplace", w: 15 },
   // Website/OS per-order platform fees (BentoBox $0.99/order style)
   { re: /\$0\.\d{2}\s*(per[\s-]?order|\/\s*order)|per[\s-]?order (fee|charge|service fee)|online order service fee/, signal: "per_order_platform_fee", w: 15 },
+  // First-party OS still takes a % (Owner Flex 5% restaurant fee / guest order support fee)
+  { re: /5%\s*(restaurant|per[\s-]?order|platform|order support)|restaurant fee per order|order support fee|owner\.com.*5%|\$249.*5%/, signal: "first_party_pct_fee", w: 15 },
 ];
 
 const signals = [];

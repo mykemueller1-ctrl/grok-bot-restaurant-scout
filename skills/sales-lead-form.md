@@ -23,7 +23,7 @@ Fill and save `SalesLead`:
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
 
 Rules:
-- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering / dual-run discovery / per-order platform fees ($0.99/order BentoBox-style)** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-scan-dual-run.json`, `pain-scan-bentobox-per-order.json`, `pain-to-sales-keep-girl-goat.json`).
+- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering / dual-run discovery / per-order platform fees ($0.99/order BentoBox-style) / first-party % fees (Owner Flex 5% restaurant fee)** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-scan-dual-run.json`, `pain-scan-bentobox-per-order.json`, `pain-scan-owner-pct-fee.json`, `pain-to-sales-keep-girl-goat.json`).
 - Optional KEEP$ channel rank: CLI `node scripts/keep-channel-grader.mjs` or MCP `keep_channel_grade` (see `skills/keep-channel-grader.md`). Dogfood: `fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json`.
 - Draft outreach copy may be suggested; **sending** requires approvals MCP.
 - Same human/venue across pain agents → merge / link, don't spam duplicate leads.
