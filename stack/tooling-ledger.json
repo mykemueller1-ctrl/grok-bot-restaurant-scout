@@ -77,7 +77,7 @@
       "smoke": "scripts/mem0-smoke.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)",
+    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json + pain-to-sales-keep-girl-goat.json (KEEP → SalesLead DRAFT)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
@@ -264,6 +264,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Pain→SalesLead KEEP end-to-end dogfood",
+      "lane": "vertical_gtm",
+      "why": "X+SEARCH_WEB+Yelp+Maps → SalesLead DRAFT without Apollo/Mem0; skills updated",
+      "verdict": "adopt"
+    },
     {
       "item": "Yelp multi-market love-brand calibration",
       "lane": "vertical_gtm",
