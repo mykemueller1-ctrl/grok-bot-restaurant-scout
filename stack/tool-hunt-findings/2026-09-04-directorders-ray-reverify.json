@@ -1,0 +1,16 @@
+{
+  "finding_id": "directorders-ray-ig-dm-reverify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DirectOrders + RAY Instagram social intake re-verified",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "DirectOrders still pitches commission-free OO across IG DMs / WhatsApp / ChatGPT+AI channels into one kitchen dashboard (directorders.com/features/channels). RAY still pitches Instagram Order Food button + DM automation → branded zero-commission delivery (blog.rayapp.ai 2026). Adjacent social intake — not Meta FBE peers; not TikTok Shop-native. Watch vs Never86 in-app Shop. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.directorders.com/features/channels",
+    "https://www.directorders.com/",
+    "https://blog.rayapp.ai/en/delivery-without-commission/instagram-delivery-channel-restaurants/",
+    "https://rayapp.ai/en"
+  ],
+  "not_this": "Not Meta Order Food peer_count bump. Not a fee dogfood. Not forecasting."
+}

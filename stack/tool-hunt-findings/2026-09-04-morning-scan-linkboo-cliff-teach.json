@@ -1,0 +1,15 @@
+{
+  "finding_id": "morning-scan-linkboo-cliff-teach-2026-09",
+  "lane": "skills_knowledge",
+  "name": "morning-scan + sales-lead teach linkboo Toast/Resy webview cliff",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "skills/morning-scan.md and sales-lead-form.md now name Toast/Square/ChowNow Apple Pay + OpenTable/Resy cookie cliffs on bio→webview handoffs (linkboo) and LinkScale/FOSA peers — sharpens love→buy-now Shop wedge in GTM skills. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "skills/morning-scan.md",
+    "skills/sales-lead-form.md",
+    "stack/tool-hunt-findings/2026-09-04-linkboo-webview-reverify.json"
+  ],
+  "not_this": "Not a fee dogfood. Not forecasting."
+}

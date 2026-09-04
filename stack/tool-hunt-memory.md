@@ -838,3 +838,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - linkboo small-business primary cites Toast/Square/ChowNow Apple Pay + OpenTable/Resy cookie breaks in IG webview — Shop wedge. Finding: `2026-09-04-linkboo-webview-reverify.json`.
 - Watched LinkScale restaurant bio hub (can route Uber Eats). BiteSight + Smiilen video→order still live.
 - Instagram reconnect: `lk_y6WK90WQYZ4-` (~10 min). Ledger v1.92.36. Auth still blocked.
+
+### 2026-09-04 (GTM skills linkboo cliff + DirectOrders/RAY)
+
+- morning-scan + sales-lead-form teach Toast/Square/ChowNow/OpenTable/Resy bio→webview cliffs + LinkScale/FOSA. Finding: `2026-09-04-morning-scan-linkboo-cliff-teach.json`.
+- DirectOrders IG DM/WhatsApp/ChatGPT + RAY IG delivery still live. Finding: `2026-09-04-directorders-ray-reverify.json`.
+- Ledger v1.92.37. Auth still blocked for unlock READY.
