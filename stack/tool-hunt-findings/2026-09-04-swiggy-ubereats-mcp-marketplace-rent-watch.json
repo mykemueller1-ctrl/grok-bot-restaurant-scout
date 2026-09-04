@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-swiggy-ubereats-mcp-marketplace-rent-watch",
+  "lane": "cursor_agents",
+  "name": "Swiggy MCP + Uber Eats MCP marketplace rent in Cursor",
+  "verdict": "watch",
+  "summary": "NEW: mcp.swiggy.com Cursor docs (food/instamart/dineout remote MCP) + matiasconcha11/uber_eats_mcp (Cursor/Claude stdio MCP for Uber Eats browse/cart/checkout). Marketplace-rent agent rails \u2014 contrast vs Never86 first-party love\u2192buy-now; do NOT adopt into stack; not Meta FBE; fee pause.",
+  "researched_at": "2026-09-04T23:00:00.000Z",
+  "sources": [
+    "https://mcp.swiggy.com/builders/docs/start/consumer/use-in-ai-client.md",
+    "https://github.com/matiasconcha11/uber_eats_mcp"
+  ],
+  "memory_tags": [
+    "swiggy-mcp",
+    "uber-eats-mcp",
+    "marketplace-rent",
+    "cursor-mcp"
+  ]
+}

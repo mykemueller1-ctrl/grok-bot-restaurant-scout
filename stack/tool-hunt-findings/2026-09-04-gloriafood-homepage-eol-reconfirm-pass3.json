@@ -1,0 +1,15 @@
+{
+  "finding_id": "2026-09-04-gloriafood-homepage-eol-reconfirm-pass3",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood homepage discontinued + EOL Apr 30 2027 pass-3",
+  "verdict": "adopt",
+  "summary": "gloriafood.com homepage still banners discontinued / no new signups; Facebook Order Now how-to still live. Enacton/Ordering.co/Ogent cite Oracle EOL Apr 30 2027 \u2014 keep peer #9 until shutdown; Shop migration wedge. peer_count stays 9.",
+  "researched_at": "2026-09-04T23:00:00.000Z",
+  "sources": [
+    "https://www.gloriafood.com/",
+    "https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button",
+    "https://www.enacton.com/blog/gloriafood-shutting-down/",
+    "https://blog.ordering.co/whats-actually-happening-with-gloriafood",
+    "https://ogent.ai/gloriafood-shutdown"
+  ]
+}
