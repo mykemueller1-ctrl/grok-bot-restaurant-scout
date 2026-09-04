@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-chownow-catering-fee-franklin-2026-09-04",
+  "purpose": "ChowNow Catering 5% direct commission \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts first_party_pct_fee vs Never86 Shop ~6%. Distinct from $0.99 + 7.5% Support Local. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "ChowNow Catering 5% fee per catering order on direct channel",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330% / EzCater marketplace ~15%",
+    "own_ordering_keep": "Direct catering channel still takes 5%"
+  },
+  "pain_lead": {
+    "pain_id": "chownow_catering_5pct",
+    "vendor_id": "chownow",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "Aaron Franklin cult BBQ / line UGC"
+    },
+    "complaint_summary": "Calibration: ChowNow charges a 5% fee per catering order on the direct branded channel (FAQ/support). Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without first-party catering 5% skim or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "chownow",
+      "ezcater",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-chownow-catering-fee.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "chownow_catering_5pct",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "ChowNow Catering charges a 5% fee per catering order on your direct channel \u2014 first_party_pct_fee KEEP leak on high-AOV catering tickets (EzCater marketplace ~15%; DoorDash Marketplace 15\u201330%). TikTok Shop ~6% is honest platform take on social demand. Franklin-class love already prints demand \u2014 close Shop buy-now, not ChowNow Catering 5% on every catering cart.",
+    "quotes": [
+      "ChowNow 5% fee per catering order on direct channel",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "ChowNow Catering 5%",
+      "EzCater marketplace",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + social_shop_fee teach: ChowNow Catering 5% is still platform rent on 'direct' catering; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Franklin-class love already prints demand \u2014 close Shop buy-now, not ChowNow Catering 5% on every catering cart.",
+    "sources": [
+      "https://get.chownow.com/blog/chownow-for-restaurants-your-top-faqs/",
+      "fixtures/tool-hunt/pain-scan-chownow-catering-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 76,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 ChowNow Catering 5% \u2192 SalesLead. Distinct from $0.99 service charge + 7.5% Support Local dogfood. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-chownow-catering-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -514,3 +514,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [foodscoutgo.com/pricing](https://foodscoutgo.com/pricing): **$0.99**/order customer service fee; restaurant $0 upfront / $0 monthly.
 - pain-scan-foodscout-guest-fee.json → strong_keep **46**; pain-to-sales-foodscout-fee-* ×5; validate-foodscout-fee-dogfood ≥5 (`foodscout_fee_dogfoods`).
 - Watched MOBI HQ NZ guest service fee $0.10–$3 (no US swarm). Ledger v1.77.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (ChowNow Catering 5% SalesLead)
+
+- Primary ChowNow FAQ: **5% fee per catering order** on direct branded channel ([FAQ](https://get.chownow.com/blog/chownow-for-restaurants-your-top-faqs/)). Widened `first_party_pct_fee` for catering 5%.
+- pain-scan-chownow-catering-fee.json → strong_keep **47**; pain-to-sales-chownow-catering-fee-* ×5; validate-chownow-catering-fee-dogfood ≥5. Distinct from $0.99 + 7.5% Support Local dogfood.
+- Watched Hotplate cottage 5%+$0.55 (not core restaurant GTM). Ledger v1.78.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
