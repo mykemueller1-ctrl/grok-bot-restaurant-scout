@@ -65,9 +65,9 @@ Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_efLtwWNy2dYc) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_NaouagFf3gjQ) — Business/Creator only. Reply `instagram connected` when done.
 
-**Meta FBE reconfirm (2026-09-04):** Deliverect Direct Suite + ChatFood IG Order Food + BentoBox Help 412673 + Toast Support (Jul 7 2026) + Zyda FBE Help still live — peer_count stays **9**. Findings: `2026-09-04-deliverect-chatfood-meta-reconfirm.json`, `2026-09-04-bentobox-meta-order-food-reconfirm.json`, `2026-09-04-toast-zyda-meta-reconfirm.json`.
+**Meta FBE reconfirm (2026-09-04):** Deliverect + ChatFood + BentoBox + Toast + Zyda + Flipdish bounce URL still live — peer_count stays **9**.
 
 ## Still required for Beyond the Hunt READY
 

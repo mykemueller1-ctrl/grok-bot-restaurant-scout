@@ -1,0 +1,23 @@
+{
+  "finding_id": "flipdish-bounce-posso-gloriafood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Flipdish bounce URL reconfirm + Posso GloriaFood UK peer",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Flipdish Help 9585449 still live: bounce.flipdish.com/{appid} for IG Food Orders stickers (custom domain required) — Meta Order Food peer path; peer_count stays 9 (Flipdish already FBE peer). NEW watch: Posso (posso.co.uk) UK GloriaFood successor — free migration, branded site/app, ePOS from £499+VAT, low commission on own OO (fee pause — no dogfood), FoodBooking marketplace; EOL Apr 30 2027 reconfirmed. UK thematic — no US swarm expand.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.flipdish.com/en/articles/9585449-link-to-your-flipdish-online-ordering-page-directly-from-instagram-posts",
+    "https://www.posso.co.uk/gloriafood-alternative",
+    "https://www.foxifood.com/blog/gloriafood-shutting-down-alternatives/",
+    "https://www.enacton.com/blog/gloriafood-shutting-down/"
+  ],
+  "meta_order_food_peer_count": 9,
+  "verdicts": {
+    "flipdish_bounce": "adopt",
+    "posso_uk": "watch",
+    "gloriafood_eol_apr30_2027": "adopt"
+  },
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood for Posso low-commission. Not forecasting. Does not inflate peer_count. Posso is UK thematic."
+}

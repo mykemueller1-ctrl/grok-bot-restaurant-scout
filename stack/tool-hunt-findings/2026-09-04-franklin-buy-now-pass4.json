@@ -1,0 +1,18 @@
+{
+  "finding_id": "franklin-buy-now-pass4-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Franklin Barbecue buy_now_path pass-4 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 4 (2026-09-04T22:15Z): Curbside preorder still live (preorder.franklinbbq.com — 56 days ahead, 5–30 lb). Shopify merch still live (shop.franklinbbq.com — sauces/merch/pits; gift cards restaurant/preorder only). Goldbelly ship still live (goldbelly.com/restaurants/franklin-barbecue). ATX love→buy-now rails hold: first_party_preorder + shopify_merch + goldbelly_ship.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://preorder.franklinbbq.com/",
+    "https://shop.franklinbbq.com/",
+    "https://www.goldbelly.com/restaurants/franklin-barbecue",
+    "fixtures/tool-hunt/austin-love-brands.json"
+  ],
+  "rails_confirmed": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting."
+}

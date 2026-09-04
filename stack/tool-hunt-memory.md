@@ -1005,3 +1005,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Yelp pass-5: all five primaries unchanged (G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914). Finding: `2026-09-04-yelp-5market-stable-pass5.json`.
 - Watched **Klikit Instant Delivery** (TikTok Shop US pilot) + **Octave lfgtm-cursor** GTM plugin. Finding: `2026-09-04-klikit-instant-delivery-octave-gtm.json`.
 - Ledger v1.92.60. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Franklin pass-4 + Flipdish/Posso)
+
+- Adopted Franklin **buy_now_path** pass-4 — preorder + Shopify + Goldbelly still live. Finding: `2026-09-04-franklin-buy-now-pass4.json`.
+- Reconfirmed Flipdish bounce URL; watched **Posso** UK GloriaFood successor (fee pause). Finding: `2026-09-04-flipdish-bounce-posso-gloriafood.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_NaouagFf3gjQ (~10 min).
+- Ledger v1.92.61. Auth still blocked for unlock READY.
+

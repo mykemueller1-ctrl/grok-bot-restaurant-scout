@@ -1,5 +1,5 @@
 {
-  "version": "1.92.60",
+  "version": "1.92.61",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Franklin buy_now_path pass-4 (preorder/Shopify/Goldbelly)",
+      "lane": "vertical_gtm",
+      "why": "ATX curbside preorder + Shopify merch + Goldbelly ship still live — love calibration holds",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Flipdish bounce URL + Posso UK GloriaFood peer",
+      "lane": "vertical_gtm",
+      "why": "Flipdish Help bounce.flipdish.com still live — peer_count stays 9; Posso UK free-migrate GloriaFood successor (low commission, fee pause)",
+      "verdict": "watch"
+    },
     {
       "item": "5-market Yelp love counts stable (pass-5)",
       "lane": "vertical_gtm",
@@ -3120,5 +3132,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T22:10:00Z"
+  "updated_at": "2026-09-04T22:20:00Z"
 }
