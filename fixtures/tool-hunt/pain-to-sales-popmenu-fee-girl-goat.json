@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-popmenu-fee-girl-goat-2026-09-04",
+  "purpose": "Popmenu OO add-on ~$50/mo + $1/order (often guest-paid) → SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Popmenu OO add-on ~$50/mo + $1/order (guest-passable or restaurant-absorbed)",
+    "guest_paid_tech_fee": "Popmenu $1 per order guest fee at checkout",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "popmenu_guest_per_order_fee",
+    "vendor_id": "popmenu",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Popmenu markets commission-free OO as an add-on (~$50/mo) then bills $1 per order (often to the guest). Girl & The Goat-class love should close on Never86 Shop ~6% buy-now — honest platform math without diner sticker shock or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "popmenu",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-popmenu-guest-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "popmenu_guest_per_order_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Popmenu online ordering is an add-on (~$50/mo) with a flat $1 per order fee that can be passed to the guest at checkout — diner tech fee under a commission-free claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. West Loop love already prints demand — close Shop buy-now, not Popmenu $1 diner fees.",
+    "quotes": [
+      "Popmenu $1 per order guest fee at checkout",
+      "Popmenu OO add-on ~$50/mo",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Popmenu guest/per-order OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Popmenu $1/order is still platform rent; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand — close Shop buy-now, not Popmenu $1 diner fees.",
+    "sources": [
+      "https://get.popmenu.com/pricing",
+      "fixtures/tool-hunt/pain-scan-popmenu-guest-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 77,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Popmenu $1/order guest fee → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-popmenu-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

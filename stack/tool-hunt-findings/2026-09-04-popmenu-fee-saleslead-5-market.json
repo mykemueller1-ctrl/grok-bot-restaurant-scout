@@ -1,0 +1,26 @@
+{
+  "finding_id": "popmenu-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Popmenu $1/order guest fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-popmenu-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-popmenu-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-popmenu-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-popmenu-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-popmenu-fee-rioja.json",
+    "scripts/validate-popmenu-fee-dogfood.mjs",
+    "https://get.popmenu.com/pricing",
+    "fixtures/tool-hunt/pain-scan-popmenu-guest-fee.json"
+  ],
+  "what_it_does": "Popmenu OO add-on ~$50/mo + $1/order (often guest-paid) → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6% + Marketplace 15–30%.",
+  "how_competitors_use_it": "Popmenu sells marketing OS with OO as paid add-on; $1/order can be guest-passed or restaurant-absorbed.",
+  "what_we_use_today": "validate-popmenu-fee-dogfood ≥5 parallel gate; guest_paid + per_order signals",
+  "gap": "Still DRAFT calibration — Mem0/Context blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Popmenu $1/order guest-fee SalesLead dogfoods now match all five love markets; strong_keep 21.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

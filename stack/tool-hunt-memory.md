@@ -367,3 +367,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added pain-to-sales-owner-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-owner-fee-dogfood ≥5.
 - Watched Ontabee ($49 flat, no %) as Owner cost alternative — not Shop-native.
 - Ledger v1.53.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Popmenu $1/order guest fee SalesLead)
+
+- Adopted pain-scan-popmenu-guest-fee.json ($1/order guest-passable under commission-free OO add-on) → strong_keep 21.
+- Added pain-to-sales-popmenu-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-popmenu-fee-dogfood ≥5.
+- Ledger v1.54.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
