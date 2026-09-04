@@ -749,3 +749,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **DirectOrders** (watch): IG DM / WhatsApp / ChatGPT ordering vs Owner web/app skew. Finding: `2026-09-04-directorders-ig-dm-ordering.json`.
 - Taught across morning-scan / script-draft / sales-lead-form / frontier-scan / rival-watch + COMPOSIO-SOCIAL-UNLOCKS.
 - Ledger v1.92.22. Fee pause + Mem0/Context auth-first unchanged. Instagram reconnect link refreshed (`lk_5JKgmm1s0io7`, ~10 min).
+
+### 2026-09-04 (Toast Meta Order Food)
+
+- **Toast Online Ordering** (watch): Support primary (Jul 2026) — IG Order food Action Button → select Toast as partner; Stories Food Orders sticker; Facebook Start Order → Toast OO / Location Picker. US POS Meta Order Food peer. Finding: `2026-09-04-toast-meta-order-food.json`.
+- Taught across GTM skills + COMPOSIO-SOCIAL-UNLOCKS + Automation prompt. Flipdish IG Order Now already catalogued (fee dogfood); named beside Toast in Meta peers list.
+- Ledger v1.92.23. Fee pause + Mem0/Context auth-first unchanged.

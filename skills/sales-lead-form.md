@@ -17,7 +17,7 @@ Fill and save `SalesLead`:
 | `quotes` | raw |
 | `vendors_to_displace` | Toast, DoorDash, etc. |
 | `why_never86_now` | map pain → Never86 wedge (buy-now / social commerce / leave marketplace tax / stack pain) |
-| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Popmenu/Sauce/ChowNow/Lunchbox/OPA!/SWIPEBY/Outbites/Orderitto/Seared/Deonde/Flipdish/BentoBox first-party web-QR/IG ordering, Deliverect/Zyda/ChatFood/BentoBox Meta Order Food, DirectOrders IG DM/WhatsApp, linkboo webview-escape bio links, BiteSight/Smiilen video marketplace, Menami/TextOrder/Ainisa/Ordr DM agents, OrderPost post→order links, Seekadu reservations, Moast Shopify UGC widgets, Seekeasy/Beebz creator discovery, or content-only AI Reels (Feedo/PlateAI) |
+| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Popmenu/Sauce/ChowNow/Lunchbox/OPA!/SWIPEBY/Outbites/Orderitto/Seared/Deonde/Flipdish/BentoBox/Toast first-party web-QR/IG ordering, Deliverect/Zyda/ChatFood/BentoBox/Toast/Flipdish Meta Order Food, DirectOrders IG DM/WhatsApp, linkboo webview-escape bio links, BiteSight/Smiilen video marketplace, Menami/TextOrder/Ainisa/Ordr DM agents, OrderPost post→order links, Seekadu reservations, Moast Shopify UGC widgets, Seekeasy/Beebz creator discovery, or content-only AI Reels (Feedo/PlateAI) |
 | `sources` | URLs |
 | `confidence` | score + teach history |
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |

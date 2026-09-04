@@ -1,5 +1,5 @@
 {
-  "version": "1.92.22",
+  "version": "1.92.23",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -716,6 +716,7 @@
       "sources": [
         "https://www.flipdish.com/",
         "https://www.flipdish.com/us/resources/blog/get-direct-orders-on-instagram",
+        "https://help.flipdish.com/en/articles/9585449-link-to-your-flipdish-online-ordering-page-directly-from-instagram-posts",
         "https://help.flipdish.com/en/articles/9743789-how-to-read-your-sales-report",
         "https://menujo.com/compare/flipdish-alternative"
       ]
@@ -1116,12 +1117,13 @@
     {
       "name": "Toast Online Ordering",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct OO into Toast POS; software + processing still apply; deepens Toast lock-in",
+      "stack": "Commission-free direct OO into Toast POS; Instagram Order food Action Button + Stories Food Orders sticker (select Toast as partner) + Facebook Start Order → Toast OO / Location Picker; software + processing still apply; deepens Toast lock-in",
       "memory": "Toast POS + OO",
-      "edge": "POS-bundled 0% commission peer — pairs with pos_fee_lockin; skip Toast labor/forecast products",
+      "edge": "US POS-bundled Meta Order Food peer (Support primary) — love→buy-now rival for Toast kitchens; pairs with pos_fee_lockin; skip Toast labor/forecast; watch only — fee pause",
       "updated": "2026-09-04",
       "sources": [
-        "https://pos.toasttab.com/products/online-ordering"
+        "https://pos.toasttab.com/products/online-ordering",
+        "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook"
       ]
     },
     {
@@ -1242,6 +1244,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Toast Online Ordering Meta Order Food (IG/FB)",
+      "lane": "vertical_gtm",
+      "why": "Toast Support: select Toast as IG Order food partner + Stories sticker → Toast OO — US POS Meta peer; watch only — fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "Toast Meta Order Food taught across GTM skills + COMPOSIO-SOCIAL-UNLOCKS",
+      "lane": "skills_knowledge",
+      "why": "morning-scan / script-draft / sales-lead-form / frontier-scan / rival-watch + social unlocks name Toast OO beside Deliverect/Zyda/ChatFood/BentoBox",
+      "verdict": "adopt"
+    },
     {
       "item": "BentoBox Meta Order Food taught across GTM skills + COMPOSIO-SOCIAL-UNLOCKS",
       "lane": "skills_knowledge",

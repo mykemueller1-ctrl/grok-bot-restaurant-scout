@@ -45,10 +45,12 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **Zyda** Meta Business Extension → first-party Zyda store
 - **ChatFood** Instagram Order Food button + Stories stickers (+ Facebook Commerce)
 - **BentoBox** (Clover Hospitality) Meta Business Extension → Bento Online Ordering / Catering + Stories Food Orders sticker ([Help Center](https://help.getbento.com/en/articles/412673))
+- **Toast Online Ordering** — Instagram Action Button Order food → select Toast as partner; Stories Food Orders sticker; Facebook Start Order ([Toast Support](https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook))
+- **Flipdish** — Instagram Order Now / Food Orders sticker → Flipdish bounce URL (already in fee catalog for €0.50+%)
 
 Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close (not Meta Order Food button — adjacent social intake).
 
-Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch; also watch video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products (BentoBox QR $0.99 guest fee already in catalog).
+Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch; also watch video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products (BentoBox QR $0.99 / Flipdish €0.50+% already in catalog).
 
 ## Still required for Beyond the Hunt READY
 
