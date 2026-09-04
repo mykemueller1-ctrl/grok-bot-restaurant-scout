@@ -640,3 +640,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added `docs/CURSOR-SYNC-SKILLS.md` + `scripts/print-sync-skills-checklist.mjs` (hunt-critical skill inventory + desktop Sync Skills ask).
 - Fresh Instagram Composio OAuth link for UGC love proofs.
 - Still blocked: MEM0_API_KEY + CONTEXT_DEV_API_KEY.
+
+### 2026-09-04 (KEEP grader thin UI)
+
+- Shipped `fixtures/tool-hunt/keep-grader/index.html` — Never86 KEEP$ channel rank (Shop ~6% vs Marketplace).
+- `scripts/validate-keep-grader-ui.mjs` gates CLI parity (G&TG sample marketplace_fee_total $3640).
+- Closes vertical-grader-wedge public surface without expanding import waves. Fee catalog still paused. Auth still blocked.

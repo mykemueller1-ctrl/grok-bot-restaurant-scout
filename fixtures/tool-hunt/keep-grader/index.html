@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Never86 — KEEP channel grader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #12140f;
+      --paper: #e8efe4;
+      --moss: #1f3d2a;
+      --lime: #c6f26d;
+      --ember: #e85d04;
+      --mute: rgba(18, 20, 15, 0.62);
+      --line: rgba(18, 20, 15, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 700px at 10% -10%, rgba(198, 242, 109, 0.35), transparent 55%),
+        radial-gradient(900px 600px at 100% 0%, rgba(232, 93, 4, 0.18), transparent 50%),
+        linear-gradient(165deg, #f4f7f0 0%, #dfe8d8 45%, #c9d6c0 100%);
+      background-attachment: fixed;
+    }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    .brand {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.6rem, 7vw, 4.4rem);
+      letter-spacing: -0.03em;
+      line-height: 0.95;
+      margin: 0 0 0.75rem;
+      animation: rise 700ms ease both;
+    }
+    .lede {
+      max-width: 34rem;
+      font-size: 1.05rem;
+      color: var(--mute);
+      margin: 0 0 1.75rem;
+      animation: rise 700ms 80ms ease both;
+    }
+    .stage {
+      display: grid;
+      gap: 1.25rem;
+      animation: rise 700ms 140ms ease both;
+    }
+    @media (min-width: 900px) {
+      .stage { grid-template-columns: 1fr 1.15fr; align-items: start; }
+    }
+    form.board {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(8px);
+      padding: 1.1rem 1.1rem 1.25rem;
+    }
+    .board h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.15rem;
+      margin: 0 0 0.85rem;
+      font-weight: 500;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 0.7fr;
+      gap: 0.45rem;
+      margin-bottom: 0.45rem;
+      align-items: center;
+    }
+    .row label { font-size: 0.82rem; font-weight: 500; }
+    .row input {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 0.45rem 0.55rem;
+      font: inherit;
+      border-radius: 0;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.9rem;
+    }
+    button {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+      padding: 0.65rem 1rem;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+    button.primary { background: var(--moss); color: var(--lime); }
+    button.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    button:hover { transform: translateY(-1px); }
+    .out {
+      border: 1px solid var(--line);
+      background: var(--ink);
+      color: var(--paper);
+      padding: 1.1rem;
+      min-height: 22rem;
+    }
+    .out h2 {
+      font-family: Fraunces, Georgia, serif;
+      margin: 0 0 0.35rem;
+      color: var(--lime);
+      font-size: 1.35rem;
+    }
+    .wedge {
+      display: inline-block;
+      margin: 0.35rem 0 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ember);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 0.4rem 0.2rem; border-bottom: 1px solid rgba(232, 239, 228, 0.14); }
+    th { color: rgba(232, 239, 228, 0.6); font-weight: 500; font-size: 0.75rem; }
+    .teach { margin-top: 1rem; color: rgba(232, 239, 228, 0.78); font-size: 0.92rem; line-height: 1.45; }
+    .foot {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--mute);
+    }
+    .foot code { font-size: 0.78rem; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="brand">Never86</h1>
+    <p class="lede">Rank what you <strong>KEEP</strong> after fees — Shop ~6% buy-now vs Marketplace 15–30%. Not forecasting.</p>
+
+    <div class="stage">
+      <form class="board" id="form">
+        <h2>Sample month GMV</h2>
+        <div class="row"><label>Dine-in</label><input name="dinein" type="number" min="0" step="100" value="16000" /><input name="dinein_fee_pct" type="number" min="0" step="0.1" value="0" title="fee %" /></div>
+        <div class="row"><label>Takeout / 1P</label><input name="takeout" type="number" min="0" step="100" value="5500" /><input name="takeout_fee_pct" type="number" min="0" step="0.1" value="0" /></div>
+        <div class="row"><label>DoorDash</label><input name="doordash" type="number" min="0" step="100" value="10000" /><input name="doordash_fee_pct" type="number" min="0" step="0.1" value="25" /></div>
+        <div class="row"><label>Uber Eats</label><input name="uber" type="number" min="0" step="100" value="3800" /><input name="uber_fee_pct" type="number" min="0" step="0.1" value="30" /></div>
+        <div class="row"><label>Grubhub</label><input name="grubhub" type="number" min="0" step="100" value="0" /><input name="grubhub_fee_pct" type="number" min="0" step="0.1" value="30" /></div>
+        <div class="row"><label>Never86 buy-now</label><input name="social_buy_now" type="number" min="0" step="100" value="3000" /><input name="social_fee_pct" type="number" min="0" step="0.1" value="6" /></div>
+        <div class="actions">
+          <button type="submit" class="primary">Grade KEEP$</button>
+          <button type="button" class="ghost" id="preset">Girl &amp; The Goat preset</button>
+        </div>
+      </form>
+
+      <section class="out" id="out" aria-live="polite">
+        <h2>Channel rank</h2>
+        <div class="wedge" id="wedge">—</div>
+        <div id="table"></div>
+        <p class="teach" id="teach"></p>
+      </section>
+    </div>
+
+    <p class="foot">
+      Thin public wedge — math mirrors <code>scripts/keep-channel-grader.mjs</code> + <code>keepChannelGrade.ts</code>.
+      Serve: <code>python3 -m http.server 5180 --bind 0.0.0.0 --directory fixtures/tool-hunt/keep-grader</code>
+      · Not forecasting · Fee catalog pause still on.
+    </p>
+  </main>
+
+  <script>
+    /** Keep in sync with scripts/keep-channel-grader.mjs + keepChannelGrade.ts */
+    const MARKETPLACE_IDS = new Set(["doordash", "uber_eats", "grubhub"]);
+    const DEFAULT_SOCIAL_FEE_PCT = 6;
+
+    function grade(values) {
+      const channels = [
+        { id: "dine_in", label: "Dine-in", gmv: values.dinein, fee_pct: values.dinein_fee_pct },
+        { id: "takeout", label: "Takeout / first-party", gmv: values.takeout, fee_pct: values.takeout_fee_pct },
+        { id: "doordash", label: "DoorDash", gmv: values.doordash, fee_pct: values.doordash_fee_pct },
+        { id: "uber_eats", label: "Uber Eats", gmv: values.uber, fee_pct: values.uber_fee_pct },
+        { id: "grubhub", label: "Grubhub", gmv: values.grubhub, fee_pct: values.grubhub_fee_pct },
+        { id: "social_buy_now", label: "Never86 TikTok/IG buy-now", gmv: values.social_buy_now, fee_pct: values.social_fee_pct ?? DEFAULT_SOCIAL_FEE_PCT },
+      ].filter((c) => c.gmv > 0);
+
+      const ranked = channels
+        .map((c) => {
+          const fee = (c.gmv * c.fee_pct) / 100;
+          const keep = c.gmv - fee;
+          return {
+            ...c,
+            fee_dollars: Math.round(fee * 100) / 100,
+            keep_dollars: Math.round(keep * 100) / 100,
+            keep_pct: c.gmv ? Math.round((keep / c.gmv) * 10000) / 100 : 0,
+          };
+        })
+        .sort((a, b) => b.keep_dollars - a.keep_dollars);
+
+      const marketplace = ranked.filter((c) => MARKETPLACE_IDS.has(c.id));
+      const marketplace_fee = marketplace.reduce((s, c) => s + c.fee_dollars, 0);
+      const best = ranked[0] || null;
+      const worst = ranked.length ? [...ranked].sort((a, b) => a.keep_pct - b.keep_pct)[0] : null;
+      let never86_wedge = "channel_rank_review";
+      if (marketplace_fee > 0) never86_wedge = "anti_marketplace_buy_now";
+      else if (best?.id === "social_buy_now") never86_wedge = "love_to_buy_now";
+
+      return {
+        ranked,
+        summary: {
+          best_keep_channel: best?.id || null,
+          worst_keep_pct_channel: worst?.id || null,
+          marketplace_fee_total: Math.round(marketplace_fee * 100) / 100,
+          never86_wedge,
+          teach:
+            "Biggest GMV channel may not be best KEEP. Shop ~6% social buy-now beats Marketplace 15–30%; dual-run marketplaces for discovery only.",
+        },
+      };
+    }
+
+    function money(n) {
+      return n.toLocaleString(undefined, { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+    }
+
+    function readForm(form) {
+      const fd = new FormData(form);
+      const num = (k, fallback = 0) => {
+        const v = Number(fd.get(k));
+        return Number.isFinite(v) ? v : fallback;
+      };
+      return {
+        dinein: num("dinein"),
+        dinein_fee_pct: num("dinein_fee_pct"),
+        takeout: num("takeout"),
+        takeout_fee_pct: num("takeout_fee_pct"),
+        doordash: num("doordash"),
+        doordash_fee_pct: num("doordash_fee_pct", 25),
+        uber: num("uber"),
+        uber_fee_pct: num("uber_fee_pct", 30),
+        grubhub: num("grubhub"),
+        grubhub_fee_pct: num("grubhub_fee_pct", 30),
+        social_buy_now: num("social_buy_now"),
+        social_fee_pct: num("social_fee_pct", DEFAULT_SOCIAL_FEE_PCT),
+      };
+    }
+
+    function render(result) {
+      const { ranked, summary } = result;
+      document.getElementById("wedge").textContent = summary.never86_wedge.replaceAll("_", " ");
+      document.getElementById("teach").textContent = summary.teach +
+        ` Marketplace fee leak: ${money(summary.marketplace_fee_total)}. Best KEEP$: ${summary.best_keep_channel}. Worst KEEP%: ${summary.worst_keep_pct_channel}.`;
+      if (!ranked.length) {
+        document.getElementById("table").innerHTML = "<p>Enter at least one channel GMV.</p>";
+        return;
+      }
+      document.getElementById("table").innerHTML = `
+        <table>
+          <thead><tr><th>Channel</th><th>GMV</th><th>Fee%</th><th>KEEP$</th><th>KEEP%</th></tr></thead>
+          <tbody>
+            ${ranked
+              .map(
+                (r) => `<tr>
+                <td>${r.label}</td>
+                <td>${money(r.gmv)}</td>
+                <td>${r.fee_pct}%</td>
+                <td>${money(r.keep_dollars)}</td>
+                <td>${r.keep_pct}%</td>
+              </tr>`
+              )
+              .join("")}
+          </tbody>
+        </table>`;
+    }
+
+    const form = document.getElementById("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      render(grade(readForm(form)));
+    });
+    document.getElementById("preset").addEventListener("click", () => {
+      form.dinein.value = 16000;
+      form.dinein_fee_pct.value = 0;
+      form.takeout.value = 5500;
+      form.takeout_fee_pct.value = 0;
+      form.doordash.value = 10000;
+      form.doordash_fee_pct.value = 25;
+      form.uber.value = 3800;
+      form.uber_fee_pct.value = 30;
+      form.grubhub.value = 0;
+      form.grubhub_fee_pct.value = 30;
+      form.social_buy_now.value = 3000;
+      form.social_fee_pct.value = 6;
+      render(grade(readForm(form)));
+    });
+    render(grade(readForm(form)));
+  </script>
+</body>
+</html>

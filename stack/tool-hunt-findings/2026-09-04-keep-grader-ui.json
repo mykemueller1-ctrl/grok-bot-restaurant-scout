@@ -1,0 +1,13 @@
+{
+  "finding_id": "keep-grader-ui-wedge-2026-09",
+  "lane": "vertical_gtm",
+  "name": "KEEP channel grader thin public UI",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "fixtures/tool-hunt/keep-grader/index.html \u2014 static Never86 KEEP$ rank UI (Shop ~6% vs Marketplace 15\u201330%); closes vertical-grader-wedge public surface; validate-keep-grader-ui.mjs.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "fixtures/tool-hunt/keep-grader/index.html",
+    "docs/TOOL-HUNT.md"
+  ]
+}

@@ -127,6 +127,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-girl-goat.json
+          test -f fixtures/tool-hunt/keep-grader/index.html
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
           test -f fixtures/tool-hunt/script-draft-rioja-buy-now.json
@@ -141,6 +142,7 @@ jobs:
           test -f scripts/validate-market-coverage.mjs
           test -f scripts/keep-channel-grader.mjs
           test -f scripts/validate-keep-grader-dogfood.mjs
+          test -f scripts/validate-keep-grader-ui.mjs
           test -f scripts/validate-social-shop-dogfood.mjs
           test -f scripts/validate-guest-fee-dogfood.mjs
           test -f scripts/validate-otter-fee-dogfood.mjs
@@ -493,6 +495,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
+          node scripts/validate-keep-grader-ui.mjs | grep -q '"keep_grader_ui": 1'
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 63'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
