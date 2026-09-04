@@ -109,3 +109,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Outbites ($1/order first-party KEEP) and Orderitto (flat-fee zero-commission apps).
 - Re-initiated Instagram Composio: https://connect.composio.dev/link/lk_xiDg14zPJDHd (expires ~10 min).
 - Auth Mem0/Context still BLOCKED.
+
+### 2026-09-04 (KEEP scorer + catalog-sync sandbox)
+
+- Adopted scripts/score-marketplace-keep.mjs for pain stub boosting (no network/auth).
+- Catalog-sync sandbox: fixtures/tool-hunt/catalog-sync-franklin-sandbox.json (await APPROVED).
+- Instagram still not Active; Mem0/Context still blocked.

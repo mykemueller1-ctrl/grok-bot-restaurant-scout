@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+/**
+ * Score marketplace KEEP / commission-quit language in a pain snippet.
+ * Usage: node scripts/score-marketplace-keep.mjs "snippet text…"
+ * Exit 0 always; prints JSON { score, signals[] }. No network. No secrets.
+ */
+const text = process.argv.slice(2).join(" ").trim().toLowerCase();
+if (!text) {
+  console.error(
+    'score-marketplace-keep: pass a snippet, e.g. node scripts/score-marketplace-keep.mjs "rank channels by what you KEEP"'
+  );
+  process.exit(2);
+}
+
+const rules = [
+  { re: /\bkeep\b/, signal: "keep_language", w: 25 },
+  { re: /commission/, signal: "commission", w: 20 },
+  { re: /\b(15|20|25|30)\s*%|\b\d{2}\s*%\s*commission/, signal: "commission_pct", w: 20 },
+  { re: /doordash|uber\s*eats|grubhub|marketplace/, signal: "marketplace_named", w: 15 },
+  { re: /quit|quitt?ing|ditch|leaving|drop(ped)?/, signal: "quit_switch", w: 20 },
+  { re: /fee|fees|rent|cut from/, signal: "fee_rent", w: 15 },
+  { re: /first[\s-]?party|direct order|own(ed)? (the )?customer/, signal: "first_party", w: 15 },
+  { re: /restaurant owner|operator|gm\b/, signal: "operator_voice", w: 10 },
+];
+
+const signals = [];
+let score = 0;
+for (const r of rules) {
+  if (r.re.test(text)) {
+    signals.push(r.signal);
+    score += r.w;
+  }
+}
+score = Math.min(100, score);
+
+console.log(JSON.stringify({ score, signals, never86_wedge: score >= 50 ? "anti_marketplace_buy_now" : "weak_or_consumer_only" }));
+process.exit(0);

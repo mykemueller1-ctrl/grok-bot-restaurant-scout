@@ -1,0 +1,30 @@
+{
+  "sync_id": "catalog-sync-franklin-sandbox-2026-09-04",
+  "status": "SANDBOX_PAYLOAD_ONLY",
+  "purpose": "Dogfood catalog-sync from approved-path ContentDraft — never posts; payload ready for commerce-engine POST /products/sync when Myke APPROVES.",
+  "from_draft": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
+  "product": {
+    "title": "Franklin Barbecue — Smoke-Day Brisket Pack",
+    "description": "Cult Austin BBQ for the feed that already waits in line. Shop the pack the kitchen wants you to buy — Never86 buy-now, not marketplace delivery rent.",
+    "images": [],
+    "price_cents": null,
+    "currency": "USD",
+    "category": "prepared_food",
+    "fulfillment": "merchant_pickup_or_ship_tbd",
+    "brand": "Franklin Barbecue",
+    "market": "Austin, TX",
+    "cta": "tap the bag / shop in bio",
+    "anti_rent": true
+  },
+  "commerce_engine": {
+    "endpoint": "POST /products/sync",
+    "mcp": "mcp/commerce-engine.json",
+    "note": "Call only after ContentDraft status APPROVED + approvals MCP"
+  },
+  "never": [
+    "Do not publish to TikTok Shop without APPROVED",
+    "Do not invent price — fill from owner/teach",
+    "Not a forecasting SKU"
+  ],
+  "researched_at": "2026-09-04"
+}
