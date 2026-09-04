@@ -1,0 +1,54 @@
+{
+  "name": "Beer / Pour Cost from Distributor SKUs Sub-Agent",
+  "title": "Never86 report sub \u2014 Finance / P&L / Prime Cost / Beer / Pour Cost from Distributor SKUs",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "domain_id": "finance",
+  "report_id": "beer-cost",
+  "parent": "finance",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Beer / Pour Cost from Distributor SKUs report (Beer distributor invoice SKUs (keg/case) + pour size \u2192 beer cost %). Ingests json, csv, xlsx. Signals: vendor_sku, upc, keg_size, case_cost, pour_oz, beer_cost_pct, deposit. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Beer distributor invoice SKUs (keg/case) + pour size \u2192 beer cost %",
+  "formats": [
+    "json",
+    "csv",
+    "xlsx"
+  ],
+  "signals": [
+    "vendor_sku",
+    "upc",
+    "keg_size",
+    "case_cost",
+    "pour_oz",
+    "beer_cost_pct",
+    "deposit"
+  ],
+  "file_globs": [
+    "*beer*cost*",
+    "*Humes*",
+    "*FT*Dodge*Dist*",
+    "*Confluence*",
+    "*pour*"
+  ],
+  "schema": "schemas/vendor-sku-line.json",
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label",
+    "invoice-photo-ocr",
+    "sku-recipe-cost"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true,
+  "example_packs": [
+    "ctap-physical/sku-invoice-pack-2026-08"
+  ]
+}

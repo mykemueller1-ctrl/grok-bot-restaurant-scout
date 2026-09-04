@@ -7,10 +7,10 @@
   "owner": "mykemueller1-ctrl",
   "teacher": "teacher.json",
   "parent_count": 5,
-  "sub_count": 19,
+  "sub_count": 21,
   "icp_sub_count": 3,
   "venue_scout_count": 3,
-  "agent_count": 31,
+  "agent_count": 33,
   "shared_skills": [
     "report-ingest",
     "report-route",
@@ -49,7 +49,7 @@
       "id": "finance",
       "file": "parents/finance.json",
       "label": "Finance / P&L / Prime Cost",
-      "sub_count": 3
+      "sub_count": 5
     }
   ],
   "subs": [
@@ -239,6 +239,28 @@
       "formats": [
         "json",
         "csv"
+      ]
+    },
+    {
+      "id": "recipe-cost",
+      "file": "subs/recipe-cost.json",
+      "parent": "finance",
+      "label": "Food Recipe Cost from Vendor SKUs",
+      "formats": [
+        "json",
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "beer-cost",
+      "file": "subs/beer-cost.json",
+      "parent": "finance",
+      "label": "Beer / Pour Cost from Distributor SKUs",
+      "formats": [
+        "json",
+        "csv",
+        "xlsx"
       ]
     },
     {

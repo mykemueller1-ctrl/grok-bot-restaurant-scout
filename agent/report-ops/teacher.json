@@ -28,6 +28,8 @@
     "vendor-invoice",
     "daily-pnl",
     "prime-cost",
+    "recipe-cost",
+    "beer-cost",
     "vendor-spend"
   ],
   "label_enum": [
