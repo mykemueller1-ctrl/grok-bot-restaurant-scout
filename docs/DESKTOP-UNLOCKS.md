@@ -28,6 +28,7 @@ Until keys land, Composio `COMPOSIO_SEARCH_WEB` stays the Active research fallba
 ## 3. Cursor Agents
 
 - Sync Skills for Cloud Agents = on  
+  Checklist: `docs/CURSOR-SYNC-SKILLS.md` (`node scripts/print-sync-skills-checklist.mjs`)  
 - Automation + memories: https://cursor.com/automations  
   Paste pack: `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` (`node scripts/print-tool-hunt-automation.mjs`)
 

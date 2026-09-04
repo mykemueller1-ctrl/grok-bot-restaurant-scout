@@ -4,16 +4,16 @@
   "name": "Instagram Composio reconnect for morning-scan UGC",
   "vendor_or_project": "Composio Instagram",
   "urls": [
-    "https://connect.composio.dev/link/lk_zQNrqeYwtqvP"
+    "https://connect.composio.dev/link/lk_uWBIp4ZMj9uk"
   ],
   "what_it_does": "Instagram Business/Creator read for love signals / morning-scan UGC (not publish until approved).",
   "how_competitors_use_it": "n/a",
   "what_we_use_today": "Yelp love calibration Active; IG still no Active connection.",
-  "gap": "Connection re-initiated 2026-09-04 (fresh link); Myke must open Connect Instagram for morning-scan UGC love proofs.",
+  "gap": "Fresh Instagram Composio link 2026-09-04; complete OAuth for morning-scan UGC love proofs.",
   "pivot_speed": "hours",
   "verdict": "needs_auth",
   "priority": 1,
-  "summary": "Fresh Instagram Composio OAuth link \u2014 complete for love\u2192buy-now UGC proofs (fee catalog paused).",
-  "operator_ask": "Open https://connect.composio.dev/link/lk_zQNrqeYwtqvP (expires ~10 min) then reply in thread",
+  "summary": "Fresh Instagram Composio OAuth \u2014 love\u2192buy-now UGC path (fee catalog paused).",
+  "operator_ask": "Open https://connect.composio.dev/link/lk_uWBIp4ZMj9uk (expires ~10 min) then reply in thread",
   "researched_at": "2026-09-04"
 }

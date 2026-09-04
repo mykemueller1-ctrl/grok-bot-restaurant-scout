@@ -1,0 +1,13 @@
+{
+  "finding_id": "cursor-sync-skills-pack-2026-09",
+  "lane": "skills_knowledge",
+  "name": "Cursor Sync Skills pack for Cloud Agents",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "docs/CURSOR-SYNC-SKILLS.md + scripts/print-sync-skills-checklist.mjs inventory hunt-critical skills; operator turns Sync Skills on in desktop.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "docs/CURSOR-SYNC-SKILLS.md"
+  ],
+  "operator_ask": "Desktop Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents = On, then reply skills sync on"
+}

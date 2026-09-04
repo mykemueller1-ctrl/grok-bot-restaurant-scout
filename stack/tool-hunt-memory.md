@@ -634,3 +634,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` + `scripts/print-tool-hunt-automation.mjs` (paste-ready weekly Automation; fee pause in prompt).
 - Fresh Instagram Composio link for love→buy-now UGC (expires ~10 min).
 - Still blocked on MEM0_API_KEY + CONTEXT_DEV_API_KEY for unlock READY.
+
+### 2026-09-04 (Sync Skills pack)
+
+- Added `docs/CURSOR-SYNC-SKILLS.md` + `scripts/print-sync-skills-checklist.mjs` (hunt-critical skill inventory + desktop Sync Skills ask).
+- Fresh Instagram Composio OAuth link for UGC love proofs.
+- Still blocked: MEM0_API_KEY + CONTEXT_DEV_API_KEY.

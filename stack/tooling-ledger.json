@@ -1,5 +1,5 @@
 {
-  "version": "1.92.3",
+  "version": "1.92.4",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -138,7 +138,8 @@
     "chownow_discovery_fee_dogfood_gate": "scripts/validate-chownow-discovery-fee-dogfood.mjs (ChowNow Discovery Network 15.5% marketing fee → SalesLead ≥5 markets)",
     "addmi_fee_dogfood_gate": "scripts/validate-addmi-fee-dogfood.mjs (Addmi OO 38¢ guest fee → SalesLead ≥5 markets)",
     "tenvito_fee_dogfood_gate": "scripts/validate-tenvito-fee-dogfood.mjs (Tenvito Open 3.9% / Service 2.9% per order → SalesLead ≥5 markets; EU thematic)",
-    "automation_pack": "docs/CURSOR-AUTOMATION-TOOL-HUNT.md + scripts/print-tool-hunt-automation.mjs"
+    "automation_pack": "docs/CURSOR-AUTOMATION-TOOL-HUNT.md + scripts/print-tool-hunt-automation.mjs",
+    "sync_skills_pack": "docs/CURSOR-SYNC-SKILLS.md + scripts/print-sync-skills-checklist.mjs"
   },
   "competitors": [
     {
@@ -1159,6 +1160,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Cursor Sync Skills pack for Cloud Agents",
+      "lane": "skills_knowledge",
+      "why": "Paste-ready docs/CURSOR-SYNC-SKILLS.md + print-sync-skills-checklist.mjs; hunt-critical skills inventoried for desktop Sync Skills toggle",
+      "verdict": "adopt"
+    },
     {
       "item": "Cursor Automation paste pack for tool-hunt-weekly",
       "lane": "cursor_agents",
@@ -2232,7 +2239,7 @@
     {
       "id": "skills-sync",
       "gap": "Confirm Sync Skills for Cloud Agents",
-      "action": "Desktop Settings → Agents → Sync Skills for Cloud Agents = on",
+      "action": "Desktop Settings → Agents → Sync Skills for Cloud Agents = On. Verify: node scripts/print-sync-skills-checklist.mjs. Reply: skills sync on",
       "priority": 2
     },
     {
@@ -2244,7 +2251,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_zQNrqeYwtqvP (expires ~10 min) → Active Instagram Business/Creator; then morning-scan UGC proofs",
+      "action": "Open https://connect.composio.dev/link/lk_uWBIp4ZMj9uk (expires ~10 min) → Active Instagram; then morning-scan UGC proofs",
       "priority": 1
     },
     {
@@ -2279,5 +2286,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T01:45:00Z"
+  "updated_at": "2026-09-05T01:55:00Z"
 }
