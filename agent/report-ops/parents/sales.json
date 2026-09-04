@@ -8,14 +8,16 @@
   "domain_id": "sales",
   "version": "1.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Parent agent for Sales / Product Mix reports. POS menu sales \u2192 product mix all the way down to SKUs. Spawns/routes sub-agents: item-selection, menu-sales, sales-category, z-report, weekly-sales-pack. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
+  "description": "Parent agent for Sales / Product Mix reports. POS menu sales \u2192 product mix all the way down to SKUs. Spawns/routes sub-agents: item-selection, menu-sales, sales-category, z-report, weekly-sales-pack, sales-summary, multi-unit-sales-labor. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
   "job_to_be_done": "POS menu sales \u2192 product mix all the way down to SKUs",
   "sub_agents": [
     "item-selection",
     "menu-sales",
     "sales-category",
     "z-report",
-    "weekly-sales-pack"
+    "weekly-sales-pack",
+    "sales-summary",
+    "multi-unit-sales-labor"
   ],
   "skills": [
     "report-ingest",

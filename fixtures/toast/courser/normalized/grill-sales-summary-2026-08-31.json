@@ -1,0 +1,395 @@
+{
+  "report_id": "sales-summary",
+  "venue_id": "grill",
+  "venue_label": "The New American Grill",
+  "date": "2026-08-31",
+  "source": "SalesSummary_2026-08-31_2026-08-31.xlsx",
+  "revenue": {
+    "Net sales": 3408.15,
+    "Gratuity": 0.0,
+    "Tax amount": 313.35,
+    "Fundraising Contributions": "",
+    "Fundraising Contribution Refunds": "",
+    "Cash rounding": "",
+    "Tips": 560.38,
+    "Deferred (gift cards)": "",
+    "Deferred (house accounts)": "",
+    "Deferred (other)": "",
+    "deferredTaxAmount": 0.0,
+    "Paid in total": 0.0,
+    "Total": 4281.88
+  },
+  "net_sales": {
+    "Gross sales": 3570.5,
+    "Sales discounts": -162.35,
+    "Sales refunds": 0.0,
+    "Net sales": 3408.15
+  },
+  "tips": {
+    "Tips collected": 560.38,
+    "Tips refunded": 0.0,
+    "Total tips": 560.38
+  },
+  "service_modes": [
+    {
+      "Service mode": "Quick Service",
+      "Net sales": 555.25,
+      "Total guests": 21.0,
+      "Avg/Guest": 26.44,
+      "Total payments": 20.0,
+      "Avg/Payment": 30.28,
+      "Total orders": 21.0,
+      "Avg/Order": 26.44,
+      "Turn time (minutes)": 48.66
+    },
+    {
+      "Service mode": "Table Service",
+      "Net sales": 2852.9,
+      "Total guests": 98.0,
+      "Avg/Guest": 29.11,
+      "Total payments": 52.0,
+      "Avg/Payment": 59.92,
+      "Total orders": 44.0,
+      "Avg/Order": 64.84,
+      "Turn time (minutes)": 39.09
+    },
+    {
+      "Service mode": "Total",
+      "Net sales": 3408.15,
+      "Total guests": 119.0,
+      "Avg/Guest": 28.64,
+      "Total payments": 72.0,
+      "Avg/Payment": 51.69,
+      "Total orders": 65.0,
+      "Avg/Order": 52.43,
+      "Turn time (minutes)": 42.18
+    }
+  ],
+  "payments": [
+    {
+      "Payment type": "Cash",
+      "Payment sub type": "",
+      "Count": 12.0,
+      "Amount": 418.49,
+      "Tips": 0.0,
+      "Grat": 0.0,
+      "Tax amount": 35.49,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 0.0,
+      "Total": 418.49,
+      "Tips/Grat %": 0.0
+    },
+    {
+      "Payment type": "Credit/debit",
+      "Payment sub type": "",
+      "Count": 57.0,
+      "Amount": 3175.04,
+      "Tips": 550.38,
+      "Grat": 0.0,
+      "Tax amount": 267.29,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 550.38,
+      "Total": 3725.42,
+      "Tips/Grat %": 18.2
+    },
+    {
+      "Payment type": "Credit/debit",
+      "Payment sub type": "AMEX",
+      "Count": 7.0,
+      "Amount": 544.09,
+      "Tips": 103.0,
+      "Grat": 0.0,
+      "Tax amount": 46.09,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 103.0,
+      "Total": 647.09,
+      "Tips/Grat %": 20.7
+    },
+    {
+      "Payment type": "Credit/debit",
+      "Payment sub type": "DISCOVER",
+      "Count": 2.0,
+      "Amount": 103.99,
+      "Tips": 0.0,
+      "Grat": 0.0,
+      "Tax amount": 8.59,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 0.0,
+      "Total": 103.99,
+      "Tips/Grat %": 0.0
+    },
+    {
+      "Payment type": "Credit/debit",
+      "Payment sub type": "MASTERCARD",
+      "Count": 18.0,
+      "Amount": 933.02,
+      "Tips": 178.56,
+      "Grat": 0.0,
+      "Tax amount": 78.92,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 178.56,
+      "Total": 1111.58,
+      "Tips/Grat %": 20.0
+    },
+    {
+      "Payment type": "Credit/debit",
+      "Payment sub type": "VISA",
+      "Count": 30.0,
+      "Amount": 1593.94,
+      "Tips": 268.82,
+      "Grat": 0.0,
+      "Tax amount": 133.69,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 268.82,
+      "Total": 1862.76,
+      "Tips/Grat %": 17.7
+    },
+    {
+      "Payment type": "Gift Card",
+      "Payment sub type": "",
+      "Count": 3.0,
+      "Amount": 127.97,
+      "Tips": 10.0,
+      "Grat": 0.0,
+      "Tax amount": 10.57,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 10.0,
+      "Total": 137.97,
+      "Tips/Grat %": 8.5
+    },
+    {
+      "Payment type": "Other",
+      "Payment sub type": "",
+      "Count": 0.0,
+      "Amount": 0.0,
+      "Tips": 0.0,
+      "Grat": 0.0,
+      "Tax amount": 0.0,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 0.0,
+      "Total": 0.0,
+      "Tips/Grat %": ""
+    },
+    {
+      "Payment type": "Total",
+      "Payment sub type": "",
+      "Count": 72.0,
+      "Amount": 3721.5,
+      "Tips": 560.38,
+      "Grat": 0.0,
+      "Tax amount": 313.35,
+      "Refunds": 0.0,
+      "Tip refunds": 0.0,
+      "Legacy tips": 560.38,
+      "Total": 4281.88,
+      "Tips/Grat %": 15.9
+    }
+  ],
+  "sales_categories": [
+    {
+      "Sales category": "Food",
+      "Items": 194.0,
+      "Net sales": 2726.65,
+      "Discount amount": 162.35,
+      "Refund amount": 0.0,
+      "Gross sales": 2889.0,
+      "Tax amount": 245.4
+    },
+    {
+      "Sales category": "Liquor",
+      "Items": 69.0,
+      "Net sales": 661.5,
+      "Discount amount": 0.0,
+      "Refund amount": 0.0,
+      "Gross sales": 661.5,
+      "Tax amount": 66.15
+    },
+    {
+      "Sales category": "No Sales Category Assigned",
+      "Items": 2.0,
+      "Net sales": 20.0,
+      "Discount amount": 0.0,
+      "Refund amount": 0.0,
+      "Gross sales": 20.0,
+      "Tax amount": 1.8
+    },
+    {
+      "Sales category": "Total",
+      "Items": 265.0,
+      "Net sales": 3408.15,
+      "Discount amount": 162.35,
+      "Refund amount": 0.0,
+      "Gross sales": 3570.5,
+      "Tax amount": 313.35
+    }
+  ],
+  "revenue_centers": [
+    {
+      "Revenue center": "Bar",
+      "Items": 118.0,
+      "Net sales": 1539.75,
+      "Discount amount": 100.75,
+      "Refund amount": 0.0,
+      "Gross sales": 1640.5,
+      "Tax amount": 142.79
+    },
+    {
+      "Revenue center": "Dining Room",
+      "Items": 129.0,
+      "Net sales": 1666.4,
+      "Discount amount": 61.6,
+      "Refund amount": 0.0,
+      "Gross sales": 1728.0,
+      "Tax amount": 152.12
+    },
+    {
+      "Revenue center": "Outside",
+      "Items": 18.0,
+      "Net sales": 202.0,
+      "Discount amount": 0.0,
+      "Refund amount": 0.0,
+      "Gross sales": 202.0,
+      "Tax amount": 18.44
+    },
+    {
+      "Revenue center": "Total",
+      "Items": 265.0,
+      "Net sales": 3408.15,
+      "Discount amount": 162.35,
+      "Refund amount": 0.0,
+      "Gross sales": 3570.5,
+      "Tax amount": 313.35
+    }
+  ],
+  "dining_options": [
+    {
+      "Dining option": "Dine In",
+      "Orders": 50.0,
+      "Net sales": 2882.9,
+      "Discount amount": 129.6,
+      "Gross sales": 3012.5,
+      "Tax amount": 265.67
+    },
+    {
+      "Dining option": "Take Out",
+      "Orders": 15.0,
+      "Net sales": 525.25,
+      "Discount amount": 32.75,
+      "Gross sales": 558.0,
+      "Tax amount": 47.68
+    },
+    {
+      "Dining option": "Total",
+      "Orders": 65.0,
+      "Net sales": 3408.15,
+      "Discount amount": 162.35,
+      "Gross sales": 3570.5,
+      "Tax amount": 313.35
+    }
+  ],
+  "dayparts": [
+    {
+      "Service / day part": "Dinner",
+      "Orders": 46.0,
+      "Net sales": 2615.25,
+      "Discount amount": 111.75,
+      "Refund amount": 0.0,
+      "Gross sales": 2727.0,
+      "Tax amount": 241.28
+    },
+    {
+      "Service / day part": "Lunch",
+      "Orders": 19.0,
+      "Net sales": 792.9,
+      "Discount amount": 50.6,
+      "Refund amount": 0.0,
+      "Gross sales": 843.5,
+      "Tax amount": 72.07
+    },
+    {
+      "Service / day part": "Total",
+      "Orders": 65.0,
+      "Net sales": 3408.15,
+      "Discount amount": 162.35,
+      "Refund amount": 0.0,
+      "Gross sales": 3570.5,
+      "Tax amount": 313.35
+    }
+  ],
+  "voids": {
+    "Void amount": 31.0,
+    "Void order count": 2.0,
+    "Void item count": 2.0,
+    "Void amount %": 0.9
+  },
+  "by_hour": [
+    {
+      "Hour of day": 11.0,
+      "Net sales": 80.1,
+      "Total orders": 3.0,
+      "Total guests": 5.0
+    },
+    {
+      "Hour of day": 12.0,
+      "Net sales": 250.0,
+      "Total orders": 5.0,
+      "Total guests": 11.0
+    },
+    {
+      "Hour of day": 13.0,
+      "Net sales": 132.0,
+      "Total orders": 2.0,
+      "Total guests": 7.0
+    },
+    {
+      "Hour of day": 14.0,
+      "Net sales": 170.0,
+      "Total orders": 4.0,
+      "Total guests": 7.0
+    },
+    {
+      "Hour of day": 15.0,
+      "Net sales": 160.8,
+      "Total orders": 5.0,
+      "Total guests": 8.0
+    },
+    {
+      "Hour of day": 16.0,
+      "Net sales": 184.4,
+      "Total orders": 6.0,
+      "Total guests": 10.0
+    },
+    {
+      "Hour of day": 17.0,
+      "Net sales": 695.0,
+      "Total orders": 12.0,
+      "Total guests": 21.0
+    },
+    {
+      "Hour of day": 18.0,
+      "Net sales": 1302.9,
+      "Total orders": 19.0,
+      "Total guests": 36.0
+    },
+    {
+      "Hour of day": 19.0,
+      "Net sales": 286.4,
+      "Total orders": 5.0,
+      "Total guests": 9.0
+    },
+    {
+      "Hour of day": 20.0,
+      "Net sales": 146.55,
+      "Total orders": 4.0,
+      "Total guests": 5.0
+    }
+  ]
+}

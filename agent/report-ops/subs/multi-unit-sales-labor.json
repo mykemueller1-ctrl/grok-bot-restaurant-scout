@@ -1,0 +1,44 @@
+{
+  "name": "Multi-Unit Sales Labor Report (MP) Sub-Agent",
+  "title": "Never86 report sub \u2014 Sales / Product Mix / Multi-Unit Sales Labor Report (MP)",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-report-ops",
+  "domain_id": "sales",
+  "report_id": "multi-unit-sales-labor",
+  "parent": "sales",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Multi-Unit Sales Labor Report (MP) report (Sales Labor Report (MP) v5 \u2014 Daily / WTD / daypart boards). Ingests xlsx. Signals: location, cy_sales, py_sales, cy_checks, yoy, region_rollups. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Sales Labor Report (MP) v5 \u2014 Daily / WTD / daypart boards",
+  "formats": [
+    "xlsx"
+  ],
+  "signals": [
+    "location",
+    "cy_sales",
+    "py_sales",
+    "cy_checks",
+    "yoy",
+    "region_rollups"
+  ],
+  "file_globs": [
+    "*Sales Labor Report*",
+    "*Sales_Labor_Report*",
+    "*MP*v5*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

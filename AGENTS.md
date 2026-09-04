@@ -27,6 +27,9 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 # Swarm still 238
 python3 agent/pain-shoppers/build_swarm.py
 
+# Report-ops parents + teacher + subs
+python3 agent/report-ops/build_report_swarm.py
+
 # API typecheck/build (needs DATABASE_URL for prisma generate in some envs)
 cd services/pain-leads-api && npm install && npm run build
 

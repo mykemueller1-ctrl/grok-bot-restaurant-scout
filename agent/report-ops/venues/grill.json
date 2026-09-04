@@ -1,6 +1,6 @@
 {
-  "name": "The Grill Report Scout",
-  "title": "Never86 venue scout \u2014 The Grill report packs",
+  "name": "The New American Grill Report Scout",
+  "title": "Never86 venue scout \u2014 The New American Grill report packs",
   "role": "venue_scout",
   "shape": "fox",
   "color": "#457B9D",
@@ -8,13 +8,14 @@
   "venue_id": "grill",
   "version": "1.0.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for The Grill. Source: Mike Mueller Gmail \u2014 Kristen attachments. Status: awaiting_gmail_auth.",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for The New American Grill. Source: Drive Courser folder + Kristen packs. Status: courser_indexed.",
   "aliases": [
     "Grill",
-    "the grill"
+    "the grill",
+    "The New American Grill"
   ],
-  "holy_grail_source": "Mike Mueller Gmail \u2014 Kristen attachments",
-  "status": "awaiting_gmail_auth",
+  "holy_grail_source": "Drive Courser folder + Kristen packs",
+  "status": "courser_indexed",
   "skills": [
     "report-ingest",
     "report-route",

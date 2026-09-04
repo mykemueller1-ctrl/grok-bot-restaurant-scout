@@ -7,9 +7,9 @@
   "owner": "mykemueller1-ctrl",
   "teacher": "teacher.json",
   "parent_count": 3,
-  "sub_count": 11,
+  "sub_count": 13,
   "venue_scout_count": 3,
-  "agent_count": 18,
+  "agent_count": 20,
   "shared_skills": [
     "report-ingest",
     "report-route",
@@ -29,7 +29,7 @@
       "id": "sales",
       "file": "parents/sales.json",
       "label": "Sales / Product Mix",
-      "sub_count": 5
+      "sub_count": 7
     },
     {
       "id": "inventory",
@@ -124,6 +124,25 @@
       ]
     },
     {
+      "id": "sales-summary",
+      "file": "subs/sales-summary.json",
+      "parent": "sales",
+      "label": "Sales Summary (Toast)",
+      "formats": [
+        "xlsx",
+        "csv"
+      ]
+    },
+    {
+      "id": "multi-unit-sales-labor",
+      "file": "subs/multi-unit-sales-labor.json",
+      "parent": "sales",
+      "label": "Multi-Unit Sales Labor Report (MP)",
+      "formats": [
+        "xlsx"
+      ]
+    },
+    {
       "id": "sku-depletion",
       "file": "subs/sku-depletion.json",
       "parent": "inventory",
@@ -159,14 +178,14 @@
     {
       "id": "grill",
       "file": "venues/grill.json",
-      "label": "The Grill",
-      "status": "awaiting_gmail_auth"
+      "label": "The New American Grill",
+      "status": "courser_indexed"
     },
     {
       "id": "taco-bamba",
       "file": "venues/taco-bamba.json",
       "label": "Taco Bamba",
-      "status": "awaiting_gmail_auth"
+      "status": "courser_indexed"
     },
     {
       "id": "community-pizza",

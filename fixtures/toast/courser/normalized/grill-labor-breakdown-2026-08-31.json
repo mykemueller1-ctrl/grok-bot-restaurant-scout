@@ -1,0 +1,313 @@
+{
+  "report_id": "labor-summary",
+  "venue_id": "grill",
+  "venue_label": "The New American Grill",
+  "date": "2026-08-31",
+  "source": "LaborBreakDown_2026-08-31_2026-08-31.xlsx",
+  "summary": {
+    "Net sales": 3408.15,
+    "Gross sales": 3570.5,
+    "hourOfDay": "",
+    "Labor cost": 1211.85,
+    "Labor % (net)": 35.56,
+    "SPLH (net)": 35.17,
+    "SLPH (gross)": 36.84,
+    "Labor % (gross)": 33.94
+  },
+  "by_job": {
+    "Server": {
+      "hours": 22.862,
+      "cost": 182.9,
+      "people": 3
+    },
+    "Host": {
+      "hours": 6.868,
+      "cost": 123.6,
+      "people": 2
+    },
+    "AM Server": {
+      "hours": 11.0,
+      "cost": 88.0,
+      "people": 2
+    },
+    "Cook": {
+      "hours": 90.445,
+      "cost": 1501.68,
+      "people": 6
+    },
+    "PM Bartender": {
+      "hours": 34.386,
+      "cost": 411.19,
+      "people": 3
+    },
+    "Expo": {
+      "hours": 6.842,
+      "cost": 116.32,
+      "people": 2
+    },
+    "Chef": {
+      "hours": 21.418,
+      "cost": 0.0,
+      "people": 2
+    },
+    "(none)": {
+      "hours": 96.911,
+      "cost": 1211.85,
+      "people": 1
+    }
+  },
+  "people": [
+    {
+      "employee": "Team Member 01",
+      "job_title": "Server",
+      "regular_hours": 6.461,
+      "overtime_hours": 0.0,
+      "total_hours": 6.461,
+      "regular_cost": 51.69,
+      "overtime_cost": 0.0,
+      "total_cost": 51.69,
+      "labor_pct_net": 1.52,
+      "labor_pct_gross": 1.45
+    },
+    {
+      "employee": "Team Member 02",
+      "job_title": "Server",
+      "regular_hours": 4.97,
+      "overtime_hours": 0.0,
+      "total_hours": 4.97,
+      "regular_cost": 39.76,
+      "overtime_cost": 0.0,
+      "total_cost": 39.76,
+      "labor_pct_net": 1.17,
+      "labor_pct_gross": 1.11
+    },
+    {
+      "employee": "Team Member 03",
+      "job_title": "Host",
+      "regular_hours": 3.434,
+      "overtime_hours": 0.0,
+      "total_hours": 3.434,
+      "regular_cost": 61.8,
+      "overtime_cost": 0.0,
+      "total_cost": 61.8,
+      "labor_pct_net": 1.81,
+      "labor_pct_gross": 1.73
+    },
+    {
+      "employee": "Team Member 04",
+      "job_title": "AM Server",
+      "regular_hours": 5.5,
+      "overtime_hours": 0.0,
+      "total_hours": 5.5,
+      "regular_cost": 44.0,
+      "overtime_cost": 0.0,
+      "total_cost": 44.0,
+      "labor_pct_net": 1.29,
+      "labor_pct_gross": 1.23
+    },
+    {
+      "employee": "Team Member 05",
+      "job_title": "Cook",
+      "regular_hours": 17.422,
+      "overtime_hours": 0.0,
+      "total_hours": 17.422,
+      "regular_cost": 0.0,
+      "overtime_cost": 0.0,
+      "total_cost": 0.0,
+      "labor_pct_net": 0.0,
+      "labor_pct_gross": 0.0
+    },
+    {
+      "employee": "Team Member 06",
+      "job_title": "Cook",
+      "regular_hours": 7.285,
+      "overtime_hours": 0.0,
+      "total_hours": 7.285,
+      "regular_cost": 160.28,
+      "overtime_cost": 0.0,
+      "total_cost": 160.28,
+      "labor_pct_net": 4.7,
+      "labor_pct_gross": 4.49
+    },
+    {
+      "employee": "Team Member 07",
+      "job_title": "Cook",
+      "regular_hours": 4.982,
+      "overtime_hours": 0.0,
+      "total_hours": 4.982,
+      "regular_cost": 124.56,
+      "overtime_cost": 0.0,
+      "total_cost": 124.56,
+      "labor_pct_net": 3.65,
+      "labor_pct_gross": 3.49
+    },
+    {
+      "employee": "Team Member 08",
+      "job_title": "Cook",
+      "regular_hours": 6.117,
+      "overtime_hours": 0.0,
+      "total_hours": 6.117,
+      "regular_cost": 183.52,
+      "overtime_cost": 0.0,
+      "total_cost": 183.52,
+      "labor_pct_net": 5.38,
+      "labor_pct_gross": 5.14
+    },
+    {
+      "employee": "Team Member 09",
+      "job_title": "Cook",
+      "regular_hours": 9.416,
+      "overtime_hours": 0.0,
+      "total_hours": 9.416,
+      "regular_cost": 282.48,
+      "overtime_cost": 0.0,
+      "total_cost": 282.48,
+      "labor_pct_net": 8.29,
+      "labor_pct_gross": 7.91
+    },
+    {
+      "employee": "Team Member 10",
+      "job_title": "PM Bartender",
+      "regular_hours": 5.851,
+      "overtime_hours": 0.0,
+      "total_hours": 5.851,
+      "regular_cost": 46.81,
+      "overtime_cost": 0.0,
+      "total_cost": 46.81,
+      "labor_pct_net": 1.37,
+      "labor_pct_gross": 1.31
+    },
+    {
+      "employee": "Team Member 11",
+      "job_title": "PM Bartender",
+      "regular_hours": 11.342,
+      "overtime_hours": 0.0,
+      "total_hours": 11.342,
+      "regular_cost": 158.79,
+      "overtime_cost": 0.0,
+      "total_cost": 158.79,
+      "labor_pct_net": 4.66,
+      "labor_pct_gross": 4.45
+    },
+    {
+      "employee": "Team Member 12",
+      "job_title": "Expo",
+      "regular_hours": 3.421,
+      "overtime_hours": 0.0,
+      "total_hours": 3.421,
+      "regular_cost": 58.16,
+      "overtime_cost": 0.0,
+      "total_cost": 58.16,
+      "labor_pct_net": 1.71,
+      "labor_pct_gross": 1.63
+    },
+    {
+      "employee": "Team Member 13",
+      "job_title": "Chef",
+      "regular_hours": 10.709,
+      "overtime_hours": 0.0,
+      "total_hours": 10.709,
+      "regular_cost": 0.0,
+      "overtime_cost": 0.0,
+      "total_cost": 0.0,
+      "labor_pct_net": 0.0,
+      "labor_pct_gross": 0.0
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "Server",
+      "regular_hours": 11.431,
+      "overtime_hours": 0.0,
+      "total_hours": 11.431,
+      "regular_cost": 91.45,
+      "overtime_cost": 0.0,
+      "total_cost": 91.45,
+      "labor_pct_net": 2.68,
+      "labor_pct_gross": 2.56
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "Host",
+      "regular_hours": 3.434,
+      "overtime_hours": 0.0,
+      "total_hours": 3.434,
+      "regular_cost": 61.8,
+      "overtime_cost": 0.0,
+      "total_cost": 61.8,
+      "labor_pct_net": 1.81,
+      "labor_pct_gross": 1.73
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "AM Server",
+      "regular_hours": 5.5,
+      "overtime_hours": 0.0,
+      "total_hours": 5.5,
+      "regular_cost": 44.0,
+      "overtime_cost": 0.0,
+      "total_cost": 44.0,
+      "labor_pct_net": 1.29,
+      "labor_pct_gross": 1.23
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "Cook",
+      "regular_hours": 45.223,
+      "overtime_hours": 0.0,
+      "total_hours": 45.223,
+      "regular_cost": 750.84,
+      "overtime_cost": 0.0,
+      "total_cost": 750.84,
+      "labor_pct_net": 22.03,
+      "labor_pct_gross": 21.03
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "PM Bartender",
+      "regular_hours": 17.193,
+      "overtime_hours": 0.0,
+      "total_hours": 17.193,
+      "regular_cost": 205.59,
+      "overtime_cost": 0.0,
+      "total_cost": 205.59,
+      "labor_pct_net": 6.03,
+      "labor_pct_gross": 5.76
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "Expo",
+      "regular_hours": 3.421,
+      "overtime_hours": 0.0,
+      "total_hours": 3.421,
+      "regular_cost": 58.16,
+      "overtime_cost": 0.0,
+      "total_cost": 58.16,
+      "labor_pct_net": 1.71,
+      "labor_pct_gross": 1.63
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "Chef",
+      "regular_hours": 10.709,
+      "overtime_hours": 0.0,
+      "total_hours": 10.709,
+      "regular_cost": 0.0,
+      "overtime_cost": 0.0,
+      "total_cost": 0.0,
+      "labor_pct_net": 0.0,
+      "labor_pct_gross": 0.0
+    },
+    {
+      "employee": "Team Member 14",
+      "job_title": "",
+      "regular_hours": 96.911,
+      "overtime_hours": 0.0,
+      "total_hours": 96.911,
+      "regular_cost": 1211.85,
+      "overtime_cost": 0.0,
+      "total_cost": 1211.85,
+      "labor_pct_net": 35.56,
+      "labor_pct_gross": 33.94
+    }
+  ]
+}

@@ -174,6 +174,49 @@
             "*Weekly sales*",
             "*weekly*sales*"
           ]
+        },
+        {
+          "id": "sales-summary",
+          "label": "Sales Summary (Toast)",
+          "source": "Toast \u2192 Sales \u2192 Sales Summary export",
+          "formats": [
+            "xlsx",
+            "csv"
+          ],
+          "signals": [
+            "net_sales",
+            "gross_sales",
+            "tips",
+            "sales_categories",
+            "revenue_centers",
+            "dayparts",
+            "voids"
+          ],
+          "file_globs": [
+            "SalesSummary*",
+            "*Sales*Summary*"
+          ]
+        },
+        {
+          "id": "multi-unit-sales-labor",
+          "label": "Multi-Unit Sales Labor Report (MP)",
+          "source": "Sales Labor Report (MP) v5 \u2014 Daily / WTD / daypart boards",
+          "formats": [
+            "xlsx"
+          ],
+          "signals": [
+            "location",
+            "cy_sales",
+            "py_sales",
+            "cy_checks",
+            "yoy",
+            "region_rollups"
+          ],
+          "file_globs": [
+            "*Sales Labor Report*",
+            "*Sales_Labor_Report*",
+            "*MP*v5*"
+          ]
         }
       ]
     },
@@ -249,13 +292,14 @@
   "venues": [
     {
       "id": "grill",
-      "label": "The Grill",
+      "label": "The New American Grill",
       "aliases": [
         "Grill",
-        "the grill"
+        "the grill",
+        "The New American Grill"
       ],
-      "holy_grail_source": "Mike Mueller Gmail \u2014 Kristen attachments",
-      "status": "awaiting_gmail_auth"
+      "holy_grail_source": "Drive Courser folder + Kristen packs",
+      "status": "courser_indexed"
     },
     {
       "id": "taco-bamba",
@@ -265,8 +309,8 @@
         "Taco Bamba",
         "Bamba"
       ],
-      "holy_grail_source": "Mike Mueller Gmail \u2014 Kristen attachments",
-      "status": "awaiting_gmail_auth"
+      "holy_grail_source": "Drive Courser \u2014 Sales Labor Report (MP) v5",
+      "status": "courser_indexed"
     },
     {
       "id": "community-pizza",
