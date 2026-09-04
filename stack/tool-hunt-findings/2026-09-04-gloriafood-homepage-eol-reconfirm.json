@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-gloriafood-homepage-eol-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood homepage discontinued + EOL Apr 30 2027",
+  "verdict": "adopt",
+  "summary": "gloriafood.com still shows discontinued / no-new-signups banner. Enacton (updated Aug 13 2026) reconfirms Oracle Last Date of Service Apr 30 2027 with no Oracle replacement \u2014 keep FBE peer #9 until shutdown; Shop migrate wedge.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-gloriafood-homepage-eol-reconfirm",
+  "ledger_version": "1.92.74",
+  "source_urls": [
+    "https://www.gloriafood.com/",
+    "https://www.enacton.com/blog/gloriafood-shutting-down/"
+  ],
+  "memory_tags": [
+    "gloriafood-eol",
+    "peer-count-9",
+    "apr-30-2027"
+  ]
+}

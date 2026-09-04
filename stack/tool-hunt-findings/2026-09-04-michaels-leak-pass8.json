@@ -1,0 +1,23 @@
+{
+  "finding_id": "2026-09-04-michaels-leak-pass8",
+  "lane": "vertical_gtm",
+  "name": "Michael's Genuine brand_site_marketplace_leak pass-8",
+  "verdict": "adopt",
+  "summary": "michaelsgenuine.com/miami still surfaces UberEats + DoorDash Order Delivery CTAs alongside takeout \u2014 brand_site_marketplace_leak teach holds; strong_keep 65; not a fee dogfood.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-michaels-leak-pass8",
+  "teach": {
+    "label": "brand_site_marketplace_leak",
+    "market": "MIA",
+    "brand": "Michael's Genuine",
+    "rails": [
+      "ubereats",
+      "doordash",
+      "takeout"
+    ]
+  },
+  "source_urls": [
+    "https://michaelsgenuine.com/miami",
+    "https://michaelsgenuine.com/"
+  ]
+}

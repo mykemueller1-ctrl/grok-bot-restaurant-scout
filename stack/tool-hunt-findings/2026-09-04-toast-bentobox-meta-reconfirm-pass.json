@@ -1,0 +1,20 @@
+{
+  "finding_id": "2026-09-04-toast-bentobox-meta-reconfirm-pass",
+  "lane": "vertical_gtm",
+  "name": "Toast + BentoBox Meta Order Food reconfirm",
+  "verdict": "adopt",
+  "summary": "Toast Support (last updated Jul 7 2026) still teaches IG Order food\u2192Toast partner + FOOD ORDERS sticker + FB Start Order. BentoBox Help 412673 (edited Jan 15 2026) still live for Meta Business Extension Order Food + Stories stickers. peer_count stays 9.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-toast-bentobox-meta-reconfirm-pass",
+  "ledger_version": "1.92.74",
+  "source_urls": [
+    "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook",
+    "https://help.getbento.com/en/articles/412673"
+  ],
+  "memory_tags": [
+    "toast",
+    "bentobox",
+    "meta-fbe",
+    "peer-count-9"
+  ]
+}

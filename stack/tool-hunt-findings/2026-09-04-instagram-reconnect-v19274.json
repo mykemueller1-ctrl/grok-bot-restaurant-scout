@@ -1,0 +1,13 @@
+{
+  "finding_id": "2026-09-04-instagram-reconnect-v19274",
+  "lane": "mcp_connectors",
+  "name": "Instagram Composio reconnect (v1.92.74)",
+  "verdict": "needs_auth",
+  "summary": "Fresh Instagram Composio connect link for morning-scan UGC. Business/Creator only; expires ~10 min.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-instagram-reconnect-v19274",
+  "urls": [
+    "https://connect.composio.dev/link/lk_AoIKB7ei0dnh"
+  ],
+  "operator_ask": "Open https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min) then reply instagram connected"
+}

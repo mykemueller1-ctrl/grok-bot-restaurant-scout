@@ -1,0 +1,22 @@
+{
+  "finding_id": "2026-09-04-husk-buy-now-pass6",
+  "lane": "vertical_gtm",
+  "name": "Husk Nashville buy_now pass-6",
+  "verdict": "adopt",
+  "summary": "BNA love rails hold: Resy venue page live; Toast gift-card findcard still live \u2014 resy_reservations + toast_gift_card (no public Toast OO).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-husk-buy-now-pass6",
+  "teach": {
+    "label": "buy_now_path",
+    "market": "BNA",
+    "brand": "Husk",
+    "rails": [
+      "resy_reservations",
+      "toast_gift_card"
+    ]
+  },
+  "source_urls": [
+    "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+    "https://www.toasttab.com/husk-nashville/findcard"
+  ]
+}

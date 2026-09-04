@@ -56,6 +56,6 @@
     }
   ],
   "source": "Yelp Composio dogfood 2026-09-04",
-  "live_proof": "Composio YELP_SEARCH_AND_CHAT 2026-09-04 pass-7 \u2014 G&TG 10731 reviews; OpenTable-only rails hold",
+  "live_proof": "Composio YELP_SEARCH_BUSINESSES 2026-09-04 pass-9 \u2014 G&TG 10731 reviews; OpenTable-only rails hold",
   "status": "calibration_only"
 }

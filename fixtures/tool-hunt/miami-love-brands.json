@@ -34,7 +34,7 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04T21:25Z",
+        "reverified_at": "2026-09-04T22:05Z",
         "website": "https://michaelsgenuine.com/",
         "rails": [
           "ubereats",
@@ -42,11 +42,12 @@
           "opentable_reservations",
           "takeout_cta"
         ],
-        "note": "Official site Order Delivery still lists UberEats + DoorDash \u2014 marketplace leak on love brand; Shop buy-now displaces rent. Pass-5 live FETCH confirms UberEats + DoorDash CTAs on miami page. Pass-6: miami Delivery still UberEats+DoorDash.",
+        "note": "Official site Order Delivery still lists UberEats + DoorDash \u2014 marketplace leak on love brand; Shop buy-now displaces rent. Pass-5 live FETCH confirms UberEats + DoorDash CTAs on miami page. Pass-6: miami Delivery still UberEats+DoorDash. Pass-8: UberEats + DoorDash Order Delivery still on michaelsgenuine.com/miami.",
         "sources": [
           "https://www.michaelsgenuine.com/miami",
           "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass5.json",
-          "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass6.json"
+          "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass6.json",
+          "stack/tool-hunt-findings/2026-09-04-michaels-leak-pass8.json"
         ]
       }
     },

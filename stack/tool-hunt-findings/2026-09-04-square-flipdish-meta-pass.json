@@ -1,0 +1,20 @@
+{
+  "finding_id": "2026-09-04-square-flipdish-meta-pass",
+  "lane": "vertical_gtm",
+  "name": "Square Online + Flipdish Meta Order Food pass",
+  "verdict": "adopt",
+  "summary": "Square Support 7778 still live (Dashboard \u2192 Facebook Food Ordering \u2192 Order Food buttons/stickers \u2192 Square site). Flipdish blog still documents IG Order Now / Food Orders sticker as registered Instagram food-ordering partner. peer_count stays 9.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-square-flipdish-meta-pass",
+  "ledger_version": "1.92.74",
+  "source_urls": [
+    "https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online",
+    "https://www.flipdish.com/resources/blog/get-direct-orders-on-instagram"
+  ],
+  "memory_tags": [
+    "square",
+    "flipdish",
+    "meta-fbe",
+    "peer-count-9"
+  ]
+}

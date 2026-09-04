@@ -107,7 +107,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 ### 2026-09-04 (Outbites/Orderitto + IG reconnect)
 
 - Watched Outbites ($1/order first-party KEEP) and Orderitto (flat-fee zero-commission apps).
-- Re-initiated Instagram Composio: https://connect.composio.dev/link/lk_xiDg14zPJDHd (expires ~10 min).
+- Re-initiated Instagram Composio: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (expires ~10 min).
 - Auth Mem0/Context still BLOCKED.
 
 ### 2026-09-04 (KEEP scorer + catalog-sync sandbox)
@@ -658,7 +658,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Live Composio Yelp: Girl & The Goat Chicago **10,731** reviews / 4.4★ / +13124926262 — matches `chicago-love-brands.json`; Purple Pig 9,046 co-seen. Finding: `stack/tool-hunt-findings/2026-09-04-yelp-chi-live-morning-scan.json`.
 - Klikit primary guide: TikTok Shop typically **5–10%** GMV vs **15–30%** delivery — KEEP-math peer to Shop ~6%; **watch only** (not fee dogfood). Finding: `2026-09-04-klikit-tiktok-shop-keep-math.json`. Ledger v1.92.7.
-- Fresh Instagram link: https://connect.composio.dev/link/lk_XmG82QNx7g4Y (~10 min).
+- Fresh Instagram link: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Still blocked: `MEM0_API_KEY` + `CONTEXT_DEV_API_KEY` → unlock READY.
 
 ### 2026-09-04 (5-market Yelp live + Deliverect watch)
@@ -670,7 +670,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 ### 2026-09-04 (Deliverect into skills + IG refresh)
 
 - Wired Deliverect IG/FB/WA Order Food into `vertical-rival-watch`, `morning-scan`, `script-draft`, `sales-lead-form`, `tool-frontier-scan`.
-- Fresh Instagram Composio link: https://connect.composio.dev/link/lk_OX5RQYqGvxKG (~10 min).
+- Fresh Instagram Composio link: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.9. Tip CI green on 5-market Yelp live. Still blocked on Mem0/Context for unlock READY.
 
 ### 2026-09-04 (Beyond the Hunt status printer)
@@ -909,7 +909,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Watched **Ogent AI** GloriaFood successor: PAYG **4% of net sales** / $149 POS — first_party_pct_fee despite “commission-free” marketing. Finding: `2026-09-04-ogent-gloriafood-4pct.json`. Fee pause (no dogfood).
 - Reconfirmed TikTok Shop Oct 2026 fee reports + consumables <$15 ~5% carve-out; Food&Bev Dashboardly still 6% — grader stays 6. Finding: `2026-09-04-tiktok-shop-fee-food-carveout.json`.
-- Fresh Instagram reconnect: `https://connect.composio.dev/link/lk_KXRNlzyKe7d3` (~10 min).
+- Fresh Instagram reconnect: `https://connect.composio.dev/link/lk_AoIKB7ei0dnh` (~10 min).
 - Ledger v1.92.47. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Yelp love stable + Menuro)
@@ -945,14 +945,14 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **Hyperzod** + **Saaztro** GloriaFood white-label successors. Finding: `2026-09-04-hyperzod-saaztro-gloriafood.json`.
 - Reconfirmed Flipdish IG bounce URL sticker path — peer_count stays 9. Finding: `2026-09-04-flipdish-instagram-bounce-reconfirm.json`.
 - Yelp pass-4: G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914 stable. Finding: `2026-09-04-yelp-5market-stable-pass4.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk__zyBLakBGSNc (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.52. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Hatch Aug 2026 + Menuthere/OrderOnWhats/Waplify)
 
 - Adopted Meta **Hatch** Aug 2026 reconfirm — order food + book tables; DoorDash/Yelp sandbox; peer_count stays 9. Finding: `2026-09-04-meta-hatch-aug2026-reconfirm.json`.
 - Watched **Menuthere** + **OrderOnWhats** + **Waplify** WA peers (skip OrderOnWhats demand-forecast). Finding: `2026-09-04-menuthere-orderonwhats-waplify-wa.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_1v0SMn4lsIQg (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.53. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Shop 6% reconfirm + WhatsOrder/AudienceJet + gtm-skills)
@@ -960,7 +960,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed TikTok Shop Food & Bev **6%** (Dashboardly) — grader stays 6. Finding: `2026-09-04-tiktok-shop-foodbev-6pct-reconfirm.json`.
 - Watched **WhatsOrder** ($1.67/mo 0%) + **AudienceJet** (1–2% MENA — fee pause) + **Order in Whats** (€25/mo). Finding: `2026-09-04-whatsorder-audiencejet-orderinwhats-wa.json`.
 - Watched **zarif3624/gtm-skills** Cursor GTM pack (skip forecast playbooks). Finding: `2026-09-04-zarif-gtm-skills-cursor.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_cPTBrc4wYNVY (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.54. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Michaels leak pass-4 + Yo!Yumm/AiBotick + Square Meta reconfirm)
@@ -968,7 +968,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted Michael's Genuine **brand_site_marketplace_leak** pass-4 — UberEats/DoorDash still on miami page. Finding: `2026-09-04-michaels-leak-pass4.json`.
 - Watched **Yo!Yumm** (marketplace GloriaFood clone) + **AiBotick** (WA F&B). Finding: `2026-09-04-yoyumm-aibotick-peers.json`.
 - Reconfirmed Square Online Meta Order Food path — peer_count stays 9. Finding: `2026-09-04-square-meta-order-food-reconfirm.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_YDSVUYgQ9Xrl (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.55. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (G&TG/Franklin pass-3 + Ordering.co + Kyte sticker gap)
@@ -976,7 +976,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted G&TG **reservation_skew** pass-3 + Franklin **buy_now_path** pass-3. Findings: `2026-09-04-gtg-reservation-skew-pass3.json`, `2026-09-04-franklin-buy-now-pass3.json`.
 - Watched **Ordering.co** GloriaFood price-match successor. Finding: `2026-09-04-ordering-co-gloriafood.json`.
 - Adopted Kyte nuance: IG Stories sticker **unavailable**; FB Order Food still peer — peer_count stays 9. Finding: `2026-09-04-kyte-ig-sticker-unavailable.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_g48XCJfFBuxc (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.56. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Husk/Rioja pass-3 + Deliverect/ChatFood)
@@ -984,7 +984,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted Husk **buy_now_path** pass-3: Resy + Toast gift live; **dropped `takeout`** (no Toast OO URL). Finding: `2026-09-04-husk-buy-now-pass3.json`.
 - Adopted Rioja **buy_now_path** pass-3: Flavor Dojo + phone still live on **riojadenver.com** (riorestaurant.com is parked — ignore). Finding: `2026-09-04-rioja-buy-now-pass3.json`.
 - Reconfirmed Deliverect Direct Suite + ChatFood IG Order Food docs — peer_count stays 9. Finding: `2026-09-04-deliverect-chatfood-meta-reconfirm.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_pQbzgo-CRhag (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh-CRhag (~10 min).
 - Ledger v1.92.57. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (FoodChow/Snappy + BentoBox Meta)
@@ -997,7 +997,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Reconfirmed Toast OO + Zyda Meta Order Food paths — peer_count stays 9. Finding: `2026-09-04-toast-zyda-meta-reconfirm.json`.
 - Watched **Queek** (WA/IG commerce inbox AI, NG restaurants) + **Sync GTM** Cursor MCP enrich. Finding: `2026-09-04-queek-syncgtm-peers.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_efLtwWNy2dYc (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.59. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Yelp pass-5 + Klikit Instant Delivery + Octave)
@@ -1010,7 +1010,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Adopted Franklin **buy_now_path** pass-4 — preorder + Shopify + Goldbelly still live. Finding: `2026-09-04-franklin-buy-now-pass4.json`.
 - Reconfirmed Flipdish bounce URL; watched **Posso** UK GloriaFood successor (fee pause). Finding: `2026-09-04-flipdish-bounce-posso-gloriafood.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_NaouagFf3gjQ (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.61. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (G&TG skew pass-4 + Michaels leak pass-5)
@@ -1026,7 +1026,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **linkboo** Toast/Resy/OpenTable IG webview cliff (Lenkli peer). Finding: `2026-09-04-linkboo-restaurant-ig-webview.json`.
 - Watched **Sparissimo Food** GloriaFood migrate (Apr 30 2027). Finding: `2026-09-04-sparissimo-food-gloriafood-migrate.json`.
 - Watched **LaGrowthMachine/gtm-system** Cursor/Claude GTM skills + MCP (Octave/SyncGTM/zarif peer). Finding: `2026-09-04-lagrowthmachine-gtm-system-skills.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_JSmBL_WA9OGF (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.63. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Slerp/Meni.ge GloriaFood + mateor96/LeadMagic skills)
@@ -1042,7 +1042,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Square Online Meta Order Food — peer_count stays 9. Finding: `2026-09-04-square-meta-order-food-reconfirm.json`.
 - Watched **Foodiv** US GloriaFood successor (NY case). Finding: `2026-09-04-foodiv-gloriafood-us.json`.
 - Watched **CherryBerry** WA AI ordering + **DataLayer**/Vibe Prospecting Cursor enrich. Findings: `2026-09-04-cherryberry-wa-ai-ordering.json`, `2026-09-04-datalayer-vibeprospecting-cursor.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_xtQweNbjwyZS (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.65. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (G&TG skew pass-5 + Michaels leak pass-6 + Kyte/Yumzip)
@@ -1060,7 +1060,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted Rioja **buy_now_path** pass-4 — Flavor Dojo + phone. Finding: `2026-09-04-rioja-buy-now-pass4.json`.
 - Reconfirmed Deliverect + Flipdish Meta paths — peer_count stays 9. Finding: `2026-09-04-deliverect-flipdish-meta-reconfirm.json`.
 - Watched **Enatega** GloriaFood white-label + **LocalLeads** Cursor MCP. Findings: `2026-09-04-enatega-gloriafood-watch.json`, `2026-09-04-localleads-cursor-mcp.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_zl6EuHZYhk3Z (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.67. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Toast/Zyda/ChatFood Meta reconfirm)
@@ -1076,7 +1076,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **Savera** (savera.dev) WA AI + branded app 0% claim — ChatOrder-class; fee pause. Finding: `2026-09-04-savera-wa-branded-app.json`.
 - Watched **Kuration MCP** + **LeadEnrich MCP** (carsonlabs) — Cursor enrich peers; Yelp phone stays Active. Findings: `2026-09-04-kuration-mcp-cursor.json`, `2026-09-04-leadenrich-mcp-cursor.json`.
 - Adopted reconfirms: Square ChatGPT/Claude ordering, Dashboardly TikTok Shop ~6%, Meta Hatch BI (Shop rival, not FBE). Findings: `2026-09-04-square-ai-channel-reconfirm.json`, `2026-09-04-dashboardly-tiktok-shop-6pct-reconfirm.json`, `2026-09-04-meta-hatch-bi-order-book-reconfirm.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_rv_eJnojQ9eR (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.69. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Yelp pass-7 + Restolabs/uEngage/RevYoMe + Cursor GTM MCPs)
@@ -1096,7 +1096,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Enacton/YoYumm/Menuro/Flipdish GloriaFood migrate wave. Finding: `2026-09-04-enacton-gloriafood-shutdown.json`, `2026-09-04-yoyumm-menuro-flipdish-gloriafood.json`.
 - Watched **MenuEz** link hub + Ontabee FB Ordering CTA. Findings: `2026-09-04-menuez-restaurant-link-hub.json`, `2026-09-04-ontabee-facebook-ordering-reconfirm.json`.
 - Watched Maps Scraper MCP + Diego lead-enrichment MCP. Findings: `2026-09-04-google-maps-scraper-mcp.json`, `2026-09-04-diego-lead-enrichment-mcp.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_G6w_FV3BZ9D3 (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.71. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Franklin/Husk/Rioja rails + Kyte/Square/Deliverect + WPOrder)
@@ -1107,7 +1107,7 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Kyte FBE unavailable banners + Square 7778 + Deliverect IG — peer_count stays 9. Findings: `2026-09-04-kyte-fbe-unavailable-pass.json`, `2026-09-04-square-meta-order-food-pass.json`, `2026-09-04-deliverect-ig-order-food-reconfirm.json`.
 - Watched **WPOrder** UK WA AI + **Texnity** WA restaurant OS. Findings: `2026-09-04-wporder-wa-ai-uk.json`, `2026-09-04-texnity-wa-restaurant.json`.
 - Watched Restaurant MCP Server + Bingeljell lead-gen-mcp. Findings: `2026-09-04-restaurant-mcp-server-aadesh.json`, `2026-09-04-bingeljell-lead-gen-mcp.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_qRDZmWg_tzSV (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.72. Auth still blocked for unlock READY.
 
 ### 2026-09-04 (Toast/Zyda/ChatFood/Bento Meta + GloriaFood reseller + webview)
@@ -1117,5 +1117,16 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Ogent/Enacton/Restolabs GloriaFood **reseller** migrate. Findings: `2026-09-04-ogent-gloriafood-reseller.json`, `2026-09-04-enacton-restolabs-reseller-migrate.json`.
 - Adopted linkboo + plugwith.me webview escape. Finding: `2026-09-04-linkboo-plugwith-webview.json`.
 - Watched Menujo IG bio + LeadHub + cursor-for-gtm-demo + impecablemee/gtm-mcp. Findings: `2026-09-04-menujo-instagram-bio-menu.json`, `2026-09-04-leadhub-mcp-cursor.json`, `2026-09-04-cursor-gtm-demo-impecablemee.json`.
-- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_52a4tjJSpCQz (~10 min).
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.73. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Toast/Bento/Square Meta + Yelp pass-9 + love rails)
+
+- Reconfirmed Toast (Jul 7 2026) + BentoBox Help 412673 + Square 7778 + Flipdish IG + Zyda/ChatFood/Deliverect Meta Order Food — peer_count stays 9. Findings: `2026-09-04-toast-bentobox-meta-reconfirm-pass.json`, `2026-09-04-square-flipdish-meta-pass.json`, `2026-09-04-zyda-chatfood-deliverect-meta-pass.json`.
+- Yelp pass-9 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass9.json`.
+- Adopted Franklin buy_now pass-7 + Husk pass-6 + Michaels leak pass-8. Findings: `2026-09-04-franklin-buy-now-pass7.json`, `2026-09-04-husk-buy-now-pass6.json`, `2026-09-04-michaels-leak-pass8.json`.
+- Reconfirmed GloriaFood homepage discontinued + EOL Apr 30 2027 (Enacton Aug 13 2026). Finding: `2026-09-04-gloriafood-homepage-eol-reconfirm.json`.
+- Watched SyncGTM GTM MCP + meni.ge restaurant MCP. Finding: `2026-09-04-syncgtm-menige-mcp-cursor.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
+- Ledger v1.92.74. Auth still blocked for unlock READY.
+

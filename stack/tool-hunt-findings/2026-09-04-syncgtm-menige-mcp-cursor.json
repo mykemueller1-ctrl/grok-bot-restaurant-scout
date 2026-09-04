@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-syncgtm-menige-mcp-cursor",
+  "lane": "cursor_agents",
+  "name": "SyncGTM GTM MCP + meni.ge restaurant MCP",
+  "verdict": "watch",
+  "summary": "SyncGTM GTM MCP: 75+ GTM actions (lead source/enrich/signals) for Cursor \u2014 pain\u2192sales-lead skills peer; auth-first. meni.ge MCP (api.meni.ge/mcp) exposes restaurant menu/orders to Cursor \u2014 GloriaFood-successor adjacent; fee pause; Yelp phone stays Active.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-syncgtm-menige-mcp-cursor",
+  "source_urls": [
+    "https://syncgtm.com/product/gtm-mcp",
+    "https://meni.ge/en/docs/mcp"
+  ],
+  "memory_tags": [
+    "syncgtm",
+    "menige",
+    "cursor-mcp",
+    "gtm-enrich"
+  ]
+}

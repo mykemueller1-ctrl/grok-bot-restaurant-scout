@@ -80,7 +80,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Hop Alley / Rioja / Tavernetta / Uncle) 2026-09-04",
-  "live_proof": "Composio YELP_SEARCH_AND_CHAT 2026-09-04 pass-7 \u2014 Rioja 2914 reviews",
+  "live_proof": "Composio YELP details 2026-09-04 pass-9 \u2014 Rioja 2914 reviews; Flavor Dojo + phone rails hold",
   "status": "calibration_only",
   "notes": "Prefer chef/cult narrative + review volume. Fruition restaurant alias not resolved in this scan \u2014 skipped."
 }

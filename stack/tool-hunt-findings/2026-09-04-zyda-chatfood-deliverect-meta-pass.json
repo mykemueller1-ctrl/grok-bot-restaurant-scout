@@ -1,0 +1,22 @@
+{
+  "finding_id": "2026-09-04-zyda-chatfood-deliverect-meta-pass",
+  "lane": "vertical_gtm",
+  "name": "Zyda + ChatFood + Deliverect Meta Order Food pass",
+  "verdict": "adopt",
+  "summary": "Zyda Help Order Food via Meta FBE still live; ChatFood docs IG Order Food button + stickers still live; Deliverect Direct Suite help for IG Order Food button + stickers still live \u2014 peer_count stays 9.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-zyda-chatfood-deliverect-meta-pass",
+  "ledger_version": "1.92.74",
+  "source_urls": [
+    "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram"
+  ],
+  "memory_tags": [
+    "zyda",
+    "chatfood",
+    "deliverect",
+    "meta-fbe",
+    "peer-count-9"
+  ]
+}
