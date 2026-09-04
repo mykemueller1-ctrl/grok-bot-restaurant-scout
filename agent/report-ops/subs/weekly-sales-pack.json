@@ -8,7 +8,7 @@
   "domain_id": "sales",
   "report_id": "weekly-sales-pack",
   "parent": "sales",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Owns the Weekly Sales Pack report (Operator folder of daily Z + week rollup). Ingests folder, pdf, xlsx. Signals: week_net, day_parts, comp_week. Routes findings up to the domain parent; teach labels via Report Teacher.",
   "source_report": "Operator folder of daily Z + week rollup",

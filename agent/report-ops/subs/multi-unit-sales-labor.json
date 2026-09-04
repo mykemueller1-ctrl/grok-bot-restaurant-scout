@@ -8,7 +8,7 @@
   "domain_id": "sales",
   "report_id": "multi-unit-sales-labor",
   "parent": "sales",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Owns the Multi-Unit Sales Labor Report (MP) report (Sales Labor Report (MP) v5 \u2014 Daily / WTD / daypart boards). Ingests xlsx. Signals: location, cy_sales, py_sales, cy_checks, yoy, region_rollups. Routes findings up to the domain parent; teach labels via Report Teacher.",
   "source_report": "Sales Labor Report (MP) v5 \u2014 Daily / WTD / daypart boards",

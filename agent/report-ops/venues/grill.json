@@ -6,7 +6,7 @@
   "color": "#457B9D",
   "family": "never86-report-ops",
   "venue_id": "grill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for The New American Grill. Source: Drive Courser folder + Kristen packs. Status: courser_indexed.",
   "aliases": [

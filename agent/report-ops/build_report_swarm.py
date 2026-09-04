@@ -9,7 +9,83 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 OWNER = "mykemueller1-ctrl"
 FAMILY = "never86-report-ops"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
+
+# ICP scale tiers — parent + subs (who holds the clipboard)
+ICP_TIERS = [
+    {
+        "id": "owner-1-5",
+        "label": "Owner-Operator 1–5",
+        "color": "#2A9D8F",
+        "units": "1–5",
+        "buyer": "Owner / GM (still in the building)",
+        "job": "Single-owner ops: paper labor cards, weekly schedules, Toast day exports, distributor invoices",
+        "pains": [
+            "owner burnout and cash-flow gut feel",
+            "labor % without group targets",
+            "second unit ~130% ops surface for ~60% revenue capacity",
+            "inventory = invoice photos + Hy-Vee runs",
+        ],
+        "report_ids": [
+            "kitchen-labor-card",
+            "paper-weekly-schedule",
+            "time-entries",
+            "labor-summary",
+            "sales-summary",
+            "item-selection",
+            "liquor-beer-par",
+            "vendor-invoice",
+        ],
+        "example_packs": ["ctap-physical", "courser/grill"],
+        "never86_wedge": "Daily leak dollars from red-book chaos — not enterprise BI",
+    },
+    {
+        "id": "area-leader",
+        "label": "Area / District Leader Scale",
+        "color": "#E76F51",
+        "units": "5–15+ under an area leader; brand may be 15–50+",
+        "buyer": "Area Leader / District Manager / Dir of Ops",
+        "job": "Coach GMs across stores; Daily/WTD CY vs PY boards; region then System rollups",
+        "pains": [
+            "margin lost between locations",
+            "labor swings 8pts across GMs on same brand",
+            "inconsistent coding / wrong labor grain",
+            "must coach not run shifts",
+        ],
+        "report_ids": [
+            "multi-unit-sales-labor",
+            "weekly-sales-pack",
+            "labor-summary",
+            "sales-summary",
+            "z-report",
+        ],
+        "example_packs": ["courser/taco-bamba-sales-labor-mp-v5"],
+        "never86_wedge": "Store/region exceptions for area leaders — not 30 unread tabs",
+    },
+    {
+        "id": "cfo-ceo",
+        "label": "CFO / CEO Portfolio",
+        "color": "#1D3557",
+        "units": "10–50+ (or PE-backed)",
+        "buyer": "CFO / Controller / CEO / COO",
+        "job": "Location P&Ls weekly, prime cost, SSS, institutional consolidations across POS+labor+ERP",
+        "pains": [
+            "stale Excel consolidations",
+            "days to assemble portfolio view",
+            "no real-time variance alerts",
+            "four-wall EBITDA vs corporate overhead",
+        ],
+        "report_ids": [
+            "multi-unit-sales-labor",
+            "labor-summary",
+            "sales-summary",
+            "sku-depletion",
+            "vendor-intake",
+        ],
+        "example_packs": ["courser/taco-bamba System rollup"],
+        "never86_wedge": "Faster time-to-leak-dollar across portfolio + action layer",
+    },
+]
 
 # Domains = parents. Each report = sub-agent. Teacher sits above all.
 DOMAINS = [
@@ -43,6 +119,24 @@ DOMAINS = [
                 "formats": ["xlsx", "gsheet"],
                 "signals": ["shift_grid", "role_coverage"],
                 "file_globs": ["*SCHEDULE*", "*schedule*"],
+            },
+            {
+                "id": "kitchen-labor-card",
+                "label": "Kitchen Labor Card (paper)",
+                "source": "Printed AM/PM station card filled by hand",
+                "formats": ["photo", "pdf", "scan"],
+                "signals": ["day", "shift", "station", "employee"],
+                "file_globs": ["*Labor*Card*", "*kitchen*labor*"],
+                "icp_tiers": ["owner-1-5"],
+            },
+            {
+                "id": "paper-weekly-schedule",
+                "label": "Paper Weekly Schedule",
+                "source": "Calendarpedia / handwritten week grid",
+                "formats": ["photo", "pdf", "xlsx"],
+                "signals": ["employee", "day", "shift_window", "station_code", "events"],
+                "file_globs": ["*Weekly schedule*", "*Work Schedule*"],
+                "icp_tiers": ["owner-1-5"],
             },
         ],
     },
@@ -158,6 +252,15 @@ DOMAINS = [
                 "signals": ["vendor", "sku", "cost", "unit"],
                 "file_globs": ["*Vendor*Intake*", "*vendor*intake*"],
             },
+            {
+                "id": "vendor-invoice",
+                "label": "Distributor / Store Invoice",
+                "source": "Beer distributor, grocery, payout slips",
+                "formats": ["photo", "pdf", "csv"],
+                "signals": ["vendor", "sku", "qty", "amount", "account"],
+                "file_globs": ["*invoice*", "*Hopkins*", "*Distributing*", "*Hy-Vee*"],
+                "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
+            },
         ],
     },
 ]
@@ -246,9 +349,12 @@ def teacher_agent() -> dict:
             "reject",
             "wrong_report",
             "wrong_venue",
+            "wrong_icp",
             "needs_research",
         ],
-        "skills": ["teach-label", "report-teach-batch", "recurse-learn"],
+        "skills": ["teach-label", "report-teach-batch", "icp-scale-classify", "recurse-learn"],
+        "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
+        "docs": "docs/ICP-SCALE.md",
         "holy_grail": {
             "inbox": "mykemueller1@gmail.com (Mike Mueller Gmail)",
             "from": "Kristen",
@@ -290,6 +396,58 @@ def sub_agent(domain: dict, report: dict) -> dict:
     }
 
 
+def icp_parent() -> dict:
+    return {
+        "name": "ICP Scale Parent",
+        "title": "Never86 ICP parent — owner 1–5 vs area-leader vs CFO/CEO",
+        "role": "parent",
+        "shape": "fox",
+        "color": "#264653",
+        "family": FAMILY,
+        "domain_id": "icp-scale",
+        "version": VERSION,
+        "owner": OWNER,
+        "description": (
+            "Routes every report pack to the right buyer tier. Owner-operator paper cards "
+            "are not area-leader WTD boards and not CFO consolidations. Spawns ICP subs "
+            "owner-1-5, area-leader, cfo-ceo. Docs: docs/ICP-SCALE.md."
+        ),
+        "job_to_be_done": "Never pitch the wrong altitude of problem to the wrong buyer.",
+        "sub_agents": [t["id"] for t in ICP_TIERS],
+        "skills": ["report-route", "teach-label", "icp-scale-classify"],
+        "docs": "docs/ICP-SCALE.md",
+        "swarm": True,
+    }
+
+
+def icp_sub(tier: dict) -> dict:
+    return {
+        "name": f"{tier['label']} ICP Sub",
+        "title": f"Never86 ICP — {tier['label']}",
+        "role": "icp_sub",
+        "shape": "fox",
+        "color": tier["color"],
+        "family": FAMILY,
+        "icp_tier": tier["id"],
+        "parent": "icp-scale",
+        "version": VERSION,
+        "owner": OWNER,
+        "description": (
+            f"Owns {tier['label']} ({tier['units']}). Buyer: {tier['buyer']}. "
+            f"{tier['job']}. Pains: {'; '.join(tier['pains'])}. "
+            f"Wedge: {tier['never86_wedge']}."
+        ),
+        "units": tier["units"],
+        "buyer": tier["buyer"],
+        "pains": tier["pains"],
+        "report_ids": tier["report_ids"],
+        "example_packs": tier["example_packs"],
+        "never86_wedge": tier["never86_wedge"],
+        "skills": ["icp-scale-classify", "teach-label", "report-ingest"],
+        "swarm": True,
+    }
+
+
 def venue_scout(venue: dict) -> dict:
     return {
         "name": f"{venue['label']} Report Scout",
@@ -317,15 +475,40 @@ def main() -> None:
     parents_dir = ROOT / "parents"
     subs_dir = ROOT / "subs"
     venues_dir = ROOT / "venues"
-    for d in (parents_dir, subs_dir, venues_dir):
+    icp_dir = ROOT / "icp"
+    for d in (parents_dir, subs_dir, venues_dir, icp_dir):
         d.mkdir(parents=True, exist_ok=True)
 
     parent_index = []
     sub_index = []
     venue_index = []
+    icp_index = []
 
     teacher = teacher_agent()
     write_json(ROOT / "teacher.json", teacher)
+
+    icp = icp_parent()
+    write_json(parents_dir / "icp-scale.json", icp)
+    parent_index.append(
+        {
+            "id": "icp-scale",
+            "file": "parents/icp-scale.json",
+            "label": "ICP Scale",
+            "sub_count": len(ICP_TIERS),
+        }
+    )
+    for tier in ICP_TIERS:
+        sub = icp_sub(tier)
+        write_json(icp_dir / f"{tier['id']}.json", sub)
+        icp_index.append(
+            {
+                "id": tier["id"],
+                "file": f"icp/{tier['id']}.json",
+                "label": tier["label"],
+                "units": tier["units"],
+                "buyer": tier["buyer"],
+            }
+        )
 
     for domain in DOMAINS:
         parent = parent_agent(domain)
@@ -368,6 +551,7 @@ def main() -> None:
         "version": VERSION,
         "domains": DOMAINS,
         "venues": VENUES,
+        "icp_tiers": ICP_TIERS,
     }
     write_json(ROOT / "catalog.json", catalog)
 
@@ -378,28 +562,36 @@ def main() -> None:
         "swarm_mode": True,
         "purpose": (
             "Parent / teacher / sub-agent swarm for restaurant sales, labor, and inventory "
-            "reports (CSV, Excel, PDF). Holy grail: Kristen → Mike Mueller Gmail packs for "
-            "The Grill + Taco Bamba; CTAP Drive indexed as live practice set."
+            "reports — plus ICP scale subs (owner 1–5 vs area-leader vs CFO/CEO). "
+            "Holy grail: Courser Grill + Taco Bamba packs; CTAP physical labor cards as "
+            "owner-operator ground truth."
         ),
         "owner": OWNER,
         "teacher": "teacher.json",
         "parent_count": len(parent_index),
         "sub_count": len(sub_index),
+        "icp_sub_count": len(icp_index),
         "venue_scout_count": len(venue_index),
-        "agent_count": 1 + len(parent_index) + len(sub_index) + len(venue_index),
+        "agent_count": 1
+        + len(parent_index)
+        + len(sub_index)
+        + len(icp_index)
+        + len(venue_index),
         "shared_skills": [
             "report-ingest",
             "report-route",
             "report-normalize",
             "report-teach-batch",
+            "icp-scale-classify",
             "teach-label",
             "recurse-learn",
         ],
         "parents": parent_index,
         "subs": sub_index,
+        "icp": icp_index,
         "venues": venue_index,
         "parser": "scripts/parse-toast-reports.mjs",
-        "docs": "docs/TOAST-REPORTS.md",
+        "docs": ["docs/TOAST-REPORTS.md", "docs/ICP-SCALE.md"],
     }
     write_json(ROOT / "family.json", family)
     print(
@@ -409,6 +601,7 @@ def main() -> None:
                 "agents": family["agent_count"],
                 "parents": family["parent_count"],
                 "subs": family["sub_count"],
+                "icp": family["icp_sub_count"],
                 "venues": family["venue_scout_count"],
                 "teacher": True,
             },

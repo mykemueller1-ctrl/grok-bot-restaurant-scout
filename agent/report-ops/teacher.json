@@ -5,7 +5,7 @@
   "shape": "fox",
   "color": "#FF6B35",
   "family": "never86-report-ops",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Teacher for every sales/labor/inventory report agent. Packages Kristen / Grill / Taco Bamba / CTAP exports into teach batches. Myke labels keep/reject/wrong_report/wrong_venue/needs_research. Writes teach_memory so sub-agents learn what a good Time Entry, Item Selection, Z-Report, or Par sheet looks like.",
   "job_to_be_done": "Turn operator report dumps into labeled ground truth for the swarm.",
@@ -13,6 +13,8 @@
     "time-entries",
     "labor-summary",
     "bar-kitchen-schedule",
+    "kitchen-labor-card",
+    "paper-weekly-schedule",
     "item-selection",
     "menu-sales",
     "sales-category",
@@ -22,7 +24,8 @@
     "multi-unit-sales-labor",
     "sku-depletion",
     "liquor-beer-par",
-    "vendor-intake"
+    "vendor-intake",
+    "vendor-invoice"
   ],
   "label_enum": [
     "keep",

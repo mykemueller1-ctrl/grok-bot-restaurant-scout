@@ -1,6 +1,6 @@
 {
   "family": "never86-report-ops",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "domains": [
     {
       "id": "labor",
@@ -62,6 +62,53 @@
           "file_globs": [
             "*SCHEDULE*",
             "*schedule*"
+          ]
+        },
+        {
+          "id": "kitchen-labor-card",
+          "label": "Kitchen Labor Card (paper)",
+          "source": "Printed AM/PM station card filled by hand",
+          "formats": [
+            "photo",
+            "pdf",
+            "scan"
+          ],
+          "signals": [
+            "day",
+            "shift",
+            "station",
+            "employee"
+          ],
+          "file_globs": [
+            "*Labor*Card*",
+            "*kitchen*labor*"
+          ],
+          "icp_tiers": [
+            "owner-1-5"
+          ]
+        },
+        {
+          "id": "paper-weekly-schedule",
+          "label": "Paper Weekly Schedule",
+          "source": "Calendarpedia / handwritten week grid",
+          "formats": [
+            "photo",
+            "pdf",
+            "xlsx"
+          ],
+          "signals": [
+            "employee",
+            "day",
+            "shift_window",
+            "station_code",
+            "events"
+          ],
+          "file_globs": [
+            "*Weekly schedule*",
+            "*Work Schedule*"
+          ],
+          "icp_tiers": [
+            "owner-1-5"
           ]
         }
       ]
@@ -285,6 +332,34 @@
             "*Vendor*Intake*",
             "*vendor*intake*"
           ]
+        },
+        {
+          "id": "vendor-invoice",
+          "label": "Distributor / Store Invoice",
+          "source": "Beer distributor, grocery, payout slips",
+          "formats": [
+            "photo",
+            "pdf",
+            "csv"
+          ],
+          "signals": [
+            "vendor",
+            "sku",
+            "qty",
+            "amount",
+            "account"
+          ],
+          "file_globs": [
+            "*invoice*",
+            "*Hopkins*",
+            "*Distributing*",
+            "*Hy-Vee*"
+          ],
+          "icp_tiers": [
+            "owner-1-5",
+            "area-leader",
+            "cfo-ceo"
+          ]
         }
       ]
     }
@@ -322,6 +397,87 @@
       ],
       "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
       "status": "drive_indexed"
+    }
+  ],
+  "icp_tiers": [
+    {
+      "id": "owner-1-5",
+      "label": "Owner-Operator 1\u20135",
+      "color": "#2A9D8F",
+      "units": "1\u20135",
+      "buyer": "Owner / GM (still in the building)",
+      "job": "Single-owner ops: paper labor cards, weekly schedules, Toast day exports, distributor invoices",
+      "pains": [
+        "owner burnout and cash-flow gut feel",
+        "labor % without group targets",
+        "second unit ~130% ops surface for ~60% revenue capacity",
+        "inventory = invoice photos + Hy-Vee runs"
+      ],
+      "report_ids": [
+        "kitchen-labor-card",
+        "paper-weekly-schedule",
+        "time-entries",
+        "labor-summary",
+        "sales-summary",
+        "item-selection",
+        "liquor-beer-par",
+        "vendor-invoice"
+      ],
+      "example_packs": [
+        "ctap-physical",
+        "courser/grill"
+      ],
+      "never86_wedge": "Daily leak dollars from red-book chaos \u2014 not enterprise BI"
+    },
+    {
+      "id": "area-leader",
+      "label": "Area / District Leader Scale",
+      "color": "#E76F51",
+      "units": "5\u201315+ under an area leader; brand may be 15\u201350+",
+      "buyer": "Area Leader / District Manager / Dir of Ops",
+      "job": "Coach GMs across stores; Daily/WTD CY vs PY boards; region then System rollups",
+      "pains": [
+        "margin lost between locations",
+        "labor swings 8pts across GMs on same brand",
+        "inconsistent coding / wrong labor grain",
+        "must coach not run shifts"
+      ],
+      "report_ids": [
+        "multi-unit-sales-labor",
+        "weekly-sales-pack",
+        "labor-summary",
+        "sales-summary",
+        "z-report"
+      ],
+      "example_packs": [
+        "courser/taco-bamba-sales-labor-mp-v5"
+      ],
+      "never86_wedge": "Store/region exceptions for area leaders \u2014 not 30 unread tabs"
+    },
+    {
+      "id": "cfo-ceo",
+      "label": "CFO / CEO Portfolio",
+      "color": "#1D3557",
+      "units": "10\u201350+ (or PE-backed)",
+      "buyer": "CFO / Controller / CEO / COO",
+      "job": "Location P&Ls weekly, prime cost, SSS, institutional consolidations across POS+labor+ERP",
+      "pains": [
+        "stale Excel consolidations",
+        "days to assemble portfolio view",
+        "no real-time variance alerts",
+        "four-wall EBITDA vs corporate overhead"
+      ],
+      "report_ids": [
+        "multi-unit-sales-labor",
+        "labor-summary",
+        "sales-summary",
+        "sku-depletion",
+        "vendor-intake"
+      ],
+      "example_packs": [
+        "courser/taco-bamba System rollup"
+      ],
+      "never86_wedge": "Faster time-to-leak-dollar across portfolio + action layer"
     }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "name": "Kitchen Labor Card (paper) Sub-Agent",
+  "title": "Never86 report sub \u2014 Labor / Kitchen Labor Card (paper)",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#F4A261",
+  "family": "never86-report-ops",
+  "domain_id": "labor",
+  "report_id": "kitchen-labor-card",
+  "parent": "labor",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Kitchen Labor Card (paper) report (Printed AM/PM station card filled by hand). Ingests photo, pdf, scan. Signals: day, shift, station, employee. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Printed AM/PM station card filled by hand",
+  "formats": [
+    "photo",
+    "pdf",
+    "scan"
+  ],
+  "signals": [
+    "day",
+    "shift",
+    "station",
+    "employee"
+  ],
+  "file_globs": [
+    "*Labor*Card*",
+    "*kitchen*labor*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

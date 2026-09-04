@@ -1,29 +1,37 @@
 {
   "family": "never86-report-ops",
   "platform": "Never86",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "swarm_mode": true,
-  "purpose": "Parent / teacher / sub-agent swarm for restaurant sales, labor, and inventory reports (CSV, Excel, PDF). Holy grail: Kristen \u2192 Mike Mueller Gmail packs for The Grill + Taco Bamba; CTAP Drive indexed as live practice set.",
+  "purpose": "Parent / teacher / sub-agent swarm for restaurant sales, labor, and inventory reports \u2014 plus ICP scale subs (owner 1\u20135 vs area-leader vs CFO/CEO). Holy grail: Courser Grill + Taco Bamba packs; CTAP physical labor cards as owner-operator ground truth.",
   "owner": "mykemueller1-ctrl",
   "teacher": "teacher.json",
-  "parent_count": 3,
-  "sub_count": 13,
+  "parent_count": 4,
+  "sub_count": 16,
+  "icp_sub_count": 3,
   "venue_scout_count": 3,
-  "agent_count": 20,
+  "agent_count": 27,
   "shared_skills": [
     "report-ingest",
     "report-route",
     "report-normalize",
     "report-teach-batch",
+    "icp-scale-classify",
     "teach-label",
     "recurse-learn"
   ],
   "parents": [
     {
+      "id": "icp-scale",
+      "file": "parents/icp-scale.json",
+      "label": "ICP Scale",
+      "sub_count": 3
+    },
+    {
       "id": "labor",
       "file": "parents/labor.json",
       "label": "Labor",
-      "sub_count": 3
+      "sub_count": 5
     },
     {
       "id": "sales",
@@ -35,7 +43,7 @@
       "id": "inventory",
       "file": "parents/inventory.json",
       "label": "Inventory / Par / Ordering",
-      "sub_count": 3
+      "sub_count": 4
     }
   ],
   "subs": [
@@ -68,6 +76,28 @@
       "formats": [
         "xlsx",
         "gsheet"
+      ]
+    },
+    {
+      "id": "kitchen-labor-card",
+      "file": "subs/kitchen-labor-card.json",
+      "parent": "labor",
+      "label": "Kitchen Labor Card (paper)",
+      "formats": [
+        "photo",
+        "pdf",
+        "scan"
+      ]
+    },
+    {
+      "id": "paper-weekly-schedule",
+      "file": "subs/paper-weekly-schedule.json",
+      "parent": "labor",
+      "label": "Paper Weekly Schedule",
+      "formats": [
+        "photo",
+        "pdf",
+        "xlsx"
       ]
     },
     {
@@ -172,6 +202,40 @@
         "xlsx",
         "gsheet"
       ]
+    },
+    {
+      "id": "vendor-invoice",
+      "file": "subs/vendor-invoice.json",
+      "parent": "inventory",
+      "label": "Distributor / Store Invoice",
+      "formats": [
+        "photo",
+        "pdf",
+        "csv"
+      ]
+    }
+  ],
+  "icp": [
+    {
+      "id": "owner-1-5",
+      "file": "icp/owner-1-5.json",
+      "label": "Owner-Operator 1\u20135",
+      "units": "1\u20135",
+      "buyer": "Owner / GM (still in the building)"
+    },
+    {
+      "id": "area-leader",
+      "file": "icp/area-leader.json",
+      "label": "Area / District Leader Scale",
+      "units": "5\u201315+ under an area leader; brand may be 15\u201350+",
+      "buyer": "Area Leader / District Manager / Dir of Ops"
+    },
+    {
+      "id": "cfo-ceo",
+      "file": "icp/cfo-ceo.json",
+      "label": "CFO / CEO Portfolio",
+      "units": "10\u201350+ (or PE-backed)",
+      "buyer": "CFO / Controller / CEO / COO"
     }
   ],
   "venues": [
@@ -195,5 +259,8 @@
     }
   ],
   "parser": "scripts/parse-toast-reports.mjs",
-  "docs": "docs/TOAST-REPORTS.md"
+  "docs": [
+    "docs/TOAST-REPORTS.md",
+    "docs/ICP-SCALE.md"
+  ]
 }

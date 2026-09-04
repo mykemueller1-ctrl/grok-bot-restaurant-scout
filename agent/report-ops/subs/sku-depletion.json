@@ -8,7 +8,7 @@
   "domain_id": "inventory",
   "report_id": "sku-depletion",
   "parent": "inventory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Owns the SKU Depletion from Product Mix report (Derived from Item Selection qty). Ingests json, csv. Signals: inventory_depletion_qty, sku, net_sales. Routes findings up to the domain parent; teach labels via Report Teacher.",
   "source_report": "Derived from Item Selection qty",

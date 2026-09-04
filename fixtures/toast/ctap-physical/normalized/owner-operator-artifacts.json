@@ -1,0 +1,71 @@
+{
+  "venue_id": "community-pizza",
+  "icp_tier": "owner_1_5",
+  "note": "Physical owner-operator artifacts photographed 2026-09 — classic single-unit labor/inventory before digital rollup.",
+  "artifacts": [
+    {
+      "type": "kitchen-labor-card",
+      "days": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+      "stations": ["Manager", "Pizza 1", "Pizza 2", "Pizza 3", "Dough", "Dishes", "Fry 1", "Fry 2", "Fry 3", "Phones", "Float", "Oven", "Driver 1", "Driver 2", "Driver 3"],
+      "shifts": ["AM", "PM"],
+      "sample_filled": {
+        "Wednesday": {
+          "AM": {"Pizza 1": "Che", "Fry 1": "Tom", "Fry 2": "Nash"},
+          "PM": {"Pizza 1": "Deborah", "Pizza 2": "Dustin", "Fry 1": "Nealie", "Fry 2": "Josue", "Oven": "Gavin"}
+        },
+        "Tuesday": {
+          "AM": {"Pizza 1": "More", "Fry 1": "Nacho", "Fry 2": "Nash"},
+          "PM": {"Pizza 1": "Dustin", "Pizza 2": "Kyler", "Fry 1": "Steve", "Fry 2": "Che", "Oven": "Gavin"}
+        },
+        "Monday": {
+          "AM": {"Pizza 1": "Moe", "Fry 1": "Nash"},
+          "PM": {"Pizza 1": "Debbie", "Pizza 2": "Dustin", "Fry 1": "Steve", "Fry 2": "Thomas"}
+        },
+        "Sunday": {
+          "AM": {"Pizza 1": "Gavin", "Pizza 2": "Mark", "Fry 1": "Vaelo", "Fry 2": "Michael"},
+          "PM": {"Pizza 1": "Marc", "Pizza 2": "Dekomah", "Pizza 3": "Ryan", "Fry 1": "Tom", "Fry 2": "Steve", "Oven": "Che"}
+        }
+      },
+      "source_images": [
+        "assets/01a06a63-67f3-7736-858b-b5d94213eeb1.jpg",
+        "assets/01a06a63-6881-7010-b499-9f9976a51725.jpg",
+        "assets/01a06a63-6911-7a9c-a42d-532aedec8711.jpg",
+        "assets/01a06a63-699f-7c74-a499-0377ed8dbc9b.jpg"
+      ]
+    },
+    {
+      "type": "paper-weekly-schedule",
+      "week": "2026-08-30 to 2026-09-05",
+      "template": "Calendarpedia",
+      "employees_sample": ["Mychael", "Jessica", "Kenzy", "Bryson", "Jeri", "Kailee M.", "Sam", "Sydney", "Araya", "Shantera", "Kaylee S.", "Lauren"],
+      "codes": {"R/O": "requested/regular off", "CL": "close", "W": "window/waitress station", "B": "bar", "P": "pizza/patio", "FLOAT": "float"},
+      "events": ["Home Dodger Football Game", "Hawk Game @ 3:15", "Party of 80 @ 2 p.m."],
+      "source_images": [
+        "assets/01a06a63-6ad5-704d-add3-602ed1511441.jpg",
+        "assets/01a06a63-6afd-7119-b982-03feca54cdb1.jpg"
+      ]
+    },
+    {
+      "type": "vendor-invoice",
+      "samples": [
+        {"vendor": "Hopkins Distributing", "date": "2026-08-25", "customer": "Community Tap & Pizza", "total": 527.4, "beer": 607.6, "credits": -85.2},
+        {"vendor": "FT Dodge Distributing", "date": "2022-08-25", "customer": "Community Tavern", "total": 380.0, "items": "Yuengling Oktoberfest 1/4 BBL x3"},
+        {"vendor": "Hy-Vee", "date": "2026-08-25", "total": 82.41, "note": "Bread/buns run — matched payout account Bread $82.41"}
+      ]
+    },
+    {
+      "type": "payout-slip",
+      "samples": [
+        {"employee": "Kenzy Thompson", "account": "Miscellaneous", "amount": 4.0, "note": "Out Town → Josue"},
+        {"employee": "Jessica Gailey", "account": "Bread", "amount": 82.41, "description": "Hyvee"},
+        {"employee": "Jessica Gailey", "account": "Beverage", "amount": 6.0, "description": "Store"}
+      ]
+    }
+  ],
+  "icp_signals": [
+    "No area-leader rollup — one store clipboard",
+    "Labor planned by station card not Toast labor %",
+    "Inventory arrives as distributor invoice photos",
+    "Owner name on weekly schedule every open shift"
+  ]
+}

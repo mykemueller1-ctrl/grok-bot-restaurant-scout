@@ -6,14 +6,15 @@
   "color": "#2A9D8F",
   "family": "never86-report-ops",
   "domain_id": "inventory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Parent agent for Inventory / Par / Ordering reports. SKU depletion from mix + par/ordering sheets \u2192 theoretical vs actual. Spawns/routes sub-agents: sku-depletion, liquor-beer-par, vendor-intake. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
+  "description": "Parent agent for Inventory / Par / Ordering reports. SKU depletion from mix + par/ordering sheets \u2192 theoretical vs actual. Spawns/routes sub-agents: sku-depletion, liquor-beer-par, vendor-intake, vendor-invoice. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
   "job_to_be_done": "SKU depletion from mix + par/ordering sheets \u2192 theoretical vs actual",
   "sub_agents": [
     "sku-depletion",
     "liquor-beer-par",
-    "vendor-intake"
+    "vendor-intake",
+    "vendor-invoice"
   ],
   "skills": [
     "report-ingest",

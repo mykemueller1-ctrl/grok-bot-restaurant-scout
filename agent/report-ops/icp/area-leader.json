@@ -1,0 +1,38 @@
+{
+  "name": "Area / District Leader Scale ICP Sub",
+  "title": "Never86 ICP \u2014 Area / District Leader Scale",
+  "role": "icp_sub",
+  "shape": "fox",
+  "color": "#E76F51",
+  "family": "never86-report-ops",
+  "icp_tier": "area-leader",
+  "parent": "icp-scale",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns Area / District Leader Scale (5\u201315+ under an area leader; brand may be 15\u201350+). Buyer: Area Leader / District Manager / Dir of Ops. Coach GMs across stores; Daily/WTD CY vs PY boards; region then System rollups. Pains: margin lost between locations; labor swings 8pts across GMs on same brand; inconsistent coding / wrong labor grain; must coach not run shifts. Wedge: Store/region exceptions for area leaders \u2014 not 30 unread tabs.",
+  "units": "5\u201315+ under an area leader; brand may be 15\u201350+",
+  "buyer": "Area Leader / District Manager / Dir of Ops",
+  "pains": [
+    "margin lost between locations",
+    "labor swings 8pts across GMs on same brand",
+    "inconsistent coding / wrong labor grain",
+    "must coach not run shifts"
+  ],
+  "report_ids": [
+    "multi-unit-sales-labor",
+    "weekly-sales-pack",
+    "labor-summary",
+    "sales-summary",
+    "z-report"
+  ],
+  "example_packs": [
+    "courser/taco-bamba-sales-labor-mp-v5"
+  ],
+  "never86_wedge": "Store/region exceptions for area leaders \u2014 not 30 unread tabs",
+  "skills": [
+    "icp-scale-classify",
+    "teach-label",
+    "report-ingest"
+  ],
+  "swarm": true
+}

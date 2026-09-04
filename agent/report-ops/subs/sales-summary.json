@@ -8,7 +8,7 @@
   "domain_id": "sales",
   "report_id": "sales-summary",
   "parent": "sales",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Owns the Sales Summary (Toast) report (Toast \u2192 Sales \u2192 Sales Summary export). Ingests xlsx, csv. Signals: net_sales, gross_sales, tips, sales_categories, revenue_centers, dayparts, voids. Routes findings up to the domain parent; teach labels via Report Teacher.",
   "source_report": "Toast \u2192 Sales \u2192 Sales Summary export",

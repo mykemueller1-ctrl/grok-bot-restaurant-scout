@@ -1,0 +1,38 @@
+{
+  "name": "CFO / CEO Portfolio ICP Sub",
+  "title": "Never86 ICP \u2014 CFO / CEO Portfolio",
+  "role": "icp_sub",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "icp_tier": "cfo-ceo",
+  "parent": "icp-scale",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns CFO / CEO Portfolio (10\u201350+ (or PE-backed)). Buyer: CFO / Controller / CEO / COO. Location P&Ls weekly, prime cost, SSS, institutional consolidations across POS+labor+ERP. Pains: stale Excel consolidations; days to assemble portfolio view; no real-time variance alerts; four-wall EBITDA vs corporate overhead. Wedge: Faster time-to-leak-dollar across portfolio + action layer.",
+  "units": "10\u201350+ (or PE-backed)",
+  "buyer": "CFO / Controller / CEO / COO",
+  "pains": [
+    "stale Excel consolidations",
+    "days to assemble portfolio view",
+    "no real-time variance alerts",
+    "four-wall EBITDA vs corporate overhead"
+  ],
+  "report_ids": [
+    "multi-unit-sales-labor",
+    "labor-summary",
+    "sales-summary",
+    "sku-depletion",
+    "vendor-intake"
+  ],
+  "example_packs": [
+    "courser/taco-bamba System rollup"
+  ],
+  "never86_wedge": "Faster time-to-leak-dollar across portfolio + action layer",
+  "skills": [
+    "icp-scale-classify",
+    "teach-label",
+    "report-ingest"
+  ],
+  "swarm": true
+}

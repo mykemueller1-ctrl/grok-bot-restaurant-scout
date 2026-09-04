@@ -1,0 +1,25 @@
+{
+  "name": "ICP Scale Parent",
+  "title": "Never86 ICP parent \u2014 owner 1\u20135 vs area-leader vs CFO/CEO",
+  "role": "parent",
+  "shape": "fox",
+  "color": "#264653",
+  "family": "never86-report-ops",
+  "domain_id": "icp-scale",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Routes every report pack to the right buyer tier. Owner-operator paper cards are not area-leader WTD boards and not CFO consolidations. Spawns ICP subs owner-1-5, area-leader, cfo-ceo. Docs: docs/ICP-SCALE.md.",
+  "job_to_be_done": "Never pitch the wrong altitude of problem to the wrong buyer.",
+  "sub_agents": [
+    "owner-1-5",
+    "area-leader",
+    "cfo-ceo"
+  ],
+  "skills": [
+    "report-route",
+    "teach-label",
+    "icp-scale-classify"
+  ],
+  "docs": "docs/ICP-SCALE.md",
+  "swarm": true
+}

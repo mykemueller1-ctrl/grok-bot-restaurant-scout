@@ -86,7 +86,7 @@ python3 agent/report-ops/build_report_swarm.py
 | Subs (Time Entries, Item Selection, Z-Report, Par, …) | 11 | `agent/report-ops/subs/` |
 | Venue scouts (Grill, Taco Bamba, CTAP) | 3 | `agent/report-ops/venues/` |
 
-Holy grail inbox: **Mike Mueller Gmail** — Kristen → Grill + Taco Bamba Excel/CSV. CTAP Drive indexed under `fixtures/toast/drive-ctap-index.json`. Routine: `routines/report-ops-daily.json`.
+Holy grail inbox: **Mike Mueller Gmail** — Kristen → Grill + Taco Bamba Excel/CSV. CTAP Drive indexed under `fixtures/toast/drive-ctap-index.json`. Courser pack: `fixtures/toast/courser/`. ICP scale (owner 1–5 vs area-leader vs CFO/CEO): `docs/ICP-SCALE.md`. Routine: `routines/report-ops-daily.json`.
 
 ## Setup
 

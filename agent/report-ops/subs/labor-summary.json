@@ -8,7 +8,7 @@
   "domain_id": "labor",
   "report_id": "labor-summary",
   "parent": "labor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
   "description": "Owns the Labor Summary / Cost report (Toast \u2192 Labor \u2192 Labor Summary). Ingests csv, xlsx, pdf. Signals: labor_percent, hours_by_job, overtime. Routes findings up to the domain parent; teach labels via Report Teacher.",
   "source_report": "Toast \u2192 Labor \u2192 Labor Summary",
