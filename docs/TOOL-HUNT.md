@@ -45,6 +45,7 @@ Vertical AI moves weekly. Guessing loses. This loop:
 | `schemas/tool-finding.json` | Finding schema |
 | `routines/tool-hunt-weekly.json` | Monday 09:00 America/Chicago |
 | `scripts/run-tool-hunt-week.mjs` | Headless weekly gate (auth soft-check + ledger validate) |
+| `scripts/unlock-beyond-the-hunt.mjs` | After READY: Mem0 import + Context smoke |
 | `scripts/context-search.mjs` | Context REST research when `CONTEXT_DEV_API_KEY` set |
 | `scripts/mem0-smoke.mjs` | Mem0 smoke when `MEM0_API_KEY` set |
 

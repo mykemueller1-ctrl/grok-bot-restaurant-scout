@@ -46,7 +46,7 @@ console.log("active_buy_now: fixtures/tool-hunt/script-draft-franklin-buy-now.js
 console.log("active_keep_scorer: scripts/score-marketplace-keep.mjs");
 console.log("next: skills in routines/tool-hunt-weekly.json → write ToolFinding JSON → update ledger");
 if (authReady) {
-  console.log("mem0_next: node scripts/mem0-import-tool-hunt-memory.mjs");
+  console.log("mem0_next: node scripts/unlock-beyond-the-hunt.mjs");
 }
 
 if (!ledgerOk) {

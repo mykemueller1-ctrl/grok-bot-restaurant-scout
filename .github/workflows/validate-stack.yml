@@ -23,6 +23,17 @@ jobs:
       - run: npm run build
         env:
           DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+      - name: KEEP scorer smoke
+        run: |
+          node -e "
+          import { scoreMarketplaceKeep } from './dist/lib/marketplaceKeepScore.js';
+          import { dispatchSourceTool } from './dist/mcp/sources.js';
+          const a = scoreMarketplaceKeep('Restaurant owners KEEP DoorDash 30% commission');
+          if (a.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(a));
+          const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
+          if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
+          console.log('KEEP scorer smoke ok', a.score, b.score);
+          "
 
   wiring:
     runs-on: ubuntu-latest
@@ -82,5 +93,7 @@ jobs:
           test -f scripts/mem0-import-tool-hunt-memory.mjs
           test -f scripts/mem0-smoke.mjs
           test -f scripts/score-marketplace-keep.mjs
+          test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           node scripts/score-marketplace-keep.mjs "KEEP DoorDash commission quit" | grep -q anti_marketplace_buy_now
+          node scripts/unlock-beyond-the-hunt.mjs; test $? -eq 2

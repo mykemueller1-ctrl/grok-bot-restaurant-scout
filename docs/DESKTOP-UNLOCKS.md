@@ -35,6 +35,7 @@ Until keys land, Composio `COMPOSIO_SEARCH_WEB` stays the Active research fallba
 
 ```bash
 node scripts/check-auth-gaps.mjs   # want STATUS: READY
+node scripts/unlock-beyond-the-hunt.mjs   # after READY: Mem0 import + Context smoke
 ```
 
 Reply in this cloud agent when secrets/OAuth are done.

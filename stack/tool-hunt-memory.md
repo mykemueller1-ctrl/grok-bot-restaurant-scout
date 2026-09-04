@@ -120,3 +120,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Wired score_marketplace_keep into complaint-sources MCP (Fastify sources.ts + Worker).
 - mcp/complaint-sources.json + pain-complaint-scan updated. Auth Mem0/Context still BLOCKED.
+
+### 2026-09-04 (unlock runner)
+
+- Added scripts/unlock-beyond-the-hunt.mjs (READY → Mem0 import + Context smoke).
+- Worker KEEP scorer now imports shared marketplaceKeepScore lib.
+- CI pain-leads-api runs KEEP scorer smoke after build. Auth still blocked.

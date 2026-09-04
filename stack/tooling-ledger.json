@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0",
+  "version": "1.16.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -82,6 +82,7 @@
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
+    "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + complaint-sources MCP score_marketplace_keep",
@@ -454,7 +455,7 @@
     {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context not verified in this environment",
-      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/check-auth-gaps.mjs \u2192 STATUS: READY",
+      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0",
       "priority": 1
     },
     {
