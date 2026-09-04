@@ -1,0 +1,211 @@
+{
+  "venue_id": "community-pizza",
+  "venue_name": "Community Tap & Pizza",
+  "as_of": "2026-09-04",
+  "note": "As of Fri 2026-09-04 only. Live book is the Sun\u2013Sat week that contains today. Do not treat the Sep 2025 Drive pack as this week.",
+  "sources": [
+    "fixtures/toast/drive-ctap-index.json",
+    "Drive: ZReport_Summary Community Pizza (7-15 + 7-16-2026)",
+    "Drive archive: Ctap Weekly sales 9-14-25 to 9-20-25 (prior year \u2014 not live)"
+  ],
+  "live_book": {
+    "start": "2026-08-31",
+    "end": "2026-09-06",
+    "contains_today": "2026-09-04",
+    "status": "in_progress",
+    "days_elapsed": [
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04"
+    ],
+    "days_remaining": [
+      "2026-09-05",
+      "2026-09-06"
+    ],
+    "invoiceWeekHasZ": false,
+    "week_grand_total": null,
+    "week_labor_total": null,
+    "note": "Only through Fri 9/4. Do not invent Sat/Sun closes or pad missing Zs as $0."
+  },
+  "prior_invoice_week": {
+    "start": "2026-08-23",
+    "end": "2026-08-29",
+    "invoiceWeekHasZ": false,
+    "note": "Last complete Sun\u2013Sat before the live book (ended Sat 8/29)."
+  },
+  "recentZ": [
+    {
+      "date": "2026-07-15",
+      "label": "Wed 7/15",
+      "source": "7-15-2026 ZReport_Summary Community Pizza.pdf",
+      "grandTotal": 5738.03,
+      "foodSales": 3256.26,
+      "beerSales": 865.5,
+      "liquorSales": 583.5,
+      "largePizzaSales": 655.76,
+      "labor": 1335.7,
+      "expectedCash": 1560.8,
+      "actualDeposit": 1530,
+      "channels": [
+        {
+          "name": "Pickup",
+          "amount": 969.84
+        },
+        {
+          "name": "Delivery",
+          "amount": 1225.01
+        },
+        {
+          "name": "Bar",
+          "amount": 1275.59
+        },
+        {
+          "name": "Table",
+          "amount": 2267.59
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "label": "Thu 7/16",
+      "source": "7-16-2026 ZReport_Summary Community Pizza.pdf",
+      "grandTotal": 4645.04,
+      "foodSales": 2789.39,
+      "beerSales": 712,
+      "liquorSales": 642,
+      "largePizzaSales": 153.94,
+      "labor": 1429.94,
+      "expectedCash": 1600.93,
+      "actualDeposit": 1600,
+      "channels": [
+        {
+          "name": "Pickup",
+          "amount": 603.56
+        },
+        {
+          "name": "Delivery",
+          "amount": 822.47
+        },
+        {
+          "name": "Bar",
+          "amount": 1129.93
+        },
+        {
+          "name": "Table",
+          "amount": 2089.08
+        }
+      ]
+    }
+  ],
+  "archive_week_2025_09": {
+    "folder": "Ctap Weekly sales 9-14-25 to 9-20-25",
+    "start": "2025-09-14",
+    "end": "2025-09-20",
+    "days": [
+      {
+        "date": "2025-09-14",
+        "label": "Sun 9/14",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 6105.72,
+        "foodSales": 2902.54,
+        "beerSales": 1024,
+        "liquorSales": 586.5,
+        "largePizzaSales": 959.22,
+        "labor": 1698.18,
+        "expectedCash": 1727.81,
+        "actualDeposit": 1727.81,
+        "channels": []
+      },
+      {
+        "date": "2025-09-15",
+        "label": "Mon 9/15",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 2806.86,
+        "foodSales": 1581.69,
+        "beerSales": 488.75,
+        "liquorSales": 228.75,
+        "largePizzaSales": 304.6,
+        "labor": 1197.7,
+        "expectedCash": 651.6,
+        "actualDeposit": 0,
+        "channels": []
+      },
+      {
+        "date": "2025-09-16",
+        "label": "Tue 9/16",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 5425.29,
+        "foodSales": 2842.65,
+        "beerSales": 1043.29,
+        "liquorSales": 783.5,
+        "largePizzaSales": 264.83,
+        "labor": 1312.66,
+        "expectedCash": 1166.8,
+        "actualDeposit": 1166.8,
+        "channels": []
+      },
+      {
+        "date": "2025-09-17",
+        "label": "Wed 9/17",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 4911.69,
+        "foodSales": 2234.43,
+        "beerSales": 755.75,
+        "liquorSales": 622.25,
+        "largePizzaSales": 861.15,
+        "labor": 1305.88,
+        "expectedCash": 824.47,
+        "actualDeposit": 824.47,
+        "channels": []
+      },
+      {
+        "date": "2025-09-18",
+        "label": "Thu 9/18",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 5597.25,
+        "foodSales": 3008.1,
+        "beerSales": 1092,
+        "liquorSales": 556.75,
+        "largePizzaSales": 561.09,
+        "labor": 1654.37,
+        "expectedCash": 713.04,
+        "actualDeposit": 713.04,
+        "channels": []
+      },
+      {
+        "date": "2025-09-19",
+        "label": "Fri 9/19",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 8161.19,
+        "foodSales": 3847.67,
+        "beerSales": 1415.75,
+        "liquorSales": 978.75,
+        "largePizzaSales": 1144.28,
+        "labor": 2143.37,
+        "expectedCash": 2325.5,
+        "actualDeposit": 0,
+        "channels": []
+      },
+      {
+        "date": "2025-09-20",
+        "label": "Sat 9/20",
+        "source": "Historical_Prev_Day_Z_Report",
+        "grandTotal": 7266.06,
+        "foodSales": 3831.14,
+        "beerSales": 1072.25,
+        "liquorSales": 938.75,
+        "largePizzaSales": 888.22,
+        "labor": 1929.9,
+        "expectedCash": 1501.05,
+        "actualDeposit": 0,
+        "channels": []
+      }
+    ],
+    "week_grand_total": 40274.06,
+    "week_labor_total": 11242.06,
+    "kind": "archive",
+    "note": "Prior-year Drive pack (Sep 2025). Not the live book \u2014 today is only 2026-09-04."
+  }
+}

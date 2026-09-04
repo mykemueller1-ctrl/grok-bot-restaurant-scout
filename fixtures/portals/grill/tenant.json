@@ -1,0 +1,34 @@
+{
+  "venue_id": "grill",
+  "venue_name": "The New American Grill",
+  "aliases": ["Grill", "the grill", "The New American Grill"],
+  "icp": "owner-1-5",
+  "security": "secure_ready",
+  "status": "ready_after_community",
+  "location": {
+    "id": "grill-single-unit",
+    "name": "The New American Grill",
+    "plan": "owner_1_5"
+  },
+  "access_gate": {
+    "kind": "demo_house_code",
+    "code": "grill-kristen-ready",
+    "note": "Demo house code only. Portal is staged — opens fully after Community pattern is proven."
+  },
+  "data_boundary": {
+    "mode": "exclusive",
+    "allowed_paths": [
+      "./tenant.json",
+      "./seats.json",
+      "./data/kristen-packs.json"
+    ],
+    "forbidden_venue_ids": ["community-pizza", "taco-bamba"]
+  },
+  "session_key": "never86.portal.grill",
+  "product": "Never 86'd Action Shift",
+  "handoff": {
+    "after": "community-pizza",
+    "from": "Kristen",
+    "instruction": "When Community is made, take Kristen’s Courser work already staged under data/kristen-packs.json and wire it into Grill the same way Community holds historical-sales — same door rails, Grill-only data."
+  }
+}

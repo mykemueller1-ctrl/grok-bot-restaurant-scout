@@ -1,8 +1,10 @@
-# CTAP seats + front door
+# CTAP seats + secure portal
 
 Community Tap & Pizza (Fort Dodge) is the living lab for **Never 86'd Action Shift**.
 
-While invoice OCR wires in parallel, this pack locks the **sold seats** and the **front-door login**.
+**Canonical portal:** `fixtures/portals/community-pizza/` (see `docs/VENUE-PORTALS.md`).
+
+While invoice OCR wires in parallel, this pack locks the **sold seats** and the **secure front-door login**.
 
 **As of: Fri 2026-09-04.** Live book is the open Sun–Sat week that contains today — not a finished week, and not the Sep 2025 Drive pack.
 
@@ -14,23 +16,24 @@ While invoice OCR wires in parallel, this pack locks the **sold seats** and the 
 | Manager FOH | `manager-foh` | paid | **Kenzy Thompson** | front |
 | Manager BOH | `manager-boh` | paid | **Tom Dorothy** | back |
 
-Ledger: `fixtures/ctap-portal/seats.json`  
+Ledger: `fixtures/portals/community-pizza/seats.json`  
 Schema: `schemas/ctap-seat.json`
 
 Routing (Action Shift): liquor / beer / FOH labor → Kenzy. Food / BOH labor → Tom. Prime / 3P / two-house → Myke.
 
-## Front door
+## Front door (secure)
 
 ```bash
-python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/ctap-portal
-# open http://127.0.0.1:5174/login.html
+python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals
+# open http://127.0.0.1:5174/community-pizza/login.html
+# house code: ctap-fort-dodge
 ```
 
-`login.html` is the Community Tap & Pizza door. Pick a sold seat → walk into the desk with all three seats lit and the live book through **Fri 9/4 only**.
+Pick a sold seat → walk into the desk with all three seats lit and the live book through **Fri 9/4 only**. Community data only — Taco Bamba and Grill stay out.
 
 ## Sales book (honest calendar)
 
-`fixtures/ctap-portal/historical-sales.json`
+`fixtures/portals/community-pizza/data/historical-sales.json`
 
 | Book | Window | Status |
 | --- | --- | --- |
@@ -43,4 +46,4 @@ Invoice photo OCR stays with the parallel ICP invoice agent — do not invent to
 
 ## Venue scout
 
-`agent/report-ops/venues/community-pizza.json` points at this pack (`seats_ledger`, `front_door`, `historical_sales`).
+`agent/report-ops/venues/community-pizza.json` points at this pack (`secure_portal`, `seats_ledger`, `front_door`, `historical_sales`).

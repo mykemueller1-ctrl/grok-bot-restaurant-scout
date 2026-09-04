@@ -8,18 +8,28 @@
   "venue_id": "grill",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for The New American Grill. Source: Drive Courser folder + Kristen packs. Status: courser_indexed.",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for The New American Grill. Source: Drive Courser folder + Kristen packs. Secure portal: fixtures/portals/grill/. Status: portal_ready_after_community.",
   "aliases": [
     "Grill",
     "the grill",
     "The New American Grill"
   ],
   "holy_grail_source": "Drive Courser folder + Kristen packs",
-  "status": "courser_indexed",
+  "status": "portal_ready_after_community",
   "skills": [
     "report-ingest",
     "report-route",
     "teach-label"
   ],
-  "swarm": true
+  "swarm": true,
+  "secure_portal": "fixtures/portals/grill/",
+  "seats_ledger": "fixtures/portals/grill/seats.json",
+  "front_door": "fixtures/portals/grill/login.html",
+  "kristen_packs": "fixtures/portals/grill/data/kristen-packs.json",
+  "portals_doc": "docs/VENUE-PORTALS.md",
+  "handoff": {
+    "after": "community-pizza",
+    "from": "Kristen",
+    "instruction": "When Community portal is proven, drop Kristen packs into Grill the same way Community holds historical-sales."
+  }
 }

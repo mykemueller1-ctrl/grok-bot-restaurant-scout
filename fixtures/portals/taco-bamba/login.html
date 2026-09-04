@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Taco Bamba — secure multi-unit portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0d1512;
+        --panel: #12201a;
+        --panel-2: #183027;
+        --lime: #c6f355;
+        --mint: #7dffb3;
+        --fog: #d7e7de;
+        --muted: #8eaa9b;
+        --line: rgba(215, 231, 222, 0.14);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--fog);
+        font-family: "DM Sans", system-ui, sans-serif;
+        background:
+          radial-gradient(1000px 600px at 100% -10%, rgba(198, 243, 85, 0.16), transparent 50%),
+          radial-gradient(800px 500px at -10% 110%, rgba(125, 255, 179, 0.1), transparent 45%),
+          linear-gradient(160deg, #07110d 0%, #0f1c16 55%, #08110d 100%);
+      }
+      .stage {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 28px 16px 48px;
+      }
+      .door {
+        width: min(460px, 100%);
+        background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+        border: 1px solid var(--line);
+        padding: 30px 26px 24px;
+        animation: rise 650ms ease both;
+      }
+      .door.off { display: none; }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(14px); }
+        to { opacity: 1; transform: none; }
+      }
+      .os {
+        color: var(--lime);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(1.7rem, 4vw, 2.2rem);
+        letter-spacing: -0.02em;
+        margin: 0 0 10px;
+        line-height: 1;
+      }
+      .lede { margin: 0 0 20px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+      .field { margin-bottom: 12px; }
+      label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--fog); }
+      select, input {
+        width: 100%;
+        border: 1px solid var(--line);
+        background: rgba(0, 0, 0, 0.25);
+        color: var(--fog);
+        padding: 12px;
+        font: inherit;
+      }
+      .go {
+        width: 100%;
+        border: 0;
+        margin-top: 8px;
+        padding: 13px 14px;
+        font: inherit;
+        font-weight: 700;
+        background: var(--lime);
+        color: var(--ink);
+        cursor: pointer;
+      }
+      .fine { margin: 12px 0 0; font-size: 12px; color: var(--muted); }
+      .err { color: #ff8f8f; font-size: 13px; margin-top: 10px; min-height: 18px; }
+      .desk {
+        display: none;
+        width: min(1040px, 100%);
+        animation: rise 450ms ease both;
+      }
+      .desk.on { display: block; }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .mark {
+        font-family: "Archivo Black", sans-serif;
+        font-size: 26px;
+      }
+      .mark span { color: var(--lime); }
+      .meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+      .signout {
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--fog);
+        padding: 8px 12px;
+        cursor: pointer;
+        font: inherit;
+      }
+      .who, .board, .region {
+        background: rgba(215, 231, 222, 0.05);
+        border: 1px solid var(--line);
+        padding: 14px 16px;
+        margin-bottom: 12px;
+      }
+      .who strong { font-size: 16px; }
+      .who p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 12px;
+      }
+      @media (max-width: 800px) { .stats { grid-template-columns: 1fr 1fr; } }
+      .stat b {
+        display: block;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 22px;
+        color: var(--mint);
+      }
+      .stat span { font-size: 12px; color: var(--muted); }
+      .regions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      @media (max-width: 800px) { .regions { grid-template-columns: 1fr; } }
+      .region h3 {
+        margin: 0 0 6px;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 16px;
+      }
+      .region.active { border-color: rgba(198, 243, 85, 0.45); }
+      .stores { margin: 8px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
+      .stores li {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 4px 0;
+        border-top: 1px solid var(--line);
+      }
+      .lock { margin-top: 10px; font-size: 12px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="door" id="door">
+        <div class="os">Secure · multi-unit · Bamba only</div>
+        <h1>Taco Bamba</h1>
+        <p class="lede">
+          Area-leader portal. System + John / Red / Travis / Yas. This door never loads Community or Grill.
+        </p>
+        <form id="login">
+          <div class="field">
+            <label for="gate">House code</label>
+            <input id="gate" type="password" placeholder="bamba-system" required />
+          </div>
+          <div class="field">
+            <label for="seat">Seat</label>
+            <select id="seat" required>
+              <option value="">Choose a seat…</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="name">Signed in as</label>
+            <input id="name" readonly placeholder="Assignee fills in" />
+          </div>
+          <button class="go" type="submit">Open system desk</button>
+          <div class="err" id="err"></div>
+          <p class="fine">Sales Labor Report (MP) v5 · secure data boundary</p>
+        </form>
+      </section>
+      <section class="desk" id="desk" aria-live="polite"></section>
+    </main>
+    <script src="../shared/isolation.js"></script>
+    <script>
+      const VENUE = "taco-bamba";
+      let tenant = null;
+      let seatsDoc = null;
+      let board = null;
+
+      async function boot() {
+        const bound = await Never86Portal.loadTenantBound(VENUE);
+        tenant = bound.tenant;
+        const [seats, boardDoc] = await Promise.all([
+          fetch("./seats.json").then((r) => r.json()),
+          fetch("./data/multi-unit-board.json").then((r) => r.json()),
+        ]);
+        Never86Portal.assertOwnData(seats, VENUE, "seats");
+        Never86Portal.assertOwnData(boardDoc, VENUE, "board");
+        seatsDoc = seats;
+        board = boardDoc;
+        const select = document.getElementById("seat");
+        for (const s of seats.seats) {
+          const opt = document.createElement("option");
+          opt.value = s.login_id;
+          opt.textContent = `${s.label} · ${s.assignee.name}`;
+          select.appendChild(opt);
+        }
+        select.addEventListener("change", () => {
+          const found = seats.seats.find((s) => s.login_id === select.value);
+          document.getElementById("name").value = found ? found.assignee.name : "";
+        });
+        const prior = Never86Portal.readSession(tenant.session_key);
+        if (prior?.login_id) renderDesk(prior.login_id);
+      }
+
+      function renderDesk(loginId) {
+        const active = seatsDoc.seats.find((s) => s.login_id === loginId);
+        if (!active) return;
+        document.getElementById("door").classList.add("off");
+        const desk = document.getElementById("desk");
+        desk.classList.add("on");
+        const focus =
+          active.role === "system_ops"
+            ? board.regions
+            : board.regions.filter((r) => r.area_leader.toLowerCase() === active.login_id);
+        desk.innerHTML = `
+          <div class="top">
+            <div>
+              <div class="mark">Taco <span>Bamba</span></div>
+              <div class="meta">Secure multi-unit · ${board.period_note} · ${board.store_count} stores</div>
+            </div>
+            <button class="signout" type="button" id="signout">Sign out</button>
+          </div>
+          <div class="who">
+            <strong>${active.label} · ${active.assignee.name}</strong>
+            <p>${active.assignee.title || "Area leader"} · ${active.owns.join(" · ")}</p>
+          </div>
+          <section class="board">
+            <h2 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:18px">System board</h2>
+            <div class="stats">
+              <div class="stat"><b>${Never86Portal.money(board.system.cy_sales)}</b><span>CY sales</span></div>
+              <div class="stat"><b>${Never86Portal.money(board.system.py_sales)}</b><span>PY sales</span></div>
+              <div class="stat"><b>${Never86Portal.pct(board.system.cy_vs_py)}</b><span>CY vs PY</span></div>
+              <div class="stat"><b>${board.system.cy_checks.toLocaleString()}</b><span>CY checks</span></div>
+            </div>
+          </section>
+          <div class="regions">
+            ${focus
+              .map(
+                (r) => `
+              <article class="region ${active.login_id === r.area_leader.toLowerCase() ? "active" : ""}">
+                <h3>${r.area_leader} · ${r.store_count} stores</h3>
+                <div class="stat"><b>${Never86Portal.money(r.cy_sales)}</b><span>Region CY</span></div>
+                <ul class="stores">
+                  ${r.stores
+                    .map(
+                      (s) => `<li><span>${s.location}</span><span>${Never86Portal.money(s.cy_sales)} · ${Never86Portal.pct(s.cy_vs_py)}</span></li>`
+                    )
+                    .join("")}
+                </ul>
+              </article>`
+              )
+              .join("")}
+          </div>
+          <p class="lock">Bamba data boundary only — Community and Grill stay out.</p>
+        `;
+        document.getElementById("signout").onclick = () => {
+          Never86Portal.clearSession(tenant.session_key);
+          desk.classList.remove("on");
+          desk.innerHTML = "";
+          document.getElementById("door").classList.remove("off");
+        };
+      }
+
+      document.getElementById("login").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const code = document.getElementById("gate").value;
+        const id = document.getElementById("seat").value;
+        if (!Never86Portal.gateOk(tenant, code)) {
+          document.getElementById("err").textContent = "Wrong house code for Taco Bamba.";
+          return;
+        }
+        if (!id) {
+          document.getElementById("err").textContent = "Pick a seat first.";
+          return;
+        }
+        Never86Portal.saveSession(tenant.session_key, { venue_id: VENUE, login_id: id });
+        renderDesk(id);
+      });
+
+      boot().catch((err) => {
+        document.getElementById("err").textContent = String(err.message || err);
+      });
+    </script>
+  </body>
+</html>

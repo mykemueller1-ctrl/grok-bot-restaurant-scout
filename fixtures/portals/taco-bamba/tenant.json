@@ -1,0 +1,29 @@
+{
+  "venue_id": "taco-bamba",
+  "venue_name": "Taco Bamba",
+  "aliases": ["Taco Bomb", "Bamba"],
+  "icp": "area-leader",
+  "security": "secure",
+  "status": "live_demo",
+  "location": {
+    "id": "taco-bamba-system",
+    "name": "Multi-unit system",
+    "plan": "area_leader"
+  },
+  "access_gate": {
+    "kind": "demo_house_code",
+    "code": "bamba-system",
+    "note": "Demo house code only — not a production credential. Real auth lands with hosted deploy."
+  },
+  "data_boundary": {
+    "mode": "exclusive",
+    "allowed_paths": [
+      "./tenant.json",
+      "./seats.json",
+      "./data/multi-unit-board.json"
+    ],
+    "forbidden_venue_ids": ["community-pizza", "grill"]
+  },
+  "session_key": "never86.portal.taco-bamba",
+  "product": "Never 86'd Action Shift"
+}

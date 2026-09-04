@@ -374,7 +374,17 @@
         "The New American Grill"
       ],
       "holy_grail_source": "Drive Courser folder + Kristen packs",
-      "status": "courser_indexed"
+      "status": "portal_ready_after_community",
+      "secure_portal": "fixtures/portals/grill/",
+      "seats_ledger": "fixtures/portals/grill/seats.json",
+      "front_door": "fixtures/portals/grill/login.html",
+      "kristen_packs": "fixtures/portals/grill/data/kristen-packs.json",
+      "portals_doc": "docs/VENUE-PORTALS.md",
+      "handoff": {
+        "after": "community-pizza",
+        "from": "Kristen",
+        "instruction": "When Community portal is proven, drop Kristen packs into Grill the same way Community holds historical-sales."
+      }
     },
     {
       "id": "taco-bamba",
@@ -385,7 +395,13 @@
         "Bamba"
       ],
       "holy_grail_source": "Drive Courser \u2014 Sales Labor Report (MP) v5",
-      "status": "courser_indexed"
+      "status": "secure_portal_live",
+      "secure_portal": "fixtures/portals/taco-bamba/",
+      "seats_ledger": "fixtures/portals/taco-bamba/seats.json",
+      "front_door": "fixtures/portals/taco-bamba/login.html",
+      "multi_unit_board": "fixtures/portals/taco-bamba/data/multi-unit-board.json",
+      "portals_doc": "docs/VENUE-PORTALS.md",
+      "icp": "area-leader"
     },
     {
       "id": "community-pizza",
@@ -396,11 +412,13 @@
         "Community Tap"
       ],
       "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
-      "status": "seats_sold_demo",
-      "seats_ledger": "fixtures/ctap-portal/seats.json",
-      "front_door": "fixtures/ctap-portal/login.html",
-      "historical_sales": "fixtures/ctap-portal/historical-sales.json",
+      "status": "secure_portal_live",
+      "secure_portal": "fixtures/portals/community-pizza/",
+      "seats_ledger": "fixtures/portals/community-pizza/seats.json",
+      "front_door": "fixtures/portals/community-pizza/login.html",
+      "historical_sales": "fixtures/portals/community-pizza/data/historical-sales.json",
       "seats_doc": "docs/CTAP-SEATS.md",
+      "portals_doc": "docs/VENUE-PORTALS.md",
       "sold_seats": [
         {
           "role": "owner",
