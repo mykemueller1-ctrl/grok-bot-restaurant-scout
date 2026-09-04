@@ -23,22 +23,53 @@ const findings = readdirSync(findingsDir)
 const rank = { adopt: 0, pilot: 1, needs_auth: 2, watch: 3, skip: 4 };
 findings.sort((a, b) => (rank[a.verdict] ?? 9) - (rank[b.verdict] ?? 9) || (a.priority ?? 9) - (b.priority ?? 9));
 
-const adopts = findings.filter((f) => f.verdict === "adopt").slice(0, 6);
-const needsAuth = findings.filter((f) => f.verdict === "needs_auth").slice(0, 4);
+const feePause = (ledger.open_gaps || []).some((g) => /fee-catalog-pause/i.test(g.id || ""));
+const isFeeDogfood = (f) =>
+  /fee|saleslead|sales-lead|per-order|guest fee|commission|convenience fee/i.test(
+    `${f.name || ""} ${f.summary || ""} ${f.finding_id || ""}`
+  );
+
+// When fee catalog is paused, TOP MOVES = auth/open_gaps first, not a wall of old fee adopts.
+const needsAuth = findings.filter((f) => f.verdict === "needs_auth").slice(0, 6);
 const watching = findings.filter((f) => f.verdict === "watch").slice(0, 8);
+const adopts = findings
+  .filter((f) => f.verdict === "adopt")
+  .filter((f) => !(feePause && isFeeDogfood(f)))
+  .slice(0, feePause ? 3 : 6);
 const rivals = (ledger.competitors || [])
   .filter((c) => c.lane === "vertical_gtm")
   .slice(0, 8);
+
+const topMoves = [];
+for (const g of (ledger.open_gaps || []).filter((x) => (x.priority ?? 9) <= 1).slice(0, 4)) {
+  topMoves.push({
+    verdict: /auth|mem0|context/i.test(`${g.id} ${g.gap}`) ? "needs_auth" : "watch",
+    name: g.id,
+    summary: g.gap || g.action || "",
+  });
+}
+for (const f of needsAuth) {
+  if (topMoves.length >= 6) break;
+  if (topMoves.some((m) => m.name === f.name)) continue;
+  topMoves.push(f);
+}
+for (const f of adopts) {
+  if (topMoves.length >= 6) break;
+  topMoves.push(f);
+}
 
 const lines = [];
 lines.push(`Beyond the Hunt — ${today} (vertical)`);
 lines.push("");
 lines.push("SCOPE: love→buy-now · pain→sales-lead · Cursor memory/skills/MCP");
 lines.push("OUT: historical sales forecasting · labor forecasting");
+if (feePause) {
+  lines.push("PAUSE: fee KEEP catalog sufficient — no new fee dogfoods unless cite sharpens love→buy-now / Cursor stack");
+}
 lines.push("");
 lines.push("TOP MOVES");
-if (!adopts.length) lines.push("1. (no adopt findings yet)");
-else adopts.forEach((f, i) => lines.push(`${i + 1}. [${f.verdict}] ${f.name} — ${f.summary || f.gap || ""}`));
+if (!topMoves.length) lines.push("1. (no priority moves yet)");
+else topMoves.forEach((f, i) => lines.push(`${i + 1}. [${f.verdict}] ${f.name} — ${f.summary || f.gap || ""}`));
 lines.push("");
 lines.push("US vs VERTICAL");
 lines.push("| Rival | Their edge | Our edge |");

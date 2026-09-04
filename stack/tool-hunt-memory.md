@@ -622,3 +622,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Myke: enough vendor-fee / KEEP-pain context on file (`strong_keep` **63**). **Pause further fee dogfood expansion** unless a cite sharpens love→buy-now or Cursor memory/skills/MCP in a way the catalog does not already cover.
 - Remaining Beyond the Hunt blocker: Mem0 + Context auth (`STATUS: BLOCKED_UNTIL_SECRETS_OR_DESKTOP`). After unlock → import `stack/tool-hunt-memory.md` + Context smoke → goal complete.
 - Still never: historical sales/labor forecasting research. Still no US swarm expand beyond wave 1.
+
+### 2026-09-04 (Auth-first brief + Instagram reconnect)
+
+- Brief TOP MOVES now prioritizes open_gaps / needs_auth over old fee adopts when fee-catalog-pause is on.
+- Instagram Composio reconnect link issued (expires ~10 min) — love→buy-now UGC path, not fee hunting.
+- Still blocked: MEM0_API_KEY + CONTEXT_DEV_API_KEY → `node scripts/unlock-beyond-the-hunt.mjs`.
