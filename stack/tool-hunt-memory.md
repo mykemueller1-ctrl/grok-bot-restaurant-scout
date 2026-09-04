@@ -616,3 +616,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for `3.9% per order` / `2.9% per order`.
 - pain-scan-tenvito-pct-fee.json → strong_keep **63**; pain-to-sales-tenvito-fee-* ×5; validate-tenvito-fee-dogfood ≥5. FoxiFood-class EU thematic — no US swarm expand.
 - Ledger v1.92.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Operator pause — fee catalog sufficient)
+
+- Myke: enough vendor-fee / KEEP-pain context on file (`strong_keep` **63**). **Pause further fee dogfood expansion** unless a cite sharpens love→buy-now or Cursor memory/skills/MCP in a way the catalog does not already cover.
+- Remaining Beyond the Hunt blocker: Mem0 + Context auth (`STATUS: BLOCKED_UNTIL_SECRETS_OR_DESKTOP`). After unlock → import `stack/tool-hunt-memory.md` + Context smoke → goal complete.
+- Still never: historical sales/labor forecasting research. Still no US swarm expand beyond wave 1.

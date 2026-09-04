@@ -1,5 +1,5 @@
 {
-  "version": "1.92.0",
+  "version": "1.92.1",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1159,6 +1159,12 @@
   ],
   "watchlist": [
     {
+      "item": "Fee catalog pause \u2014 Mem0/Context unlock next",
+      "lane": "memory",
+      "why": "Operator: enough bad-fee context (strong_keep 63). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love\u2192buy-now / Cursor tooling that the catalog does not already teach.",
+      "verdict": "watch"
+    },
+    {
       "item": "Tenvito 3.9%/2.9% per-order SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN Tenvito Open 3.9% / Service \u20ac29+2.9% per order on top of Stripe (tenvito.com/pricing) under free/low-monthly claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 3.9%/2.9% per order; validate-tenvito-fee-dogfood \u22655; strong_keep 63. EU thematic \u2014 no US swarm expand.",
@@ -2199,6 +2205,12 @@
   ],
   "open_gaps": [
     {
+      "id": "fee-catalog-pause-auth-first",
+      "gap": "Fee KEEP catalog sufficient (strong_keep 63) \u2014 operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
+      "action": "Do not expand fee dogfoods unless cite sharpens love\u2192buy-now / Cursor memory-skills-MCP beyond catalog. Unlock MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth). Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0, then import stack/tool-hunt-memory.md",
+      "priority": 1
+    },
+    {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context not verified in this environment",
       "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0",
@@ -2260,5 +2272,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-05T01:10:00Z"
+  "updated_at": "2026-09-05T01:25:00Z"
 }
