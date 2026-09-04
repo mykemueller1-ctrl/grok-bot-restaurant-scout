@@ -1,0 +1,21 @@
+{
+  "finding_id": "rioja-buy-now-script-catalog-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Rioja Denver buy-now script + catalog sandbox",
+  "vendor_or_project": "Never86 script-draft / catalog-sync",
+  "urls": [
+    "https://www.yelp.com/biz/rioja-denver",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json",
+    "fixtures/tool-hunt/catalog-sync-rioja-sandbox.json"
+  ],
+  "what_it_does": "Third ContentDraft + commerce sandbox after Franklin/Husk — Denver love→buy-now without IG/Mem0.",
+  "how_competitors_use_it": "ChowNow/Chowly/Lunchbox own web OS; we stay TikTok/IG Shop rails.",
+  "what_we_use_today": "Franklin + Husk script/catalog dogfoods",
+  "gap": "Closed — Rioja PENDING_APPROVAL + SANDBOX_PAYLOAD_ONLY; validate-buy-now ≥3.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopted Rioja buy-now script-draft + catalog-sync sandbox for Denver love market.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

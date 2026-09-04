@@ -1,0 +1,21 @@
+{
+  "finding_id": "ainisa-tiktok-ig-order-agent-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ainisa — multi-channel restaurant AI agent (TikTok/IG orders)",
+  "vendor_or_project": "Ainisa",
+  "urls": [
+    "https://ainisa.com/en/use-cases/1-ai-agent-for-restaurants",
+    "https://docs.ainisa.com/integrations/tiktok.html",
+    "https://ainisa.com/en"
+  ],
+  "what_it_does": "24/7 AI agent answers menu/hours, takes reservations and food orders via website chat, WhatsApp, Facebook, Instagram, Telegram, and TikTok DMs; demo stores leads in Google Sheets.",
+  "how_competitors_use_it": "Messaging-channel order close overlapping TextOrder/Seekadu — social inbox → order/reservation, not shoppable Shop product rails.",
+  "what_we_use_today": "Never86 love→buy-now scripts + TikTok Shop catalog path; TextOrder already watched for DM ordering.",
+  "gap": "Watch as TikTok DM ordering peer. Keep Never86 on buy-now / Shop rails; cite Ainisa when contrasting DM agents in outreach.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "TikTok/IG DM order agent rival. Same messaging-close lane as TextOrder — not our Shop wedge.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

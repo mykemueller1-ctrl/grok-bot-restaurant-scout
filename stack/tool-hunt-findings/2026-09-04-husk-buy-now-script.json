@@ -1,0 +1,21 @@
+{
+  "finding_id": "husk-buy-now-script-catalog-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Husk Nashville buy-now script + catalog sandbox",
+  "vendor_or_project": "Never86 script-draft / catalog-sync",
+  "urls": [
+    "https://www.yelp.com/biz/husk-nashville",
+    "fixtures/tool-hunt/script-draft-husk-buy-now.json",
+    "fixtures/tool-hunt/catalog-sync-husk-sandbox.json"
+  ],
+  "what_it_does": "Second-market buy-now ContentDraft + commerce-engine sandbox after Franklin — closes love→buy-now without IG/Mem0.",
+  "how_competitors_use_it": "Trenz/CreatOK script→shop; Lunchbox/OPA! own web OS; we stay TikTok/IG Shop rails.",
+  "what_we_use_today": "Franklin script-draft + catalog-sync sandbox",
+  "gap": "Closed — Husk PENDING_APPROVAL draft + SANDBOX_PAYLOAD_ONLY catalog.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopted Husk buy-now script-draft + catalog-sync sandbox dogfood for Nashville love market.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

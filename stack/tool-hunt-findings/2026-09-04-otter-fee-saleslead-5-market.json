@@ -1,0 +1,25 @@
+{
+  "finding_id": "otter-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Otter restaurant-paid per-order fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-otter-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-otter-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-otter-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-otter-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-otter-fee-rioja.json",
+    "scripts/validate-otter-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-otter-per-order.json"
+  ],
+  "what_it_does": "Otter ~$0.15+/order restaurant-paid txn fee under commission-free OO → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6% + Marketplace 15–30%. Distinct from guest_paid tech fees.",
+  "how_competitors_use_it": "Otter sells 0% commission OO bundles that still skim KEEP via per-order fees; Owner/Toast OO peers similarly.",
+  "what_we_use_today": "validate-otter-fee-dogfood ≥5 + validate-market-coverage otter_fee link",
+  "gap": "Still DRAFT calibration — Mem0/Context blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Otter per-order fee SalesLead dogfoods now match all five love markets beside guest-fee set.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Zay-OS guest per-order fee under commission-free OO KEEP pain",
+  "hits": [
+    {
+      "url": "https://zay-os.com/commission-free-online-ordering-guide",
+      "posted_at": "2026-09-04",
+      "handle": "zayos",
+      "snippet": "Zay-OS commission-free OO — guests pay a small per-order fee at checkout typically $1.99 to $3.99 vs DoorDash Marketplace 25%; diner tech fee under first-party claim",
+      "pain_id": "zayos_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "Guest $1.99–$3.99/order on 'commission-free' Zay-OS is still platform rent — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+    }
+  ],
+  "notes": "Category teach from Zay-OS buyer guide (also applies to peers that shift platform cost to diners). Florida-skew operator stack. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

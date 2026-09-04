@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-foodappfast-fee-husk-2026-09-04",
+  "purpose": "Food App Fast 8% monthly commission (often passed as guest online ordering fee) → SalesLead DRAFT for Husk (Nashville). Contrasts first_party_pct_fee under no-monthly claim vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Food App Fast 8% monthly commission (often guest online ordering fee)",
+    "guest_paid_platform_fee": "Food App Fast 8% often added as customer convenience / online ordering fee at checkout",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "foodappfast_8pct_commission",
+    "vendor_id": "foodappfast",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Husk",
+      "city": "Nashville",
+      "market": "Nashville, TN",
+      "yelp_alias": "husk-nashville",
+      "love_signal": "Sean Brock Southern cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Food App Fast markets no set monthly fees then bills 8% commission (often passed as guest online ordering fee). Husk-class love should close on Never86 Shop ~6% buy-now — honest platform math without diner sticker shock or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "guest_paid_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "foodappfast",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-foodappfast-pct-fee.json",
+      "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "foodappfast_8pct_commission",
+    "account_name": "Husk",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Nashville",
+    "market": "Nashville, TN",
+    "complaint_thesis": "Food App Fast markets no setup / no set monthly fees then charges an 8% monthly commission fee often passed as a customer online ordering fee — first_party_pct_fee / guest_paid KEEP leak under 'we only make money if you do' claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. Sean Brock cult love already prints demand — close Shop buy-now, not Food App Fast 8%.",
+    "quotes": [
+      "Food App Fast 8% monthly commission (often guest online ordering fee)",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Food App Fast 8% OO commission",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + guest_paid_platform_fee teach: Food App Fast 8% still taxes every cart under no-monthly claim; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: Sean Brock cult love already prints demand — close Shop buy-now, not Food App Fast 8%.",
+    "sources": [
+      "https://www.foodappfast.com/pricing",
+      "fixtures/tool-hunt/pain-scan-foodappfast-pct-fee.json",
+      "https://www.yelp.com/biz/husk-nashville"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Food App Fast 8% → SalesLead. Flipdish/Ordering.Tools-class first-party %. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-foodappfast-pct-fee.json",
+    "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

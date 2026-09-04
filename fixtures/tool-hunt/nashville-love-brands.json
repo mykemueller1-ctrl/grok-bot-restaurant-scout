@@ -1,0 +1,50 @@
+{
+  "seed_id": "nashville-love-brands-yelp-2026-09-04",
+  "purpose": "Fourth-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "market": "Nashville, TN",
+  "brands": [
+    {
+      "name": "Husk",
+      "yelp_alias": "husk-nashville",
+      "phone": "+16152566565",
+      "rating": 3.9,
+      "review_count": 1987,
+      "transactions": ["delivery"],
+      "love_signal": "Sean Brock Southern destination / high UGC volume / Rutledge St cult",
+      "never86_fit": "Chef-loved Southern brand → TikTok/IG shoppable SKUs vs marketplace delivery rent"
+    },
+    {
+      "name": "The Catbird Seat",
+      "yelp_alias": "the-catbird-seat-nashville",
+      "phone": "+16158108200",
+      "rating": 4.5,
+      "review_count": 522,
+      "transactions": [],
+      "love_signal": "Chef’s-counter destination / no Yelp marketplace transactions",
+      "never86_fit": "Viral tasting-counter love → limited-drop buy-now without DoorDash rails"
+    },
+    {
+      "name": "Henrietta Red",
+      "yelp_alias": "henrietta-red-nashville",
+      "phone": "+16154908042",
+      "rating": 4.3,
+      "review_count": 644,
+      "transactions": [],
+      "love_signal": "Germantown oyster/chef cult / first-party-leaning (no marketplace txs on Yelp)",
+      "never86_fit": "Local love → social commerce close before OPA!/SWIPEBY web OS"
+    },
+    {
+      "name": "Rolf and Daughters",
+      "yelp_alias": "rolf-and-daughters-nashville",
+      "phone": "+16158669897",
+      "rating": 4.3,
+      "review_count": 1139,
+      "transactions": ["delivery"],
+      "love_signal": "Germantown New American destination / strong review volume",
+      "never86_fit": "Cult kitchen with delivery present — re-route social demand to owned buy-now"
+    }
+  ],
+  "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Husk / Catbird Seat / Bastion / Henrietta Red) 2026-09-04",
+  "status": "calibration_only",
+  "notes": "Prefer chef/cult narrative + review volume. Bastion/Noko watched but skipped for seed (lower volume / less clear buy-now SKU path)."
+}

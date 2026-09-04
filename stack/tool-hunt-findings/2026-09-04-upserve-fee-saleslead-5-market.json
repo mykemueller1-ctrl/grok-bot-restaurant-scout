@@ -1,0 +1,26 @@
+{
+  "finding_id": "upserve-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Upserve/U-Series 2.99% OO service fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain\u2192sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-upserve-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-upserve-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-upserve-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-upserve-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-upserve-fee-rioja.json",
+    "scripts/validate-upserve-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-upserve-pct-fee.json",
+    "https://u-series-support.lightspeedhq.com/s/article/Upserve-Online-Ordering-Service-Fee"
+  ],
+  "what_it_does": "Upserve/Lightspeed U-Series OO 2.99% service fee (guest-default) \u2192 SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "POS-bundled OO funds itself via guest-default 2.99% platform service fee (restaurant can absorb).",
+  "what_we_use_today": "validate-upserve-fee-dogfood \u22655; first_party_pct_fee widened for 2.99%",
+  "gap": "Mobile Tap temporarily zeros consumer fee; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Upserve/U-Series 2.99% OO SalesLead dogfoods match five love markets; strong_keep 32.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

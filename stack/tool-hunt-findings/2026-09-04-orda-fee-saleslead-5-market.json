@@ -1,0 +1,26 @@
+{
+  "finding_id": "orda-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Orda $0.25/order commission fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain\u2192sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-orda-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-orda-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-orda-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-orda-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-orda-fee-rioja.json",
+    "scripts/validate-orda-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-orda-per-order.json",
+    "https://www.getorda.com/pricing"
+  ],
+  "what_it_does": "Orda Starter $59/mo + $0.25 commission fee per order on Square branded OO \u2192 SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "Orda pitches Square app OO with low monthly while still taking a flat per-order commission fee on Starter.",
+  "what_we_use_today": "validate-orda-fee-dogfood \u22655; per_order_platform_fee; scorer accepts '$0.25 commission fee'",
+  "gap": "Pro plan asterisks additional fees; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Orda $0.25/order commission SalesLead dogfoods match five love markets; strong_keep 31.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

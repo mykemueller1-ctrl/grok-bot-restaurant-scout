@@ -1,0 +1,68 @@
+{
+  "dogfood_id": "pain-to-sales-social-shop-franklin-2026-09-04",
+  "purpose": "TikTok Shop ~6% social_shop_fee + DoorDash OO dual-run → SalesLead DRAFT for Franklin Barbecue (Austin). Love→buy-now KEEP math dogfood. Not forecasting.",
+  "signals": {
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_direct_zero": "DoorDash Online Ordering / Uber Webshop 0% direct",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "tiktok_shop_vs_marketplace_keep",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "National cult BBQ / line culture / chef Aaron Franklin"
+    },
+    "complaint_summary": "Calibration: Shop ~6% referral KEEP vs Marketplace 15–30% rent. Franklin-class love should close on TikTok/IG buy-now — dual-run discovery on DoorDash OO if needed, but social Shop math beats delivery commissions.",
+    "opportunity_signals": [
+      "social_shop_fee",
+      "marketplace_direct_zero",
+      "cult_chef_ugc",
+      "shoppable_sku_potential"
+    ],
+    "vendors_mentioned": ["doordash", "tiktok_shop", "uber_eats"],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
+      "fixtures/tool-hunt/pain-scan-doordash-online-ordering.json",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "tiktok_shop_vs_marketplace_keep",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "TikTok Shop US takes ~6% unified referral vs DoorDash Marketplace 15–30%. Cult BBQ already prints love — Never86 buy-now keeps Shop-class economics on social demand instead of delivery-app rent. DoorDash Online Ordering is 0% on website directs, but Shop closes the feed where the line culture already lives.",
+    "quotes": [
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%",
+      "DoorDash Online Ordering 0% on direct"
+    ],
+    "vendors_to_displace": ["DoorDash Marketplace", "Uber Eats Marketplace"],
+    "why_never86_now": "social_shop_fee + marketplace_direct_zero teach: Shop ~6% beats Marketplace rent; Never86 script-draft/catalog path turns Franklin love into PENDING_APPROVAL buy-now — not Owner Flex 5%, not Toast OO lock-in, not forecasting.",
+    "suggested_angle": "Draft only: Your line is already the content. Never86 turns that love into TikTok/IG buy-now at Shop-class KEEP (~6%) instead of losing 25% to delivery apps.",
+    "sources": [
+      "scripts/score-marketplace-keep.mjs",
+      "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 78,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — social_shop_fee → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}

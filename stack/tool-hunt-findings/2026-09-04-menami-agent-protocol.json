@@ -1,0 +1,22 @@
+{
+  "finding_id": "menami-agent-protocol-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menami — restaurant OS + ACP agent ordering protocol",
+  "vendor_or_project": "Menami (getmenami.com)",
+  "urls": [
+    "https://getmenami.com/features",
+    "https://getmenami.com/agents/protocol",
+    "https://getmenami.com/agents",
+    "https://getmenami.com/features/ordering"
+  ],
+  "what_it_does": "11-system restaurant agent (IG/WhatsApp DMs, direct Stripe ordering ~97% keep, Uber Direct, POS sync, social drafts) plus open Agent Protocol / ACP checkout so third-party AI agents can discover menus and pay via Stripe Shared Payment Tokens.",
+  "how_competitors_use_it": "Full first-party OS + agent-to-restaurant ordering network; overlaps Owner/TextOrder messaging close and adds machine-agent commerce.",
+  "what_we_use_today": "Never86 love→buy-now TikTok/IG shop rails + pain→sales-lead swarm; no ACP restaurant directory yet.",
+  "gap": "Watch agent-protocol + DM/direct-order wedge closely. Do NOT chase Menami staff/labor forecasting or BI analytics lanes (mission_no). Never86 edge stays shoppable social commerce + taught vendor-pain leads.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Highest-signal new vertical rival this scan: agentic first-party ordering + IG/WhatsApp. Contrast in outreach; skip their forecasting/ops BI.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

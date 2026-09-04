@@ -1,0 +1,17 @@
+{
+  "finding_id": "validate-buy-now-dogfood-2026-09",
+  "lane": "cursor_agents",
+  "name": "validate-buy-now-dogfood.mjs script+catalog gate",
+  "vendor_or_project": "Never86 CI",
+  "urls": ["scripts/validate-buy-now-dogfood.mjs"],
+  "what_it_does": "Headless CI gate: ≥2 PENDING_APPROVAL script-drafts + matching SANDBOX catalog-syncs; forbids forecasting language gaps.",
+  "how_competitors_use_it": "n/a (our quality gate)",
+  "what_we_use_today": "validate-love-fixtures + score-pain-fixtures",
+  "gap": "Closed — wired into validate-stack tool-hunt job.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopted buy-now dogfood validator so Franklin+Husk script/catalog pairs stay CI-green without Mem0/IG.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

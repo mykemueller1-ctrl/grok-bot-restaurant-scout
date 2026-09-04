@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Ritual guest service fee $0.15-$0.99 $1.99 KEEP pain",
+  "hits": [
+    {
+      "url": "https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees",
+      "posted_at": "2026-09-04",
+      "handle": "ritual_fees",
+      "snippet": "Ritual guest service fee $0.15 to $0.99 per order under $30 or $1.99 above $30 vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "ritual_guest_service_fee",
+      "score": 100,
+      "never86_angle": "Ritual guest service fees still tax KEEP checkout on pickup OO \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent. Ritual for Companies exempt."
+    }
+  ],
+  "notes": "Primary: help.ritual.co Service Fees. Distinct from Ritual Online Ordering $69/mo first-party product (ritual.co/faq). Skip forecasting. Not expanding swarm."
+}

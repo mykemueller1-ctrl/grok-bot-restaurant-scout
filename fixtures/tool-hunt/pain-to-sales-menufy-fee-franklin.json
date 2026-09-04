@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-menufy-fee-franklin-2026-09-04",
+  "purpose": "Menufy guest convenience fee on direct OO (+ optional 12.5% hybrid marketplace) \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts guest_paid vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "guest_paid_tech_fee": "Menufy $1.75 guest convenience fee (or restaurant absorbs)",
+    "marketplace_hybrid": "Menufy negotiated ~12.5% DoorDash/Uber vs 25\u201330% standard",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%",
+    "per_order_platform_fee": "Menufy $1.75 convenience fee per order"
+  },
+  "pain_lead": {
+    "pain_id": "menufy_guest_convenience_fee",
+    "vendor_id": "menufy",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "National cult BBQ / line culture / chef Aaron Franklin"
+    },
+    "complaint_summary": "Calibration: Menufy markets flat-fee commission-free direct OO while guests pay a convenience fee; hybrid also keeps DoorDash/Uber at ~12.5%. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent. Calibration amount: $1.75/order.",
+    "opportunity_signals": [
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "dual_run_marketplace",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "menufy",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-menufy-guest-fee.json",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "menufy_guest_convenience_fee",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "Menufy charges a $1.75 convenience fee per order on direct OO (restaurant absorb or guest-paid) under a commission-free claim \u2014 guest-paid/per_order KEEP leak. Menufy flat ~$149/$179 OO markets no per-order commission while guests pay a convenience fee on direct checkout \u2014 and hybrid still pays ~12.5% on DoorDash/Uber vs full Marketplace 15\u201330%. TikTok Shop ~6% is honest platform take on social demand. Line-culture love already prints demand \u2014 close Shop buy-now without Menufy diner fees on hybrid rails.",
+    "quotes": [
+      "Menufy $1.75 convenience fee per order",
+      "Menufy guest convenience fee on direct ordering",
+      "Menufy negotiated ~12.5% DoorDash/Uber hybrid"
+    ],
+    "vendors_to_displace": [
+      "Menufy guest convenience-fee OO / hybrid 12.5%",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "guest_paid_tech_fee + social_shop_fee teach: Menufy hybrid still taxes diners or marketplace KEEP; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Line-culture love already prints demand \u2014 close Shop buy-now without Menufy diner fees on hybrid rails.",
+    "sources": [
+      "https://restaurant.menufy.com/article/restaurant-delivery-app-fees",
+      "fixtures/tool-hunt/pain-scan-menufy-guest-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Menufy guest convenience fee \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-menufy-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "FoxiFood 2% + \u20ac0.45 per card payment KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.foxifood.com/pricing/",
+      "posted_at": "2026-09-04",
+      "handle": "foxifood_pricing",
+      "snippet": "FoxiFood charges 2% + \u20ac0.45 per card payment under no monthly fee / no middleman commissions vs DoorDash Marketplace 25% KEEP; restaurant owners still pay first-party percent+flat on every card ticket",
+      "pain_id": "foxifood_2pct_045_card",
+      "score": 100,
+      "never86_angle": "FoxiFood 2% + \u20ac0.45 per card is still first_party KEEP leak under zero monthly claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: foxifood.com/pricing \u2014 pickup/dine-in 2% + \u20ac0.45 per card; delivery 2% + \u20ac0.45 + 10%. EU-first thematic teach; NOT expanding US swarm imports. Skip forecasting."
+}

@@ -1,0 +1,22 @@
+{
+  "finding_id": "owner-guest-support-fee-pain-scan-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Owner.com guest 5% order support fee KEEP pain-scan",
+  "vendor_or_project": "Owner.com",
+  "urls": [
+    "fixtures/tool-hunt/pain-scan-owner-guest-fee.json",
+    "https://www.owner.com/pricing",
+    "https://www.getsauce.com/post/owner-com-pricing-fees",
+    "fixtures/tool-hunt/pain-scan-owner-pct-fee.json"
+  ],
+  "what_it_does": "Hits guest_paid_platform_fee + first_party_pct_fee: guests pay 5% order support fee on Flex AND Flat ($499) — distinct from restaurant-paid Flex 5%.",
+  "how_competitors_use_it": "Owner frames guest fee as fulfillment/support; Flat removes restaurant % but keeps diner fee.",
+  "what_we_use_today": "guest_paid_platform_fee scorer + owner-fee SalesLead dogfoods",
+  "gap": "Verify live Owner checkout fee copy before outreach quotes",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted Owner guest 5% support-fee pain-scan → strong_keep 20; pairs with Flex restaurant 5% scan.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

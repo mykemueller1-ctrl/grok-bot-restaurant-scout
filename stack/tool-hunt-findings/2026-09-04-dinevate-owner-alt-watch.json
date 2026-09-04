@@ -1,0 +1,20 @@
+{
+  "finding_id": "dinevate-owner-alt-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Watch Dinevate (Owner.com alternative OS)",
+  "vendor_or_project": "Dinevate",
+  "urls": [
+    "https://www.dinevate.com/compare/owner-com/",
+    "https://www.dinevate.com/blog/posts/owner-alternative/"
+  ],
+  "what_it_does": "Restaurant OS: website + branded app + register + AI phone agent in one pipeline. $499 one-time onboard then per-order service fee or flat monthly. Calls out Owner Flex 5% + guest support fee.",
+  "how_competitors_use_it": "Positions against Owner as lower recurring / voice-AI-now; still website/app OS not TikTok Shop buy-now.",
+  "what_we_use_today": "first_party_pct_fee on Owner; Never86 shoppable buy-now wedge",
+  "gap": "Watch only — skip any labor/forecast modules if present",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Dinevate is another Owner-class first-party OS peer to track; not Shop-native.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

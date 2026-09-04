@@ -1,0 +1,87 @@
+{
+  "dogfood_id": "pain-to-sales-keep-grader-michaels-genuine-2026-09-04",
+  "purpose": "KEEP channel-rank grader \u2192 SalesLead DRAFT for Michael's Genuine (Miami). Fourth-market dogfood after Rioja/Franklin/Husk.",
+  "grader": {
+    "cli": "node scripts/keep-channel-grader.mjs --dinein 15000 --takeout 5000 --doordash 8500 --doordash_fee_pct 25 --uber 3000 --uber_fee_pct 30 --social_buy_now 2200 --social_fee_pct 6",
+    "mcp_tool": "keep_channel_grade",
+    "mcp_args": {
+      "dinein": 15000,
+      "takeout": 5000,
+      "doordash": 8500,
+      "doordash_fee_pct": 25,
+      "uber": 3000,
+      "uber_fee_pct": 30,
+      "social_buy_now": 2200,
+      "social_fee_pct": 6
+    },
+    "expected_wedge": "anti_marketplace_buy_now",
+    "marketplace_fee_total": 3025,
+    "best_keep_channel": "dine_in",
+    "worst_keep_pct_channel": "uber_eats",
+    "teach": "DoorDash bleeds $2,125 KEEP on sample; Uber 70% KEEP. Shift Design District social demand to Never86 buy-now (~94% KEEP after Shop ~6%)."
+  },
+  "pain_lead": {
+    "pain_id": "marketplace_commission_keep",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Michael's Genuine Food & Drink",
+      "city": "Miami",
+      "market": "Miami, FL",
+      "yelp_alias": "michaels-genuine-food-and-drink-miami",
+      "love_signal": "Chef Michael Schwartz / Design District cult / first-party pickup present"
+    },
+    "complaint_summary": "Calibration: channel KEEP$ rank (not personal Michael's Genuine complaint). Sample marketplace fee leak $3,025 vs 100% KEEP on dine-in/takeout and ~94% KEEP on Never86 social buy-now after Shop ~6%.",
+    "opportunity_signals": [
+      "rank_by_keep_not_gmv",
+      "marketplace_fee_leak",
+      "social_buy_now_keep_channel",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "doordash",
+      "uber_eats"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/keep-channel-grader-pilot.json",
+      "fixtures/tool-hunt/miami-love-brands.json",
+      "fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "marketplace_commission_keep",
+    "account_name": "Michael's Genuine Food & Drink",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Miami",
+    "market": "Miami, FL",
+    "complaint_thesis": "On a sample month, DoorDash keeps only 75% after fees ($2,125 leak); Uber keeps 70%. Dine-in + takeout keep 100%; Never86 social buy-now keeps ~94% after Shop ~6% (vs Marketplace 15\u201330%). Design District love should rank channels by KEEP$, not GMV.",
+    "quotes": [
+      "marketplace_fee_total $3025",
+      "worst_keep_pct uber_eats 70%",
+      "social_buy_now keep_pct 94%"
+    ],
+    "vendors_to_displace": [
+      "DoorDash",
+      "Uber Eats"
+    ],
+    "why_never86_now": "KEEP grader = anti_marketplace_buy_now. Schwartz-class love + pickup already first-party \u2192 TikTok/IG buy-now closes demand without marketplace rent or BentoBox/Ressto/Fleksa website OS alone.",
+    "suggested_angle": "Draft only: Your Design District love already prints demand. Never86 ranks what you KEEP after fees \u2014 then turns fans into shoppable buy-now.",
+    "sources": [
+      "scripts/keep-channel-grader.mjs",
+      "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami",
+      "fixtures/tool-hunt/keep-channel-grader-pilot.json"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 grader \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/keep-channel-grader.mjs",
+    "keep_channel_grade (complaint-sources MCP)",
+    "fixtures/tool-hunt/miami-love-brands.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}

@@ -18,6 +18,7 @@ You give mindset and direction. Agents wire the stack.
 2. **Teach labels** — keep / reject / wrong_pain when agents surface leads.
 3. **Approve outreach** — nothing sends without your OK via approvals MCP.
 4. **Steer waves** — wave 1 POS + marketplaces + core silos first; expand when quality holds.
+5. **Stay ahead on tools** — weekly **Beyond the Hunt** (`docs/TOOL-HUNT.md`) is best-in-vertical only (not sales/labor forecasting). Desktop clicks: **`docs/DESKTOP-UNLOCKS.md`** (Mem0, Context, Sync Skills, Automation, Instagram Composio when linked).
 
 You do **not** connect APIs, paste MCP URLs, or hand-wire Postgres.
 

@@ -1,0 +1,17 @@
+{
+  "finding_id": "bright-data-still-401-2026-09",
+  "lane": "mcp_connectors",
+  "name": "Bright Data MCP ready-but-401",
+  "vendor_or_project": "Bright Data",
+  "urls": [],
+  "what_it_does": "SERP / discover / scrape MCP for frontier research.",
+  "how_competitors_use_it": "n/a",
+  "what_we_use_today": "Namespace shows ready; search_engine + discover still HTTP 401 Auth method not supported in this cloud run.",
+  "gap": "Keep Composio COMPOSIO_SEARCH_WEB as Active research primary until Bright Data auth method fixed.",
+  "pivot_speed": "hours",
+  "verdict": "needs_auth",
+  "priority": 3,
+  "summary": "Do not claim Bright Data adopted — still 401. Composio remains Active research path.",
+  "operator_ask": "If Bright Data zone/API key needs refresh in Cursor MCP settings, reconnect; else leave Composio primary.",
+  "researched_at": "2026-09-04"
+}

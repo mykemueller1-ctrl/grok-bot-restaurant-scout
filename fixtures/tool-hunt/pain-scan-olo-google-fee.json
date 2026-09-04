@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Olo Order with Google Fee 5% subtotal KEEP pain",
+  "hits": [
+    {
+      "url": "https://olosupport.zendesk.com/hc/en-us/articles/37069343928219-Invoice-Reconciliation",
+      "posted_at": "2026-09-04",
+      "handle": "olo_owg",
+      "snippet": "Olo Order with Google Fee is 5% charged on the subtotal of Google enhanced redirect orders vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "olo_order_with_google_5pct",
+      "score": 100,
+      "never86_angle": "Olo OwG 5% on Google-originated 'direct' orders is still first_party_pct_fee rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now KEEP math transparent vs Marketplace 15\u201330%."
+    }
+  ],
+  "notes": "Primary: Olo Help Center Invoice Reconciliation \u2014 Order with Google Fee 5% on subtotal via Google enhanced redirect. FAQ confirms fee exists (sales for details). Enterprise skew \u2014 thematic teach only. Skip forecasting. Not expanding swarm."
+}

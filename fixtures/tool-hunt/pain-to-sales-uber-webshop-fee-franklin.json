@@ -1,0 +1,78 @@
+{
+  "dogfood_id": "pain-to-sales-uber-webshop-fee-franklin-2026-09-04",
+  "purpose": "Uber Webshop 2.5% order processing fee + $0.29/order \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts first_party_pct_fee under marketplace_direct_zero claim vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Uber Webshop 2.5% order processing fee + $0.29 per order",
+    "per_order_platform_fee": "Uber Webshop $0.29 per order processing add-on",
+    "marketplace_direct_zero": "Uber Webshop markets commission-free direct OO",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "uber_webshop_2_5pct_029",
+    "vendor_id": "uber_webshop",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "Aaron Franklin cult BBQ / line UGC"
+    },
+    "complaint_summary": "Calibration: Uber Webshop pitches commission-free direct OO then bills a 2.5% order processing fee + $0.29 per order. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without 'direct' 2.5%+$0.29 KEEP leaks or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "per_order_platform_fee",
+      "marketplace_direct_zero",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "uber_webshop",
+      "uber_eats",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-uber-webshop-fee.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "uber_webshop_2_5pct_029",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "Uber Webshop markets commission-free direct OO then charges a 2.5% order processing fee + $0.29 per order \u2014 first_party_pct_fee / per_order KEEP leak on 'direct' website/social tickets. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Line-culture love already prints demand \u2014 close Shop buy-now, not Uber Webshop 2.5%+$0.29 processing.",
+    "quotes": [
+      "Uber Webshop 2.5% order processing fee + $0.29 per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Uber Webshop 2.5%+$0.29 direct OO",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + marketplace_direct_zero teach: Uber Webshop '0% commission' still taxes KEEP via 2.5%+$0.29; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Line-culture love already prints demand \u2014 close Shop buy-now, not Uber Webshop 2.5%+$0.29 processing.",
+    "sources": [
+      "https://merchants.ubereats.com/us/en/pricing/",
+      "fixtures/tool-hunt/pain-scan-uber-webshop-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 78,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Uber Webshop 2.5%+$0.29 \u2192 SalesLead. Distinct from DoorDash OO processing-only (rate unpublished). Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-uber-webshop-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

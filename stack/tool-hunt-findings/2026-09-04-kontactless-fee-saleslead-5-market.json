@@ -1,0 +1,12 @@
+{
+  "finding_id": "kontactless-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Kontactless $0.50\u2013$1.00 guest convenience fee SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary kontactless.io: Classic $0.50 / Pay-as-you-go $1.00 per-order guest convenience fee \u2192 pain-to-sales-kontactless-fee-* \u00d75; strong_keep 43.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.kontactless.io/"
+  ]
+}

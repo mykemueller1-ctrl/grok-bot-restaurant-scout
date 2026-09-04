@@ -1,0 +1,12 @@
+{
+  "finding_id": "grabull-guest-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Grabull Direct customer service fee / menu bump 7\u201310%",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "grabulldirect.com/pricing $0 plan uses customer-paid service fee; partner docs cite 7\u201310% menu bump. Exact $/order not published \u2014 watch before dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.grabulldirect.com/pricing/"
+  ]
+}

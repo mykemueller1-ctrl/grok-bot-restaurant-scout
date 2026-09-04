@@ -1,0 +1,87 @@
+{
+  "dogfood_id": "pain-to-sales-keep-grader-girl-goat-2026-09-04",
+  "purpose": "KEEP channel-rank grader \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Fifth-market dogfood \u2014 completes CHI/ATX/MIA/BNA/DEN grader set.",
+  "grader": {
+    "cli": "node scripts/keep-channel-grader.mjs --dinein 16000 --takeout 5500 --doordash 10000 --doordash_fee_pct 25 --uber 3800 --uber_fee_pct 30 --social_buy_now 3000 --social_fee_pct 6",
+    "mcp_tool": "keep_channel_grade",
+    "mcp_args": {
+      "dinein": 16000,
+      "takeout": 5500,
+      "doordash": 10000,
+      "doordash_fee_pct": 25,
+      "uber": 3800,
+      "uber_fee_pct": 30,
+      "social_buy_now": 3000,
+      "social_fee_pct": 6
+    },
+    "expected_wedge": "anti_marketplace_buy_now",
+    "marketplace_fee_total": 3640,
+    "best_keep_channel": "dine_in",
+    "worst_keep_pct_channel": "uber_eats",
+    "teach": "DoorDash #2 GMV bleeds $2,500 KEEP; Uber 70% KEEP. Maps delivery=false \u2014 shift West Loop love to Never86 buy-now (~94% KEEP after Shop ~6%)."
+  },
+  "pain_lead": {
+    "pain_id": "marketplace_commission_keep",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard cult / West Loop / first-party takeout present (Maps delivery=false)"
+    },
+    "complaint_summary": "Calibration: channel KEEP$ rank (not personal G&TG complaint). Sample marketplace fee leak $3,640 vs 100% KEEP on dine-in/takeout and ~94% KEEP on Never86 social buy-now after Shop ~6%.",
+    "opportunity_signals": [
+      "rank_by_keep_not_gmv",
+      "marketplace_fee_leak",
+      "social_buy_now_keep_channel",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "doordash",
+      "uber_eats"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/keep-channel-grader-pilot.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "marketplace_commission_keep",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "On a sample month, DoorDash keeps only 75% after fees ($2,500 leak); Uber keeps 70%. Dine-in + takeout keep 100%; Never86 social buy-now keeps ~94% after Shop ~6% (vs Marketplace 15\u201330%). West Loop love with Maps delivery=false should rank channels by KEEP$, not GMV.",
+    "quotes": [
+      "marketplace_fee_total $3640",
+      "worst_keep_pct uber_eats 70%",
+      "social_buy_now keep_pct 94%"
+    ],
+    "vendors_to_displace": [
+      "DoorDash",
+      "Uber Eats"
+    ],
+    "why_never86_now": "KEEP grader = anti_marketplace_buy_now. Izard-class cult + takeout already first-party \u2192 TikTok/IG buy-now owns social demand before Ressto/Fleksa/Owner website OS peers.",
+    "suggested_angle": "Draft only: Your West Loop love already prints demand. Never86 ranks what you KEEP after fees \u2014 then turns that cult into shoppable buy-now.",
+    "sources": [
+      "scripts/keep-channel-grader.mjs",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago",
+      "fixtures/tool-hunt/keep-channel-grader-pilot.json"
+    ],
+    "confidence": 77,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 grader \u2192 SalesLead. Not live outreach. Not forecasting. Completes 5-market grader set."
+  },
+  "tools_used": [
+    "scripts/keep-channel-grader.mjs",
+    "keep_channel_grade (complaint-sources MCP)",
+    "fixtures/tool-hunt/chicago-love-brands.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}

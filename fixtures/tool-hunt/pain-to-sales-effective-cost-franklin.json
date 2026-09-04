@@ -1,0 +1,87 @@
+{
+  "dogfood_id": "pain-to-sales-effective-cost-franklin-2026-09-04",
+  "purpose": "Active path: DoorDash statement-math / effective-cost KEEP → Austin love brand enrich → SalesLead DRAFT. Proves effective_cost_math teach labels without Apollo/Mem0/Context.",
+  "pain_stubs": [
+    {
+      "source": "x",
+      "url": "https://x.com/myke86d/status/2084843820680708466",
+      "snippet": "Your DoorDash commission is not your DoorDash cost. One restaurant statement: $9,411.15 sales / $787.55 commission / $976.74 other fees → $7,646.86 left. Commission rate 8.37%; effective cost 18.75%. The restaurant lives on what is left.",
+      "pain_id": "doordash_effective_cost",
+      "keep_score": 90,
+      "never86_wedge": "anti_marketplace_buy_now"
+    },
+    {
+      "source": "x",
+      "url": "https://x.com/talk2cc/status/2094864157204152404",
+      "snippet": "Restaurant owners: rank your sales channels by what you KEEP, not what they sell.",
+      "pain_id": "marketplace_rent",
+      "keep_score": 88,
+      "never86_wedge": "anti_marketplace_buy_now"
+    }
+  ],
+  "pain_lead": {
+    "pain_id": "doordash_effective_cost",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "phone": "+15126531187",
+      "rating": 4.5,
+      "review_count": 6478,
+      "love_signal": "National cult BBQ / line culture / chef-driven"
+    },
+    "complaint_summary": "Industry effective-cost / KEEP signal (not a personal Franklin complaint). Cult BBQ already wins love — statement math shows why marketplace GMV dashboards lie; Never86 buy-now owns viral demand without 18%+ effective rent.",
+    "opportunity_signals": [
+      "cult_chef_ugc",
+      "national_line_culture",
+      "marketplace_effective_cost_pain",
+      "shoppable_sku_merch_potential"
+    ],
+    "vendors_mentioned": ["doordash"],
+    "sources": [
+      "https://x.com/myke86d/status/2084843820680708466",
+      "https://x.com/talk2cc/status/2094864157204152404",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "doordash_effective_cost",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "Headline DoorDash commission (often ~8%) is not take-home — statement math shows ~18.75% effective cost after other fees. Cult brands should rank channels by KEEP and move viral demand to shoppable social buy-now, not marketplace GMV dashboards.",
+    "quotes": [
+      "Your DoorDash commission is not your DoorDash cost",
+      "Commission rate: 8.37%. Effective cost: 18.75%",
+      "The restaurant lives on what is left",
+      "rank your sales channels by what you KEEP, not what they sell"
+    ],
+    "vendors_to_displace": ["DoorDash"],
+    "why_never86_now": "Franklin-class love already prints demand — Never86 TikTok/IG buy-now / merch SKUs capture that without marketplace effective rent. Sharper than OrderPost hosted links, Seared/Outbites web ordering, or Ainisa/TextOrder DM agents for Shop-rail close.",
+    "suggested_angle": "Draft only: Your line culture is the product. Never86 turns that love into shoppable buy-now so fans pay you — not an 18% effective DoorDash statement.",
+    "sources": [
+      "https://x.com/myke86d/status/2084843820680708466",
+      "https://x.com/talk2cc/status/2094864157204152404",
+      "fixtures/tool-hunt/austin-love-brands.json"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — not live outreach. Pair with script-draft-franklin-buy-now.json after teach keep."
+  },
+  "tools_used": [
+    "X.search_posts_all",
+    "scripts/score-marketplace-keep.mjs",
+    "YELP (austin-love-brands fixture)",
+    "COMPOSIO_SEARCH_TAVILY",
+    "COMPOSIO_SEARCH_WEB"
+  ],
+  "status": "verified_active",
+  "researched_at": "2026-09-04"
+}

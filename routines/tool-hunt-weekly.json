@@ -1,0 +1,36 @@
+{
+  "name": "tool-hunt-weekly",
+  "schedule": "0 9 * * 1",
+  "timezone": "America/Chicago",
+  "description": "Beyond the Hunt — weekly best-in-vertical scan (social commerce GTM + pain→sales-lead + Cursor memory/skills). NOT sales/labor forecasting research. Updates tooling ledger and briefs Myke.",
+  "agent": "agent/tool-hunt/beyond-the-hunt.json",
+  "steps": [
+    { "skill": "auth-gap-check" },
+    { "skill": "tool-frontier-scan", "depends_on": "auth-gap-check" },
+    { "skill": "vertical-rival-watch", "depends_on": "tool-frontier-scan" },
+    { "skill": "memory-skills-audit", "depends_on": "tool-frontier-scan" },
+    { "skill": "stack-vs-competitors", "depends_on": ["tool-frontier-scan", "vertical-rival-watch"] },
+    { "skill": "tool-hunt-brief", "depends_on": ["memory-skills-audit", "stack-vs-competitors"] }
+  ],
+  "notify": {
+    "channel": "telegram",
+    "message": "Beyond the Hunt (vertical) brief ready — best tools in our lane, us vs them, what needs your desktop OK."
+  },
+  "approval_required_for": [
+    "install_paid_tool",
+    "rotate_secret",
+    "publish_skill_marketplace",
+    "switch_primary_ide",
+    "enable_new_mcp_prod"
+  ],
+  "out_of_scope": [
+    "historical_sales_forecasting",
+    "labor_forecasting"
+  ],
+  "cursor_automation": {
+    "preferred": true,
+    "docs": "docs/TOOL-HUNT.md",
+    "memories": true,
+    "prompt_hint": "Run Beyond the Hunt for Never86 best-in-vertical only: love→buy-now social commerce, pain→sales-lead, Cursor agents/memory/skills/MCP, and vertical rivals including DoorDash Online Ordering, Uber Webshop, Grubhub Direct, Olo Network, Menusso, Owner, Trenz, Klikit, Popmenu, Flipdish, Sauce, BentoBox, Ressto, Eatsy, Square AI-channel, UpMenu, DineOpen, Muncho. Dogfood KEEP channel grader across CHI/ATX/MIA/BNA/DEN when useful. Adopt first_party_pct_fee, per_order_platform_fee, and marketplace_direct_zero (DD OO / Uber Webshop / Grubhub Direct) KEEP signals. Do NOT research historical sales forecasting or labor forecasting tools. Start with node scripts/run-tool-hunt-week.mjs. Follow routines/tool-hunt-weekly.json skills in order. Update stack/tooling-ledger.json and write findings under stack/tool-hunt-findings/. Validate with node scripts/validate-tooling-ledger.mjs. Commit on a cursor/* branch. No secrets."
+  }
+}

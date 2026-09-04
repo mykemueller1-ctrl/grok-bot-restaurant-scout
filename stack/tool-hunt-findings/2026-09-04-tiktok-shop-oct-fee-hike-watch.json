@@ -1,0 +1,20 @@
+{
+  "finding_id": "tiktok-shop-oct-fee-hike-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TikTok Shop US Oct 1 2026 referral hike watch (6%→8%)",
+  "vendor_or_project": "TikTok Shop",
+  "urls": [
+    "https://ecommerce-times.com/tiktok-shops-q4-2026-seller-fee-overhaul-is-reshaping-dtc-margins/",
+    "https://www.dashboardly.io/post/tiktok-shop-fees-2026-the-complete-seller-fee-guide"
+  ],
+  "what_it_does": "Secondary reports claim US standard referral rises 6%→8% on Oct 1 2026 plus 1.5% creator facilitation on affiliate-sourced orders.",
+  "how_competitors_use_it": "DTC sellers modeling Q4 margins; restaurant Shop food still needs category-table confirm.",
+  "what_we_use_today": "social_shop_fee KEEP signal (matches 6|8%) + keep-channel-grader default social_fee_pct=6",
+  "gap": "Dashboardly (sources checked Jul 29 2026) still lists most categories at 6% — do not change grader default until official/post-Oct confirm",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watch Oct 1 2026 Shop fee hike; keep grader at 6 until confirmed. Even at 8% Shop beats Marketplace 15–30%. Not forecasting.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

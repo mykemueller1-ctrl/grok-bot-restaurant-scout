@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Popmenu $1/order guest fee KEEP pain under commission-free OO add-on",
+  "hits": [
+    {
+      "url": "https://get.popmenu.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "popmenu_pricing",
+      "snippet": "Popmenu online ordering add-on charges $1 per order fee to the guest at checkout — diner tech fee under commission-free claim vs DoorDash Marketplace 25%; restaurants may also absorb the $1 or pay ~$50/mo ordering add-on",
+      "pain_id": "popmenu_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "Guest-paid $1/order on Popmenu OO is still platform rent — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+    }
+  ],
+  "notes": "Sources: Popmenu pricing + Orderitto/Restolabs/Dinevate third-party breakdowns via Composio. Flat $1 can be guest-passed or restaurant-absorbed. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

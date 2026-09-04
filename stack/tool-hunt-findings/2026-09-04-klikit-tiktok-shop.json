@@ -1,0 +1,20 @@
+{
+  "finding_id": "klikit-tiktok-shop-pos-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Klikit — TikTok Shop restaurant POS / order sync (APAC)",
+  "vendor_or_project": "Klikit",
+  "urls": [
+    "https://klikit.io/en/integrations/tiktok-shop",
+    "https://klikit.io/en/learn/tiktok-shop-restaurant-guide-2026"
+  ],
+  "what_it_does": "Native TikTok Shop ↔ kitchen/POS order + menu sync for F&B / cloud kitchens, primarily APAC (Grab/Gojek/Foodpanda stack).",
+  "how_competitors_use_it": "Operationalizes TikTok Shop viral demand into unified tablet fulfillment — shoppable video → kitchen ticket.",
+  "what_we_use_today": "Never86 GTM for US love→buy-now / catalog-sync narrative; no APAC POS middleware.",
+  "gap": "Proof that TikTok Shop F&B ops tooling is maturing. Watch US equivalents; do not expand Never86 into APAC POS unless Myke asks.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 4,
+  "summary": "APAC TikTok Shop fulfillment rival — validates shoppable-food ops; low US GTM priority today.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

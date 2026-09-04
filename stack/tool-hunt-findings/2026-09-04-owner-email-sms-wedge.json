@@ -1,0 +1,21 @@
+{
+  "finding_id": "owner-email-sms-not-tiktok-shop-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Owner.com wedge clarified: email/SMS/first-party, not TikTok Shop",
+  "vendor_or_project": "Owner.com",
+  "urls": [
+    "https://www.owner.com/automatic-marketing",
+    "https://www.owner.com/email-sms-marketing",
+    "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html"
+  ],
+  "what_it_does": "AI marketing agents focus on email, SMS, push, website/order growth for independents; social used as input, not TikTok Shop-native publishing.",
+  "how_competitors_use_it": "Anti-DoorDash first-party OS with automated CRM campaigns.",
+  "what_we_use_today": "TikTok/IG shoppable buy-now + UGC love scout — social-native commerce path Owner does not own.",
+  "gap": "Messaging differentiation is clear: we win on shoppable social proof → tap buy; they win on owned-channel CRM.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopt into outreach/script angles: Never86 = love on TikTok/IG → buy-now; not another email/SMS OS.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,20 @@
+{
+  "finding_id": "upmenu-overage-keep-2026-09",
+  "lane": "vertical_gtm",
+  "name": "UpMenu $1.90/order overage → KEEP signal widen",
+  "vendor_or_project": "UpMenu",
+  "urls": [
+    "https://www.upmenu.com/pricing/",
+    "https://www.itqlick.com/upmenu/pricing"
+  ],
+  "what_it_does": "Flat plans $49/$89/$169 with order caps; overage billed ~$1.90 per order — commission-free headline with per-order KEEP leak at scale.",
+  "how_competitors_use_it": "Pitches as Grubhub/Uber Eats alternative with owned ordering; caps make growth tax look like marketplace rent.",
+  "what_we_use_today": "per_order_platform_fee widened beyond $0.xx; pain-scan-upmenu-overage.json",
+  "gap": "Watch UpMenu as first-party peer; teach overage vs buy-now KEEP$ when useful",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Widened per_order_platform_fee to catch $1.90-style overages; UpMenu fixture raises strong_keep to 13.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

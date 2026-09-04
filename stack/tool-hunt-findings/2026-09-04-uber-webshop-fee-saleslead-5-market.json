@@ -1,0 +1,12 @@
+{
+  "finding_id": "uber-webshop-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Uber Webshop 2.5%+$0.29 processing SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary merchants.ubereats.com/us/en/pricing Webshop 2.5%+$0.29 \u2192 pain-to-sales-uber-webshop-fee-* \u00d75; strong_keep 53.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://merchants.ubereats.com/us/en/pricing/"
+  ]
+}

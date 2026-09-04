@@ -1,0 +1,19 @@
+{
+  "finding_id": "square-ai-channel-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Square ChatGPT/Claude restaurant ordering (0% marketplace commission)",
+  "vendor_or_project": "Square",
+  "urls": [
+    "https://www.digitalapplied.com/blog/square-chatgpt-claude-ordering-agentic-commerce-2026"
+  ],
+  "what_it_does": "July 2026: Square Food & Beverage sellers opted into ChatGPT/Claude ordering — AI assistants discover menus and place orders into existing Square POS/KDS with 0% marketplace commission (standard Square processing only).",
+  "how_competitors_use_it": "Agentic commerce discovery→order inside ChatGPT/Claude vs DoorDash 15–30%; Square owns POS install base.",
+  "what_we_use_today": "Gegsy/Orderitto Square storefront peers; Never86 TikTok/IG shoppable buy-now wedge",
+  "gap": "Watch agentic AI-channel discovery — different surface than TikTok Shop but competes for anti-marketplace KEEP narrative",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Square AI-channel ordering is a material 2026 KEEP peer via ChatGPT/Claude — watch, do not research Square labor tools.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

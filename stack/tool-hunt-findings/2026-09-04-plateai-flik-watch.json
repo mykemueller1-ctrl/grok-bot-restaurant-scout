@@ -1,0 +1,20 @@
+{
+  "finding_id": "plateai-flik-content-rivals-2026-09",
+  "lane": "vertical_gtm",
+  "name": "PlateAI / Flik AI food-video content rivals",
+  "vendor_or_project": "PlateAI / Flik AI",
+  "urls": [
+    "https://getplateai.com/",
+    "https://www.flikai.com/restaurants"
+  ],
+  "what_it_does": "AI dish photos/Reels/menu videos for restaurants — content production, often marketplace-export friendly.",
+  "how_competitors_use_it": "Sell “fill the feed / delivery tiles” without closing Never86-style buy-now commerce.",
+  "what_we_use_today": "script-draft for shoppable buy-now scripts with approval gate.",
+  "gap": "Do not confuse content-gen with commerce GTM; keep scripts commerce-closing.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 4,
+  "summary": "Watch as content-only rivals; Never86 edge stays love→purchase path.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

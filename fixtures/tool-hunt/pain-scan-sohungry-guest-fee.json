@@ -1,0 +1,29 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "SoHungry $1.25 free-plan guest convenience fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://sohungry.net/faqs.aspx",
+      "posted_at": "2026-09-04",
+      "handle": "sohungry_faq",
+      "snippet": "SoHungry Free plan is free for restaurants while customers pay a $1.25 convenience fee per order at checkout vs DoorDash Marketplace 25% KEEP; guests pay tech fee under zero owner monthly fee claim",
+      "pain_id": "sohungry_guest_convenience_fee",
+      "score": 100,
+      "never86_angle": "Guest-paid $1.25 SoHungry convenience fee is still platform rent on 'free for restaurants' OO \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    },
+    {
+      "url": "https://sohungry.net/plans.aspx",
+      "posted_at": "2026-09-04",
+      "handle": "sohungry_plans",
+      "snippet": "SoHungry Premium drops guest convenience fee to $0.60 per order ($0.85 Clover) vs Free $1.25 \u2014 still guest-paid per-order platform fee vs DoorDash Marketplace 25% KEEP",
+      "pain_id": "sohungry_premium_060_fee",
+      "score": 100,
+      "never86_angle": "Premium $0.60 guest fee still taxes every cart \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: sohungry.net FAQs + plans \u2014 Free $1.25 / Premium $0.60 ($0.85 Clover) customer convenience fee. Map-first SMB OO. Skip forecasting. Not expanding swarm."
+}

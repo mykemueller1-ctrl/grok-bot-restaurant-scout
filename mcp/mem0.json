@@ -1,0 +1,17 @@
+{
+  "name": "mem0",
+  "transport": "http",
+  "url": "https://mcp.mem0.ai/mcp",
+  "auth": "bearer:${MEM0_API_KEY}",
+  "tools": [
+    "add_memory",
+    "search_memories",
+    "get_memories",
+    "get_memory",
+    "update_memory",
+    "delete_memory",
+    "list_entities",
+    "list_events"
+  ],
+  "notes": "Headless/cloud path for Beyond the Hunt + teach memory. Prefer desktop OAuth when interactive; set MEM0_API_KEY (m0-…) in Cursor MCP / Codex / cloud env — never commit. Docs: https://docs.mem0.ai/platform/mem0-mcp"
+}

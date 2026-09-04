@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-ginger-fee-rioja-2026-09-04",
+  "purpose": "Ginger Direct $0/mo + $1/order guest platform fee \u2192 SalesLead DRAFT for Rioja (Denver). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Ginger $1 platform fee per online order (guest-paid)",
+    "guest_paid_tech_fee": "Ginger $1 per order paid by the customer",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "ginger_guest_per_order_fee",
+    "vendor_id": "ginger",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Rioja",
+      "city": "Denver",
+      "market": "Denver, CO",
+      "yelp_alias": "rioja-denver",
+      "love_signal": "Jennifer Jasinski LoDo cult / UGC"
+    },
+    "complaint_summary": "Calibration: Ginger Direct pitches $0/mo OO while guests still pay a $1 platform fee per online order (alt 5% high-volume small-ticket). Rioja-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "ginger",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-ginger-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "ginger_guest_per_order_fee",
+    "account_name": "Rioja",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Denver",
+    "market": "Denver, CO",
+    "complaint_thesis": "Ginger Direct markets free ($0/mo) OO while charging a $1 platform fee per online order paid by the customer (alt 5% for high-volume small-ticket) \u2014 guest-paid per_order_platform_fee KEEP leak. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. LoDo Rioja love already prints demand \u2014 close Shop buy-now, not Ginger $1 guest fees on every OO ticket.",
+    "quotes": [
+      "Ginger $1 platform fee per online order, paid by the customer",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Ginger $1 guest OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Ginger $1 guest fee is still platform rent on 'free' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: LoDo Rioja love already prints demand \u2014 close Shop buy-now, not Ginger $1 guest fees on every OO ticket.",
+    "sources": [
+      "https://www.gingerserve.com/pricing",
+      "fixtures/tool-hunt/pain-scan-ginger-guest-fee.json",
+      "https://www.yelp.com/biz/rioja-denver"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Ginger $1 guest fee \u2192 SalesLead. Voice AI +$250/mo and delivery-app +$99/mo are add-ons, not the teach. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-ginger-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

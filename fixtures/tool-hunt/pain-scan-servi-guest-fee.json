@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Ser.vi guest 5% convenience fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://get.ser.vi/pricing/",
+      "posted_at": "2026-09-04",
+      "handle": "servi_pricing_faq",
+      "snippet": "Ser.vi markets $0 monthly POS / zero commission OO then customers pay a 5% convenience fee at checkout covering platform + card fees vs DoorDash Marketplace 25% KEEP \u2014 guests pay tech fee; restaurant owners keep menu price while diner sticker shock taxes conversion",
+      "pain_id": "servi_guest_5pct_convenience",
+      "score": 100,
+      "never86_angle": "Ser.vi guest 5% convenience fee is still guest_paid / first_party KEEP leak under $0 mo / zero commission claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: get.ser.vi/pricing FAQ \u2014 customer-paid 5% convenience fee covers Ser.vi platform + CC. Optional marketing plans $249\u2013$749/mo. Skip forecasting."
+}

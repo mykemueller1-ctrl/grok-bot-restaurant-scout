@@ -1,0 +1,21 @@
+{
+  "finding_id": "restolabs-menuforma-clover-oo-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Watch Restolabs + MenuForma + Clover Restaurant OO",
+  "vendor_or_project": "Restolabs / MenuForma / Clover",
+  "urls": [
+    "https://www.restolabs.com/blog/commission-free-online-ordering-for-restaurants",
+    "https://menuforma.com/restaurant-qr-ordering",
+    "https://www.limelightpayments.com/clover-for-restaurants"
+  ],
+  "what_it_does": "Restolabs: commission-free OO from ~$45–55/mo. MenuForma: QR menu + 0% commission ordering (~$9.9/mo + Stripe). Clover Restaurant Growth: commission-free OO bundled ~$89.95/mo (POS lock-in).",
+  "how_competitors_use_it": "More flat-fee KEEP OS peers; Clover OO reinforces POS lock-in already on pos_fee_lockin (BentoBox→Clover).",
+  "what_we_use_today": "vertical-rival-watch + BentoBox Clover lock-in signal",
+  "gap": "Watch only — skip Clover/SpotOn labor modules",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Three more first-party/QR KEEP peers for the weekly set; Clover OO notes POS lock-in without new forecasting research.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

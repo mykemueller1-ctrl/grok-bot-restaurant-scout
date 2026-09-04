@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Upserve U-Series Lightspeed Online Ordering 2.99% guest service fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://u-series-support.lightspeedhq.com/s/article/Upserve-Online-Ordering-Service-Fee",
+      "posted_at": "2026-09-04",
+      "handle": "upserve_oo",
+      "snippet": "Upserve U-Series Online Ordering service fee is 2.99% \u2014 guests pay by default under OO claim vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "upserve_oo_pct_fee",
+      "score": 100,
+      "never86_angle": "POS-bundled OO with guest-default 2.99% service fee still taxes KEEP \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: Lightspeed U-Series support (primary). Restaurant can absorb or pass fee. Mobile Tap temporarily sets consumer fee to 0%. Skip forecasting. Not expanding swarm imports."
+}

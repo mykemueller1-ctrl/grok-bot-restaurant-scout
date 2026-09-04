@@ -1,0 +1,12 @@
+{
+  "finding_id": "deonde-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Deonde Express $0.10 overage SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary deonde.co/pricing Express $0.10/order overage \u2192 pain-to-sales-deonde-fee-* \u00d75; strong_keep 52.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://deonde.co/pricing.shtml"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "finding_id": "denver-love-rioja-dogfood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Denver Yelp love + Rioja SalesLead dogfood",
+  "vendor_or_project": "Never86 morning-scan / pain→sales",
+  "urls": [
+    "https://www.yelp.com/biz/rioja-denver",
+    "fixtures/tool-hunt/denver-love-brands.json",
+    "fixtures/tool-hunt/pain-to-sales-denver-rioja.json"
+  ],
+  "what_it_does": "Fifth-market chef/cult seed + KEEP→SalesLead DRAFT without Instagram/Mem0.",
+  "how_competitors_use_it": "ChowNow/Lunchbox chase independents via first-party web OS; we seed buy-now onboard targets.",
+  "what_we_use_today": "CHI/ATX/MIA/BNA love fixtures + multi-market sales dogfoods",
+  "gap": "Closed — denver-love-brands.json + pain-to-sales-denver-rioja.json + validate-love markets=5.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopted Denver love calibration (Rioja/Hop Alley/Tavernetta/Uncle) + Rioja SalesLead dogfood.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "ChowNow Catering 5% direct commission KEEP pain",
+  "hits": [
+    {
+      "url": "https://get.chownow.com/blog/chownow-for-restaurants-your-top-faqs/",
+      "posted_at": "2026-09-04",
+      "handle": "chownow_catering_faq",
+      "snippet": "ChowNow charges a 5% fee per catering order placed through your direct channel vs DoorDash Marketplace 25% KEEP; EzCater marketplace up to 15% \u2014 first-party catering percent still cuts KEEP",
+      "pain_id": "chownow_catering_5pct",
+      "score": 100,
+      "never86_angle": "ChowNow Catering 5% on direct catering tickets is still first-party rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: ChowNow FAQ + support enable-catering (5% commission on catering orders). Distinct from $0.99 service charge + 7.5% Support Local already dogfooded. Skip forecasting. Not expanding swarm."
+}

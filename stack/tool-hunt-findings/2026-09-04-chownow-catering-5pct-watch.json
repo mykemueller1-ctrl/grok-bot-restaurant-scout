@@ -1,0 +1,13 @@
+{
+  "finding_id": "chownow-catering-5pct-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChowNow Catering 5% direct commission (watch/refresh)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Primary ChowNow FAQ/support: 5% fee per catering order on direct channel (vs EzCater ~7% / marketplace ~15%). Distinct from $0.99 service charge + 7.5% Support Local already dogfooded \u2014 watch before second dogfood family.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://get.chownow.com/blog/chownow-for-restaurants-your-top-faqs/",
+    "https://get.chownow.com/support-category/optimize-your-business/"
+  ]
+}

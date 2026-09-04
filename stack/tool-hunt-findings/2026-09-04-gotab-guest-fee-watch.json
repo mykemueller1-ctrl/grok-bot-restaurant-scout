@@ -1,0 +1,19 @@
+{
+  "finding_id": "gotab-guest-pct-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "GoTab guest-paid 1% + $0.25 digital fee (watch)",
+  "vendor_or_project": "GoTab",
+  "urls": [
+    "https://tabski.com/tabski-vs-gotab"
+  ],
+  "what_it_does": "Food-hall/venue digital payments; Tabski comparison cites guest-paid 1% + $0.25 on eligible digital payments.",
+  "how_competitors_use_it": "Guest-paid digital fee stack under venue POS.",
+  "what_we_use_today": "Watch only \u2014 confirm primary source before dogfood",
+  "gap": "Promoted: primary FAQ + Restaurant Business reprint on gotab.com; see gotab-fee-saleslead-5-market",
+  "pivot_speed": "days",
+  "verdict": "adopt",
+  "priority": 3,
+  "summary": "GoTab guest 1%+$0.25 noted from Tabski comparison \u2014 watch, do not dogfood yet.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

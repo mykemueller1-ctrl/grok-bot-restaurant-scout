@@ -1,0 +1,75 @@
+{
+  "dogfood_id": "pain-to-sales-lunchbox-fee-rioja-2026-09-04",
+  "purpose": "Lunchbox free/no-commission OO with guest convenience fee → SalesLead DRAFT for Rioja (Denver). Contrasts guest_paid vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "guest_paid_tech_fee": "Lunchbox guest convenience fee at checkout (small-operator free plan)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "lunchbox_guest_convenience_fee",
+    "vendor_id": "lunchbox",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Rioja",
+      "city": "Denver",
+      "market": "Denver, CO",
+      "yelp_alias": "rioja-denver",
+      "love_signal": "Chef Jennifer Jasinski / Larimer Square cult"
+    },
+    "complaint_summary": "Calibration: Lunchbox small-operator OO markets free/no commission while guests pay a convenience fee at checkout. Rioja-class love should close on Never86 Shop ~6% buy-now — honest platform math without diner sticker shock or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "lunchbox",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-lunchbox-guest-fee.json",
+      "fixtures/tool-hunt/denver-love-brands.json",
+      "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "lunchbox_guest_convenience_fee",
+    "account_name": "Rioja",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Denver",
+    "market": "Denver, CO",
+    "complaint_thesis": "Lunchbox for small operators markets free OO with no commission while the guest pays a convenience fee at checkout — diner tech fee under a first-party claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. Larimer Square love already prints demand — close Shop buy-now without Lunchbox convenience fees.",
+    "quotes": [
+      "Lunchbox guest convenience fee at checkout",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Lunchbox guest convenience-fee OO",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "guest_paid_tech_fee + social_shop_fee teach: Lunchbox 'free' OO still taxes conversion via diner fees; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: Larimer Square love already prints demand — close Shop buy-now without Lunchbox convenience fees.",
+    "sources": [
+      "https://zay-os.com/how-much-does-lunchbox-cost",
+      "fixtures/tool-hunt/pain-scan-lunchbox-guest-fee.json",
+      "https://www.yelp.com/biz/rioja-denver"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Lunchbox guest convenience fee → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-lunchbox-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

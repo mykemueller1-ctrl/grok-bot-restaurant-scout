@@ -32,6 +32,17 @@
     "approvals": {
       "file": "mcp/approvals.json",
       "path": "/mcp/approvals"
+    },
+    "mem0": {
+      "file": "mcp/mem0.json",
+      "url": "https://mcp.mem0.ai/mcp",
+      "token_env": "MEM0_API_KEY",
+      "notes": "Optional headless auth via API key; desktop OAuth also OK"
+    },
+    "context": {
+      "file": "mcp/context.json",
+      "url": "https://mcp.context.dev/mcp",
+      "auth": "oauth_desktop_only"
     }
   },
   "deploy": {
@@ -61,6 +72,14 @@
   "github": {
     "actions_secrets_url": "https://github.com/mykemueller1-ctrl/grok-bot-restaurant-scout/settings/secrets/actions",
     "secrets_manifest": "stack/github-secrets.manifest.json"
+  },
+  "tool_hunt": {
+    "agent": "agent/tool-hunt/beyond-the-hunt.json",
+    "ledger": "stack/tooling-ledger.json",
+    "findings_dir": "stack/tool-hunt-findings",
+    "routine": "routines/tool-hunt-weekly.json",
+    "docs": "docs/TOOL-HUNT.md",
+    "validate_script": "scripts/validate-tooling-ledger.mjs"
   },
   "import_waves": {
     "wave_1": [

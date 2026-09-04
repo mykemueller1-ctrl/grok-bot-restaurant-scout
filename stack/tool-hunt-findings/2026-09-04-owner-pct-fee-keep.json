@@ -1,0 +1,21 @@
+{
+  "finding_id": "owner-first-party-pct-fee-keep-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Owner.com Flex 5% restaurant fee → KEEP signal",
+  "vendor_or_project": "Owner.com",
+  "urls": [
+    "https://www.owner.com/pricing",
+    "https://www.restolabs.com/blog/owner-com-pricing",
+    "https://www.certus-ai.com/blogs/owner-com-review"
+  ],
+  "what_it_does": "Owner Flex is $249/mo + 5% restaurant fee per order; Flat $499/mo; guests often see a 5% order support fee — first-party still takes KEEP.",
+  "how_competitors_use_it": "Owner pitches anti-marketplace OS while Flex scales cost with GMV; Flat avoids restaurant % but keeps guest support fee narrative.",
+  "what_we_use_today": "score_marketplace_keep + Owner rival row; new first_party_pct_fee signal + pain-scan-owner-pct-fee.json",
+  "gap": "Need teach labels on live Owner vs Never86 buy-now KEEP$ comparisons — Mem0 still blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted first_party_pct_fee KEEP signal so Owner-style 5% OS cuts surface in pain→sales without forecasting.",
+  "operator_ask": "Optional: teach one Owner Flex vs buy-now KEEP$ label when auth unlocks.",
+  "researched_at": "2026-09-04"
+}

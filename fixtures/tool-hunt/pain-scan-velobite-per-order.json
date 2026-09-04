@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "VeloBite $0.75 per order Growth KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.velobite.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "velobite_oo",
+      "snippet": "VeloBite Growth is $0.75 flat per order with no monthly fee vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "velobite_per_order_fee",
+      "score": 100,
+      "never86_angle": "Pay-per-order $0.75 still taxes KEEP checkout on every ticket \u2014 Never86 social buy-now (Shop ~6%) avoids diner/restaurant per-order skim + Marketplace rent. Alt flat $99/mo track is 0% commission SaaS (watch)."
+    }
+  ],
+  "notes": "Primary: velobite.com/pricing Growth $0.75/order or $99/mo flat. Pro $1.00/order or $249/mo. Skip any AI pricing-intelligence / forecasting framing. Not expanding swarm imports."
+}

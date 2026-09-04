@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-gotab-fee-girl-goat-2026-09-04",
+  "purpose": "GoTab guest convenience fee (1%+$0.25 mobile CNP / $0.25 FAQ) on QR Easy Tab \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "GoTab guest 1%+$0.25 (mobile) / $0.25 convenience fee",
+    "guest_paid_tech_fee": "GoTab guests pay convenience fee on QR/mobile Easy Tab",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "gotab_guest_per_order_fee",
+    "vendor_id": "gotab",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: GoTab QR Easy Tab adds guest convenience fees (FAQ $0.25; mobile CNP often 1%+$0.25). Girl & The Goat-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "gotab",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-gotab-guest-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "gotab_guest_per_order_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "GoTab Easy Tab markets guest convenience while diners pay a convenience fee \u2014 FAQ cites $0.25 per transaction; mobile/card-not-present often 1% + $0.25 per order (guest-optional vs counter pay). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. West Loop love already prints demand \u2014 close Shop buy-now, not GoTab guest 1%+$0.25 convenience fees on every mobile tab.",
+    "quotes": [
+      "GoTab guest convenience fee $0.25 (FAQ)",
+      "GoTab mobile CNP often 1% + $0.25",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "GoTab guest convenience fees on QR/mobile tabs",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: GoTab guest convenience fees are still platform rent on QR tabs; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand \u2014 close Shop buy-now, not GoTab guest 1%+$0.25 convenience fees on every mobile tab.",
+    "sources": [
+      "https://gotab.com/faq",
+      "https://gotab.com/latest/restaurant-business-gotab-raises-18m-to-fuel-pragmatic-approach-to-growth",
+      "fixtures/tool-hunt/pain-scan-gotab-guest-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 73,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 GoTab guest convenience fee \u2192 SalesLead. Venue/food-hall skew noted. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-gotab-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-velobite-fee-husk-2026-09-04",
+  "purpose": "VeloBite Growth $0.75 flat per order (no monthly; alt $99/mo flat) \u2192 SalesLead DRAFT for Husk (Nashville). Contrasts per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "VeloBite Growth $0.75 flat per order (no monthly)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%",
+    "own_ordering_keep": "First-party OO still leaking KEEP via $0.75/order"
+  },
+  "pain_lead": {
+    "pain_id": "velobite_per_order_fee",
+    "vendor_id": "velobite",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Husk",
+      "city": "Nashville",
+      "market": "Nashville, TN",
+      "yelp_alias": "husk-nashville",
+      "love_signal": "Sean Brock Southern cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: VeloBite Growth pitches pay-per-order OO at $0.75 flat per order (no monthly; Pro $1.00). Husk-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without per-order skim or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "velobite",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-velobite-per-order.json",
+      "fixtures/tool-hunt/script-draft-husk-buy-now.json",
+      "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "velobite_per_order_fee",
+    "account_name": "Husk",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Nashville",
+    "market": "Nashville, TN",
+    "complaint_thesis": "VeloBite Growth markets commission-free OO while still charging $0.75 flat per order (Pro $1.00; alt $99/$249/mo flat) \u2014 per_order_platform_fee KEEP leak on every ticket. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Nashville Husk love already prints demand \u2014 close Shop buy-now, not VeloBite $0.75/order skim on every OO ticket.",
+    "quotes": [
+      "VeloBite Growth $0.75 flat per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "VeloBite $0.75/order OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: VeloBite $0.75/order is still platform rent on 'commission-free' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Nashville Husk love already prints demand \u2014 close Shop buy-now, not VeloBite $0.75/order skim on every OO ticket.",
+    "sources": [
+      "https://www.velobite.com/pricing",
+      "fixtures/tool-hunt/pain-scan-velobite-per-order.json",
+      "https://www.yelp.com/biz/husk-nashville"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 VeloBite $0.75/order \u2192 SalesLead. Skip VeloBite AI pricing-intelligence / forecasting framing. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-velobite-per-order.json",
+    "fixtures/tool-hunt/script-draft-husk-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

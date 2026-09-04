@@ -1,0 +1,14 @@
+{
+  "finding_id": "toast-049-guest-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Toast ~$0.49 online guest fee (secondary cite)",
+  "vendor_or_project": "Toast",
+  "urls": [
+    "https://brooksidepayments.com/reduce-toast-payments-fees/",
+    "https://www.touchbistro.com/blog/best-pos-for-commission-free-online-ordering/"
+  ],
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "$0.99 guest fee was removed (2023); secondary 2026 cites claim ~$0.49 guest fee on Toast OO \u2014 not confirmed on toasttab.com. Watch only. Existing Toast OO 0% + POS lock-in watch remains.",
+  "researched_at": "2026-09-04"
+}

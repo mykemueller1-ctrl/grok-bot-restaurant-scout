@@ -1,0 +1,21 @@
+{
+  "finding_id": "nashville-love-brands-yelp-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Nashville Yelp love-brand calibration",
+  "vendor_or_project": "Never86 morning-scan",
+  "urls": [
+    "https://www.yelp.com/biz/husk-nashville",
+    "https://www.yelp.com/biz/the-catbird-seat-nashville",
+    "https://www.yelp.com/biz/henrietta-red-nashville"
+  ],
+  "what_it_does": "Fourth-market chef/cult seed (Husk, Catbird Seat, Henrietta Red, Rolf and Daughters) for love→buy-now without Instagram auth.",
+  "how_competitors_use_it": "Owner/Trenz/Menami chase destination kitchens via first-party OS; we seed morning-scan onboard targets.",
+  "what_we_use_today": "Chicago + Austin + Miami Yelp love fixtures",
+  "gap": "Closed — fixtures/tool-hunt/nashville-love-brands.json + validate-love-fixtures + morning-scan.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopted Nashville love calibration; Husk dogfood closes fourth-market pain→SalesLead path.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

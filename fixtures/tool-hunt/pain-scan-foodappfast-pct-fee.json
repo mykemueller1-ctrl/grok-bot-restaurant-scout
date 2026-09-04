@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Food App Fast 8% commission / online ordering fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.foodappfast.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "foodappfast_pricing",
+      "snippet": "Food App Fast charges an 8% monthly commission fee often passed as a customer online ordering fee / convenience fee under no set monthly fees vs DoorDash Marketplace 25% KEEP \u2014 guests pay tech fee; restaurant owners still face first-party percent rent on every cart",
+      "pain_id": "foodappfast_8pct_commission",
+      "score": 100,
+      "never86_angle": "Food App Fast 8% (passable as guest online ordering fee) is still first_party KEEP leak under no-monthly claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: foodappfast.com/pricing \u2014 8% monthly commission; many pass to guest as convenience/online ordering fee. No setup / no set monthly. Skip forecasting."
+}

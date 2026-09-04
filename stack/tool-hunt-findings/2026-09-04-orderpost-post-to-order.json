@@ -1,0 +1,19 @@
+{
+  "finding_id": "orderpost-ig-post-to-order-2026-09",
+  "lane": "vertical_gtm",
+  "name": "OrderPost — Instagram/flyer post → live order page",
+  "vendor_or_project": "OrderPost",
+  "urls": [
+    "https://www.orderpost.store/"
+  ],
+  "what_it_does": "Upload an existing Instagram/Facebook post, flyer, or menu screenshot; AI extracts items/prices/pickup; share a single order link (no catalog builder). Drop/instant/approval modes.",
+  "how_competitors_use_it": "Home bakers / preorder kitchens convert viral posts into ordered revenue without Shopify or DoorDash — closest social-post→order peer to Never86 love→buy-now.",
+  "what_we_use_today": "script-draft + catalog-sync for TikTok/IG Shop rails (Franklin sandbox).",
+  "gap": "Watch closely. Contrast: OrderPost closes via hosted order link from a post; Never86 closes in-app Shop / buy-now on cult chef brands. Cite in script-draft outreach when DM-preorder pain appears.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 1,
+  "summary": "Top new social-post→order rival. Sharpens buy-now wedge narrative vs DM chaos and marketplace rent.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

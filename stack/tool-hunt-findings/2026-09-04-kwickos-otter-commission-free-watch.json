@@ -1,0 +1,21 @@
+{
+  "finding_id": "kwickos-otter-commission-free-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "KwickOS + Otter commission-free first-party OO watches",
+  "vendor_or_project": "KwickOS / Otter",
+  "urls": [
+    "https://kwickos.com/blog/commission-free-online-ordering.html",
+    "https://kwickos.com/platform/online-ordering.html",
+    "https://www.tryotter.com/products/online-ordering"
+  ],
+  "what_it_does": "KwickOS embeds KwickMenu 0% OO in POS (~$59/mo/terminal). Otter pitches commission-free direct OO with bundle pricing that can include per-order transaction fees.",
+  "how_competitors_use_it": "Anti-DoorDash KEEP messaging via first-party web/app rails — POS lock-in (KwickOS) or aggregator tablet (Otter).",
+  "what_we_use_today": "pain→sales KEEP teach vs first-party OS peers; Never86 wedge stays TikTok/IG shoppable buy-now",
+  "gap": "Neither is Shop-native; Otter per-order txn fee is a KEEP-leak contrast point. Skip Otter labor/forecast content.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched KwickOS (POS-bundled 0% OO) and Otter (0% direct OO + possible per-order txn fee). Not forecasting. Auth still blocked.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

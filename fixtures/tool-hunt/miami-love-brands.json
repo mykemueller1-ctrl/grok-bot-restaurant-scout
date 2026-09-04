@@ -1,0 +1,48 @@
+{
+  "seed_id": "miami-love-brands-yelp-2026-09-04",
+  "purpose": "Third-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "market": "Miami, FL",
+  "brands": [
+    {
+      "name": "Chef Adrianne's Vineyard Restaurant and Bar",
+      "yelp_alias": "chef-adriannes-vineyard-miami-2",
+      "phone": "+13054088386",
+      "rating": 4.1,
+      "review_count": 2391,
+      "love_signal": "Named chef destination / vineyard dining / high UGC volume",
+      "never86_fit": "Chef-branded social buy-now + premium SKU packs"
+    },
+    {
+      "name": "Michael's Genuine Food & Drink",
+      "yelp_alias": "michaels-genuine-food-and-drink-miami",
+      "phone": "+13056760894",
+      "rating": 4.0,
+      "review_count": 2084,
+      "transactions": ["pickup"],
+      "love_signal": "Chef Michael Schwartz / Design District cult / first-party pickup present",
+      "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard"
+    },
+    {
+      "name": "Carbone",
+      "yelp_alias": "carbone-miami-beach-3",
+      "phone": "+12122543000",
+      "rating": 4.1,
+      "review_count": 989,
+      "transactions": [],
+      "love_signal": "National Italian cult / Miami Beach destination / no marketplace transactions on Yelp",
+      "never86_fit": "Viral demand → shoppable merch/SKU without DoorDash rails"
+    },
+    {
+      "name": "La Fresa Francesa",
+      "yelp_alias": "la-fresa-francesa-hialeah",
+      "phone": "+17867176886",
+      "rating": 4.6,
+      "review_count": 1044,
+      "love_signal": "Local French wine-bar cult / Hialeah destination",
+      "never86_fit": "Community love → social commerce close"
+    }
+  ],
+  "source": "Yelp Composio YELP_SEARCH_BUSINESSES term=chef location=Miami, FL sort=review_count 2026-09-04",
+  "status": "calibration_only",
+  "notes": "Skipped closed venues and generic name-match 'chef' hits without cult signal. Prefer chef/cult narrative + review volume."
+}

@@ -1,0 +1,26 @@
+{
+  "finding_id": "ginger-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ginger $1 guest fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain\u2192sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-ginger-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-ginger-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-ginger-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-ginger-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-ginger-fee-rioja.json",
+    "scripts/validate-ginger-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-ginger-guest-fee.json",
+    "https://www.gingerserve.com/pricing"
+  ],
+  "what_it_does": "Ginger Direct $1/order guest platform fee \u2192 SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "Ginger pitches $0/mo OO with $1 guest platform fee per order (alt 5% high-volume small-ticket).",
+  "what_we_use_today": "validate-ginger-fee-dogfood \u22655; guest_paid + per_order signals",
+  "gap": "Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Ginger $1 guest fee SalesLead dogfoods match five love markets; strong_keep 35.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

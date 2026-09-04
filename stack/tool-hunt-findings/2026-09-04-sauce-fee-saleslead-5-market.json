@@ -1,0 +1,26 @@
+{
+  "finding_id": "sauce-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Sauce under-$2 guest fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain\u2192sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-sauce-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-sauce-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-sauce-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-sauce-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-sauce-fee-rioja.json",
+    "scripts/validate-sauce-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-sauce-guest-fee.json",
+    "https://www.getsauce.com/p"
+  ],
+  "what_it_does": "Sauce 0% commission + flat guest fee under $2/order \u2192 SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "Sauce pitches 0% restaurant commission while diners still pay a flat under-$2 guest fee; delivery $7.99 separate.",
+  "what_we_use_today": "validate-sauce-fee-dogfood \u22655; guest_paid + per_order signals",
+  "gap": "Exact guest fee amount not published (under $2); Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Sauce under-$2 guest fee SalesLead dogfoods match five love markets; strong_keep 33.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

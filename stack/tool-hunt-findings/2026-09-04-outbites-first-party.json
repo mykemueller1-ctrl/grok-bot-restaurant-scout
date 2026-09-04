@@ -1,0 +1,21 @@
+{
+  "finding_id": "outbites-first-party-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Outbites \u2014 $1/order first-party ordering + retention",
+  "vendor_or_project": "Outbites",
+  "urls": [
+    "https://outbites.com/",
+    "https://outbites.com/blog/outbites-vs-doordash-comparison-2026/",
+    "https://outbites.com/blog/move-off-doordash-uber-eats-direct-ordering-playbook/"
+  ],
+  "what_it_does": "Direct branded ordering + SMS/email/loyalty for independents/food trucks; $1 per fulfilled order (no % commission); dual-run playbook to move repeats off DoorDash/Uber Eats.",
+  "how_competitors_use_it": "Anti-marketplace KEEP wedge via website/QR/app ordering + owned customer list \u2014 adjacent to Owner/Zayos, not TikTok Shop-native.",
+  "what_we_use_today": "Never86 love\u2192buy-now social shop rails + pain\u2192sales KEEP thesis.",
+  "gap": "Promoted: SalesLead dogfood + pain-scan now in fixtures; see 2026-09-04-outbites-fee-saleslead-5-market.json",
+  "pivot_speed": "days",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Strong anti-DoorDash first-party peer. Contrast in outreach: they own web/QR/SMS repeats; we own TikTok/IG buy-now.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_WEB", "scripts/score-marketplace-keep.mjs"],
+  "query": "UpMenu $1.90 per-order overage KEEP pain after plan caps",
+  "hits": [
+    {
+      "url": "https://www.upmenu.com/pricing/",
+      "posted_at": "2026-09-04",
+      "handle": "upmenu_pricing",
+      "snippet": "Restaurant owners on UpMenu Basic/Standard hit order caps then pay $1.90 per order overage — KEEP leak that scales with growth. Quit DoorDash commission for buy-now that does not bill extra per cart after a soft limit.",
+      "pain_id": "upmenu_per_order_overage",
+      "score": 85,
+      "never86_angle": "Flat-fee OS with per-order overage still taxes KEEP — Never86 social buy-now avoids capped-plan overage math"
+    }
+  ],
+  "notes": "Sources: UpMenu pricing + ITQlick via Composio SEARCH_WEB. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

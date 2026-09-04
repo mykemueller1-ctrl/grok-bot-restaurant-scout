@@ -1,0 +1,22 @@
+{
+  "finding_id": "ig-checkout-fee-refresh-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Instagram Shopping checkout / link-out fee refresh (2026)",
+  "vendor_or_project": "Meta Instagram Shopping",
+  "urls": [
+    "https://ecommerce-times.com/tiktok-shop-vs-instagram-shopping-in-2026-which-social-commerce-channel-actually-delivers-for-dtc-brands/",
+    "https://amzprep.com/how-to-sell-on-instagram-marketplace-guide",
+    "https://blog.shift4shop.com/instagram-shops-checkout-guide",
+    "https://canvify.app/blog/how-to-sell-on-instagram-shop-with-shopify"
+  ],
+  "what_it_does": "Native Instagram Checkout still widely cited at 5% selling fee (or $0.40 min on ≤$8). Much 2026 IG commerce is link-out to merchant checkout (no Meta selling fee; merchant pays own processor/platform). Reinforces first_party_pct_fee / Shop ~6% teach — not a new KEEP signal.",
+  "how_competitors_use_it": "DTC brands split: in-app Checkout where available vs catalog + website close; TikTok Shop stays in-app with ~6% referral.",
+  "what_we_use_today": "KEEP grader social_fee_pct=6 (Shop); social_shop + first_party_pct_fee signals; IG buy-now scripts assume Shop-class or merchant-owned close",
+  "gap": "Secondary sources disagree on whether Meta still collects 5% vs retired checkout — treat 5% as watch when native Checkout enabled; prefer Shop ~6% or merchant link-out math in SalesLeads",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "IG native checkout ~5% still cited; link-out path often $0 Meta selling fee — reinforce Never86 Shop/own-checkout KEEP, do not change grader default.",
+  "operator_ask": "No action beyond auth unlocks; keep social_fee_pct=6 until Shop hike confirmed.",
+  "researched_at": "2026-09-04"
+}

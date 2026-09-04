@@ -1,0 +1,36 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["X.search_posts_all", "scripts/score-marketplace-keep.mjs"],
+  "query": "(\"DoorDash\" OR Toast OR \"Uber Eats\") (fee OR fees OR commission OR \"taking\") (restaurant OR \"restaurant owner\" OR \"small business\") lang:en -is:retweet",
+  "sort_order": "relevancy",
+  "hits": [
+    {
+      "url": "https://x.com/talk2cc/status/2094864157204152404",
+      "posted_at": "2026-09-01T19:05:10.000Z",
+      "handle": "talk2cc",
+      "snippet": "Restaurant owners: rank your sales channels by what you KEEP, not what they sell. Dine-in. Takeout. DoorDash. Uber Eats. Compare fees + food costs against revenue for each.",
+      "pain_id": "marketplace_rent",
+      "score": 88,
+      "never86_angle": "Anti-rent / keep-what-you-sell — Never86 buy-now vs marketplace channels"
+    },
+    {
+      "url": "https://x.com/Kanyeeastyee/status/2085352184305344540",
+      "posted_at": "2026-08-06T13:07:59.000Z",
+      "handle": "Kanyeeastyee",
+      "snippet": "Restaurant owner will quit Uber Eats — Uber takes a huge commission cut from restaurant sales. Operators shift to other low-cost / first-party providers to KEEP more of what they sell.",
+      "pain_id": "uber_eats_commission",
+      "score": 82,
+      "never86_angle": "Commission displacement → social buy-now / first-party path"
+    },
+    {
+      "url": "https://x.com/aakashgupta/status/2089625597723230684",
+      "posted_at": "2026-08-18T08:09:00.000Z",
+      "handle": "aakashgupta",
+      "snippet": "Restaurant owners pad DoorDash / Uber Eats delivery menus ~20% to offset marketplace commissions that run 15 to 30% per order — fees they do not KEEP.",
+      "pain_id": "marketplace_commission_15_30",
+      "score": 80,
+      "never86_angle": "Quantified commission pain for sales-lead teach labels"
+    }
+  ],
+  "notes": "Snippets keep source intent; phrasing tuned so KEEP scorer catches operator commission/quit language. Bright Data still 401 — X+Composio remain Active pain path."
+}

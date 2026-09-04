@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-bentobox-fee-franklin-2026-09-04",
+  "purpose": "BentoBox QR Order & Pay $0.99 diner/guest fee \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "BentoBox QR Order & Pay $0.99 diner fee per order (guest-paid; waived on follow-up from same device)",
+    "guest_paid_tech_fee": "BentoBox $0.99 per-order diner Service Fee passed to guest at checkout",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "bentobox_guest_diner_fee",
+    "vendor_id": "bentobox",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "Aaron Franklin cult BBQ / line UGC"
+    },
+    "complaint_summary": "Calibration: BentoBox QR Order & Pay adds a $0.99 diner fee per order (Help Center; waived on follow-up from same device) under commission-free OO claims. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "bentobox",
+      "doordash",
+      "tiktok_shop",
+      "clover"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-bentobox-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "bentobox_guest_diner_fee",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "BentoBox QR Order & Pay charges guests a $0.99 diner/Service Fee per order (Help Center; waived on follow-up from same device) \u2014 guest-paid per_order_platform_fee KEEP leak under commission-free OO claims. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Franklin-class love already prints demand \u2014 close Shop buy-now, not BentoBox $0.99 diner fees on every QR ticket.",
+    "quotes": [
+      "BentoBox QR Order & Pay $0.99 diner fee per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "BentoBox $0.99 diner QR fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: BentoBox $0.99 diner fee is still platform rent on QR Order & Pay; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Franklin-class love already prints demand \u2014 close Shop buy-now, not BentoBox $0.99 diner fees on every QR ticket.",
+    "sources": [
+      "https://help.getbento.com/en/articles/421057",
+      "https://help.getbento.com/en/articles/418369",
+      "fixtures/tool-hunt/pain-scan-bentobox-guest-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 78,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 BentoBox $0.99 diner fee \u2192 SalesLead. Distinct from restaurant-paid Online Order Service Fee cites. Clover lock-in is secondary context. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-bentobox-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,20 @@
+{
+  "finding_id": "perdiem-per-order-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Per Diem Square app per-order fees (watch)",
+  "vendor_or_project": "Per Diem",
+  "urls": [
+    "https://www.tryperdiem.com/pricing",
+    "https://www.getcraver.com/blog/best-restaurant-online-ordering-systems"
+  ],
+  "what_it_does": "Square-branded apps from ~$99/mo; third-party blogs cite $0.50 pickup / $1.50 delivery per-order fees on Starter \u2014 not confirmed on live Per Diem pricing page.",
+  "how_competitors_use_it": "Square ecosystem KEEP peer with possible per-order overages.",
+  "what_we_use_today": "Watch only until primary pricing confirms per-order fees",
+  "gap": "tryperdiem.com/pricing markets $99 without listing per-order fees in scraped content",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Per Diem per-order fee claims are secondary \u2014 watch, do not dogfood yet.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

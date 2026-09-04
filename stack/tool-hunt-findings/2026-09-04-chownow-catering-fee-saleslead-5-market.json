@@ -1,0 +1,12 @@
+{
+  "finding_id": "chownow-catering-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChowNow Catering 5% SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary ChowNow FAQ: 5% fee per catering order on direct channel; first_party_pct_fee widened; strong_keep 47.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://get.chownow.com/blog/chownow-for-restaurants-your-top-faqs/"
+  ]
+}

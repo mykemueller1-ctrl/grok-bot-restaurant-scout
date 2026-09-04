@@ -1,0 +1,21 @@
+{
+  "finding_id": "cursor-automations-memories-2026-09",
+  "lane": "cursor_agents",
+  "name": "Cursor Automations + cross-run Memories",
+  "vendor_or_project": "Cursor",
+  "urls": [
+    "https://cursor.com/docs/cloud-agent/automations",
+    "https://cursor.com/docs/skills",
+    "https://cursor.com/help/ai-features/cloud-agents"
+  ],
+  "what_it_does": "Scheduled/event-driven cloud agents with persistent named memories across runs, MCP tools, and /automate skill setup. Personal skills sync to cloud via Settings → Agents.",
+  "how_competitors_use_it": "Cursor-native teams ship always-on agents for CI, Slack triggers, and recurring research with memory improving each run.",
+  "what_we_use_today": "Ad-hoc Cursor Cloud Agents + Grok Bot routines; no dedicated Beyond the Hunt Automation yet.",
+  "gap": "Missing a recurring Automation with memories for tooling research.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Best native fit for continuous tool hunting — create weekly Automation with memories on using routines/tool-hunt-weekly.json prompt.",
+  "operator_ask": "Create Cursor Automation at cursor.com/automations from docs/TOOL-HUNT.md; enable memories + Sync Skills for Cloud Agents.",
+  "researched_at": "2026-09-04"
+}

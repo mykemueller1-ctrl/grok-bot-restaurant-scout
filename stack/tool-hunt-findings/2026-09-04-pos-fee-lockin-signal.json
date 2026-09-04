@@ -1,0 +1,17 @@
+{
+  "finding_id": "pos-fee-lockin-keep-signal-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Adopt Toast POS fee-lockin KEEP signal",
+  "vendor_or_project": "Never86 KEEP scorer",
+  "urls": [],
+  "what_it_does": "score_marketplace_keep / marketplaceKeepScore adds pos_fee_lockin for Toast fee/lock-in/leaving language so pain shoppers boost POS-stack displacement stubs (not forecasting).",
+  "how_competitors_use_it": "n/a",
+  "what_we_use_today": "KEEP scorer already had marketplace/commission signals; toast fixture now scores pos_fee_lockin.",
+  "gap": "Closed — CLI + Fastify/Worker lib in sync.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Sharpens vendor-pain shopping for Toast fee lock-in without Mem0/Context.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

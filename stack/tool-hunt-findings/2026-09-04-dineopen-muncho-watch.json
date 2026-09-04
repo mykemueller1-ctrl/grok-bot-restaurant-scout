@@ -1,0 +1,21 @@
+{
+  "finding_id": "dineopen-muncho-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Watch DineOpen + Muncho (AI OS / QR KEEP peers)",
+  "vendor_or_project": "DineOpen / Muncho",
+  "urls": [
+    "https://www.dineopen.com/products/orders/online",
+    "https://www.dineopen.com/pricing",
+    "https://muncho.app/"
+  ],
+  "what_it_does": "DineOpen: low-cost AI POS + commission-free online ordering shareable in IG/TikTok bio. Muncho: QR order/pay + 0% commission direct delivery + AI phone agents.",
+  "how_competitors_use_it": "AI ops + first-party KEEP OS; bio-link ordering overlaps social discovery without Shop checkout.",
+  "what_we_use_today": "vertical-rival-watch; Never86 stays shoppable buy-now + taught pain leads",
+  "gap": "Watch only — skip any labor/forecast modules if they appear",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Two more AI/QR first-party peers for the weekly watch set; no skill rewrite yet.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

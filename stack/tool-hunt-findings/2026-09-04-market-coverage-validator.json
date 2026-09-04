@@ -1,0 +1,20 @@
+{
+  "finding_id": "market-coverage-validator-2026-09",
+  "lane": "vertical_gtm",
+  "name": "5-market coverage validator (love↔grader↔buy-now)",
+  "vendor_or_project": "Never86 Beyond the Hunt CI",
+  "urls": [
+    "scripts/validate-market-coverage.mjs",
+    ".github/workflows/validate-stack.yml"
+  ],
+  "what_it_does": "Asserts each of CHI/ATX/MIA/BNA/DEN has aligned love-brands, keep-grader dogfood, script-draft, and catalog-sync sharing the same yelp_alias.",
+  "how_competitors_use_it": "Owner/Trenz ship multi-market GTM without a public chain gate; we lock calibration fixtures so markets cannot drift apart in CI.",
+  "what_we_use_today": "Separate count gates (love=5, keep-grader=5, buy-now=5) plus this cross-link coverage gate",
+  "gap": "Still sandbox/DRAFT dogfood only; Mem0/Context auth still blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "CI now fails if a love market loses its keep-grader or buy-now pair (or yelp_alias drifts).",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth) so unlock-beyond-the-hunt exits 0.",
+  "researched_at": "2026-09-04"
+}

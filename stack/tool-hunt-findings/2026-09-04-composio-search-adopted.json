@@ -1,0 +1,17 @@
+{
+  "finding_id": "composio-search-adopted-2026-09",
+  "lane": "mcp_connectors",
+  "name": "Composio SEARCH_WEB adopted for vertical hunt",
+  "vendor_or_project": "Composio",
+  "urls": [],
+  "what_it_does": "Active Composio search toolkit returns citations for vertical SERP without Mem0/Context/Bright Data auth.",
+  "how_competitors_use_it": "Ops agents keep a research path that does not depend on a single SERP MCP.",
+  "what_we_use_today": "Bright Data 401 in this cloud env; Context needsAuth; Composio search Active.",
+  "gap": "Research redundancy partially closed without desktop Context auth.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted into tool-frontier-scan / vertical-rival-watch / morning-scan fallbacks.",
+  "operator_ask": "Still auth Context + Mem0 on desktop; connect Instagram via Composio when linked.",
+  "researched_at": "2026-09-04"
+}

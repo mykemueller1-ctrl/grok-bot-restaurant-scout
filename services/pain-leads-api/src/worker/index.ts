@@ -86,6 +86,8 @@ const SOURCE_TOOLS = [
   "search_forums",
   "get_thread_context",
   "get_profile_public",
+  "score_marketplace_keep",
+  "keep_channel_grade",
 ];
 
 const APPROVAL_TOOLS = ["request_approval", "check_approval_status"];
@@ -249,6 +251,30 @@ async function dispatchSource(tool: string, args: Record<string, unknown>) {
   }
   if (tool === "get_profile_public") {
     return { ok: true, tool, note: "Public profile only — no login bypass", handle: args.handle ?? null };
+  }
+  if (tool === "score_marketplace_keep") {
+    const snippet = String(args.snippet ?? args.text ?? args.query ?? "");
+    if (!snippet.trim()) return { error: "snippet required", tool };
+    const { scoreMarketplaceKeep } = await import("../lib/marketplaceKeepScore");
+    return { ok: true, tool, ...scoreMarketplaceKeep(snippet) };
+  }
+  if (tool === "keep_channel_grade") {
+    const { channelsFromArgs, gradeKeepChannels } = await import("../lib/keepChannelGrade");
+    const channels = Array.isArray(args.channels)
+      ? (args.channels as { id: string; label?: string; gmv: number; fee_pct: number }[]).map((c) => ({
+          id: String(c.id),
+          label: String(c.label ?? c.id),
+          gmv: Number(c.gmv) || 0,
+          fee_pct: Number(c.fee_pct) || 0,
+        }))
+      : channelsFromArgs(args);
+    if (!channels.length) {
+      return {
+        error: "pass channel GMVs (dinein/takeout/doordash/uber/grubhub/social_buy_now) or channels[]",
+        tool,
+      };
+    }
+    return { ok: true, tool, ...gradeKeepChannels(channels) };
   }
   return { error: `unknown tool: ${tool}` };
 }

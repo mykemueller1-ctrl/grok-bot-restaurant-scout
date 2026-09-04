@@ -1,0 +1,20 @@
+{
+  "finding_id": "zep-graphiti-watch-2026-09",
+  "lane": "memory",
+  "name": "Zep / Graphiti temporal knowledge graph",
+  "vendor_or_project": "Zep / Graphiti",
+  "urls": [
+    "https://github.com/getzep/graphiti/blob/main/mcp_server/README.md",
+    "https://baeseokjae.github.io/posts/mem0-vs-zep-production-guide-2026/"
+  ],
+  "what_it_does": "Temporal knowledge graph memory (facts valid_from/valid_to) with MCP server; strong when vendor/ICP truths change over time.",
+  "how_competitors_use_it": "Teams with changing domain facts (finance/health/ops) prefer Graphiti-style memory over pure vector stores.",
+  "what_we_use_today": "Static teach banks + labels; no temporal graph.",
+  "gap": "Vendor pain truths drift — temporal memory could help recurse-learn quality later.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Watch only until Mem0 auth + Cursor Automation memories are live; revisit if teach quality plateaus.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

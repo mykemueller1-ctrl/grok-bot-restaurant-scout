@@ -1,0 +1,17 @@
+{
+  "finding_id": "tavily-research-secondary-2026-09",
+  "lane": "mcp_connectors",
+  "name": "Adopt COMPOSIO_SEARCH_TAVILY as research secondary",
+  "vendor_or_project": "Composio Search / Tavily",
+  "urls": [],
+  "what_it_does": "Composio Tavily search with include_answer + advanced depth — verified Active alongside SEARCH_WEB when Bright Data 401 / Context blocked.",
+  "how_competitors_use_it": "Generic web research path.",
+  "what_we_use_today": "COMPOSIO_SEARCH_WEB primary; Bright Data still 401; Context needsAuth.",
+  "gap": "Closed — skills tool-frontier-scan + vertical-rival-watch may use Tavily as secondary. Still prefer Context when keys land.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Active secondary research tool — no new secrets.",
+  "operator_ask": "Still need MEM0_API_KEY + CONTEXT_DEV_API_KEY for full hunt memory/research.",
+  "researched_at": "2026-09-04"
+}

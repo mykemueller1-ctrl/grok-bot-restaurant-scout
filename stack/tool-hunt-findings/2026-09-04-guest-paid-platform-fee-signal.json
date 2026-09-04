@@ -1,0 +1,22 @@
+{
+  "finding_id": "guest-paid-platform-fee-signal-2026-09",
+  "lane": "vertical_gtm",
+  "name": "guest_paid_platform_fee KEEP scorer signal",
+  "vendor_or_project": "DevourNow-class guest-fee OO / Never86 KEEP scorer",
+  "urls": [
+    "https://getdevournow.com/pricing/",
+    "scripts/score-marketplace-keep.mjs",
+    "services/pain-leads-api/src/lib/marketplaceKeepScore.ts",
+    "fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json"
+  ],
+  "what_it_does": "Detects diner-paid OO tech/service fees (customers pay / guest-paid / tech fee) distinct from restaurant-paid per-order platform fees (BentoBox/UpMenu/Otter txn).",
+  "how_competitors_use_it": "DevourNow Essential/Plus/Zero shift platform cost to guests while marketing 0% restaurant commission.",
+  "what_we_use_today": "score-marketplace-keep + MCP score_marketplace_keep + guest-fee SalesLead dogfoods",
+  "gap": "Mem0/Context still blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted guest_paid_platform_fee so diner-sticker-shock OO fees surface in pain→sales teach next to Shop ~6%. Not forecasting.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

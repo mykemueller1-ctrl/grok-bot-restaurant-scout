@@ -1,0 +1,22 @@
+{
+  "finding_id": "yelp-austin-love-calibration-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Yelp multi-market morning-scan calibration (Austin)",
+  "vendor_or_project": "Composio Yelp",
+  "urls": [
+    "https://www.yelp.com/biz/uchi-austin-austin",
+    "https://www.yelp.com/biz/franklin-barbecue-austin",
+    "https://www.yelp.com/biz/intero-restaurant-austin",
+    "https://www.yelp.com/biz/eldorado-cafe-austin-2"
+  ],
+  "what_it_does": "Active Yelp search+details dogfood seeded Austin chef/cult brands for love→buy-now morning-scan (Uchi, Franklin, Intero, Eldorado).",
+  "how_competitors_use_it": "n/a — our GTM enrichment path",
+  "what_we_use_today": "Already adopted Yelp for Chicago calibration + lead-shop-enrich; now second market fixture + morning-scan skill step.",
+  "gap": "Instagram Composio still not Active for UGC proofs — Yelp is the public love-signal seed until social auth lands.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Adopted multi-market Yelp love-brand calibration into morning-scan; fixture austin-love-brands.json.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

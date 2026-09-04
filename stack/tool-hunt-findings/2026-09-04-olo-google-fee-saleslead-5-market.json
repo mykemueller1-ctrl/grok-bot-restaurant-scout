@@ -1,0 +1,13 @@
+{
+  "finding_id": "olo-google-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Olo Order with Google 5% SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Olo OwG Fee 5% on subtotal (primary Help Center); strong_keep 39.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://olosupport.zendesk.com/hc/en-us/articles/37069343928219-Invoice-Reconciliation",
+    "scripts/validate-olo-fee-dogfood.mjs"
+  ]
+}

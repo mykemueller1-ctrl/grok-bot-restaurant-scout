@@ -1,0 +1,12 @@
+{
+  "name": "context",
+  "transport": "http",
+  "url": "https://mcp.context.dev/mcp",
+  "auth": "oauth_desktop_only",
+  "headless": {
+    "env": "CONTEXT_DEV_API_KEY",
+    "script": "scripts/context-search.mjs",
+    "endpoint": "https://api.context.dev/v1/web/search"
+  },
+  "notes": "MCP is OAuth-desktop-only. Cloud/CI research uses CONTEXT_DEV_API_KEY REST path. Docs: https://docs.context.dev/quickstart"
+}

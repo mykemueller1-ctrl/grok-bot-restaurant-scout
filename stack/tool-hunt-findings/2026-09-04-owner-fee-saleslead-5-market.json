@@ -1,0 +1,27 @@
+{
+  "finding_id": "owner-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Owner Flex/guest 5% SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-owner-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-owner-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-owner-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-owner-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-owner-fee-rioja.json",
+    "scripts/validate-owner-fee-dogfood.mjs",
+    "https://www.owner.com/pricing",
+    "fixtures/tool-hunt/pain-scan-owner-pct-fee.json",
+    "fixtures/tool-hunt/pain-scan-owner-guest-fee.json"
+  ],
+  "what_it_does": "Owner Flex $249+5% restaurant fee + guest 5% order support on BOTH plans → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6% + Marketplace 15–30%.",
+  "how_competitors_use_it": "Owner sells first-party OS with Flex restaurant % and universal guest support fee — marketing-heavy, not TikTok Shop-native.",
+  "what_we_use_today": "validate-owner-fee-dogfood ≥5 parallel gate; first_party_pct_fee + guest_paid_platform_fee signals",
+  "gap": "Still DRAFT calibration — Mem0/Context blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Owner Flex/guest 5% SalesLead dogfoods now match all five love markets.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

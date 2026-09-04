@@ -1,0 +1,22 @@
+{
+  "finding_id": "flavorfeed-restos-infi-whatsmenu-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Watch FlavorFeed AI + Restos.io + INFI + WhatsMenu",
+  "vendor_or_project": "FlavorFeed / Restos.io / INFI / WhatsMenu",
+  "urls": [
+    "https://www.flavorfeed.ai/",
+    "https://restos.io/pricing",
+    "https://infi.us/products/online-ordering",
+    "https://whatsmenu.page/resources/whatsmenu-vs-tiktok-shop"
+  ],
+  "what_it_does": "FlavorFeed: AI POS + IG/TikTok content + branded ordering; Restos.io: €0/€29 commission-free link ordering; INFI: 0% commission social/QR ordering; WhatsMenu: owned storefront fed by TikTok traffic (not in-app Shop checkout).",
+  "how_competitors_use_it": "Peers crowd first-party KEEP OS + social discovery; FlavorFeed overlaps content→order, WhatsMenu frames owned storefront vs TikTok Shop commission.",
+  "what_we_use_today": "vertical-rival-watch seed + ledger competitors; Never86 stays TikTok/IG shoppable buy-now + taught pain leads",
+  "gap": "Watch only — no skill rewrite yet; skip any forecasting angles if they appear",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Four new first-party/social peers to track weekly; none displace our shoppable buy-now + KEEP grader wedge yet.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,75 @@
+{
+  "dogfood_id": "pain-to-sales-upmenu-fee-franklin-2026-09-04",
+  "purpose": "UpMenu Basic/Standard $1.90/order overage after plan caps → SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts restaurant-paid per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "UpMenu Basic/Standard $1.90/order overage after 75/210 caps",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "upmenu_per_order_overage",
+    "vendor_id": "upmenu",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "National cult BBQ / line culture / chef Aaron Franklin"
+    },
+    "complaint_summary": "Calibration: UpMenu pitches flat-fee OO then bills $1.90 per order after Basic (75) / Standard (210) caps. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now — honest platform math without overage KEEP leaks or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "upmenu",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-upmenu-overage.json",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "upmenu_per_order_overage",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "UpMenu Basic/Standard markets flat-fee OO then charges $1.90 per order overage after 75/210 caps — restaurant-paid per_order_platform_fee KEEP leak that scales with growth. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. Line-culture love already prints demand — close Shop buy-now, not $1.90 overage after plan caps.",
+    "quotes": [
+      "UpMenu Basic/Standard $1.90 per order overage after plan caps",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "UpMenu capped-plan overage OO",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: UpMenu overage still taxes KEEP after soft limits; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: Line-culture love already prints demand — close Shop buy-now, not $1.90 overage after plan caps.",
+    "sources": [
+      "https://www.upmenu.com/pricing/",
+      "fixtures/tool-hunt/pain-scan-upmenu-overage.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — UpMenu $1.90 overage → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-upmenu-overage.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,19 @@
+{
+  "finding_id": "effective-cost-keep-signal-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Adopt effective-cost KEEP signal + DoorDash statement-math pain",
+  "vendor_or_project": "Never86 KEEP scorer",
+  "urls": [
+    "https://x.com/myke86d/status/2084843820680708466"
+  ],
+  "what_it_does": "Extends score_marketplace_keep / scripts/score-marketplace-keep.mjs with effective_cost_math (statement math, effective cost %, lives on what is left) so pain shoppers boost dual-fee DoorDash statements.",
+  "how_competitors_use_it": "Outbites/Owner pitch first-party KEEP; Never86 needs the same statement-math language in teach labels.",
+  "what_we_use_today": "KEEP scorer on CLI + complaint-sources MCP; fixtures/tool-hunt/pain-scan-marketplace-keep.json.",
+  "gap": "Closed — Active adopt; fixture pain-scan-doordash-effective-cost.json dogfoods X→KEEP.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Statement-math KEEP signal sharpens pain→sales without Mem0/Context.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth) so unlock-beyond-the-hunt.mjs can go READY.",
+  "researched_at": "2026-09-04"
+}

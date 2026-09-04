@@ -1,0 +1,15 @@
+{
+  "finding_id": "incentivio-flat-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Incentivio $249/mo loyalty+OO \u2014 no confirmed per-order fee",
+  "vendor_or_project": "Incentivio",
+  "urls": [
+    "https://incentivio.com/",
+    "https://toolradar.com/tools/incentivio"
+  ],
+  "what_it_does": "Guest engagement + commission-free OO from ~$249/mo; usage fees mentioned in Chargebee billing but no public $0.20 gateway quote.",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Watch only \u2014 no primary per-order fee teach confirmed.",
+  "researched_at": "2026-09-04"
+}

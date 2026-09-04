@@ -1,0 +1,21 @@
+{
+  "finding_id": "klikit-shop-middleware-refresh-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Klikit TikTok Shop food middleware refresh (APAC POS sync)",
+  "vendor_or_project": "Klikit",
+  "urls": [
+    "https://klikit.io/en/learn/tiktok-shop-food-delivery",
+    "https://klikit.io/en/learn/tiktok-shop-integration-guide-restaurants-apac",
+    "https://klikit.io/en/learn/tiktok-shop-vs-grabfood-foodpanda-restaurants"
+  ],
+  "what_it_does": "APAC POS with native TikTok Shop order/menu/inventory sync; cites Shop ~2–8% (US teach still ~6%) vs Grab/Foodpanda 15–30%. Middleware peer for Shop→kitchen — not US GTM rival yet.",
+  "how_competitors_use_it": "Klikit sells MPAAS multi-platform delivery sync including TikTok Shop; Toast alternative narrative for Asia.",
+  "what_we_use_today": "social_shop_fee KEEP + Shop ~6% grader; Klikit remains watch for Shop food ops validation",
+  "gap": "US footprint secondary — keep watch, no swarm expand",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Klikit still Shop food middleware peer (APAC); reinforces Shop KEEP math, no ledger promotion.",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04"
+}

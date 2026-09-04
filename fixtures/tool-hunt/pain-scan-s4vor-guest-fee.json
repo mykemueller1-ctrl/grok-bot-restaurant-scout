@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "S4VOR guest 1.9% service fee capped at $2.00 KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.s4vor.com/",
+      "posted_at": "2026-09-04",
+      "handle": "s4vor_pricing_model",
+      "snippet": "S4VOR markets $0/mo commission-free OO then guests pay a 1.9% service fee capped at $2.00 per order \u2014 guests pay tech fee vs DoorDash Marketplace 25% KEEP; restaurant owners keep menu price while diner sticker shock taxes conversion",
+      "pain_id": "s4vor_guest_1_9pct_cap_2",
+      "score": 100,
+      "never86_angle": "S4VOR guest 1.9% (capped at $2.00) is still guest_paid / first_party KEEP leak under $0/mo commission-free claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: s4vor.com Our Model \u2014 customer-paid 1.9% service fee, capped at $2.00. Restaurant $0/mo. Skip forecasting."
+}

@@ -23,6 +23,39 @@ jobs:
       - run: npm run build
         env:
           DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+      - name: KEEP scorer smoke
+        run: |
+          node -e "
+          import { scoreMarketplaceKeep } from './dist/lib/marketplaceKeepScore.js';
+          import { dispatchSourceTool } from './dist/mcp/sources.js';
+          const a = scoreMarketplaceKeep('Restaurant owners KEEP DoorDash 30% commission');
+          if (a.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(a));
+          const eff = scoreMarketplaceKeep('DoorDash commission is not your cost — statement: effective cost 18.75%; restaurant lives on what is left');
+          if (!eff.signals.includes('effective_cost_math') || eff.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(eff));
+          const toast = scoreMarketplaceKeep('Restaurant owners leaving Toast cite high fees lock-in — rent they do not KEEP');
+          if (!toast.signals.includes('pos_fee_lockin') || toast.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(toast));
+          const po = scoreMarketplaceKeep('BentoBox charges \$0.99 per order Online Order Service Fee — Clover POS required');
+          if (!po.signals.includes('per_order_platform_fee') || !po.signals.includes('pos_fee_lockin')) throw new Error(JSON.stringify(po));
+          const up = scoreMarketplaceKeep('UpMenu Basic overage \$1.90 per order after 75 orders — restaurant owners KEEP less');
+          if (!up.signals.includes('per_order_platform_fee')) throw new Error(JSON.stringify(up));
+          const fp = scoreMarketplaceKeep('Owner.com Flex \$249/month plus 5% restaurant fee per order — guests see 5% order support fee; restaurant owners KEEP less');
+          if (!fp.signals.includes('first_party_pct_fee') || fp.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(fp));
+          const flip = scoreMarketplaceKeep('Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%');
+          if (!flip.signals.includes('first_party_pct_fee') || flip.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(flip));
+          const ddoo = scoreMarketplaceKeep('DoorDash Online Ordering is 0% commission on direct orders — Marketplace still takes 25%; dual-run KEEP');
+          if (!ddoo.signals.includes('marketplace_direct_zero')) throw new Error(JSON.stringify(ddoo));
+          const uber = scoreMarketplaceKeep('Uber Webshop is commission-free; Grubhub Direct skips marketing commissions on branded sites');
+          if (!uber.signals.includes('marketplace_direct_zero')) throw new Error(JSON.stringify(uber));
+          const shop = scoreMarketplaceKeep('TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25% — restaurant owners KEEP more on buy-now');
+          if (!shop.signals.includes('social_shop_fee') || shop.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(shop));
+          const guest = scoreMarketplaceKeep('DevourNow customers pay \$2.99 per order tech fee under 0% commission — restaurant owners KEEP less conversion vs DoorDash 25%');
+          if (!guest.signals.includes('guest_paid_platform_fee') || !guest.signals.includes('per_order_platform_fee') || guest.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(guest));
+          const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
+          if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
+          const g = await dispatchSourceTool('keep_channel_grade', { dinein: 12000, doordash: 9000, doordash_fee_pct: 25, social_buy_now: 2500 });
+          if (!g.ok || g.summary?.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(g));
+          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, up.score, fp.score, ddoo.score, uber.score, shop.score, guest.score, b.score, g.summary.marketplace_fee_total);
+          "
 
   wiring:
     runs-on: ubuntu-latest
@@ -40,7 +73,7 @@ jobs:
           test -f scripts/codex-cloud-setup.sh
           test -f stack/github-secrets.manifest.json
           python3 -c "import json; m=json.load(open('stack/github-secrets.manifest.json')); assert m['codex_cloud_environment']['repo'].endswith('grok-bot-restaurant-scout')"
-          python3 -c "import json; w=json.load(open('stack/wiring.json')); assert 'codex_cloud' in w and 'cloudflare' in w"
+          python3 -c "import json; w=json.load(open('stack/wiring.json')); assert 'codex_cloud' in w and 'cloudflare' in w and 'tool_hunt' in w"
 
   swarm:
     runs-on: ubuntu-latest
@@ -57,3 +90,456 @@ jobs:
         with:
           node-version: "20"
       - run: bash scripts/codex-cloud-setup.sh
+
+  tool-hunt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/validate-tooling-ledger.mjs
+      - run: node scripts/run-tool-hunt-week.mjs
+      - name: Tool hunt docs + agent present
+        run: |
+          test -f docs/TOOL-HUNT.md
+          test -f agent/tool-hunt/beyond-the-hunt.json
+          test -f stack/tooling-ledger.json
+          test -f routines/tool-hunt-weekly.json
+          test -f scripts/run-tool-hunt-week.mjs
+          test -f scripts/context-search.mjs
+          test -f fixtures/tool-hunt/austin-love-brands.json
+          test -f fixtures/tool-hunt/miami-love-brands.json
+          test -f fixtures/tool-hunt/nashville-love-brands.json
+          test -f fixtures/tool-hunt/denver-love-brands.json
+          test -f fixtures/tool-hunt/pain-scan-marketplace-keep.json
+          test -f fixtures/tool-hunt/pain-scan-doordash-effective-cost.json
+          test -f fixtures/tool-hunt/pain-scan-menu-markup.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-nashville-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-denver-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-girl-goat.json
+          test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
+          test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
+          test -f fixtures/tool-hunt/script-draft-rioja-buy-now.json
+          test -f fixtures/tool-hunt/script-draft-girl-goat-buy-now.json
+          test -f fixtures/tool-hunt/script-draft-michaels-genuine-buy-now.json
+          test -f scripts/mem0-import-tool-hunt-memory.mjs
+          test -f scripts/mem0-smoke.mjs
+          test -f scripts/score-marketplace-keep.mjs
+          test -f scripts/score-pain-fixtures.mjs
+          test -f scripts/validate-love-fixtures.mjs
+          test -f scripts/validate-buy-now-dogfood.mjs
+          test -f scripts/validate-market-coverage.mjs
+          test -f scripts/keep-channel-grader.mjs
+          test -f scripts/validate-keep-grader-dogfood.mjs
+          test -f scripts/validate-social-shop-dogfood.mjs
+          test -f scripts/validate-guest-fee-dogfood.mjs
+          test -f scripts/validate-otter-fee-dogfood.mjs
+          test -f scripts/validate-upmenu-fee-dogfood.mjs
+          test -f scripts/validate-owner-fee-dogfood.mjs
+          test -f scripts/validate-popmenu-fee-dogfood.mjs
+          test -f scripts/validate-flipdish-fee-dogfood.mjs
+          test -f scripts/validate-lunchbox-fee-dogfood.mjs
+          test -f scripts/validate-menufy-fee-dogfood.mjs
+          test -f scripts/validate-zayos-fee-dogfood.mjs
+          test -f scripts/validate-247waiter-fee-dogfood.mjs
+          test -f scripts/validate-outbites-fee-dogfood.mjs
+          test -f scripts/validate-tabski-fee-dogfood.mjs
+          test -f scripts/validate-gotab-fee-dogfood.mjs
+          test -f scripts/validate-orda-fee-dogfood.mjs
+          test -f scripts/validate-upserve-fee-dogfood.mjs
+          test -f scripts/validate-sauce-fee-dogfood.mjs
+          test -f scripts/validate-velobite-fee-dogfood.mjs
+          test -f scripts/validate-ginger-fee-dogfood.mjs
+          test -f scripts/validate-bentobox-fee-dogfood.mjs
+          test -f scripts/validate-kontactless-fee-dogfood.mjs
+          test -f scripts/validate-sohungry-fee-dogfood.mjs
+          test -f scripts/validate-foodscout-fee-dogfood.mjs
+          test -f scripts/validate-chownow-catering-fee-dogfood.mjs
+          test -f scripts/validate-onestoporder-fee-dogfood.mjs
+          test -f scripts/validate-ordering-tools-fee-dogfood.mjs
+          test -f scripts/validate-deonde-fee-dogfood.mjs
+          test -f scripts/validate-uber-webshop-fee-dogfood.mjs
+          test -f scripts/validate-seared-fee-dogfood.mjs
+          test -f scripts/validate-gegsy-fee-dogfood.mjs
+          test -f scripts/validate-kwickdriver-fee-dogfood.mjs
+          test -f scripts/validate-s4vor-fee-dogfood.mjs
+          test -f scripts/validate-foxifood-fee-dogfood.mjs
+          test -f scripts/validate-servi-fee-dogfood.mjs
+          test -f scripts/validate-foodappfast-fee-dogfood.mjs
+          test -f scripts/validate-chownow-discovery-fee-dogfood.mjs
+          test -f scripts/validate-addmi-fee-dogfood.mjs
+          test -f scripts/validate-tenvito-fee-dogfood.mjs
+          test -f scripts/validate-ritual-fee-dogfood.mjs
+          test -f scripts/validate-chownow-fee-dogfood.mjs
+          test -f scripts/validate-slice-fee-dogfood.mjs
+          test -f scripts/validate-olo-fee-dogfood.mjs
+          test -f scripts/tool-hunt-brief.mjs
+          test -f scripts/unlock-beyond-the-hunt.mjs
+          test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-rioja-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-girl-goat-sandbox.json
+          test -f fixtures/tool-hunt/catalog-sync-michaels-genuine-sandbox.json
+          test -f fixtures/tool-hunt/pain-scan-dual-run.json
+          test -f fixtures/tool-hunt/pain-scan-bentobox-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-bentobox-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-owner-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-owner-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-popmenu-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-flipdish-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-slice-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-lunchbox-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-menufy-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-zayos-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-247waiter-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-outbites-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-tabski-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-gotab-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-orda-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-upserve-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-sauce-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-velobite-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-ginger-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-ritual-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-chownow-guest-fee.json
+          test -f fixtures/tool-hunt/pain-scan-olo-google-fee.json
+          test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
+          test -f fixtures/tool-hunt/pain-scan-doordash-online-ordering.json
+          test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
+          test -f fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json
+          test -f fixtures/tool-hunt/pain-scan-otter-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-guest-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-guest-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-guest-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-guest-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-guest-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-otter-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-otter-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-otter-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-otter-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-otter-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-upmenu-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-upmenu-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-upmenu-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-upmenu-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-upmenu-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-owner-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-owner-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-owner-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-owner-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-owner-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-popmenu-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-flipdish-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-lunchbox-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-lunchbox-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-lunchbox-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-lunchbox-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-lunchbox-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-menufy-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-menufy-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-menufy-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-menufy-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-menufy-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-zayos-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-zayos-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-zayos-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-zayos-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-zayos-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-tabski-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-tabski-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-tabski-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-tabski-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-tabski-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-gotab-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-orda-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-upserve-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-upserve-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-upserve-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-upserve-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-upserve-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-sauce-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-sauce-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-sauce-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-sauce-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-sauce-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-velobite-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-velobite-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-velobite-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-velobite-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-velobite-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-ginger-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-ginger-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-ginger-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-ginger-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-ginger-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-bentobox-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-bentobox-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-bentobox-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-bentobox-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-bentobox-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-kontactless-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-kontactless-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-kontactless-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-kontactless-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-kontactless-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-kontactless-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-sohungry-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-sohungry-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-sohungry-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-sohungry-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-sohungry-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-sohungry-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-foodscout-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodscout-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodscout-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodscout-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodscout-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodscout-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-chownow-catering-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-catering-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-catering-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-catering-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-catering-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-catering-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-onestoporder-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-onestoporder-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-onestoporder-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-onestoporder-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-onestoporder-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-onestoporder-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-ordering-tools-pct-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-ordering-tools-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-ordering-tools-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-ordering-tools-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-ordering-tools-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-ordering-tools-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-deonde-overage.json
+          test -f fixtures/tool-hunt/pain-to-sales-deonde-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-deonde-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-deonde-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-deonde-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-deonde-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-uber-webshop-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-uber-webshop-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-uber-webshop-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-uber-webshop-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-uber-webshop-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-uber-webshop-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-seared-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-seared-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-seared-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-seared-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-seared-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-seared-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-gegsy-per-order.json
+          test -f fixtures/tool-hunt/pain-to-sales-gegsy-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-gegsy-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-gegsy-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-gegsy-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-gegsy-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-kwickdriver-per-delivery.json
+          test -f fixtures/tool-hunt/pain-to-sales-kwickdriver-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-kwickdriver-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-kwickdriver-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-kwickdriver-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-kwickdriver-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-s4vor-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-s4vor-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-foxifood-card-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-foxifood-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-servi-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-servi-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-servi-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-servi-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-servi-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-servi-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-foodappfast-pct-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodappfast-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodappfast-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodappfast-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodappfast-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-foodappfast-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-chownow-discovery-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-discovery-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-discovery-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-discovery-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-discovery-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-discovery-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-addmi-guest-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-scan-tenvito-pct-fee.json
+          test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-ritual-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-olo-fee-rioja.json
+          test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
+          test -f skills/keep-channel-grader.md
+          test -f stack/tool-hunt-briefs/2026-09-04.md
+          node scripts/score-marketplace-keep.mjs "KEEP DoorDash commission quit" | grep -q anti_marketplace_buy_now
+          node scripts/score-marketplace-keep.mjs "DoorDash commission is not your cost — statement effective cost 18.75% restaurant lives on what is left" | grep -q effective_cost_math
+          node scripts/score-marketplace-keep.mjs "Restaurant owners leaving Toast cite high fees lock-in — rent they do not KEEP" | grep -q pos_fee_lockin
+          node scripts/score-marketplace-keep.mjs "pad DoorDash menus 20% menu markup to offset commissions" | grep -q menu_markup_pain
+          node scripts/score-marketplace-keep.mjs "Own your ordering commission-free KEEP more profit" | grep -q own_ordering_keep
+          node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
+          node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'UpMenu Basic overage $1.90 per order after 75 orders — KEEP leak' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Outbites is $1 per fulfilled order platform fee — KEEP leak' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Orda Starter $59/mo plus $0.25 commission fee per order — KEEP leak' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Owner.com Flex $249/month plus 5% restaurant fee per order — guests see 5% order support fee' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Flipdish charges 2-7% per-order commission on direct online orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Upserve U-Series Online Ordering service fee is 2.99% — guests pay vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'ChowNow Support Local Fee is 7.5% of the subtotal on App orders vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Olo Order with Google Fee is 5% charged on the subtotal vs DoorDash Marketplace 25%' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'ChowNow charges a 5% fee per catering order placed through your direct channel vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs '1 Stop Order Free plan charges a 2% convenience fee per order charged to the customer (minimum $0.50) vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Ordering.Tools Starter charges a 5% platform commission on all orders vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Uber Webshop charges a 2.5% order processing fee + $0.29 per order vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Seared charges customers a 5% transaction fee with a $1.99 minimum and hard cap of $7.50 per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'S4VOR guests pay a 1.9% service fee capped at $2.00 per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'FoxiFood charges 2% + €0.45 per card payment under no monthly fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Ser.vi customers pay a 5% convenience fee at checkout under $0 monthly POS — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Food App Fast charges an 8% monthly commission fee often passed as customer online ordering fee vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'ChowNow Order Better Network charges a 15.5% marketing fee on subtotal vs DoorDash Marketplace 25% KEEP' | grep -q first_party_pct_fee
+          node scripts/score-marketplace-keep.mjs 'Addmi online ordering charges customers 38 cents per order under no monthly fees vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Gegsy Starter Pickup base $0.40 per order and Delivery base $1.00 per order under commission-free Square OO vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'KwickDriver charges a flat $2 fee per delivery plus $6.99 per 5 miles under first-party OO vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Deonde Express charges $0.10 per order overage beyond included monthly orders vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Menufy charges a $1.75 convenience fee per order on direct OO vs DoorDash Marketplace 25%' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Flipdish charges order fees as a flat rate of €0.50 plus percentage per order vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'BentoBox QR Order & Pay charges a $0.99 diner fee per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q guest_paid_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Kontactless Classic charges a fixed $0.50 convenience fee per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'SoHungry Free plan charges customers a $1.25 convenience fee per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'FoodScout GO charges customers a $0.99 service fee per order — guests pay tech fee vs DoorDash Marketplace 25% KEEP' | grep -q per_order_platform_fee
+          node scripts/score-marketplace-keep.mjs 'DoorDash Online Ordering is 0% commission on direct orders — Marketplace still 25%' | grep -q marketplace_direct_zero
+          node scripts/score-marketplace-keep.mjs 'Uber Webshop is commission-free on direct orders — Grubhub Direct skips marketing commissions' | grep -q marketplace_direct_zero
+          node scripts/score-marketplace-keep.mjs 'TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25%' | grep -q social_shop_fee
+          node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
+          node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
+          node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 63'
+          node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
+          node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
+          node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
+          node scripts/validate-social-shop-dogfood.mjs | grep -q '"social_shop_dogfoods": 5'
+          node scripts/validate-guest-fee-dogfood.mjs | grep -q '"guest_fee_dogfoods": 5'
+          node scripts/validate-otter-fee-dogfood.mjs | grep -q '"otter_fee_dogfoods": 5'
+          node scripts/validate-upmenu-fee-dogfood.mjs | grep -q '"upmenu_fee_dogfoods": 5'
+          node scripts/validate-owner-fee-dogfood.mjs | grep -q '"owner_fee_dogfoods": 5'
+          node scripts/validate-popmenu-fee-dogfood.mjs | grep -q '"popmenu_fee_dogfoods": 5'
+          node scripts/validate-flipdish-fee-dogfood.mjs | grep -q '"flipdish_fee_dogfoods": 5'
+          node scripts/validate-lunchbox-fee-dogfood.mjs | grep -q '"lunchbox_fee_dogfoods": 5'
+          node scripts/validate-menufy-fee-dogfood.mjs | grep -q '"menufy_fee_dogfoods": 5'
+          node scripts/validate-zayos-fee-dogfood.mjs | grep -q '"zayos_fee_dogfoods": 5'
+          node scripts/validate-247waiter-fee-dogfood.mjs | grep -q '"waiter247_fee_dogfoods": 5'
+          node scripts/validate-outbites-fee-dogfood.mjs | grep -q '"outbites_fee_dogfoods": 5'
+          node scripts/validate-tabski-fee-dogfood.mjs | grep -q '"tabski_fee_dogfoods": 5'
+          node scripts/validate-gotab-fee-dogfood.mjs | grep -q '"gotab_fee_dogfoods": 5'
+          node scripts/validate-orda-fee-dogfood.mjs | grep -q '"orda_fee_dogfoods": 5'
+          node scripts/validate-upserve-fee-dogfood.mjs | grep -q '"upserve_fee_dogfoods": 5'
+          node scripts/validate-sauce-fee-dogfood.mjs | grep -q '"sauce_fee_dogfoods": 5'
+          node scripts/validate-velobite-fee-dogfood.mjs | grep -q '"velobite_fee_dogfoods": 5'
+          node scripts/validate-ginger-fee-dogfood.mjs | grep -q '"ginger_fee_dogfoods": 5'
+          node scripts/validate-bentobox-fee-dogfood.mjs | grep -q '"bentobox_fee_dogfoods": 5'
+          node scripts/validate-kontactless-fee-dogfood.mjs | grep -q '"kontactless_fee_dogfoods": 5'
+          node scripts/validate-sohungry-fee-dogfood.mjs | grep -q '"sohungry_fee_dogfoods": 5'
+          node scripts/validate-foodscout-fee-dogfood.mjs | grep -q '"foodscout_fee_dogfoods": 5'
+          node scripts/validate-chownow-catering-fee-dogfood.mjs | grep -q '"chownow_catering_fee_dogfoods": 5'
+          node scripts/validate-onestoporder-fee-dogfood.mjs | grep -q '"onestoporder_fee_dogfoods": 5'
+          node scripts/validate-ordering-tools-fee-dogfood.mjs | grep -q '"ordering_tools_fee_dogfoods": 5'
+          node scripts/validate-deonde-fee-dogfood.mjs | grep -q '"deonde_fee_dogfoods": 5'
+          node scripts/validate-uber-webshop-fee-dogfood.mjs | grep -q '"uber_webshop_fee_dogfoods": 5'
+          node scripts/validate-seared-fee-dogfood.mjs | grep -q '"seared_fee_dogfoods": 5'
+          node scripts/validate-gegsy-fee-dogfood.mjs | grep -q '"gegsy_fee_dogfoods": 5'
+          node scripts/validate-kwickdriver-fee-dogfood.mjs | grep -q '"kwickdriver_fee_dogfoods": 5'
+          node scripts/validate-s4vor-fee-dogfood.mjs | grep -q '"s4vor_fee_dogfoods": 5'
+          node scripts/validate-foxifood-fee-dogfood.mjs | grep -q '"foxifood_fee_dogfoods": 5'
+          node scripts/validate-servi-fee-dogfood.mjs | grep -q '"servi_fee_dogfoods": 5'
+          node scripts/validate-foodappfast-fee-dogfood.mjs | grep -q '"foodappfast_fee_dogfoods": 5'
+          node scripts/validate-chownow-discovery-fee-dogfood.mjs | grep -q '"chownow_discovery_fee_dogfoods": 5'
+          node scripts/validate-addmi-fee-dogfood.mjs | grep -q '"addmi_fee_dogfoods": 5'
+          node scripts/validate-tenvito-fee-dogfood.mjs | grep -q '"tenvito_fee_dogfoods": 5'
+          node scripts/validate-ritual-fee-dogfood.mjs | grep -q '"ritual_fee_dogfoods": 5'
+          node scripts/validate-chownow-fee-dogfood.mjs | grep -q '"chownow_fee_dogfoods": 5'
+          node scripts/validate-slice-fee-dogfood.mjs | grep -q '"slice_fee_dogfoods": 5'
+          node scripts/validate-olo-fee-dogfood.mjs | grep -q '"olo_fee_dogfoods": 5'
+          node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
+          # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
+          if node scripts/unlock-beyond-the-hunt.mjs; then
+            echo "unlock READY"
+          else
+            ec=$?
+            test "$ec" -eq 2
+          fi

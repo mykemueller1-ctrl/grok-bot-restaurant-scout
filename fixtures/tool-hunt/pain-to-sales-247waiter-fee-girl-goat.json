@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-247waiter-fee-girl-goat-2026-09-04",
+  "purpose": "247waiter $45/mo + $0.25/order transmission fee (restaurant-paid) under no-commission OO claim \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts restaurant-paid per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "247waiter $45/mo + $0.25/order transmission fee (restaurant-paid)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%",
+    "marketplace_direct_zero": "DoorDash Online Ordering / Uber Webshop 0% direct"
+  },
+  "pain_lead": {
+    "pain_id": "247waiter_per_order_txn_fee",
+    "vendor_id": "247waiter",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: 247waiter pitches no-commission OO while restaurants still pay $45/mo + $0.25 per-order transmission fee. Girl & The Goat-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without restaurant-paid 247waiter skim or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "247waiter",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-247waiter-per-order.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "247waiter_per_order_txn_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "247waiter markets no-commission OO while restaurants still pay $45/mo plus $0.25 per order transmission fee \u2014 restaurant-paid per_order_platform_fee KEEP leak distinct from guest tech fees. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. West Loop love already prints demand \u2014 close Shop buy-now, not 247waiter $0.25 transmission skim on every OO ticket.",
+    "quotes": [
+      "247waiter $45/mo + $0.25 per order transmission fee (restaurant-paid)",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "247waiter restaurant-paid $0.25/order transmission fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: 247waiter restaurant-paid transmission skim is still platform rent on 'no commission' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand \u2014 close Shop buy-now, not 247waiter $0.25 transmission skim on every OO ticket.",
+    "sources": [
+      "https://www.247waiter.com/online-ordering-system-cost",
+      "fixtures/tool-hunt/pain-scan-247waiter-per-order.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 247waiter restaurant-paid $0.25/order transmission fee \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-247waiter-per-order.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

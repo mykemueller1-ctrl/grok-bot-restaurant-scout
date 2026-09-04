@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "FoodScout GO $0.99 customer service fee per order KEEP pain",
+  "hits": [
+    {
+      "url": "https://foodscoutgo.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "foodscoutgo",
+      "snippet": "FoodScout GO charges customers a $0.99 service fee per order \u2014 guests pay tech fee under $0/mo restaurant claim vs DoorDash Marketplace 25% KEEP; restaurant pays $0/month while diner sticker shock remains",
+      "pain_id": "foodscout_guest_099_fee",
+      "score": 100,
+      "never86_angle": "Guest-paid $0.99 FoodScout service fee is still platform rent on free-for-restaurants OO \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: foodscoutgo.com/pricing \u2014 $0.99 service/convenience fee paid by customers; $0 upfront/$0 monthly to restaurant; Stripe 2.9%+30\u00a2 also customer-paid. Skip forecasting. Not expanding swarm."
+}

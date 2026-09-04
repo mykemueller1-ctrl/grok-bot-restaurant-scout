@@ -1,0 +1,88 @@
+{
+  "dogfood_id": "pain-to-sales-keep-grader-franklin-2026-09-04",
+  "purpose": "KEEP channel-rank grader \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Second-market dogfood after Rioja \u2014 proves keep_channel_grade folds into complaint_thesis without forecasting.",
+  "grader": {
+    "cli": "node scripts/keep-channel-grader.mjs --dinein 18000 --takeout 6000 --doordash 11000 --doordash_fee_pct 25 --uber 4000 --uber_fee_pct 30 --social_buy_now 3500 --social_fee_pct 6",
+    "mcp_tool": "keep_channel_grade",
+    "mcp_args": {
+      "dinein": 18000,
+      "takeout": 6000,
+      "doordash": 11000,
+      "doordash_fee_pct": 25,
+      "uber": 4000,
+      "uber_fee_pct": 30,
+      "social_buy_now": 3500,
+      "social_fee_pct": 6
+    },
+    "expected_wedge": "anti_marketplace_buy_now",
+    "marketplace_fee_total": 3950,
+    "best_keep_channel": "dine_in",
+    "worst_keep_pct_channel": "uber_eats",
+    "teach": "DoorDash #2 GMV but $2,750 fee leak; Uber 70% KEEP. Social buy-now keeps ~94% after Shop ~6% \u2014 shift cult BBQ viral demand off marketplace rent."
+  },
+  "pain_lead": {
+    "pain_id": "marketplace_commission_keep",
+    "vendor_id": "doordash",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "National cult BBQ / line culture / chef-driven"
+    },
+    "complaint_summary": "Calibration: channel KEEP$ rank (not personal Franklin complaint). Sample month marketplace fee leak $3,950 vs 100% KEEP on dine-in/takeout and ~94% KEEP on Never86 social buy-now after Shop ~6%.",
+    "opportunity_signals": [
+      "rank_by_keep_not_gmv",
+      "marketplace_fee_leak",
+      "social_buy_now_keep_channel",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "doordash",
+      "uber_eats"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/keep-channel-grader-pilot.json",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "marketplace_commission_keep",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "On a sample month, DoorDash looks strong by GMV but keeps only 75% after fees ($2,750 leak); Uber keeps 70%. Dine-in + takeout keep 100%; Never86 social buy-now keeps ~94% after Shop ~6% (vs Marketplace 15\u201330%). Cult BBQ already prints demand \u2014 rank channels by KEEP$, not GMV dashboards.",
+    "quotes": [
+      "marketplace_fee_total $3950",
+      "worst_keep_pct uber_eats 70%",
+      "social_buy_now keep_pct 94%"
+    ],
+    "vendors_to_displace": [
+      "DoorDash",
+      "Uber Eats"
+    ],
+    "why_never86_now": "KEEP channel grader shows anti_marketplace_buy_now. Franklin-class love should close on TikTok/IG shoppable buy-now \u2014 not padded marketplace menus or Owner/Popmenu/Sauce email-delivery OS alone.",
+    "suggested_angle": "Draft only: Your line already proves demand. Never86 ranks what you KEEP after fees \u2014 then turns that love into shoppable buy-now so fans pay you, not a 25% cart.",
+    "sources": [
+      "scripts/keep-channel-grader.mjs",
+      "https://www.yelp.com/biz/franklin-barbecue-austin",
+      "fixtures/tool-hunt/keep-channel-grader-pilot.json"
+    ],
+    "confidence": 76,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 grader \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/keep-channel-grader.mjs",
+    "keep_channel_grade (complaint-sources MCP)",
+    "fixtures/tool-hunt/austin-love-brands.json",
+    "fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}

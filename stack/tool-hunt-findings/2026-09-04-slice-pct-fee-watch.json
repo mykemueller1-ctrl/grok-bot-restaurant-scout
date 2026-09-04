@@ -1,0 +1,21 @@
+{
+  "finding_id": "slice-pct-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Slice pizzeria 5% / $3-per-order fee watch",
+  "vendor_or_project": "Slice",
+  "urls": [
+    "fixtures/tool-hunt/pain-scan-slice-pct-fee.json",
+    "https://slice.com/pricing/",
+    "https://legalclarity.org/slice-charge-explained-fees-pricing-and-how-it-works/"
+  ],
+  "what_it_does": "Pizza-vertical first-party: Family ~5%/order or Online ~$39/mo + ~$3/card order — hits first_party_pct_fee; niche vs Never86 multi-cuisine Shop wedge.",
+  "how_competitors_use_it": "Slice aggregates independent pizzerias with membership % or per-order fees vs Marketplace rent.",
+  "what_we_use_today": "pain-scan only; watch — no SalesLead swarm for pizza-only",
+  "gap": "Vertical niche — keep watch; no swarm expand",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched Slice 5%/$3 fee math for pizza KEEP teach; no dogfood expansion.",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04"
+}

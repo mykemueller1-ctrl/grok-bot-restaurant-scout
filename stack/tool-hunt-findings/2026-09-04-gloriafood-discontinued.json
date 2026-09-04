@@ -1,0 +1,19 @@
+{
+  "finding_id": "gloriafood-discontinued-2026-09",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood free ordering — discontinued new signups",
+  "vendor_or_project": "GloriaFood (Oracle)",
+  "urls": [
+    "https://www.gloriafood.com/"
+  ],
+  "what_it_does": "Was free commission-free online ordering with Facebook/social smart links; Oracle-owned; site states discontinued / no new signups.",
+  "how_competitors_use_it": "Legacy free widget path; replacements (e.g. Fleksa) pitch as GloriaFood successors.",
+  "what_we_use_today": "Never86 buy-now path; GloriaFood already exists as pain-shopper silo target",
+  "gap": "Skip further research — product not accepting new restaurants.",
+  "pivot_speed": "weeks",
+  "verdict": "skip",
+  "priority": 5,
+  "summary": "GloriaFood is discontinued for new signups — skip; do not chase as active rival.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

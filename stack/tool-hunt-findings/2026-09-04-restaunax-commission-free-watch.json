@@ -1,0 +1,20 @@
+{
+  "finding_id": "restaunax-commission-free-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "RestauNax commission-free first-party OO",
+  "vendor_or_project": "RestauNax",
+  "urls": [
+    "https://restaunax.com/resources/commission-free-ordering",
+    "https://restaunax.com/"
+  ],
+  "what_it_does": "Flat ~$99/mo commission-free website + branded app + loyalty/email/SMS; Uber Direct / DoorDash Drive for delivery without Marketplace food commission.",
+  "how_competitors_use_it": "ChowNow/BentoBox-class first-party KEEP peer pitching 0% vs DoorDash 15–30%.",
+  "what_we_use_today": "pain→sales KEEP teach vs first-party OS peers; Never86 wedge stays TikTok/IG shoppable buy-now",
+  "gap": "Not Shop-native — watch only; contrast in sales forms",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched RestauNax as first-party KEEP peer (~$99/mo flat). Not TikTok Shop-native. Skip forecasting. Auth still blocked.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

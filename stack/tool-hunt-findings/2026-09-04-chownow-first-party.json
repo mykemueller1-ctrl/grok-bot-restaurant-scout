@@ -1,0 +1,21 @@
+{
+  "finding_id": "chownow-first-party-os-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChowNow commission-free first-party ordering",
+  "vendor_or_project": "ChowNow",
+  "urls": [
+    "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers",
+    "https://get.chownow.com/blog/restaurant-marketing-reviews",
+    "https://outbites.com/compare/chownow-alternative-for-restaurants"
+  ],
+  "what_it_does": "Flat-fee commission-free direct ordering + diner data ownership + Discovery Network; dual-run with DoorDash for discovery.",
+  "how_competitors_use_it": "Pitch KEEP 100% of diner contact vs marketplace rent; Outbites/Lunchbox position as alternatives.",
+  "what_we_use_today": "Never86 TikTok/IG buy-now + KEEP pain→sales; contrast vs ChowNow web/app OS",
+  "gap": "Watch — independent first-party peer next to Lunchbox/OPA!/SWIPEBY/Outbites; skip forecasting.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched ChowNow (commission-free first-party + dual-run DoorDash). Chowly/Popmenu noted as adjacent — watch light. No forecasting research.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

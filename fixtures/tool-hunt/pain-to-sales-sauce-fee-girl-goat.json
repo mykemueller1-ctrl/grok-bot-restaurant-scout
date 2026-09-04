@@ -1,0 +1,77 @@
+{
+  "dogfood_id": "pain-to-sales-sauce-fee-girl-goat-2026-09-04",
+  "purpose": "Sauce 0% commission + flat guest fee under $2/order (from ~$199/mo) \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Sauce flat guest fee under $2 per order",
+    "guest_paid_tech_fee": "Sauce guest-facing fee under $2 (flat)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "sauce_guest_per_order_fee",
+    "vendor_id": "sauce",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Sauce pitches 0% commission OO while guests still pay a flat fee under $2 per order (from ~$199/mo). Girl & The Goat-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "sauce",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-sauce-guest-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "sauce_guest_per_order_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Sauce markets 0% restaurant commission while charging a flat guest fee under $2 per order (from ~$199/mo) \u2014 diner tech fee under a zero-commission claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. West Loop love already prints demand \u2014 close Shop buy-now, not Sauce under-$2 diner fees on every OO ticket.",
+    "quotes": [
+      "Sauce guest fee under $2 per order (flat)",
+      "Sauce from ~$199/mo + 0% restaurant commission",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Sauce under-$2 guest OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Sauce under-$2 guest fee is still platform rent on '0% commission' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand \u2014 close Shop buy-now, not Sauce under-$2 diner fees on every OO ticket.",
+    "sources": [
+      "https://www.getsauce.com/p",
+      "fixtures/tool-hunt/pain-scan-sauce-guest-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Sauce under-$2 guest fee \u2192 SalesLead. Skip Sauce forecasting content. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-sauce-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Lunchbox guest convenience fee under free/no-commission OO KEEP pain",
+  "hits": [
+    {
+      "url": "https://zay-os.com/how-much-does-lunchbox-cost",
+      "posted_at": "2026-09-04",
+      "handle": "zayos",
+      "snippet": "Lunchbox for small operators is free with no commission — the guest pays a convenience fee at checkout vs DoorDash Marketplace 25%; diner tech fee under first-party claim",
+      "pain_id": "lunchbox_guest_convenience_fee",
+      "score": 95,
+      "never86_angle": "Guest convenience fee on 'free' Lunchbox OO is still platform rent — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+    }
+  ],
+  "notes": "Small-operator Lunchbox product (not enterprise Lunchbox 2.0 quote-only). Sources: Zay-OS + Sauce via Composio. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

@@ -1,0 +1,12 @@
+{
+  "finding_id": "addmi-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Addmi 38\u00a2 OO guest fee SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary addmi.com/pricing OO 38\u00a2 (POS 19\u00a2) guest-paid under no monthly fees \u2192 pain-to-sales-addmi-fee-* \u00d75; strong_keep 62.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://addmi.com/pricing"
+  ]
+}

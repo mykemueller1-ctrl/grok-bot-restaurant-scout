@@ -1,0 +1,19 @@
+{
+  "finding_id": "seared-first-party-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Seared — commission-free ordering + marketing for independents",
+  "vendor_or_project": "Seared",
+  "urls": [
+    "https://seared.io/"
+  ],
+  "what_it_does": "Flat-fee website + online ordering + app + loyalty + email/SMS marketing; white-glove setup; anti-DoorDash KEEP pitch for independents.",
+  "how_competitors_use_it": "Same KEEP / first-party lane as Outbites/Orderitto/Owner — web/app ordering, not TikTok Shop-native.",
+  "what_we_use_today": "Outbites/Orderitto already watched; Never86 social buy-now.",
+  "gap": "Watch light with other first-party KEEP peers. Contrast in sales forms.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Another flat-fee anti-marketplace OS. Cite vs Never86 Shop close.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,21 @@
+{
+  "finding_id": "keep-grader-shop-default-2026-09",
+  "lane": "vertical_gtm",
+  "name": "KEEP channel grader default social_fee_pct=6 (TikTok Shop US)",
+  "vendor_or_project": "Never86 keep-channel-grader / TikTok Shop",
+  "urls": [
+    "scripts/keep-channel-grader.mjs",
+    "services/pain-leads-api/src/lib/keepChannelGrade.ts",
+    "fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json"
+  ],
+  "what_it_does": "Ranks restaurant channels by KEEP$ after fees. Default social buy-now fee is TikTok Shop US unified referral (~6%), not 0.",
+  "how_competitors_use_it": "Zayos-style public KEEP wedge; Never86 teach: Shop ~6% → ~94% KEEP vs Marketplace 15–30%.",
+  "what_we_use_today": "CLI + keepChannelGrade.ts + MCP keep_channel_grade + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs",
+  "gap": "Secondary reports of Oct 1 2026 hike to ~8% — watch before changing default",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Aligned KEEP grader default with TikTok Shop ~6% unified referral so love→buy-now math matches social_shop_fee teach (94% KEEP vs Marketplace 15–30%). Not forecasting.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

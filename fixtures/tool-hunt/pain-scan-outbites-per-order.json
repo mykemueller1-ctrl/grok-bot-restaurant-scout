@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_WEB",
+    "COMPOSIO_SEARCH_TAVILY",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Outbites $1 per fulfilled order Pass/Split/Pay KEEP pain",
+  "hits": [
+    {
+      "url": "https://outbites.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "outbites_oo",
+      "snippet": "Outbites Pass lets guests pay $1.00 per fulfilled order platform fee under 0% commission claim \u2014 KEEP leak vs DoorDash Marketplace 25%; dual-run discovery then Never86 buy-now",
+      "pain_id": "outbites_per_order_pass_fee",
+      "score": 100,
+      "never86_angle": "$1/fulfilled-order (Pass guest / Split / Pay restaurant) still taxes KEEP \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: outbites.com/pricing + commission-free page via Composio. Bright Data still 401. Promote from watch\u2192adopt with SalesLead dogfood. Skip forecasting. Not expanding swarm imports."
+}

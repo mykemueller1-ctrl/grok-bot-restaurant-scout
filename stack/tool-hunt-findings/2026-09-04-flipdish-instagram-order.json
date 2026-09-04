@@ -1,0 +1,20 @@
+{
+  "finding_id": "flipdish-instagram-order-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Flipdish Instagram Order Now + first-party KEEP",
+  "vendor_or_project": "Flipdish",
+  "urls": [
+    "https://www.flipdish.com/",
+    "https://www.flipdish.com/us/resources/blog/get-direct-orders-on-instagram"
+  ],
+  "what_it_does": "First-party web/app ordering with Instagram Order Now button + Stories food-order stickers; AI marketing/POS; marketplace menu sync dual-run.",
+  "how_competitors_use_it": "Restaurants route IG demand to branded Flipdish carts to KEEP margin vs marketplace commissions.",
+  "what_we_use_today": "Never86 TikTok/IG shoppable buy-now scripts; Flipdish proves IG→order close is table stakes",
+  "gap": "Watch social-close + KEEP messaging only — skip Flipdish demand-forecasting / staff-scheduling feature research.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Flipdish IG→direct order is a live social-commerce peer; contrast Never86 buy-now rails without forecasting drift.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "COMPOSIO_SEARCH_WEB", "scripts/score-marketplace-keep.mjs"],
+  "query": "dual-run marketplace discovery + first-party KEEP (ChowNow/Chowly language)",
+  "hits": [
+    {
+      "url": "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers",
+      "posted_at": "2026-09-04",
+      "handle": "chownow",
+      "snippet": "Restaurant owners dual-run DoorDash for discovery and commission-free direct ordering to KEEP diner data. Marketplaces for new guests; own your ordering for guests you KEEP.",
+      "pain_id": "dual_run_discovery_keep",
+      "score": 90,
+      "never86_angle": "Dual-run teach: marketplace discovery OK — social buy-now owns the KEEP channel"
+    }
+  ],
+  "notes": "Operator dual-run language from ChowNow/Chowly peers. Bright Data still 401. Skip forecasting."
+}

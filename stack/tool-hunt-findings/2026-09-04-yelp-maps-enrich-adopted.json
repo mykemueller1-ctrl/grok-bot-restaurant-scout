@@ -1,0 +1,17 @@
+{
+  "finding_id": "yelp-maps-enrich-adopted-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Yelp + Maps public enrich adopted for pain→sales",
+  "vendor_or_project": "Composio / Yelp",
+  "urls": [],
+  "what_it_does": "Active Composio toolkits Yelp + Google Maps + SEARCH_WEB enrich venue phone/website/public contacts without Apollo/Clay.",
+  "how_competitors_use_it": "GTM agents enrich operator identity from public local listings before outreach.",
+  "what_we_use_today": "lead-shop-enrich now mandates Yelp→details→Maps→public web contact pass; Apollo/Clay optional second pass.",
+  "gap": "Apollo/Clay still useful for deeper B2B emails once desktop-auth’d — not a blocker.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Closes a pain→sales tooling gap with already-Active connectors while Mem0/Context remain desktop-blocked.",
+  "operator_ask": "Still auth Mem0 + Context on desktop; Instagram Composio when linked.",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Gegsy Starter $0.40 pickup / $1.00 delivery per-order KEEP pain",
+  "hits": [
+    {
+      "url": "https://gegsy.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "gegsy_pricing",
+      "snippet": "Gegsy Starter Pickup base $0.40 per order and Delivery base $1.00 per order under commission-free Square OO vs DoorDash Marketplace 25% KEEP; restaurant owners hit per-order platform fees (Pro $0.20/$1.00; catering 2%/1%)",
+      "pain_id": "gegsy_starter_040_100",
+      "score": 100,
+      "never86_angle": "Gegsy $0.40/$1.00 per-order bases are still per_order platform rent under commission-free Square claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: gegsy.com/pricing Starter Pickup $0.40 / Delivery $1.00 (Pro $0.20/$1.00). FAQ also cites Starter delivery $1.25 \u2014 teach card bases. Skip forecasting."
+}

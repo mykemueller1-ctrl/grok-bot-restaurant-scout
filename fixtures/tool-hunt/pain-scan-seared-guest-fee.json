@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Seared guest 5% transaction fee $1.99 min $7.50 cap KEEP pain",
+  "hits": [
+    {
+      "url": "https://seared.io/",
+      "posted_at": "2026-09-04",
+      "handle": "seared_pricing_faq",
+      "snippet": "Seared markets commission-free OO then guests pay a 5% transaction fee with a $1.99 minimum and hard cap of $7.50 per order \u2014 guests pay tech fee vs DoorDash Marketplace 25% KEEP; restaurant owners keep menu price while diner sticker shock taxes conversion",
+      "pain_id": "seared_guest_5pct_199_750",
+      "score": 100,
+      "never86_angle": "Seared guest 5% ($1.99 min / $7.50 cap) is still guest_paid / first_party KEEP leak under commission-free claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: seared.io FAQ \u2014 customer-paid 5% fee, $1.99 minimum, $7.50 hard cap. Flat $199/$99 mo + $500 setup. Skip forecasting."
+}

@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Otter commission-free OO + per-order transaction fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.tryotter.com/products/online-ordering",
+      "posted_at": "2026-09-04",
+      "handle": "otter_oo",
+      "snippet": "Otter Advanced Bundle is commission-free online ordering but restaurant owners still pay a per-order fee (~$0.15 per order plus processing) — KEEP leak vs DoorDash 25% marketplace; dual-run discovery then Never86 buy-now",
+      "pain_id": "otter_per_order_txn_fee",
+      "score": 100,
+      "never86_angle": "0% commission OO with per-order fee still taxes KEEP — Never86 social buy-now (Shop ~6%) avoids aggregator txn skim + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: Otter OO product + pricing-details; Fooderise 2026 fee report via Composio. Bright Data still 401. Skip Otter labor/forecast. Not expanding swarm imports."
+}

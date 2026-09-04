@@ -1,0 +1,21 @@
+{
+  "finding_id": "competitor-ide-matrix-2026-09",
+  "lane": "competitor_stacks",
+  "name": "2026 coding-agent competitor matrix",
+  "vendor_or_project": "market",
+  "urls": [
+    "https://www.thecodew.com/2026/08/ai-coding-assistants-compared.html",
+    "https://vmzig.com/en/blog/articles/2026-cursor-windsurf-claude-code-copilot-gemini-devin-six-ai-tools-comparison.html",
+    "https://devtoollab.com/blog/best-ai-coding-assistants"
+  ],
+  "what_it_does": "Market split: Cursor (daily IDE+agents), Claude Code (terminal autonomy), Windsurf/Devin Desktop (Cascade), Copilot (enterprise default), Devin (full delegation).",
+  "how_competitors_use_it": "Effective teams pair an IDE agent with a terminal agent rather than picking one forever.",
+  "what_we_use_today": "Cursor-primary + Codex Cloud + Grok Bot desktop swarm.",
+  "gap": "No formal secondary terminal-agent path documented; OK while Cursor cloud covers ops.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 4,
+  "summary": "Stay Cursor-primary; keep Claude Code on watchlist only if long-horizon terminal work exceeds Cursor Automations.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

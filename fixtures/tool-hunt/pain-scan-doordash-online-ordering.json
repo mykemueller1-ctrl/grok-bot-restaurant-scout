@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "DoorDash Online Ordering 0% commission direct vs Marketplace 15-30% KEEP dual-run",
+  "hits": [
+    {
+      "url": "https://merchants.doordash.com/en-us/products/online-ordering",
+      "posted_at": "2026-09-04",
+      "handle": "doordash_merchants",
+      "snippet": "Restaurant owners: DoorDash Online Ordering is 0% commission on direct orders from your website/social/Google — Marketplace still takes 15-30%. Dual-run discovery on DoorDash then shift KEEP guests to direct or Never86 buy-now; Drive On-Demand is flat fee fulfillment not percent rent.",
+      "pain_id": "doordash_online_ordering_dual",
+      "score": 95,
+      "never86_angle": "Teach marketplace_direct_zero: DD OO proves 0% direct exists — Never86 TikTok/IG buy-now is the love→close channel that keeps social demand without Marketplace %"
+    }
+  ],
+  "notes": "Sources: DoorDash merchants OO pages + fee explainers via Composio Tavily. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

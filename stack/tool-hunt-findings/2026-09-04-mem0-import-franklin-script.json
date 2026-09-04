@@ -1,0 +1,20 @@
+{
+  "finding_id": "mem0-import-and-franklin-script-2026-09",
+  "lane": "memory",
+  "name": "Mem0 memory import path + Franklin buy-now script dogfood",
+  "vendor_or_project": "Mem0 + Never86 script-draft",
+  "urls": [
+    "https://docs.mem0.ai/platform/mem0-mcp",
+    "https://www.yelp.com/biz/franklin-barbecue-austin"
+  ],
+  "what_it_does": "Headless Mem0 importer for stack/tool-hunt-memory.md (runs when MEM0_API_KEY set). Plus PENDING_APPROVAL buy-now script draft for Franklin BBQ (Austin love calibration).",
+  "how_competitors_use_it": "n/a",
+  "what_we_use_today": "Git-backed tool-hunt-memory until Mem0 READY; script-draft skill now has Active dogfood fixture.",
+  "gap": "Still needs MEM0_API_KEY (or desktop OAuth) before import can run — closes memory half of auth gap the moment secret lands.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pre-wired Mem0 import + Franklin buy-now script dogfood; auth still blocked for live Mem0.",
+  "operator_ask": "Add MEM0_API_KEY then run: node scripts/mem0-smoke.mjs && node scripts/mem0-import-tool-hunt-memory.mjs",
+  "researched_at": "2026-09-04"
+}

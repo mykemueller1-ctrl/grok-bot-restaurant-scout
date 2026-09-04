@@ -1,0 +1,30 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "ChowNow $0.99 service charge + 7.5% Support Local Fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://get.chownow.com/restaurant-support/service-charge-frequently-asked-questions/",
+      "posted_at": "2026-09-04",
+      "handle": "chownow_service_charge",
+      "snippet": "ChowNow optional $0.99 service charge per order on website and branded app vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "chownow_099_service_charge",
+      "score": 100,
+      "never86_angle": "$0.99 guest service charge (50/50 split) still taxes KEEP checkout on 'commission-free' OO \u2014 Never86 Shop ~6% buy-now avoids diner sticker shock + Marketplace rent."
+    },
+    {
+      "url": "https://get.chownow.com/diner-support/does-chownow-charge-a-fee-for-diners/",
+      "posted_at": "2026-09-04",
+      "handle": "chownow_support_local",
+      "snippet": "ChowNow Support Local Fee is 7.5% of the subtotal on App orders vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "chownow_support_local_75",
+      "score": 100,
+      "never86_angle": "7.5% Support Local Fee on ChowNow App / eat.chownow.com is still first-party % rent under 0% restaurant commission \u2014 Never86 Shop ~6% is honest social take-rate."
+    }
+  ],
+  "notes": "Primary: get.chownow.com service-charge FAQ + diner Support Local Fee docs. $0.99 is optional dashboard toggle (50/50 split). 7.5% applies on ChowNow App / eat.chownow.com only. Skip forecasting. Not expanding swarm."
+}

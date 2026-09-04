@@ -1,0 +1,21 @@
+{
+  "finding_id": "olo-app-google-fee-refresh-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Olo App 0% commission + Order with Google fee refresh",
+  "vendor_or_project": "Olo",
+  "urls": [
+    "https://www.olo.com/olo-network",
+    "https://www.nrn.com/restaurant-technology/olo-launches-first-consumer-facing-digital-ordering-app",
+    "https://olosupport.zendesk.com/hc/en-us/articles/360050780871-Order-with-Google-FAQ"
+  ],
+  "what_it_does": "Olo consumer App (2026) pitches 0% commission / restaurants keep 100%; Order with Google remains a separate per-order Google commission billed via Olo. Enterprise second-party discovery peer — not TikTok Shop-native.",
+  "how_competitors_use_it": "Olo Network attacks DoorDash/Uber with second-party app on Olo Accounts; Google channel still takes a cut.",
+  "what_we_use_today": "Already watched Olo Network; refresh confirms App 0% + Google fee nuance",
+  "gap": "Enterprise/QSR skew — keep watch; no SMB SalesLead dogfood",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Olo App 0% stay watch; Order with Google fee is still a KEEP leak on Google-originated orders.",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04"
+}

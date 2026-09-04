@@ -1,0 +1,46 @@
+{
+  "seed_id": "austin-love-brands-yelp-2026-09-04",
+  "purpose": "Second-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "market": "Austin, TX",
+  "brands": [
+    {
+      "name": "Uchi Austin",
+      "yelp_alias": "uchi-austin-austin",
+      "phone": "+15129164808",
+      "rating": 4.4,
+      "review_count": 3189,
+      "love_signal": "Chef Tyson Cole / destination sushi / high UGC",
+      "never86_fit": "Premium shoppable SKU + social buy-now onboard"
+    },
+    {
+      "name": "Franklin Barbecue",
+      "yelp_alias": "franklin-barbecue-austin",
+      "phone": "+15126531187",
+      "rating": 4.5,
+      "review_count": 6478,
+      "love_signal": "National cult BBQ / line culture / chef-driven",
+      "never86_fit": "Viral demand → buy-now / merch/SKU packs (not marketplace delivery)"
+    },
+    {
+      "name": "Intero Restaurant",
+      "yelp_alias": "intero-restaurant-austin",
+      "phone": "+15125994052",
+      "rating": 4.6,
+      "review_count": 663,
+      "love_signal": "Chef-driven Italian / East Cesar Chavez destination",
+      "never86_fit": "Indie chef brand buy-now candidate"
+    },
+    {
+      "name": "Eldorado Cafe",
+      "yelp_alias": "eldorado-cafe-austin-2",
+      "phone": "+15124202222",
+      "rating": 4.5,
+      "review_count": 1097,
+      "love_signal": "Local Mexican cult / high review volume",
+      "never86_fit": "Community love → social commerce close"
+    }
+  ],
+  "source": "Yelp Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04",
+  "status": "calibration_only",
+  "notes": "Yelp details responses omitted website field; use Maps/web second pass when contacting. Prefer cult/chef signal over generic high-rating food trucks."
+}

@@ -1,0 +1,13 @@
+{
+  "finding_id": "menufy-175-fee-refresh-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menufy $1.75 convenience fee refresh",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Confirmed $1.75/order convenience fee (Orderitto/CostBench 2026); second pain-scan hit \u2192 strong_keep 40.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://orderitto.com/compare/menufy-pricing",
+    "https://costbench.com/software/food-delivery-platform/menufy/hidden-costs/"
+  ]
+}

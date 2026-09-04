@@ -1,0 +1,20 @@
+{
+  "finding_id": "orderitto-zero-commission-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Orderitto — flat-fee branded apps + web ordering",
+  "vendor_or_project": "Orderitto (INVASSO LLC)",
+  "urls": [
+    "https://orderitto.com/",
+    "https://orderitto.com/platform"
+  ],
+  "what_it_does": "Branded iOS/Android/web ordering with 0% order commission; flat plans from $149/mo; loyalty, SEO/AI visibility, multi-location.",
+  "how_competitors_use_it": "Full first-party ordering OS competing with ChowNow/Owner on keep-every-dollar messaging.",
+  "what_we_use_today": "Never86 social buy-now + pain shoppers; not a branded native-app builder.",
+  "gap": "Watch only — app-builder OS is not our lane. Use for competitive framing when operators ask about flat-fee direct ordering.",
+  "pivot_speed": "weeks",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Flat-fee zero-commission ordering OS. Adjacent KEEP rival; Never86 stays social shoppable.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

@@ -1,0 +1,44 @@
+{
+  "dogfood_id": "pain-scan-toast-doordash-2026-09-04",
+  "purpose": "Prove Active Composio SEARCH_WEB + X can power pain-complaint-scan fallback for Never86 vendor pain → sales leads (not forecasting).",
+  "signals": [
+    {
+      "vendor": "toast",
+      "thesis": "Operators cite high fees, hardware lock-in, and costly early termination when leaving Toast.",
+      "sources": [
+        "https://restaurantbottomline.com/2026/07/30/toast-pos-fees-explained-2026/",
+        "https://www.sleftpayments.com/learning-hub/why-restaurants-leaving-toast-pos-2026",
+        "https://x.com/maxxdelivers/status/2089468688395362773"
+      ],
+      "never86_angle": "Displace painful POS economics in sales forms after teach keep — stack pain, not labor forecast pitch"
+    },
+    {
+      "vendor": "doordash",
+      "thesis": "Operators quitting 3P delivery after extreme commission load (e.g. ~$188K/year Omaha case) toward first-party ordering.",
+      "sources": [
+        "https://dundeeomaha.org/2026/04/omaha-restaurant-owner-drops-delivery-apps-after-188k-in-fees/",
+        "https://finance.yahoo.com/economy/policy/articles/omaha-restaurant-owner-drops-delivery-102500179.html"
+      ],
+      "never86_angle": "Perfect anti-marketplace rent wedge for love→buy-now / direct social commerce"
+    }
+  ],
+  "hits": [
+    {
+      "url": "https://www.sleftpayments.com/learning-hub/why-restaurants-leaving-toast-pos-2026",
+      "snippet": "Restaurant owners leaving Toast cite high fees, hardware lock-in, and costly early termination — stack rent they do not KEEP.",
+      "pain_id": "toast_fee_lockin",
+      "vendor_id": "toast",
+      "never86_angle": "POS fee displacement after teach — not forecasting"
+    },
+    {
+      "url": "https://dundeeomaha.org/2026/04/omaha-restaurant-owner-drops-delivery-apps-after-188k-in-fees/",
+      "snippet": "Restaurant owner quit DoorDash / delivery apps after ~$188K in marketplace commission fees — switched to first-party ordering to KEEP the revenue.",
+      "pain_id": "doordash_commission_quit",
+      "vendor_id": "doordash",
+      "never86_angle": "Anti-marketplace rent → Never86 buy-now"
+    }
+  ],
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_NEWS", "X.search_posts_all"],
+  "status": "verified_active",
+  "researched_at": "2026-09-04"
+}

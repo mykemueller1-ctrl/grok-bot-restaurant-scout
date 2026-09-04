@@ -1,0 +1,20 @@
+{
+  "finding_id": "toast-online-ordering-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Watch Toast Online Ordering (0% commission + POS lock-in)",
+  "vendor_or_project": "Toast",
+  "urls": [
+    "https://pos.toasttab.com/products/online-ordering",
+    "https://orderitto.com/compare/toast-online-ordering"
+  ],
+  "what_it_does": "Toast Online Ordering markets commission-free direct orders into Toast POS; still pays Toast software/processing and deepens POS lock-in already on pos_fee_lockin.",
+  "how_competitors_use_it": "Toast pitches anti-marketplace OO while tying the restaurant to Toast hardware/stack — same KEEP+lock-in pattern as Clover OO / BentoBox.",
+  "what_we_use_today": "pos_fee_lockin KEEP signal + Toast complaint fixtures",
+  "gap": "Watch only — do not research Toast labor/forecasting products",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Toast OO is another POS-bundled 0% commission peer; skip labor/forecast modules.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

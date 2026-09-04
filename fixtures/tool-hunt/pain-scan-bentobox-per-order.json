@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "BentoBox $0.99 per-order fee + Clover POS lock-in KEEP pain",
+  "hits": [
+    {
+      "url": "https://orderitto.com/compare/bentobox-pricing",
+      "posted_at": "2026-09-04",
+      "handle": "orderitto",
+      "snippet": "Restaurant owners on BentoBox pay $0.99 per order Online Order Service Fee plus ~3% processing — KEEP leaks every cart. New BentoBox requires Clover POS only.",
+      "pain_id": "bentobox_per_order_fee",
+      "score": 85,
+      "never86_angle": "Per-order platform fees + POS lock-in = anti-rent wedge; Never86 buy-now keeps social demand without $0.99/order tax"
+    }
+  ],
+  "notes": "Third-party pricing reports (Sauce/Orderitto). Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

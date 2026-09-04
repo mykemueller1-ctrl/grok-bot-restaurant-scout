@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "COMPOSIO_SEARCH_WEB",
+    "COMPOSIO_SEARCH_TAVILY",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Tabski $0.99 guest convenience fee vs $59/mo SaaS KEEP pain",
+  "hits": [
+    {
+      "url": "https://tabski.com/platform-fees",
+      "posted_at": "2026-09-04",
+      "handle": "tabski_oo",
+      "snippet": "Tabski lets guests pay $0.99 per order convenience fee under commission-free digital OO (or operators pay $59/mo SaaS) \u2014 KEEP leak vs DoorDash Marketplace 25%; dual-run discovery then Never86 buy-now",
+      "pain_id": "tabski_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "Guest $0.99/order convenience fee still taxes KEEP checkout \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: tabski.com/platform-fees via Composio. Food-hall skew but published restaurant digital OO fee model. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

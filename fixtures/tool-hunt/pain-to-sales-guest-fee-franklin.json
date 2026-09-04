@@ -1,0 +1,75 @@
+{
+  "dogfood_id": "pain-to-sales-guest-fee-franklin-2026-09-04",
+  "purpose": "DevourNow-class guest-paid tech fee ($2.99 / $1+%) under 0% commission claim \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts diner friction vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "DevourNow Essential guest $2.99/order (+ store 3.5% txn)",
+    "guest_paid_tech_fee": "Plus $1+5% / Zero $1+8% diner fees",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "guest_paid_oo_tech_fee",
+    "vendor_id": "devournnow",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "National cult BBQ / line culture / chef Aaron Franklin"
+    },
+    "complaint_summary": "Calibration: platforms pitch 0% commission OO while guests pay $2.99 or $1+% per-order tech fees. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "devournnow",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json",
+      "fixtures/tool-hunt/austin-love-brands.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "guest_paid_oo_tech_fee",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "DevourNow-class OO markets $0/mo + 0% commission while guests pay $2.99 per order (or $1+5%/8%) and stores may still pay 3.5% txn \u2014 KEEP for the restaurant but checkout friction that kills conversion. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Your line is already the content \u2014 Never86 turns it into Shop-class KEEP buy-now without $2.99 guest tech fees.",
+    "quotes": [
+      "DevourNow Essential guest $2.99 per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "DevourNow-class guest-fee OO",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: diner-paid tech fees are still platform rent by another name; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Your line is already the content \u2014 Never86 turns it into Shop-class KEEP buy-now without $2.99 guest tech fees.",
+    "sources": [
+      "https://getdevournow.com/pricing/",
+      "fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 76,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 guest-paid OO tech fee \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+}
