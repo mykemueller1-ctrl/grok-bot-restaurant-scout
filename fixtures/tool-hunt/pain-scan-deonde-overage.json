@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Deonde Express $0.10 per order overage KEEP pain",
+  "hits": [
+    {
+      "url": "https://deonde.co/pricing.shtml",
+      "posted_at": "2026-09-04",
+      "handle": "deonde_pricing",
+      "snippet": "Deonde Express charges $0.10 per order overage beyond included monthly orders vs DoorDash Marketplace 25% KEEP; restaurant owners hit per-order platform fees after caps (Pro 2,000 / Premium 5,000)",
+      "pain_id": "deonde_express_010_overage",
+      "score": 100,
+      "never86_angle": "Deonde Express $0.10 overage after soft caps is still per-order platform rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: deonde.co/pricing Express \u2014 $0.10 per extra order beyond included allotment. Ressto sibling plans unlimited $0/order. Skip forecasting. Not expanding swarm."
+}

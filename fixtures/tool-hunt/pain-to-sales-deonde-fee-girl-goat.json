@@ -1,0 +1,75 @@
+{
+  "dogfood_id": "pain-to-sales-deonde-fee-girl-goat-2026-09-04",
+  "purpose": "Deonde Express $0.10/order overage after monthly caps \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts restaurant-paid per_order_platform_fee vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Deonde Express $0.10 per order overage beyond included monthly allotment",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "deonde_express_010_overage",
+    "vendor_id": "deonde",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Deonde Express pitches 0% commission OO then bills $0.10 per order overage after included monthly caps (Pro 2,000 / Premium 5,000). Girl & The Goat-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without overage KEEP leaks or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "deonde",
+      "doordash",
+      "tiktok_shop",
+      "upmenu"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-deonde-overage.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "deonde_express_010_overage",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Deonde Express markets 0% commission OO then charges $0.10 per order overage beyond included monthly caps (Pro 2,000 / Premium 5,000) \u2014 restaurant-paid per_order_platform_fee KEEP leak that scales with growth. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. West Loop love already prints demand \u2014 close Shop buy-now, not $0.10 overage after plan caps.",
+    "quotes": [
+      "Deonde Express $0.10 per order overage beyond included monthly orders",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Deonde Express capped-plan overage OO",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: Deonde Express overage still taxes KEEP after soft limits; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand \u2014 close Shop buy-now, not $0.10 overage after plan caps.",
+    "sources": [
+      "https://deonde.co/pricing.shtml",
+      "fixtures/tool-hunt/pain-scan-deonde-overage.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Deonde Express $0.10 overage \u2192 SalesLead. Ressto sibling unlimited plans are flat peers, not the teach. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-deonde-overage.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

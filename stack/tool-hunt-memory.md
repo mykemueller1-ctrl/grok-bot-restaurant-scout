@@ -532,3 +532,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [ordering.tools/en/pricing](https://www.ordering.tools/en/pricing): Starter **€30/mo + 5%** on all orders; Pro **€60/mo + 3%**. Widened `first_party_pct_fee` for 3%/5% on all orders.
 - pain-scan-ordering-tools-pct-fee.json (2 hits) → strong_keep **51**; pain-to-sales-ordering-tools-fee-* ×5; validate-ordering-tools-fee-dogfood ≥5. EU thematic — no US swarm expand.
 - Watched Deonde Express **$0.10**/extra-order overage. Ledger v1.80.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Deonde Express $0.10 overage SalesLead)
+
+- Primary [deonde.co/pricing](https://deonde.co/pricing.shtml): Express **$0.10**/order overage beyond included monthly caps (Pro 2,000 / Premium 5,000).
+- pain-scan-deonde-overage.json → strong_keep **52**; pain-to-sales-deonde-fee-* ×5; validate-deonde-fee-dogfood ≥5. UpMenu-class overage teach.
+- Ledger v1.81.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
