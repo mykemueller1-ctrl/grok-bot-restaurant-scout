@@ -360,3 +360,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - validate-upmenu-fee-dogfood.mjs ≥5; CI wired as parallel gate.
 - ChowNow ~$149 flat OO pricing refresh → watch only (not Shop-native).
 - Ledger v1.52.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Owner Flex/guest 5% SalesLead + Ontabee watch)
+
+- Adopted pain-scan-owner-guest-fee.json (guest 5% order support on Flex AND Flat) → strong_keep 20.
+- Added pain-to-sales-owner-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-owner-fee-dogfood ≥5.
+- Watched Ontabee ($49 flat, no %) as Owner cost alternative — not Shop-native.
+- Ledger v1.53.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

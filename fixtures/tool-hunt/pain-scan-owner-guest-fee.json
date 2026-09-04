@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Owner.com guest 5% order support fee KEEP pain (both Flex and Flat)",
+  "hits": [
+    {
+      "url": "https://www.owner.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "owner_pricing",
+      "snippet": "Owner.com guests pay 5% order support fee on every direct order under Flat $499 — diner tech fee under first-party claim vs DoorDash Marketplace 25%; Flex also adds 5% restaurant fee",
+      "pain_id": "owner_guest_order_support_fee",
+      "score": 95,
+      "never86_angle": "Guest-paid 5% support fee on BOTH Owner plans is still platform rent by another name — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+    }
+  ],
+  "notes": "Distinct from restaurant-paid Flex 5% in pain-scan-owner-pct-fee.json. Sources: Owner pricing + Sauce/Ontabee/Restolabs breakdowns via Composio. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

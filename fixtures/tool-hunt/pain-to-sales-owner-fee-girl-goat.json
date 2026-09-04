@@ -1,0 +1,80 @@
+{
+  "dogfood_id": "pain-to-sales-owner-fee-girl-goat-2026-09-04",
+  "purpose": "Owner.com Flex $249+5% restaurant fee and guest 5% order support fee (both plans) → SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts first_party_pct_fee + guest_paid vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Owner Flex $249/mo + 5% restaurant fee per order",
+    "guest_paid_tech_fee": "Owner guest 5% order support fee on Flex and Flat",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15–30%"
+  },
+  "pain_lead": {
+    "pain_id": "owner_first_party_pct_fee",
+    "vendor_id": "owner",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: Owner.com Flex takes $249/mo + 5% restaurant fee; Flat is $499/mo; BOTH plans guests pay 5% order support fee. Girl & The Goat-class love should close on Never86 Shop ~6% buy-now — honest platform math without first-party % stack or Marketplace 15–30% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "owner",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-owner-pct-fee.json",
+      "fixtures/tool-hunt/pain-scan-owner-guest-fee.json",
+      "fixtures/tool-hunt/chicago-love-brands.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "owner_first_party_pct_fee",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "Owner.com Flex is $249/mo + 5% restaurant fee per order; Flat is $499/mo with no restaurant % — but guests still pay a 5% order support fee on BOTH plans (diner tech fee under first-party claim). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15–30%. West Loop love already prints demand — close Shop buy-now, not Owner guest 5% sticker shock.",
+    "quotes": [
+      "Owner Flex $249/mo + 5% restaurant fee",
+      "Owner guest 5% order support fee on Flex and Flat",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15–30%"
+    ],
+    "vendors_to_displace": [
+      "Owner.com Flex/Flat first-party % fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee + guest_paid_tech_fee + social_shop_fee teach: Owner still taxes KEEP/conversion with restaurant and/or guest 5%; Never86 Shop buy-now keeps love→buy-now KEEP math transparent — not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand — close Shop buy-now, not Owner guest 5% sticker shock.",
+    "sources": [
+      "https://www.owner.com/pricing",
+      "fixtures/tool-hunt/pain-scan-owner-pct-fee.json",
+      "fixtures/tool-hunt/pain-scan-owner-guest-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 80,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood — Owner Flex/guest 5% → SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-owner-pct-fee.json",
+    "fixtures/tool-hunt/pain-scan-owner-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}
