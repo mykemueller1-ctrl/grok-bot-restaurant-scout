@@ -57,7 +57,7 @@ FBE peer set reconfirmed at **9** (2026-09-04) — finding `2026-09-04-meta-fbe-
 
 Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, **Mirar** IG/WhatsApp/Messenger → POS (0% commission) ([mirar.ai](https://www.mirar.ai/)), **WaveOrder** WhatsApp menu + Instagram bio store (0% commission, $49–$399/mo) ([waveorder.app/restaurants](https://waveorder.app/restaurants)), **Mando** / **Orderlya** WA/IG order+reserve (MENA thematic), **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)), **FOSA** Facebook Messenger ordering ([getfosa.ai](https://www.getfosa.ai/facebook-for-restaurant-marketing-and-ordering)), and **Palmate** / **DMHub** WhatsApp/IG order+reservation assistants — adjacent social intake, not Meta FBE peers.
 
-**Meta Shops checkout note:** Native FB/IG Shops checkout sunset (Aug 2025) + Graph API v26 commerce endpoint blocks (2026) mean product tags route to merchant websites — webview cliffs apply; Never86 in-app Shop fills the vacuum. This does **not** change `meta_order_food_peer_count` (still 9 FBE peers).
+**Meta Shops checkout note:** Native FB/IG Shops checkout sunset (Aug 2025) + Graph API v26 commerce endpoint blocks (2026) mean product tags route to merchant websites — webview cliffs apply; Never86 in-app Shop fills the vacuum. Watch Meta **Hatch** AI shopping agent (Instagram agentic checkout, reported Q4 2026) as a platform rival — still **not** an Order Food FBE peer. This does **not** change `meta_order_food_peer_count` (still 9 FBE peers).
 
 **Not Meta Order Food:** **Menusso** is a branded restaurant app / 0% commission OS ([menusso.com/us](https://menusso.com/us/)) — watch separately; do not inflate `meta_order_food_peer_count`.
 
@@ -65,7 +65,7 @@ Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_Nkytnvh45r-q) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_dFKHiuk7Pedt) — Business/Creator only. Reply `instagram connected` when done.
 
 ## Still required for Beyond the Hunt READY
 
