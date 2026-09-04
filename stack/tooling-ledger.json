@@ -1,5 +1,5 @@
 {
-  "version": "1.92.61",
+  "version": "1.92.62",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "G&TG reservation_skew pass-4 + Michaels leak pass-5",
+      "lane": "vertical_gtm",
+      "why": "CHI OpenTable-only skew still live; MIA brand site still UberEats+DoorDash — love teaches hold",
+      "verdict": "adopt"
+    },
     {
       "item": "Franklin buy_now_path pass-4 (preorder/Shopify/Goldbelly)",
       "lane": "vertical_gtm",
@@ -3132,5 +3138,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T22:20:00Z"
+  "updated_at": "2026-09-04T22:30:00Z"
 }

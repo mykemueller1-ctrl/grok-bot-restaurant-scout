@@ -1013,3 +1013,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_NaouagFf3gjQ (~10 min).
 - Ledger v1.92.61. Auth still blocked for unlock READY.
 
+### 2026-09-04 (G&TG skew pass-4 + Michaels leak pass-5)
+
+- Adopted G&TG **reservation_skew** pass-4 — OpenTable live; brand site reservation-only. Finding: `2026-09-04-gtg-reservation-skew-pass4.json`.
+- Adopted Michaels **brand_site_marketplace_leak** pass-5 — UberEats+DoorDash still on miami page. Finding: `2026-09-04-michaels-leak-pass5.json`.
+- Ledger v1.92.62. Auth still blocked for unlock READY.
+

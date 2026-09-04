@@ -1,0 +1,18 @@
+{
+  "finding_id": "gtg-reservation-skew-pass4-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Girl & The Goat reservation_skew pass-4 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 4 (2026-09-04T22:25Z): girlandthegoat.com/chicago still Make a reservation CTA only — no first-party OO / marketplace CTAs in page text. OpenTable venue still live (Make a reservation / Booked 203 times today). Rails: opentable_reservations + no_first_party_oo_found. reservation_skew_no_buy_now teach holds. Yelp 10,731.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://girlandthegoat.com/chicago",
+    "https://www.opentable.com/r/girl-and-the-goat-chicago",
+    "fixtures/tool-hunt/chicago-love-brands.json"
+  ],
+  "rails_confirmed": ["opentable_reservations", "no_first_party_oo_found"],
+  "teach": "reservation_skew_no_buy_now",
+  "tools_used": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting. ResTracker Resy rumor not confirmed on brand site — keep OpenTable as live rail."
+}

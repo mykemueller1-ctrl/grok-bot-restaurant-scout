@@ -1,0 +1,17 @@
+{
+  "finding_id": "michaels-leak-pass5-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Michael's Genuine marketplace leak pass-5 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 5 (2026-09-04T22:25Z): michaelsgenuine.com/miami still routes Delivery to UberEats + DoorDash (Order Delivery CTAs). brand_site_marketplace_leak love teach holds. Yelp 2,084 / pickup. Shop buy-now displaces marketplace rent on Design District love.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.michaelsgenuine.com/miami",
+    "fixtures/tool-hunt/miami-love-brands.json"
+  ],
+  "rails_confirmed": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
+  "teach": "brand_site_marketplace_leak",
+  "tools_used": ["COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not fee dogfood. Not forecasting."
+}
