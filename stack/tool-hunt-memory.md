@@ -443,3 +443,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-scan-sauce-guest-fee.json → strong_keep 33; pain-to-sales-sauce-fee-* ×5; validate-sauce-fee-dogfood ≥5 (`sauce_fee_dogfoods`).
 - Watched Menubly $9.99/mo flat (no per-order fee teach). Ledger v1.65.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (VeloBite $0.75/order SalesLead)
+
+- VeloBite Growth **$0.75 flat per order** (no monthly; Pro $1.00; alt $99/$249/mo flat) ([velobite.com/pricing](https://www.velobite.com/pricing)). Skip AI pricing-intelligence / forecasting framing.
+- pain-scan-velobite-per-order.json → strong_keep 34; pain-to-sales-velobite-fee-* ×5; validate-velobite-fee-dogfood ≥5 (`velobite_fee_dogfoods`).
+- Refreshed Slice primary pricing ($39/mo+$3/order / $399+$2) — pizza niche watch. Incentivio ~$249/mo watch (no confirmed per-order teach). Ledger v1.66.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+

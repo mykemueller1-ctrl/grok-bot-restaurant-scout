@@ -1,5 +1,5 @@
 {
-  "version": "1.65.0",
+  "version": "1.66.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -112,7 +112,8 @@
     "orda_fee_dogfood_gate": "scripts/validate-orda-fee-dogfood.mjs (Orda Starter $59/mo + $0.25/order commission \u2192 SalesLead \u22655 markets)",
     "upserve_fee_dogfood_gate": "scripts/validate-upserve-fee-dogfood.mjs (Upserve/U-Series 2.99% OO service fee \u2192 SalesLead \u22655 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs",
-    "sauce_fee_dogfood_gate": "scripts/validate-sauce-fee-dogfood.mjs (Sauce under-$2/order guest fee / 0% commission \u2192 SalesLead \u22655 markets)"
+    "sauce_fee_dogfood_gate": "scripts/validate-sauce-fee-dogfood.mjs (Sauce under-$2/order guest fee / 0% commission \u2192 SalesLead \u22655 markets)",
+    "velobite_fee_dogfood_gate": "scripts/validate-velobite-fee-dogfood.mjs (VeloBite Growth $0.75/order \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -937,9 +938,33 @@
         "https://www.dinevate.com/compare/owner-com/",
         "https://www.dinevate.com/blog/posts/owner-alternative/"
       ]
+    },
+    {
+      "name": "VeloBite",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free restaurant/bar POS + OO; Growth $0.75/order or $99/mo flat; Pro $1.00/order or $249/mo",
+      "memory": "Guest/order data on first-party rails",
+      "edge": "Pay-per-order $0.75 KEEP leak teach (dogfood velobite_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout. Skip AI pricing-intelligence framing.",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.velobite.com/pricing",
+        "https://www.velobite.com"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "VeloBite $0.75/order SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN VeloBite Growth $0.75 flat per order (Pro $1.00; alt $99/$249/mo) \u2192 SalesLead vs Shop ~6%; validate-velobite-fee-dogfood \u22655; strong_keep 34. Skip AI pricing-intelligence framing.",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Incentivio $249/mo loyalty+OO",
+      "lane": "vertical_gtm",
+      "why": "~$249/mo commission-free OO+loyalty; Chargebee usage fees exist but no public per-order gateway quote \u2014 watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Sauce under-$2 guest fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -1045,7 +1070,7 @@
     {
       "item": "Slice pizzeria 5% / $3-per-order fee",
       "lane": "vertical_gtm",
-      "why": "Pizza-vertical first-party % or per-order fees; watch only \u2014 no swarm expand",
+      "why": "Primary slice.com/pricing: Online $39/mo+$3/order; Family $399/mo+$2/order (waive under $10). Pizza niche \u2014 watch; pain-scan refreshed. Still lose on love\u2192buy-now.",
       "verdict": "watch"
     },
     {
@@ -1808,5 +1833,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T18:25:00Z"
+  "updated_at": "2026-09-04T18:55:00Z"
 }
