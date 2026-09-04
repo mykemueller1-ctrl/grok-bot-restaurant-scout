@@ -1,5 +1,5 @@
 {
-  "version": "1.8.0",
+  "version": "1.9.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -78,7 +78,7 @@
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
     "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)",
-    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (verified fixtures/tool-hunt/pain-scan-toast-doordash.json)",
+    "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (fixtures/tool-hunt/pain-scan-toast-doordash.json + pain-scan-marketplace-keep.json)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
@@ -235,6 +235,31 @@
         "https://mytextorder.com/features/social-media-ordering",
         "https://mytextorder.com/"
       ]
+    },
+    {
+      "name": "Menami",
+      "lane": "vertical_gtm",
+      "stack": "11-system restaurant agent OS + IG/WhatsApp DMs + direct Stripe ordering + open ACP Agent Protocol for machine agents",
+      "memory": "Text-thread ops interface; guest data owned by restaurant",
+      "edge": "Strongest new overlap: first-party anti-marketplace + social DM + agent-to-restaurant commerce. Watch GTM only \u2014 skip their staff/labor forecast features",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://getmenami.com/features",
+        "https://getmenami.com/agents/protocol",
+        "https://getmenami.com/agents"
+      ]
+    },
+    {
+      "name": "Klikit",
+      "lane": "vertical_gtm",
+      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda)",
+      "memory": "n/a (ops middleware)",
+      "edge": "Validates TikTok Shop F&B fulfillment tooling; low US priority unless expanding APAC",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://klikit.io/en/integrations/tiktok-shop",
+        "https://klikit.io/en/learn/tiktok-shop-restaurant-guide-2026"
+      ]
     }
   ],
   "watchlist": [
@@ -311,9 +336,27 @@
       "verdict": "watch"
     },
     {
+      "item": "Menami OS + ACP Agent Protocol",
+      "lane": "vertical_gtm",
+      "why": "First-party ordering + IG/WhatsApp + machine-agent checkout protocol \u2014 top-priority rival watch; skip forecasting features",
+      "verdict": "watch"
+    },
+    {
+      "item": "Klikit TikTok Shop POS (APAC)",
+      "lane": "vertical_gtm",
+      "why": "Shop\u2192kitchen sync validates shoppable food ops; US GTM secondary",
+      "verdict": "watch"
+    },
+    {
       "item": "Context.dev headless REST (CONTEXT_DEV_API_KEY)",
       "lane": "mcp_connectors",
-      "why": "Cloud research path when MCP OAuth unavailable — scripts/context-search.mjs",
+      "why": "Cloud research path when MCP OAuth unavailable \u2014 scripts/context-search.mjs",
+      "verdict": "needs_auth"
+    },
+    {
+      "item": "Bright Data SERP/discover",
+      "lane": "mcp_connectors",
+      "why": "Namespace ready but search_engine/discover still HTTP 401 \u2014 Composio stays primary",
       "verdict": "needs_auth"
     }
   ],
@@ -364,6 +407,12 @@
       "id": "pinecone-api-key",
       "gap": "Pinecone MCP lacks PINECONE_API_KEY \u2014 cannot store vertical knowledge vectors yet",
       "action": "Add PINECONE_API_KEY to Cursor MCP config (https://app.pinecone.io); never paste in chat",
+      "priority": 3
+    },
+    {
+      "id": "bright-data-auth-method",
+      "gap": "Bright Data MCP namespace ready but search_engine/discover return HTTP 401 Auth method not supported",
+      "action": "Reconnect Bright Data MCP / zone credentials in Cursor desktop; until then keep COMPOSIO_SEARCH_WEB primary",
       "priority": 3
     }
   ],

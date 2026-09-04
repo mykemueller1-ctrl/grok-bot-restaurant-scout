@@ -11,8 +11,8 @@
 2. Expand queries with aliases + `vendors/catalog.json` complaint signal templates (`fuck {vendor}`, `leaving {vendor}`, …).
 3. Search connected sources:
    - Primary: complaint-sources + social-trends MCP
-   - Fallback (verified Active): Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_NEWS` + X `search_posts_all` for recent operator complaints (see `fixtures/tool-hunt/pain-scan-toast-doordash.json`)
-4. Prefer posts/articles with **fee $, commission %, leaving/switching** language from owners/GMs.
+   - Fallback (verified Active): Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_NEWS` + X `search_posts_all` for recent operator complaints (see `fixtures/tool-hunt/pain-scan-toast-doordash.json`, `fixtures/tool-hunt/pain-scan-marketplace-keep.json`)
+4. Prefer posts/articles with **fee $, commission %, leaving/switching, keep-what-you-sell / channel ranking** language from owners/GMs.
 5. Require vendor/alias hit for POS/silo agents (or high-confidence paraphrase confirmed later in teach).
 6. Capture thin stubs: source, url, posted_at, handle, snippet, `pain_id` / `vendor_id`, score 0–100.
 7. Dedupe against existing `PainLead` records (same url / same handle+vendor+day).

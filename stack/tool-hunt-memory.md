@@ -77,3 +77,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched TextOrder (mytextorder.com): AI order-taking in TikTok/IG/FB DM + SMS/WhatsApp — messaging close, not Shop rails.
 - Finding: stack/tool-hunt-findings/2026-09-04-textorder-dm-ordering.json. Skills script-draft + morning-scan contrast updated.
 - Auth still BLOCKED (Mem0/Context needsAuth; secrets unset).
+
+### 2026-09-04 (Menami + Klikit + keep-what-you-sell pain)
+
+- Watched Menami (getmenami.com): ACP Agent Protocol + IG/WhatsApp + direct Stripe ordering — top vertical rival; skip staff/labor forecast features.
+- Watched Klikit TikTok Shop POS (APAC) as Shop→kitchen validation.
+- Bright Data still HTTP 401 despite namespace ready — Composio SEARCH_WEB stays research primary.
+- Dogfood X pain: fixtures/tool-hunt/pain-scan-marketplace-keep.json (rank channels by KEEP / Uber cut / 15–30% commissions).
+- Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
