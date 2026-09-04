@@ -1,0 +1,21 @@
+{
+  "finding_id": "yoyumm-aibotick-peers-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Yo!Yumm GloriaFood marketplace clone + AiBotick WA F&B",
+  "vendor_or_project": "Yo!Yumm / AiBotick",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Two peers (Composio FETCH 2026-09-04): (1) **Yo!Yumm** — self-hosted white-label **multi-restaurant marketplace** (Uber Eats–class ownership) pitched as GloriaFood Apr 30 2027 successor; one-time license / source ownership — different class from single-restaurant OO (iShopo/Menuro); watch as migration FOMO peer, not FBE. (2) **AiBotick** — WhatsApp Business API for restaurants/cloud kitchens: in-chat menu+cart, Razorpay/UPI, delivery tracking, POS webhooks, table reservations. Watch with Menuthere/Waplify; not Meta FBE; fee pause.",
+  "what_it_does": "GloriaFood-era operators either become marketplace operators (Yo!Yumm) or shift order capture to WhatsApp automation (AiBotick).",
+  "how_competitors_use_it": "Migrate GloriaFood menus into owned marketplace stack; or run WA catalog OO with payment in-chat.",
+  "what_we_use_today": "GloriaFood EOL Shop wedge; Hyperzod/Saaztro/iShopo successors; WA peer set",
+  "gap": "Yo!Yumm recreates aggregator economics under own brand — sharpens why Shop/direct rails beat rebuilding marketplace rent",
+  "pivot_speed": "days",
+  "operator_ask": "Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.yoyumm.com/blog/best-alternative-to-gloriafood-yoyumm/",
+    "https://aibotick.com/solutions/food-beverages/"
+  ],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting. Yo!Yumm ≠ single-restaurant commission-free OO."
+}

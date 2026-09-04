@@ -962,3 +962,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **zarif3624/gtm-skills** Cursor GTM pack (skip forecast playbooks). Finding: `2026-09-04-zarif-gtm-skills-cursor.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_cPTBrc4wYNVY (~10 min).
 - Ledger v1.92.54. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Michaels leak pass-4 + Yo!Yumm/AiBotick + Square Meta reconfirm)
+
+- Adopted Michael's Genuine **brand_site_marketplace_leak** pass-4 — UberEats/DoorDash still on miami page. Finding: `2026-09-04-michaels-leak-pass4.json`.
+- Watched **Yo!Yumm** (marketplace GloriaFood clone) + **AiBotick** (WA F&B). Finding: `2026-09-04-yoyumm-aibotick-peers.json`.
+- Reconfirmed Square Online Meta Order Food path — peer_count stays 9. Finding: `2026-09-04-square-meta-order-food-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_YDSVUYgQ9Xrl (~10 min).
+- Ledger v1.92.55. Auth still blocked for unlock READY.

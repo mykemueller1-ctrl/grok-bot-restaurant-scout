@@ -1,0 +1,23 @@
+{
+  "finding_id": "michaels-genuine-marketplace-leak-pass4-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Michael's Genuine brand-site marketplace leak (pass-4)",
+  "vendor_or_project": "Michael's Genuine Food & Drink (Miami love fixture)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Live brand site 2026-09-04: michaelsgenuine.com/miami/ still routes **Delivery** to **UberEats** and **DoorDash** (repeated UberEats blocks + Order Delivery → UberEats/DoorDash chooser). OpenTable reservations remain the primary booking CTA. Confirms `brand_site_marketplace_leak` love teach still live — Shop wedge for chef-loved kitchens leaking social/web demand into 15–30% marketplace rent. Yelp count still **2084**. Not fee dogfood.",
+  "what_it_does": "Love-market fixture showing first-party site CTAs that hand diners to marketplace apps.",
+  "gap": "KEEP scorer / social-shop dogfood leak gate stays valid",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://michaelsgenuine.com/miami/",
+    "https://michaelsgenuine.com/",
+    "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami"
+  ],
+  "keep_signals": [
+    "brand_site_marketplace_leak"
+  ],
+  "not_this": "Not forecasting. Not fee dogfood. Not Meta FBE peer change."
+}

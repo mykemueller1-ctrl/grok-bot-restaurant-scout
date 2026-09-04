@@ -1,5 +1,5 @@
 {
-  "version": "1.92.54",
+  "version": "1.92.55",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Michael's Genuine marketplace leak pass-4 (UberEats/DoorDash)",
+      "lane": "vertical_gtm",
+      "why": "Brand site Miami page still routes Delivery to UberEats + DoorDash — brand_site_marketplace_leak love teach holds (Yelp 2084)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Yo!Yumm marketplace clone + AiBotick WA F&B peers",
+      "lane": "vertical_gtm",
+      "why": "Yo!Yumm self-hosted multi-restaurant GloriaFood successor; AiBotick WA menu+cart+UPI — watch; not FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "Square Online Meta Order Food path reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Support still live: Facebook Food Ordering → Order Food buttons + Stories stickers; peer_count stays 9",
+      "verdict": "adopt"
+    },
     {
       "item": "TikTok Shop Food & Bev 6% referral reconfirm (Dashboardly)",
       "lane": "vertical_gtm",
@@ -3001,7 +3019,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_cPTBrc4wYNVY (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_YDSVUYgQ9Xrl (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -3036,5 +3054,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:10:00Z"
+  "updated_at": "2026-09-04T21:15:00Z"
 }
