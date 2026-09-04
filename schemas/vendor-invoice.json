@@ -1,0 +1,99 @@
+{
+  "$schema_name": "VendorInvoice",
+  "description": "Normalized distributor / store invoice / payout slip from photo OCR or email PDF. Owner 1–5 dumps phone photos at scale — photo is the primary intake channel.",
+  "source_report": "vendor-invoice",
+  "required": ["source_channel", "vendor", "amount"],
+  "properties": {
+    "source_channel": {
+      "type": "string",
+      "enum": ["photo", "email", "pdf", "csv", "manual"]
+    },
+    "doc_kind": {
+      "type": "string",
+      "enum": [
+        "distributor_invoice",
+        "store_receipt",
+        "payout_slip",
+        "payout_slip_plus_receipt",
+        "handwritten_invoice",
+        "wholesale_invoice_plus_receipt",
+        "unknown"
+      ]
+    },
+    "vendor": { "type": "string" },
+    "vendor_type": {
+      "type": ["string", "null"],
+      "description": "broadline | beer_distributor | wine_spirits | grocery | meat | hardware | …"
+    },
+    "cogs_category": {
+      "type": ["string", "null"],
+      "enum": [
+        "food",
+        "beer",
+        "wine",
+        "liquor",
+        "na_beverage",
+        "paper_goods_boxes_chemicals",
+        "paper_packaging",
+        "ops_supplies",
+        "misc_opex",
+        "unknown",
+        null
+      ],
+      "description": "na_beverage = Pop (milk/pop/juice/coffee). paper_goods_boxes_chemicals reports under food costs."
+    },
+    "cost_bucket": {
+      "type": ["string", "null"],
+      "enum": ["food_costs", "beverage_costs", "opex", null],
+      "description": "Rollup bucket; paper_goods_boxes_chemicals → food_costs"
+    },
+    "category_source": {
+      "type": ["string", "null"],
+      "enum": [
+        "vendor_directory",
+        "payout_account",
+        "line_hint",
+        "operator_teach_hyvee_food",
+        "operator_teach_hyvee_wine",
+        "operator_teach_pop",
+        "operator_teach_paper_chem",
+        "unmapped",
+        null
+      ]
+    },
+    "date": { "type": ["string", "null"], "format": "date" },
+    "invoice_num": { "type": ["string", "null"] },
+    "amount": { "type": "number", "description": "Final payable / total after credits" },
+    "printed_total": { "type": ["number", "null"] },
+    "tax": { "type": ["number", "null"] },
+    "account": { "type": ["string", "null"], "description": "POS payout account e.g. 4312 Food" },
+    "employee": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "customer": { "type": ["string", "null"] },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sku": { "type": "string" },
+          "description": { "type": "string" },
+          "qty": { "type": "number" },
+          "unit_price": { "type": "number" },
+          "extended": { "type": "number" }
+        }
+      }
+    },
+    "handwritten_credit": { "type": ["number", "null"] },
+    "ocr_confidence": { "type": "number", "description": "0–100 mean word confidence" },
+    "rotation_deg": { "type": "integer" },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["blur", "shadow", "stain", "torn", "stapled_pair", "rotated", "low_confidence", "partial"]
+      }
+    },
+    "source_images": { "type": "array", "items": { "type": "string" } },
+    "raw_text_excerpt": { "type": "string" }
+  }
+}

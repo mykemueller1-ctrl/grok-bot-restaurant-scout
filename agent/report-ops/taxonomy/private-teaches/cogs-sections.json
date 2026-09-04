@@ -1,0 +1,70 @@
+{
+  "$schema_name": "OperatorPrivateTeach",
+  "id": "cogs-sections",
+  "taught_by": "myke",
+  "taught_at": "2026-09-04",
+  "venue_scope": ["community-pizza", "community-tap"],
+  "summary": "Food-cost section for paper/boxes/chemicals; Pop bucket covers milk, pop, juice, coffee.",
+  "rules": [
+    {
+      "id": "paper-boxes-chemicals-under-food-costs",
+      "when": {
+        "line_or_doc_signals": [
+          "paper",
+          "boxes",
+          "box",
+          "to-go",
+          "packaging",
+          "napkin",
+          "bag",
+          "foam",
+          "liner",
+          "cleaning",
+          "chemical",
+          "detergent",
+          "sanitizer",
+          "bleach",
+          "soap",
+          "rinse"
+        ]
+      },
+      "then": {
+        "cogs_category": "paper_goods_boxes_chemicals",
+        "cost_bucket": "food_costs",
+        "reports_under": "food",
+        "label": "Paper goods, boxes, chemicals",
+        "note": "Operator: cleaning + chemicals + paper + boxes live under food costs as their own section"
+      }
+    },
+    {
+      "id": "milk-pop-juice-under-pop",
+      "when": {
+        "line_or_doc_signals": [
+          "milk",
+          "pop",
+          "soda",
+          "cola",
+          "juice",
+          "soft drink",
+          "lemonade"
+        ]
+      },
+      "then": {
+        "cogs_category": "na_beverage",
+        "operator_alias": "pop",
+        "note": "Operator: milk, pop, and juices all code to Pop"
+      }
+    },
+    {
+      "id": "coffee-under-pop",
+      "when": {
+        "line_or_doc_signals": ["coffee", "espresso", "k-cup", "creamer"]
+      },
+      "then": {
+        "cogs_category": "na_beverage",
+        "operator_alias": "pop",
+        "note": "Operator: coffee same story — Pop category"
+      }
+    }
+  ]
+}

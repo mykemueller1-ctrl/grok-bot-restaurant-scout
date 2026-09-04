@@ -1,0 +1,46 @@
+{
+  "name": "Prime Cost Advisor Sub-Agent",
+  "title": "Never86 report sub \u2014 Finance / P&L / Prime Cost / Prime Cost Advisor",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "domain_id": "finance",
+  "report_id": "prime-cost",
+  "parent": "finance",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Prime Cost Advisor report (Food/beer/wine/liquor/NA COGS + labor vs targets (55\u201365% prime)). Ingests json, csv. Signals: food_cost_pct, beer_cost_pct, wine_cost_pct, liquor_cost_pct, na_bev_cost_pct, labor_percent, prime_cost_pct. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Food/beer/wine/liquor/NA COGS + labor vs targets (55\u201365% prime)",
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "signals": [
+    "food_cost_pct",
+    "beer_cost_pct",
+    "wine_cost_pct",
+    "liquor_cost_pct",
+    "na_bev_cost_pct",
+    "labor_percent",
+    "prime_cost_pct"
+  ],
+  "file_globs": [
+    "*prime*cost*",
+    "*food*cost*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label",
+    "invoice-photo-ocr"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

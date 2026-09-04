@@ -25,7 +25,10 @@
     "sku-depletion",
     "liquor-beer-par",
     "vendor-intake",
-    "vendor-invoice"
+    "vendor-invoice",
+    "daily-pnl",
+    "prime-cost",
+    "vendor-spend"
   ],
   "label_enum": [
     "keep",
@@ -60,7 +63,10 @@
       "xls",
       "pdf",
       "google sheets links",
-      "sales reportings"
+      "sales reportings",
+      "phone photos of vendor invoices (primary owner-1-5 AP intake)",
+      "payout slips stapled to store receipts",
+      "forwarded email vendor invoices (bonus when they do it)"
     ]
   },
   "swarm": true

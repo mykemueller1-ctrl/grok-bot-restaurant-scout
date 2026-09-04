@@ -19,12 +19,14 @@ ICP_TIERS = [
         "color": "#2A9D8F",
         "units": "1–5",
         "buyer": "Owner / GM (still in the building)",
-        "job": "Single-owner ops: paper labor cards, weekly schedules, Toast day exports, distributor invoices",
+        "job": "Single-owner ops: paper labor cards, weekly schedules, Toast day exports, and a firehose of phone invoice photos",
         "pains": [
             "owner burnout and cash-flow gut feel",
             "labor % without group targets",
             "second unit ~130% ops surface for ~60% revenue capacity",
+            "millions of invoice photos — rotated, stapled, blurry — instead of clean AP",
             "inventory = invoice photos + Hy-Vee runs",
+            "human staple/photograph loop — not a repeatable system yet",
         ],
         "report_ids": [
             "kitchen-labor-card",
@@ -35,9 +37,12 @@ ICP_TIERS = [
             "item-selection",
             "liquor-beer-par",
             "vendor-invoice",
+            "daily-pnl",
+            "prime-cost",
+            "vendor-spend",
         ],
         "example_packs": ["ctap-physical", "courser/grill"],
-        "never86_wedge": "Daily leak dollars from red-book chaos — not enterprise BI",
+        "never86_wedge": "Photo OCR + COGS categories (food/beer/liquor/pop) → forensic P&L advisor — daily leak dollars not enterprise BI",
     },
     {
         "id": "area-leader",
@@ -255,10 +260,110 @@ DOMAINS = [
             {
                 "id": "vendor-invoice",
                 "label": "Distributor / Store Invoice",
-                "source": "Beer distributor, grocery, payout slips",
-                "formats": ["photo", "pdf", "csv"],
-                "signals": ["vendor", "sku", "qty", "amount", "account"],
-                "file_globs": ["*invoice*", "*Hopkins*", "*Distributing*", "*Hy-Vee*"],
+                "source": "Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.",
+                "formats": ["photo", "email", "pdf", "csv"],
+                "signals": [
+                    "vendor",
+                    "vendor_type",
+                    "cogs_category",
+                    "sku",
+                    "qty",
+                    "amount",
+                    "account",
+                    "payout_pair",
+                    "handwritten_credit",
+                    "email_forward",
+                    "source_channel",
+                    "ocr_confidence",
+                    "rotation_deg",
+                ],
+                "file_globs": [
+                    "*invoice*",
+                    "*Hopkins*",
+                    "*Distributing*",
+                    "*Hy-Vee*",
+                    "*Hyvee*",
+                    "*Fareway*",
+                    "*Walmart*",
+                    "*Menards*",
+                    "*Sawyer*",
+                    "*Sysco*",
+                    "*Performance*Food*",
+                    "*Northern*Lights*",
+                    "*Confluence*",
+                    "*Humes*",
+                    "*Pay Out*",
+                    "*payout*",
+                    "*.jpg",
+                    "*.jpeg",
+                    "*.png",
+                    "*.heic",
+                    "*.webp",
+                ],
+                "schema": "schemas/vendor-invoice.json",
+                "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
+                "example_packs": [
+                    "ctap-physical/weekly-invoice-photo-pack-2026-08",
+                    "ctap-physical/ocr-batch-2026-08",
+                ],
+                "skills_extra": ["invoice-photo-ocr"],
+                "teach_memory": [
+                    {
+                        "label": "keep",
+                        "icp_tier": "owner_1_5",
+                        "venue_id": "community-pizza",
+                        "as_is": "Small ICPs dump phone photos of every invoice — food, beer, liquor, pop, meat, grocery, payout slips — rotated/stapled/blurry.",
+                        "truth": "Leaders (MarginEdge, Ottimate, R365, xtraCHEF) win by photo/email intake + coding to restaurant COA (food/beer/wine/liquor/NA) + daily P&L. Pure OCR alone is not enough — teach on exceptions.",
+                        "coach_to": "RapidOCR+Tesseract intake → vendor_type + cogs_category → finance advisor swarm (prime cost / daily P&L / vendor spend). Email forward is bonus.",
+                        "good_looks_like": "Each photo → vendor + amount + cogs_category (food|beer|wine|liquor|na_beverage|…). Category rollups feed P&L advisor. Low-confidence teach-batched.",
+                        "pack": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json",
+                        "research": "docs/RESTAURANT-AP-OCR.md",
+                        "taxonomy": "agent/report-ops/taxonomy/cogs-categories.json",
+                    }
+                ],
+            },
+        ],
+    },
+    {
+        "id": "finance",
+        "label": "Finance / P&L / Prime Cost",
+        "color": "#1D3557",
+        "job": "Forensic P&L advisor — coded invoices + sales + labor → leak dollars by category",
+        "reports": [
+            {
+                "id": "daily-pnl",
+                "label": "Daily P&L Flash",
+                "source": "Invoice category rollups + Toast sales summary + labor %",
+                "formats": ["json", "csv"],
+                "signals": ["net_sales", "cogs_by_category", "labor_percent", "prime_cost_pct", "leak_dollars"],
+                "file_globs": ["*daily*pnl*", "*flash*pnl*", "ocr-batch*.json"],
+                "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
+            },
+            {
+                "id": "prime-cost",
+                "label": "Prime Cost Advisor",
+                "source": "Food/beer/wine/liquor/NA COGS + labor vs targets (55–65% prime)",
+                "formats": ["json", "csv"],
+                "signals": [
+                    "food_cost_pct",
+                    "beer_cost_pct",
+                    "wine_cost_pct",
+                    "liquor_cost_pct",
+                    "na_bev_cost_pct",
+                    "labor_percent",
+                    "prime_cost_pct",
+                ],
+                "file_globs": ["*prime*cost*", "*food*cost*"],
+                "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
+                "skills_extra": ["invoice-photo-ocr"],
+            },
+            {
+                "id": "vendor-spend",
+                "label": "Vendor Spend Forensic",
+                "source": "Per-vendor invoice totals + price creep vs prior week",
+                "formats": ["json", "csv"],
+                "signals": ["vendor", "vendor_type", "cogs_category", "amount", "price_change", "credit"],
+                "file_globs": ["*vendor*spend*", "ocr-batch*.json", "*invoice*"],
                 "icp_tiers": ["owner-1-5", "area-leader", "cfo-ceo"],
             },
         ],
@@ -368,14 +473,24 @@ def teacher_agent() -> dict:
             "inbox": "mykemueller1@gmail.com (Mike Mueller Gmail)",
             "from": "Kristen",
             "venues": ["grill", "taco-bamba"],
-            "want": ["csv", "xlsx", "xls", "pdf", "google sheets links", "sales reportings"],
+            "want": [
+                "csv",
+                "xlsx",
+                "xls",
+                "pdf",
+                "google sheets links",
+                "sales reportings",
+                "phone photos of vendor invoices (primary owner-1-5 AP intake)",
+                "payout slips stapled to store receipts",
+                "forwarded email vendor invoices (bonus when they do it)",
+            ],
         },
         "swarm": True,
     }
 
 
 def sub_agent(domain: dict, report: dict) -> dict:
-    return {
+    agent = {
         "name": f"{report['label']} Sub-Agent",
         "title": f"Never86 report sub — {domain['label']} / {report['label']}",
         "role": "sub",
@@ -399,10 +514,16 @@ def sub_agent(domain: dict, report: dict) -> dict:
         "file_globs": report.get("file_globs", []),
         "schema": report.get("schema"),
         "hierarchy": report.get("hierarchy"),
-        "skills": ["report-ingest", "report-normalize", "teach-label"],
+        "skills": ["report-ingest", "report-normalize", "teach-label"]
+        + report.get("skills_extra", []),
         "venues": [v["id"] for v in VENUES],
         "swarm": True,
     }
+    if report.get("example_packs"):
+        agent["example_packs"] = report["example_packs"]
+    if report.get("teach_memory"):
+        agent["teach_memory"] = report["teach_memory"]
+    return agent
 
 
 def icp_parent() -> dict:

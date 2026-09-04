@@ -1,0 +1,45 @@
+{
+  "name": "Vendor Spend Forensic Sub-Agent",
+  "title": "Never86 report sub \u2014 Finance / P&L / Prime Cost / Vendor Spend Forensic",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "domain_id": "finance",
+  "report_id": "vendor-spend",
+  "parent": "finance",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Vendor Spend Forensic report (Per-vendor invoice totals + price creep vs prior week). Ingests json, csv. Signals: vendor, vendor_type, cogs_category, amount, price_change, credit. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Per-vendor invoice totals + price creep vs prior week",
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "signals": [
+    "vendor",
+    "vendor_type",
+    "cogs_category",
+    "amount",
+    "price_change",
+    "credit"
+  ],
+  "file_globs": [
+    "*vendor*spend*",
+    "ocr-batch*.json",
+    "*invoice*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

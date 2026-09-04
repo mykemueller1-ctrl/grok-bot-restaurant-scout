@@ -21,17 +21,20 @@ Ground truth in this repo:
 - Handwritten **weekly schedules** (open→close, R/O, station letters W/B/P)
 - POS Z / sales summary when they remember to export
 - Distributor invoices + Hy-Vee runs as the “inventory system”
-- Petty cash / payout slips (Misc / Bread / Beverage)
+- Petty cash / payout slips (Misc / Bread / Beverage / Food)
+- **Weekly AP firehose:** phone snaps of every slip (rotated, stapled payout↔receipt, shadows/tears) — see `fixtures/toast/ctap-physical/normalized/weekly-invoice-photo-pack-2026-08.json` + OCR batch `ocr-batch-2026-08.json`
+- Email invoices exist from distributors, but owner-1-5 will mostly keep photographing — **photo OCR is the product spine**
 
 **Pains (survival → early scale):**
 - Owner burnout; cash-flow and food/labor gut feel ([MarketStreet 2–5 unit survey](https://www.businesswire.com/news/home/20260217728317/en/MarketStreet-Releases-Second-National-Research-Report-on-Independent-Restaurants-Identifies-Widening-Capability-Gap-Between-Survival-and-Scale))
 - Second unit adds ~60% revenue capacity but ~130% ops surface ([Tableview](https://www.tableview.com/blog/multi-location-restaurant-management/))
 - Labor % drift when each GM “runs their own labor” without group targets ([Tableview](https://www.tableview.com/blog/multi-location-restaurant-management/))
 - Independents often ~3–5% store margins; labor mid-30%s FSR ([Factura stats](https://factura.ai/restaurant-industry-profit-margin-statistics/))
+- **Invoice photo chaos at scale** — millions of messy snaps, not a clean AP inbox
 
 **Report agents that matter:** `time-entries`, `labor-summary`, `bar-kitchen-schedule`, `kitchen-labor-card`, `paper-weekly-schedule`, `item-selection`, `sales-summary`, `liquor-beer-par`, `vendor-invoice`
 
-**Never86 wedge:** Replace red-book chaos with daily “oh shit” dollars — not enterprise BI.
+**Never86 wedge:** Photo OCR + **COGS category coding** (food / beer / wine / liquor / pop) → forensic P&L advisor swarm. See `docs/RESTAURANT-AP-OCR.md`. Daily “oh shit” dollars — not enterprise BI.
 
 ---
 

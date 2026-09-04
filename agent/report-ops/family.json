@@ -6,11 +6,11 @@
   "purpose": "Parent / teacher / sub-agent swarm for restaurant sales, labor, and inventory reports \u2014 plus ICP scale subs (owner 1\u20135 vs area-leader vs CFO/CEO). Holy grail: Courser Grill + Taco Bamba packs; CTAP physical labor cards as owner-operator ground truth.",
   "owner": "mykemueller1-ctrl",
   "teacher": "teacher.json",
-  "parent_count": 4,
-  "sub_count": 16,
+  "parent_count": 5,
+  "sub_count": 19,
   "icp_sub_count": 3,
   "venue_scout_count": 3,
-  "agent_count": 27,
+  "agent_count": 31,
   "shared_skills": [
     "report-ingest",
     "report-route",
@@ -44,6 +44,12 @@
       "file": "parents/inventory.json",
       "label": "Inventory / Par / Ordering",
       "sub_count": 4
+    },
+    {
+      "id": "finance",
+      "file": "parents/finance.json",
+      "label": "Finance / P&L / Prime Cost",
+      "sub_count": 3
     }
   ],
   "subs": [
@@ -210,7 +216,38 @@
       "label": "Distributor / Store Invoice",
       "formats": [
         "photo",
+        "email",
         "pdf",
+        "csv"
+      ]
+    },
+    {
+      "id": "daily-pnl",
+      "file": "subs/daily-pnl.json",
+      "parent": "finance",
+      "label": "Daily P&L Flash",
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    {
+      "id": "prime-cost",
+      "file": "subs/prime-cost.json",
+      "parent": "finance",
+      "label": "Prime Cost Advisor",
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    {
+      "id": "vendor-spend",
+      "file": "subs/vendor-spend.json",
+      "parent": "finance",
+      "label": "Vendor Spend Forensic",
+      "formats": [
+        "json",
         "csv"
       ]
     }

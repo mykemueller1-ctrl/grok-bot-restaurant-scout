@@ -1,13 +1,18 @@
-stack/resolved-secrets.json
-stack/cloudflare-deployed.json
-services/pain-leads-api/node_modules/
-services/pain-leads-api/dist/
-services/pain-leads-api/.env
-services/pain-leads-api/.wrangler/
+.codex/auth.json
 commerce-engine-tmp/
 .env
 .env.*
 !.env.example
 *.pem
+<<<<<<< HEAD
 .codex/auth.json
 __pycache__/
+=======
+__pycache__/
+services/pain-leads-api/dist/
+services/pain-leads-api/.env
+services/pain-leads-api/node_modules/
+services/pain-leads-api/.wrangler/
+stack/cloudflare-deployed.json
+stack/resolved-secrets.json
+>>>>>>> d583c4b (Stop tracking OCR __pycache__ bytecode)

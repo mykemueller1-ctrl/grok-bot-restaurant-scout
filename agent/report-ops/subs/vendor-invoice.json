@@ -10,37 +10,82 @@
   "parent": "inventory",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Owns the Distributor / Store Invoice report (Beer distributor, grocery, payout slips). Ingests photo, pdf, csv. Signals: vendor, sku, qty, amount, account. Routes findings up to the domain parent; teach labels via Report Teacher.",
-  "source_report": "Beer distributor, grocery, payout slips",
+  "description": "Owns the Distributor / Store Invoice report (Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.). Ingests photo, email, pdf, csv. Signals: vendor, vendor_type, cogs_category, sku, qty, amount, account, payout_pair, handwritten_credit, email_forward, source_channel, ocr_confidence, rotation_deg. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Primary: phone photos of distributor invoices, grocery receipts, Register#2 payout slips (OCR). Bonus: emailed PDF/CSV when they forward.",
   "formats": [
     "photo",
+    "email",
     "pdf",
     "csv"
   ],
   "signals": [
     "vendor",
+    "vendor_type",
+    "cogs_category",
     "sku",
     "qty",
     "amount",
-    "account"
+    "account",
+    "payout_pair",
+    "handwritten_credit",
+    "email_forward",
+    "source_channel",
+    "ocr_confidence",
+    "rotation_deg"
   ],
   "file_globs": [
     "*invoice*",
     "*Hopkins*",
     "*Distributing*",
-    "*Hy-Vee*"
+    "*Hy-Vee*",
+    "*Hyvee*",
+    "*Fareway*",
+    "*Walmart*",
+    "*Menards*",
+    "*Sawyer*",
+    "*Sysco*",
+    "*Performance*Food*",
+    "*Northern*Lights*",
+    "*Confluence*",
+    "*Humes*",
+    "*Pay Out*",
+    "*payout*",
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.heic",
+    "*.webp"
   ],
-  "schema": null,
+  "schema": "schemas/vendor-invoice.json",
   "hierarchy": null,
   "skills": [
     "report-ingest",
     "report-normalize",
-    "teach-label"
+    "teach-label",
+    "invoice-photo-ocr"
   ],
   "venues": [
     "grill",
     "taco-bamba",
     "community-pizza"
   ],
-  "swarm": true
+  "swarm": true,
+  "example_packs": [
+    "ctap-physical/weekly-invoice-photo-pack-2026-08",
+    "ctap-physical/ocr-batch-2026-08"
+  ],
+  "teach_memory": [
+    {
+      "label": "keep",
+      "icp_tier": "owner_1_5",
+      "venue_id": "community-pizza",
+      "as_is": "Small ICPs dump phone photos of every invoice \u2014 food, beer, liquor, pop, meat, grocery, payout slips \u2014 rotated/stapled/blurry.",
+      "truth": "Leaders (MarginEdge, Ottimate, R365, xtraCHEF) win by photo/email intake + coding to restaurant COA (food/beer/wine/liquor/NA) + daily P&L. Pure OCR alone is not enough \u2014 teach on exceptions.",
+      "coach_to": "RapidOCR+Tesseract intake \u2192 vendor_type + cogs_category \u2192 finance advisor swarm (prime cost / daily P&L / vendor spend). Email forward is bonus.",
+      "good_looks_like": "Each photo \u2192 vendor + amount + cogs_category (food|beer|wine|liquor|na_beverage|\u2026). Category rollups feed P&L advisor. Low-confidence teach-batched.",
+      "pack": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json",
+      "research": "docs/RESTAURANT-AP-OCR.md",
+      "taxonomy": "agent/report-ops/taxonomy/cogs-categories.json"
+    }
+  ]
 }
