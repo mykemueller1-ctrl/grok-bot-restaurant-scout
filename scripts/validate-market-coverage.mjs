@@ -38,6 +38,9 @@ const keepGraders = files.filter(
 const socialShops = files.filter(
   (f) => f.startsWith("pain-to-sales-social-shop-") && f.endsWith(".json")
 );
+const guestFees = files.filter(
+  (f) => f.startsWith("pain-to-sales-guest-fee-") && f.endsWith(".json")
+);
 const scripts = files.filter((f) => f.startsWith("script-draft-") && f.endsWith(".json"));
 const catalogs = files.filter((f) => f.startsWith("catalog-sync-") && f.endsWith(".json"));
 
@@ -169,6 +172,42 @@ for (const req of REQUIRED) {
     process.exit(1);
   }
 
+  const guestMatches = guestFees.filter((f) => {
+    const d = load(f);
+    return (
+      d.sales_lead_draft?.market === req.market || d.pain_lead?.venue?.market === req.market
+    );
+  });
+  if (guestMatches.length !== 1) {
+    console.error(
+      `validate-market-coverage: ${req.market} needs exactly 1 guest-fee dogfood (has ${guestMatches.length}: ${guestMatches.join(", ") || "none"})`
+    );
+    process.exit(1);
+  }
+  const guestFile = guestMatches[0];
+  const guest = load(guestFile);
+  const guestAlias = guest.pain_lead?.venue?.yelp_alias || null;
+  if (!guestAlias || guestAlias !== scriptAlias) {
+    console.error(
+      `validate-market-coverage: ${guestFile} yelp_alias "${guestAlias}" must match script alias "${scriptAlias}"`
+    );
+    process.exit(1);
+  }
+  if (!guest.signals?.per_order_platform_fee) {
+    console.error(`validate-market-coverage: ${guestFile} must set signals.per_order_platform_fee`);
+    process.exit(1);
+  }
+  const guestLoveRefs = [
+    ...(guest.pain_lead?.sources || []),
+    ...(guest.tools_used || []),
+  ].map(basenameFromRef);
+  if (!guestLoveRefs.includes(req.love)) {
+    console.error(
+      `validate-market-coverage: ${guestFile} must reference ${req.love} in sources/tools_used`
+    );
+    process.exit(1);
+  }
+
   coverage.push({
     code: req.code,
     market: req.market,
@@ -176,6 +215,7 @@ for (const req of REQUIRED) {
     yelp_alias: scriptAlias,
     keep_grader: graderFile,
     social_shop: socialFile,
+    guest_fee: guestFile,
     script_draft: scriptFile,
     catalog_sync: catalogFile,
   });
@@ -186,7 +226,7 @@ console.log(
     {
       ok: true,
       markets: coverage.length,
-      chain: "love→keep-grader→social-shop→script-draft→catalog-sync",
+      chain: "love→keep-grader→social-shop→guest-fee→script-draft→catalog-sync",
       coverage,
     },
     null,
