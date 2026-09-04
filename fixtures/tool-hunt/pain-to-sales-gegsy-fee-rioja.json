@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-gegsy-fee-rioja-2026-09-04",
+  "purpose": "Gegsy Starter Pickup $0.40 / Delivery $1.00 per-order bases \u2192 SalesLead DRAFT for Rioja (Denver). Contrasts restaurant-paid per_order_platform_fee under commission-free Square OO vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Gegsy Starter Pickup $0.40 / Delivery $1.00 per order (Pro $0.20/$1.00)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%",
+    "own_ordering_keep": "Gegsy commission-free Square branded app/web claim"
+  },
+  "pain_lead": {
+    "pain_id": "gegsy_starter_040_100",
+    "vendor_id": "gegsy",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Rioja",
+      "city": "Denver",
+      "market": "Denver, CO",
+      "yelp_alias": "rioja-denver",
+      "love_signal": "Jennifer Jasinski LoDo cult / UGC"
+    },
+    "complaint_summary": "Calibration: Gegsy markets commission-free Square OO then bills Starter Pickup $0.40 / Delivery $1.00 per-order bases (Pro $0.20/$1.00; catering 2%/1%). Rioja-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without per-order KEEP leaks or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "gegsy",
+      "square",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-gegsy-per-order.json",
+      "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "gegsy_starter_040_100",
+    "account_name": "Rioja",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Denver",
+    "market": "Denver, CO",
+    "complaint_thesis": "Gegsy markets commission-free Square branded OO then charges Starter Pickup $0.40 / Delivery $1.00 per order (Pro $0.20/$1.00; catering fee 2%/1%) \u2014 restaurant-paid per_order_platform_fee KEEP leak that scales with volume. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Larimer Square love already prints demand \u2014 close Shop buy-now, not Gegsy $0.40/$1.00 per-order bases.",
+    "quotes": [
+      "Gegsy Starter Pickup $0.40 / Delivery $1.00 per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Gegsy Square OO per-order bases",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + social_shop_fee teach: Gegsy $0.40/$1.00 bases still tax KEEP under commission-free Square claim; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Larimer Square love already prints demand \u2014 close Shop buy-now, not Gegsy $0.40/$1.00 per-order bases.",
+    "sources": [
+      "https://gegsy.com/pricing",
+      "fixtures/tool-hunt/pain-scan-gegsy-per-order.json",
+      "https://www.yelp.com/biz/rioja-denver"
+    ],
+    "confidence": 75,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Gegsy Starter $0.40/$1.00 \u2192 SalesLead. Orderitto/Orda-class Square peer. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-gegsy-per-order.json",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

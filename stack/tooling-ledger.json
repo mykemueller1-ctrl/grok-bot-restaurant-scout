@@ -1,5 +1,5 @@
 {
-  "version": "1.83.0",
+  "version": "1.84.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -128,7 +128,8 @@
     "ordering_tools_fee_dogfood_gate": "scripts/validate-ordering-tools-fee-dogfood.mjs (Ordering.Tools Starter 5% / Pro 3% \u2192 SalesLead \u22655 markets; EU thematic)",
     "deonde_fee_dogfood_gate": "scripts/validate-deonde-fee-dogfood.mjs (Deonde Express $0.10/order overage \u2192 SalesLead \u22655 markets)",
     "uber_webshop_fee_dogfood_gate": "scripts/validate-uber-webshop-fee-dogfood.mjs (Uber Webshop 2.5%+$0.29 processing \u2192 SalesLead \u22655 markets)",
-    "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap \u2192 SalesLead \u22655 markets)"
+    "seared_fee_dogfood_gate": "scripts/validate-seared-fee-dogfood.mjs (Seared guest 5% $1.99 min / $7.50 cap \u2192 SalesLead \u22655 markets)",
+    "gegsy_fee_dogfood_gate": "scripts/validate-gegsy-fee-dogfood.mjs (Gegsy Starter $0.40/$1.00 per-order \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -489,11 +490,12 @@
     {
       "name": "Gegsy",
       "lane": "vertical_gtm",
-      "stack": "Branded iOS/Android + web storefront for Square sellers; Nash/DoorDash Drive delivery; from $69/mo",
+      "stack": "Square branded iOS/Android + web storefront; Starter $69/mo + Pickup $0.40 / Delivery $1.00 per order (Pro $119/mo + $0.20/$1.00; catering 2%/1%); Nash/DoorDash Drive",
       "memory": "Square catalog sync",
-      "edge": "Orderitto-class Square app OS; KEEP messaging, not Shop-native",
+      "edge": "Published per-order bases under commission-free Square claim \u2014 Orda/Orderitto-class KEEP peer; not Shop-native",
       "updated": "2026-09-04",
       "sources": [
+        "https://gegsy.com/pricing",
         "https://gegsy.com/"
       ]
     },
@@ -1067,6 +1069,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Gegsy Starter $0.40/$1.00 per-order SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Gegsy Starter Pickup $0.40 / Delivery $1.00 (gegsy.com/pricing) under commission-free Square OO \u2192 SalesLead vs Shop ~6%; validate-gegsy-fee-dogfood \u22655; strong_keep 55",
+      "verdict": "adopt"
+    },
     {
       "item": "Seared guest 5% ($1.99 min / $7.50 cap) SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",

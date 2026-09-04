@@ -552,3 +552,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for `5% fee/transaction`, `$1.99 minimum`, `$7.50` cap.
 - pain-scan-seared-guest-fee.json → strong_keep **54**; pain-to-sales-seared-fee-* ×5; validate-seared-fee-dogfood ≥5. Owner-class guest % peer.
 - Ledger v1.83.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Gegsy $0.40/$1.00 per-order SalesLead)
+
+- Primary [gegsy.com/pricing](https://gegsy.com/pricing): Starter Pickup **$0.40** / Delivery **$1.00** per order (Pro $0.20/$1.00; catering 2%/1%) under commission-free Square claim.
+- pain-scan-gegsy-per-order.json → strong_keep **55**; pain-to-sales-gegsy-fee-* ×5; validate-gegsy-fee-dogfood ≥5. Orda/Orderitto-class.
+- Ledger v1.84.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
