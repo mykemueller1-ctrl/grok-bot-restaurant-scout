@@ -1,0 +1,27 @@
+{
+  "finding_id": "ogent-gloriafood-successor-4pct-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ogent AI GloriaFood successor (4% PAYG / $149 POS)",
+  "vendor_or_project": "Ogent AI",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "ogent.ai: GloriaFood migration peer with QR/OO + Square/Clover/MicroSale POS sync + DoorDash/Uber Eats aggregator. Pricing primary: Pay As You Go **4% of net sales** (no monthly) OR Fixed $149/mo POS plan. Marketing pages say “commission-free” while PAYG is a first_party_pct_fee — KEEP sales-lead contrast (Owner Flex-class). Watch with Ressto/CloudWaitress/Fleksa; do NOT bump meta_order_food_peer_count; fee catalog pause (no new dogfood).",
+  "what_it_does": "Branded QR/online ordering + AI menu + POS sync; GloriaFood one-click migration narrative.",
+  "how_competitors_use_it": "Independents fleeing Oracle GloriaFood EOL; white-label reseller path pitched.",
+  "what_we_use_today": "GloriaFood EOL→Shop wedge adopted; successors Ressto/CloudWaitress/Fleksa watched",
+  "gap": "Not Shop-native; 4% PAYG is KEEP rent despite commission-free marketing — watch only under fee pause",
+  "pivot_speed": "days",
+  "operator_ask": "No new fee dogfood. Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://ogent.ai/",
+    "https://ogent.ai/#pricing",
+    "https://ogent.ai/gloriafood-alternative",
+    "https://ogent.ai/gloriafood-shutdown"
+  ],
+  "keep_signals": [
+    "first_party_pct_fee",
+    "dual_run_marketplace"
+  ],
+  "not_this": "Not Meta FBE peer. Not fee dogfood. Not forecasting."
+}

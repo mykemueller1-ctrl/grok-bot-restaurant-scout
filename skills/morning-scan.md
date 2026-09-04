@@ -2,7 +2,7 @@
 
 **Trigger:** daily 07:00 local time (routine).
 
-**Goal:** Find chef-driven / already-loved food brands (UGC proof) that fit **Never86 buy-now** — shoppable TikTok/IG without DoorDash-style marketplace rent. Teach KEEP math: TikTok Shop US ~6% referral (`social_shop_fee`; watch Oct 2026 ~8% reports) vs Marketplace 15–30%. Meta Shops native checkout sunset (Aug 2025) + Graph API commerce endpoint blocks (2026) push IG product tags → merchant websites (webview cliffs) — Never86 in-app Shop fills that vacuum. Not cold websites. Not forecasting targets.
+**Goal:** Find chef-driven / already-loved food brands (UGC proof) that fit **Never86 buy-now** — shoppable TikTok/IG without DoorDash-style marketplace rent. Teach KEEP math: TikTok Shop US ~6% referral (`social_shop_fee`; watch Oct 2026 ~8% standard + 1.5% creator facilitation; consumables <$15 carve-out ~5%; Food&Bev Dashboardly still 6% — grader stays 6) vs Marketplace 15–30%. Meta Shops native checkout sunset (Aug 2025) + Graph API commerce endpoint blocks (2026) push IG product tags → merchant websites (webview cliffs) — Never86 in-app Shop fills that vacuum. Not cold websites. Not forecasting targets.
 
 1. Read configured city + cuisine tags from the commerce engine.
 2. Discover love signals:

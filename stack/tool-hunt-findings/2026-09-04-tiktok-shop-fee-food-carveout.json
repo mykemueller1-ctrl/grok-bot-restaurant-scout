@@ -1,0 +1,19 @@
+{
+  "finding_id": "tiktok-shop-fee-food-carveout-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TikTok Shop Oct 2026 fee reconfirm + food carve-out",
+  "vendor_or_project": "TikTok Shop",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Reconfirm (Ecommerce Times Aug 2026): Oct 1 2026 standard referral 6%→8% + 1.5% creator facilitation on affiliate orders; consumables under $15 carve-out stays ~5%. Dashboardly Food & Beverages category table still lists **6%** (checked Jul 29 2026). Keep keep-channel-grader default social_fee_pct=6 until Seller Center / post-Oct primary confirm. Even at 8% Shop beats Marketplace 15–30%.",
+  "what_it_does": "Documents secondary fee-schedule reports vs still-6% Food & Bev category table — no grader default change yet.",
+  "gap": "Need official Seller Center / post-Oct 1 primary before changing KEEP defaults",
+  "pivot_speed": "days",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://ecommerce-times.com/tiktok-shops-q4-2026-seller-fee-overhaul-is-reshaping-dtc-margins/",
+    "https://www.dashboardly.io/tiktok-shop/food-beverages"
+  ],
+  "not_this": "Not forecasting. Not a fee dogfood expand."
+}

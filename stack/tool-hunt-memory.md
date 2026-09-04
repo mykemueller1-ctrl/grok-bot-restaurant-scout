@@ -904,3 +904,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **DripnDip** fashion+food creator shop (waitlist). Finding: `2026-09-04-dripndip-creator-shop.json`.
 - Watched **Zippi** + **VoiceZero** + **BoostOrder** chat/DM order peers (not FBE). Finding: `2026-09-04-zippi-voicezero-boostorder-dm.json`.
 - Ledger v1.92.46. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Ogent 4% + TikTok Shop fee reconfirm + IG link)
+
+- Watched **Ogent AI** GloriaFood successor: PAYG **4% of net sales** / $149 POS — first_party_pct_fee despite “commission-free” marketing. Finding: `2026-09-04-ogent-gloriafood-4pct.json`. Fee pause (no dogfood).
+- Reconfirmed TikTok Shop Oct 2026 fee reports + consumables <$15 ~5% carve-out; Food&Bev Dashboardly still 6% — grader stays 6. Finding: `2026-09-04-tiktok-shop-fee-food-carveout.json`.
+- Fresh Instagram reconnect: `https://connect.composio.dev/link/lk_KXRNlzyKe7d3` (~10 min).
+- Ledger v1.92.47. Auth still blocked for unlock READY.

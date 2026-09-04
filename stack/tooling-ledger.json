@@ -1,5 +1,5 @@
 {
-  "version": "1.92.46",
+  "version": "1.92.47",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Ogent AI GloriaFood successor (4% PAYG / $149 POS)",
+      "lane": "vertical_gtm",
+      "why": "Migration peer with Square/Clover sync; PAYG 4% = first_party_pct_fee despite commission-free marketing \u2014 watch only under fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "TikTok Shop Oct 2026 fee + food carve-out reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Standard 6%\u21928% + 1.5% creator fee reports; consumables <$15 ~5%; Food&Bev Dashboardly still 6% \u2014 grader stays 6",
+      "verdict": "watch"
+    },
     {
       "item": "Zapier GTM Cheat Codes Cursor agent skills",
       "lane": "skills_knowledge",
