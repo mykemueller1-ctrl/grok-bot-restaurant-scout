@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Sauce getsauce guest fee under $2 per order 0% commission KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.getsauce.com/p",
+      "posted_at": "2026-09-04",
+      "handle": "sauce_oo",
+      "snippet": "Sauce charges 0% commission with a flat guest fee under $2 per order (from $199/mo) vs DoorDash Marketplace 25% KEEP; dual-run discovery then Never86 buy-now",
+      "pain_id": "sauce_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "0% commission OO with under-$2 guest fee still taxes KEEP checkout \u2014 Never86 social buy-now (Shop ~6%) avoids diner sticker shock + Marketplace rent"
+    }
+  ],
+  "notes": "Sources: getsauce.com/p Owner comparison (primary marketing). Skip Sauce demand-forecasting content. Delivery $7.99/order is logistics not platform teach focus. Not expanding swarm imports."
+}

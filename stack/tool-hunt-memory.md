@@ -436,3 +436,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened first_party_pct_fee for 2.99% / online ordering service fee; pain-scan-upserve-pct-fee.json → strong_keep 32.
 - Added pain-to-sales-upserve-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-upserve-fee-dogfood ≥5.
 - Ledger v1.64.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Sauce under-$2 guest fee SalesLead)
+
+- Sauce OO: under $2/order guest fee, 0% commission, from ~$199/mo ([getsauce.com/p](https://www.getsauce.com/p)). Delivery $7.99/order is logistics — not the platform teach. Skip Sauce demand-forecasting.
+- pain-scan-sauce-guest-fee.json → strong_keep 33; pain-to-sales-sauce-fee-* ×5; validate-sauce-fee-dogfood ≥5 (`sauce_fee_dogfoods`).
+- Watched Menubly $9.99/mo flat (no per-order fee teach). Ledger v1.65.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+

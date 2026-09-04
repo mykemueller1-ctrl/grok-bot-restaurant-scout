@@ -1,0 +1,19 @@
+{
+  "finding_id": "menubly-flat-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menubly $9.99/mo commission-free OO (watch)",
+  "vendor_or_project": "Menubly",
+  "urls": [
+    "https://www.menubly.com/pricing/"
+  ],
+  "what_it_does": "Budget commission-free OO + mini site at $9.99/mo; no published per-order platform fee.",
+  "how_competitors_use_it": "Cost wedge vs Owner/Sauce monthly \u2014 not Shop-native.",
+  "what_we_use_today": "Watch only \u2014 no KEEP fee teach without per-order/guest fee",
+  "gap": "Flat SaaS only; processing separate",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Menubly flat $9.99 \u2014 watch as cost wedge, not fee dogfood.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}
