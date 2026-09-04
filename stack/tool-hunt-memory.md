@@ -819,3 +819,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Meta Order Food FBE-class peer set still **9** — no new primary partner. Finding: `2026-09-04-meta-fbe-peer-set-reconfirm.json`.
 - Watched Tablevibe as Order Food website-link CTA only. Finding: `2026-09-04-tablevibe-facebook-order-food.json`.
 - Ledger v1.92.33. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Franklin re-verify + Menusso/FOSA/CheckIt)
+
+- Franklin preorder + Shopify + Goldbelly still live. Finding: `2026-09-04-franklin-rails-reverify-2.json`.
+- **Menusso** classified NOT Meta Order Food (branded app 0%) — no peer_count bump. Finding: `2026-09-04-menusso-not-meta-order-food.json`.
+- Watched **FOSA** Messenger ordering + **CheckIt** Shopify shoppable feeds as tertiary love→buy-now peers.
+- Ledger v1.92.34. Auth still blocked.

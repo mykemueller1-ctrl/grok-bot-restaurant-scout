@@ -1,5 +1,5 @@
 {
-  "version": "1.92.33",
+  "version": "1.92.34",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1244,6 +1244,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Franklin ATX buy_now_path rails re-verified live (pass 2)",
+      "lane": "vertical_gtm",
+      "why": "preorder + Shopify merch + Goldbelly ship still live \u2014 confirms ATX buy_now_path",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Menusso NOT Meta Order Food (branded app 0%)",
+      "lane": "vertical_gtm",
+      "why": "Own app / 0% commission OS \u2014 not FBE Order Food; do not bump meta_order_food_peer_count",
+      "verdict": "watch"
+    },
+    {
+      "item": "FOSA Facebook Messenger restaurant ordering",
+      "lane": "vertical_gtm",
+      "why": "Messenger in-channel order close \u2014 TextOrder-class DM rival; not Meta FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "CheckIt Shopify shoppable TikTok/IG feeds",
+      "lane": "vertical_gtm",
+      "why": "DTC Shopify video-feed widget \u2014 tertiary vs Never86 Shop; not restaurant Meta FBE",
+      "verdict": "watch"
+    },
     {
       "item": "Meta Order Food FBE peer set reconfirmed (count 9)",
       "lane": "vertical_gtm",

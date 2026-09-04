@@ -1,0 +1,13 @@
+{
+  "finding_id": "fosa-facebook-messenger-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "FOSA Facebook Messenger restaurant ordering",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "getfosa.ai: add FOSA to Facebook page so customers place orders directly through Messenger — TextOrder-class in-channel social close (not Meta FBE Order Food button). Watch as love→buy-now DM rival. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": ["https://www.getfosa.ai/facebook-for-restaurant-marketing-and-ordering"],
+  "channels": ["facebook_messenger"],
+  "adjacent_to": ["TextOrder", "DirectOrders"],
+  "not_this": "Not Meta Order Food FBE peer. Not a fee dogfood. Not forecasting."
+}

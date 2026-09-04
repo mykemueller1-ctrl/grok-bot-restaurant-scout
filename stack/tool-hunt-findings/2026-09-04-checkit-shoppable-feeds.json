@@ -1,0 +1,15 @@
+{
+  "finding_id": "checkit-shoppable-tiktok-ig-feeds-2026-09",
+  "lane": "vertical_gtm",
+  "name": "CheckIt Shopify shoppable TikTok/IG feeds (watch)",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "CheckIt (ex-TikShop) Shopify app: shoppable TikTok/Instagram/UGC video feeds with product tagging inside Online Store — DTC widget path, not restaurant Meta Order Food or TikTok Shop-native GTM. Tertiary watch vs Never86 in-app Shop close. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://taranker.com/shopify-checkit-app-by-shopify",
+    "https://tikshop.co/",
+    "https://linkedin.com/company/tikshop"
+  ],
+  "not_this": "Not Meta FBE. Not a fee dogfood. Not forecasting."
+}

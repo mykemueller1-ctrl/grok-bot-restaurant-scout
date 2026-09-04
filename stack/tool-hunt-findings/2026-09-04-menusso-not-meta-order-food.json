@@ -1,0 +1,13 @@
+{
+  "finding_id": "menusso-not-meta-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menusso is NOT Meta Order Food — branded app / 0% commission",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "menusso.com/us: own branded mobile app for takeout/delivery, 0% order commission, AI menu languages — first-party app OS peer (Owner/Ressto-adjacent), NOT Meta FBE / Order Food button. Do NOT inflate meta_order_food_peer_count. Watch separately for KEEP vs Shop wedge. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": ["https://menusso.com/us/"],
+  "meta_classification": "not_meta_order_food",
+  "never86_wedge": "TikTok/IG Shop buy-now vs branded-app OS",
+  "not_this": "Not a Meta Order Food peer. Not a fee dogfood. Not forecasting."
+}

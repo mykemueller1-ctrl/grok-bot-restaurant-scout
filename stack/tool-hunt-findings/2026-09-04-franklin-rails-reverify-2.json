@@ -1,0 +1,18 @@
+{
+  "finding_id": "franklin-rails-reverify-2-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Franklin ATX buy_now_path rails re-verified live (pass 2)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio FETCH 2026-09-04: preorder.franklinbbq.com/information still live (curbside pickup How it works); shop.franklinbbq.com Shopify merch still live (sauces/merch/gift cards + Goldbelly ship CTA); franklinbbq.com Order Now / e-Gift Card narrative live. Confirms ATX rails first_party_preorder + shopify_merch + goldbelly_ship. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://preorder.franklinbbq.com/information",
+    "https://shop.franklinbbq.com/",
+    "https://franklinbbq.com/",
+    "fixtures/tool-hunt/austin-love-brands.json"
+  ],
+  "rails_confirmed": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+  "tools_used": ["COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}
