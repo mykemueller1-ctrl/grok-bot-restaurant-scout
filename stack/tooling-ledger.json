@@ -1281,6 +1281,18 @@
   ],
   "watchlist": [
     {
+      "item": "5-market Yelp love counts stable (pass-3)",
+      "lane": "vertical_gtm",
+      "why": "G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914 unchanged \u2014 love calibration holds",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Menuro GloriaFood successor (0% commission + branded app)",
+      "lane": "vertical_gtm",
+      "why": "Quote-based monthly OS with 0% OO + loyalty; GloriaFood migration pitch \u2014 watch with Ressto/Ogent; not FBE",
+      "verdict": "watch"
+    },
+    {
       "item": "Ogent AI GloriaFood successor (4% PAYG / $149 POS)",
       "lane": "vertical_gtm",
       "why": "Migration peer with Square/Clover sync; PAYG 4% = first_party_pct_fee despite commission-free marketing \u2014 watch only under fee pause",
