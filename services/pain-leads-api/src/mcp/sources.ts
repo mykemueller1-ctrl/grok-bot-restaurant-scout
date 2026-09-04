@@ -1,4 +1,6 @@
 /** Complaint source tools — agents use Grok Bot browser + social-trends for live search. */
+import { scoreMarketplaceKeep } from "../lib/marketplaceKeepScore.js";
+
 export async function dispatchSourceTool(tool: string, args: Record<string, unknown>) {
   switch (tool) {
     case "search_tiktok":
@@ -34,6 +36,13 @@ export async function dispatchSourceTool(tool: string, args: Record<string, unkn
         note: "Public profile only — no login bypass",
         handle: args.handle ?? null,
       };
+    case "score_marketplace_keep": {
+      const snippet = String(args.snippet ?? args.text ?? args.query ?? "");
+      if (!snippet.trim()) {
+        return { error: "snippet required", tool };
+      }
+      return { ok: true, tool, ...scoreMarketplaceKeep(snippet) };
+    }
     default:
       return { error: `unknown tool: ${tool}` };
   }
@@ -47,4 +56,5 @@ export const SOURCE_TOOLS = [
   "search_forums",
   "get_thread_context",
   "get_profile_public",
+  "score_marketplace_keep",
 ];

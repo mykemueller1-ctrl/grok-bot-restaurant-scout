@@ -10,8 +10,9 @@
     "search_x",
     "search_forums",
     "get_thread_context",
-    "get_profile_public"
+    "get_profile_public",
+    "score_marketplace_keep"
   ],
   "also_use": ["social-trends"],
-  "notes": "Read-only complaint hunting across TikTok, Reddit, FB groups, X, forums. Pair with social-trends MCP. No auto-comment or DM from this connector."
+  "notes": "Read-only complaint hunting across TikTok, Reddit, FB groups, X, forums. score_marketplace_keep boosts KEEP/commission stubs for Never86 anti-rent wedge. Pair with social-trends MCP. No auto-comment or DM from this connector."
 }

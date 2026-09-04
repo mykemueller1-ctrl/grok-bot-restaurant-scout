@@ -86,6 +86,7 @@ const SOURCE_TOOLS = [
   "search_forums",
   "get_thread_context",
   "get_profile_public",
+  "score_marketplace_keep",
 ];
 
 const APPROVAL_TOOLS = ["request_approval", "check_approval_status"];
@@ -249,6 +250,38 @@ async function dispatchSource(tool: string, args: Record<string, unknown>) {
   }
   if (tool === "get_profile_public") {
     return { ok: true, tool, note: "Public profile only — no login bypass", handle: args.handle ?? null };
+  }
+  if (tool === "score_marketplace_keep") {
+    const snippet = String(args.snippet ?? args.text ?? args.query ?? "");
+    if (!snippet.trim()) return { error: "snippet required", tool };
+    // Keep rules in sync with src/lib/marketplaceKeepScore.ts
+    const text = snippet.toLowerCase();
+    const rules: { re: RegExp; signal: string; w: number }[] = [
+      { re: /\bkeep\b/, signal: "keep_language", w: 25 },
+      { re: /commission/, signal: "commission", w: 20 },
+      { re: /\b(15|20|25|30)\s*%|\b\d{2}\s*%\s*commission/, signal: "commission_pct", w: 20 },
+      { re: /doordash|uber\s*eats|grubhub|marketplace/, signal: "marketplace_named", w: 15 },
+      { re: /quit|quitt?ing|ditch|leaving|drop(ped)?/, signal: "quit_switch", w: 20 },
+      { re: /fee|fees|rent|cut from/, signal: "fee_rent", w: 15 },
+      { re: /first[\s-]?party|direct order|own(ed)? (the )?customer/, signal: "first_party", w: 15 },
+      { re: /restaurant owner|operator|gm\b/, signal: "operator_voice", w: 10 },
+    ];
+    const signals: string[] = [];
+    let score = 0;
+    for (const r of rules) {
+      if (r.re.test(text)) {
+        signals.push(r.signal);
+        score += r.w;
+      }
+    }
+    score = Math.min(100, score);
+    return {
+      ok: true,
+      tool,
+      score,
+      signals,
+      never86_wedge: score >= 50 ? "anti_marketplace_buy_now" : "weak_or_consumer_only",
+    };
   }
   return { error: `unknown tool: ${tool}` };
 }

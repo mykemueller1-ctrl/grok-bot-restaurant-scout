@@ -13,7 +13,9 @@
    - Primary: complaint-sources + social-trends MCP
    - Fallback (verified Active): Composio `COMPOSIO_SEARCH_WEB` / `COMPOSIO_SEARCH_NEWS` + X `search_posts_all` for recent operator complaints (see `fixtures/tool-hunt/pain-scan-toast-doordash.json`, `fixtures/tool-hunt/pain-scan-marketplace-keep.json`)
 4. Prefer posts/articles with **fee $, commission %, leaving/switching, keep-what-you-sell / channel ranking** language from owners/GMs.
-5. Score KEEP language (optional Active helper): `node scripts/score-marketplace-keep.mjs "<snippet>"` — boost stubs with `score >= 50` / `anti_marketplace_buy_now`.
+5. Score KEEP language (optional Active helper):
+   - Local: `node scripts/score-marketplace-keep.mjs "<snippet>"`
+   - MCP (complaint-sources): `score_marketplace_keep` with `{ "snippet": "…" }` → boost stubs with `score >= 50` / `anti_marketplace_buy_now`.
 6. Require vendor/alias hit for POS/silo agents (or high-confidence paraphrase confirmed later in teach).
 7. Capture thin stubs: source, url, posted_at, handle, snippet, `pain_id` / `vendor_id`, score 0–100.
 8. Dedupe against existing `PainLead` records (same url / same handle+vendor+day).

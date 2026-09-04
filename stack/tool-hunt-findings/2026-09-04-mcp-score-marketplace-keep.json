@@ -1,0 +1,17 @@
+{
+  "finding_id": "mcp-score-marketplace-keep-2026-09",
+  "lane": "mcp_connectors",
+  "name": "complaint-sources.score_marketplace_keep MCP tool",
+  "vendor_or_project": "never86-pain-leads-api",
+  "urls": [],
+  "what_it_does": "Adds score_marketplace_keep to /mcp/sources (Node Fastify + Cloudflare Worker) so pain shoppers score KEEP/commission snippets at runtime.",
+  "how_competitors_use_it": "n/a",
+  "what_we_use_today": "CLI scripts/score-marketplace-keep.mjs + now live MCP tool on complaint-sources.",
+  "gap": "Auth Mem0/Context still blocked; this adopt does not need them.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Wired KEEP scorer into pain-leads API MCP — sharpens vendor-pain shopping without forecasting drift.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

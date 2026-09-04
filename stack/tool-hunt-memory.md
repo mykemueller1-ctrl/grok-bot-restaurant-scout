@@ -115,3 +115,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted scripts/score-marketplace-keep.mjs for pain stub boosting (no network/auth).
 - Catalog-sync sandbox: fixtures/tool-hunt/catalog-sync-franklin-sandbox.json (await APPROVED).
 - Instagram still not Active; Mem0/Context still blocked.
+
+### 2026-09-04 (MCP score_marketplace_keep)
+
+- Wired score_marketplace_keep into complaint-sources MCP (Fastify sources.ts + Worker).
+- mcp/complaint-sources.json + pain-complaint-scan updated. Auth Mem0/Context still BLOCKED.
