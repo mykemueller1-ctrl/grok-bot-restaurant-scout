@@ -1,0 +1,21 @@
+{
+  "finding_id": "sauce-commission-free-delivery-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Sauce commission-free first-party ordering + delivery OS",
+  "vendor_or_project": "Sauce (getsauce.com)",
+  "urls": [
+    "https://www.getsauce.com/",
+    "https://www.getsauce.com/post/sauce-competitors-alternatives",
+    "https://www.getsauce.com/post/owner-com-vs-popmenu"
+  ],
+  "what_it_does": "First-party online ordering + multi-fleet managed delivery at 0% commission / flat-fee model; drives orders from website, Google, Instagram, Facebook; owns guest data.",
+  "how_competitors_use_it": "Positioned vs Owner/Popmenu/ChowNow as the delivery-ops KEEP layer — reclaim 20–30% marketplace commissions while keeping diner data.",
+  "what_we_use_today": "Never86 TikTok/IG buy-now + KEEP graders; Sauce is delivery/fulfillment OS peer, not shoppable social rails",
+  "gap": "Watch KEEP delivery peer only — skip Sauce AI demand-forecasting content; do not expand swarm imports.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Sauce is a strong commission-free ordering+delivery KEEP peer; contrast in SalesLead angles vs Never86 social buy-now.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

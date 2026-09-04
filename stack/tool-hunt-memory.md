@@ -206,3 +206,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Popmenu (commission-free marketing OS + on-site ordering) and Flipdish (IG Order Now + first-party KEEP). Skip Flipdish forecasting features.
 - Added scripts/validate-keep-grader-dogfood.mjs CI gate.
 - Ledger v1.28.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Sauce watch + GloriaFood skip + Franklin grader dogfood)
+
+- Watched Sauce (commission-free ordering + multi-fleet delivery KEEP). Skip Sauce demand-forecasting content.
+- Skipped GloriaFood (discontinued new signups).
+- Second KEEP grader→SalesLead dogfood: pain-to-sales-keep-grader-franklin.json (gate ≥2).
+- Ledger v1.29.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
