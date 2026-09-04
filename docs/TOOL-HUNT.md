@@ -64,6 +64,7 @@ tool-frontier-scan → memory-skills-audit → stack-vs-competitors → tool-hun
 ```
 
 ```bash
+node scripts/print-beyond-the-hunt-status.mjs   # auth + 5-market love live_proof + gaps
 node scripts/run-tool-hunt-week.mjs   # auth soft-check + ledger validate + brief preview
 node scripts/tool-hunt-brief.mjs --write   # stack/tool-hunt-briefs/YYYY-MM-DD.md
 node scripts/validate-tooling-ledger.mjs

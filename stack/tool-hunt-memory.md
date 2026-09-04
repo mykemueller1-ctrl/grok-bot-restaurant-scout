@@ -678,3 +678,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added `scripts/print-beyond-the-hunt-status.mjs` — one JSON screen: auth READY/BLOCKED, 5-market love live_proof, social seed, fee pause, top open_gaps.
 - Documented in `docs/DESKTOP-UNLOCKS.md`. CI gates the printer. Ledger v1.92.10.
 - Still blocked: `MEM0_API_KEY` + `CONTEXT_DEV_API_KEY` → unlock READY.
+
+### 2026-09-04 (BiteSight + linkboo + status in weekly)
+
+- **linkboo** (watch): IG/TikTok bio → escape in-app browser so Toast/Resy/Apple Pay work — proves love→order webview cliff; Never86 in-app Shop avoids it. Finding: `2026-09-04-linkboo-social-webview-escape.json`.
+- **BiteSight** (watch): YC TikTok-meets-DoorDash video marketplace — adjacent discovery UX on marketplace rent. Finding: `2026-09-04-bitesight-tiktok-doordash.json`.
+- Status printer wired into `auth-gap-check`, `docs/TOOL-HUNT.md`, weekly Automation prompt. Ledger v1.92.11.
+- Fee catalog pause + Mem0/Context auth-first unchanged.
