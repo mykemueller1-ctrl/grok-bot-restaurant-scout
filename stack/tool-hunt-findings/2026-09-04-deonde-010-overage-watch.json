@@ -1,0 +1,12 @@
+{
+  "finding_id": "deonde-010-overage-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Deonde Express $0.10 per extra order overage (watch)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "deonde.co/pricing Express: $0.10 per extra order beyond included monthly allotment \u2014 UpMenu-class overage; watch before dogfood. Ressto plans unlimited $0/order.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://deonde.co/pricing.shtml"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Ordering.Tools Starter 5% / Pro 3% platform commission KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.ordering.tools/en/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "ordering_tools_pricing",
+      "snippet": "Ordering.Tools Starter charges a 5% platform commission on all orders (\u20ac30/mo) vs DoorDash Marketplace 25% KEEP; Pro is 3% on all orders \u2014 first-party EU OO percent still cuts KEEP",
+      "pain_id": "ordering_tools_5pct_starter",
+      "score": 100,
+      "never86_angle": "Ordering.Tools 5%/3% platform commission is still first-party rent \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    },
+    {
+      "url": "https://www.ordering.tools/en/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "ordering_tools_pro",
+      "snippet": "Ordering.Tools Pro platform commission is 3% on all orders (\u20ac60/mo) vs DoorDash Marketplace 25% KEEP \u2014 lower than Starter 5% but still first-party percent on every cart",
+      "pain_id": "ordering_tools_3pct_pro",
+      "score": 100,
+      "never86_angle": "3% on all orders still taxes every ticket \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: ordering.tools/en/pricing \u2014 Starter \u20ac30/mo + 5% on all orders; Pro \u20ac60/mo + 3%. EU-first thematic teach across US love markets; NOT expanding US swarm imports. Skip forecasting/inventory modules."
+}

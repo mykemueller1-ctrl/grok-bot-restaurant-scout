@@ -526,3 +526,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [1stoporder.com/pricing](https://www.1stoporder.com/pricing): Free **2%** / Pro·Custom **1%** convenience fee charged to customer (minimum **$0.50**). Widened `first_party_pct_fee` for 1–2% charged-to-customer convenience fees.
 - pain-scan-onestoporder-guest-fee.json (2 hits) → strong_keep **49**; pain-to-sales-onestoporder-fee-* ×5; validate-onestoporder-fee-dogfood ≥5.
 - Watched Appetier flat $199–$249 (no diner fees). Ledger v1.79.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Ordering.Tools 5%/3% platform commission SalesLead)
+
+- Primary [ordering.tools/en/pricing](https://www.ordering.tools/en/pricing): Starter **€30/mo + 5%** on all orders; Pro **€60/mo + 3%**. Widened `first_party_pct_fee` for 3%/5% on all orders.
+- pain-scan-ordering-tools-pct-fee.json (2 hits) → strong_keep **51**; pain-to-sales-ordering-tools-fee-* ×5; validate-ordering-tools-fee-dogfood ≥5. EU thematic — no US swarm expand.
+- Watched Deonde Express **$0.10**/extra-order overage. Ledger v1.80.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

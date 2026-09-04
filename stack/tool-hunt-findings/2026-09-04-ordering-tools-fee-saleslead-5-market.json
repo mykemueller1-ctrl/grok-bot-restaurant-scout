@@ -1,0 +1,12 @@
+{
+  "finding_id": "ordering-tools-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ordering.Tools 5%/3% platform commission SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary ordering.tools/en/pricing: Starter 5% / Pro 3% on all orders; first_party_pct_fee widened; strong_keep 51 (2 hits). EU thematic; no US swarm.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.ordering.tools/en/pricing"
+  ]
+}
