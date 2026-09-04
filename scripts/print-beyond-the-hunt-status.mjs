@@ -75,6 +75,10 @@ const out = {
     docs: "docs/COMPOSIO-SOCIAL-UNLOCKS.md",
   },
   fee_catalog_pause: feePause,
+  top_watch_rivals: (ledger.watchlist || [])
+    .filter((w) => w.verdict === "watch" && w.lane === "vertical_gtm")
+    .slice(0, 6)
+    .map((w) => ({ item: w.item, why: w.why })),
   top_open_gaps: (ledger.open_gaps || [])
     .slice()
     .sort((a, b) => (a.priority || 99) - (b.priority || 99))

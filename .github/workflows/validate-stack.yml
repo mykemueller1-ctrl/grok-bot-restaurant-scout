@@ -550,6 +550,7 @@ jobs:
           node scripts/print-sync-skills-checklist.mjs | grep -q '"ok": true'
           node scripts/print-social-unlocks.mjs | grep -q '"ok": true'
           node scripts/print-beyond-the-hunt-status.mjs | grep -q '"fee_catalog_pause": true'
+          node scripts/print-beyond-the-hunt-status.mjs | grep -q '"top_watch_rivals"'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
             echo "unlock READY"

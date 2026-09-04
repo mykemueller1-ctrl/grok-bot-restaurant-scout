@@ -1,0 +1,16 @@
+{
+  "finding_id": "zyda-meta-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Zyda Meta Order Food button (IG/FB)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Zyda connects restaurant-owned online store to Instagram/Facebook Order Food via Meta Business Extension — Deliverect peer on Meta rails (first-party brand checkout, not TikTok Shop). Watch GTM only; fee catalog pause stands.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+    "https://help.zyda.com/en/setting-up-facebook-business-extension-order-food-button",
+    "https://zyda.com/en/blog/the-power-of-the-order-food-button",
+    "https://zyda.com/products/ordering"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting. Not TikTok Shop-native."
+}

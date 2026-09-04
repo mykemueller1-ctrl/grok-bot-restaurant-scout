@@ -1,5 +1,5 @@
 {
-  "version": "1.92.12",
+  "version": "1.92.13",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -480,6 +480,19 @@
         "https://www.deliverect.com/en/social-media-ordering",
         "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
         "https://help.instagram.com/220950502341449/?helpref=related_articles"
+      ]
+    },
+    {
+      "name": "Zyda",
+      "lane": "vertical_gtm",
+      "stack": "First-party online store + Meta Business Extension Order Food button on Instagram/Facebook (Food Ordering partner)",
+      "memory": "n/a (ops storefront)",
+      "edge": "Deliverect peer on Meta Order Food rails — brand checkout from IG/FB; watch only, not TikTok Shop",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+        "https://zyda.com/products/ordering",
+        "https://zyda.com/en/blog/the-power-of-the-order-food-button"
       ]
     },
     {
@@ -1203,6 +1216,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Zyda Meta Order Food button (IG/FB) — Deliverect peer",
+      "lane": "vertical_gtm",
+      "why": "Meta Business Extension Order Food → Zyda first-party store; watch alongside Deliverect; not fee dogfood",
+      "verdict": "watch"
+    },
     {
       "item": "linkboo + BiteSight taught in GTM skills + Automation paste pack",
       "lane": "skills_knowledge",
@@ -2395,5 +2414,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:00:00Z"
+  "updated_at": "2026-09-04T19:05:00Z"
 }

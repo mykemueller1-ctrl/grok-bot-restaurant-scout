@@ -691,3 +691,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Taught linkboo webview-escape + BiteSight video marketplace in `script-draft`, `tool-frontier-scan`, `sales-lead-form`.
 - Synced `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` paste prompt with status printer start + new rivals (matches routine prompt_hint).
 - Ledger v1.92.12. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Zyda Meta Order Food + status watches)
+
+- **Zyda** (watch): Meta Order Food → Zyda first-party store — Deliverect peer. Finding: `2026-09-04-zyda-meta-order-food.json`.
+- Status printer now includes `top_watch_rivals` from ledger. AGENTS.md Layout lists the status script. Ledger v1.92.13.
+- Still blocked: Mem0 + Context for unlock READY.

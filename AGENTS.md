@@ -29,6 +29,7 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `fixtures/tool-hunt/keep-grader/` | Thin public KEEP channel grader (love→buy-now) |
 | `docs/COMPOSIO-SOCIAL-UNLOCKS.md` | IG + TikTok Composio unlocks; Yelp Active seed |
 | `docs/CTAP-SEATS.md` | CTAP sold seats + front-door login |
+| `scripts/print-beyond-the-hunt-status.mjs` | One-screen auth + love live_proof + watch rivals + gaps |
 
 ## Build / validate
 
