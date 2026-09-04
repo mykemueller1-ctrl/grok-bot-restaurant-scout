@@ -35,6 +35,9 @@ const files = readdirSync(dir).sort();
 const keepGraders = files.filter(
   (f) => f.startsWith("pain-to-sales-keep-grader-") && f.endsWith(".json")
 );
+const socialShops = files.filter(
+  (f) => f.startsWith("pain-to-sales-social-shop-") && f.endsWith(".json")
+);
 const scripts = files.filter((f) => f.startsWith("script-draft-") && f.endsWith(".json"));
 const catalogs = files.filter((f) => f.startsWith("catalog-sync-") && f.endsWith(".json"));
 
@@ -140,12 +143,39 @@ for (const req of REQUIRED) {
     process.exit(1);
   }
 
+  const socialMatches = socialShops.filter((f) => {
+    const d = load(f);
+    return (
+      d.sales_lead_draft?.market === req.market || d.pain_lead?.venue?.market === req.market
+    );
+  });
+  if (socialMatches.length !== 1) {
+    console.error(
+      `validate-market-coverage: ${req.market} needs exactly 1 social-shop dogfood (has ${socialMatches.length}: ${socialMatches.join(", ") || "none"})`
+    );
+    process.exit(1);
+  }
+  const socialFile = socialMatches[0];
+  const social = load(socialFile);
+  const socialAlias = social.pain_lead?.venue?.yelp_alias || null;
+  if (!socialAlias || socialAlias !== scriptAlias) {
+    console.error(
+      `validate-market-coverage: ${socialFile} yelp_alias "${socialAlias}" must match script alias "${scriptAlias}"`
+    );
+    process.exit(1);
+  }
+  if (!social.signals?.social_shop_fee) {
+    console.error(`validate-market-coverage: ${socialFile} must set signals.social_shop_fee`);
+    process.exit(1);
+  }
+
   coverage.push({
     code: req.code,
     market: req.market,
     love: req.love,
     yelp_alias: scriptAlias,
     keep_grader: graderFile,
+    social_shop: socialFile,
     script_draft: scriptFile,
     catalog_sync: catalogFile,
   });
@@ -156,7 +186,7 @@ console.log(
     {
       ok: true,
       markets: coverage.length,
-      chain: "love→keep-grader→script-draft→catalog-sync",
+      chain: "love→keep-grader→social-shop→script-draft→catalog-sync",
       coverage,
     },
     null,

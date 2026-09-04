@@ -285,3 +285,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Morning-scan teach: Shop ~6% KEEP vs Marketplace rent.
 - Watched Dinevate (Owner alternative OS). Skip labor/forecast.
 - Ledger v1.40.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (social_shop SalesLead completes 5 love markets)
+
+- Added girl-goat / michaels-genuine / husk / rioja social_shop SalesLeads (with franklin = 5).
+- validate-social-shop-dogfood ≥5; market-coverage chain includes social-shop.
+- Ledger v1.41.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

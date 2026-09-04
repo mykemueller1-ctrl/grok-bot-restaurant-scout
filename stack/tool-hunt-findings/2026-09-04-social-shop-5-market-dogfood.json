@@ -1,0 +1,24 @@
+{
+  "finding_id": "social-shop-5-market-dogfood-2026-09",
+  "lane": "vertical_gtm",
+  "name": "social_shop_fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 love→buy-now",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-social-shop-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-social-shop-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-social-shop-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-social-shop-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-social-shop-rioja.json",
+    "scripts/validate-social-shop-dogfood.mjs"
+  ],
+  "what_it_does": "Shop ~6% vs Marketplace 15–30% KEEP teach → SalesLead DRAFT for all five love markets; market-coverage chain now includes social-shop.",
+  "how_competitors_use_it": "Owner/Dinevate/Toast OO sell website OS; we fold Shop KEEP math into pain→sales beside buy-now scripts.",
+  "what_we_use_today": "validate-social-shop-dogfood ≥5 + validate-market-coverage social_shop link",
+  "gap": "Still DRAFT calibration — Mem0/Context blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "social_shop SalesLead dogfoods now match CHI/ATX/MIA/BNA/DEN love markets.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

@@ -14,8 +14,8 @@ const files = readdirSync(dir)
   .filter((f) => f.startsWith("pain-to-sales-social-shop-") && f.endsWith(".json"))
   .sort();
 
-if (files.length < 1) {
-  console.error(`validate-social-shop-dogfood: need ≥1 pain-to-sales-social-shop-*.json (has ${files.length})`);
+if (files.length < 5) {
+  console.error(`validate-social-shop-dogfood: need ≥5 pain-to-sales-social-shop-*.json (has ${files.length})`);
   process.exit(1);
 }
 

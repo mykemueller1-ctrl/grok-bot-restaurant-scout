@@ -151,6 +151,10 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
           test -f fixtures/tool-hunt/pain-scan-tiktok-shop-fee.json
           test -f fixtures/tool-hunt/pain-to-sales-social-shop-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-social-shop-rioja.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -172,7 +176,7 @@ jobs:
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
-          node scripts/validate-social-shop-dogfood.mjs | grep -q '"social_shop_dogfoods": 1'
+          node scripts/validate-social-shop-dogfood.mjs | grep -q '"social_shop_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
