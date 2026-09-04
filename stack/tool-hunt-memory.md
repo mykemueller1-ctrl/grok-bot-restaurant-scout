@@ -628,3 +628,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Brief TOP MOVES now prioritizes open_gaps / needs_auth over old fee adopts when fee-catalog-pause is on.
 - Instagram Composio reconnect link issued (expires ~10 min) — love→buy-now UGC path, not fee hunting.
 - Still blocked: MEM0_API_KEY + CONTEXT_DEV_API_KEY → `node scripts/unlock-beyond-the-hunt.mjs`.
+
+### 2026-09-04 (Cursor Automation pack + IG reconnect)
+
+- Added `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` + `scripts/print-tool-hunt-automation.mjs` (paste-ready weekly Automation; fee pause in prompt).
+- Fresh Instagram Composio link for love→buy-now UGC (expires ~10 min).
+- Still blocked on MEM0_API_KEY + CONTEXT_DEV_API_KEY for unlock READY.

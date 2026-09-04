@@ -29,7 +29,7 @@ Until keys land, Composio `COMPOSIO_SEARCH_WEB` stays the Active research fallba
 
 - Sync Skills for Cloud Agents = on  
 - Automation + memories: https://cursor.com/automations  
-  Prompt in `routines/tool-hunt-weekly.json`
+  Paste pack: `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` (`node scripts/print-tool-hunt-automation.mjs`)
 
 ## Verify both
 

@@ -103,6 +103,7 @@ jobs:
       - name: Tool hunt docs + agent present
         run: |
           test -f docs/TOOL-HUNT.md
+          test -f docs/CURSOR-AUTOMATION-TOOL-HUNT.md
           test -f agent/tool-hunt/beyond-the-hunt.json
           test -f stack/tooling-ledger.json
           test -f routines/tool-hunt-weekly.json
@@ -182,6 +183,7 @@ jobs:
           test -f scripts/validate-slice-fee-dogfood.mjs
           test -f scripts/validate-olo-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
+          test -f scripts/print-tool-hunt-automation.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
@@ -536,6 +538,7 @@ jobs:
           node scripts/validate-slice-fee-dogfood.mjs | grep -q '"slice_fee_dogfoods": 5'
           node scripts/validate-olo-fee-dogfood.mjs | grep -q '"olo_fee_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
+          node scripts/print-tool-hunt-automation.mjs | grep -q '"ok": true'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then
             echo "unlock READY"

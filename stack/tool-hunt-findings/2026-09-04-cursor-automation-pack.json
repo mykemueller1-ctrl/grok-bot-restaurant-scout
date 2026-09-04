@@ -1,0 +1,14 @@
+{
+  "finding_id": "cursor-automation-tool-hunt-pack-2026-09",
+  "lane": "cursor_agents",
+  "name": "Cursor Automation paste pack for tool-hunt-weekly",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "docs/CURSOR-AUTOMATION-TOOL-HUNT.md + scripts/print-tool-hunt-automation.mjs \u2014 paste-ready Automation with memories; closes interim-timer gap once Myke creates it at cursor.com/automations.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://cursor.com/automations",
+    "docs/CURSOR-AUTOMATION-TOOL-HUNT.md"
+  ],
+  "operator_ask": "Create Automation at cursor.com/automations (memories on) using docs/CURSOR-AUTOMATION-TOOL-HUNT.md"
+}
