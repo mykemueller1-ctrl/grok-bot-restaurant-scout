@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-ressto-ontabee-cta-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "Ressto + Ontabee Facebook Order CTA reconfirm",
+  "verdict": "watch",
+  "summary": "Ressto facebook-ordering still sells Order Now/Order Food website-link CTA (0% claim). Ontabee facebook-ordering still sells FB Order Food CTA to own menu \u2014 Meta-adjacent linkers, NOT FBE peers; do not bump peer_count.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-ressto-ontabee-cta-reconfirm",
+  "source_urls": [
+    "https://ressto.co/facebook-ordering.shtml",
+    "https://www.ontabee.com/facebook-ordering"
+  ],
+  "memory_tags": [
+    "ressto",
+    "ontabee",
+    "cta-not-fbe"
+  ]
+}

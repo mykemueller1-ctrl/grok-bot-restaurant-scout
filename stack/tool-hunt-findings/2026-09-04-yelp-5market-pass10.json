@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-yelp-5market-pass10",
+  "lane": "vertical_gtm",
+  "name": "Yelp 5-market love calibration pass-10",
+  "verdict": "adopt",
+  "summary": "Yelp search pass-10 stable: Girl & The Goat 10731; Franklin Barbecue 6477; Michael's Genuine 2084; Husk 1987; Rioja 2914 \u2014 love fixtures hold after pass-9.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-yelp-5market-pass10",
+  "teach": {
+    "label": "yelp_love_stable",
+    "counts": {
+      "gtg": 10731,
+      "franklin": 6477,
+      "michaels": 2084,
+      "husk": 1987,
+      "rioja": 2914
+    }
+  }
+}

@@ -76,7 +76,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Husk / Catbird Seat / Bastion / Henrietta Red) 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 \u2014 Husk Nashville 1987 reviews",
+  "live_proof": "Composio YELP_SEARCH_BUSINESSES 2026-09-04 pass-10 \u2014 Husk 1987 reviews; Resy+Toast gift rails hold",
   "status": "calibration_only",
   "notes": "Prefer chef/cult narrative + review volume. Bastion/Noko watched but skipped for seed (lower volume / less clear buy-now SKU path)."
 }

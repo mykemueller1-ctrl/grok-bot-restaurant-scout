@@ -1,5 +1,5 @@
 {
-  "version": "1.92.74",
+  "version": "1.92.75",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Kyte FBE unavailable reconfirm + Yelp pass-10 + Rioja/G&TG love",
+      "lane": "vertical_gtm",
+      "why": "Kyte Help still banners IG sticker + FB Order Food unavailable \u2014 keep peer_count 9. Yelp 10731/6477/2084/1987/2914 stable. Rioja Flavor Dojo+phone; G&TG OpenTable-only skew",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Slerp GloriaFood UK + Ressto/Ontabee CTA",
+      "lane": "vertical_gtm",
+      "why": "Slerp cites Apr 2027 decommission \u2014 UK migrate watch; Ressto/Ontabee still CTA linkers not FBE \u2014 no peer_count bump; fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "AnythingMCP WhatsApp + Wati MCP Cursor",
+      "lane": "cursor_agents",
+      "why": "WA\u2192Cursor MCP messaging-close peers; Yelp phone stays Active; auth-first; fee pause",
+      "verdict": "watch"
+    },
     {
       "item": "Toast/BentoBox/Square/Flipdish/Zyda/ChatFood/Deliverect Meta + Yelp pass-9",
       "lane": "vertical_gtm",
@@ -3337,7 +3355,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_qI2zoaDc8G8x (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -3372,5 +3390,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T22:05:00Z"
+  "updated_at": "2026-09-04T22:20:00Z"
 }

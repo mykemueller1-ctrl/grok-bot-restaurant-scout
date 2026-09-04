@@ -1130,3 +1130,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_AoIKB7ei0dnh (~10 min).
 - Ledger v1.92.74. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Kyte FBE + Yelp pass-10 + Rioja/G&TG + Slerp)
+
+- Reconfirmed Kyte Help IG sticker + FB Order Food **currently unavailable** — peer_count stays 9. Finding: `2026-09-04-kyte-fbe-unavailable-reconfirm-pass.json`.
+- Yelp pass-10 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass10.json`.
+- Adopted Rioja buy_now pass-6 + G&TG reservation_skew pass-7. Findings: `2026-09-04-rioja-buy-now-pass6.json`, `2026-09-04-gtg-reservation-skew-pass7.json`.
+- Watched Slerp GloriaFood UK migrate + Ressto/Ontabee CTA (not FBE). Findings: `2026-09-04-slerp-gloriafood-uk-migrate.json`, `2026-09-04-ressto-ontabee-cta-reconfirm.json`.
+- Watched AnythingMCP WhatsApp + Wati MCP Cursor. Finding: `2026-09-04-anythingmcp-wati-wa-cursor.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_qI2zoaDc8G8x (~10 min).
+- Ledger v1.92.75. Auth still blocked for unlock READY.
+

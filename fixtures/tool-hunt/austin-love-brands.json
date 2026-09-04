@@ -69,7 +69,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 \u2014 Franklin Barbecue 6477 reviews",
+  "live_proof": "Composio YELP_SEARCH_BUSINESSES 2026-09-04 pass-10 \u2014 Franklin 6477 reviews; preorder+Shopify+Goldbelly rails hold",
   "status": "calibration_only",
   "notes": "Yelp details responses omitted website field; use Maps/web second pass when contacting. Prefer cult/chef signal over generic high-rating food trucks."
 }

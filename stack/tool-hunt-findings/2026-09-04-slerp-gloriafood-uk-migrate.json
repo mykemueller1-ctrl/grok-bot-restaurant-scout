@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-slerp-gloriafood-uk-migrate",
+  "lane": "vertical_gtm",
+  "name": "Slerp GloriaFood UK migrate watch",
+  "verdict": "watch",
+  "summary": "Slerp alternatives/gloriafood page cites Oracle decommission by April 2027, new onboarding closed, feature-frozen \u2014 UK first-party OO migrate peer; fee pause; not Meta FBE (Flipdish already peer).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-slerp-gloriafood-uk-migrate",
+  "source_urls": [
+    "https://www.slerp.com/alternatives/gloriafood/"
+  ],
+  "memory_tags": [
+    "slerp",
+    "gloriafood-migrate",
+    "eol-2027-04-30",
+    "uk"
+  ]
+}

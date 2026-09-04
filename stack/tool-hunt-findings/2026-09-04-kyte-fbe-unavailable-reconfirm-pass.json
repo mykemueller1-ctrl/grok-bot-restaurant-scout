@@ -1,0 +1,20 @@
+{
+  "finding_id": "2026-09-04-kyte-fbe-unavailable-reconfirm-pass",
+  "lane": "vertical_gtm",
+  "name": "Kyte FBE unavailable reconfirm (IG sticker + FB)",
+  "verdict": "adopt",
+  "summary": "Kyte Help still banners both IG Order Food sticker and FB Order Food setup as currently unavailable \u2192 Start Order alternate. kyteapp.com/apps/fbe still live. Keep Kyte in meta_order_food_peer_count 9 until Meta partner list drops Kyte.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-kyte-fbe-unavailable-reconfirm-pass",
+  "ledger_version": "1.92.75",
+  "source_urls": [
+    "https://docs.kyteapp.com/en/articles/7861178-activating-the-instagram-order-food-sticker",
+    "https://docs.kyteapp.com/en/articles/7861141-setting-up-order-food-on-facebook",
+    "https://www.kyteapp.com/apps/fbe"
+  ],
+  "memory_tags": [
+    "kyte",
+    "fbe-degraded",
+    "peer-count-9"
+  ]
+}

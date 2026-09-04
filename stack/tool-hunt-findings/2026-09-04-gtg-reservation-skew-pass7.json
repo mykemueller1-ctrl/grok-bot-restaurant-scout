@@ -1,0 +1,22 @@
+{
+  "finding_id": "2026-09-04-gtg-reservation-skew-pass7",
+  "lane": "vertical_gtm",
+  "name": "Girl & The Goat reservation_skew pass-7",
+  "verdict": "adopt",
+  "summary": "CHI love teach holds: girlandthegoat.com/chicago is hours/contact/menus only (no first-party OO CTA); OpenTable listing live \u2014 reservation_skew_no_buy_now; Shop closes social demand.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-gtg-reservation-skew-pass7",
+  "teach": {
+    "label": "reservation_skew_no_buy_now",
+    "market": "CHI",
+    "brand": "Girl & The Goat",
+    "rails": [
+      "opentable_reservations",
+      "no_first_party_oo_found"
+    ]
+  },
+  "source_urls": [
+    "https://www.girlandthegoat.com/chicago",
+    "https://www.opentable.com/r/girl-and-the-goat-chicago"
+  ]
+}

@@ -72,7 +72,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES term=chef location=Miami, FL sort=review_count 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 \u2014 Michael's Genuine 2084 reviews",
+  "live_proof": "Composio YELP_SEARCH_BUSINESSES 2026-09-04 pass-10 \u2014 Michaels 2084 reviews; UE/DD leak rails hold",
   "status": "calibration_only",
   "notes": "Skipped closed venues and generic name-match 'chef' hits without cult signal. Prefer chef/cult narrative + review volume."
 }
