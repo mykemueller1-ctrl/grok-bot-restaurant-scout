@@ -100,4 +100,10 @@ jobs:
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           node scripts/score-marketplace-keep.mjs "KEEP DoorDash commission quit" | grep -q anti_marketplace_buy_now
           node scripts/score-marketplace-keep.mjs "DoorDash commission is not your cost — statement effective cost 18.75% restaurant lives on what is left" | grep -q effective_cost_math
-          node scripts/unlock-beyond-the-hunt.mjs; test $? -eq 2
+          # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
+          if node scripts/unlock-beyond-the-hunt.mjs; then
+            echo "unlock READY"
+          else
+            ec=$?
+            test "$ec" -eq 2
+          fi
