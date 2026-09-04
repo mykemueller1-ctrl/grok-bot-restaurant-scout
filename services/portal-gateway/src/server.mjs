@@ -353,52 +353,63 @@ function createServer() {
     requireSecret();
   }
 
-  return http.createServer(async (req, res) => {
-    try {
-      const host = req.headers.host || `127.0.0.1:${PORT}`;
-      const url = new URL(req.url || "/", `http://${host}`);
-      const path = decodeURIComponent(url.pathname);
-
-      if (req.method === "GET" && path === "/healthz") {
-        return send(res, 200, { ok: true, service: "portal-gateway" });
-      }
-      if (req.method === "POST" && path === "/api/auth/login") {
-        return await handleAuthLogin(req, res);
-      }
-      if (req.method === "POST" && path === "/api/auth/logout") {
-        return handleAuthLogout(req, res);
-      }
-      if (req.method === "GET" && path === "/api/auth/me") {
-        return handleAuthMe(req, res);
-      }
-      if (req.method === "GET" && /^\/api\/venue\/[^/]+\/door$/.test(path)) {
-        const venueId = path.split("/")[3];
-        return handleDoorPublic(req, res, venueId);
-      }
-      if (req.method === "GET" && path.startsWith("/api/venue/")) {
-        const segs = path.slice("/api/venue/".length).split("/");
-        const venueId = segs[0];
-        const rel = segs.slice(1).join("/");
-        return handleVenueData(req, res, venueId, rel);
-      }
-      if (req.method === "GET") {
-        return handleStatic(req, res, path);
-      }
-      return send(res, 405, { error: "method not allowed" });
-    } catch (e) {
-      audit("server.error", { message: e.message || String(e) });
-      return send(res, 500, { error: "internal error" });
-    }
+  return http.createServer((req, res) => {
+    void handleRequest(req, res);
   });
 }
 
-export { createServer, PORTALS_ROOT, loginLimiter, safeUnder };
+async function handleRequest(req, res) {
+  try {
+    const host = req.headers.host || `127.0.0.1:${PORT}`;
+    const url = new URL(req.url || "/", `http://${host}`);
+    const path = decodeURIComponent(url.pathname);
+
+    if (req.method === "GET" && path === "/healthz") {
+      return send(res, 200, { ok: true, service: "portal-gateway" });
+    }
+    if (req.method === "POST" && path === "/api/auth/login") {
+      return await handleAuthLogin(req, res);
+    }
+    if (req.method === "POST" && path === "/api/auth/logout") {
+      return handleAuthLogout(req, res);
+    }
+    if (req.method === "GET" && path === "/api/auth/me") {
+      return handleAuthMe(req, res);
+    }
+    if (req.method === "GET" && /^\/api\/venue\/[^/]+\/door$/.test(path)) {
+      const venueId = path.split("/")[3];
+      return handleDoorPublic(req, res, venueId);
+    }
+    if (req.method === "GET" && path.startsWith("/api/venue/")) {
+      const segs = path.slice("/api/venue/".length).split("/");
+      const venueId = segs[0];
+      const rel = segs.slice(1).join("/");
+      return handleVenueData(req, res, venueId, rel);
+    }
+    if (req.method === "GET") {
+      return handleStatic(req, res, path);
+    }
+    return send(res, 405, { error: "method not allowed" });
+  } catch (e) {
+    audit("server.error", { message: e.message || String(e) });
+    try {
+      return send(res, 500, { error: "internal error", detail: String(e?.message || e) });
+    } catch {
+      res.statusCode = 500;
+      res.end("internal error");
+    }
+  }
+}
+
+export { createServer, handleRequest, PORTALS_ROOT, loginLimiter, safeUnder };
+/** Vercel / serverless default export */
+export default handleRequest;
 
 const isMain = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
   const server = createServer();
   server.listen(PORT, HOST, () => {
-    audit("server.listen", { host: HOST, port: PORT });
+    audit("server.listen", { host: HOST, port: PORT, portals: PORTALS_ROOT });
     console.error(`portal-gateway listening on http://${HOST}:${PORT}`);
   });
 }
