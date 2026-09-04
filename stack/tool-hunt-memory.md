@@ -709,3 +709,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - `run-tool-hunt-week.mjs` now prints `status_snapshot` from `print-beyond-the-hunt-status.mjs` first.
 - Automation prompt_hint + paste doc include Zyda beside Deliverect.
 - Ledger v1.92.15. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp phone enrich + CI status_snapshot)
+
+- Live `YELP_SEARCH_BY_PHONE` Franklin ATX (+15126531187) → alias/address/4.5★/6477 — pain→sales enrich Active without Apollo. Finding: `2026-09-04-yelp-phone-enrich-franklin.json`.
+- CI greps `status_snapshot:` from `run-tool-hunt-week.mjs` output. Ledger v1.92.16.
+- Still blocked: Mem0 + Context for unlock READY.

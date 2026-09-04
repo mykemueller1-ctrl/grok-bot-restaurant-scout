@@ -1,0 +1,23 @@
+{
+  "finding_id": "yelp-phone-enrich-franklin-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Yelp phone enrich Active for pain→sales (Franklin ATX)",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio YELP_SEARCH_BY_PHONE (+15126531187) resolves Franklin Barbecue Austin — alias, address, rating 4.5, 6477 reviews. Proves love-seed → sales-lead contact enrich without Apollo/Clay/Mem0.",
+  "researched_at": "2026-09-04",
+  "live_proof": {
+    "tool": "YELP_SEARCH_BY_PHONE",
+    "phone": "+15126531187",
+    "alias": "franklin-barbecue-austin",
+    "rating": 4.5,
+    "review_count": 6477,
+    "address": "900 E 11th St, Austin, TX 78702"
+  },
+  "urls": [
+    "https://www.yelp.com/biz/franklin-barbecue-austin",
+    "fixtures/tool-hunt/austin-love-brands.json",
+    "skills/sales-lead-form.md"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting. Apollo/Clay still optional."
+}

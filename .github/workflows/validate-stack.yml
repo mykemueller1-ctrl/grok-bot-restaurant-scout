@@ -99,7 +99,9 @@ jobs:
         with:
           node-version: "20"
       - run: node scripts/validate-tooling-ledger.mjs
-      - run: node scripts/run-tool-hunt-week.mjs
+      - run: node scripts/run-tool-hunt-week.mjs | tee /tmp/tool-hunt-week.out
+      - name: Weekly gate prints status snapshot
+        run: grep -q 'status_snapshot:' /tmp/tool-hunt-week.out
       - name: Tool hunt docs + agent present
         run: |
           test -f docs/TOOL-HUNT.md
@@ -110,6 +112,7 @@ jobs:
           test -f stack/tooling-ledger.json
           test -f routines/tool-hunt-weekly.json
           test -f scripts/run-tool-hunt-week.mjs
+          test -f scripts/print-beyond-the-hunt-status.mjs
           test -f scripts/context-search.mjs
           test -f fixtures/tool-hunt/austin-love-brands.json
           test -f fixtures/tool-hunt/miami-love-brands.json
