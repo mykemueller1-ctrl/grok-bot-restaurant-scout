@@ -8,26 +8,27 @@
       "yelp_alias": "rioja-denver",
       "phone": "+13038202282",
       "rating": 4.3,
-      "review_count": 2915,
+      "review_count": 2914,
       "transactions": ["pickup"],
       "love_signal": "Chef Jennifer Jasinski / Larimer Square destination / first-party pickup present",
       "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard",
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.3,
-        "review_count": 2915,
+        "review_count": 2914,
         "price": "$$$",
         "transactions": ["pickup"]
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
-        "reverified_at": "2026-09-04",
+        "reverified_at": "2026-09-04T20:20Z",
         "website": "https://www.riojadenver.com/",
         "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
-        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs. Re-verified live via COMPOSIO_SEARCH_FETCH_URL_CONTENT.",
+        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs. Pass-2: carryout page + phone reservations still live.",
         "sources": [
           "https://www.riojadenver.com/menus/carryout/",
-          "stack/tool-hunt-findings/2026-09-04-husk-rioja-rails-reverify.json"
+          "https://www.riojadenver.com/",
+          "stack/tool-hunt-findings/2026-09-04-rioja-buy-now-pass2.json"
         ]
       }
     },

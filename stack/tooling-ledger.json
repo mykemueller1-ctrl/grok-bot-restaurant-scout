@@ -1,5 +1,5 @@
 {
-  "version": "1.92.43",
+  "version": "1.92.44",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Rioja buy_now_path pass-2 + 5-market live loop complete",
+      "lane": "vertical_gtm",
+      "why": "Flavor Dojo carryout + phone reservations still live (Yelp 2914); ATX/CHI/MIA/BNA/DEN all pass-2 this hunt",
+      "verdict": "adopt"
+    },
     {
       "item": "Husk Nashville buy_now_path pass-2 (Toast/Resy)",
       "lane": "vertical_gtm",

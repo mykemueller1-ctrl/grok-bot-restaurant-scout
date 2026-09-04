@@ -884,3 +884,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Pass-2: Husk Resy + Toast gift-card still live (Yelp 1,987) — Toast/Resy webview cliff teach. Finding: `2026-09-04-husk-buy-now-pass2.json`.
 - Watched TableQR restaurant bio hub (LinkScale peer). Finding: `2026-09-04-tableqr-restaurant-bio.json`.
 - Ledger v1.92.43. Auth still blocked.
+
+### 2026-09-04 (Rioja pass-2 — 5-market live loop)
+
+- Pass-2: Rioja Flavor Dojo carryout + phone reservations still live (Yelp 2,914). Finding: `2026-09-04-rioja-buy-now-pass2.json`.
+- All five love markets now pass-2 this hunt: Franklin / G&TG / Michaels / Husk / Rioja. KEEP signals hold (strong_keep 65).
+- Ledger v1.92.44. Auth still blocked for unlock READY.
