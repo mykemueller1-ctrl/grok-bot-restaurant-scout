@@ -13,7 +13,7 @@
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.4,
-        "review_count": 10731,
+        "review_count": 10732,
         "price": "$$$"
       },
       "buy_now_path": {
@@ -24,11 +24,12 @@
           "no_first_party_oo_found"
         ],
         "reverified_at": "2026-09-04T22:25Z",
-        "note": "Menu/reservations site; OpenTable listing — Shop buy-now fills missing social close. Pass-4: site Make a reservation only; OpenTable still live (Booked 203× today). Yelp 10731 reviews.",
+        "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close. Pass-4: site Make a reservation only; OpenTable still live (Booked 203\u00d7 today). Yelp 10732 reviews.",
         "sources": [
           "https://www.girlandthegoat.com/chicago",
           "https://www.opentable.com/r/girl-and-the-goat-chicago",
-          "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-pass4.json"
+          "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-pass4.json",
+          "stack/tool-hunt-findings/2026-09-04-yelp-5market-pass6.json"
         ]
       }
     },
@@ -54,6 +55,6 @@
     }
   ],
   "source": "Yelp Composio dogfood 2026-09-04",
-  "live_proof": "Composio YELP_SEARCH_BUSINESSES + FETCH 2026-09-04 pass-2 \u2014 G&TG 10731 reviews; OpenTable-only rails hold",
+  "live_proof": "Composio YELP_SEARCH_AND_CHAT 2026-09-04 pass-6 \u2014 G&TG 10732 reviews; OpenTable-only rails hold",
   "status": "calibration_only"
 }

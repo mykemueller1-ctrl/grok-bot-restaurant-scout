@@ -1,5 +1,5 @@
 {
-  "version": "1.92.64",
+  "version": "1.92.65",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp love pass-6 (G&TG 10732 / Rioja 2915)",
+      "lane": "vertical_gtm",
+      "why": "G&TG +1 to 10732; Rioja +1 to 2915; Franklin 6477 / Michaels 2084 / Husk 1987 stable — love calibration holds",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Square Online Meta Order Food reconfirm",
+      "lane": "vertical_gtm",
+      "why": "Square Support article 7778 still live — FB/IG Order Food → Square Online; peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Foodiv US GloriaFood successor + CherryBerry WA AI",
+      "lane": "vertical_gtm",
+      "why": "Foodiv US migrate (NY case) GloriaFood EOL peer; CherryBerry WA AI 0% catalogue checkout — ChatOrder-class; fee pause; not FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "DataLayer MCP + Vibe Prospecting Cursor enrich",
+      "lane": "skills_knowledge",
+      "why": "Hosted DataLayer MCP + Vibe Prospecting Cursor plugin — Clay/Apollo-class enrich peers; Yelp phone stays Active primary",
+      "verdict": "watch"
+    },
     {
       "item": "Slerp UK GloriaFood free migrate + Meni.ge free forever",
       "lane": "vertical_gtm",

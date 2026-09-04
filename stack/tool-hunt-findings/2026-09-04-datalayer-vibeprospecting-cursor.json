@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-datalayer-vibeprospecting-cursor",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.65",
+  "sources": [
+    {
+      "url": "https://datalayer.sh/articles/cursor-mcp-lead-research.md",
+      "title": "Build a Lead Research Agent in Cursor with DataLayer MCP",
+      "fetched_via": "composio_search_fetch",
+      "note": "Hosted MCP https://api.datalayer.sh/mcp — Clay-class enrich inside Cursor"
+    },
+    {
+      "url": "https://github.com/explorium-ai/vibeprospecting-cursor-plugin",
+      "title": "explorium-ai/vibeprospecting-cursor-plugin — Vibe Prospecting Cursor Plugin",
+      "fetched_via": "composio_search_fetch",
+      "note": "150M+ companies / 800M+ professionals MCP prospecting for Cursor"
+    }
+  ],
+  "verdict": "watch",
+  "category": "skills_knowledge",
+  "summary": "DataLayer hosted MCP and Vibe Prospecting Cursor plugin expand pain→sales-lead enrich options beside LeadMagic/Apollo/Clay/mateor96. Watch; Yelp phone enrich stays Active primary for 5 love markets until Auth/credits prove out.",
+  "teach": {
+    "label": "datalayer_vibeprospecting_cursor_enrich_watch",
+    "peers": ["leadmagic-cursor", "apollo-composio", "clay", "mateor96-gtm-agent-skills"],
+    "status_note": "Yelp phone enrich remains Active primary"
+  },
+  "mission_lock": {
+    "yes": ["pain→sales-lead", "Cursor MCP"],
+    "no": ["forecasting", "fee catalog"]
+  }
+}

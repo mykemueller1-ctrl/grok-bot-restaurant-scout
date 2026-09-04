@@ -1036,3 +1036,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **mateor96/gtm-agent-skills** (venue/café lead enrich on 10k+ leads) + **LeadMagic** Cursor MCP enrich. Findings: `2026-09-04-mateor96-gtm-agent-skills.json`, `2026-09-04-leadmagic-cursor-enrich.json`.
 - Ledger v1.92.64. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-6 + Foodiv/Square + CherryBerry/DataLayer)
+
+- Yelp pass-6: G&TG **10732** (+1), Rioja **2915** (+1); Franklin 6477 / Michaels 2084 / Husk 1987 stable. Finding: `2026-09-04-yelp-5market-pass6.json`.
+- Reconfirmed Square Online Meta Order Food — peer_count stays 9. Finding: `2026-09-04-square-meta-order-food-reconfirm.json`.
+- Watched **Foodiv** US GloriaFood successor (NY case). Finding: `2026-09-04-foodiv-gloriafood-us.json`.
+- Watched **CherryBerry** WA AI ordering + **DataLayer**/Vibe Prospecting Cursor enrich. Findings: `2026-09-04-cherryberry-wa-ai-ordering.json`, `2026-09-04-datalayer-vibeprospecting-cursor.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_xtQweNbjwyZS (~10 min).
+- Ledger v1.92.65. Auth still blocked for unlock READY.
+

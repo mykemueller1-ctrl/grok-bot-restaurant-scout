@@ -1,6 +1,6 @@
 {
   "seed_id": "denver-love-brands-yelp-2026-09-04",
-  "purpose": "Fifth-market calibration for morning-scan love→buy-now (chef/cult brands). Not forecasting.",
+  "purpose": "Fifth-market calibration for morning-scan love\u2192buy-now (chef/cult brands). Not forecasting.",
   "market": "Denver, CO",
   "brands": [
     {
@@ -8,23 +8,30 @@
       "yelp_alias": "rioja-denver",
       "phone": "+13038202282",
       "rating": 4.3,
-      "review_count": 2914,
-      "transactions": ["pickup"],
+      "review_count": 2915,
+      "transactions": [
+        "pickup"
+      ],
       "love_signal": "Chef Jennifer Jasinski / Larimer Square destination / first-party pickup present",
-      "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard",
+      "never86_fit": "Love-proven + pickup already first-party \u2192 Shop buy-now onboard",
       "live_yelp": {
         "verified_at": "2026-09-04",
         "rating": 4.3,
-        "review_count": 2914,
+        "review_count": 2915,
         "price": "$$$",
-        "transactions": ["pickup"]
+        "transactions": [
+          "pickup"
+        ]
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
         "reverified_at": "2026-09-04T21:05Z",
         "website": "https://www.riojadenver.com/",
-        "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
-        "note": "Flavor Dojo carryout is in-person pickup narrative — Shop buy-now closes social demand without bio→webview cliffs. Pass-3: carryout page + phone reservations still live on riojadenver.com (riorestaurant.com is parked — ignore).",
+        "rails": [
+          "flavor_dojo_carryout_in_person",
+          "phone_reservations"
+        ],
+        "note": "Flavor Dojo carryout is in-person pickup narrative \u2014 Shop buy-now closes social demand without bio\u2192webview cliffs. Pass-3: carryout page + phone reservations still live on riojadenver.com (riorestaurant.com is parked \u2014 ignore).",
         "sources": [
           "https://www.riojadenver.com/menus/carryout/",
           "https://www.riojadenver.com/",
@@ -38,9 +45,12 @@
       "phone": "+17203798340",
       "rating": 4.1,
       "review_count": 613,
-      "transactions": ["delivery", "restaurant_reservation"],
+      "transactions": [
+        "delivery",
+        "restaurant_reservation"
+      ],
       "love_signal": "RiNo Chinese cult / chef-driven / high UGC potential",
-      "never86_fit": "Viral demand → shoppable SKUs vs marketplace delivery rent"
+      "never86_fit": "Viral demand \u2192 shoppable SKUs vs marketplace delivery rent"
     },
     {
       "name": "Tavernetta",
@@ -48,9 +58,12 @@
       "phone": "+17206051889",
       "rating": 4.5,
       "review_count": 970,
-      "transactions": ["delivery", "pickup"],
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
       "love_signal": "Frasca family Italian / Union Station destination",
-      "never86_fit": "National-class love → social commerce close before ChowNow/Lunchbox web OS"
+      "never86_fit": "National-class love \u2192 social commerce close before ChowNow/Lunchbox web OS"
     },
     {
       "name": "Uncle",
@@ -58,13 +71,15 @@
       "phone": "+13034333263",
       "rating": 4.1,
       "review_count": 1577,
-      "transactions": ["delivery"],
+      "transactions": [
+        "delivery"
+      ],
       "love_signal": "Highlands ramen cult / strong review volume",
-      "never86_fit": "Local love with delivery present — re-route social demand to owned buy-now"
+      "never86_fit": "Local love with delivery present \u2014 re-route social demand to owned buy-now"
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Hop Alley / Rioja / Tavernetta / Uncle) 2026-09-04",
-  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Rioja Denver 2915 reviews; YELP_SEARCH_BY_PHONE +13038202282 ok",
+  "live_proof": "Composio YELP_SEARCH_AND_CHAT 2026-09-04 pass-6 \u2014 Rioja 2915 reviews",
   "status": "calibration_only",
-  "notes": "Prefer chef/cult narrative + review volume. Fruition restaurant alias not resolved in this scan — skipped."
+  "notes": "Prefer chef/cult narrative + review volume. Fruition restaurant alias not resolved in this scan \u2014 skipped."
 }

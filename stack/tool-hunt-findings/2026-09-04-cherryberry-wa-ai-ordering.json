@@ -1,0 +1,25 @@
+{
+  "id": "2026-09-04-cherryberry-wa-ai-ordering",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.65",
+  "sources": [
+    {
+      "url": "https://cherryberryrms.com/whatsapp-ai-ordering-system-for-restaurants/",
+      "title": "WhatsApp AI Ordering System for Restaurants | CherryBerry RMS",
+      "fetched_via": "composio_search_fetch",
+      "note": "WA Business API AI menu+order+delivery updates; 0% commission claim on direct WA orders"
+    }
+  ],
+  "verdict": "watch",
+  "category": "vertical_rival",
+  "summary": "CherryBerry RMS WhatsApp AI ordering (catalogue + conversational checkout + delivery updates, 0% commission claim) — ChatOrder/AiBotick/Queek-class WA peer. Watch; not Meta FBE; fee pause.",
+  "teach": {
+    "label": "cherryberry_wa_ai_ordering_watch",
+    "peers": ["chatorder", "aibotick", "queek", "orderinwhats"],
+    "peer_count_impact": "none — not FBE"
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now WA rail watch", "pain→sales-lead rival"],
+    "no": ["meta_order_food_peer_count", "fee dogfood", "forecasting"]
+  }
+}

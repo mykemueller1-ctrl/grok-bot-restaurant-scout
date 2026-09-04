@@ -1,0 +1,32 @@
+{
+  "id": "2026-09-04-foodiv-gloriafood-us",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.65",
+  "sources": [
+    {
+      "url": "https://www.foodiv.com/gloriafood-alternative-us-restaurants/",
+      "title": "Best GloriaFood Alternative for US Restaurants - Foodiv",
+      "fetched_via": "composio_search_fetch",
+      "note": "US-targeted GloriaFood migrate; one-click menu import; commission-free direct OO claim"
+    },
+    {
+      "url": "https://www.foodiv.com/case-studies/liberty-dine-house-new-york-gloriafood-to-foodiv-migration/",
+      "title": "Liberty Dine House NYC GloriaFood → Foodiv case study",
+      "fetched_via": "composio_search_web",
+      "note": "US migration case study (NY)"
+    }
+  ],
+  "verdict": "watch",
+  "category": "vertical_rival",
+  "summary": "Foodiv is a US-pitched GloriaFood successor with one-click menu import and direct/QR OO. Watch beside Slerp/Meni.ge/Ordering.co/Sparissimo; fee pause until published fee cite; not FBE until Meta Order Food primary.",
+  "teach": {
+    "label": "foodiv_us_gloriafood_successor_watch",
+    "geo": "US",
+    "eol_primary": "2027-04-30",
+    "peer_count_impact": "none"
+  },
+  "mission_lock": {
+    "yes": ["vertical rival", "EOL wedge", "US GTM"],
+    "no": ["fee dogfood without primary fee cite", "inflate meta_order_food_peer_count"]
+  }
+}

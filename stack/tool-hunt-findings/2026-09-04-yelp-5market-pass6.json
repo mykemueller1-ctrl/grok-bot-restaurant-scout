@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-04-yelp-5market-pass6",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.65",
+  "sources": [
+    {
+      "url": "https://www.yelp.com/biz/girl-and-the-goat-chicago",
+      "title": "Girl & The Goat — Yelp",
+      "fetched_via": "composio_yelp_search_and_chat",
+      "note": "review_count 10732 (was 10731)"
+    },
+    {
+      "url": "https://www.yelp.com/biz/franklin-barbecue-austin",
+      "title": "Franklin Barbecue — Yelp",
+      "fetched_via": "composio_yelp_search_and_chat",
+      "note": "review_count 6477 stable"
+    },
+    {
+      "url": "https://www.yelp.com/biz/michaels-genuine-food-and-drink-miami",
+      "title": "Michael's Genuine Food & Drink — Yelp",
+      "fetched_via": "composio_yelp_search_and_chat",
+      "note": "review_count 2084 stable"
+    },
+    {
+      "url": "https://www.yelp.com/biz/husk-nashville",
+      "title": "Husk Nashville — Yelp",
+      "fetched_via": "composio_yelp_search_and_chat",
+      "note": "review_count 1987 stable"
+    },
+    {
+      "url": "https://www.yelp.com/biz/rioja-denver",
+      "title": "Rioja Denver — Yelp",
+      "fetched_via": "composio_yelp_search_and_chat",
+      "note": "review_count 2915 (was 2914)"
+    }
+  ],
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Yelp pass-6 love calibration: G&TG 10732 (+1), Rioja 2915 (+1); Franklin 6477 / Michaels 2084 / Husk 1987 stable. Love fixtures updated; reservation_skew and brand_site_marketplace_leak teaches still hold.",
+  "teach": {
+    "label": "yelp_5market_love_pass6",
+    "counts": {
+      "gtg": 10732,
+      "franklin": 6477,
+      "michaels": 2084,
+      "husk": 1987,
+      "rioja": 2915
+    }
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now calibration"],
+    "no": ["forecasting", "fee dogfood"]
+  }
+}

@@ -1,11 +1,11 @@
 {
   "dogfood_id": "pain-to-sales-denver-rioja-2026-09-04",
-  "purpose": "Fifth-market Active path: menu-markup / own-ordering KEEP + Denver chef love (Rioja, pickup present) → SalesLead DRAFT. No Apollo/Mem0/Context/IG required.",
+  "purpose": "Fifth-market Active path: menu-markup / own-ordering KEEP + Denver chef love (Rioja, pickup present) \u2192 SalesLead DRAFT. No Apollo/Mem0/Context/IG required.",
   "pain_stubs": [
     {
       "source": "x",
       "url": "https://x.com/aakashgupta/status/2089625597723230684",
-      "snippet": "Restaurant owners pad DoorDash / Uber Eats delivery menus ~20% menu markup to offset marketplace commissions that run 15 to 30% per order — fees they do not KEEP.",
+      "snippet": "Restaurant owners pad DoorDash / Uber Eats delivery menus ~20% menu markup to offset marketplace commissions that run 15 to 30% per order \u2014 fees they do not KEEP.",
       "pain_id": "marketplace_menu_markup",
       "keep_score": 95,
       "never86_wedge": "anti_marketplace_buy_now"
@@ -13,7 +13,7 @@
     {
       "source": "web",
       "url": "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers",
-      "snippet": "Own your ordering — commission-free first-party so restaurant owners KEEP 100% of diner contact data vs DoorDash rent. Dual-run marketplaces for discovery; direct channels for guests you KEEP.",
+      "snippet": "Own your ordering \u2014 commission-free first-party so restaurant owners KEEP 100% of diner contact data vs DoorDash rent. Dual-run marketplaces for discovery; direct channels for guests you KEEP.",
       "pain_id": "own_ordering_vs_marketplace",
       "keep_score": 85,
       "never86_wedge": "anti_marketplace_buy_now"
@@ -31,18 +31,23 @@
       "yelp_alias": "rioja-denver",
       "phone": "+13038202282",
       "rating": 4.3,
-      "review_count": 2914,
-      "transactions": ["pickup"],
+      "review_count": 2915,
+      "transactions": [
+        "pickup"
+      ],
       "love_signal": "Chef Jennifer Jasinski / Larimer Square cult / first-party pickup present"
     },
-    "complaint_summary": "Industry menu-markup KEEP signal (not a personal Rioja complaint). Larimer Square chef brand already has pickup — Never86 buy-now owns social demand before ChowNow/Lunchbox/OPA! web OS peers close the channel.",
+    "complaint_summary": "Industry menu-markup KEEP signal (not a personal Rioja complaint). Larimer Square chef brand already has pickup \u2014 Never86 buy-now owns social demand before ChowNow/Lunchbox/OPA! web OS peers close the channel.",
     "opportunity_signals": [
       "cult_chef_ugc",
       "first_party_pickup_present",
       "menu_markup_pain",
       "shoppable_sku_potential"
     ],
-    "vendors_mentioned": ["doordash", "uber_eats"],
+    "vendors_mentioned": [
+      "doordash",
+      "uber_eats"
+    ],
     "sources": [
       "https://x.com/aakashgupta/status/2089625597723230684",
       "fixtures/tool-hunt/denver-love-brands.json",
@@ -56,15 +61,18 @@
     "role": "owner/GM (needs teach)",
     "city": "Denver",
     "market": "Denver, CO",
-    "complaint_thesis": "Operators pad delivery menus ~20% to offset 15–30% marketplace commissions — guests feel the markup. Chef-loved Denver brands with pickup already first-party should route viral social demand to honest shoppable buy-now, not padded DoorDash menus or ChowNow-only web OS.",
+    "complaint_thesis": "Operators pad delivery menus ~20% to offset 15\u201330% marketplace commissions \u2014 guests feel the markup. Chef-loved Denver brands with pickup already first-party should route viral social demand to honest shoppable buy-now, not padded DoorDash menus or ChowNow-only web OS.",
     "quotes": [
       "pad DoorDash / Uber Eats delivery menus ~20%",
       "commission-free first-party so restaurant owners KEEP",
       "Own your ordering"
     ],
-    "vendors_to_displace": ["DoorDash", "Uber Eats"],
-    "why_never86_now": "Jasinski-class love + Yelp pickup already first-party → Never86 TikTok/IG buy-now closes Larimer Square demand without menu-markup rent. Contrast vs ChowNow/Lunchbox/OPA!/SWIPEBY web OS.",
-    "suggested_angle": "Draft only: Your Larimer Square love already prints demand. Never86 turns it into shoppable buy-now at honest prices — so fans pay you, not a padded delivery menu.",
+    "vendors_to_displace": [
+      "DoorDash",
+      "Uber Eats"
+    ],
+    "why_never86_now": "Jasinski-class love + Yelp pickup already first-party \u2192 Never86 TikTok/IG buy-now closes Larimer Square demand without menu-markup rent. Contrast vs ChowNow/Lunchbox/OPA!/SWIPEBY web OS.",
+    "suggested_angle": "Draft only: Your Larimer Square love already prints demand. Never86 turns it into shoppable buy-now at honest prices \u2014 so fans pay you, not a padded delivery menu.",
     "sources": [
       "https://x.com/aakashgupta/status/2089625597723230684",
       "https://www.yelp.com/biz/rioja-denver",
@@ -72,7 +80,7 @@
     ],
     "confidence": 71,
     "status": "DRAFT",
-    "notes": "Calibration dogfood — not live outreach. Fifth market after CHI/ATX/MIA/BNA."
+    "notes": "Calibration dogfood \u2014 not live outreach. Fifth market after CHI/ATX/MIA/BNA."
   },
   "tools_used": [
     "YELP_SEARCH_BUSINESSES",

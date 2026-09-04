@@ -1,19 +1,24 @@
 {
-  "finding_id": "square-meta-order-food-reconfirm-2026-09",
-  "lane": "vertical_gtm",
-  "name": "Square Online Meta Order Food path reconfirm",
-  "vendor_or_project": "Square Online",
-  "verdict": "adopt",
-  "priority": 3,
-  "summary": "Square Support US article still live: Dashboard → Online → Sales channels → **Facebook Food Ordering** connects FB/IG profiles; auto-adds **Order Food** buttons; Stories Food Orders stickers documented. Reinforces Square as Meta Order Food FBE peer. Do NOT bump meta_order_food_peer_count (stays 9). Note from adjacent Square Meta for Business help: Food Ordering and Meta Shops paths can conflict — Shop wedge after native checkout sunset still holds.",
-  "what_it_does": "POS-bundled first-party OO linked to Meta Order Food profile buttons + Stories stickers.",
-  "gap": "",
-  "pivot_speed": "hours",
-  "operator_ask": "",
-  "researched_at": "2026-09-04",
-  "urls": [
-    "https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online",
-    "https://squareup.com/help/us/en/article/7887-connect-square-online-with-meta-for-business"
+  "id": "2026-09-04-square-meta-order-food-reconfirm",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.65",
+  "sources": [
+    {
+      "url": "https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online",
+      "title": "Set up Facebook and Instagram food ordering for your website | Square Support",
+      "fetched_via": "composio_search_fetch",
+      "note": "Square Dashboard → Online → Sales channels → Facebook Food Ordering; Order Food buttons + Stories stickers path still live"
+    }
   ],
-  "not_this": "Not a peer_count change. Not fee dogfood. Not forecasting."
+  "verdict": "adopt",
+  "category": "love_buy_now",
+  "summary": "Square Online Meta Order Food help still live — FB/IG Order Food buttons route to Square Online first-party OO. Reinforces FBE peer set; meta_order_food_peer_count stays 9.",
+  "teach": {
+    "label": "square_online_meta_order_food_reconfirm",
+    "peer_count_impact": "none — already counted"
+  },
+  "mission_lock": {
+    "yes": ["love→buy-now", "Meta FBE peer reconfirm"],
+    "no": ["inflate peer_count"]
+  }
 }
