@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-bingeljell-lead-gen-mcp",
+  "lane": "skills_knowledge",
+  "name": "lead-gen-mcp (Bingeljell)",
+  "verdict": "watch",
+  "summary": "Bingeljell/lead-gen-mcp: Cursor/Claude MCP for B2B lead discover/extract/generate pipeline. Skills peer for pain→sales-lead; Yelp phone stays Active; auth-first.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-bingeljell-lead-gen-mcp",
+  "source_urls": [
+    "https://github.com/Bingeljell/lead-gen-mcp"
+  ],
+  "memory_tags": [
+    "lead-gen-mcp",
+    "cursor",
+    "b2b-leads",
+    "skills"
+  ]
+}

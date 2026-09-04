@@ -1,0 +1,22 @@
+{
+  "finding_id": "2026-09-04-rioja-buy-now-pass5",
+  "lane": "vertical_gtm",
+  "name": "Rioja buy_now_path pass-5",
+  "verdict": "adopt",
+  "summary": "riojadenver.com carryout/Flavor Dojo page still live (in-person pickup 11:30 Larimer) + phone reservations CTA. buy_now_path holds (Yelp 2914).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-rioja-buy-now-pass5",
+  "ledger_version": "1.92.72",
+  "source_urls": [
+    "https://www.riojadenver.com/menus/carryout/",
+    "https://riojadenver.com/"
+  ],
+  "teach": {
+    "label": "buy_now_path",
+    "pass": 5,
+    "rails": [
+      "flavor_dojo_carryout_in_person",
+      "phone_reservations"
+    ]
+  }
+}

@@ -4,7 +4,7 @@
   "name": "Instagram Composio reconnect for morning-scan UGC",
   "vendor_or_project": "Composio Instagram",
   "urls": [
-    "https://connect.composio.dev/link/lk_G6w_FV3BZ9D3"
+    "https://connect.composio.dev/link/lk_qRDZmWg_tzSV"
   ],
   "what_it_does": "Instagram Business/Creator read for love signals / morning-scan UGC (not publish until approved).",
   "how_competitors_use_it": "n/a",
@@ -14,6 +14,6 @@
   "verdict": "needs_auth",
   "priority": 1,
   "summary": "Fresh Instagram Composio OAuth — UGC path; Yelp 5-market live seed Active without it.",
-  "operator_ask": "Open https://connect.composio.dev/link/lk_G6w_FV3BZ9D3 (~10 min) then reply instagram connected",
+  "operator_ask": "Open https://connect.composio.dev/link/lk_qRDZmWg_tzSV (~10 min) then reply instagram connected",
   "researched_at": "2026-09-04"
 }

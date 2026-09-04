@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-wporder-wa-ai-uk",
+  "lane": "vertical_gtm",
+  "name": "WPOrder WhatsApp AI ordering (UK)",
+  "verdict": "watch",
+  "summary": "NEW WPOrder (wporder.co.uk): AI waiter on WhatsApp/Telegram, 0% commission claim, Deliveroo/Uber Eats/Just Eat menu import — ChatOrder-class UK WA rival. Fee pause; not FBE.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-wporder-wa-ai-uk",
+  "source_urls": [
+    "https://wporder.co.uk/"
+  ],
+  "memory_tags": [
+    "wporder",
+    "whatsapp",
+    "uk",
+    "zero-commission-claim",
+    "new-rival"
+  ]
+}

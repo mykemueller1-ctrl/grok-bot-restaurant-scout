@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-deliverect-ig-order-food-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "Deliverect Direct Suite IG Order Food",
+  "verdict": "adopt",
+  "summary": "Deliverect Direct Suite IG Order Food button + Food Orders sticker docs/integration pages still marketed — peer_count stays 9 (contrast Kyte FBE degraded).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-deliverect-ig-order-food-reconfirm",
+  "source_urls": [
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://www.deliverect.com/en/integrations/instagram"
+  ],
+  "memory_tags": [
+    "deliverect",
+    "meta-fbe",
+    "peer-count-9"
+  ]
+}

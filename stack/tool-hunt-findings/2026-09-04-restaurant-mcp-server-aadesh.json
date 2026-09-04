@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-restaurant-mcp-server-aadesh",
+  "lane": "skills_knowledge",
+  "name": "Restaurant MCP Server (aadeshmahesh)",
+  "verdict": "watch",
+  "summary": "aadeshmahesh/restaurant-mcp-server: SSE MCP for restaurant search/detail/preferences (mock PHX/Scottsdale data). Cursor skills peer for venue tools — not production enrich; Yelp Active stays primary.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-restaurant-mcp-server-aadesh",
+  "source_urls": [
+    "https://github.com/aadeshmahesh/restaurant-mcp-server"
+  ],
+  "memory_tags": [
+    "restaurant-mcp-server",
+    "cursor",
+    "skills"
+  ]
+}

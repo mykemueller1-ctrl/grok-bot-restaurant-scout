@@ -1,0 +1,23 @@
+{
+  "finding_id": "2026-09-04-husk-buy-now-pass5",
+  "lane": "vertical_gtm",
+  "name": "Husk buy_now_path pass-5",
+  "verdict": "adopt",
+  "summary": "Husk Nashville Resy booking page + Toast findcard gift-card rail still live; no public Toast OO. buy_now_path holds (Yelp 1987).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-husk-buy-now-pass5",
+  "ledger_version": "1.92.72",
+  "source_urls": [
+    "https://resy.com/cities/nashville-tn/venues/husk-nashville",
+    "https://www.toasttab.com/husk-nashville/findcard",
+    "http://www.husknashville.com/"
+  ],
+  "teach": {
+    "label": "buy_now_path",
+    "pass": 5,
+    "rails": [
+      "resy_reservations",
+      "toast_gift_card"
+    ]
+  }
+}

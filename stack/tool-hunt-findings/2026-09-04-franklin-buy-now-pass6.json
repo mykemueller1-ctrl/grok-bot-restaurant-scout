@@ -1,0 +1,24 @@
+{
+  "finding_id": "2026-09-04-franklin-buy-now-pass6",
+  "lane": "vertical_gtm",
+  "name": "Franklin buy_now_path pass-6",
+  "verdict": "adopt",
+  "summary": "Franklin rails still live: preorder.franklinbbq.com curbside pickup (dates open), shop.franklinbbq.com Shopify merch/sauces, Goldbelly Franklin Barbecue ship page. buy_now_path holds (Yelp 6477).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-franklin-buy-now-pass6",
+  "ledger_version": "1.92.72",
+  "source_urls": [
+    "https://preorder.franklinbbq.com/",
+    "https://shop.franklinbbq.com/",
+    "https://www.goldbelly.com/restaurants/franklin-barbecue"
+  ],
+  "teach": {
+    "label": "buy_now_path",
+    "pass": 6,
+    "rails": [
+      "first_party_preorder",
+      "shopify_merch",
+      "goldbelly_ship"
+    ]
+  }
+}

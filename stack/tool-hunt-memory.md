@@ -1098,3 +1098,14 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Maps Scraper MCP + Diego lead-enrichment MCP. Findings: `2026-09-04-google-maps-scraper-mcp.json`, `2026-09-04-diego-lead-enrichment-mcp.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_G6w_FV3BZ9D3 (~10 min).
 - Ledger v1.92.71. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Franklin/Husk/Rioja rails + Kyte/Square/Deliverect + WPOrder)
+
+- Adopted Franklin **buy_now_path** pass-6 — preorder + Shopify + Goldbelly. Finding: `2026-09-04-franklin-buy-now-pass6.json`.
+- Adopted Husk **buy_now_path** pass-5 — Resy + Toast gift. Finding: `2026-09-04-husk-buy-now-pass5.json`.
+- Adopted Rioja **buy_now_path** pass-5 — Flavor Dojo + phone. Finding: `2026-09-04-rioja-buy-now-pass5.json`.
+- Reconfirmed Kyte FBE unavailable banners + Square 7778 + Deliverect IG — peer_count stays 9. Findings: `2026-09-04-kyte-fbe-unavailable-pass.json`, `2026-09-04-square-meta-order-food-pass.json`, `2026-09-04-deliverect-ig-order-food-reconfirm.json`.
+- Watched **WPOrder** UK WA AI + **Texnity** WA restaurant OS. Findings: `2026-09-04-wporder-wa-ai-uk.json`, `2026-09-04-texnity-wa-restaurant.json`.
+- Watched Restaurant MCP Server + Bingeljell lead-gen-mcp. Findings: `2026-09-04-restaurant-mcp-server-aadesh.json`, `2026-09-04-bingeljell-lead-gen-mcp.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_qRDZmWg_tzSV (~10 min).
+- Ledger v1.92.72. Auth still blocked for unlock READY.
