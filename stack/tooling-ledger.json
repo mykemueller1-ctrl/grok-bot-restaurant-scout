@@ -1,5 +1,5 @@
 {
-  "version": "1.37.0",
+  "version": "1.38.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -721,9 +721,73 @@
       "sources": [
         "https://www.limelightpayments.com/clover-for-restaurants"
       ]
+    },
+    {
+      "name": "Uber Webshop",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free direct OO via restaurant website/social into Uber delivery; Marketplace still ~20–30% (Lite raised Mar 2026)",
+      "memory": "Uber Eats Manager + Webshop",
+      "edge": "Marketplace vendor 0% direct twin of DoorDash OO — dual-run KEEP teach",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://merchants.ubereats.com/us/en/services/online-ordering"
+      ]
+    },
+    {
+      "name": "Grubhub Direct / Connect",
+      "lane": "vertical_gtm",
+      "stack": "Direct: commission-free branded ordering site (Marketplace partner). Connect: flat-fee driver fulfillment without Marketplace contract",
+      "memory": "Grubhub merchant portal",
+      "edge": "Third major marketplace 0% direct / flat fulfillment peer",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://get.grubhub.com/products/",
+        "https://get.grubhub.com/products/grubhub-connect/"
+      ]
+    },
+    {
+      "name": "Olo Network",
+      "lane": "vertical_gtm",
+      "stack": "Second-party consumer ordering app (late 2026) on Olo Accounts (~40M guests); 0% commission; restaurants own guest data; Dispatch fulfillment partners",
+      "memory": "Olo Accounts + Network",
+      "edge": "Enterprise/chain discovery without Marketplace rent — watch; not TikTok Shop-native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.fsrmagazine.com/feature/olo-launches-new-restaurant-ordering-app",
+        "https://foodondemand.com/03042026/olo-debuts-its-first-consumer-digital-ordering-app"
+      ]
+    },
+    {
+      "name": "Menusso",
+      "lane": "vertical_gtm",
+      "stack": "Zero-commission branded restaurant app (US/Miami) on flat subscription; DoorDash-powered delivery option",
+      "memory": "Branded app guests",
+      "edge": "Branded-app KEEP peer — not shoppable TikTok/IG cart",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://menusso.com/us/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Uber Webshop + Grubhub Direct marketplace_direct_zero widen",
+      "lane": "vertical_gtm",
+      "why": "All major marketplaces pitch 0% direct; strong_keep 15",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Olo Network second-party 0% commission app",
+      "lane": "vertical_gtm",
+      "why": "Discovery+order without Marketplace rent; restaurant-owned guests; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "Menusso zero-commission branded restaurant app",
+      "lane": "vertical_gtm",
+      "why": "Flat-sub branded app KEEP peer (Miami/US); watch only",
+      "verdict": "watch"
+    },
     {
       "item": "DoorDash Online Ordering 0% direct KEEP signal",
       "lane": "vertical_gtm",

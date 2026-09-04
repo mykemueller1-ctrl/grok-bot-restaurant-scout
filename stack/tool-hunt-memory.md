@@ -264,3 +264,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted marketplace_direct_zero KEEP signal (DoorDash OO 0% direct vs Marketplace 15–30%) + pain-scan-doordash-online-ordering.json (strong_keep 14).
 - Watched Restolabs, MenuForma, Clover Restaurant OO (POS lock-in note). Skip labor modules.
 - Ledger v1.37.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Uber Webshop + Grubhub Direct + Olo/Menusso)
+
+- Widened marketplace_direct_zero for Uber Webshop + Grubhub Direct (strong_keep 15).
+- Noted Uber Marketplace Lite ~20% after Mar 2026 hike.
+- Watched Olo Network (second-party 0% commission app) + Menusso branded app.
+- Ledger v1.38.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

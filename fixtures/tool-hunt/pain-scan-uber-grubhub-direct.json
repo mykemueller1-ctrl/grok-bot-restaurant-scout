@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "COMPOSIO_SEARCH_WEB", "scripts/score-marketplace-keep.mjs"],
+  "query": "Uber Webshop + Grubhub Direct 0% commission direct vs marketplace rent",
+  "hits": [
+    {
+      "url": "https://merchants.ubereats.com/us/en/services/online-ordering",
+      "posted_at": "2026-09-04",
+      "handle": "uber_webshop",
+      "snippet": "Restaurant owners: Uber Webshop is commission-free on direct website/social orders (processing ~2.5%+$0.29) while Uber Eats Marketplace still takes 20-30% after March 2026 hikes. Grubhub Direct also skips marketing commissions on branded sites. Dual-run discovery then shift KEEP guests — or Never86 buy-now.",
+      "pain_id": "uber_grubhub_direct_zero",
+      "score": 95,
+      "never86_angle": "marketplace_direct_zero now covers Uber Webshop + Grubhub Direct alongside DoorDash OO — teach all three 0% directs vs Marketplace %"
+    }
+  ],
+  "notes": "Sources: Uber Webshop merchants page, Grubhub Direct/Connect product pages, ChowNow/Restolabs fee guides via Composio. Bright Data still 401. Skip forecasting."
+}

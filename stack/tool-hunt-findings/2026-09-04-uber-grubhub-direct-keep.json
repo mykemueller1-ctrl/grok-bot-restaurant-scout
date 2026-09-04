@@ -1,0 +1,21 @@
+{
+  "finding_id": "uber-webshop-grubhub-direct-keep-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Uber Webshop + Grubhub Direct → widen marketplace_direct_zero",
+  "vendor_or_project": "Uber Eats / Grubhub",
+  "urls": [
+    "https://merchants.ubereats.com/us/en/services/online-ordering",
+    "https://get.grubhub.com/products/",
+    "https://about.grubhub.com/news/grubhub-unveils-grubhub-direct-a-commission-free-platform-to-help-restaurants-reach-loyal-diners-and-build-their-brands-online/"
+  ],
+  "what_it_does": "Uber Webshop: commission-free direct OO into Uber delivery network. Grubhub Direct: commission-free branded ordering site (Marketplace partner). Grubhub Connect: flat-fee fulfillment without Marketplace contract. Uber Marketplace Lite raised to ~20% (Mar 2026) with Uber One surcharge paths to ~30%.",
+  "how_competitors_use_it": "All major marketplaces now pitch dual-run: discovery on app, KEEP on their 0% direct product.",
+  "what_we_use_today": "marketplace_direct_zero widened beyond DoorDash OO; pain-scan-uber-grubhub-direct.json",
+  "gap": "Teach multi-marketplace dual-run KEEP$ vs Never86 buy-now — Mem0 still blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "marketplace_direct_zero now matches Uber Webshop and Grubhub Direct; strong_keep 15.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

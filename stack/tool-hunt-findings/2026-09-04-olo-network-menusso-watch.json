@@ -1,0 +1,21 @@
+{
+  "finding_id": "olo-network-menusso-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Watch Olo Network (second-party 0% commission) + Menusso",
+  "vendor_or_project": "Olo / Menusso",
+  "urls": [
+    "https://www.fsrmagazine.com/feature/olo-launches-new-restaurant-ordering-app",
+    "https://foodondemand.com/03042026/olo-debuts-its-first-consumer-digital-ordering-app",
+    "https://menusso.com/us/"
+  ],
+  "what_it_does": "Olo Network / Olo App (late 2026): 'second-party' discovery marketplace with 0% commission and restaurant-owned guest data (~40M Olo Accounts). Menusso: zero-commission branded restaurant app (Miami/US) with DoorDash-powered delivery on flat subscription.",
+  "how_competitors_use_it": "Olo sits between first-party apps and DoorDash/Uber — discovery without Marketplace rent. Menusso is branded-app KEEP peer.",
+  "what_we_use_today": "vertical-rival-watch; Never86 stays TikTok/IG shoppable buy-now + taught pain leads",
+  "gap": "Watch only — Olo is enterprise/chain-skewed; skip any labor modules",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Olo Network is a material second-party KEEP peer to track; Menusso is another branded-app zero-commission watch.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}
