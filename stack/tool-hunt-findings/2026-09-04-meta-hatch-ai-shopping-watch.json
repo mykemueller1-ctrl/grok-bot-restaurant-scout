@@ -1,0 +1,21 @@
+{
+  "finding_id": "meta-hatch-ai-shopping-agent-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Meta Hatch — Instagram AI shopping agent (TikTok Shop rival)",
+  "vendor_or_project": "Meta",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Reports: Meta Hatch agentic shopping on Instagram (Muse Spark), Q4 2026 public target — browse/compare/checkout in-app or to brand sites. Competes with TikTok Shop; hybrid after native checkout sunset. Watch vs Never86 in-app Shop. Do NOT inflate meta_order_food_peer_count.",
+  "what_it_does": "AI agent completes Instagram shopping tasks (cart/checkout) from Reels/feed discovery.",
+  "gap": "GTM skills should watch Hatch as platform agentic rival when pitching Shop vs Meta/TikTok Shop.",
+  "pivot_speed": "weeks",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://stellagent.ai/insights/meta-hatch-instagram-ai-shopping-agent",
+    "https://www.emarketer.com/content/meta-readies-ai-shopping-agents-instagram-rival-tiktok-shop",
+    "https://techcrunch.com/2026/03/25/meta-turns-to-ai-to-make-shopping-easier-on-instagram-and-facebook/"
+  ],
+  "never86_wedge": "Owned Shop buy-now vs Meta-controlled agent checkout",
+  "not_this": "Not Meta Order Food FBE peer. Not fee dogfood. Not forecasting."
+}

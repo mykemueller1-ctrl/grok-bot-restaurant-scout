@@ -872,3 +872,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched WaveOrder WA menu / IG bio store (0% commission). Finding: `2026-09-04-waveorder-whatsapp-ig-bio.json`.
 - Adopted Meta Shops native-checkout sunset → Shop wedge teach (not FBE peer inflate). Finding: `2026-09-04-meta-checkout-sunset-shop-wedge.json`.
 - Ledger v1.92.41. Auth still blocked.
+
+### 2026-09-04 (Franklin pass-2 + Meta Hatch)
+
+- Pass-2: Franklin preorder + Shopify merch + Goldbelly still live (Yelp 6,477). Finding: `2026-09-04-franklin-buy-now-pass2.json`.
+- Watched Meta Hatch Instagram AI shopping agent (Q4 2026 reports) — not FBE peer. Finding: `2026-09-04-meta-hatch-ai-shopping-watch.json`.
+- Instagram reconnect: `lk_dFKHiuk7Pedt` (~10 min). Ledger v1.92.42. Auth still blocked.

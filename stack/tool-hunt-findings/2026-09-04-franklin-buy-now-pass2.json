@@ -1,0 +1,24 @@
+{
+  "finding_id": "franklin-buy-now-pass2-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Franklin Barbecue buy_now_path pass-2 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 2 (2026-09-04T20:15Z): Yelp still 6,477 / 4.5★. Preorder How-it-works live; Shopify shop merch/sauces live; Goldbelly ship CTA on shop. Confirms ATX rails first_party_preorder + shopify_merch + goldbelly_ship. Positive love→buy-now calibration (Shop closes feed love into SKU packs).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://preorder.franklinbbq.com/information",
+    "https://shop.franklinbbq.com/",
+    "https://franklinbbq.com/",
+    "https://www.goldbelly.com/restaurants/franklin-barbecue",
+    "fixtures/tool-hunt/austin-love-brands.json"
+  ],
+  "live_yelp": {
+    "review_count": 6477,
+    "rating": 4.5,
+    "phone": "+15126531187"
+  },
+  "rails_confirmed": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+  "tools_used": ["YELP_SEARCH_BUSINESSES", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a fee dogfood. Not forecasting."
+}
