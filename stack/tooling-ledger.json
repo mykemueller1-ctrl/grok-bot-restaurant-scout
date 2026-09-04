@@ -1,5 +1,5 @@
 {
-  "version": "1.92.42",
+  "version": "1.92.43",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Husk Nashville buy_now_path pass-2 (Toast/Resy)",
+      "lane": "vertical_gtm",
+      "why": "Resy + Toast gift-card still live (Yelp 1987) \u2014 Toast/Resy webview cliff teach; Shop wedge",
+      "verdict": "adopt"
+    },
+    {
+      "item": "TableQR restaurant link-in-bio hub",
+      "lane": "vertical_gtm",
+      "why": "Menu-hero bio page with order/reserve/delivery CTAs \u2014 LinkScale peer; may still route marketplace",
+      "verdict": "watch"
+    },
     {
       "item": "Franklin buy_now_path pass-2 live re-verify",
       "lane": "vertical_gtm",

@@ -878,3 +878,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Pass-2: Franklin preorder + Shopify merch + Goldbelly still live (Yelp 6,477). Finding: `2026-09-04-franklin-buy-now-pass2.json`.
 - Watched Meta Hatch Instagram AI shopping agent (Q4 2026 reports) — not FBE peer. Finding: `2026-09-04-meta-hatch-ai-shopping-watch.json`.
 - Instagram reconnect: `lk_dFKHiuk7Pedt` (~10 min). Ledger v1.92.42. Auth still blocked.
+
+### 2026-09-04 (Husk pass-2 + TableQR)
+
+- Pass-2: Husk Resy + Toast gift-card still live (Yelp 1,987) — Toast/Resy webview cliff teach. Finding: `2026-09-04-husk-buy-now-pass2.json`.
+- Watched TableQR restaurant bio hub (LinkScale peer). Finding: `2026-09-04-tableqr-restaurant-bio.json`.
+- Ledger v1.92.43. Auth still blocked.

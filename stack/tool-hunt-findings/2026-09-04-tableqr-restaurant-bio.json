@@ -1,0 +1,19 @@
+{
+  "finding_id": "tableqr-restaurant-bio-hub-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TableQR — restaurant link-in-bio (menu + order + reserve)",
+  "vendor_or_project": "TableQR",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "tableqr.co: hospitality bio page with menu hero + ordering/reservations/delivery-app CTAs — LinkScale-class rival. Can still route marketplace OO. Watch vs Never86 in-app Shop (and linkboo/NullMark escape when bio destinations are Toast/Resy).",
+  "what_it_does": "Single branded bio landing for menu, order, book, reviews, hours across IG/TikTok/GBP.",
+  "gap": "Name beside LinkScale when love brands use restaurant bio hubs.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://tableqr.co/features/link-in-bio/"
+  ],
+  "never86_wedge": "in-app Shop buy-now vs bio hub that may still hand off to Toast/Resy/marketplaces",
+  "not_this": "Not a fee dogfood. Not Meta FBE peer. Not forecasting. Menujo is display-only (skip as buy-now rival)."
+}
