@@ -80,6 +80,7 @@ const routine = loadJson(routinePath);
 if (routine.name !== "tool-hunt-weekly") fail("routine name mismatch");
 const skills = (routine.steps || []).map((s) => s.skill).filter(Boolean);
 for (const skill of [
+  "auth-gap-check",
   "tool-frontier-scan",
   "vertical-rival-watch",
   "memory-skills-audit",

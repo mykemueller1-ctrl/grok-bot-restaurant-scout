@@ -1,0 +1,7 @@
+{
+  "name": "context",
+  "transport": "http",
+  "url": "https://mcp.context.dev/mcp",
+  "auth": "oauth_desktop_only",
+  "notes": "Context.dev MCP is OAuth-only (no API-key MCP path). Authenticate in Cursor Desktop Settings → Tools & MCP. Docs: https://docs.context.dev/install-mcp. Composio SEARCH_WEB is Active research fallback until connected."
+}

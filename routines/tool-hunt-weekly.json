@@ -5,7 +5,8 @@
   "description": "Beyond the Hunt — weekly best-in-vertical scan (social commerce GTM + pain→sales-lead + Cursor memory/skills). NOT sales/labor forecasting research. Updates tooling ledger and briefs Myke.",
   "agent": "agent/tool-hunt/beyond-the-hunt.json",
   "steps": [
-    { "skill": "tool-frontier-scan" },
+    { "skill": "auth-gap-check" },
+    { "skill": "tool-frontier-scan", "depends_on": "auth-gap-check" },
     { "skill": "vertical-rival-watch", "depends_on": "tool-frontier-scan" },
     { "skill": "memory-skills-audit", "depends_on": "tool-frontier-scan" },
     { "skill": "stack-vs-competitors", "depends_on": ["tool-frontier-scan", "vertical-rival-watch"] },

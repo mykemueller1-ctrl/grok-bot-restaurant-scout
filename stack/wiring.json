@@ -38,6 +38,11 @@
       "url": "https://mcp.mem0.ai/mcp",
       "token_env": "MEM0_API_KEY",
       "notes": "Optional headless auth via API key; desktop OAuth also OK"
+    },
+    "context": {
+      "file": "mcp/context.json",
+      "url": "https://mcp.context.dev/mcp",
+      "auth": "oauth_desktop_only"
     }
   },
   "deploy": {

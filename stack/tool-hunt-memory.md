@@ -53,3 +53,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Seekadu added: Instagram DM→reservations — watch only; not our SKU close.
 - Context confirmed OAuth-only for MCP; Mem0 still OAuth or MEM0_API_KEY.
 - Auth still blocked in this cloud run.
+
+### 2026-09-04 (auth UX)
+
+- Added `.cursor/mcp.json` + `mcp/context.json` so desktop Auth is one click from the repo.
+- Weekly routine starts with `auth-gap-check` + `scripts/check-auth-gaps.mjs`.
+- Mem0/Context still needsAuth in cloud; MEM0_API_KEY still missing.

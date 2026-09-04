@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mem0": {
+      "url": "https://mcp.mem0.ai/mcp"
+    },
+    "context": {
+      "url": "https://mcp.context.dev/mcp"
+    }
+  }
+}
