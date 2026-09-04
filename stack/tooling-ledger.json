@@ -1217,6 +1217,12 @@
   ],
   "watchlist": [
     {
+      "item": "lead-shop-enrich + sales-lead-form marked hunt-critical for Sync Skills",
+      "lane": "skills_knowledge",
+      "why": "print-sync-skills-checklist + CURSOR-SYNC-SKILLS now require pain→sales enrich skills; TOOL-HUNT documents Active-without-Mem0 paths",
+      "verdict": "adopt"
+    },
+    {
       "item": "Status printer surfaces 5-market phone enrich Active",
       "lane": "cursor_agents",
       "why": "print-beyond-the-hunt-status.mjs pain_sales_enrich.phone_enrich_markets=5 — operator sees pain→sales path without Apollo",
@@ -2450,5 +2456,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:22:00Z"
+  "updated_at": "2026-09-04T19:25:00Z"
 }
