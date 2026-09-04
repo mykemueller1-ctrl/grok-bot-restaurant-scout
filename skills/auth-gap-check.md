@@ -2,13 +2,12 @@
 
 **Trigger:** first step of `tool-hunt-weekly`, or any Beyond the Hunt run.
 
-**Goal:** Fail soft and loud if Mem0 / Context are still closed — do not pretend the memory/research stack is complete.
+**Goal:** Prove Mem0 + Context are actually usable before claiming the stack is ready.
 
 1. Run `node scripts/check-auth-gaps.mjs`.
-2. If `MEM0_API_KEY` is set, also run `node scripts/mem0-smoke.mjs` (must exit 0).
-3. Probe Mem0 / Context MCP namespaces when available; record `needsAuth` vs ready.
-4. Append a one-line status to `stack/tool-hunt-memory.md`.
-5. Continue the hunt using Composio / git memory fallbacks, but keep ledger `open_gaps` accurate.
-6. Brief Myke with any remaining desktop unlocks from `docs/DESKTOP-UNLOCKS.md`.
+2. Want `STATUS: READY` (both `MEM0_API_KEY` smoke + `CONTEXT_DEV_API_KEY` search OK), **or** confirm desktop OAuth MCP tools are live in-session.
+3. Append one-line status to `stack/tool-hunt-memory.md`.
+4. If blocked: continue hunt with Composio fallbacks, keep `open_gaps` accurate, brief Myke with `docs/DESKTOP-UNLOCKS.md`.
+5. Never claim auth closed without smoke evidence.
 
-**Done when:** status logged; hunt may continue blocked but never claims auth is closed without evidence.
+**Done when:** status logged with evidence.

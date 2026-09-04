@@ -1,48 +1,39 @@
 # Desktop unlocks — Beyond the Hunt
 
-Cloud agents **cannot** complete interactive MCP OAuth. These unlocks close the goal’s Mem0/Context auth gaps.
+Close **Mem0** + **Context** so the best-in-vertical hunt can run fully in cloud.
 
-Project MCP stubs (no secrets): **`.cursor/mcp.json`** — open this repo in Cursor Desktop, then Authenticate each server under Settings → Tools & MCP.
+Project MCP stubs: **`.cursor/mcp.json`** (`mem0` + `context` URLs).
 
 ## 1. Mem0 (required)
 
-**Option A — Desktop OAuth**  
-Settings → MCP → `mem0` → Authenticate (URL `https://mcp.mem0.ai/mcp`)
+| Path | How |
+| --- | --- |
+| Desktop OAuth | Settings → MCP → mem0 → Authenticate (`https://mcp.mem0.ai/mcp`) |
+| Headless / cloud | `MEM0_API_KEY` (`m0-…`) from https://app.mem0.ai/dashboard/api-keys → cloud/Codex secrets |
 
-**Option B — API key (headless / cloud)**  
-1. https://app.mem0.ai/dashboard/api-keys → `m0-…`  
-2. Add `MEM0_API_KEY` to Cursor cloud environment secrets / Codex (never chat)  
-3. `MEM0_API_KEY=… node scripts/mem0-smoke.mjs` must exit 0
+Verify: `node scripts/mem0-smoke.mjs`
 
-## 2. Context.dev (required — OAuth only)
+## 2. Context (required)
 
-No API-key MCP path. Desktop only:
+| Path | How |
+| --- | --- |
+| Desktop OAuth (MCP tools) | Settings → MCP → context → Authenticate (`https://mcp.context.dev/mcp`) |
+| Headless / cloud (REST research) | `CONTEXT_DEV_API_KEY` (`ctxt_secret_…`) from https://context.dev dashboard → secrets |
 
-Settings → Tools & MCP → `context` → Authenticate  
-URL: `https://mcp.context.dev/mcp`  
-Docs: https://docs.context.dev/install-mcp
+Verify: `node scripts/context-search.mjs "Owner.com restaurant AI"`
 
-Until then, Composio `COMPOSIO_SEARCH_WEB` is the Active research fallback.
+Until keys land, Composio `COMPOSIO_SEARCH_WEB` stays the Active research fallback.
 
 ## 3. Cursor Agents
 
 - Sync Skills for Cloud Agents = on  
-- Automation at https://cursor.com/automations with memories ON  
-  Prompt: `routines/tool-hunt-weekly.json` → `cursor_automation.prompt_hint`
+- Automation + memories: https://cursor.com/automations  
+  Prompt in `routines/tool-hunt-weekly.json`
 
-## 4. Optional
-
-| Item | Why |
-| --- | --- |
-| `PINECONE_API_KEY` | Vector knowledge |
-| Instagram / TikTok Composio | Social read for morning-scan |
-| Apollo / Clay | Extra enrich — Yelp/Maps already adopted |
-
-## Verify
+## Verify both
 
 ```bash
-node scripts/check-auth-gaps.mjs
-node scripts/mem0-smoke.mjs   # needs MEM0_API_KEY or will exit 2
+node scripts/check-auth-gaps.mjs   # want STATUS: READY
 ```
 
-Reply in the cloud agent thread after unlocks so we can re-verify and mark the goal complete.
+Reply in this cloud agent when secrets/OAuth are done.

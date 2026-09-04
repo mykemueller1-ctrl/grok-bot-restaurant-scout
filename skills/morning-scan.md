@@ -15,7 +15,7 @@
    - brand / kitchen name if identifiable
    - source URL, score (0–100)
    - Never86 fit note: shoppable SKU potential vs marketplace-only vibe
-   - Rival wedge check: would Owner/Trenz-style “first-party marketing” or generic AI menu-video (PlateAI/Flik) own this better, or does **buy-now + cult proof** win?
+   - Rival wedge check: would Owner/Trenz first-party marketing, TextOrder DM/SMS ordering, Seekadu reservation DMs, or generic AI menu-video (PlateAI/Flik) own this better — or does **shoppable buy-now + cult proof** win?
 4. Write results to `CreatorLead` via the commerce engine MCP.
 5. Output a ranked list framed as **onboarding targets**, not content ideas alone.
 

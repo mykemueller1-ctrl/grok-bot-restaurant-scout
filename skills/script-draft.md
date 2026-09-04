@@ -11,7 +11,7 @@
    - Anti-rent beat: buy without marketplace tax — Never86 buy-now / shop in bio
    - Price or scarcity
    - CTA: "tap the bag" / "shop in bio" linking Never86 / TikTok Shop product
-3. Optionally draft a short owner-facing outreach blurb: why this brand, what Never86 does vs marketplace rent, vs Owner-style email/SMS OS, vs Seekadu-style reservation DMs, and vs content-only AI Reels tools that never close the sale.
+3. Optionally draft a short owner-facing outreach blurb: why this brand, what Never86 does vs marketplace rent, vs Owner-style email/SMS OS, vs Seekadu reservation DMs, vs TextOrder DM/SMS chat ordering, and vs content-only AI Reels tools that never close a shoppable sale.
 4. Save as `ContentDraft` with status PENDING_APPROVAL.
 5. Ping owner for approval. On approve → status APPROVED → hand to commerce engine to create product draft.
 

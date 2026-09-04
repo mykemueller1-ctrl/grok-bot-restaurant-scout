@@ -65,3 +65,15 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Verified Composio+X pain scan: Toast fee lock-in + DoorDash ~$188K commission quit (Omaha) → Never86 anti-rent sales angle.
 - Saved fixtures/tool-hunt/pain-scan-toast-doordash.json + chicago-love-brands.json.
 - Auth gaps unchanged (Mem0/Context needsAuth).
+
+### 2026-09-04 (context headless path)
+
+- Added scripts/context-search.mjs for CONTEXT_DEV_API_KEY REST research (MCP Context remains OAuth-desktop-only; numResults≥10).
+- check-auth-gaps now requires both Mem0 + Context smokes for STATUS: READY.
+- Keys still missing in this cloud run.
+
+### 2026-09-04 (TextOrder rival)
+
+- Watched TextOrder (mytextorder.com): AI order-taking in TikTok/IG/FB DM + SMS/WhatsApp — messaging close, not Shop rails.
+- Finding: stack/tool-hunt-findings/2026-09-04-textorder-dm-ordering.json. Skills script-draft + morning-scan contrast updated.
+- Auth still BLOCKED (Mem0/Context needsAuth; secrets unset).

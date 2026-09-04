@@ -1,0 +1,20 @@
+{
+  "finding_id": "textorder-social-dm-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TextOrder — social DM / SMS AI ordering",
+  "vendor_or_project": "TextOrder (mytextorder.com)",
+  "urls": [
+    "https://mytextorder.com/features/social-media-ordering",
+    "https://mytextorder.com/"
+  ],
+  "what_it_does": "AI order-taking inside TikTok DM, Instagram DM, Facebook Messenger, SMS, WhatsApp, and web chat — scroll → DM → paid order without marketplace apps.",
+  "how_competitors_use_it": "Independents close viral demand in-channel (anti-DoorDash commission pitch) via messaging, not TikTok Shop / shoppable video rails.",
+  "what_we_use_today": "Never86 love→buy-now on TikTok/IG shop rails + script-draft; Composio social connect still blocked for IG/TikTok read.",
+  "gap": "TextOrder owns DM/SMS conversational close; Never86 owns shoppable buy-now + pain→sales. Do not pivot scripts to reservation/DM-chatbots — keep SKU purchase path.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Strong social→order rival on messaging channels. Watch positioning vs Never86 buy-now; use as competitive contrast in owner outreach, not as a product fork.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

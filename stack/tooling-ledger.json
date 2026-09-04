@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.8.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -29,8 +29,8 @@
     "memory": {
       "primary": "teach_memory on pain/report agents + VendorLearnedBank",
       "cursor_automation_memories": "preferred for Beyond the Hunt cross-run learning",
-      "mem0_mcp": "needs desktop auth (cloud cannot mcp_auth)",
-      "context_dev": "needs desktop auth",
+      "mem0_mcp": "needsAuth or MEM0_API_KEY (scripts/mem0-smoke.mjs)",
+      "context_dev": "MCP OAuth-desktop-only; headless CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs",
       "pinecone": "MCP present; configure only if vector search needed for vertical knowledge",
       "posthog_scratchpad": "signals-scout scratchpad for product analytics memory"
     },
@@ -79,7 +79,12 @@
     },
     "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (verified fixtures/tool-hunt/pain-scan-toast-doordash.json)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json"
+    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json",
+    "context": {
+      "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
+      "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
+      "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
+    }
   },
   "competitors": [
     {
@@ -218,6 +223,18 @@
         "https://www.seekadu.com/ai-social-media/restaurants",
         "https://www.seekadu.com/ai-booking-system/restaurants"
       ]
+    },
+    {
+      "name": "TextOrder",
+      "lane": "vertical_gtm",
+      "stack": "AI ordering via TikTok/IG/FB DM + SMS + WhatsApp + web chat (scroll\u2192DM\u2192paid order)",
+      "memory": "In-thread reorder + promo retargeting",
+      "edge": "Owns conversational messaging close; Never86 wedge stays shoppable buy-now / TikTok Shop rails, not DM chatbot fork",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://mytextorder.com/features/social-media-ordering",
+        "https://mytextorder.com/"
+      ]
     }
   ],
   "watchlist": [
@@ -286,13 +303,25 @@
       "lane": "vertical_gtm",
       "why": "Social conversion rival; keep Never86 on buy-now not table turns",
       "verdict": "watch"
+    },
+    {
+      "item": "TextOrder social DM/SMS AI ordering",
+      "lane": "vertical_gtm",
+      "why": "Messaging-channel order close competes for same viral demand; contrast in outreach vs buy-now rails",
+      "verdict": "watch"
+    },
+    {
+      "item": "Context.dev headless REST (CONTEXT_DEV_API_KEY)",
+      "lane": "mcp_connectors",
+      "why": "Cloud research path when MCP OAuth unavailable — scripts/context-search.mjs",
+      "verdict": "needs_auth"
     }
   ],
   "open_gaps": [
     {
       "id": "desktop-auth-mem0-context",
-      "gap": "Mem0 + Context need Cursor desktop authentication (cloud mcp_auth unavailable)",
-      "action": "Mem0: desktop OAuth OR MEM0_API_KEY. Context: desktop OAuth only (https://mcp.context.dev/mcp). See docs/DESKTOP-UNLOCKS.md",
+      "gap": "Mem0 + Context not verified in this environment",
+      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/check-auth-gaps.mjs \u2192 STATUS: READY",
       "priority": 1
     },
     {
