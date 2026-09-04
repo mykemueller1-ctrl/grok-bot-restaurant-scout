@@ -1,0 +1,79 @@
+{
+  "dogfood_id": "pain-to-sales-chownow-fee-girl-goat-2026-09-04",
+  "purpose": "ChowNow optional $0.99 service charge (50/50) + 7.5% Support Local Fee on App \u2192 SalesLead DRAFT for Girl & The Goat (Chicago). Contrasts guest_paid + per_order / first_party_pct vs Never86 Shop ~6%. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "ChowNow optional $0.99 service charge per order (50/50 split)",
+    "first_party_pct_fee": "ChowNow Support Local Fee 7.5% of subtotal on App / eat.chownow.com",
+    "guest_paid_tech_fee": "ChowNow guest-facing $0.99 / 7.5% fees",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "chownow_099_service_charge",
+    "vendor_id": "chownow",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Girl & The Goat",
+      "city": "Chicago",
+      "market": "Chicago, IL",
+      "yelp_alias": "girl-and-the-goat-chicago",
+      "love_signal": "Stephanie Izard West Loop cult / UGC-heavy"
+    },
+    "complaint_summary": "Calibration: ChowNow pitches 0% restaurant commission while guests may pay an optional $0.99 service charge on site/app (50/50 split) and 7.5% Support Local Fee on ChowNow App orders. Girl & The Goat-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "first_party_pct_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "chownow",
+      "doordash",
+      "tiktok_shop",
+      "owner"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-chownow-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "chownow_099_service_charge",
+    "account_name": "Girl & The Goat",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Chicago",
+    "market": "Chicago, IL",
+    "complaint_thesis": "ChowNow markets 100% commission-free OO while diners can still pay a $0.99 service charge per order on website/branded app (50/50 split with ChowNow) and a 7.5% Support Local Fee on App / eat.chownow.com \u2014 guest-paid KEEP leak under a zero-commission claim. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. West Loop love already prints demand \u2014 close Shop buy-now, not ChowNow $0.99 guest service charges (or 7.5% Support Local Fee on App).",
+    "quotes": [
+      "ChowNow optional $0.99 service charge per order (50/50)",
+      "ChowNow Support Local Fee 7.5% of subtotal",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "ChowNow guest $0.99 / 7.5% fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + first_party_pct_fee + guest_paid_tech_fee + social_shop_fee teach: ChowNow guest fees are still platform rent on 'commission-free' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: West Loop love already prints demand \u2014 close Shop buy-now, not ChowNow $0.99 guest service charges (or 7.5% Support Local Fee on App).",
+    "sources": [
+      "https://get.chownow.com/restaurant-support/service-charge-frequently-asked-questions/",
+      "https://get.chownow.com/diner-support/does-chownow-charge-a-fee-for-diners/",
+      "fixtures/tool-hunt/pain-scan-chownow-guest-fee.json",
+      "https://www.yelp.com/biz/girl-and-the-goat-chicago"
+    ],
+    "confidence": 78,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 ChowNow $0.99 service charge + 7.5% Support Local Fee \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-chownow-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-girl-goat-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

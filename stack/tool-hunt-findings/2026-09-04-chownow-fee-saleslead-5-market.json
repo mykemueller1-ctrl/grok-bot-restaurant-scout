@@ -1,0 +1,14 @@
+{
+  "finding_id": "chownow-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChowNow $0.99 service charge + 7.5% Support Local Fee SalesLead dogfood",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "ChowNow guest fee SalesLead dogfoods; strong_keep 38 after first_party_pct_fee 7.5% widen.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://get.chownow.com/restaurant-support/service-charge-frequently-asked-questions/",
+    "https://get.chownow.com/diner-support/does-chownow-charge-a-fee-for-diners/",
+    "scripts/validate-chownow-fee-dogfood.mjs"
+  ]
+}

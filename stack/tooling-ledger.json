@@ -1,5 +1,5 @@
 {
-  "version": "1.68.0",
+  "version": "1.69.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -115,7 +115,8 @@
     "sauce_fee_dogfood_gate": "scripts/validate-sauce-fee-dogfood.mjs (Sauce under-$2/order guest fee / 0% commission \u2192 SalesLead \u22655 markets)",
     "velobite_fee_dogfood_gate": "scripts/validate-velobite-fee-dogfood.mjs (VeloBite Growth $0.75/order \u2192 SalesLead \u22655 markets)",
     "ginger_fee_dogfood_gate": "scripts/validate-ginger-fee-dogfood.mjs (Ginger $1/order guest platform fee \u2192 SalesLead \u22655 markets)",
-    "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15\u2013$1.99 \u2192 SalesLead \u22655 markets)"
+    "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15\u2013$1.99 \u2192 SalesLead \u22655 markets)",
+    "chownow_fee_dogfood_gate": "scripts/validate-chownow-fee-dogfood.mjs (ChowNow $0.99 service charge + 7.5% Support Local Fee \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -550,11 +551,13 @@
       "lane": "vertical_gtm",
       "stack": "Commission-free flat-fee direct ordering + diner data ownership + Discovery Network; dual-run with DoorDash",
       "memory": "Owned diner contact / order history for remarketing",
-      "edge": "Independent first-party KEEP peer \u2014 not TikTok Shop-native; contrast in sales/script",
+      "edge": "$0.99 guest service charge (50/50) + 7.5% Support Local Fee KEEP leak teach (dogfood chownow_fee_dogfoods=5); still lose on love\u2192buy-now + IG Checkout",
       "updated": "2026-09-04",
       "sources": [
         "https://get.chownow.com/blog/alternatives-to-doordash-for-getting-new-customers",
-        "https://get.chownow.com/blog/restaurant-marketing-reviews"
+        "https://get.chownow.com/blog/restaurant-marketing-reviews",
+        "https://get.chownow.com/restaurant-support/service-charge-frequently-asked-questions/",
+        "https://get.chownow.com/diner-support/does-chownow-charge-a-fee-for-diners/"
       ]
     },
     {
@@ -980,6 +983,12 @@
   ],
   "watchlist": [
     {
+      "item": "ChowNow $0.99 service charge + 7.5% Support Local Fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN optional $0.99 site/app service charge (50/50) + 7.5% Support Local Fee on App \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened for 7.5%; validate-chownow-fee-dogfood \u22655; strong_keep 38",
+      "verdict": "adopt"
+    },
+    {
       "item": "Ritual guest service fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN Ritual $0.15\u2013$0.99 (<$30) / $1.99 (>$30) guest service fee \u2192 SalesLead vs Shop ~6%; validate-ritual-fee-dogfood \u22655; strong_keep 36. Distinct from Ritual OO $69/mo product.",
@@ -1162,8 +1171,8 @@
     {
       "item": "ChowNow flat-fee OO pricing refresh (~$149/mo)",
       "lane": "vertical_gtm",
-      "why": "Commission-free direct peer with optional marketing/setup; not Shop-native \u2014 watch only",
-      "verdict": "watch"
+      "why": "Promoted: $0.99 service charge + 7.5% Support Local Fee primary docs \u2192 5-market SalesLead dogfood; flat ~$149/mo still secondary",
+      "verdict": "adopt"
     },
     {
       "item": "BentoBox QR Order & Pay $0.99 diner/guest fee KEEP pain-scan",
@@ -1492,8 +1501,8 @@
     {
       "item": "ChowNow commission-free first-party OS",
       "lane": "vertical_gtm",
-      "why": "Independent KEEP peer next to Lunchbox/OPA!/Outbites; watch only",
-      "verdict": "watch"
+      "why": "Promoted: $0.99 service charge + 7.5% Support Local Fee primary docs \u2192 5-market SalesLead dogfood; flat ~$149/mo still secondary",
+      "verdict": "adopt"
     },
     {
       "item": "Husk Nashville buy-now script + catalog sandbox",
@@ -1889,5 +1898,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:15:00Z"
+  "updated_at": "2026-09-04T19:25:00Z"
 }

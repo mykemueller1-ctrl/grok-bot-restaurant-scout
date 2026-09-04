@@ -461,6 +461,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-scan-ritual-guest-fee.json → strong_keep 36; pain-to-sales-ritual-fee-* ×5; validate-ritual-fee-dogfood ≥5 (`ritual_fee_dogfoods`).
 - Watched Toast ~$0.49 OO guest fee (secondary 2026 cites; $0.99 removed 2023). Ledger v1.68.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (ChowNow $0.99 + 7.5% Support Local Fee SalesLead)
+
+- ChowNow optional **$0.99 service charge** on website/branded app (50/50 split) + **7.5% Support Local Fee** on App / eat.chownow.com ([service-charge FAQ](https://get.chownow.com/restaurant-support/service-charge-frequently-asked-questions/), [diner fee](https://get.chownow.com/diner-support/does-chownow-charge-a-fee-for-diners/)).
+- Widened `first_party_pct_fee` for 7.5% / Support Local Fee; pain-scan-chownow-guest-fee.json (2 hits) → strong_keep 38; pain-to-sales-chownow-fee-* ×5; validate-chownow-fee-dogfood ≥5 (`chownow_fee_dogfoods`).
+- Ledger v1.69.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+
 
 
 
