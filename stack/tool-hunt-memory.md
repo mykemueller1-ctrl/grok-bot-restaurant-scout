@@ -103,3 +103,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added scripts/mem0-import-tool-hunt-memory.mjs — runs the moment MEM0_API_KEY lands.
 - Dogfood buy-now script: fixtures/tool-hunt/script-draft-franklin-buy-now.json (PENDING_APPROVAL).
 - Auth still blocked (Mem0/Context).
+
+### 2026-09-04 (Outbites/Orderitto + IG reconnect)
+
+- Watched Outbites ($1/order first-party KEEP) and Orderitto (flat-fee zero-commission apps).
+- Re-initiated Instagram Composio: https://connect.composio.dev/link/lk_xiDg14zPJDHd (expires ~10 min).
+- Auth Mem0/Context still BLOCKED.

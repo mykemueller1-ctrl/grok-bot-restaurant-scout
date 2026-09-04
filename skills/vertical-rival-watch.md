@@ -5,7 +5,7 @@
 **Goal:** Track restaurant **social-commerce / anti-marketplace / pain-GTM** rivals — adopt patterns that sharpen Never86, skip forecasting suites.
 
 ### Watch set (seed)
-Owner.com · Trenz · BrandPal · CreatOK · Restomas · Feedia · Straunt · Zayos · PlateAI · Flik AI · Seekadu · TextOrder · Menami · Klikit (APAC TikTok Shop POS)
+Owner.com · Trenz · BrandPal · CreatOK · Restomas · Feedia · Straunt · Zayos · PlateAI · Flik AI · Seekadu · TextOrder · Menami · Klikit (APAC) · Outbites · Orderitto
 
 ### Steps
 1. Read `stack/tool-hunt-memory.md` + `stack/tooling-ledger.json` competitors.

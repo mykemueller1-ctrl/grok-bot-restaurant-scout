@@ -1,5 +1,5 @@
 {
-  "version": "1.12.0",
+  "version": "1.13.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -263,9 +263,46 @@
         "https://klikit.io/en/integrations/tiktok-shop",
         "https://klikit.io/en/learn/tiktok-shop-restaurant-guide-2026"
       ]
+    },
+    {
+      "name": "Outbites",
+      "lane": "vertical_gtm",
+      "stack": "First-party branded ordering + SMS/email/loyalty; $1/fulfilled order (no % commission); dual-run off DoorDash playbook",
+      "memory": "Owned customer list / retention campaigns",
+      "edge": "Strong KEEP / anti-marketplace peer on web/QR/app — not TikTok Shop-native; contrast in sales forms",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://outbites.com/",
+        "https://outbites.com/blog/outbites-vs-doordash-comparison-2026/",
+        "https://outbites.com/blog/move-off-doordash-uber-eats-direct-ordering-playbook/"
+      ]
+    },
+    {
+      "name": "Orderitto",
+      "lane": "vertical_gtm",
+      "stack": "Zero-commission branded iOS/Android/web ordering; flat monthly plans from $149",
+      "memory": "Loyalty + analytics on owned orders",
+      "edge": "App-builder first-party OS; adjacent KEEP messaging, not social buy-now",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://orderitto.com/",
+        "https://orderitto.com/platform"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Outbites $1/order first-party KEEP rival",
+      "lane": "vertical_gtm",
+      "why": "Anti-DoorDash dual-run playbook + owned list; contrast vs Never86 social buy-now",
+      "verdict": "watch"
+    },
+    {
+      "item": "Orderitto flat-fee zero-commission apps",
+      "lane": "vertical_gtm",
+      "why": "Branded app OS KEEP messaging; watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Mem0 import of tool-hunt-memory.md",
       "lane": "memory",
@@ -420,8 +457,8 @@
     },
     {
       "id": "composio-instagram",
-      "gap": "Instagram Composio connection initiated but not Active",
-      "action": "Open the latest Connect Instagram link from the agent brief (expires ~10 min) or re-request",
+      "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
+      "action": "Open Connect Instagram link from latest agent brief (expires ~10 min) or re-request; Business/Creator account only",
       "priority": 2
     },
     {

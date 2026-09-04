@@ -17,7 +17,7 @@ Fill and save `SalesLead`:
 | `quotes` | raw |
 | `vendors_to_displace` | Toast, DoorDash, etc. |
 | `why_never86_now` | map pain → Never86 wedge (buy-now / social commerce / leave marketplace tax / stack pain) |
-| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Menami/TextOrder DM+direct-order agents, Seekadu reservations, or content-only AI Reels |
+| `suggested_angle` | 1 outreach angle (draft only) — contrast vs Owner email/SMS OS, Outbites/Orderitto first-party web-QR ordering, Menami/TextOrder DM agents, Seekadu reservations, or content-only AI Reels |
 | `sources` | URLs |
 | `confidence` | score + teach history |
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
