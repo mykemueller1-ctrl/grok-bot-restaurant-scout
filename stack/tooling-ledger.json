@@ -1,5 +1,5 @@
 {
-  "version": "1.92.26",
+  "version": "1.92.27",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -86,7 +86,7 @@
     "status_printer": "scripts/print-beyond-the-hunt-status.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee + brand_site_marketplace_leak)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔guest-fee↔otter-fee↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
@@ -1245,6 +1245,12 @@
   ],
   "watchlist": [
     {
+      "item": "brand_site_marketplace_leak KEEP signal (Michaels live proof)",
+      "lane": "vertical_gtm",
+      "why": "Official homepage still CTAs UberEats/DoorDash — love→buy-now teach; pain-scan + CLI/API scorer; strong_keep 64; NOT a fee dogfood",
+      "verdict": "adopt"
+    },
+    {
       "item": "Catalog-sync + social-shop dogfoods cite buy_now_path (5/5)",
       "lane": "skills_knowledge",
       "why": "Sandbox catalogs + pain-to-sales-social-shop carry live rails; Michaels brand-site UberEats/DoorDash leak is the smoking-gun SalesLead angle; validators enforce rails",
@@ -1433,7 +1439,7 @@
     {
       "item": "Fee catalog pause — Mem0/Context unlock next",
       "lane": "memory",
-      "why": "Operator: enough bad-fee context (strong_keep 63). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love→buy-now / Cursor tooling that the catalog does not already teach.",
+      "why": "Operator: enough bad-fee context (fee dogfoods paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach). Pause new fee dogfoods; close Mem0 + Context auth, import tool-hunt-memory, then resume only for love→buy-now / Cursor tooling that the catalog does not already teach.",
       "verdict": "watch"
     },
     {
@@ -2478,7 +2484,7 @@
   "open_gaps": [
     {
       "id": "fee-catalog-pause-auth-first",
-      "gap": "Fee KEEP catalog sufficient (strong_keep 63) — operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
+      "gap": "Fee KEEP catalog sufficient (paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach) — operator paused further fee dogfoods; remaining close is Mem0 + Context unlock then memory import",
       "action": "Do not expand fee dogfoods unless cite sharpens love→buy-now / Cursor memory-skills-MCP beyond catalog. Unlock MEM0_API_KEY + CONTEXT_DEV_API_KEY (or desktop OAuth). Verify: node scripts/unlock-beyond-the-hunt.mjs → exit 0, then import stack/tool-hunt-memory.md",
       "priority": 1
     },

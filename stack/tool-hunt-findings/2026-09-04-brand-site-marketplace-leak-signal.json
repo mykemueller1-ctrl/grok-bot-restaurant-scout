@@ -1,0 +1,24 @@
+{
+  "finding_id": "brand-site-marketplace-leak-signal-2026-09",
+  "lane": "vertical_gtm",
+  "name": "brand_site_marketplace_leak KEEP scorer signal",
+  "vendor_or_project": "Michael's Genuine love-seed / Never86 KEEP scorer",
+  "urls": [
+    "https://michaelsgenuine.com/",
+    "scripts/score-marketplace-keep.mjs",
+    "services/pain-leads-api/src/lib/marketplaceKeepScore.ts",
+    "fixtures/tool-hunt/pain-scan-brand-site-marketplace-leak.json",
+    "fixtures/tool-hunt/miami-love-brands.json"
+  ],
+  "what_it_does": "Detects brand-site / official homepage CTAs that still push UberEats/DoorDash/Grubhub delivery — marketplace leak on love brands — so pain→sales and script-draft name the leak.",
+  "how_competitors_use_it": "Love brands often deep-link marketplaces from their own site instead of first-party or Shop buy-now.",
+  "what_we_use_today": "score-marketplace-keep + MCP score_marketplace_keep + miami buy_now_path rails + social-shop Michaels thesis",
+  "gap": "Mem0/Context still blocked for unlock READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted brand_site_marketplace_leak from Michaels Genuine live proof (official site → UberEats/DoorDash). Not fee dogfood — love→buy-now teach. strong_keep 64.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "not_this": "Not a new fee dogfood. Fee catalog pause still holds. Not forecasting."
+}

@@ -4,7 +4,7 @@ Paste-ready setup so the weekly vertical hunt does not depend on the interim clo
 
 **Scope:** love→buy-now · pain→sales-lead · Cursor memory/skills/MCP  
 **Out:** historical sales forecasting · labor forecasting  
-**Fee catalog:** paused at `strong_keep` 63 — do not expand fee dogfoods unless a cite sharpens love→buy-now or Cursor stack beyond the catalog.
+**Fee catalog:** paused — do not expand fee dogfoods unless a cite sharpens love→buy-now or Cursor stack beyond the catalog. Overall `strong_keep` 64 includes `brand_site_marketplace_leak` (not a fee dogfood).
 
 ## Create
 
@@ -20,7 +20,7 @@ Paste-ready setup so the weekly vertical hunt does not depend on the interim clo
 ```text
 Run Beyond the Hunt for Never86 best-in-vertical only: love→buy-now social commerce, pain→sales-lead, Cursor agents/memory/skills/MCP, and vertical rivals including DoorDash Online Ordering, Uber Webshop, Grubhub Direct, Olo Network, Menusso, Owner, Trenz, Klikit, Deliverect, Zyda, ChatFood, BentoBox Meta Order Food, Toast Meta Order Food, Flipdish IG Order Now, DirectOrders IG DM, BiteSight, Smiilen, linkboo, Popmenu, Sauce, Ressto, Eatsy, Square AI-channel, UpMenu, DineOpen, Muncho.
 
-Fee KEEP catalog is sufficient (strong_keep 63) — pause further fee dogfood expansion unless a cite sharpens love→buy-now or Cursor memory/skills/MCP beyond the catalog.
+Fee KEEP catalog is sufficient (fee dogfoods paused; overall strong_keep 64 includes brand_site_marketplace_leak love teach) — pause further fee dogfood expansion unless a cite sharpens love→buy-now or Cursor memory/skills/MCP beyond the catalog.
 
 Do NOT research historical sales forecasting or labor forecasting tools.
 

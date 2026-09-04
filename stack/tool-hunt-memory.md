@@ -771,3 +771,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Catalog sandboxes + all 5 `pain-to-sales-social-shop-*.json` carry live `buy_now_path` rails; Michaels thesis names brand-site UberEats/DoorDash leak.
 - `lead-shop-enrich` / `catalog-sync` / `sales-lead-form` teach order_rails. Validators enforce. Ledger v1.92.26. Auth still blocked.
+
+### 2026-09-04 (brand_site_marketplace_leak KEEP signal)
+
+- Adopted `brand_site_marketplace_leak` on KEEP scorer (CLI + marketplaceKeepScore.ts) from Michaels Genuine live proof (official site → UberEats/DoorDash).
+- Fixture: `pain-scan-brand-site-marketplace-leak.json` → overall `strong_keep` 64. **Not a fee dogfood** — fee catalog pause still holds.
+- Taught in pain-complaint-scan / sales-lead-form / script-draft / morning-scan. Finding: `2026-09-04-brand-site-marketplace-leak-signal.json`. Ledger v1.92.27.
+- Still blocked: Mem0 + Context for unlock READY.

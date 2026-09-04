@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT", "scripts/score-marketplace-keep.mjs"],
+  "query": "love-brand official site delivery CTA UberEats/DoorDash marketplace leak (Michael's Genuine live proof)",
+  "hits": [
+    {
+      "url": "https://michaelsgenuine.com/",
+      "posted_at": "2026-09-04",
+      "handle": "michaelsgenuine",
+      "snippet": "Restaurant owners: Michael's Genuine brand site still pushes UberEats and DoorDash for delivery — marketplace leak on the official homepage. Guests click marketplace rent instead of first-party KEEP; operators quit that CTA for Shop buy-now.",
+      "pain_id": "brand_site_marketplace_leak",
+      "score": 92,
+      "never86_angle": "Love→buy-now teach: brand-site UberEats/DoorDash CTAs are displaceable rent — Shop owns the KEEP channel"
+    }
+  ],
+  "notes": "Not a fee dogfood. Live buy_now_path on miami-love-brands.json (Michaels rails: ubereats, doordash). Bright Data still 401 — Composio public fetch. Skip forecasting."
+}

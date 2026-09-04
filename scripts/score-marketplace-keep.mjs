@@ -41,6 +41,8 @@ const rules = [
   { re: /tiktok shop.*(6|8)\s*%|(6|8)\s*%\s*(referral|unified|commission|platform)|shop referral fee|unified referral/, signal: "social_shop_fee", w: 15 },
   // Guest-paid OO tech fees (DevourNow $2.99 / $1+% diner fees under 0% commission claims)
   { re: /customers? pay|guests? pay|diner[- ]paid|guest[- ]paid|tech fee|service fee.*(customer|guest|diner)|(customer|guest|diner).*(tech|service|platform) fee/, signal: "guest_paid_platform_fee", w: 15 },
+  // Brand-site marketplace leak (love brand homepage still CTAs UberEats/DoorDash — Michaels Genuine live proof)
+  { re: /marketplace leak|(brand[\s-]?site|official (site|website)|homepage|our website).{0,80}(uber\s*eats|doordash|grubhub)|(uber\s*eats|doordash|grubhub).{0,80}(brand[\s-]?site|official (site|website)|homepage|on (the |our )?(site|website))|(pushes?|links? to|cta).{0,40}(uber\s*eats|doordash).{0,40}(delivery|order)/, signal: "brand_site_marketplace_leak", w: 20 },
 ];
 
 const signals = [];

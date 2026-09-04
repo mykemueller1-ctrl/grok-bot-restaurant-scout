@@ -50,11 +50,13 @@ jobs:
           if (!shop.signals.includes('social_shop_fee') || shop.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(shop));
           const guest = scoreMarketplaceKeep('DevourNow customers pay \$2.99 per order tech fee under 0% commission — restaurant owners KEEP less conversion vs DoorDash 25%');
           if (!guest.signals.includes('guest_paid_platform_fee') || !guest.signals.includes('per_order_platform_fee') || guest.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(guest));
+          const leak = scoreMarketplaceKeep('Restaurant owners: brand site still pushes UberEats and DoorDash for delivery — marketplace leak on the official homepage; quit rent for first-party KEEP');
+          if (!leak.signals.includes('brand_site_marketplace_leak') || leak.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(leak));
           const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
           if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
           const g = await dispatchSourceTool('keep_channel_grade', { dinein: 12000, doordash: 9000, doordash_fee_pct: 25, social_buy_now: 2500 });
           if (!g.ok || g.summary?.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(g));
-          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, up.score, fp.score, ddoo.score, uber.score, shop.score, guest.score, b.score, g.summary.marketplace_fee_total);
+          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, up.score, fp.score, ddoo.score, uber.score, shop.score, guest.score, leak.score, b.score, g.summary.marketplace_fee_total);
           "
 
   wiring:
@@ -432,6 +434,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-addmi-fee-rioja.json
           test -f fixtures/tool-hunt/pain-scan-tenvito-pct-fee.json
+          test -f fixtures/tool-hunt/pain-scan-brand-site-marketplace-leak.json
           test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-franklin.json
           test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-girl-goat.json
           test -f fixtures/tool-hunt/pain-to-sales-tenvito-fee-husk.json
@@ -499,10 +502,11 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'Uber Webshop is commission-free on direct orders — Grubhub Direct skips marketing commissions' | grep -q marketplace_direct_zero
           node scripts/score-marketplace-keep.mjs 'TikTok Shop US unified referral fee is 6% vs DoorDash Marketplace 25%' | grep -q social_shop_fee
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
+          node scripts/score-marketplace-keep.mjs 'Restaurant owners: brand site still pushes UberEats and DoorDash for delivery — marketplace leak on the official homepage; quit rent for first-party KEEP' | grep -q brand_site_marketplace_leak
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
           node scripts/validate-keep-grader-ui.mjs | grep -q '"keep_grader_ui": 1'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 63'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 64'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"buy_now_rails"'
