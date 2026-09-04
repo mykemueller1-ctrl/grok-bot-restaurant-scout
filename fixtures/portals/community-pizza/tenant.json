@@ -1,19 +1,24 @@
 {
   "venue_id": "community-pizza",
   "venue_name": "Community Tap & Pizza",
-  "aliases": ["CTAP", "Community Pizza", "Community Tap"],
+  "aliases": [
+    "CTAP",
+    "Community Pizza",
+    "Community Tap"
+  ],
   "icp": "owner-1-5",
   "security": "secure",
   "status": "live_demo",
   "location": {
-    "id": "ctap-fort-dodge",
+    "id": "loc-fort-dodge",
     "name": "Fort Dodge",
     "plan": "owner_1_5"
   },
   "access_gate": {
-    "kind": "demo_house_code",
-    "code": "ctap-fort-dodge",
-    "note": "Demo house code only — not a production credential. Real auth lands with hosted deploy."
+    "kind": "server_verified",
+    "auth_path": "/api/auth/login",
+    "logout_path": "/api/auth/logout",
+    "note": "House codes verified server-side via scrypt hashes. Plaintext never shipped in portal packs."
   },
   "data_boundary": {
     "mode": "exclusive",
@@ -22,7 +27,10 @@
       "./seats.json",
       "./data/historical-sales.json"
     ],
-    "forbidden_venue_ids": ["taco-bamba", "grill"]
+    "forbidden_venue_ids": [
+      "taco-bamba",
+      "grill"
+    ]
   },
   "session_key": "never86.portal.community-pizza",
   "product": "Never 86'd Action Shift"

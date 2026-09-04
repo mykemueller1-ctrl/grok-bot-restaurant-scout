@@ -11,7 +11,7 @@
     "note": "Demo close while invoice OCR wires in parallel. Three seats sold for CTAP Fort Dodge."
   },
   "location": {
-    "id": "ctap-fort-dodge",
+    "id": "loc-fort-dodge",
     "name": "Community Tap & Pizza — Fort Dodge",
     "plan": "owner_1_5",
     "status": "active"

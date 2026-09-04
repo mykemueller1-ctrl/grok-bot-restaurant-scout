@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "note": "Demo house-code hashes only. Plaintext codes live in operator runbooks / env — never in tenant.json. Rotate via scripts/hash-house-code.mjs",
+  "codes": {
+    "community-pizza": {
+      "algo": "scrypt",
+      "N": 16384,
+      "r": 8,
+      "p": 1,
+      "dkLen": 64,
+      "salt": "l1jwzjOG3ljlyojIMGwUQw==",
+      "hash": "xvIF2+DATE5ktmxH+odYiaIsOX5aTun0erDLKC+AltsDq9gOqn9W/aRK+9S+n1tagHypxH6b0KejTOzAMvezaA=="
+    },
+    "taco-bamba": {
+      "algo": "scrypt",
+      "N": 16384,
+      "r": 8,
+      "p": 1,
+      "dkLen": 64,
+      "salt": "nS0twkVPVLSLLyAdJyw4iw==",
+      "hash": "unz6UVRbJ+z4AB78i+q7lEvnWSXA78qV50oynVNUy7NdxiNkvl3c8T/u1uehpvhPtVxd/mu3x7cbDgLVTjf7ow=="
+    },
+    "grill": {
+      "algo": "scrypt",
+      "N": 16384,
+      "r": 8,
+      "p": 1,
+      "dkLen": 64,
+      "salt": "JuE2T933xbVelub2CARssg==",
+      "hash": "qrcAesR4HG5gri3tUeLB2g9f518BEUJb0yAJmeE7zF09BsAlXYD1do+Bvue25mnX6F/qMg6L24XBa1sCNHXhEw=="
+    }
+  }
+}

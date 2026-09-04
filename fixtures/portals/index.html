@@ -120,34 +120,8 @@
         Isolation: a portal may only read JSON inside its own folder. No shared tenant dump.
       </div>
       <div class="grid" id="list"></div>
-      <p class="fine">Serve: <code>python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals</code></p>
+      <p class="fine">Serve via gateway: <code>PORTAL_SESSION_SECRET=… node services/portal-gateway/src/server.mjs</code> · see <code>docs/PORTAL-SECURITY.md</code></p>
     </main>
-    <script>
-      const statusLabel = (s) =>
-        s === "live_demo" ? ["Live · secure", "live"] : ["Ready after Community", "ready"];
-
-      fetch("./tenants.json")
-        .then((r) => r.json())
-        .then((doc) => {
-          const list = document.getElementById("list");
-          const ordered = [...doc.tenants].sort((a, b) => a.priority - b.priority);
-          list.innerHTML = ordered
-            .map((t) => {
-              const [label, cls] = statusLabel(t.status);
-              const pending = t.status !== "live_demo" ? "pending" : "";
-              return `<a class="tenant ${pending}" href="./${t.slug}/login.html">
-                <div class="row">
-                  <h2 class="name">${t.name}</h2>
-                  <span class="badge ${cls}">${label}</span>
-                </div>
-                <p class="meta">${t.icp} · ${t.note}</p>
-              </a>`;
-            })
-            .join("");
-        })
-        .catch((err) => {
-          document.getElementById("list").textContent = String(err.message || err);
-        });
-    </script>
+    <script src="./shared/index.js"></script>
   </body>
 </html>

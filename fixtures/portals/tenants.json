@@ -1,8 +1,8 @@
 {
-  "product": "Never 86'd Action Shift — secure venue portals",
+  "product": "Never 86'd Action Shift \u2014 secure venue portals",
   "as_of": "2026-09-04",
-  "isolation_rule": "Each portal may only load JSON from its own directory. Cross-venue fetches are forbidden. Session keys are venue-scoped.",
-  "serve": "python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals",
+  "isolation_rule": "Server-side exclusive boundary via portal-gateway. Hashed house codes. Venue-scoped HttpOnly sessions. Each portal may only receive JSON for its own venue_id.",
+  "serve": "PORTAL_SESSION_SECRET=\u2026 node services/portal-gateway/src/server.mjs",
   "url": "http://127.0.0.1:5174/",
   "tenants": [
     {
@@ -27,7 +27,7 @@
       "path": "taco-bamba/",
       "front_door": "taco-bamba/login.html",
       "priority": 2,
-      "note": "Secure multi-unit portal. Area-leader board. Own data boundary — never mixed with CTAP or Grill."
+      "note": "Secure multi-unit portal. Area-leader board. Own data boundary \u2014 never mixed with CTAP or Grill."
     },
     {
       "venue_id": "grill",
@@ -41,5 +41,6 @@
       "priority": 3,
       "note": "Comes after Community. Kristen packs staged. When Community pattern is proven, drop Kristen work into Grill the same way Community holds its book."
     }
-  ]
+  ],
+  "security_doc": "docs/PORTAL-SECURITY.md"
 }

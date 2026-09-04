@@ -99,11 +99,12 @@ Each house gets its own door and data boundary (`docs/VENUE-PORTALS.md`):
 | The New American Grill | Ready after Community — Kristen packs staged |
 
 ```bash
-python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals
+export PORTAL_SESSION_SECRET="$(openssl rand -base64 48)"
+node services/portal-gateway/src/server.mjs
 # http://127.0.0.1:5174/
 ```
 
-CTAP seats detail: `docs/CTAP-SEATS.md`. Isolation CI: `python3 scripts/validate-portal-isolation.py`.
+CTAP seats detail: `docs/CTAP-SEATS.md`. Security: `docs/PORTAL-SECURITY.md`. Isolation CI: `python3 scripts/validate-portal-isolation.py`.
 
 ## Setup
 

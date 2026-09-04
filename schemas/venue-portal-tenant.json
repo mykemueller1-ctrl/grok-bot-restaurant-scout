@@ -3,7 +3,7 @@
   "$id": "https://never86.ai/schemas/venue-portal-tenant.json",
   "title": "Never86 secure venue portal tenant",
   "type": "object",
-  "required": ["venue_id", "venue_name", "security", "status", "data_boundary", "session_key"],
+  "required": ["venue_id", "venue_name", "security", "status", "data_boundary", "session_key", "access_gate"],
   "properties": {
     "venue_id": {
       "type": "string",
@@ -24,11 +24,16 @@
     },
     "access_gate": {
       "type": "object",
-      "required": ["kind", "code"],
+      "required": ["kind", "auth_path"],
+      "additionalProperties": true,
       "properties": {
-        "kind": { "type": "string" },
-        "code": { "type": "string" },
+        "kind": { "const": "server_verified" },
+        "auth_path": { "type": "string" },
+        "logout_path": { "type": "string" },
         "note": { "type": "string" }
+      },
+      "not": {
+        "required": ["code"]
       }
     },
     "data_boundary": {

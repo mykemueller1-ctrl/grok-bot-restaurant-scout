@@ -144,7 +144,7 @@
         <form id="login">
           <div class="field">
             <label for="gate">House code</label>
-            <input id="gate" type="password" placeholder="grill-kristen-ready" required />
+            <input id="gate" type="password" placeholder="••••••••" autocomplete="current-password" required />
           </div>
           <div class="field">
             <label for="seat">Draft seat</label>
@@ -154,92 +154,12 @@
           </div>
           <button class="go" type="submit">Open staged desk</button>
           <div class="err" id="err"></div>
-          <p class="fine">Not sold yet · Kristen packs staged · Community pattern next</p>
+          <p class="fine">Staged · Kristen packs · enterprise boundary · after Community</p>
         </form>
       </section>
       <section class="desk" id="desk" aria-live="polite"></section>
     </main>
     <script src="../shared/isolation.js"></script>
-    <script>
-      const VENUE = "grill";
-      let tenant = null;
-      let seatsDoc = null;
-      let packs = null;
-
-      async function boot() {
-        const bound = await Never86Portal.loadTenantBound(VENUE);
-        tenant = bound.tenant;
-        const [seats, kristen] = await Promise.all([
-          fetch("./seats.json").then((r) => r.json()),
-          fetch("./data/kristen-packs.json").then((r) => r.json()),
-        ]);
-        Never86Portal.assertOwnData(seats, VENUE, "seats");
-        Never86Portal.assertOwnData(kristen, VENUE, "kristen-packs");
-        seatsDoc = seats;
-        packs = kristen;
-        const select = document.getElementById("seat");
-        for (const s of seats.seats) {
-          const opt = document.createElement("option");
-          opt.value = s.login_id;
-          opt.textContent = `${s.label} · ${s.assignee.name} (${s.status})`;
-          select.appendChild(opt);
-        }
-        const prior = Never86Portal.readSession(tenant.session_key);
-        if (prior?.login_id) renderDesk(prior.login_id);
-      }
-
-      function renderDesk(loginId) {
-        const active = seatsDoc.seats.find((s) => s.login_id === loginId);
-        if (!active) return;
-        document.getElementById("door").classList.add("off");
-        const desk = document.getElementById("desk");
-        desk.classList.add("on");
-        desk.innerHTML = `
-          <div class="top">
-            <div>
-              <div class="mark">The Grill</div>
-              <div class="meta">Ready after Community · Kristen packs staged · ${packs.as_of}</div>
-            </div>
-            <button class="signout" type="button" id="signout">Sign out</button>
-          </div>
-          <div class="banner">
-            ${packs.handoff}
-          </div>
-          <p style="margin:0 0 8px;font-size:14px"><strong>${active.label}</strong> · ${active.assignee.name} · ${active.status}</p>
-          <div class="stats">
-            <div class="stat"><b>${Never86Portal.money(packs.labor.net_sales, 2)}</b><span>Net sales (Kristen)</span></div>
-            <div class="stat"><b>${packs.labor.labor_pct_net}%</b><span>Labor % net</span></div>
-            <div class="stat"><b>${packs.labor.splh_net}</b><span>SPLH net</span></div>
-          </div>
-          <p class="fine" style="margin-top:14px">Source: ${packs.source_label}. Files: ${packs.courser_files.join(", ")}</p>
-        `;
-        document.getElementById("signout").onclick = () => {
-          Never86Portal.clearSession(tenant.session_key);
-          desk.classList.remove("on");
-          desk.innerHTML = "";
-          document.getElementById("door").classList.remove("off");
-        };
-      }
-
-      document.getElementById("login").addEventListener("submit", (e) => {
-        e.preventDefault();
-        const code = document.getElementById("gate").value;
-        const id = document.getElementById("seat").value;
-        if (!Never86Portal.gateOk(tenant, code)) {
-          document.getElementById("err").textContent = "Wrong house code for Grill.";
-          return;
-        }
-        if (!id) {
-          document.getElementById("err").textContent = "Pick a draft seat first.";
-          return;
-        }
-        Never86Portal.saveSession(tenant.session_key, { venue_id: VENUE, login_id: id });
-        renderDesk(id);
-      });
-
-      boot().catch((err) => {
-        document.getElementById("err").textContent = String(err.message || err);
-      });
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>

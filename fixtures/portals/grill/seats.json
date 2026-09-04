@@ -14,7 +14,7 @@
     "note": "Not sold yet. Grill comes after Community. Kristen packs are staged so the portal can open on the Community pattern."
   },
   "location": {
-    "id": "grill-single-unit",
+    "id": "loc-grill-single",
     "name": "The New American Grill",
     "plan": "owner_1_5",
     "status": "ready_after_community"

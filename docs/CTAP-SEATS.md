@@ -21,15 +21,16 @@ Schema: `schemas/ctap-seat.json`
 
 Routing (Action Shift): liquor / beer / FOH labor → Kenzy. Food / BOH labor → Tom. Prime / 3P / two-house → Myke.
 
-## Front door (secure)
+## Front door (enterprise secure)
 
 ```bash
-python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals
+export PORTAL_SESSION_SECRET="$(openssl rand -base64 48)"
+node services/portal-gateway/src/server.mjs
 # open http://127.0.0.1:5174/community-pizza/login.html
-# house code: ctap-fort-dodge
+# demo house code: see docs/PORTAL-SECURITY.md
 ```
 
-Pick a sold seat → walk into the desk with all three seats lit and the live book through **Fri 9/4 only**. Community data only — Taco Bamba and Grill stay out.
+Pick a sold seat → walk into the desk with all three seats lit and the live book through **Fri 9/4 only**. Community data only — server boundary blocks Taco Bamba and Grill.
 
 ## Sales book (honest calendar)
 

@@ -215,7 +215,7 @@
         <form id="login" autocomplete="on">
           <div class="field">
             <label for="gate">House code</label>
-            <input id="gate" name="gate" type="password" placeholder="ctap-fort-dodge" required />
+            <input id="gate" name="gate" type="password" placeholder="••••••••" autocomplete="current-password" required />
           </div>
           <div class="field">
             <label for="seat">Sold seat</label>
@@ -229,118 +229,12 @@
           </div>
           <button class="go" type="submit">Open the door</button>
           <div class="err" id="err"></div>
-          <p class="fine">Demo sale · owner free · FOH + BOH managers paid · own data boundary</p>
+          <p class="fine">Enterprise gate · scrypt house code · HttpOnly session · own data boundary</p>
         </form>
       </section>
       <section class="desk" id="desk" aria-live="polite"></section>
     </main>
     <script src="../shared/isolation.js"></script>
-    <script>
-      const VENUE = "community-pizza";
-      let tenant = null;
-      let seatsDoc = null;
-      let salesDoc = null;
-
-      async function boot() {
-        const bound = await Never86Portal.loadTenantBound(VENUE);
-        tenant = bound.tenant;
-        const [seats, sales] = await Promise.all([
-          fetch("./seats.json").then((r) => r.json()),
-          fetch("./data/historical-sales.json").then((r) => r.json()),
-        ]);
-        Never86Portal.assertOwnData(seats, VENUE, "seats");
-        Never86Portal.assertOwnData(sales, VENUE, "historical-sales");
-        seatsDoc = seats;
-        salesDoc = sales;
-        const select = document.getElementById("seat");
-        for (const s of seats.seats) {
-          const opt = document.createElement("option");
-          opt.value = s.login_id;
-          opt.textContent = `${s.label} · ${s.assignee.name} (${s.price})`;
-          select.appendChild(opt);
-        }
-        select.addEventListener("change", () => {
-          const found = seats.seats.find((s) => s.login_id === select.value);
-          document.getElementById("name").value = found ? found.assignee.name : "";
-          document.getElementById("err").textContent = "";
-        });
-        const prior = Never86Portal.readSession(tenant.session_key);
-        if (prior?.login_id) renderDesk(prior.login_id);
-      }
-
-      function renderDesk(loginId) {
-        const active = seatsDoc.seats.find((s) => s.login_id === loginId);
-        if (!active) return;
-        const live = salesDoc.live_book;
-        const archive = salesDoc.archive_week_2025_09;
-        const recent = salesDoc.recentZ || [];
-        const asOf = salesDoc.as_of || "2026-09-04";
-        document.getElementById("door").classList.add("off");
-        const desk = document.getElementById("desk");
-        desk.classList.add("on");
-        desk.innerHTML = `
-          <div class="top">
-            <div>
-              <div class="mark">Never 86<em>'d</em></div>
-              <div class="meta">${seatsDoc.venue_name} · Fort Dodge · secure · as of ${asOf}</div>
-            </div>
-            <button class="signout" type="button" id="signout">Sign out</button>
-          </div>
-          <div class="who">
-            <strong>${active.label} · ${active.assignee.name}</strong>
-            <p>${active.assignee.title || "Owner-operator"} · house ${active.house} · ${active.price} seat</p>
-          </div>
-          <div class="grid">
-            ${seatsDoc.seats
-              .map(
-                (s) => `
-              <article class="seat ${s.login_id === active.login_id ? "active" : ""}">
-                <div class="badge ${s.price === "paid" ? "paid" : ""}">${s.status} · ${s.price}</div>
-                <h2>${s.label}</h2>
-                <div class="person">${s.assignee.name}</div>
-                <ul>${s.owns.slice(0, 4).map((o) => `<li>${o}</li>`).join("")}</ul>
-              </article>`
-              )
-              .join("")}
-          </div>
-          <section class="sales">
-            <h3>Live book · through Fri 9/4 only</h3>
-            <p>${live.start} → ${live.end}. Community data only — no Bamba, no Grill.</p>
-            <div class="stats">
-              <div class="stat"><b>${Never86Portal.money(live.week_grand_total)}</b><span>Week net so far (Z hole)</span></div>
-              <div class="stat"><b>${Never86Portal.money(live.week_labor_total)}</b><span>Week labor so far</span></div>
-              <div class="stat"><b>${recent.length ? Never86Portal.money(recent[0].grandTotal) : "—"}</b><span>Latest sample Z ${recent[0]?.label || ""}</span></div>
-            </div>
-            <p class="lock">Archive only: ${archive.folder} · ${Never86Portal.money(archive.week_grand_total)} prior-year pack.</p>
-          </section>
-        `;
-        document.getElementById("signout").onclick = () => {
-          Never86Portal.clearSession(tenant.session_key);
-          desk.classList.remove("on");
-          desk.innerHTML = "";
-          document.getElementById("door").classList.remove("off");
-        };
-      }
-
-      document.getElementById("login").addEventListener("submit", (e) => {
-        e.preventDefault();
-        const code = document.getElementById("gate").value;
-        const id = document.getElementById("seat").value;
-        if (!Never86Portal.gateOk(tenant, code)) {
-          document.getElementById("err").textContent = "Wrong house code for Community.";
-          return;
-        }
-        if (!id) {
-          document.getElementById("err").textContent = "Pick a sold seat first.";
-          return;
-        }
-        Never86Portal.saveSession(tenant.session_key, { venue_id: VENUE, login_id: id });
-        renderDesk(id);
-      });
-
-      boot().catch((err) => {
-        document.getElementById("err").textContent = String(err.message || err);
-      });
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>

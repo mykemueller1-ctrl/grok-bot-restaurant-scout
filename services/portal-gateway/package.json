@@ -1,0 +1,15 @@
+{
+  "name": "@never86/portal-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Enterprise-grade secure venue portal gateway — hashed house codes, signed venue-scoped sessions, server-side data boundaries",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "hash-code": "node ../../scripts/hash-house-code.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

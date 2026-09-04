@@ -1,19 +1,24 @@
 {
   "venue_id": "grill",
   "venue_name": "The New American Grill",
-  "aliases": ["Grill", "the grill", "The New American Grill"],
+  "aliases": [
+    "Grill",
+    "the grill",
+    "The New American Grill"
+  ],
   "icp": "owner-1-5",
   "security": "secure_ready",
   "status": "ready_after_community",
   "location": {
-    "id": "grill-single-unit",
+    "id": "loc-grill-single",
     "name": "The New American Grill",
     "plan": "owner_1_5"
   },
   "access_gate": {
-    "kind": "demo_house_code",
-    "code": "grill-kristen-ready",
-    "note": "Demo house code only. Portal is staged — opens fully after Community pattern is proven."
+    "kind": "server_verified",
+    "auth_path": "/api/auth/login",
+    "logout_path": "/api/auth/logout",
+    "note": "House codes verified server-side via scrypt hashes. Plaintext never shipped in portal packs."
   },
   "data_boundary": {
     "mode": "exclusive",
@@ -22,13 +27,16 @@
       "./seats.json",
       "./data/kristen-packs.json"
     ],
-    "forbidden_venue_ids": ["community-pizza", "taco-bamba"]
+    "forbidden_venue_ids": [
+      "community-pizza",
+      "taco-bamba"
+    ]
   },
   "session_key": "never86.portal.grill",
   "product": "Never 86'd Action Shift",
   "handoff": {
     "after": "community-pizza",
     "from": "Kristen",
-    "instruction": "When Community is made, take Kristen’s Courser work already staged under data/kristen-packs.json and wire it into Grill the same way Community holds historical-sales — same door rails, Grill-only data."
+    "instruction": "When Community is made, take Kristen\u2019s Courser work already staged under data/kristen-packs.json and wire it into Grill the same way Community holds historical-sales \u2014 same door rails, Grill-only data."
   }
 }

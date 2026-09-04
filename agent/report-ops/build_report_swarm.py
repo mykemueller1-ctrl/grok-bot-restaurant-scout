@@ -657,6 +657,7 @@ def main() -> None:
             "docs/ICP-SCALE.md",
             "docs/VENUE-PORTALS.md",
             "docs/CTAP-SEATS.md",
+            "docs/PORTAL-SECURITY.md",
         ],
     }
     write_json(ROOT / "family.json", family)

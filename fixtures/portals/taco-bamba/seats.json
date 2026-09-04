@@ -14,7 +14,7 @@
     "note": "Secure multi-unit portal demo. Seats map to Sales Labor Report (MP) v5 area leaders."
   },
   "location": {
-    "id": "taco-bamba-system",
+    "id": "loc-bamba-multi",
     "name": "Taco Bamba \u2014 System",
     "plan": "area_leader",
     "status": "active"

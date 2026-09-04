@@ -2,52 +2,48 @@
 
 Each restaurant gets its **own** portal and its **own** data. No shared dump across houses.
 
-**As of: Fri 2026-09-04.**
+**As of: Fri 2026-09-04.** Served by the **enterprise portal gateway** (`docs/PORTAL-SECURITY.md`).
 
 ## Tenants
 
 | Venue | ICP | Security | Status |
 | --- | --- | --- | --- |
-| **Community Tap & Pizza** | owner 1–5 | secure | **live demo** — Myke / Kenzy / Tom seats |
-| **Taco Bamba** | area-leader multi-unit | secure | **live demo** — System + John / Red / Travis / Yas |
-| **The New American Grill** | owner 1–5 | secure ready | **ready after Community** — Kristen packs staged |
+| **Community Tap & Pizza** | owner 1–5 | enterprise secure | **live demo** — Myke / Kenzy / Tom |
+| **Taco Bamba** | area-leader multi-unit | enterprise secure | **live demo** — System + John / Red / Travis / Yas |
+| **The New American Grill** | owner 1–5 | enterprise secure ready | **ready after Community** — Kristen packs staged |
 
 Registry: `fixtures/portals/tenants.json`
 
-## Serve
+## Serve (required)
 
 ```bash
-python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/portals
+export PORTAL_SESSION_SECRET="$(openssl rand -base64 48)"
+node services/portal-gateway/src/server.mjs
 # http://127.0.0.1:5174/
 ```
 
-## Isolation rule
+Do **not** use raw `python3 -m http.server` for real trials — that bypasses auth, cookies, and server-side boundaries.
 
-- A portal may only `fetch` JSON under its own folder (`./tenant.json`, `./seats.json`, `./data/…`).
-- Each `tenant.json` lists `forbidden_venue_ids` for every other house.
-- Session keys are venue-scoped (`never86.portal.<venue_id>`).
-- CI: `python3 scripts/validate-portal-isolation.py`
+## Isolation + cyber controls
 
-Demo house codes (not production credentials):
+- scrypt-hashed house codes (no plaintext in `tenant.json`)
+- HMAC HttpOnly `SameSite=Strict` sessions scoped to `venue_id`
+- Server refuses cross-venue data reads
+- Rate-limited login, CSP, clickjacking denials, audit logs without secrets
+- CI: `python3 scripts/validate-portal-isolation.py` + `cd services/portal-gateway && npm test`
 
-| Venue | Code |
-| --- | --- |
-| Community | `ctap-fort-dodge` |
-| Taco Bamba | `bamba-system` |
-| Grill | `grill-kristen-ready` |
+Demo house codes (rotate before production): see `docs/PORTAL-SECURITY.md`.
 
 ## Grill handoff (Kristen)
 
-Grill comes **after** Community. Kristen’s Courser labor + sales packs are already staged in
+Grill comes **after** Community. Kristen’s Courser packs are staged in
 `fixtures/portals/grill/data/kristen-packs.json`.
 
-When Community’s pattern is proven: copy the Community door rails and drop Kristen’s work into Grill
-the same way Community holds `historical-sales` — Grill-only data, same secure boundary.
+When Community’s pattern is proven: same door rails, drop Kristen’s work into Grill like Community’s book — Grill-only data, same secure boundary.
 
 ## Compat
 
-Old path `fixtures/ctap-portal/login.html` redirects to `fixtures/portals/community-pizza/login.html`.
-Seat ledger for CTAP still mirrored under `fixtures/ctap-portal/seats.json` for older links; canonical
-portal seats live under `fixtures/portals/community-pizza/`.
+Old path `fixtures/ctap-portal/login.html` redirects to Community’s portal.
+Canonical seats: `fixtures/portals/community-pizza/seats.json`.
 
-See also: `docs/CTAP-SEATS.md`, `docs/ICP-SCALE.md`.
+See also: `docs/CTAP-SEATS.md`, `docs/ICP-SCALE.md`, `docs/PORTAL-SECURITY.md`.
