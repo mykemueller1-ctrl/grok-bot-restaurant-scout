@@ -1,28 +1,36 @@
 {
   "draft_id": "script-draft-franklin-buy-now-2026-09-04",
   "status": "PENDING_APPROVAL",
-  "purpose": "Dogfood script-draft skill on Austin cult brand — love→buy-now, not marketplace delivery, not forecasting.",
+  "purpose": "Dogfood script-draft skill on Austin cult brand — love→buy-now using live buy_now_path (Shopify merch + first-party preorder). Not marketplace delivery, not forecasting.",
   "lead": {
     "name": "Franklin Barbecue",
     "market": "Austin, TX",
     "yelp_alias": "franklin-barbecue-austin",
     "love_signal": "National cult BBQ / line culture / chef Aaron Franklin — 6.4k+ Yelp reviews",
-    "source_fixture": "fixtures/tool-hunt/austin-love-brands.json"
+    "source_fixture": "fixtures/tool-hunt/austin-love-brands.json",
+    "buy_now_path": {
+      "rails": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+      "note": "Cult BBQ already sells preorder pickup + Shopify sauces/merch — Shop closes feed love into those SKUs",
+      "sources": [
+        "https://preorder.franklinbbq.com/information",
+        "https://shop.franklinbbq.com/"
+      ]
+    }
   },
   "script": {
     "hook_2s": "Close-up of the brisket bark crack as the knife hits — smoke curls, no talking yet.",
     "proof": "People wait hours for this — Franklin isn't a feed filler, it's a cult kitchen.",
-    "anti_rent": "Skip the delivery-app tax. Shop the pack the kitchen actually wants you to buy — Never86 buy-now / shop in bio.",
-    "price_scarcity": "Limited smoke-day SKU / merch drop — when it's gone, it's gone.",
+    "anti_rent": "They already sell sauces and merch on Shopify and take first-party preorders — don't make fans dig through bio webviews or Goldbelly. Never86 buy-now / shop in bio closes the feed into the SKU.",
+    "price_scarcity": "Limited smoke-day SKU / sauce drop — when it's gone, it's gone.",
     "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
   },
-  "owner_blurb": "Franklin already owns love. Never86 turns that love into shoppable TikTok/IG buy-now — not DoorDash KEEP losers, not Owner email/SMS OS, not TextOrder/Menami DM chatbots, not Seekadu reservations, not PlateAI reels that never close a sale.",
+  "owner_blurb": "Franklin already owns love and a Shopify + preorder stack. Never86 turns feed love into shoppable TikTok/IG buy-now — not DoorDash KEEP losers, not linkboo-class bio→webview cliffs, not Owner email/SMS OS.",
   "rival_contrast": [
+    "Shopify merch / first-party preorder — already live; Shop is the social close",
+    "linkboo — webview escape for bio links (still a handoff cliff)",
     "Owner.com — email/SMS first-party OS",
-    "Menami / TextOrder — DM/SMS conversational order",
-    "Seekadu — reservation DMs",
-    "PlateAI / Flik — content-only",
-    "Klikit — APAC Shop POS middleware"
+    "Goldbelly — ship-only, not feed-native buy-now",
+    "PlateAI / Flik — content-only"
   ],
   "never": [
     "Do not post without APPROVED",

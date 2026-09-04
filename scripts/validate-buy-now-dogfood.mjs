@@ -41,7 +41,22 @@ for (const f of scripts) {
     console.error(`validate-buy-now-dogfood: ${f} must forbid forecasting in never[]`);
     process.exit(1);
   }
-  report.scripts.push({ file: f, lead: data.lead?.name || null, market: data.lead?.market || null });
+  const rails = data.lead?.buy_now_path?.rails;
+  if (!Array.isArray(rails) || rails.length < 1) {
+    console.error(`validate-buy-now-dogfood: ${f} lead.buy_now_path.rails[] required (live order rails)`);
+    process.exit(1);
+  }
+  const anti = `${data.script?.anti_rent || ""} ${data.owner_blurb || ""}`;
+  if (!/shop|buy-now|marketplace|uber|doordash|shopify|toast|resy|opentable|preorder|carryout|webview/i.test(anti)) {
+    console.error(`validate-buy-now-dogfood: ${f} anti_rent/owner_blurb must cite buy-now / order-rail wedge`);
+    process.exit(1);
+  }
+  report.scripts.push({
+    file: f,
+    lead: data.lead?.name || null,
+    market: data.lead?.market || null,
+    buy_now_rails: rails,
+  });
 }
 
 for (const f of catalogs) {

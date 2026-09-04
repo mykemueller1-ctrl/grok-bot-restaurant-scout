@@ -761,3 +761,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Live public second pass on 5 live_yelp primaries: Franklin Shopify merch + first-party preorder; Michaels Genuine homepage UberEats/DoorDash leak; Husk Resy + Toast gift-card; G&TG OpenTable/no OO; Rioja Flavor Dojo in-person carryout.
 - Fixtures + `validate-love-fixtures.mjs` require `buy_now_path`; morning-scan captures `order_rails`. Finding: `2026-09-04-love-seed-buy-now-paths.json`.
 - Ledger v1.92.24. Auth still blocked.
+
+### 2026-09-04 (script-draft buy_now_path dogfood)
+
+- All 5 `script-draft-*-buy-now.json` cite live `lead.buy_now_path.rails` (Franklin Shopify, Michaels marketplace leak, etc.).
+- `validate-buy-now-dogfood.mjs` requires rails + anti-rent wedge language. Ledger v1.92.25. Auth still blocked.

@@ -1,27 +1,32 @@
 {
   "draft_id": "script-draft-rioja-buy-now-2026-09-04",
   "status": "PENDING_APPROVAL",
-  "purpose": "Dogfood script-draft on Denver chef love (Rioja) — love→buy-now vs menu-markup / ChowNow/Chowly web OS. Not forecasting.",
+  "purpose": "Dogfood script-draft on Denver chef love — love→buy-now vs Flavor Dojo in-person carryout (live buy_now_path). Not forecasting.",
   "lead": {
     "name": "Rioja",
     "market": "Denver, CO",
     "yelp_alias": "rioja-denver",
     "love_signal": "Chef Jennifer Jasinski / Larimer Square destination / ~2.9k Yelp reviews / pickup present",
-    "source_fixture": "fixtures/tool-hunt/denver-love-brands.json"
+    "source_fixture": "fixtures/tool-hunt/denver-love-brands.json",
+    "buy_now_path": {
+      "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
+      "note": "Flavor Dojo carryout is in-person pickup — Shop closes social demand without bio→webview cliffs",
+      "sources": ["https://www.riojadenver.com/menus/carryout/"]
+    }
   },
   "script": {
     "hook_2s": "Spanish pan hits the flame — sherry steam, Larimer Square night, no talking yet.",
     "proof": "People already book Rioja for Jasinski — this isn't a feed filler, it's a Denver destination kitchen.",
-    "anti_rent": "Don't pad a DoorDash menu to pay the marketplace. Dual-run discovery if you must — but shop the SKU you KEEP. Never86 buy-now / shop in bio.",
+    "anti_rent": "Flavor Dojo carryout is in-person on Larimer — great for locals, dead for feed love. Dual-run discovery if you must — but shop the SKU you KEEP. Never86 buy-now / shop in bio.",
     "price_scarcity": "Limited Larimer pack / merch drop — when it's gone, it's gone.",
     "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
   },
-  "owner_blurb": "Rioja already owns Denver love. Never86 turns that love into shoppable TikTok/IG buy-now — not DoorDash menu-markup losers, not ChowNow/Chowly/Lunchbox web OS, not Owner email/SMS.",
+  "owner_blurb": "Rioja already owns Denver love. Public rails are phone reservations + in-person Flavor Dojo — Never86 turns feed love into shoppable TikTok/IG buy-now, not ChowNow/Chowly web OS or DoorDash menu-markup.",
   "rival_contrast": [
+    "Flavor Dojo in-person carryout (live buy_now_path)",
     "ChowNow / Chowly / Lunchbox / OPA! / SWIPEBY — first-party web/app OS",
+    "linkboo — webview escape still a handoff cliff",
     "Owner.com — email/SMS first-party OS",
-    "Ordr / Menami / TextOrder — DM/SMS conversational order",
-    "OrderPost — hosted post→order links",
     "PlateAI / Flik / Feedo — content-only"
   ],
   "never": [

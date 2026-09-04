@@ -1,27 +1,32 @@
 {
   "draft_id": "script-draft-michaels-genuine-buy-now-2026-09-04",
   "status": "PENDING_APPROVAL",
-  "purpose": "Dogfood script-draft on Miami chef love (Michael's Genuine) — love→buy-now vs effective-cost marketplace rent. Not forecasting.",
+  "purpose": "Dogfood script-draft on Miami chef love — love→buy-now vs marketplace leak on official site (UberEats/DoorDash CTAs). Not forecasting.",
   "lead": {
     "name": "Michael's Genuine Food & Drink",
     "market": "Miami, FL",
     "yelp_alias": "michaels-genuine-food-and-drink-miami",
     "love_signal": "Chef Michael Schwartz / Design District cult / pickup present",
-    "source_fixture": "fixtures/tool-hunt/miami-love-brands.json"
+    "source_fixture": "fixtures/tool-hunt/miami-love-brands.json",
+    "buy_now_path": {
+      "rails": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
+      "note": "Official site pushes UberEats/DoorDash for delivery — marketplace leak on love brand",
+      "sources": ["https://michaelsgenuine.com/"]
+    }
   },
   "script": {
     "hook_2s": "Cast-iron hits the flame — Design District night, citrus steam, no talking yet.",
     "proof": "People already book Michael's Genuine for Schwartz — destination kitchen, not a feed filler.",
-    "anti_rent": "Your DoorDash commission is not your DoorDash cost. Shop the SKU you KEEP. Never86 buy-now / shop in bio.",
+    "anti_rent": "Even the brand site sends delivery to UberEats and DoorDash — that's marketplace rent on demand you already own. Shop the SKU you KEEP. Never86 buy-now / shop in bio.",
     "price_scarcity": "Limited Design District pack / merch drop — when it's gone, it's gone.",
     "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
   },
-  "owner_blurb": "Michael's Genuine already owns Miami love. Never86 turns that love into shoppable TikTok/IG buy-now — not 18% effective DoorDash statements, not Owner/Sauce/BentoBox web OS.",
+  "owner_blurb": "Michael's Genuine already owns Miami love — but michaelsgenuine.com still routes delivery to UberEats/DoorDash. Never86 Shop buy-now displaces that leak without Toast Meta Order Food / Owner web OS.",
   "rival_contrast": [
-    "Owner.com / Sauce / BentoBox / Fleksa — first-party web/commerce OS",
-    "ChowNow / Lunchbox / Popmenu — commission-free web ordering",
-    "Ordr / Menami / TextOrder — DM/SMS conversational order",
-    "OrderPost — hosted post→order links",
+    "UberEats / DoorDash on brand site — marketplace leak (live)",
+    "Toast Meta Order Food / BentoBox IG Order Food — still webview checkout",
+    "Owner.com / Sauce / BentoBox — first-party web/commerce OS",
+    "OpenTable — reservations, not shoppable SKUs",
     "PlateAI / Flik / Feedo — content-only"
   ],
   "never": [

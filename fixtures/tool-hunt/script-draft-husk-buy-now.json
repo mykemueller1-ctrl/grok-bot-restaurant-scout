@@ -1,27 +1,36 @@
 {
   "draft_id": "script-draft-husk-buy-now-2026-09-04",
   "status": "PENDING_APPROVAL",
-  "purpose": "Dogfood script-draft on Nashville chef love (Husk) — love→buy-now vs padded DoorDash menus / first-party web OS peers. Not forecasting.",
+  "purpose": "Dogfood script-draft on Nashville chef love — love→buy-now vs Resy + Toast gift-card lock-in (live buy_now_path). Not forecasting.",
   "lead": {
     "name": "Husk",
     "market": "Nashville, TN",
     "yelp_alias": "husk-nashville",
     "love_signal": "Sean Brock Southern destination / Rutledge St cult / ~2k Yelp reviews",
-    "source_fixture": "fixtures/tool-hunt/nashville-love-brands.json"
+    "source_fixture": "fixtures/tool-hunt/nashville-love-brands.json",
+    "buy_now_path": {
+      "rails": ["resy_reservations", "toast_gift_card", "takeout"],
+      "note": "Resy booking + Toast gift-card rail — Toast lock-in; Shop for social SKUs",
+      "sources": [
+        "http://www.husknashville.com/",
+        "https://www.toasttab.com/husk-nashville/findcard",
+        "https://resy.com/cities/nashville-tn/venues/husk-nashville"
+      ]
+    }
   },
   "script": {
     "hook_2s": "Cast-iron skillet hits the pass — corn bread crack, Southern steam, no VO yet.",
     "proof": "People already chase Husk for Sean Brock Southern — this isn't a feed filler, it's a destination kitchen.",
-    "anti_rent": "Don't pad a DoorDash menu to pay the marketplace. Shop the SKU the kitchen wants you to buy — Never86 buy-now / shop in bio.",
+    "anti_rent": "Resy books the table and Toast holds the gift card — neither closes a shoppable pack from TikTok. Don't pad a DoorDash menu. Never86 buy-now / shop in bio.",
     "price_scarcity": "Limited Southern pack / merch drop — when it's gone, it's gone.",
     "cta": "Tap the bag / shop in bio — Never86 TikTok Shop product (sandbox until APPROVED)."
   },
-  "owner_blurb": "Husk already owns Nashville love. Never86 turns that love into shoppable TikTok/IG buy-now — not DoorDash menu-markup losers, not Lunchbox/OPA!/SWIPEBY/Deonde web OS, not Ordr/TextOrder DM chatbots, not Owner email/SMS.",
+  "owner_blurb": "Husk already owns Nashville love inside Resy + Toast. Never86 turns that love into shoppable TikTok/IG buy-now — not Toast Meta Order Food webviews, not DoorDash menu-markup, not Owner email/SMS.",
   "rival_contrast": [
+    "Resy + Toast gift-card rail (live buy_now_path)",
+    "Toast Meta Order Food — IG button still webview checkout",
     "Lunchbox / OPA! / SWIPEBY / Deonde — first-party web/app OS",
     "Owner.com — email/SMS first-party OS",
-    "Ordr / Menami / TextOrder / Ainisa — DM/SMS conversational order",
-    "OrderPost — hosted post→order links",
     "PlateAI / Flik / Feedo — content-only"
   ],
   "never": [

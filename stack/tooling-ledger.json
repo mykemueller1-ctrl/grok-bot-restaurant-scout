@@ -1,5 +1,5 @@
 {
-  "version": "1.92.24",
+  "version": "1.92.25",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1244,6 +1244,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Script-draft dogfoods cite live buy_now_path rails (5/5)",
+      "lane": "skills_knowledge",
+      "why": "Franklin Shopify+preorder, Michaels UberEats/DoorDash leak, Husk Toast+Resy, G&TG OpenTable, Rioja Flavor Dojo — validate-buy-now-dogfood requires lead.buy_now_path.rails",
+      "verdict": "adopt"
+    },
     {
       "item": "Love-seed buy_now_path rails on all 5 live primaries",
       "lane": "vertical_gtm",
