@@ -71,6 +71,17 @@ node scripts/unlock-beyond-the-hunt.mjs   # exit 0 when Mem0+Context READY
 
 Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, continue with Active Composio/X/Yelp paths. Brief stays git-backed until Mem0 imports.
 
+## KEEP grader UI
+
+Thin public wedge: `fixtures/tool-hunt/keep-grader/` — rank KEEP$ after fees (Shop ~6% buy-now vs Marketplace 15–30%).
+
+```bash
+python3 -m http.server 5180 --bind 0.0.0.0 --directory fixtures/tool-hunt/keep-grader
+node scripts/validate-keep-grader-ui.mjs
+```
+
+Not forecasting. Fee catalog pause still applies to OO fee dogfoods.
+
 ## Decision rules
 
 - **adopt** — closes a named gap; pivot in hours/days; sharpens vertical GTM
