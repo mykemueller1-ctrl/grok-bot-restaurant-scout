@@ -34,6 +34,8 @@ jobs:
           if (!eff.signals.includes('effective_cost_math') || eff.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(eff));
           const toast = scoreMarketplaceKeep('Restaurant owners leaving Toast cite high fees lock-in — rent they do not KEEP');
           if (!toast.signals.includes('pos_fee_lockin') || toast.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(toast));
+          const po = scoreMarketplaceKeep('BentoBox charges \$0.99 per order Online Order Service Fee — Clover POS required');
+          if (!po.signals.includes('per_order_platform_fee') || !po.signals.includes('pos_fee_lockin')) throw new Error(JSON.stringify(po));
           const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
           if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
           const g = await dispatchSourceTool('keep_channel_grade', { dinein: 12000, doordash: 9000, doordash_fee_pct: 25, social_buy_now: 2500 });
@@ -107,6 +109,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-franklin.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-michaels-genuine.json
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
           test -f fixtures/tool-hunt/script-draft-rioja-buy-now.json
@@ -136,7 +139,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
           node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
-          node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 3'
+          node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 4'
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 11'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 3'

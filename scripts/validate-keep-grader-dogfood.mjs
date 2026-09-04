@@ -14,8 +14,8 @@ const files = readdirSync(dir)
   .filter((f) => f.startsWith("pain-to-sales-keep-grader-") && f.endsWith(".json"))
   .sort();
 
-if (files.length < 3) {
-  console.error(`validate-keep-grader-dogfood: need ≥3 pain-to-sales-keep-grader-*.json (has ${files.length})`);
+if (files.length < 4) {
+  console.error(`validate-keep-grader-dogfood: need ≥4 pain-to-sales-keep-grader-*.json (has ${files.length})`);
   process.exit(1);
 }
 

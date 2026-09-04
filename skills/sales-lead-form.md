@@ -32,4 +32,4 @@ Rules:
 
 **Done when:** `SalesLead` saved and owner notified.
 
-**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` + `fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json` + `fixtures/tool-hunt/pain-to-sales-nashville-husk.json` + `fixtures/tool-hunt/pain-to-sales-denver-rioja.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-franklin.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-husk.json` prove multi-market Yelp/Maps/X/KEEP/grader → SalesLead DRAFT without Apollo/Mem0.
+**Active dogfood:** multi-market KEEP→SalesLead fixtures including `pain-to-sales-keep-grader-rioja.json` + `franklin` + `husk` + `michaels-genuine` prove grader→lead without Apollo/Mem0.

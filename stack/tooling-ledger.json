@@ -1,5 +1,5 @@
 {
-  "version": "1.30.0",
+  "version": "1.31.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -78,7 +78,7 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "yelp-enrich-girl-goat + pain-to-sales-keep-girl-goat + franklin + miami-michaels-genuine + nashville-husk + denver-rioja + keep-grader-rioja + keep-grader-franklin + keep-grader-husk",
+    "pain_sales_dogfood": "yelp-enrich-girl-goat + pain-to-sales-keep-girl-goat + franklin + miami-michaels-genuine + nashville-husk + denver-rioja + keep-grader-rioja/franklin/husk/michaels-genuine",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin + miami + nashville + denver-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
@@ -554,9 +554,27 @@
         "https://orderitto.com/compare/bentobox-pricing",
         "https://www.getsauce.com/post/bentobox-pricing-fees"
       ]
+    },
+    {
+      "name": "Ressto",
+      "lane": "vertical_gtm",
+      "stack": "Commission-free direct ordering (free ≤100 orders/mo; Growth ~$39/outlet) + branded app/website/loyalty; GloriaFood migration path; Deonde-family support",
+      "memory": "Owned diner list for SMS/email/loyalty",
+      "edge": "Active GloriaFood-successor KEEP peer — not TikTok Shop-native; already adjacent to watched Deonde",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://ressto.co/",
+        "https://ressto.co/gloriafood-alternative.shtml"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Ressto GloriaFood-successor 0% commission ordering",
+      "lane": "vertical_gtm",
+      "why": "Free/Growth commission-free peer filling GloriaFood EOL; watch with Deonde",
+      "verdict": "watch"
+    },
     {
       "item": "Fleksa 0% commission restaurant OS",
       "lane": "vertical_gtm",

@@ -220,3 +220,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted per_order_platform_fee KEEP signal + pain-scan-bentobox-per-order.json (strong_keep 11).
 - Third KEEP grader dogfood: pain-to-sales-keep-grader-husk.json (gate ≥3).
 - Ledger v1.30.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Ressto watch + Miami KEEP grader dogfood)
+
+- Watched Ressto (GloriaFood-successor 0% commission; Deonde-family).
+- Fourth KEEP grader→SalesLead: pain-to-sales-keep-grader-michaels-genuine.json (gate ≥4).
+- API CI smoke covers per_order_platform_fee.
+- Ledger v1.31.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
