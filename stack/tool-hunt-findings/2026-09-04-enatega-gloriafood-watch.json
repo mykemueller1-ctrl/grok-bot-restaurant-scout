@@ -20,7 +20,17 @@
     "peer_count_impact": "none"
   },
   "mission_lock": {
-    "yes": ["GloriaFood EOL wedge", "white-label rival watch"],
-    "no": ["fee dogfood", "inflate meta_order_food_peer_count"]
-  }
+    "yes": [
+      "GloriaFood EOL wedge",
+      "white-label rival watch"
+    ],
+    "no": [
+      "fee dogfood",
+      "inflate meta_order_food_peer_count"
+    ]
+  },
+  "finding_id": "2026-09-04-enatega-gloriafood-watch",
+  "name": "2026-09-04-enatega-gloriafood-watch",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

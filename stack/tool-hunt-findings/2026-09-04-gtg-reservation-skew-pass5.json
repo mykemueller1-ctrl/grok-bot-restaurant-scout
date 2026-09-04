@@ -21,11 +21,23 @@
   "summary": "G&TG reservation_skew pass-5: brand site still reservation/hours-only; OpenTable live (Booked 203× today). Yelp 10732. Shop buy-now fills missing social close.",
   "teach": {
     "label": "reservation_skew_no_buy_now",
-    "rails": ["opentable_reservations", "no_first_party_oo_found"],
+    "rails": [
+      "opentable_reservations",
+      "no_first_party_oo_found"
+    ],
     "yelp_reviews": 10732
   },
   "mission_lock": {
-    "yes": ["love→buy-now teach"],
-    "no": ["fee dogfood", "forecasting"]
-  }
+    "yes": [
+      "love→buy-now teach"
+    ],
+    "no": [
+      "fee dogfood",
+      "forecasting"
+    ]
+  },
+  "finding_id": "2026-09-04-gtg-reservation-skew-pass5",
+  "name": "2026-09-04-gtg-reservation-skew-pass5",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

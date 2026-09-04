@@ -1068,3 +1068,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Toast OO (updated Jul 7 2026) + Zyda FBE + ChatFood IG Order Food — peer_count stays 9. Finding: `2026-09-04-toast-zyda-chatfood-meta-reconfirm.json`.
 - Ledger v1.92.68. Auth still blocked for unlock READY.
 
+
+### 2026-09-04 (BentoBox/Hatch/Savera + Cursor enrich MCPs)
+
+- Reconfirmed **BentoBox** Meta Help 412673 (edited 2026-01-15) — peer_count stays 9. Finding: `2026-09-04-bentobox-meta-fbe-reconfirm.json`.
+- Reconfirmed **Klikit Instant Delivery** guide + **Ressto** GloriaFood alternative — watch only (not FBE). Findings: `2026-09-04-klikit-instant-delivery-reconfirm.json`, `2026-09-04-ressto-gloriafood-successor-reconfirm.json`.
+- Watched **Savera** (savera.dev) WA AI + branded app 0% claim — ChatOrder-class; fee pause. Finding: `2026-09-04-savera-wa-branded-app.json`.
+- Watched **Kuration MCP** + **LeadEnrich MCP** (carsonlabs) — Cursor enrich peers; Yelp phone stays Active. Findings: `2026-09-04-kuration-mcp-cursor.json`, `2026-09-04-leadenrich-mcp-cursor.json`.
+- Adopted reconfirms: Square ChatGPT/Claude ordering, Dashboardly TikTok Shop ~6%, Meta Hatch BI (Shop rival, not FBE). Findings: `2026-09-04-square-ai-channel-reconfirm.json`, `2026-09-04-dashboardly-tiktok-shop-6pct-reconfirm.json`, `2026-09-04-meta-hatch-bi-order-book-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_rv_eJnojQ9eR (~10 min).
+- Ledger v1.92.69. Auth still blocked for unlock READY.

@@ -20,7 +20,18 @@
     "peer_count_impact": "none"
   },
   "mission_lock": {
-    "yes": ["EOL wedge", "0% free OO watch"],
-    "no": ["US swarm expand", "fee dogfood", "meta_order_food_peer_count"]
-  }
+    "yes": [
+      "EOL wedge",
+      "0% free OO watch"
+    ],
+    "no": [
+      "US swarm expand",
+      "fee dogfood",
+      "meta_order_food_peer_count"
+    ]
+  },
+  "finding_id": "2026-09-04-menige-gloriafood-free",
+  "name": "2026-09-04-menige-gloriafood-free",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

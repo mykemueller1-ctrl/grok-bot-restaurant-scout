@@ -1,0 +1,27 @@
+{
+  "id": "2026-09-04-meta-hatch-bi-order-book-reconfirm",
+  "discovered_at": "2026-09-04T21:28:00Z",
+  "tool_name": "Meta Hatch (BI memo order food + book tables)",
+  "category": "vertical_rival",
+  "source_urls": [
+    "https://www.businessinsider.com/meta-hatch-instagram-shopping-platform-2026-8"
+  ],
+  "what_it_does": "Business Insider memo (Aug 27 2026) on Meta Hatch: Instagram shopping platform direction includes order food and book tables inside IG — Shop-platform rival, not an Order Food FBE partner listing.",
+  "fit_for_never86": "adopt",
+  "why": "Adopt Hatch as Shop platform rival for love→buy-now. Explicitly NOT an FBE peer — do not inflate meta_order_food_fbe_peers beyond 9.",
+  "action": "Record Hatch BI adopt; keep peer_count 9; teach Hatch as platform risk separate from FBE partners.",
+  "next_check": "If Hatch launches public Order Food partner APIs that subsume FBE, re-grade entire peer set.",
+  "memory_tags": [
+    "meta-hatch",
+    "instagram-shop",
+    "order-food",
+    "book-tables",
+    "not-fbe-peer"
+  ],
+  "finding_id": "2026-09-04-meta-hatch-bi-order-book-reconfirm",
+  "name": "Meta Hatch (BI memo order food + book tables)",
+  "lane": "vertical_gtm",
+  "verdict": "adopt",
+  "summary": "Business Insider memo (Aug 27 2026) on Meta Hatch: Instagram shopping platform direction includes order food and book tables inside IG — Shop-platform rival, not an Order Food FBE partner listing. Adopt Hatch as Shop platform rival for love→buy-now. Explicitly NOT an FBE peer — do not inflate meta_order_food_fbe_peers beyond 9.",
+  "researched_at": "2026-09-04"
+}

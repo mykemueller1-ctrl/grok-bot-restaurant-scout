@@ -15,11 +15,22 @@
   "summary": "Rioja buy_now_path pass-4: Flavor Dojo carryout + phone reservations still live on riojadenver.com. Yelp 2915. riorestaurant.com remains parked — ignore.",
   "teach": {
     "label": "rioja_buy_now_path_pass4",
-    "rails": ["flavor_dojo_carryout_in_person", "phone_reservations"],
+    "rails": [
+      "flavor_dojo_carryout_in_person",
+      "phone_reservations"
+    ],
     "yelp_reviews": 2915
   },
   "mission_lock": {
-    "yes": ["love→buy-now calibration"],
-    "no": ["use parked riorestaurant.com"]
-  }
+    "yes": [
+      "love→buy-now calibration"
+    ],
+    "no": [
+      "use parked riorestaurant.com"
+    ]
+  },
+  "finding_id": "2026-09-04-rioja-buy-now-pass4",
+  "name": "2026-09-04-rioja-buy-now-pass4",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

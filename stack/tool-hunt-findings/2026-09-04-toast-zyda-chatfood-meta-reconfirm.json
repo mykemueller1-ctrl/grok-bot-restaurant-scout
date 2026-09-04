@@ -30,7 +30,17 @@
     "peer_count_impact": "none — already counted"
   },
   "mission_lock": {
-    "yes": ["Meta FBE peer reconfirm", "love→buy-now"],
-    "no": ["inflate peer_count", "merge ChatFood into Deliverect"]
-  }
+    "yes": [
+      "Meta FBE peer reconfirm",
+      "love→buy-now"
+    ],
+    "no": [
+      "inflate peer_count",
+      "merge ChatFood into Deliverect"
+    ]
+  },
+  "finding_id": "2026-09-04-toast-zyda-chatfood-meta-reconfirm",
+  "name": "2026-09-04-toast-zyda-chatfood-meta-reconfirm",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

@@ -20,7 +20,19 @@
     "peer_count_impact": "none until FBE primary cite"
   },
   "mission_lock": {
-    "yes": ["vertical rival watch", "EOL wedge", "first-party OO"],
-    "no": ["fee dogfood", "inflate meta_order_food_peer_count", "forecasting"]
-  }
+    "yes": [
+      "vertical rival watch",
+      "EOL wedge",
+      "first-party OO"
+    ],
+    "no": [
+      "fee dogfood",
+      "inflate meta_order_food_peer_count",
+      "forecasting"
+    ]
+  },
+  "finding_id": "2026-09-04-slerp-gloriafood-uk",
+  "name": "2026-09-04-slerp-gloriafood-uk",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

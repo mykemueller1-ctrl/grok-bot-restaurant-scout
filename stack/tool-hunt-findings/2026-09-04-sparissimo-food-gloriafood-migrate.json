@@ -25,7 +25,17 @@
     "peer_count_impact": "none until FBE primary cite"
   },
   "mission_lock": {
-    "yes": ["vertical rival watch", "EOL wedge context"],
-    "no": ["fee dogfood", "inflate meta_order_food_peer_count"]
-  }
+    "yes": [
+      "vertical rival watch",
+      "EOL wedge context"
+    ],
+    "no": [
+      "fee dogfood",
+      "inflate meta_order_food_peer_count"
+    ]
+  },
+  "finding_id": "2026-09-04-sparissimo-food-gloriafood-migrate",
+  "name": "2026-09-04-sparissimo-food-gloriafood-migrate",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

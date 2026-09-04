@@ -1,0 +1,27 @@
+{
+  "id": "2026-09-04-leadenrich-mcp-cursor",
+  "discovered_at": "2026-09-04T21:28:00Z",
+  "tool_name": "LeadEnrich MCP (carsonlabs)",
+  "category": "skills_knowledge",
+  "source_urls": [
+    "https://github.com/carsonlabs/leadenrich-mcp"
+  ],
+  "what_it_does": "carsonlabs LeadEnrich MCP — Cursor-native prospect enrichment MCP peer for sales-lead workflows.",
+  "fit_for_never86": "watch",
+  "why": "Skills/MCP hunt peer for pain→sales-lead. Do not displace Yelp Active love calibration or require new secrets until auth unlocks land.",
+  "action": "Note as Cursor enrich MCP watch; auth-first before adopting.",
+  "next_check": "After Mem0/Context READY, decide whether LeadEnrich adds signal beyond LeadMagic/LocalLeads.",
+  "memory_tags": [
+    "leadenrich",
+    "carsonlabs",
+    "mcp",
+    "cursor",
+    "prospect-enrich"
+  ],
+  "finding_id": "2026-09-04-leadenrich-mcp-cursor",
+  "name": "LeadEnrich MCP (carsonlabs)",
+  "lane": "skills_knowledge",
+  "verdict": "watch",
+  "summary": "carsonlabs LeadEnrich MCP — Cursor-native prospect enrichment MCP peer for sales-lead workflows. Skills/MCP hunt peer for pain→sales-lead. Do not displace Yelp Active love calibration or require new secrets until auth unlocks land.",
+  "researched_at": "2026-09-04"
+}

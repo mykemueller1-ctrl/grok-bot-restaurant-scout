@@ -27,11 +27,24 @@
   "summary": "Franklin buy_now_path pass-5: preorder + Shopify + Goldbelly still live. Yelp 6477. ATX love calibration holds.",
   "teach": {
     "label": "franklin_buy_now_path_pass5",
-    "rails": ["first_party_preorder", "shopify_merch", "goldbelly_ship"],
+    "rails": [
+      "first_party_preorder",
+      "shopify_merch",
+      "goldbelly_ship"
+    ],
     "yelp_reviews": 6477
   },
   "mission_lock": {
-    "yes": ["love→buy-now calibration"],
-    "no": ["forecasting", "fee dogfood"]
-  }
+    "yes": [
+      "love→buy-now calibration"
+    ],
+    "no": [
+      "forecasting",
+      "fee dogfood"
+    ]
+  },
+  "finding_id": "2026-09-04-franklin-buy-now-pass5",
+  "name": "2026-09-04-franklin-buy-now-pass5",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

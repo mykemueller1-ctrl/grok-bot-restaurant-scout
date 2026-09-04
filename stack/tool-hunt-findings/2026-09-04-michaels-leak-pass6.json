@@ -15,11 +15,26 @@
   "summary": "Michaels brand_site_marketplace_leak pass-6: miami page still routes Delivery to UberEats + DoorDash. Yelp 2084. Love teach holds.",
   "teach": {
     "label": "brand_site_marketplace_leak",
-    "rails": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
+    "rails": [
+      "ubereats",
+      "doordash",
+      "opentable_reservations",
+      "takeout_cta"
+    ],
     "yelp_reviews": 2084
   },
   "mission_lock": {
-    "yes": ["love→buy-now teach", "marketplace rent contrast"],
-    "no": ["fee dogfood", "forecasting"]
-  }
+    "yes": [
+      "love→buy-now teach",
+      "marketplace rent contrast"
+    ],
+    "no": [
+      "fee dogfood",
+      "forecasting"
+    ]
+  },
+  "finding_id": "2026-09-04-michaels-leak-pass6",
+  "name": "2026-09-04-michaels-leak-pass6",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

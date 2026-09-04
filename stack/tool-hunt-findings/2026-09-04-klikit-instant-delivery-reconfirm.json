@@ -1,0 +1,28 @@
+{
+  "id": "2026-09-04-klikit-instant-delivery-reconfirm",
+  "discovered_at": "2026-09-04T21:28:00Z",
+  "tool_name": "Klikit Instant Delivery (guide still live)",
+  "category": "vertical_rival",
+  "source_urls": [
+    "https://www.klikit.io/guides/what-is-klikit-instant-delivery-and-how-does-it-work"
+  ],
+  "what_it_does": "Klikit Instant Delivery guide remains live: restaurants keep existing drivers and Klikit routes orders from own website, Google Food Ordering, Instagram, Facebook, and QR — a multi-channel dispatch layer, not Meta Order Food FBE primary.",
+  "fit_for_never86": "watch",
+  "why": "Reconfirm of Klikit as multi-channel Instant Delivery rival. Grader stays 6 (not Meta FBE peer). Useful for love→buy-now channel sprawl teaching, not peer inflation.",
+  "action": "Keep Klikit on watch; do not add to meta_order_food_fbe_peers.",
+  "next_check": "If Meta lists Klikit as Order Food FBE partner with Help Center primary, re-grade.",
+  "memory_tags": [
+    "klikit",
+    "instant-delivery",
+    "instagram",
+    "facebook",
+    "multi-channel",
+    "grader-6"
+  ],
+  "finding_id": "2026-09-04-klikit-instant-delivery-reconfirm",
+  "name": "Klikit Instant Delivery (guide still live)",
+  "lane": "vertical_gtm",
+  "verdict": "watch",
+  "summary": "Klikit Instant Delivery guide remains live: restaurants keep existing drivers and Klikit routes orders from own website, Google Food Ordering, Instagram, Facebook, and QR — a multi-channel dispatch layer, not Meta Order Food FBE primary. Reconfirm of Klikit as multi-channel Instant Delivery rival. Grader stays 6 (not Meta FBE peer). Useful for love→buy-now channel sprawl teaching, not peer inflation.",
+  "researched_at": "2026-09-04"
+}

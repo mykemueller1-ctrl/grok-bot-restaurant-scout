@@ -1,0 +1,28 @@
+{
+  "id": "2026-09-04-kuration-mcp-cursor",
+  "discovered_at": "2026-09-04T21:28:00Z",
+  "tool_name": "Kuration MCP",
+  "category": "skills_knowledge",
+  "source_urls": [
+    "https://github.com/kurationai/kuration-mcp",
+    "https://docs.kuration.ai/"
+  ],
+  "what_it_does": "Open-source MCP server for Kuration.ai data enrichment and lead research — Apollo-waterfall-style prospect enrichment usable from Cursor agents.",
+  "fit_for_never86": "watch",
+  "why": "Cursor skills/MCP peer for pain→sales-lead enrichment. Yelp phone stays Active primary for love calibration; Kuration is optional enrich waterfall.",
+  "action": "Watch alongside LeadMagic / LocalLeads; prefer Yelp Active + existing enrich stack unless operator adopts.",
+  "next_check": "If operator wants MCP enrich beyond Yelp/LeadMagic, trial Kuration with API key in Cloud secrets.",
+  "memory_tags": [
+    "kuration",
+    "mcp",
+    "cursor",
+    "lead-enrichment",
+    "apollo-waterfall"
+  ],
+  "finding_id": "2026-09-04-kuration-mcp-cursor",
+  "name": "Kuration MCP",
+  "lane": "skills_knowledge",
+  "verdict": "watch",
+  "summary": "Open-source MCP server for Kuration.ai data enrichment and lead research — Apollo-waterfall-style prospect enrichment usable from Cursor agents. Cursor skills/MCP peer for pain→sales-lead enrichment. Yelp phone stays Active primary for love calibration; Kuration is optional enrich waterfall.",
+  "researched_at": "2026-09-04"
+}

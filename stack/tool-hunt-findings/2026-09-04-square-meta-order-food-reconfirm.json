@@ -18,7 +18,16 @@
     "peer_count_impact": "none — already counted"
   },
   "mission_lock": {
-    "yes": ["love→buy-now", "Meta FBE peer reconfirm"],
-    "no": ["inflate peer_count"]
-  }
+    "yes": [
+      "love→buy-now",
+      "Meta FBE peer reconfirm"
+    ],
+    "no": [
+      "inflate peer_count"
+    ]
+  },
+  "finding_id": "2026-09-04-square-meta-order-food-reconfirm",
+  "name": "2026-09-04-square-meta-order-food-reconfirm",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

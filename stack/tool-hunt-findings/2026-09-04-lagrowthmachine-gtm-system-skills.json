@@ -21,11 +21,24 @@
   "summary": "LaGrowthMachine/gtm-system is an open-source Cursor/Claude GTM skills + MCP pack. Watch under skills_knowledge as peer to Octave lfgtm-cursor, SyncGTM MCP, Zapier/zarif — adopt only pieces that sharpen Never86 love→buy-now / pain→sales-lead without drift into forecasting.",
   "teach": {
     "label": "lagrowthmachine_gtm_cursor_skills_watch",
-    "peers": ["octave-lfgtm-cursor", "syncgtm-mcp", "zapier-zarif"],
+    "peers": [
+      "octave-lfgtm-cursor",
+      "syncgtm-mcp",
+      "zapier-zarif"
+    ],
     "adopt_filter": "only if cite sharpens love→buy-now or vendor-pain shopping"
   },
   "mission_lock": {
-    "yes": ["Cursor memory/skills/MCP", "GTM agent tooling"],
-    "no": ["historical sales/labor forecasting research"]
-  }
+    "yes": [
+      "Cursor memory/skills/MCP",
+      "GTM agent tooling"
+    ],
+    "no": [
+      "historical sales/labor forecasting research"
+    ]
+  },
+  "finding_id": "2026-09-04-lagrowthmachine-gtm-system-skills",
+  "name": "2026-09-04-lagrowthmachine-gtm-system-skills",
+  "lane": "skills_knowledge",
+  "researched_at": "2026-09-04"
 }

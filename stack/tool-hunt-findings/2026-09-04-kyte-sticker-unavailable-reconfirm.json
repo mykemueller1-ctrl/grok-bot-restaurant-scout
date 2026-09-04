@@ -25,7 +25,16 @@
     "shop_wedge": "degraded Meta FBE path strengthens first-party Shop close"
   },
   "mission_lock": {
-    "yes": ["Meta FBE peer hygiene"],
-    "no": ["drop Kyte from peer_count", "inflate peer_count"]
-  }
+    "yes": [
+      "Meta FBE peer hygiene"
+    ],
+    "no": [
+      "drop Kyte from peer_count",
+      "inflate peer_count"
+    ]
+  },
+  "finding_id": "2026-09-04-kyte-sticker-unavailable-reconfirm",
+  "name": "2026-09-04-kyte-sticker-unavailable-reconfirm",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

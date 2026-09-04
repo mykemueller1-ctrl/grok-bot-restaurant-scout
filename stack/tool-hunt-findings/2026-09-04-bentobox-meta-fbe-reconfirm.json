@@ -1,0 +1,29 @@
+{
+  "id": "2026-09-04-bentobox-meta-fbe-reconfirm",
+  "discovered_at": "2026-09-04T21:28:00Z",
+  "tool_name": "BentoBox Meta Order Food (Help 412673 reconfirm)",
+  "category": "vertical_rival",
+  "source_urls": [
+    "https://www.facebook.com/business/help/412673376401109",
+    "https://getbento.com/integrations/facebook/"
+  ],
+  "what_it_does": "Meta Help Center article 412673 remains live (edited 2026-01-15): restaurants using BentoBox can set up Order Food on Facebook and Instagram via Meta Business Suite → Commerce Manager → Order Food, with BentoBox as the ordering partner. Confirms BentoBox stays in the nine Meta Order Food FBE peer set.",
+  "fit_for_never86": "adopt",
+  "why": "Primary Meta Help reconfirm of BentoBox Order Food FBE. Peer count stays 9 (Deliverect, Zyda, ChatFood, BentoBox, Toast Online Ordering, Flipdish, Kyte, Square Online, GloriaFood). Do not inflate.",
+  "action": "Record BentoBox Meta Help reconfirm; keep meta_order_food_fbe_peers.peer_count at 9.",
+  "next_check": "If Meta Help drops BentoBox or renames the Order Food partner path, re-grade peer set.",
+  "memory_tags": [
+    "bentobox",
+    "meta-fbe",
+    "order-food",
+    "instagram",
+    "facebook",
+    "peer-count-9"
+  ],
+  "finding_id": "2026-09-04-bentobox-meta-fbe-reconfirm",
+  "name": "BentoBox Meta Order Food (Help 412673 reconfirm)",
+  "lane": "vertical_gtm",
+  "verdict": "adopt",
+  "summary": "Meta Help Center article 412673 remains live (edited 2026-01-15): restaurants using BentoBox can set up Order Food on Facebook and Instagram via Meta Business Suite → Commerce Manager → Order Food, with BentoBox as the ordering partner. Confirms BentoBox stays in the nine Meta Order Food FBE peer set. Primary Meta Help reconfirm of BentoBox Order Food FBE. Peer count stays 9 (Deliverect, Zyda, ChatFood, BentoBox, Toast Online Ordering, Flipdish, Kyte, Square Online, GloriaFood). Do not inflate.",
+  "researched_at": "2026-09-04"
+}

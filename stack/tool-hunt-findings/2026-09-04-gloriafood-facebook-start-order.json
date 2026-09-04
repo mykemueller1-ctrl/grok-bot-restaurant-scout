@@ -20,7 +20,17 @@
     "peer_count_impact": "none — already counted in meta_order_food_peer_count=9"
   },
   "mission_lock": {
-    "yes": ["love→buy-now", "EOL successor watch context"],
-    "no": ["new fee dogfood", "inflate peer_count for GloriaFood EOL alone"]
-  }
+    "yes": [
+      "love→buy-now",
+      "EOL successor watch context"
+    ],
+    "no": [
+      "new fee dogfood",
+      "inflate peer_count for GloriaFood EOL alone"
+    ]
+  },
+  "finding_id": "2026-09-04-gloriafood-facebook-start-order",
+  "name": "2026-09-04-gloriafood-facebook-start-order",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

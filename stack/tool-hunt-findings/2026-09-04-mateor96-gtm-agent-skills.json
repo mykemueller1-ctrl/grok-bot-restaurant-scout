@@ -15,11 +15,26 @@
   "summary": "mateor96/gtm-agent-skills is a Claude/Cursor-class GTM pack purpose-built for B2B outreach to cafés/restaurants/venues — lead enrichment scored on 10k+ venue leads. Watch under skills_knowledge as pain→sales-lead peer to Apollo/Clay/LeadMagic/SyncGTM; adopt patterns that sharpen Never86 vendor-pain shopping without forecast drift.",
   "teach": {
     "label": "mateor96_venue_gtm_skills_watch",
-    "peers": ["leadmagic-cursor", "apollo-composio", "syncgtm-mcp", "lagrowthmachine-gtm-system"],
+    "peers": [
+      "leadmagic-cursor",
+      "apollo-composio",
+      "syncgtm-mcp",
+      "lagrowthmachine-gtm-system"
+    ],
     "adopt_filter": "venue lead enrich / ICP generate only — skip generic outbound spam playbooks"
   },
   "mission_lock": {
-    "yes": ["pain→sales-lead", "Cursor memory/skills/MCP", "restaurant venue ICP"],
-    "no": ["historical sales/labor forecasting research"]
-  }
+    "yes": [
+      "pain→sales-lead",
+      "Cursor memory/skills/MCP",
+      "restaurant venue ICP"
+    ],
+    "no": [
+      "historical sales/labor forecasting research"
+    ]
+  },
+  "finding_id": "2026-09-04-mateor96-gtm-agent-skills",
+  "name": "2026-09-04-mateor96-gtm-agent-skills",
+  "lane": "skills_knowledge",
+  "researched_at": "2026-09-04"
 }

@@ -48,7 +48,16 @@
     }
   },
   "mission_lock": {
-    "yes": ["love→buy-now calibration"],
-    "no": ["forecasting", "fee dogfood"]
-  }
+    "yes": [
+      "love→buy-now calibration"
+    ],
+    "no": [
+      "forecasting",
+      "fee dogfood"
+    ]
+  },
+  "finding_id": "2026-09-04-yelp-5market-pass6",
+  "name": "2026-09-04-yelp-5market-pass6",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

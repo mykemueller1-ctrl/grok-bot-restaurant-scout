@@ -19,7 +19,17 @@
     "peer_count_impact": "none — marketplace rent, not FBE primary peer"
   },
   "mission_lock": {
-    "yes": ["love→buy-now teach", "marketplace vs first-party contrast"],
-    "no": ["inflate meta_order_food_peer_count", "fee dogfood expansion"]
-  }
+    "yes": [
+      "love→buy-now teach",
+      "marketplace vs first-party contrast"
+    ],
+    "no": [
+      "inflate meta_order_food_peer_count",
+      "fee dogfood expansion"
+    ]
+  },
+  "finding_id": "2026-09-04-uber-eats-instagram-delivery-sticker",
+  "name": "2026-09-04-uber-eats-instagram-delivery-sticker",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }

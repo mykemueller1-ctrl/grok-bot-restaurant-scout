@@ -21,11 +21,23 @@
   "summary": "Husk buy_now_path pass-4: Resy + Toast gift-card still live; takeout still absent (no Toast OO). Yelp 1987. Resy/Toast = webview cliff teach.",
   "teach": {
     "label": "husk_buy_now_path_pass4",
-    "rails": ["resy_reservations", "toast_gift_card"],
+    "rails": [
+      "resy_reservations",
+      "toast_gift_card"
+    ],
     "yelp_reviews": 1987
   },
   "mission_lock": {
-    "yes": ["love→buy-now", "webview cliff teach"],
-    "no": ["reinstate takeout without Toast OO URL"]
-  }
+    "yes": [
+      "love→buy-now",
+      "webview cliff teach"
+    ],
+    "no": [
+      "reinstate takeout without Toast OO URL"
+    ]
+  },
+  "finding_id": "2026-09-04-husk-buy-now-pass4",
+  "name": "2026-09-04-husk-buy-now-pass4",
+  "lane": "vertical_gtm",
+  "researched_at": "2026-09-04"
 }
