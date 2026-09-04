@@ -106,6 +106,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-denver-rioja.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json
           test -f fixtures/tool-hunt/pain-to-sales-keep-grader-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-husk.json
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
           test -f fixtures/tool-hunt/script-draft-rioja-buy-now.json
@@ -123,6 +124,7 @@ jobs:
           test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-rioja-sandbox.json
           test -f fixtures/tool-hunt/pain-scan-dual-run.json
+          test -f fixtures/tool-hunt/pain-scan-bentobox-per-order.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -132,9 +134,10 @@ jobs:
           node scripts/score-marketplace-keep.mjs "pad DoorDash menus 20% menu markup to offset commissions" | grep -q menu_markup_pain
           node scripts/score-marketplace-keep.mjs "Own your ordering commission-free KEEP more profit" | grep -q own_ordering_keep
           node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
+          node scripts/score-marketplace-keep.mjs 'BentoBox charges $0.99 per order Online Order Service Fee — Clover POS required' | grep -q per_order_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
-          node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 2'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 10'
+          node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 3'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 11'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 3'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'

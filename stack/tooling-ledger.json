@@ -1,5 +1,5 @@
 {
-  "version": "1.29.0",
+  "version": "1.30.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -78,14 +78,14 @@
       "import_git_memory": "scripts/mem0-import-tool-hunt-memory.mjs",
       "docs": "docs/DESKTOP-UNLOCKS.md"
     },
-    "pain_sales_dogfood": "yelp-enrich-girl-goat + pain-to-sales-keep-girl-goat + franklin + miami-michaels-genuine + nashville-husk + denver-rioja + keep-grader-rioja + keep-grader-franklin",
+    "pain_sales_dogfood": "yelp-enrich-girl-goat + pain-to-sales-keep-girl-goat + franklin + miami-michaels-genuine + nashville-husk + denver-rioja + keep-grader-rioja + keep-grader-franklin + keep-grader-husk",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin + miami + nashville + denver-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json + husk + rioja",
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json + husk + rioja",
-    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run)",
+    "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
@@ -529,9 +529,46 @@
         "https://www.getsauce.com/",
         "https://www.getsauce.com/post/sauce-competitors-alternatives"
       ]
+    },
+    {
+      "name": "Fleksa",
+      "lane": "vertical_gtm",
+      "stack": "AI restaurant OS: website + 0% commission direct ordering + POS/QR/reservations/marketing; GloriaFood-successor narrative",
+      "memory": "POS-linked guest data for email/SMS loyalty",
+      "edge": "First-party KEEP OS peer — not TikTok Shop-native; contrast in sales angles",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://fleksa.com/",
+        "https://fleksa.com/en/blog/free-restaurant-online-ordering-systems-after-gloriafood"
+      ]
+    },
+    {
+      "name": "BentoBox",
+      "lane": "vertical_gtm",
+      "stack": "Website/commerce suite now Clover-only for new customers; takeout add-on with reported $0.99/order service fee + processing",
+      "memory": "Guest/commerce data inside Clover hospitality stack",
+      "edge": "Per-order fee + POS lock-in = KEEP leak teach signal; not social buy-now native",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://getbento.com/",
+        "https://orderitto.com/compare/bentobox-pricing",
+        "https://www.getsauce.com/post/bentobox-pricing-fees"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Fleksa 0% commission restaurant OS",
+      "lane": "vertical_gtm",
+      "why": "GloriaFood-era first-party KEEP OS; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "BentoBox $0.99/order + Clover lock-in KEEP signal",
+      "lane": "vertical_gtm",
+      "why": "per_order_platform_fee + pos_fee_lockin on KEEP scorer; watch peer fees",
+      "verdict": "adopt"
+    },
     {
       "item": "Sauce commission-free ordering + delivery OS",
       "lane": "vertical_gtm",

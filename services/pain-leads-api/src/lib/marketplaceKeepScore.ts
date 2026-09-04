@@ -16,14 +16,16 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   { re: /restaurant owner|operator|gm\b/i, signal: "operator_voice", w: 10 },
   // Statement math: headline commission ≠ take-home (Never86 anti-rent teach signal)
   { re: /effective cost|left with|lives on|what (is|you'?re? )left|statement:/i, signal: "effective_cost_math", w: 20 },
-  // POS lock-in (Toast etc.) — stack pain for sales forms, not forecasting
-  { re: /\btoast\b.*(fee|fees|lock|terminat)|leaving toast|toast pos/i, signal: "pos_fee_lockin", w: 15 },
+  // POS lock-in (Toast / BentoBox→Clover) — stack pain for sales forms, not forecasting
+  { re: /\btoast\b.*(fee|fees|lock|terminat)|leaving toast|toast pos|bentobox.*(clover|fee|\$0\.99)|clover pos.*(only|required)|must (be|adopt) clover/i, signal: "pos_fee_lockin", w: 15 },
   // Delivery-menu padding / consumer markup backlash (operator + guest pain)
   { re: /pad(ded)?|menu markup|inflat(ed|e) menu|markup (on|to offset)/i, signal: "menu_markup_pain", w: 15 },
   // First-party OS KEEP peers (Deonde/OPA!/SWIPEBY language)
   { re: /own your ordering|commission[\s-]?free|100%\s*of\s*(the\s*)?revenue|keep more profit/i, signal: "own_ordering_keep", w: 15 },
   // Dual-run: keep marketplace for discovery, own channel for KEEP guests
   { re: /dual[\s-]?run|run both|marketplaces? for (new|discovery)|discovery.*(direct|first[\s-]?party)/i, signal: "dual_run_marketplace", w: 15 },
+  // Website/OS per-order platform fees (BentoBox $0.99/order style) — not marketplace % but still KEEP leak
+  { re: /\$0\.\d{2}\s*(per[\s-]?order|\/\s*order)|per[\s-]?order (fee|charge|service fee)|online order service fee/i, signal: "per_order_platform_fee", w: 15 },
 ];
 
 export function scoreMarketplaceKeep(snippet: string): MarketplaceKeepResult {

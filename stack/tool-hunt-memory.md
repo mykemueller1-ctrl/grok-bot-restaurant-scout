@@ -213,3 +213,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Skipped GloriaFood (discontinued new signups).
 - Second KEEP grader→SalesLead dogfood: pain-to-sales-keep-grader-franklin.json (gate ≥2).
 - Ledger v1.29.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Fleksa/BentoBox + per-order fee KEEP + Husk grader)
+
+- Watched Fleksa (0% commission OS) + BentoBox ($0.99/order + Clover lock-in).
+- Adopted per_order_platform_fee KEEP signal + pain-scan-bentobox-per-order.json (strong_keep 11).
+- Third KEEP grader dogfood: pain-to-sales-keep-grader-husk.json (gate ≥3).
+- Ledger v1.30.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

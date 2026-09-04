@@ -1,0 +1,21 @@
+{
+  "finding_id": "bentobox-per-order-clover-2026-09",
+  "lane": "vertical_gtm",
+  "name": "BentoBox $0.99/order + Clover POS lock-in",
+  "vendor_or_project": "BentoBox (Clover/Fiserv)",
+  "urls": [
+    "https://getbento.com/",
+    "https://orderitto.com/compare/bentobox-pricing",
+    "https://www.getsauce.com/post/bentobox-pricing-fees"
+  ],
+  "what_it_does": "Restaurant website/commerce suite now Clover-only for new customers; third-party reports ~$49/mo takeout add-on + $0.99 per-order service fee + card processing.",
+  "how_competitors_use_it": "Fine-dining/indie sites; fee stack becomes KEEP leak vs flat-fee commission-free peers.",
+  "what_we_use_today": "score_marketplace_keep + KEEP channel grader; new per_order_platform_fee + clover lock-in signals",
+  "gap": "Watch + teach labels — per-order fee language feeds pain→sales; skip forecasting.",
+  "pivot_speed": "hours",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "BentoBox per-order fees + Clover lock-in sharpen anti-rent KEEP signals; contrast Never86 buy-now.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

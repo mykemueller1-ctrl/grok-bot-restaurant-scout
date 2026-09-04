@@ -23,7 +23,7 @@ Fill and save `SalesLead`:
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
 
 Rules:
-- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering / dual-run discovery** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-scan-dual-run.json`, `pain-to-sales-keep-girl-goat.json`).
+- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering / dual-run discovery / per-order platform fees ($0.99/order BentoBox-style)** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-scan-dual-run.json`, `pain-scan-bentobox-per-order.json`, `pain-to-sales-keep-girl-goat.json`).
 - Optional KEEP$ channel rank: CLI `node scripts/keep-channel-grader.mjs` or MCP `keep_channel_grade` (see `skills/keep-channel-grader.md`). Dogfood: `fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json`.
 - Draft outreach copy may be suggested; **sending** requires approvals MCP.
 - Same human/venue across pain agents → merge / link, don't spam duplicate leads.
@@ -32,4 +32,4 @@ Rules:
 
 **Done when:** `SalesLead` saved and owner notified.
 
-**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` + `fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json` + `fixtures/tool-hunt/pain-to-sales-nashville-husk.json` + `fixtures/tool-hunt/pain-to-sales-denver-rioja.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-franklin.json` prove multi-market Yelp/Maps/X/KEEP/grader → SalesLead DRAFT without Apollo/Mem0.
+**Active dogfood:** `fixtures/tool-hunt/pain-to-sales-keep-girl-goat.json` + `fixtures/tool-hunt/pain-to-sales-effective-cost-franklin.json` + `fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json` + `fixtures/tool-hunt/pain-to-sales-nashville-husk.json` + `fixtures/tool-hunt/pain-to-sales-denver-rioja.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-franklin.json` + `fixtures/tool-hunt/pain-to-sales-keep-grader-husk.json` prove multi-market Yelp/Maps/X/KEEP/grader → SalesLead DRAFT without Apollo/Mem0.
