@@ -353,3 +353,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-bentobox-guest-fee.json ($0.99 diner fee on QR Order & Pay) → strong_keep 19; distinct from restaurant-paid bentobox-per-order.
 - Klikit Shop middleware refresh stays watch (APAC). Menufy flat OO already watched.
 - Ledger v1.51.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (UpMenu overage SalesLead + ChowNow refresh)
+
+- Added pain-to-sales-upmenu-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json ($1.90/order after 75/210 caps).
+- validate-upmenu-fee-dogfood.mjs ≥5; CI wired as parallel gate.
+- ChowNow ~$149 flat OO pricing refresh → watch only (not Shop-native).
+- Ledger v1.52.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

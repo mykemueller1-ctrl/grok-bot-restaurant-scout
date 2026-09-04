@@ -1,0 +1,26 @@
+{
+  "finding_id": "upmenu-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "UpMenu $1.90 overage SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-upmenu-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-upmenu-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-upmenu-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-upmenu-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-upmenu-fee-rioja.json",
+    "scripts/validate-upmenu-fee-dogfood.mjs",
+    "https://www.upmenu.com/pricing/",
+    "fixtures/tool-hunt/pain-scan-upmenu-overage.json"
+  ],
+  "what_it_does": "UpMenu Basic/Standard $1.90/order overage after 75/210 caps → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6% + Marketplace 15–30%.",
+  "how_competitors_use_it": "UpMenu sells flat OO with soft order caps that flip to restaurant-paid per-order fees as volume grows.",
+  "what_we_use_today": "validate-upmenu-fee-dogfood ≥5 parallel gate (not in market-coverage chain yet)",
+  "gap": "Still DRAFT calibration — Mem0/Context blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "UpMenu overage SalesLead dogfoods now match all five love markets beside otter/guest sets.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

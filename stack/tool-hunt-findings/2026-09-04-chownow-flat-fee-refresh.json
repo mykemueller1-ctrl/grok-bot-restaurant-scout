@@ -1,0 +1,21 @@
+{
+  "finding_id": "chownow-flat-fee-refresh-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChowNow flat-fee first-party OO pricing refresh (~$149/mo)",
+  "vendor_or_project": "ChowNow",
+  "urls": [
+    "https://get.chownow.com/blog/direct-online-ordering-third-party-dependence",
+    "https://www.labrador.ai/blog/chownow-pricing-explained.html",
+    "https://chowly.com/resources/blogs/best-restaurant-online-ordering-systems"
+  ],
+  "what_it_does": "Commission-free direct OO at ~$149/mo software (+ optional marketing / ~$399 setup) + processing — KEEP peer rails without Shop-native close. Dual-run narrative vs DoorDash 15–30%.",
+  "how_competitors_use_it": "ChowNow sells flat subscription + order aggregation for Marketplace discovery while building direct channel.",
+  "what_we_use_today": "Already watched ChowNow competitor; Never86 owns TikTok/IG buy-now wedge",
+  "gap": "Not Shop-native — keep watch; no swarm expand",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "ChowNow ~$149 flat OO refresh confirms commission-free peer; Stay Shop-first differentiation.",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04"
+}
