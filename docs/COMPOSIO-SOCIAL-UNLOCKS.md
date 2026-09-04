@@ -51,13 +51,15 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **Square Online** — Dashboard Channels → Facebook Food Ordering; Order Food buttons + Stories stickers → Square website ([Square Support](https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online))
 - **GloriaFood** — Facebook Start Order / Order Now via smart link ([GloriaFood how-to](https://www.gloriafood.com/restaurant-ideas/facebook-online-ordering-button))
 
-Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close and **RAY** commission-free Instagram delivery channel (Order Food/Reserve + DM automation — [RAY blog](https://blog.rayapp.ai/en/delivery-without-commission/instagram-delivery-channel-restaurants/)) — adjacent social intake, not Meta FBE peers.
+Also watch Meta-adjacent **CTA linkers** (Order Food / Start Order → own menu — **not** Meta FBE peers; do not inflate `meta_order_food_peer_count`): **Ressto** ([facebook-ordering](https://ressto.co/facebook-ordering.shtml)), **FoodBooking** ([Start Order](https://startfoodbooking.com/facebook-ordering/) — OO EOL Mar 2027), **Tablevibe** / **Ontabee** Order Food website links.
+
+Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, and **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)) — adjacent social intake, not Meta FBE peers.
 
 Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch; also watch video-marketplace peers BiteSight / Smiilen). Fee catalog pause still applies — do not dogfood these as fee products (BentoBox QR $0.99 / Flipdish €0.50+% already in catalog).
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_z4bfeUbq52iQ) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_PmzEO0vowyQV) — Business/Creator only. Reply `instagram connected` when done.
 
 ## Still required for Beyond the Hunt READY
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.92.31",
+  "version": "1.92.32",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1244,6 +1244,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Girl & The Goat reservation_skew rails re-verified live",
+      "lane": "vertical_gtm",
+      "why": "girlandthegoat.com still Make a reservation only; OpenTable live \u2014 confirms CHI buy_now_path + reservation_skew_no_buy_now",
+      "verdict": "adopt"
+    },
+    {
+      "item": "TextOrder social DM ordering (love\u2192buy-now rival)",
+      "lane": "vertical_gtm",
+      "why": "AI closes orders in IG/TikTok/FB Messenger DMs + SMS/WhatsApp \u2014 in-channel buy-now peer; not Meta FBE",
+      "verdict": "watch"
+    },
+    {
+      "item": "FoodBooking Facebook Start Order (EOL Mar 2027)",
+      "lane": "vertical_gtm",
+      "why": "Start Order smart link Meta-adjacent CTA; OO closes 2027-03-31 \u2014 watch only; no peer_count bump",
+      "verdict": "watch"
+    },
+    {
+      "item": "Ressto Facebook Order Food CTA (Meta-adjacent)",
+      "lane": "vertical_gtm",
+      "why": "Order Food button \u2192 Ressto menu; GloriaFood-class CTA not FBE peer \u2014 no peer_count bump",
+      "verdict": "watch"
+    },
     {
       "item": "Social-shop dogfood requires reservation_skew_no_buy_now when rails include no_first_party_oo_found",
       "lane": "skills_knowledge",

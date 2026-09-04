@@ -23,12 +23,13 @@
           "opentable_reservations",
           "no_first_party_oo_found"
         ],
-        "note": "Menu/reservations site; OpenTable listing \u2014 Shop buy-now fills missing social close",
+        "reverified_at": "2026-09-04T19:50Z",
+        "note": "Menu/reservations site; OpenTable listing — Shop buy-now fills missing social close. Re-verified live: site Make a reservation only; no OO/marketplace CTAs in page text.",
         "sources": [
           "https://www.girlandthegoat.com/chicago",
-          "https://www.opentable.com/r/girl-and-the-goat-chicago"
-        ],
-        "reverified_at": "2026-09-04T19:41Z"
+          "https://www.opentable.com/r/girl-and-the-goat-chicago",
+          "stack/tool-hunt-findings/2026-09-04-gtg-reservation-skew-reverify.json"
+        ]
       }
     },
     {

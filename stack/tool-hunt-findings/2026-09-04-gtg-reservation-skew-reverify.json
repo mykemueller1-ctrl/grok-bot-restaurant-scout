@@ -1,0 +1,18 @@
+{
+  "finding_id": "gtg-reservation-skew-reverify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Girl & The Goat reservation_skew rails re-verified live",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio FETCH 2026-09-04: girlandthegoat.com/chicago still reservation-skewed (Make a reservation CTA; no order/delivery/UberEats/DoorDash/Toast OO in page text). OpenTable listing still live (Make a reservation). Confirms CHI buy_now_path opentable_reservations + no_first_party_oo_found and reservation_skew_no_buy_now teach. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.girlandthegoat.com/chicago",
+    "https://www.opentable.com/r/girl-and-the-goat-chicago",
+    "fixtures/tool-hunt/chicago-love-brands.json",
+    "fixtures/tool-hunt/pain-scan-reservation-skew.json"
+  ],
+  "rails_confirmed": ["opentable_reservations", "no_first_party_oo_found"],
+  "tools_used": ["COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

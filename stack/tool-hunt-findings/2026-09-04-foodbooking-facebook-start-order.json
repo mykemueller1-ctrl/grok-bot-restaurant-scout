@@ -1,0 +1,15 @@
+{
+  "finding_id": "foodbooking-facebook-start-order-2026-09",
+  "lane": "vertical_gtm",
+  "name": "FoodBooking Facebook Start Order (EOL Mar 2027)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "startfoodbooking.com/facebook-ordering: smart link into Facebook Start Order button → online menu. GloriaFood-adjacent Meta CTA. Platform OO closes Mar 31, 2027 with successor in development. Watch only — do not bump meta_order_food_peer_count without Meta FBE primary cite. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://startfoodbooking.com/facebook-ordering/"
+  ],
+  "meta_classification": "cta_link_not_fbe_peer",
+  "eol_note": "Online ordering system closes 2027-03-31",
+  "not_this": "Not a Meta Order Food peer_count bump. Not a fee dogfood. Not forecasting."
+}

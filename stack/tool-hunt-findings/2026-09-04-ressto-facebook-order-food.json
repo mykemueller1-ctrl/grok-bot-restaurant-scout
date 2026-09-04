@@ -1,0 +1,16 @@
+{
+  "finding_id": "ressto-facebook-order-food-cta-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Ressto Facebook Order Food CTA (Meta-adjacent)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "ressto.co/facebook-ordering.shtml: add Ressto ordering link as Facebook page Order Food CTA — GloriaFood-class Meta-adjacent Start Order / Order Food button, not Meta FBE certified partner list. Do NOT bump meta_order_food_peer_count without primary FBE cite. Already watching Ressto as GloriaFood-successor KEEP OS. Fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://ressto.co/facebook-ordering.shtml",
+    "stack/tool-hunt-findings/2026-09-04-ressto-gloriafood-successor.json",
+    "docs/COMPOSIO-SOCIAL-UNLOCKS.md"
+  ],
+  "meta_classification": "cta_link_not_fbe_peer",
+  "not_this": "Not a Meta Order Food peer_count bump. Not a fee dogfood. Not forecasting."
+}

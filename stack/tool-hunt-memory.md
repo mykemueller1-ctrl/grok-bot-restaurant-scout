@@ -806,3 +806,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - `validate-social-shop-dogfood.mjs` now requires `reservation_skew_no_buy_now` when rails include `no_first_party_oo_found` (mirrors brand_site leak gate). G&TG dogfood already compliant.
 - Live re-fetch: Toast findcard + Resy + husknashville.com Reservations still live; Rioja Flavor Dojo carryout + phone still live. Finding: `2026-09-04-husk-rioja-rails-reverify.json`.
 - Ledger v1.92.31. Auth still blocked for unlock READY.
+
+### 2026-09-04 (G&TG skew re-verify + Meta CTA watches + TextOrder DM)
+
+- Live re-fetch G&TG: site still Make a reservation only; OpenTable live — confirms `reservation_skew_no_buy_now`. Finding: `2026-09-04-gtg-reservation-skew-reverify.json`.
+- Watched Ressto + FoodBooking as Meta-adjacent Order Food / Start Order CTA linkers — **no** `meta_order_food_peer_count` bump (still 9; need FBE primary).
+- Watched TextOrder AI DM ordering as love→buy-now in-channel rival. Findings under `stack/tool-hunt-findings/2026-09-04-*`.
+- Instagram reconnect: `lk_PmzEO0vowyQV` (~10 min). Ledger v1.92.32. Auth still blocked.

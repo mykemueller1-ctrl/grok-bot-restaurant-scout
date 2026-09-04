@@ -1,0 +1,15 @@
+{
+  "finding_id": "textorder-social-dm-buy-now-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TextOrder social DM ordering (love→buy-now rival)",
+  "verdict": "watch",
+  "priority": 1,
+  "summary": "mytextorder.com social-media-ordering white paper: AI closes orders inside IG/TikTok/Facebook Messenger DMs + SMS/WhatsApp — scroll→DM→paid without bio→webview. Adjacent Never86 Shop buy-now wedge (in-channel close). Not Meta Order Food FBE. Watch only; fee pause.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://mytextorder.com/features/social-media-ordering"
+  ],
+  "channels": ["instagram_dm", "tiktok_dm", "facebook_messenger", "sms", "whatsapp", "web_chatbot"],
+  "never86_wedge": "in-app Shop buy-now vs DM-AI ordering OS",
+  "not_this": "Not Meta Order Food peer. Not a fee dogfood. Not forecasting."
+}
