@@ -8,18 +8,24 @@
   "venue_id": "taco-bamba",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Taco Bamba. Source: Drive Courser \u2014 Sales Labor Report (MP) v5. Status: courser_indexed.",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Taco Bamba. Source: Drive Courser \u2014 Sales Labor Report (MP) v5. Secure portal: fixtures/portals/taco-bamba/. Status: secure_portal_live.",
   "aliases": [
     "Taco Bomb",
     "Taco Bamba",
     "Bamba"
   ],
   "holy_grail_source": "Drive Courser \u2014 Sales Labor Report (MP) v5",
-  "status": "courser_indexed",
+  "status": "secure_portal_live",
   "skills": [
     "report-ingest",
     "report-route",
     "teach-label"
   ],
-  "swarm": true
+  "swarm": true,
+  "secure_portal": "fixtures/portals/taco-bamba/",
+  "seats_ledger": "fixtures/portals/taco-bamba/seats.json",
+  "front_door": "fixtures/portals/taco-bamba/login.html",
+  "multi_unit_board": "fixtures/portals/taco-bamba/data/multi-unit-board.json",
+  "portals_doc": "docs/VENUE-PORTALS.md",
+  "icp": "area-leader"
 }

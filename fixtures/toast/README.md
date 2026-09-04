@@ -2,7 +2,8 @@
 
 - `labor-sales-inventory.json` — parsed snapshot from operator uploads (labor names anonymized).
 - Source report map: `docs/TOAST-REPORTS.md`.
-- CTAP seats + front door + historical sales: `../ctap-portal/` (`docs/CTAP-SEATS.md`).
+- CTAP / Bamba / Grill secure portals: `../portals/` (`docs/VENUE-PORTALS.md`, `docs/CTAP-SEATS.md`).
+- Legacy CTAP path `../ctap-portal/` redirects to Community’s secure portal.
 - Re-parse:
 
 ```bash

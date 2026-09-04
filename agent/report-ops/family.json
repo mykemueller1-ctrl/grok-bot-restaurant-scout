@@ -280,24 +280,27 @@
       "id": "grill",
       "file": "venues/grill.json",
       "label": "The New American Grill",
-      "status": "courser_indexed"
+      "status": "portal_ready_after_community"
     },
     {
       "id": "taco-bamba",
       "file": "venues/taco-bamba.json",
       "label": "Taco Bamba",
-      "status": "courser_indexed"
+      "status": "secure_portal_live"
     },
     {
       "id": "community-pizza",
       "file": "venues/community-pizza.json",
       "label": "Community Pizza / CTAP",
-      "status": "seats_sold_demo"
+      "status": "secure_portal_live"
     }
   ],
   "parser": "scripts/parse-toast-reports.mjs",
   "docs": [
     "docs/TOAST-REPORTS.md",
-    "docs/ICP-SCALE.md"
+    "docs/ICP-SCALE.md",
+    "docs/VENUE-PORTALS.md",
+    "docs/CTAP-SEATS.md",
+    "docs/PORTAL-SECURITY.md"
   ]
 }

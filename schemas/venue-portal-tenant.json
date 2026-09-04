@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://never86.ai/schemas/venue-portal-tenant.json",
+  "title": "Never86 secure venue portal tenant",
+  "type": "object",
+  "required": ["venue_id", "venue_name", "security", "status", "data_boundary", "session_key", "access_gate"],
+  "properties": {
+    "venue_id": {
+      "type": "string",
+      "enum": ["community-pizza", "taco-bamba", "grill"]
+    },
+    "venue_name": { "type": "string" },
+    "icp": {
+      "type": "string",
+      "enum": ["owner-1-5", "area-leader", "cfo-ceo"]
+    },
+    "security": {
+      "type": "string",
+      "enum": ["secure", "secure_ready"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["live_demo", "ready_after_community", "planned"]
+    },
+    "access_gate": {
+      "type": "object",
+      "required": ["kind", "auth_path"],
+      "additionalProperties": true,
+      "properties": {
+        "kind": { "const": "server_verified" },
+        "auth_path": { "type": "string" },
+        "logout_path": { "type": "string" },
+        "note": { "type": "string" }
+      },
+      "not": {
+        "required": ["code"]
+      }
+    },
+    "data_boundary": {
+      "type": "object",
+      "required": ["mode", "allowed_paths", "forbidden_venue_ids"],
+      "properties": {
+        "mode": { "const": "exclusive" },
+        "allowed_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "forbidden_venue_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "session_key": { "type": "string" },
+    "handoff": { "type": "object" }
+  }
+}

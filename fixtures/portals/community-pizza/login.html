@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Community Tap & Pizza — secure portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a120c;
+        --parchment: #f3e6d4;
+        --parchment-2: #ead7bf;
+        --ember: #c45c26;
+        --ember-deep: #8f3512;
+        --copper: #d4a574;
+        --muted: #6e5646;
+        --line: rgba(26, 18, 12, 0.14);
+        --ok: #2f6b3a;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        color: var(--ink);
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        background:
+          radial-gradient(1200px 700px at 80% -10%, rgba(212, 165, 116, 0.35), transparent 55%),
+          radial-gradient(900px 600px at 10% 110%, rgba(196, 92, 38, 0.28), transparent 50%),
+          linear-gradient(160deg, #2a1710 0%, #4a2415 38%, #1c100c 100%);
+      }
+      .stage {
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 18px 48px;
+      }
+      .door {
+        width: min(440px, 100%);
+        background: linear-gradient(180deg, var(--parchment) 0%, var(--parchment-2) 100%);
+        border: 1px solid rgba(243, 230, 212, 0.35);
+        border-radius: 28px;
+        padding: 34px 28px 28px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+        animation: rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      }
+      .door.off { display: none; }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(18px) scale(0.98); }
+        to { opacity: 1; transform: none; }
+      }
+      .os {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--ember-deep);
+        margin-bottom: 14px;
+      }
+      .os i {
+        width: 8px; height: 8px; border-radius: 50%;
+        background: var(--ok);
+        box-shadow: 0 0 0 4px rgba(47, 107, 58, 0.2);
+      }
+      h1 {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        letter-spacing: -0.03em;
+        margin: 0 0 10px;
+        line-height: 1.05;
+      }
+      h1 span { color: var(--ember-deep); }
+      .lede { margin: 0 0 22px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+      .field { margin-bottom: 14px; }
+      label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+      select, input {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px 12px;
+        font: inherit;
+        background: rgba(255, 255, 255, 0.65);
+      }
+      .go {
+        width: 100%;
+        border: 0;
+        border-radius: 999px;
+        padding: 14px 16px;
+        margin-top: 6px;
+        font: inherit;
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(180deg, var(--ember), var(--ember-deep));
+        cursor: pointer;
+      }
+      .fine { margin: 12px 0 0; font-size: 12px; color: var(--muted); }
+      .err { color: var(--ember-deep); font-size: 13px; margin-top: 10px; min-height: 18px; }
+      .desk {
+        display: none;
+        width: min(960px, 100%);
+        color: var(--parchment);
+        animation: rise 500ms ease both;
+      }
+      .desk.on { display: block; }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 18px;
+      }
+      .mark {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 28px;
+        letter-spacing: -0.03em;
+      }
+      .mark em { color: var(--copper); font-style: normal; }
+      .meta { color: rgba(243, 230, 212, 0.7); font-size: 13px; margin-top: 4px; }
+      .signout {
+        border: 1px solid rgba(243, 230, 212, 0.3);
+        background: transparent;
+        color: var(--parchment);
+        border-radius: 999px;
+        padding: 8px 14px;
+        cursor: pointer;
+        font: inherit;
+      }
+      .who {
+        background: rgba(243, 230, 212, 0.08);
+        border-radius: 16px;
+        padding: 14px 16px;
+        margin-bottom: 16px;
+      }
+      .who strong { font-size: 16px; }
+      .who p { margin: 6px 0 0; color: rgba(243, 230, 212, 0.7); font-size: 13px; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+      .seat {
+        background: rgba(243, 230, 212, 0.08);
+        border-radius: 16px;
+        padding: 14px;
+        border: 1px solid transparent;
+      }
+      .seat.active { border-color: rgba(212, 165, 116, 0.55); }
+      .badge {
+        display: inline-block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgba(243, 230, 212, 0.75);
+        margin-bottom: 8px;
+      }
+      .badge.paid { color: #9be0ad; }
+      .seat h2 {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 18px;
+        margin: 0 0 4px;
+      }
+      .person { color: rgba(243, 230, 212, 0.85); margin-bottom: 8px; }
+      .seat ul { margin: 0; padding-left: 18px; color: rgba(243, 230, 212, 0.7); font-size: 13px; }
+      .sales {
+        background: rgba(243, 230, 212, 0.08);
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .sales h3 {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+      .sales p { margin: 0 0 14px; color: rgba(243, 230, 212, 0.7); font-size: 13px; }
+      .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      @media (max-width: 640px) { .stats { grid-template-columns: 1fr; } }
+      .stat {
+        background: rgba(243, 230, 212, 0.08);
+        border-radius: 14px;
+        padding: 12px 14px;
+      }
+      .stat b {
+        display: block;
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+      }
+      .stat span { font-size: 12px; color: rgba(243, 230, 212, 0.65); }
+      .lock {
+        font-size: 12px;
+        color: rgba(243, 230, 212, 0.55);
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="door" id="door">
+        <div class="os"><i></i> Secure · Community only</div>
+        <h1>Community Tap <span>& Pizza</span></h1>
+        <p class="lede">
+          Fort Dodge living lab. House code + sold seat. This door never loads Bamba or Grill data.
+        </p>
+        <form id="login" autocomplete="on">
+          <div class="field">
+            <label for="gate">House code</label>
+            <input id="gate" name="gate" type="password" placeholder="••••••••" autocomplete="current-password" required />
+          </div>
+          <div class="field">
+            <label for="seat">Sold seat</label>
+            <select id="seat" name="seat" required>
+              <option value="">Choose a seat…</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="name">Signed in as</label>
+            <input id="name" name="name" readonly value="" placeholder="Assignee fills in" />
+          </div>
+          <button class="go" type="submit">Open the door</button>
+          <div class="err" id="err"></div>
+          <p class="fine">Enterprise gate · scrypt house code · HttpOnly session · own data boundary</p>
+        </form>
+      </section>
+      <section class="desk" id="desk" aria-live="polite"></section>
+    </main>
+    <script src="../shared/isolation.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

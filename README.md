@@ -88,14 +88,23 @@ python3 agent/report-ops/build_report_swarm.py
 
 Holy grail inbox: **Mike Mueller Gmail** — Kristen → Grill + Taco Bamba Excel/CSV. CTAP Drive indexed under `fixtures/toast/drive-ctap-index.json`. Courser pack: `fixtures/toast/courser/`. ICP scale (owner 1–5 vs area-leader vs CFO/CEO): `docs/ICP-SCALE.md`. Routine: `routines/report-ops-daily.json`.
 
-### CTAP seats + front door
+### Secure venue portals
 
-Demo sale for Community Tap & Pizza: owner seat → **Mychael Mueller** (free), Manager FOH → **Kenzy**, Manager BOH → **Tom**. Ledger + login UI: `fixtures/ctap-portal/`. Docs: `docs/CTAP-SEATS.md`.
+Each house gets its own door and data boundary (`docs/VENUE-PORTALS.md`):
+
+| Venue | Status |
+| --- | --- |
+| Community Tap & Pizza | Live secure demo — Myke / Kenzy / Tom |
+| Taco Bamba | Live secure multi-unit — System + area leaders |
+| The New American Grill | Ready after Community — Kristen packs staged |
 
 ```bash
-python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/ctap-portal
-# http://127.0.0.1:5174/login.html
+export PORTAL_SESSION_SECRET="$(openssl rand -base64 48)"
+node services/portal-gateway/src/server.mjs
+# http://127.0.0.1:5174/
 ```
+
+CTAP seats detail: `docs/CTAP-SEATS.md`. Security: `docs/PORTAL-SECURITY.md`. Isolation CI: `python3 scripts/validate-portal-isolation.py`.
 
 ## Setup
 

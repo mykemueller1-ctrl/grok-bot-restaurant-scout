@@ -376,25 +376,46 @@ VENUES = [
         "label": "The New American Grill",
         "aliases": ["Grill", "the grill", "The New American Grill"],
         "holy_grail_source": "Drive Courser folder + Kristen packs",
-        "status": "courser_indexed",
+        "status": "portal_ready_after_community",
+        "secure_portal": "fixtures/portals/grill/",
+        "seats_ledger": "fixtures/portals/grill/seats.json",
+        "front_door": "fixtures/portals/grill/login.html",
+        "kristen_packs": "fixtures/portals/grill/data/kristen-packs.json",
+        "portals_doc": "docs/VENUE-PORTALS.md",
+        "handoff": {
+            "after": "community-pizza",
+            "from": "Kristen",
+            "instruction": (
+                "When Community portal is proven, drop Kristen packs into Grill "
+                "the same way Community holds historical-sales."
+            ),
+        },
     },
     {
         "id": "taco-bamba",
         "label": "Taco Bamba",
         "aliases": ["Taco Bomb", "Taco Bamba", "Bamba"],
         "holy_grail_source": "Drive Courser — Sales Labor Report (MP) v5",
-        "status": "courser_indexed",
+        "status": "secure_portal_live",
+        "secure_portal": "fixtures/portals/taco-bamba/",
+        "seats_ledger": "fixtures/portals/taco-bamba/seats.json",
+        "front_door": "fixtures/portals/taco-bamba/login.html",
+        "multi_unit_board": "fixtures/portals/taco-bamba/data/multi-unit-board.json",
+        "portals_doc": "docs/VENUE-PORTALS.md",
+        "icp": "area-leader",
     },
     {
         "id": "community-pizza",
         "label": "Community Pizza / CTAP",
         "aliases": ["CTAP", "Community Pizza", "Community Tap"],
         "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
-        "status": "seats_sold_demo",
-        "seats_ledger": "fixtures/ctap-portal/seats.json",
-        "front_door": "fixtures/ctap-portal/login.html",
-        "historical_sales": "fixtures/ctap-portal/historical-sales.json",
+        "status": "secure_portal_live",
+        "secure_portal": "fixtures/portals/community-pizza/",
+        "seats_ledger": "fixtures/portals/community-pizza/seats.json",
+        "front_door": "fixtures/portals/community-pizza/login.html",
+        "historical_sales": "fixtures/portals/community-pizza/data/historical-sales.json",
         "seats_doc": "docs/CTAP-SEATS.md",
+        "portals_doc": "docs/VENUE-PORTALS.md",
         "sold_seats": [
             {"role": "owner", "assignee": "Mychael Mueller", "price": "free"},
             {"role": "manager_foh", "assignee": "Kenzy Thompson", "price": "paid"},
@@ -579,11 +600,18 @@ def icp_sub(tier: dict) -> dict:
 
 
 def venue_scout(venue: dict) -> dict:
+    portal = venue.get("secure_portal")
     desc = (
         f"Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for "
         f"{venue['label']}. Source: {venue['holy_grail_source']}. Status: {venue['status']}."
     )
-    if venue.get("seats_ledger"):
+    if portal:
+        desc = (
+            f"Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for "
+            f"{venue['label']}. Source: {venue['holy_grail_source']}. "
+            f"Secure portal: {portal}. Status: {venue['status']}."
+        )
+    elif venue.get("seats_ledger"):
         desc = (
             f"Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for "
             f"{venue['label']}. Source: {venue['holy_grail_source']}. "
@@ -608,11 +636,17 @@ def venue_scout(venue: dict) -> dict:
         "swarm": True,
     }
     for key in (
+        "secure_portal",
         "seats_ledger",
         "front_door",
         "historical_sales",
+        "multi_unit_board",
+        "kristen_packs",
         "seats_doc",
+        "portals_doc",
         "sold_seats",
+        "icp",
+        "handoff",
     ):
         if key in venue:
             scout[key] = venue[key]
@@ -739,7 +773,13 @@ def main() -> None:
         "icp": icp_index,
         "venues": venue_index,
         "parser": "scripts/parse-toast-reports.mjs",
-        "docs": ["docs/TOAST-REPORTS.md", "docs/ICP-SCALE.md"],
+        "docs": [
+            "docs/TOAST-REPORTS.md",
+            "docs/ICP-SCALE.md",
+            "docs/VENUE-PORTALS.md",
+            "docs/CTAP-SEATS.md",
+            "docs/PORTAL-SECURITY.md",
+        ],
     }
     write_json(ROOT / "family.json", family)
     print(

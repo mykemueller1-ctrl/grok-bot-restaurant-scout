@@ -49,6 +49,30 @@ jobs:
       - run: python3 agent/pain-shoppers/build_swarm.py
       - run: test "$(python3 -c "import json; print(json.load(open('agent/pain-shoppers/family.json'))['agent_count'])")" = "238"
 
+  venue-portals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: python3 scripts/validate-portal-isolation.py
+      - run: python3 agent/report-ops/build_report_swarm.py
+      - name: Portal doors present
+        run: |
+          test -f fixtures/portals/index.html
+          test -f fixtures/portals/community-pizza/login.html
+          test -f fixtures/portals/taco-bamba/login.html
+          test -f fixtures/portals/grill/login.html
+          test -f docs/VENUE-PORTALS.md
+          test -f docs/PORTAL-SECURITY.md
+          test -f services/portal-gateway/src/server.mjs
+      - name: Portal gateway security suite
+        working-directory: services/portal-gateway
+        env:
+          PORTAL_SESSION_SECRET: ci-test-secret-never86-portal-gateway-32c
+        run: npm test
+
   codex-setup-script:
     runs-on: ubuntu-latest
     steps:

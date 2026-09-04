@@ -1,0 +1,175 @@
+{
+  "venue_id": "taco-bamba",
+  "venue_name": "Taco Bamba",
+  "icp": "area-leader",
+  "as_of": "2026-08-12",
+  "period_note": "Daily board dated 8/12/2026 Wednesday; WTD 8/06-8/12",
+  "source": "Sales_Labor_Report_MP_v5.xlsx",
+  "drive_file_id": "1EaevI-2TexgTETPM0a4Xw7n3nXiaCLmD",
+  "system": {
+    "cy_sales": 125273.41,
+    "py_sales": 117052.68,
+    "fcst_sales": 126000,
+    "cy_vs_py": 0.0702,
+    "cy_checks": 4786
+  },
+  "regions": [
+    {
+      "area_leader": "John",
+      "stores": [
+        {
+          "location": "Herndon",
+          "cy_sales": 14059.2,
+          "py_sales": 9641.94,
+          "fcst_sales": 14000,
+          "cy_vs_py": 0.4581,
+          "cy_checks": 453
+        },
+        {
+          "location": "Fair Lakes",
+          "cy_sales": 7599.34,
+          "py_sales": 7601.69,
+          "fcst_sales": 8000,
+          "cy_vs_py": -0.0003,
+          "cy_checks": 321
+        },
+        {
+          "location": "Cascades",
+          "cy_sales": 8143.59,
+          "py_sales": 7100.9,
+          "fcst_sales": 8000,
+          "cy_vs_py": 0.1468,
+          "cy_checks": 307
+        },
+        {
+          "location": "Nashville",
+          "cy_sales": 4273.11,
+          "py_sales": 3647.65,
+          "fcst_sales": 4000,
+          "cy_vs_py": 0.1715,
+          "cy_checks": 134
+        }
+      ],
+      "store_count": 4,
+      "cy_sales": 34075.24
+    },
+    {
+      "area_leader": "Red",
+      "stores": [
+        {
+          "location": "Rockville",
+          "cy_sales": 10230.46,
+          "py_sales": 9402.91,
+          "fcst_sales": 10000,
+          "cy_vs_py": 0.088,
+          "cy_checks": 407
+        },
+        {
+          "location": "Gaithersburg",
+          "cy_sales": 8024.75,
+          "py_sales": 7371.86,
+          "fcst_sales": 8000,
+          "cy_vs_py": 0.0886,
+          "cy_checks": 353
+        },
+        {
+          "location": "Ridgewood",
+          "cy_sales": 5589.18,
+          "py_sales": 4710.8,
+          "fcst_sales": 6000,
+          "cy_vs_py": 0.1865,
+          "cy_checks": 214
+        },
+        {
+          "location": "City Ridge",
+          "cy_sales": 7067.11,
+          "py_sales": 5528.51,
+          "fcst_sales": 7000,
+          "cy_vs_py": 0.2783,
+          "cy_checks": 241
+        },
+        {
+          "location": "Willow Lawn",
+          "cy_sales": 5922.76,
+          "py_sales": 4352.0,
+          "fcst_sales": 6000,
+          "cy_vs_py": 0.3609,
+          "cy_checks": 248
+        }
+      ],
+      "store_count": 5,
+      "cy_sales": 36834.26
+    },
+    {
+      "area_leader": "Travis",
+      "stores": [
+        {
+          "location": "Falls Church",
+          "cy_sales": 7148.89,
+          "py_sales": 8593.2,
+          "fcst_sales": 7000,
+          "cy_vs_py": -0.1681,
+          "cy_checks": 264
+        },
+        {
+          "location": "Springfield",
+          "cy_sales": 10172.98,
+          "py_sales": 9261.17,
+          "fcst_sales": 10000,
+          "cy_vs_py": 0.0985,
+          "cy_checks": 371
+        },
+        {
+          "location": "Landmark",
+          "cy_sales": 5200.2,
+          "py_sales": 8471.8,
+          "fcst_sales": 5000,
+          "cy_vs_py": -0.3862,
+          "cy_checks": 221
+        }
+      ],
+      "store_count": 3,
+      "cy_sales": 22522.07
+    },
+    {
+      "area_leader": "Yas",
+      "stores": [
+        {
+          "location": "Vienna",
+          "cy_sales": 9972.54,
+          "py_sales": 9609.09,
+          "fcst_sales": 10000,
+          "cy_vs_py": 0.0378,
+          "cy_checks": 362
+        },
+        {
+          "location": "Fairfax",
+          "cy_sales": 5502.52,
+          "py_sales": 5649.29,
+          "fcst_sales": 6000,
+          "cy_vs_py": -0.026,
+          "cy_checks": 240
+        },
+        {
+          "location": "Ballston",
+          "cy_sales": 7575.71,
+          "py_sales": 8935.45,
+          "fcst_sales": 8000,
+          "cy_vs_py": -0.1522,
+          "cy_checks": 319
+        },
+        {
+          "location": "Shirlington",
+          "cy_sales": 8791.07,
+          "py_sales": 7174.42,
+          "fcst_sales": 9000,
+          "cy_vs_py": 0.2253,
+          "cy_checks": 331
+        }
+      ],
+      "store_count": 4,
+      "cy_sales": 31841.84
+    }
+  ],
+  "store_count": 16
+}

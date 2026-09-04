@@ -8,24 +8,26 @@
   "venue_id": "community-pizza",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Community Pizza / CTAP. Source: Google Drive communitypizza2026@gmail.com. Front door + sold seats: fixtures/ctap-portal/. Status: seats_sold_demo.",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Community Pizza / CTAP. Source: Google Drive communitypizza2026@gmail.com. Secure portal: fixtures/portals/community-pizza/. Status: secure_portal_live.",
   "aliases": [
     "CTAP",
     "Community Pizza",
     "Community Tap"
   ],
   "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
-  "status": "seats_sold_demo",
+  "status": "secure_portal_live",
   "skills": [
     "report-ingest",
     "report-route",
     "teach-label"
   ],
   "swarm": true,
-  "seats_ledger": "fixtures/ctap-portal/seats.json",
-  "front_door": "fixtures/ctap-portal/login.html",
-  "historical_sales": "fixtures/ctap-portal/historical-sales.json",
+  "secure_portal": "fixtures/portals/community-pizza/",
+  "seats_ledger": "fixtures/portals/community-pizza/seats.json",
+  "front_door": "fixtures/portals/community-pizza/login.html",
+  "historical_sales": "fixtures/portals/community-pizza/data/historical-sales.json",
   "seats_doc": "docs/CTAP-SEATS.md",
+  "portals_doc": "docs/VENUE-PORTALS.md",
   "sold_seats": [
     {
       "role": "owner",

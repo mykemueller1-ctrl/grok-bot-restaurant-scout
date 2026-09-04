@@ -1,0 +1,82 @@
+{
+  "venue_id": "grill",
+  "venue_name": "The New American Grill",
+  "aliases": [
+    "Grill",
+    "the grill"
+  ],
+  "product": "Never 86'd Action Shift",
+  "pricing_rule": "Same pattern as Community: one owner seat free; manager seats paid when sold.",
+  "demo_sale": {
+    "pretend": true,
+    "sold_at": null,
+    "sold_by": null,
+    "note": "Not sold yet. Grill comes after Community. Kristen packs are staged so the portal can open on the Community pattern."
+  },
+  "location": {
+    "id": "loc-grill-single",
+    "name": "The New American Grill",
+    "plan": "owner_1_5",
+    "status": "ready_after_community"
+  },
+  "seats": [
+    {
+      "seat_id": "seat-owner-draft",
+      "sku": "action-shift-owner",
+      "role": "owner",
+      "label": "Owner seat",
+      "house": "ops",
+      "price": "free",
+      "status": "available",
+      "assignee": {
+        "name": "Owner (TBD)",
+        "title": "Single-unit owner / GM"
+      },
+      "owns": [
+        "prime cost",
+        "labor %",
+        "SPLH",
+        "approve the card"
+      ],
+      "routes": [
+        "prime",
+        "labor",
+        "sales"
+      ],
+      "login_id": "owner"
+    },
+    {
+      "seat_id": "seat-gm-draft",
+      "sku": "manager-foh",
+      "role": "manager_foh",
+      "label": "Manager / GM",
+      "house": "front",
+      "price": "paid",
+      "status": "available",
+      "assignee": {
+        "name": "GM (TBD)",
+        "title": "Floor + Toast desk"
+      },
+      "owns": [
+        "FOH labor",
+        "tips",
+        "service modes"
+      ],
+      "routes": [
+        "foh_labor",
+        "sales_summary"
+      ],
+      "login_id": "gm"
+    }
+  ],
+  "kristen_source": {
+    "from": "Kristen",
+    "via": "Drive Courser folder",
+    "staged": "data/kristen-packs.json",
+    "handoff": "When Community portal is proven, throw Kristen\u2019s work into Grill like Community\u2019s book."
+  },
+  "front_door": {
+    "path": "fixtures/portals/grill/login.html",
+    "url": "http://127.0.0.1:5174/grill/login.html"
+  }
+}
