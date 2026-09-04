@@ -1,5 +1,5 @@
 {
-  "version": "1.50.0",
+  "version": "1.51.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -87,7 +87,7 @@
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA/DEN)",
-    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔guest-fee↔script↔catalog per market)",
+    "market_coverage_gate": "scripts/validate-market-coverage.mjs (love↔keep-grader↔social-shop↔guest-fee↔otter-fee↔script↔catalog per market)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
@@ -273,8 +273,9 @@
       "updated": "2026-09-04",
       "sources": [
         "https://klikit.io/en/integrations/tiktok-shop",
-        "https://klikit.io/en/learn/tiktok-shop-restaurant-guide-2026",
-        "https://klikit.io/en/learn/tiktok-shop-food-delivery-us"
+        "https://klikit.io/en/learn/tiktok-shop-food-delivery",
+        "https://klikit.io/en/learn/tiktok-shop-integration-guide-restaurants-apac",
+        "https://klikit.io/en/learn/tiktok-shop-vs-grabfood-foodpanda-restaurants"
       ]
     },
     {
@@ -857,6 +858,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "BentoBox QR Order & Pay $0.99 diner/guest fee KEEP pain-scan",
+      "lane": "vertical_gtm",
+      "why": "pain-scan-bentobox-guest-fee.json hits guest_paid_platform_fee; distinct from restaurant-paid bentobox-per-order; strong_keep 19",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Otter-fee dogfoods in 5-market coverage chain",
+      "lane": "vertical_gtm",
+      "why": "validate-market-coverage now requires otter-fee alias+love refs per CHI/ATX/MIA/BNA/DEN",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Klikit TikTok Shop food middleware refresh (APAC)",
+      "lane": "vertical_gtm",
+      "why": "Native Shop→POS sync still APAC-first; reinforces Shop KEEP math — watch only, no US swarm",
+      "verdict": "watch"
+    },
     {
       "item": "Otter restaurant-paid per-order fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Validate 5-market chain alignment:
- * love-brands ↔ keep-grader ↔ social-shop ↔ guest-fee ↔ buy-now script-draft ↔ catalog-sync.
+ * love-brands ↔ keep-grader ↔ social-shop ↔ guest-fee ↔ otter-fee ↔ buy-now script-draft ↔ catalog-sync.
  * Ensures CHI/ATX/MIA/BNA/DEN stay paired by market + yelp_alias.
  * Exit 0 if all 5 markets are fully covered; else 1.
  * No network. No secrets. Not forecasting.
@@ -40,6 +40,9 @@ const socialShops = files.filter(
 );
 const guestFees = files.filter(
   (f) => f.startsWith("pain-to-sales-guest-fee-") && f.endsWith(".json")
+);
+const otterFees = files.filter(
+  (f) => f.startsWith("pain-to-sales-otter-fee-") && f.endsWith(".json")
 );
 const scripts = files.filter((f) => f.startsWith("script-draft-") && f.endsWith(".json"));
 const catalogs = files.filter((f) => f.startsWith("catalog-sync-") && f.endsWith(".json"));
@@ -208,6 +211,42 @@ for (const req of REQUIRED) {
     process.exit(1);
   }
 
+  const otterMatches = otterFees.filter((f) => {
+    const d = load(f);
+    return (
+      d.sales_lead_draft?.market === req.market || d.pain_lead?.venue?.market === req.market
+    );
+  });
+  if (otterMatches.length !== 1) {
+    console.error(
+      `validate-market-coverage: ${req.market} needs exactly 1 otter-fee dogfood (has ${otterMatches.length}: ${otterMatches.join(", ") || "none"})`
+    );
+    process.exit(1);
+  }
+  const otterFile = otterMatches[0];
+  const otter = load(otterFile);
+  const otterAlias = otter.pain_lead?.venue?.yelp_alias || null;
+  if (!otterAlias || otterAlias !== scriptAlias) {
+    console.error(
+      `validate-market-coverage: ${otterFile} yelp_alias "${otterAlias}" must match script alias "${scriptAlias}"`
+    );
+    process.exit(1);
+  }
+  if (!otter.signals?.per_order_platform_fee) {
+    console.error(`validate-market-coverage: ${otterFile} must set signals.per_order_platform_fee`);
+    process.exit(1);
+  }
+  const otterLoveRefs = [
+    ...(otter.pain_lead?.sources || []),
+    ...(otter.tools_used || []),
+  ].map(basenameFromRef);
+  if (!otterLoveRefs.includes(req.love)) {
+    console.error(
+      `validate-market-coverage: ${otterFile} must reference ${req.love} in sources/tools_used`
+    );
+    process.exit(1);
+  }
+
   coverage.push({
     code: req.code,
     market: req.market,
@@ -216,6 +255,7 @@ for (const req of REQUIRED) {
     keep_grader: graderFile,
     social_shop: socialFile,
     guest_fee: guestFile,
+    otter_fee: otterFile,
     script_draft: scriptFile,
     catalog_sync: catalogFile,
   });
@@ -226,7 +266,7 @@ console.log(
     {
       ok: true,
       markets: coverage.length,
-      chain: "love→keep-grader→social-shop→guest-fee→script-draft→catalog-sync",
+      chain: "love→keep-grader→social-shop→guest-fee→otter-fee→script-draft→catalog-sync",
       coverage,
     },
     null,

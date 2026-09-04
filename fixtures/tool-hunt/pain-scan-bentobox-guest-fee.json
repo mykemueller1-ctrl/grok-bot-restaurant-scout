@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "BentoBox QR Order & Pay $0.99 diner/guest fee KEEP pain (distinct from restaurant-paid OO service fee)",
+  "hits": [
+    {
+      "url": "https://www.menubly.com/blog/bentobox-alternatives",
+      "posted_at": "2026-09-04",
+      "handle": "menubly",
+      "snippet": "BentoBox QR Code Order & Pay charges a $0.99 per-order diner fee — guests pay tech fee under commission-free claim vs DoorDash Marketplace 25%; restaurant KEEP still leaks via diner sticker shock",
+      "pain_id": "bentobox_guest_diner_fee",
+      "score": 100,
+      "never86_angle": "Guest-paid $0.99 diner fee is still platform rent by another name — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+    }
+  ],
+  "notes": "Distinct from pain-scan-bentobox-per-order.json (restaurant-paid Online Order Service Fee). Sources: Menubly/BentoBox alternatives + help.getbento diner Service Fee. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

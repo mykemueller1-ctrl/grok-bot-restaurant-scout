@@ -149,6 +149,7 @@ jobs:
           test -f fixtures/tool-hunt/catalog-sync-michaels-genuine-sandbox.json
           test -f fixtures/tool-hunt/pain-scan-dual-run.json
           test -f fixtures/tool-hunt/pain-scan-bentobox-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-bentobox-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-owner-pct-fee.json
           test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
           test -f fixtures/tool-hunt/pain-scan-doordash-online-ordering.json
@@ -189,7 +190,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 18'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 19'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'

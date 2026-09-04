@@ -346,3 +346,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - validate-otter-fee-dogfood.mjs ≥5; CI wired as parallel gate (not yet in market-coverage chain).
 - IG Shopping 2026: native Checkout still cited at 5%/$0.40 min; link-out often $0 Meta selling fee — watch only; keep social_fee_pct=6.
 - Ledger v1.50.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (otter-fee coverage + BentoBox diner fee)
+
+- Folded otter-fee into validate-market-coverage chain (guest-fee→otter-fee→script→catalog).
+- Adopted pain-scan-bentobox-guest-fee.json ($0.99 diner fee on QR Order & Pay) → strong_keep 19; distinct from restaurant-paid bentobox-per-order.
+- Klikit Shop middleware refresh stays watch (APAC). Menufy flat OO already watched.
+- Ledger v1.51.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

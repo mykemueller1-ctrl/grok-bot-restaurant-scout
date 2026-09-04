@@ -1,0 +1,21 @@
+{
+  "finding_id": "otter-fee-market-coverage-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Otter-fee SalesLead dogfoods folded into 5-market coverage chain",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "scripts/validate-market-coverage.mjs",
+    "scripts/validate-otter-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-to-sales-otter-fee-girl-goat.json"
+  ],
+  "what_it_does": "Coverage chain now love→keep-grader→social-shop→guest-fee→otter-fee→script-draft→catalog-sync for CHI/ATX/MIA/BNA/DEN.",
+  "how_competitors_use_it": "n/a — internal gate",
+  "what_we_use_today": "validate-market-coverage.mjs asserts otter-fee alias + love refs per market",
+  "gap": "Mem0/Context still blocked for READY",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Otter restaurant-paid fee dogfoods now required in 5-market coverage beside guest-fee.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}
