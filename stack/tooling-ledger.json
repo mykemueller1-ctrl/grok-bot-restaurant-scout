@@ -1,5 +1,5 @@
 {
-  "version": "1.43.0",
+  "version": "1.44.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -523,6 +523,30 @@
       ]
     },
     {
+      "name": "KwickOS",
+      "lane": "vertical_gtm",
+      "stack": "Restaurant POS (~$59/mo/terminal) with built-in KwickMenu commission-free branded online ordering; optional KwickDriver flat dispatch fees",
+      "memory": "POS-owned guest/order history for loyalty",
+      "edge": "POS-bundled 0% OO KEEP peer — not TikTok Shop-native; contrast dual-run vs Marketplace rent",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://kwickos.com/blog/commission-free-online-ordering.html",
+        "https://kwickos.com/platform/online-ordering.html"
+      ]
+    },
+    {
+      "name": "Otter",
+      "lane": "vertical_gtm",
+      "stack": "Marketplace order aggregation + commission-free first-party online ordering; Advanced Bundle ~$198–$314/mo + per-order transaction fee; Uber Direct / DoorDash Drive delivery",
+      "memory": "Unified order/ops analytics across channels",
+      "edge": "Scale first-party KEEP peer with possible per-order txn fee — watch as KEEP-leak teach vs Shop buy-now; skip labor/forecast modules",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.tryotter.com/products/online-ordering",
+        "https://www.tryotter.com/blog/restaurant-tips/best-online-ordering-systems-for-restaurants"
+      ]
+    },
+    {
       "name": "RestauNax",
       "lane": "vertical_gtm",
       "stack": "Commission-free first-party OO: website + branded app + loyalty/email/SMS from ~$99/mo flat; Uber Direct / DoorDash Drive for delivery without Marketplace food commission",
@@ -807,6 +831,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "KwickOS KwickMenu POS-bundled commission-free OO",
+      "lane": "vertical_gtm",
+      "why": "POS-embedded 0% OO (~$59/mo terminal) KEEP peer; not Shop-native — contrast dual-run teach",
+      "verdict": "watch"
+    },
+    {
+      "item": "Otter commission-free first-party OO (+ per-order txn fee on bundles)",
+      "lane": "vertical_gtm",
+      "why": "Large aggregator with 0% direct OO claim; watch per-order txn fee as KEEP leak teach vs pure flat-sub peers",
+      "verdict": "watch"
+    },
     {
       "item": "TikTok Shop US referral watch Oct 1 2026 (6%→8% + 1.5% creator facilitation)",
       "lane": "vertical_gtm",

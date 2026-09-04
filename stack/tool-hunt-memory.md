@@ -304,3 +304,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Composio scan: Ecommerce Times claims TikTok Shop US referral 6%→8% Oct 1 2026 (+1.5% creator facilitation). Dashboardly still ~6% (Jul 2026). **Watch only** — keep grader default at 6 until confirmed.
 - Watched RestauNax (~$99/mo commission-free site/app) as first-party KEEP peer (not Shop-native). Skip SpotOn labor.
 - `social_shop_fee` already matches 6|8%. Ledger v1.43.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (CI finding schema + KwickOS/Otter watch)
+
+- Fixed ToolFinding schema (`finding_id` + `researched_at`) on keep-grader / Shop-hike / RestauNax findings — unblocks validate-tooling-ledger CI.
+- Watched KwickOS KwickMenu (POS-bundled 0% OO) + Otter commission-free OO (watch per-order txn fee KEEP leak). Skip Otter labor.
+- Ledger v1.44.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

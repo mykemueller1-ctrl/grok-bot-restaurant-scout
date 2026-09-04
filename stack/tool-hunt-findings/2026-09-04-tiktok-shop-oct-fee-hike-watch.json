@@ -1,20 +1,20 @@
 {
-  "id": "2026-09-04-tiktok-shop-oct-fee-hike-watch",
-  "date": "2026-09-04",
+  "finding_id": "tiktok-shop-oct-fee-hike-watch-2026-09",
   "lane": "vertical_gtm",
   "name": "TikTok Shop US Oct 1 2026 referral hike watch (6%→8%)",
-  "mission_fit": "love_to_buy_now",
-  "verdict": "watch",
-  "what_we_use_today": "social_shop_fee KEEP signal + keep-channel-grader default social_fee_pct=6",
-  "summary": "Ecommerce Times (Aug 16 2026) reports TikTok Shop US standard referral rising 6%→8% on Oct 1 2026 plus 1.5% creator facilitation on affiliate-sourced orders. Dashboardly fee guide (sources checked Jul 29 2026) still lists most categories at 6%. Keep grader default at 6 until official/post-Oct confirmation; even at 8% Shop still beats Marketplace 15–30%. social_shop_fee regex already matches 6|8%. Not forecasting.",
-  "never": [
-    "historical_sales_forecasting",
-    "labor_forecasting"
-  ],
-  "sources": [
+  "vendor_or_project": "TikTok Shop",
+  "urls": [
     "https://ecommerce-times.com/tiktok-shops-q4-2026-seller-fee-overhaul-is-reshaping-dtc-margins/",
-    "https://www.dashboardly.io/post/tiktok-shop-fees-2026-the-complete-seller-fee-guide",
-    "scripts/keep-channel-grader.mjs"
+    "https://www.dashboardly.io/post/tiktok-shop-fees-2026-the-complete-seller-fee-guide"
   ],
-  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP"
+  "what_it_does": "Secondary reports claim US standard referral rises 6%→8% on Oct 1 2026 plus 1.5% creator facilitation on affiliate-sourced orders.",
+  "how_competitors_use_it": "DTC sellers modeling Q4 margins; restaurant Shop food still needs category-table confirm.",
+  "what_we_use_today": "social_shop_fee KEEP signal (matches 6|8%) + keep-channel-grader default social_fee_pct=6",
+  "gap": "Dashboardly (sources checked Jul 29 2026) still lists most categories at 6% — do not change grader default until official/post-Oct confirm",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watch Oct 1 2026 Shop fee hike; keep grader at 6 until confirmed. Even at 8% Shop beats Marketplace 15–30%. Not forecasting.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
 }
