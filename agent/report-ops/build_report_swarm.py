@@ -285,7 +285,16 @@ VENUES = [
         "label": "Community Pizza / CTAP",
         "aliases": ["CTAP", "Community Pizza", "Community Tap"],
         "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
-        "status": "drive_indexed",
+        "status": "seats_sold_demo",
+        "seats_ledger": "fixtures/ctap-portal/seats.json",
+        "front_door": "fixtures/ctap-portal/login.html",
+        "historical_sales": "fixtures/ctap-portal/historical-sales.json",
+        "seats_doc": "docs/CTAP-SEATS.md",
+        "sold_seats": [
+            {"role": "owner", "assignee": "Mychael Mueller", "price": "free"},
+            {"role": "manager_foh", "assignee": "Kenzy Thompson", "price": "paid"},
+            {"role": "manager_boh", "assignee": "Tom Dorothy", "price": "paid"},
+        ],
     },
 ]
 
@@ -449,7 +458,18 @@ def icp_sub(tier: dict) -> dict:
 
 
 def venue_scout(venue: dict) -> dict:
-    return {
+    desc = (
+        f"Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for "
+        f"{venue['label']}. Source: {venue['holy_grail_source']}. Status: {venue['status']}."
+    )
+    if venue.get("seats_ledger"):
+        desc = (
+            f"Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for "
+            f"{venue['label']}. Source: {venue['holy_grail_source']}. "
+            f"Front door + sold seats: {venue['seats_ledger'].rsplit('/', 1)[0]}/. "
+            f"Status: {venue['status']}."
+        )
+    scout = {
         "name": f"{venue['label']} Report Scout",
         "title": f"Never86 venue scout — {venue['label']} report packs",
         "role": "venue_scout",
@@ -459,16 +479,23 @@ def venue_scout(venue: dict) -> dict:
         "venue_id": venue["id"],
         "version": VERSION,
         "owner": OWNER,
-        "description": (
-            f"Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for "
-            f"{venue['label']}. Source: {venue['holy_grail_source']}. Status: {venue['status']}."
-        ),
+        "description": desc,
         "aliases": venue["aliases"],
         "holy_grail_source": venue["holy_grail_source"],
         "status": venue["status"],
         "skills": ["report-ingest", "report-route", "teach-label"],
         "swarm": True,
     }
+    for key in (
+        "seats_ledger",
+        "front_door",
+        "historical_sales",
+        "seats_doc",
+        "sold_seats",
+    ):
+        if key in venue:
+            scout[key] = venue[key]
+    return scout
 
 
 def main() -> None:

@@ -88,6 +88,15 @@ python3 agent/report-ops/build_report_swarm.py
 
 Holy grail inbox: **Mike Mueller Gmail** — Kristen → Grill + Taco Bamba Excel/CSV. CTAP Drive indexed under `fixtures/toast/drive-ctap-index.json`. Courser pack: `fixtures/toast/courser/`. ICP scale (owner 1–5 vs area-leader vs CFO/CEO): `docs/ICP-SCALE.md`. Routine: `routines/report-ops-daily.json`.
 
+### CTAP seats + front door
+
+Demo sale for Community Tap & Pizza: owner seat → **Mychael Mueller** (free), Manager FOH → **Kenzy**, Manager BOH → **Tom**. Ledger + login UI: `fixtures/ctap-portal/`. Docs: `docs/CTAP-SEATS.md`.
+
+```bash
+python3 -m http.server 5174 --bind 0.0.0.0 --directory fixtures/ctap-portal
+# http://127.0.0.1:5174/login.html
+```
+
 ## Setup
 
 See `SETUP.md`.

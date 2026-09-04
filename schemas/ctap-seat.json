@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://never86.ai/schemas/ctap-seat.json",
+  "title": "Never86 CTAP seat",
+  "type": "object",
+  "required": ["seat_id", "sku", "role", "label", "status", "assignee"],
+  "properties": {
+    "seat_id": { "type": "string" },
+    "sku": {
+      "type": "string",
+      "enum": ["action-shift-owner", "manager-foh", "manager-boh"]
+    },
+    "role": {
+      "type": "string",
+      "enum": ["owner", "manager_foh", "manager_boh"]
+    },
+    "label": { "type": "string" },
+    "house": {
+      "type": "string",
+      "enum": ["ops", "front", "back"]
+    },
+    "price": {
+      "type": "string",
+      "enum": ["free", "paid"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["available", "sold", "revoked"]
+    },
+    "assignee": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "aka": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "title": { "type": "string" },
+        "email_hint": { "type": "string" }
+      }
+    },
+    "owns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "routes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "login_id": { "type": "string" }
+  }
+}

@@ -2,6 +2,7 @@
 
 - `labor-sales-inventory.json` — parsed snapshot from operator uploads (labor names anonymized).
 - Source report map: `docs/TOAST-REPORTS.md`.
+- CTAP seats + front door + historical sales: `../ctap-portal/` (`docs/CTAP-SEATS.md`).
 - Re-parse:
 
 ```bash

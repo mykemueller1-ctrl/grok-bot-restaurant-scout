@@ -20,6 +20,7 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `docs/OPERATOR.md` | Operator playbook |
 | `docs/CODEX-CLOUD.md` | GitHub ↔ Codex Cloud connect steps |
 | `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
+| `docs/CTAP-SEATS.md` | CTAP sold seats + front-door login |
 
 ## Build / validate
 

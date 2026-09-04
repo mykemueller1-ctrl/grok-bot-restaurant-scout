@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Community Tap & Pizza — front door</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a120c;
+        --parchment: #f3e6d4;
+        --parchment-2: #ead7bf;
+        --ember: #c45c26;
+        --ember-deep: #8f3512;
+        --copper: #d4a574;
+        --muted: #6e5646;
+        --line: rgba(26, 18, 12, 0.14);
+        --ok: #2f6b3a;
+        --glow: rgba(196, 92, 38, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        color: var(--ink);
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        background:
+          radial-gradient(1200px 700px at 80% -10%, rgba(212, 165, 116, 0.35), transparent 55%),
+          radial-gradient(900px 600px at 10% 110%, rgba(196, 92, 38, 0.28), transparent 50%),
+          linear-gradient(160deg, #2a1710 0%, #4a2415 38%, #1c100c 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+        opacity: 0.35;
+        mix-blend-mode: soft-light;
+      }
+
+      .stage {
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 18px 48px;
+      }
+
+      .door {
+        width: min(440px, 100%);
+        background: linear-gradient(180deg, var(--parchment) 0%, var(--parchment-2) 100%);
+        border: 1px solid rgba(243, 230, 212, 0.35);
+        border-radius: 28px;
+        padding: 34px 28px 28px;
+        box-shadow:
+          0 30px 80px rgba(0, 0, 0, 0.45),
+          0 0 0 1px rgba(212, 165, 116, 0.2),
+          inset 0 1px 0 rgba(255, 255, 255, 0.55);
+        animation: rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .os {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 18px;
+      }
+
+      .os i {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--ember);
+        box-shadow: 0 0 0 4px var(--glow);
+        animation: pulse 1.8s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(0.85);
+          opacity: 0.7;
+        }
+      }
+
+      h1 {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-weight: 800;
+        font-size: clamp(34px, 7vw, 44px);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        margin: 0 0 10px;
+      }
+
+      h1 span {
+        display: block;
+        color: var(--ember-deep);
+      }
+
+      .lede {
+        margin: 0 0 26px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.45;
+      }
+
+      label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+
+      .field {
+        margin-bottom: 16px;
+      }
+
+      select,
+      input {
+        width: 100%;
+        appearance: none;
+        border: 1px solid var(--line);
+        background: rgba(255, 252, 246, 0.9);
+        border-radius: 14px;
+        padding: 14px 16px;
+        font: 500 15px/1.2 "IBM Plex Sans", system-ui, sans-serif;
+        color: var(--ink);
+        outline: none;
+        transition: border-color 160ms ease, box-shadow 160ms ease;
+      }
+
+      select:focus,
+      input:focus {
+        border-color: var(--ember);
+        box-shadow: 0 0 0 4px var(--glow);
+      }
+
+      .go {
+        width: 100%;
+        border: 0;
+        border-radius: 999px;
+        padding: 15px 18px;
+        margin-top: 8px;
+        background: linear-gradient(135deg, var(--ember) 0%, var(--ember-deep) 100%);
+        color: #fff7ef;
+        font: 700 15px/1 "IBM Plex Sans", system-ui, sans-serif;
+        cursor: pointer;
+        box-shadow: 0 12px 28px rgba(143, 53, 18, 0.35);
+        transition: transform 160ms ease, filter 160ms ease;
+      }
+
+      .go:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.05);
+      }
+
+      .go:active {
+        transform: translateY(1px);
+      }
+
+      .fine {
+        margin: 16px 0 0;
+        font-size: 12px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .desk {
+        display: none;
+        width: min(980px, 100%);
+        animation: rise 650ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      }
+
+      .desk.on {
+        display: block;
+      }
+
+      .door.off {
+        display: none;
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 22px;
+        color: var(--parchment);
+      }
+
+      .top .mark {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: clamp(28px, 5vw, 36px);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+
+      .top .mark em {
+        font-style: normal;
+        color: #f0b27a;
+      }
+
+      .top .meta {
+        margin-top: 6px;
+        color: rgba(243, 230, 212, 0.72);
+        font-size: 14px;
+      }
+
+      .signout {
+        border: 1px solid rgba(243, 230, 212, 0.28);
+        background: rgba(26, 18, 12, 0.35);
+        color: var(--parchment);
+        border-radius: 999px;
+        padding: 10px 14px;
+        font: 600 13px/1 "IBM Plex Sans", system-ui, sans-serif;
+        cursor: pointer;
+      }
+
+      .who {
+        background: rgba(243, 230, 212, 0.1);
+        border: 1px solid rgba(243, 230, 212, 0.18);
+        border-radius: 22px;
+        padding: 18px 20px;
+        color: var(--parchment);
+        margin-bottom: 18px;
+        backdrop-filter: blur(8px);
+      }
+
+      .who strong {
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+      }
+
+      .who p {
+        margin: 6px 0 0;
+        color: rgba(243, 230, 212, 0.72);
+        font-size: 14px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .top {
+          flex-direction: column;
+        }
+      }
+
+      .seat {
+        background: linear-gradient(180deg, var(--parchment) 0%, var(--parchment-2) 100%);
+        border-radius: 22px;
+        padding: 18px 18px 16px;
+        border: 1px solid rgba(243, 230, 212, 0.3);
+        transform: translateY(10px);
+        opacity: 0;
+        animation: seatIn 520ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+
+      .seat:nth-child(1) {
+        animation-delay: 80ms;
+      }
+      .seat:nth-child(2) {
+        animation-delay: 160ms;
+      }
+      .seat:nth-child(3) {
+        animation-delay: 240ms;
+      }
+
+      @keyframes seatIn {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .seat.active {
+        outline: 2px solid var(--ember);
+        box-shadow: 0 0 0 6px var(--glow);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: 999px;
+        padding: 5px 10px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        background: rgba(47, 107, 58, 0.12);
+        color: var(--ok);
+        margin-bottom: 10px;
+      }
+
+      .badge.paid {
+        background: rgba(196, 92, 38, 0.12);
+        color: var(--ember-deep);
+      }
+
+      .seat h2 {
+        margin: 0;
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+      }
+
+      .seat .person {
+        margin: 4px 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .seat ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 6px;
+      }
+
+      .seat li {
+        font-size: 13px;
+        color: var(--ink);
+        padding-left: 14px;
+        position: relative;
+      }
+
+      .seat li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--ember);
+      }
+
+      .sales {
+        margin-top: 16px;
+        background: rgba(26, 18, 12, 0.4);
+        border: 1px solid rgba(243, 230, 212, 0.16);
+        border-radius: 22px;
+        padding: 18px 20px;
+        color: var(--parchment);
+      }
+
+      .sales h3 {
+        margin: 0 0 8px;
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+      }
+
+      .sales p {
+        margin: 0 0 14px;
+        color: rgba(243, 230, 212, 0.7);
+        font-size: 13px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      @media (max-width: 640px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .stat {
+        background: rgba(243, 230, 212, 0.08);
+        border-radius: 14px;
+        padding: 12px 14px;
+      }
+
+      .stat b {
+        display: block;
+        font-family: "Bricolage Grotesque", Georgia, serif;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+      }
+
+      .stat span {
+        font-size: 12px;
+        color: rgba(243, 230, 212, 0.65);
+      }
+
+      .err {
+        color: #8f3512;
+        font-size: 13px;
+        margin-top: 10px;
+        min-height: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="door" id="door">
+        <div class="os"><i></i> Never 86'd · Action Shift</div>
+        <h1>Community Tap <span>& Pizza</span></h1>
+        <p class="lede">
+          Front door for the Fort Dodge house. Pick the seat we sold, walk in, and the manager
+          rails light up.
+        </p>
+        <form id="login" autocomplete="on">
+          <div class="field">
+            <label for="seat">Sold seat</label>
+            <select id="seat" name="seat" required>
+              <option value="">Choose a seat…</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="name">Signed in as</label>
+            <input id="name" name="name" readonly value="" placeholder="Assignee fills in" />
+          </div>
+          <button class="go" type="submit">Open the door</button>
+          <div class="err" id="err"></div>
+          <p class="fine">Demo sale · owner free · FOH + BOH managers paid</p>
+        </form>
+      </section>
+
+      <section class="desk" id="desk" aria-live="polite"></section>
+    </main>
+
+    <script>
+      const money = (n) =>
+        n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+
+      let seatsDoc = null;
+      let salesDoc = null;
+      let activeLogin = null;
+
+      async function boot() {
+        const [seats, sales] = await Promise.all([
+          fetch("./seats.json").then((r) => r.json()),
+          fetch("./historical-sales.json").then((r) => r.json()),
+        ]);
+        seatsDoc = seats;
+        salesDoc = sales;
+        const select = document.getElementById("seat");
+        for (const s of seats.seats) {
+          const opt = document.createElement("option");
+          opt.value = s.login_id;
+          opt.textContent = `${s.label} · ${s.assignee.name} (${s.price})`;
+          select.appendChild(opt);
+        }
+        select.addEventListener("change", () => {
+          const found = seats.seats.find((s) => s.login_id === select.value);
+          document.getElementById("name").value = found ? found.assignee.name : "";
+          document.getElementById("err").textContent = "";
+        });
+      }
+
+      function renderDesk(loginId) {
+        const active = seatsDoc.seats.find((s) => s.login_id === loginId);
+        if (!active) return;
+        activeLogin = active;
+        const week = salesDoc.lastCompleteWeek;
+        const recent = salesDoc.recentZ || [];
+        document.getElementById("door").classList.add("off");
+        const desk = document.getElementById("desk");
+        desk.classList.add("on");
+        desk.innerHTML = `
+          <div class="top">
+            <div>
+              <div class="mark">Never 86<em>'d</em></div>
+              <div class="meta">${seatsDoc.venue_name} · Fort Dodge · three seats sold</div>
+            </div>
+            <button class="signout" type="button" id="signout">Sign out</button>
+          </div>
+          <div class="who">
+            <strong>${active.label} · ${active.assignee.name}</strong>
+            <p>${active.assignee.title || "Owner-operator"} · house ${active.house} · ${active.price} seat · status ${active.status}</p>
+          </div>
+          <div class="grid">
+            ${seatsDoc.seats
+              .map(
+                (s) => `
+              <article class="seat ${s.login_id === active.login_id ? "active" : ""}">
+                <div class="badge ${s.price === "paid" ? "paid" : ""}">${s.status} · ${s.price}</div>
+                <h2>${s.label}</h2>
+                <div class="person">${s.assignee.name}</div>
+                <ul>${s.owns.slice(0, 4).map((o) => `<li>${o}</li>`).join("")}</ul>
+              </article>`
+              )
+              .join("")}
+          </div>
+          <section class="sales">
+            <h3>Historical sales spine</h3>
+            <p>${week.folder} · ${week.start} → ${week.end}. OCR for invoices is wiring in parallel; these Z nights are already on the book.</p>
+            <div class="stats">
+              <div class="stat"><b>${money(week.week_grand_total)}</b><span>Week net (7 nights)</span></div>
+              <div class="stat"><b>${money(week.week_labor_total)}</b><span>Week labor</span></div>
+              <div class="stat"><b>${recent.length ? money(recent[0].grandTotal) : "—"}</b><span>Latest sample Z ${recent[0]?.label || ""}</span></div>
+            </div>
+          </section>
+        `;
+        document.getElementById("signout").onclick = () => {
+          desk.classList.remove("on");
+          desk.innerHTML = "";
+          document.getElementById("door").classList.remove("off");
+        };
+      }
+
+      document.getElementById("login").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const id = document.getElementById("seat").value;
+        if (!id) {
+          document.getElementById("err").textContent = "Pick a sold seat first.";
+          return;
+        }
+        renderDesk(id);
+      });
+
+      boot().catch((err) => {
+        document.getElementById("err").textContent = String(err.message || err);
+      });
+    </script>
+  </body>
+</html>
