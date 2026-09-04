@@ -1210,3 +1210,12 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_drx_vPpqbtJ2 (~10 min).
 - Ledger v1.92.82. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-17 + Deliverect Meta + OpenTable MCP + Bedrock WA)
+
+- Yelp pass-17 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass17.json`.
+- Adopted love rails reconfirm. Finding: `2026-09-04-love-rails-pass-yelp17.json`.
+- Reconfirmed Deliverect/Zyda/ChatFood/Flipdish Meta + Uber IG rent — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass3.json`.
+- Watched **AnythingMCP OpenTable→Cursor** (reservation-skew adjacent) + **AWS Bedrock AgentCore multimodal WhatsApp ordering (MCP)** Sep 4 2026. Findings: `2026-09-04-anythingmcp-opentable-cursor-watch.json`, `2026-09-04-bedrock-wa-ordering-mcp-watch.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_LIlW3QQ6l2nJ (~10 min).
+- Ledger v1.92.83. Auth still blocked for unlock READY.
+
