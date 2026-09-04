@@ -1,0 +1,21 @@
+{
+  "finding_id": "meta-hatch-aug2026-food-order-reconfirm-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Meta Hatch Aug 2026 — order food + book tables reconfirm",
+  "vendor_or_project": "Meta (Project Hatch)",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "Aug 2026 primary cites: Business Insider (2026-08-27) internal memo — Hatch can **order food**, **book restaurant tables**, access Instagram. Enterprise DNA (2026-08-29, via The Information) — consumer agent inside Instagram/WhatsApp; training sandbox includes **DoorDash**, Yelp, Etsy, Reddit, Outlook; Claude Opus/Sonnet at launch; premium reportedly up to ~$200/mo; late Aug/Sep 2026 launch window reported. Platform rival to Never86 Shop / TikTok Shop and marketplace order rails. Still **not** an FBE Order Food peer — meta_order_food_peer_count stays **9**.",
+  "what_it_does": "Consumer AI agent that performs tasks across Meta apps including food order and restaurant booking.",
+  "how_competitors_use_it": "When live, diners may order/book via Hatch instead of merchant Shop/Order Food buttons — platform mediation risk.",
+  "what_we_use_today": "Prior Hatch watch (Q4 2026 shopping agent); Meta checkout sunset Shop wedge; FBE peer set 9",
+  "gap": "GTM skills should cite Aug 2026 food-order+book capability when pitching Shop vs Meta agentic rails",
+  "pivot_speed": "hours",
+  "operator_ask": "Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.businessinsider.com/meta-hatch-personal-ai-agent-capabilities-employees-memo-2026-8",
+    "https://enterprisedna.co/resources/news/meta-hatch-consumer-ai-agent-platform-launch-2026/"
+  ],
+  "not_this": "Not FBE peer_count bump. Not fee dogfood. Not forecasting."
+}

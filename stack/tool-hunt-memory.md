@@ -947,3 +947,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Yelp pass-4: G&TG 10731 / Franklin 6477 / Michaels 2084 / Husk 1987 / Rioja 2914 stable. Finding: `2026-09-04-yelp-5market-stable-pass4.json`.
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk__zyBLakBGSNc (~10 min).
 - Ledger v1.92.52. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Hatch Aug 2026 + Menuthere/OrderOnWhats/Waplify)
+
+- Adopted Meta **Hatch** Aug 2026 reconfirm — order food + book tables; DoorDash/Yelp sandbox; peer_count stays 9. Finding: `2026-09-04-meta-hatch-aug2026-reconfirm.json`.
+- Watched **Menuthere** + **OrderOnWhats** + **Waplify** WA peers (skip OrderOnWhats demand-forecast). Finding: `2026-09-04-menuthere-orderonwhats-waplify-wa.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_1v0SMn4lsIQg (~10 min).
+- Ledger v1.92.53. Auth still blocked for unlock READY.

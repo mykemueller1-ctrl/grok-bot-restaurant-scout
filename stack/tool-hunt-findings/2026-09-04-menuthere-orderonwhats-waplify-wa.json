@@ -1,0 +1,22 @@
+{
+  "finding_id": "menuthere-orderonwhats-waplify-wa-peers-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menuthere + OrderOnWhats + Waplify WhatsApp ordering peers",
+  "vendor_or_project": "Menuthere / OrderOnWhats.app / Waplify",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Three WhatsApp restaurant peers (Composio FETCH 2026-09-04): (1) **Menuthere** — send “Hi” → auto Order Now link → branded web menu; 0% commission; Meta WA Business number or shared number; status updates + loyalty. (2) **OrderOnWhats.app** — WA AI chatbot OO + storefront; flat SaaS ($13–$129/mo published); 0% commission claim; **skip** AI Professional “Demand forecasting” module. (3) **Waplify** — official WA Business API for India restaurants/cloud kitchens: catalogs, order confirmations, delivery updates, review asks — anti-aggregator messaging OS more than full cart. Watch with ChatOrder/WaveOrder/MyFojo/Zippi; not Meta FBE; fee pause.",
+  "what_it_does": "WhatsApp-native or WhatsApp-API restaurant ordering / order-ops that keeps marketplace commissions off the ticket.",
+  "how_competitors_use_it": "QR/bio → WA “Hi” funnel (Menuthere); AI chatbot takes chats 24/7 (OrderOnWhats); API broadcasts + delivery ETA (Waplify).",
+  "what_we_use_today": "ChatOrder/OrderZ/MyFojo/WaveOrder/Zippi/VoiceZero/BoostOrder WA+DM watches",
+  "gap": "Expands regional WA own-channel set; sharpens anti-marketplace chat OO teach",
+  "pivot_speed": "days",
+  "operator_ask": "No fee dogfood. Skip OrderOnWhats forecasting features. Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://menuthere.com/solutions/whatsapp-ordering",
+    "https://orderonwhats.app/",
+    "https://waplify.io/industries/restaurants/"
+  ],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting (explicitly skip OrderOnWhats demand-forecast module). Menujo stays display-only — not in this set."
+}

@@ -1,5 +1,5 @@
 {
-  "version": "1.92.52",
+  "version": "1.92.53",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Meta Hatch Aug 2026 food-order + book-table reconfirm",
+      "lane": "vertical_gtm",
+      "why": "BI memo + Enterprise DNA: Hatch orders food / books tables inside IG/WA; DoorDash+Yelp sandbox — Shop rival; peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Menuthere + OrderOnWhats + Waplify WA ordering peers",
+      "lane": "vertical_gtm",
+      "why": "Hi→Order Now (Menuthere 0%); flat SaaS WA AI OO (OrderOnWhats $13–$129, skip forecast module); India WA API ops (Waplify) — ChatOrder-class peers",
+      "verdict": "watch"
+    },
     {
       "item": "Lenkli in-app browser escape (linkboo peer)",
       "lane": "vertical_gtm",
@@ -2971,7 +2983,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk__zyBLakBGSNc (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_1v0SMn4lsIQg (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -3006,5 +3018,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:00:00Z"
+  "updated_at": "2026-09-04T21:05:00Z"
 }
