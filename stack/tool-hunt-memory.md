@@ -672,3 +672,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Wired Deliverect IG/FB/WA Order Food into `vertical-rival-watch`, `morning-scan`, `script-draft`, `sales-lead-form`, `tool-frontier-scan`.
 - Fresh Instagram Composio link: https://connect.composio.dev/link/lk_OX5RQYqGvxKG (~10 min).
 - Ledger v1.92.9. Tip CI green on 5-market Yelp live. Still blocked on Mem0/Context for unlock READY.
+
+### 2026-09-04 (Beyond the Hunt status printer)
+
+- Added `scripts/print-beyond-the-hunt-status.mjs` — one JSON screen: auth READY/BLOCKED, 5-market love live_proof, social seed, fee pause, top open_gaps.
+- Documented in `docs/DESKTOP-UNLOCKS.md`. CI gates the printer. Ledger v1.92.10.
+- Still blocked: `MEM0_API_KEY` + `CONTEXT_DEV_API_KEY` → unlock READY.

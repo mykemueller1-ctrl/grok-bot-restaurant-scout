@@ -1,0 +1,14 @@
+{
+  "finding_id": "beyond-the-hunt-status-pack-2026-09",
+  "lane": "cursor_agents",
+  "name": "Beyond the Hunt one-screen status printer",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "scripts/print-beyond-the-hunt-status.mjs aggregates auth READY/BLOCKED, 5-market love live_proof, social seed, fee pause, and top open_gaps — sharpens operator path to Mem0/Context unlock without fee expansion.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "scripts/print-beyond-the-hunt-status.mjs",
+    "docs/DESKTOP-UNLOCKS.md",
+    "scripts/unlock-beyond-the-hunt.mjs"
+  ]
+}

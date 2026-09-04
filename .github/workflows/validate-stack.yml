@@ -190,6 +190,7 @@ jobs:
           test -f scripts/print-tool-hunt-automation.mjs
           test -f scripts/print-sync-skills-checklist.mjs
           test -f scripts/print-social-unlocks.mjs
+          test -f scripts/print-beyond-the-hunt-status.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
