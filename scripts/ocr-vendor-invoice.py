@@ -51,13 +51,27 @@ TAX = load_taxonomy()
 VENDOR_DIR = {v["name"].lower(): v for v in TAX.get("vendor_directory_seed", [])}
 PAYOUT_MAP = {str(k).lower(): v for k, v in TAX.get("payout_account_map", {}).items()}
 
+# Operator private teach (Myke): Hy-Vee grocery → Food; Hy-Vee wine → liquor order.
+# See agent/report-ops/taxonomy/private-teaches/hy-vee.json
+HYVEE_WINE_SIGNAL = re.compile(
+    r"WINE\s*&\s*SPIRITS|WINE\s*AND\s*SPIRITS|HY[\-\s]?VEE\s*WINE|HV\s*SPIRI|"
+    r"WINE\s*DISCOUNT|1511\s*2nd\s*Ave|BERINGER|PINOT(?:\s*GR|\b)|"
+    r"CROWN\s*ROYAL|0\.750\s*Liter|BTL\s*DEP|Foft\s*DodgeHy[\-\s]?VeeWine",
+    re.I,
+)
+HYVEE_FAMILY = re.compile(r"HY[\-\s]?VEE|Hyvee|HV\s*SPIRI", re.I)
+
 VENDOR_PATTERNS = [
     (r"PERFORMANCE\s+FOODSERVICE|formance\s+Foodservice|Performance\s+Foodservice", "Performance Foodservice"),
     (r"\bSYSCO\b", "Sysco"),
     (r"US\s*FOODS", "US Foods"),
     (r"NORTHERN\s+LIGHTS|Northernlights", "Northern Lights Distributing"),
     (r"FAREWAY", "Fareway"),
-    (r"HY[\-\s]?VEE\s+WINE|WINE\s*&\s*SPIRITS", "Hy-Vee Wine & Spirits"),
+    (
+        r"HY[\-\s]?VEE\s+WINE|WINE\s*&\s*SPIRITS|HV\s*SPIRI|Foft\s*DodgeHy[\-\s]?VeeWine|"
+        r"Fort\s*Dodge\s*Hy[\-\s]?Vee\s*Wine",
+        "Hy-Vee Wine & Spirits",
+    ),
     (r"HY[\-\s]?VEE|Hyvee", "Hy-Vee"),
     (r"WALMART|Waimart|WM\s+SUPERCENTER", "Walmart"),
     (r"MENARDS", "Menards"),
@@ -229,11 +243,17 @@ def parse_money(s: str) -> float | None:
 def detect_vendor(text: str) -> str | None:
     for pat, name in VENDOR_PATTERNS:
         if re.search(pat, text, re.I):
+            # Operator teach: grocery "Hy-Vee" + wine/spirits signals → Wine & Spirits
+            if name == "Hy-Vee" and HYVEE_WINE_SIGNAL.search(text):
+                return "Hy-Vee Wine & Spirits"
             return name
     if re.search(r"Register\s*#?\s*:?\s*\d", text, re.I) and re.search(
         r"Manager\s*Sign|Payee\s*Sign|Account\s*Number", text, re.I
     ):
         return "Community Pizza"
+    # Partial OCR: HV SPIRI / wine address without clear Hy-Vee token
+    if HYVEE_WINE_SIGNAL.search(text) and HYVEE_FAMILY.search(text):
+        return "Hy-Vee Wine & Spirits"
     return None
 
 
@@ -306,6 +326,36 @@ def detect_doc_kind(text: str, vendor: str | None) -> str:
 
 def classify_cogs(vendor: str | None, text: str, account: str | None, description: str | None) -> dict:
     """Map vendor + payout account + line hints → COGS category (food/beer/liquor/pop/…)."""
+    # Operator private teach — Hy-Vee family (see private-teaches/hy-vee.json)
+    # Plain Hy-Vee → Food. Hy-Vee wine / Wine & Spirits → liquor order.
+    hyvee_family = bool(
+        (vendor and "hy-vee" in vendor.lower())
+        or HYVEE_FAMILY.search(text or "")
+    )
+    if hyvee_family:
+        wine_hit = vendor == "Hy-Vee Wine & Spirits" or bool(HYVEE_WINE_SIGNAL.search(text or ""))
+        if wine_hit:
+            return {
+                "cogs_category": "liquor",
+                "vendor_type": "wine_spirits",
+                "category_source": "operator_teach_hyvee_wine",
+            }
+        # Grocery Hy-Vee: payout Food/Bread still food; default food
+        for key in filter(None, [account, description]):
+            for token in re.split(r"[\s/]+", str(key)):
+                mapped = PAYOUT_MAP.get(token.lower())
+                if mapped:
+                    return {
+                        "cogs_category": mapped if mapped == "food" else mapped,
+                        "vendor_type": "grocery",
+                        "category_source": "payout_account",
+                    }
+        return {
+            "cogs_category": "food",
+            "vendor_type": "grocery",
+            "category_source": "operator_teach_hyvee_food",
+        }
+
     # 1) Payout account / description wins for Register slips
     for key in filter(None, [account, description]):
         for token in re.split(r"[\s/]+", str(key)):
@@ -330,6 +380,9 @@ def classify_cogs(vendor: str | None, text: str, account: str | None, descriptio
                         "wine_spirits",
                         "grocery_liquor",
                     ):
+                        # Operator: wine on Hy-Vee-class spirits still liquor order
+                        if cat == "wine" and meta.get("vendor_type") == "wine_spirits":
+                            cat = "liquor"
                         return {
                             "cogs_category": cat,
                             "vendor_type": meta.get("vendor_type"),

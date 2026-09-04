@@ -1,0 +1,70 @@
+{
+  "$schema_name": "OperatorPrivateTeach",
+  "id": "hy-vee",
+  "taught_by": "myke",
+  "taught_at": "2026-09-04",
+  "venue_scope": ["community-pizza", "community-tap"],
+  "summary": "Hy-Vee is wide-ranging; default Food. Wine / Wine & Spirits receipts code to liquor order.",
+  "rules": [
+    {
+      "id": "hyvee-default-food",
+      "when": {
+        "vendor_family": "hy-vee",
+        "wine_spirits_signal": false
+      },
+      "then": {
+        "vendor": "Hy-Vee",
+        "vendor_type": "grocery",
+        "cogs_category": "food",
+        "note": "Grocery / buns / produce / deli runs → Food COGS"
+      }
+    },
+    {
+      "id": "hyvee-wine-to-liquor-order",
+      "when": {
+        "vendor_family": "hy-vee",
+        "wine_spirits_signal": true
+      },
+      "then": {
+        "vendor": "Hy-Vee Wine & Spirits",
+        "vendor_type": "wine_spirits",
+        "cogs_category": "liquor",
+        "note": "Operator: Hy-Vee wine receipts go to liquor order (not Food, not separate wine COA for this ICP yet)"
+      }
+    }
+  ],
+  "wine_spirits_signals": [
+    "Wine & Spirits",
+    "Wine and Spirits",
+    "Hy-Vee Wine",
+    "HV SPIRI",
+    "HV SPIRITS",
+    "Wine Discount",
+    "1511 2nd Ave",
+    "Beringer",
+    "Pinot",
+    "Crown Royal",
+    "0.750 Liter",
+    "0.750Liter",
+    "bottle deposit",
+    "BTL DEP"
+  ],
+  "examples": [
+    {
+      "asset": "01a06a6c-cac1-7924-8bb4-10116bb9ab7e.jpg",
+      "label": "grocery buns run → food"
+    },
+    {
+      "asset": "01a06a6c-d3c9-752a-b254-18d87c4432b9.jpg",
+      "label": "invoice 16775 page with Beringer/Wine Discount → liquor order"
+    },
+    {
+      "asset": "01a06a6c-d1f9-7a69-a6e0-71d7611f0e21.jpg",
+      "label": "Hy-Vee Wine & Spirits header → liquor order"
+    }
+  ],
+  "open_questions": [
+    "Hy-Vee can sell pop, paper, cleaning — later teach splits when line OCR is strong enough",
+    "Whether wine vs spirits should split to wine COA later; for now liquor order wins"
+  ]
+}

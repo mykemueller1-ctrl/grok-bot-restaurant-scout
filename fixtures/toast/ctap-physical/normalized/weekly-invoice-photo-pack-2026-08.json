@@ -7,16 +7,16 @@
   "window": {
     "start": "2026-08-11",
     "end": "2026-08-20",
-    "note": "Photo firehose pack — primary owner-1-5 AP intake. OCR spine: scripts/ocr-vendor-invoice.py → ocr-batch-2026-08.json. Email forwards are bonus."
+    "note": "Photo firehose pack \u2014 primary owner-1-5 AP intake. OCR spine: scripts/ocr-vendor-invoice.py \u2192 ocr-batch-2026-08.json. Email forwards are bonus."
   },
   "capture_pattern": {
     "role": "as_is_pain_evidence",
-    "how": "Phone camera on countertop; often landscape of a portrait slip (rotate 90°); staple payout slip to store receipt; shadow from photographer; tears, stains, blur, redacted tops common",
-    "cadence": "Every delivery / run during the week — not a tidy month-end PDF dump",
+    "how": "Phone camera on countertop; often landscape of a portrait slip (rotate 90\u00b0); staple payout slip to store receipt; shadow from photographer; tears, stains, blur, redacted tops common",
+    "cadence": "Every delivery / run during the week \u2014 not a tidy month-end PDF dump",
     "pairings": [
-      "Community Pizza payout slip ↔ grocery/hardware receipt (Fareway, Hy-Vee, Menards, Walmart)",
-      "Distributor invoice ↔ occasional empty-keg / bottle credit annotation",
-      "Wholesale liquor invoice ↔ Hy-Vee Wine & Spirits register receipt (same total)"
+      "Community Pizza payout slip \u2194 grocery/hardware receipt (Fareway, Hy-Vee, Menards, Walmart)",
+      "Distributor invoice \u2194 occasional empty-keg / bottle credit annotation",
+      "Wholesale liquor invoice \u2194 Hy-Vee Wine & Spirits register receipt (same total)"
     ],
     "account_codes_seen": [
       {
@@ -34,11 +34,11 @@
     ],
     "icp_signals": [
       "As-is inventory/AP = invoice photos + store runs (human grind)",
-      "Distributors already email invoices — operators still photograph paper",
+      "Distributors already email invoices \u2014 operators still photograph paper",
       "Petty cash payout slips are first-class AP docs today",
       "Handwritten totals/credits beat the printed total when empties returned",
       "Multi-vendor week: broadline + local meat + beer/wine + grocery + restaurant supply + hardware",
-      "No ERP — Register #2 payout ticket is the coding layer"
+      "No ERP \u2014 Register #2 payout ticket is the coding layer"
     ]
   },
   "coaching": {
@@ -48,9 +48,9 @@
       "Ingest every photo via invoice-photo-ocr (auto-rotate, confidence flags)",
       "Normalize vendor + date + amount + account into vendor-invoice schema",
       "Teach-batch low-confidence / unknown vendor docs to Myke",
-      "Offer email forward later as an upgrade — not a prerequisite"
+      "Offer email forward later as an upgrade \u2014 not a prerequisite"
     ],
-    "repeatable_system": "photo dump → OCR → vendor-invoice agent → COGS signals → daily leak dollars",
+    "repeatable_system": "photo dump \u2192 OCR \u2192 vendor-invoice agent \u2192 COGS signals \u2192 daily leak dollars",
     "anti_pattern": "Waiting for operators to forward email invoices before COGS works"
   },
   "documents": [
@@ -74,7 +74,7 @@
       "invoice_num": "239335",
       "customer": "COMMUNITY TAP",
       "terms": "EFT 21 Day",
-      "notes": "Multi-page — pizza boxes, fries, wings, cheese, dish chem, fuel surcharge; page photos cut totals",
+      "notes": "Multi-page \u2014 pizza boxes, fries, wings, cheese, dish chem, fuel surcharge; page photos cut totals",
       "source_images": [
         "assets/01a06a6c-c5e0-7c7c-93bc-c2481ab2f6c2.jpg",
         "assets/01a06a6c-c687-73f5-815b-460ea31c2ed2.jpg"
@@ -146,7 +146,7 @@
       "description": "Hyvee",
       "payout_amount": 32.0,
       "receipt_total": 31.92,
-      "notes": "8× hamburger buns; payout rounded vs receipt",
+      "notes": "8\u00d7 hamburger buns; payout rounded vs receipt",
       "source_images": [
         "assets/01a06a6c-ca2a-7e07-b95c-ad376a4fe778.jpg",
         "assets/01a06a6c-cac1-7924-8bb4-10116bb9ab7e.jpg"
@@ -162,7 +162,7 @@
       "description": "Menards",
       "payout_amount": 76.0,
       "receipt_total": 75.16,
-      "notes": "Cleaning / soap / Sharpies / Mean Green — ops supplies not food",
+      "notes": "Cleaning / soap / Sharpies / Mean Green \u2014 ops supplies not food",
       "source_images": [
         "assets/01a06a6c-cb5c-74bf-bd89-98518048c4b9.jpg",
         "assets/01a06a6c-cbfc-71ef-a5ef-384ef882666c.jpg"
@@ -178,7 +178,7 @@
       "description": "Fareway",
       "payout_amount": 64.18,
       "receipt_total": 64.18,
-      "notes": "2× half pork belly; debit contactless",
+      "notes": "2\u00d7 half pork belly; debit contactless",
       "source_images": [
         "assets/01a06a6c-cdc1-74ca-8bcf-ebdd8a3d001a.jpg",
         "assets/01a06a6c-ce5b-7af6-9687-f6a08e8bf4f9.jpg"
@@ -204,7 +204,7 @@
       "vendor": "Fareway",
       "date": null,
       "total": null,
-      "notes": "Teach: blur + stain — still a real weekly capture; OCR may fail; keep as capture-pattern evidence not clean extract",
+      "notes": "Teach: blur + stain \u2014 still a real weekly capture; OCR may fail; keep as capture-pattern evidence not clean extract",
       "quality": "poor",
       "source_images": [
         "assets/01a06a6c-cf95-7610-ae0a-270009651ca3.jpg"
@@ -377,6 +377,15 @@
       "note": "payout-coded grocery + ops"
     }
   ],
-  "good_looks_like": "Photo batch OCR → vendor/date/amount/account rows with confidence. Email PDF is bonus when they bother.",
-  "ocr_batch": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json"
+  "good_looks_like": "Photo batch OCR \u2192 vendor/date/amount/account rows with confidence. Email PDF is bonus when they bother.",
+  "ocr_batch": "fixtures/toast/ctap-physical/normalized/ocr-batch-2026-08.json",
+  "operator_teaches": {
+    "hy-vee": {
+      "ref": "agent/report-ops/taxonomy/private-teaches/hy-vee.json",
+      "rules": [
+        "Hy-Vee grocery \u2192 food",
+        "Hy-Vee wine / Wine & Spirits \u2192 liquor order"
+      ]
+    }
+  }
 }

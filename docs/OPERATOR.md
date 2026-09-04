@@ -45,6 +45,8 @@ Each label updates vendor phrase banks (`VendorLearnedBank`). Wrong-pain routes 
 
 Photo OCR is the AP spine for small ICPs (email is bonus). Taxonomy + competitive map: `docs/RESTAURANT-AP-OCR.md`. Teach vendor ID + COGS category (`food` / `beer` / `wine` / `liquor` / `na_beverage` / …) when OCR is low-confidence or `unknown`. Finance advisor swarm: `agent/report-ops/` domain `finance` (daily-pnl, prime-cost, vendor-spend).
 
+**Private teach locked — Hy-Vee:** grocery Hy-Vee → Food. Hy-Vee wine / Wine & Spirits → liquor order (`agent/report-ops/taxonomy/private-teaches/hy-vee.json`).
+
 ## Add vendors
 
 Edit `agent/pain-shoppers/build_swarm.py` or `vendors/catalog.json` → `python3 agent/pain-shoppers/build_swarm.py` → import new JSON.

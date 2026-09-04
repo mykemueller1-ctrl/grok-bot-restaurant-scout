@@ -25,7 +25,8 @@ python3 scripts/ocr-vendor-invoice.py path/to/*.jpg \
 
 ## Category coding
 
-- Vendor directory → default category (Sysco→food, Humes→beer, Hy-Vee Wine→liquor, …)
+- Vendor directory → default category (Sysco→food, Humes→beer, …)
+- **Operator teach — Hy-Vee:** plain Hy-Vee → **food**; Hy-Vee wine / Wine & Spirits (HV SPIRI, Wine Discount, Beringer, …) → **liquor order** (`private-teaches/hy-vee.json`)
 - Register #2 payout account (4312 Food, Beverage, Misc) overrides
 - Line-item keyword hints for beer/liquor/pop/paper on mixed invoices
 

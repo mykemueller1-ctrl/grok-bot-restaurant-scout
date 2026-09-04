@@ -92,15 +92,18 @@
     {"name": "Northern Lights Distributing", "vendor_type": "specialty_food", "default_category": "food"},
     {"name": "Sawyer's Meats of Iowa", "vendor_type": "meat", "default_category": "food"},
     {"name": "Fareway", "vendor_type": "grocery", "default_category": "food"},
-    {"name": "Hy-Vee", "vendor_type": "grocery", "default_category": "food"},
+    {"name": "Hy-Vee", "vendor_type": "grocery", "default_category": "food", "operator_teach": "hy-vee#hyvee-default-food"},
     {"name": "Walmart", "vendor_type": "grocery", "default_category": "food"},
     {"name": "Humes Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
     {"name": "FT Dodge Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
     {"name": "Hopkins Distributing", "vendor_type": "beer_distributor", "default_category": "beer"},
     {"name": "Confluence Distribution", "vendor_type": "beer_distributor", "default_category": "beer"},
-    {"name": "Hy-Vee Wine & Spirits", "vendor_type": "wine_spirits", "default_category": "liquor"},
+    {"name": "Hy-Vee Wine & Spirits", "vendor_type": "wine_spirits", "default_category": "liquor", "operator_teach": "hy-vee#hyvee-wine-to-liquor-order", "note": "Operator: wine receipts → liquor order"},
     {"name": "Menards", "vendor_type": "hardware", "default_category": "ops_supplies"},
     {"name": "Community Pizza", "vendor_type": "pos_payout", "default_category": null, "note": "Register payout slip — category from Account Name / Description"}
+  ],
+  "operator_private_teaches": [
+    "agent/report-ops/taxonomy/private-teaches/hy-vee.json"
   ],
   "payout_account_map": {
     "4312": "food",

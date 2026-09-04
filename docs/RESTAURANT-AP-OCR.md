@@ -32,6 +32,8 @@ See `agent/report-ops/taxonomy/cogs-categories.json`:
 
 CTAP Register #2 payout accounts map: Food/Bread → food, Beverage → na_beverage, Misc → misc_opex.
 
+**Operator private teach (Hy-Vee):** grocery Hy-Vee → `food`. Hy-Vee wine / Wine & Spirits receipts → `liquor` (liquor order). See `agent/report-ops/taxonomy/private-teaches/hy-vee.json`.
+
 ## Never86 wedge
 
 Owner-1-5 dumps millions of messy photos. We OCR + **vendor-type + COGS category** + teach exceptions + **finance advisor swarm** (prime cost / daily P&L / vendor spend). We do not pretend to replace Restaurant365 overnight — we beat MarginEdge-class speed-to-leak-dollar for the photo firehose.

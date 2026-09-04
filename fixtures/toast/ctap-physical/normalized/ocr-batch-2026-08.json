@@ -11,7 +11,7 @@
   "schema": "schemas/vendor-invoice.json",
   "taxonomy": "agent/report-ops/taxonomy/cogs-categories.json",
   "docs_ref": "docs/RESTAURANT-AP-OCR.md",
-  "note": "Photo OCR + COGS category coding (food/beer/wine/liquor/pop). RapidOCR primary; Tesseract fallback.",
+  "note": "Photo OCR + COGS coding. Operator teach: Hy-Vee\u2192food; Hy-Vee wine\u2192liquor order.",
   "documents": [
     {
       "source_channel": "photo",
@@ -287,7 +287,7 @@
       "vendor": "Hy-Vee",
       "vendor_type": "grocery",
       "cogs_category": "food",
-      "category_source": "vendor_directory",
+      "category_source": "operator_teach_hyvee_food",
       "date": "2026-08-18",
       "invoice_num": null,
       "amount": 31.92,
@@ -651,7 +651,7 @@
       "vendor": "Hy-Vee Wine & Spirits",
       "vendor_type": "wine_spirits",
       "cogs_category": "liquor",
-      "category_source": "vendor_directory",
+      "category_source": "operator_teach_hyvee_wine",
       "date": "2026-08-17",
       "invoice_num": "16775",
       "amount": 216.0,
@@ -740,11 +740,11 @@
     },
     {
       "source_channel": "photo",
-      "doc_kind": "store_receipt",
-      "vendor": "Hy-Vee",
-      "vendor_type": "grocery",
-      "cogs_category": "food",
-      "category_source": "vendor_directory",
+      "doc_kind": "wholesale_invoice_plus_receipt",
+      "vendor": "Hy-Vee Wine & Spirits",
+      "vendor_type": "wine_spirits",
+      "cogs_category": "liquor",
+      "category_source": "operator_teach_hyvee_wine",
       "date": "2026-08-17",
       "invoice_num": null,
       "amount": 1247.62,
@@ -954,7 +954,7 @@
       "vendor": "Hy-Vee",
       "vendor_type": "grocery",
       "cogs_category": "food",
-      "category_source": "vendor_directory",
+      "category_source": "operator_teach_hyvee_food",
       "date": "2026-08-11",
       "invoice_num": null,
       "amount": 0.0,
@@ -982,8 +982,8 @@
   ],
   "category_rollups": {
     "beer": 1421.8,
-    "food": 3054.23,
-    "liquor": 216.0,
+    "food": 1806.61,
+    "liquor": 1463.62,
     "misc_opex": 142.55,
     "ops_supplies": 75.16,
     "unknown": 109.98
@@ -1022,7 +1022,7 @@
   },
   "known_gaps": [
     "Handwritten Sawyer totals still weak on some pages",
-    "Hy-Vee Wine & Spirits vs grocery Hy-Vee can mis-route if OCR misses WINE/SPIRITS header",
+    "Hy-Vee can sell pop/paper/cleaning \u2014 later teach splits when line OCR is strong",
     "Blur/stain photos may fall to tesseract with partial extract"
   ],
   "benchmark": {
@@ -1036,5 +1036,8 @@
       "mean_confidence": 86.8,
       "categorized": 28
     }
-  }
+  },
+  "private_teaches": [
+    "agent/report-ops/taxonomy/private-teaches/hy-vee.json"
+  ]
 }
