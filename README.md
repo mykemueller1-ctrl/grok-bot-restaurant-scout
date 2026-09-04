@@ -71,6 +71,23 @@ Worker + D1 live under `services/pain-leads-api/` (`src/worker/`, `wrangler.toml
 
 Operator exports: Schedule & Labor **Time Entries** + Menu Sales **Item Selection Details** (product mix → SKUs). Map + parse: `docs/TOAST-REPORTS.md`, `scripts/parse-toast-reports.mjs`, `fixtures/toast/`.
 
+## Report-ops swarm (parent / teacher / subs)
+
+**18 agents** that own every sales/labor/inventory report dump (CSV, Excel, PDF):
+
+```bash
+python3 agent/report-ops/build_report_swarm.py
+```
+
+| Role | Count | Path |
+| --- | --- | --- |
+| Teacher | 1 | `agent/report-ops/teacher.json` |
+| Parents (Labor, Sales, Inventory) | 3 | `agent/report-ops/parents/` |
+| Subs (Time Entries, Item Selection, Z-Report, Par, …) | 11 | `agent/report-ops/subs/` |
+| Venue scouts (Grill, Taco Bamba, CTAP) | 3 | `agent/report-ops/venues/` |
+
+Holy grail inbox: **Mike Mueller Gmail** — Kristen → Grill + Taco Bamba Excel/CSV. CTAP Drive indexed under `fixtures/toast/drive-ctap-index.json`. Routine: `routines/report-ops-daily.json`.
+
 ## Setup
 
 See `SETUP.md`.

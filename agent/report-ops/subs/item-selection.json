@@ -1,0 +1,49 @@
+{
+  "name": "Item Selection Details Sub-Agent",
+  "title": "Never86 report sub \u2014 Sales / Product Mix / Item Selection Details",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-report-ops",
+  "domain_id": "sales",
+  "report_id": "item-selection",
+  "parent": "sales",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Item Selection Details report (Toast \u2192 Menus \u2192 Item Selection Details). Ingests csv, xlsx. Signals: sku, qty, net_sales, menu_group, sales_category. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Toast \u2192 Menus \u2192 Item Selection Details",
+  "formats": [
+    "csv",
+    "xlsx"
+  ],
+  "signals": [
+    "sku",
+    "qty",
+    "net_sales",
+    "menu_group",
+    "sales_category"
+  ],
+  "file_globs": [
+    "ItemSelectionDetails*.csv",
+    "*item*selection*",
+    "*product*mix*"
+  ],
+  "schema": "schemas/product-mix-sku.json",
+  "hierarchy": [
+    "sales_category",
+    "menu",
+    "menu_group",
+    "menu_item"
+  ],
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Report Teacher",
+  "title": "Never86 report teacher \u2014 Myke labels holy-grail packs",
+  "role": "teacher",
+  "shape": "fox",
+  "color": "#FF6B35",
+  "family": "never86-report-ops",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Teacher for every sales/labor/inventory report agent. Packages Kristen / Grill / Taco Bamba / CTAP exports into teach batches. Myke labels keep/reject/wrong_report/wrong_venue/needs_research. Writes teach_memory so sub-agents learn what a good Time Entry, Item Selection, Z-Report, or Par sheet looks like.",
+  "job_to_be_done": "Turn operator report dumps into labeled ground truth for the swarm.",
+  "teaches_reports": [
+    "time-entries",
+    "labor-summary",
+    "bar-kitchen-schedule",
+    "item-selection",
+    "menu-sales",
+    "sales-category",
+    "z-report",
+    "weekly-sales-pack",
+    "sku-depletion",
+    "liquor-beer-par",
+    "vendor-intake"
+  ],
+  "label_enum": [
+    "keep",
+    "reject",
+    "wrong_report",
+    "wrong_venue",
+    "needs_research"
+  ],
+  "skills": [
+    "teach-label",
+    "report-teach-batch",
+    "recurse-learn"
+  ],
+  "holy_grail": {
+    "inbox": "mykemueller1@gmail.com (Mike Mueller Gmail)",
+    "from": "Kristen",
+    "venues": [
+      "grill",
+      "taco-bamba"
+    ],
+    "want": [
+      "csv",
+      "xlsx",
+      "xls",
+      "pdf",
+      "google sheets links",
+      "sales reportings"
+    ]
+  },
+  "swarm": true
+}

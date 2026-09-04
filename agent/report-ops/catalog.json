@@ -1,0 +1,283 @@
+{
+  "family": "never86-report-ops",
+  "version": "1.0.0",
+  "domains": [
+    {
+      "id": "labor",
+      "label": "Labor",
+      "color": "#F4A261",
+      "job": "Schedule & Labor cards \u2014 who was actually scheduled/clocked",
+      "reports": [
+        {
+          "id": "time-entries",
+          "label": "Time Entries",
+          "source": "Toast \u2192 Employee \u2192 Time Entries",
+          "formats": [
+            "csv",
+            "xlsx"
+          ],
+          "schema": "schemas/labor-time-entry.json",
+          "signals": [
+            "payable_hours",
+            "job_title",
+            "employee",
+            "punches"
+          ],
+          "file_globs": [
+            "TimeEntries*.csv",
+            "*time*entr*.xlsx"
+          ]
+        },
+        {
+          "id": "labor-summary",
+          "label": "Labor Summary / Cost",
+          "source": "Toast \u2192 Labor \u2192 Labor Summary",
+          "formats": [
+            "csv",
+            "xlsx",
+            "pdf"
+          ],
+          "signals": [
+            "labor_percent",
+            "hours_by_job",
+            "overtime"
+          ],
+          "file_globs": [
+            "*Labor*Summary*",
+            "*labor*cost*"
+          ]
+        },
+        {
+          "id": "bar-kitchen-schedule",
+          "label": "Bar / Kitchen / Driver Schedules",
+          "source": "Ops sheets (Google Sheets / Excel)",
+          "formats": [
+            "xlsx",
+            "gsheet"
+          ],
+          "signals": [
+            "shift_grid",
+            "role_coverage"
+          ],
+          "file_globs": [
+            "*SCHEDULE*",
+            "*schedule*"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "label": "Sales / Product Mix",
+      "color": "#E63946",
+      "job": "POS menu sales \u2192 product mix all the way down to SKUs",
+      "reports": [
+        {
+          "id": "item-selection",
+          "label": "Item Selection Details",
+          "source": "Toast \u2192 Menus \u2192 Item Selection Details",
+          "formats": [
+            "csv",
+            "xlsx"
+          ],
+          "schema": "schemas/product-mix-sku.json",
+          "signals": [
+            "sku",
+            "qty",
+            "net_sales",
+            "menu_group",
+            "sales_category"
+          ],
+          "hierarchy": [
+            "sales_category",
+            "menu",
+            "menu_group",
+            "menu_item"
+          ],
+          "file_globs": [
+            "ItemSelectionDetails*.csv",
+            "*item*selection*",
+            "*product*mix*"
+          ]
+        },
+        {
+          "id": "menu-sales",
+          "label": "Menu Sales Summary",
+          "source": "Toast \u2192 Menus \u2192 Sales",
+          "formats": [
+            "csv",
+            "xlsx",
+            "pdf"
+          ],
+          "signals": [
+            "menu_totals",
+            "category_mix"
+          ],
+          "file_globs": [
+            "*Menu*Sales*",
+            "*menu*sales*"
+          ]
+        },
+        {
+          "id": "sales-category",
+          "label": "Sales Category Mix",
+          "source": "Toast \u2192 Sales \u2192 Sales Category",
+          "formats": [
+            "csv",
+            "xlsx"
+          ],
+          "signals": [
+            "food_vs_liquor",
+            "category_net"
+          ],
+          "file_globs": [
+            "*Sales*Category*",
+            "*category*mix*"
+          ]
+        },
+        {
+          "id": "z-report",
+          "label": "Z-Report / Day End",
+          "source": "POS Historical Prev Day Z Report / ZReport Summary",
+          "formats": [
+            "pdf",
+            "csv",
+            "xlsx"
+          ],
+          "signals": [
+            "day_net",
+            "tenders",
+            "voids",
+            "comps"
+          ],
+          "file_globs": [
+            "*Z_Report*",
+            "*ZReport*",
+            "*z-report*"
+          ]
+        },
+        {
+          "id": "weekly-sales-pack",
+          "label": "Weekly Sales Pack",
+          "source": "Operator folder of daily Z + week rollup",
+          "formats": [
+            "folder",
+            "pdf",
+            "xlsx"
+          ],
+          "signals": [
+            "week_net",
+            "day_parts",
+            "comp_week"
+          ],
+          "file_globs": [
+            "*Weekly sales*",
+            "*weekly*sales*"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inventory",
+      "label": "Inventory / Par / Ordering",
+      "color": "#2A9D8F",
+      "job": "SKU depletion from mix + par/ordering sheets \u2192 theoretical vs actual",
+      "reports": [
+        {
+          "id": "sku-depletion",
+          "label": "SKU Depletion from Product Mix",
+          "source": "Derived from Item Selection qty",
+          "formats": [
+            "json",
+            "csv"
+          ],
+          "schema": "schemas/labor-sales-inventory.json",
+          "signals": [
+            "inventory_depletion_qty",
+            "sku",
+            "net_sales"
+          ],
+          "file_globs": [
+            "labor-sales-inventory.json",
+            "*depletion*"
+          ]
+        },
+        {
+          "id": "liquor-beer-par",
+          "label": "Liquor / Beer Par & Ordering",
+          "source": "Bar ordering Excel / Google Sheets",
+          "formats": [
+            "xlsx",
+            "gsheet",
+            "pdf"
+          ],
+          "signals": [
+            "par_amount",
+            "qty_to_order",
+            "cost",
+            "over_under_budget"
+          ],
+          "file_globs": [
+            "*LIQUOR*",
+            "*BEER*ORDER*",
+            "*PAR*SHEET*",
+            "*Optimization*"
+          ]
+        },
+        {
+          "id": "vendor-intake",
+          "label": "Vendor Intake",
+          "source": "Hospitality vendor intake sheets",
+          "formats": [
+            "xlsx",
+            "gsheet"
+          ],
+          "signals": [
+            "vendor",
+            "sku",
+            "cost",
+            "unit"
+          ],
+          "file_globs": [
+            "*Vendor*Intake*",
+            "*vendor*intake*"
+          ]
+        }
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "id": "grill",
+      "label": "The Grill",
+      "aliases": [
+        "Grill",
+        "the grill"
+      ],
+      "holy_grail_source": "Mike Mueller Gmail \u2014 Kristen attachments",
+      "status": "awaiting_gmail_auth"
+    },
+    {
+      "id": "taco-bamba",
+      "label": "Taco Bamba",
+      "aliases": [
+        "Taco Bomb",
+        "Taco Bamba",
+        "Bamba"
+      ],
+      "holy_grail_source": "Mike Mueller Gmail \u2014 Kristen attachments",
+      "status": "awaiting_gmail_auth"
+    },
+    {
+      "id": "community-pizza",
+      "label": "Community Pizza / CTAP",
+      "aliases": [
+        "CTAP",
+        "Community Pizza",
+        "Community Tap"
+      ],
+      "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
+      "status": "drive_indexed"
+    }
+  ]
+}

@@ -49,8 +49,16 @@ Align **the same calendar window** on both exports before trusting `sales_per_la
 ## Parse
 
 ```bash
+# Regenerate parent / teacher / sub agents
+python3 agent/report-ops/build_report_swarm.py
+
+# Normalize Toast Time Entries + Item Selection → snapshot
 node scripts/parse-toast-reports.mjs \
   --labor path/to/TimeEntries.csv \
   --sales path/to/ItemSelectionDetails.csv \
   --out fixtures/toast/labor-sales-inventory.json
 ```
+
+## Holy grail (operator)
+
+Kristen → **Mike Mueller Gmail** attachments for **The Grill** + **Taco Bamba** (CSV / Excel / sales reportings). Connect Gmail MCP, then venue scouts ingest and Report Teacher opens teach batches.

@@ -1,0 +1,25 @@
+{
+  "name": "Taco Bamba Report Scout",
+  "title": "Never86 venue scout \u2014 Taco Bamba report packs",
+  "role": "venue_scout",
+  "shape": "fox",
+  "color": "#457B9D",
+  "family": "never86-report-ops",
+  "venue_id": "taco-bamba",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Taco Bamba. Source: Mike Mueller Gmail \u2014 Kristen attachments. Status: awaiting_gmail_auth.",
+  "aliases": [
+    "Taco Bomb",
+    "Taco Bamba",
+    "Bamba"
+  ],
+  "holy_grail_source": "Mike Mueller Gmail \u2014 Kristen attachments",
+  "status": "awaiting_gmail_auth",
+  "skills": [
+    "report-ingest",
+    "report-route",
+    "teach-label"
+  ],
+  "swarm": true
+}

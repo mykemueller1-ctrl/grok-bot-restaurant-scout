@@ -1,0 +1,75 @@
+{
+  "indexed_at": "2026-09-04",
+  "drive_account": "communitypizza2026@gmail.com",
+  "note": "Live practice set while Mike Mueller Gmail (Kristen → Grill / Taco Bamba) awaits MCP auth.",
+  "folders": [
+    {
+      "id": "15Ml7HIODw6MebTSytp3x2t-MvATryiow",
+      "title": "Ctap Weekly sales 9-14-25 to 9-20-25",
+      "report_id": "weekly-sales-pack",
+      "url": "https://drive.google.com/drive/folders/15Ml7HIODw6MebTSytp3x2t-MvATryiow"
+    },
+    {
+      "id": "1PUHGW1VhKSqOHxXgnbSn57Q7T1bnq5sD",
+      "title": "CTAP BAR ORDERING DOCS",
+      "report_id": "liquor-beer-par",
+      "url": "https://drive.google.com/drive/folders/1PUHGW1VhKSqOHxXgnbSn57Q7T1bnq5sD"
+    }
+  ],
+  "files": [
+    {
+      "title": "Historical_Prev_Day_Z_Report Community Pizza (9-14..9-20-2025 + 10-5-2025)",
+      "report_id": "z-report",
+      "formats": ["pdf"],
+      "count": 8
+    },
+    {
+      "title": "ZReport_Summary Community Pizza (7-15 + 7-16-2026)",
+      "report_id": "z-report",
+      "formats": ["pdf"],
+      "count": 2
+    },
+    {
+      "title": "CTAP LIQUOR _ BEER ORDERING SHEET BLANK.xlsx",
+      "report_id": "liquor-beer-par",
+      "id": "1Yj_kt-nWp5UwVIU1sX-SoOTQzVXIFl5U",
+      "formats": ["xlsx"]
+    },
+    {
+      "title": "CTAP Liquor Beer Optimization Sheet.xlsx",
+      "report_id": "liquor-beer-par",
+      "id": "1Xg68M-11VoCJqPIbWIzBnzQYreJ8wWpb",
+      "formats": ["xlsx"]
+    },
+    {
+      "title": "Copy of CTAP LIQUOR PAR SHEET.xlsx",
+      "report_id": "liquor-beer-par",
+      "id": "1bt3HXXURACR2wl0eqaD0r507tPfW0ncg",
+      "formats": ["xlsx"]
+    },
+    {
+      "title": "CTAP BAR SCHEDULE / KITCHEN / DRIVER",
+      "report_id": "bar-kitchen-schedule",
+      "formats": ["gsheet"]
+    },
+    {
+      "title": "Fort Dodge_Vendor_Intake",
+      "report_id": "vendor-intake",
+      "id": "1q4EvH2tso3ceUYty0XH33taYUmCA0dI6Qfmy1tEnng0",
+      "formats": ["gsheet"],
+      "owner": "tammy@mgmhospitality.co"
+    },
+    {
+      "title": "Community_Tap_Weekly_Numbers_Tracking_Guide.docx",
+      "report_id": "weekly-sales-pack",
+      "id": "19iLs8URZPH2lRwzPZlrTTPGPZ2vCEEJC",
+      "formats": ["docx"]
+    }
+  ],
+  "awaiting_gmail": {
+    "account": "mykemueller1@gmail.com",
+    "from": "Kristen",
+    "venues": ["grill", "taco-bamba"],
+    "want": ["csv", "xlsx", "xls", "pdf", "sales reportings", "Excel sheets"]
+  }
+}

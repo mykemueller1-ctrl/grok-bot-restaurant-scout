@@ -1,0 +1,42 @@
+{
+  "name": "Vendor Intake Sub-Agent",
+  "title": "Never86 report sub \u2014 Inventory / Par / Ordering / Vendor Intake",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#2A9D8F",
+  "family": "never86-report-ops",
+  "domain_id": "inventory",
+  "report_id": "vendor-intake",
+  "parent": "inventory",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Vendor Intake report (Hospitality vendor intake sheets). Ingests xlsx, gsheet. Signals: vendor, sku, cost, unit. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Hospitality vendor intake sheets",
+  "formats": [
+    "xlsx",
+    "gsheet"
+  ],
+  "signals": [
+    "vendor",
+    "sku",
+    "cost",
+    "unit"
+  ],
+  "file_globs": [
+    "*Vendor*Intake*",
+    "*vendor*intake*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

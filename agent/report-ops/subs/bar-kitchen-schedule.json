@@ -1,0 +1,40 @@
+{
+  "name": "Bar / Kitchen / Driver Schedules Sub-Agent",
+  "title": "Never86 report sub \u2014 Labor / Bar / Kitchen / Driver Schedules",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#F4A261",
+  "family": "never86-report-ops",
+  "domain_id": "labor",
+  "report_id": "bar-kitchen-schedule",
+  "parent": "labor",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Bar / Kitchen / Driver Schedules report (Ops sheets (Google Sheets / Excel)). Ingests xlsx, gsheet. Signals: shift_grid, role_coverage. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Ops sheets (Google Sheets / Excel)",
+  "formats": [
+    "xlsx",
+    "gsheet"
+  ],
+  "signals": [
+    "shift_grid",
+    "role_coverage"
+  ],
+  "file_globs": [
+    "*SCHEDULE*",
+    "*schedule*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

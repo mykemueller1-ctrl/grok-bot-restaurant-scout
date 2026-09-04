@@ -1,0 +1,41 @@
+{
+  "name": "Menu Sales Summary Sub-Agent",
+  "title": "Never86 report sub \u2014 Sales / Product Mix / Menu Sales Summary",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-report-ops",
+  "domain_id": "sales",
+  "report_id": "menu-sales",
+  "parent": "sales",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Menu Sales Summary report (Toast \u2192 Menus \u2192 Sales). Ingests csv, xlsx, pdf. Signals: menu_totals, category_mix. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Toast \u2192 Menus \u2192 Sales",
+  "formats": [
+    "csv",
+    "xlsx",
+    "pdf"
+  ],
+  "signals": [
+    "menu_totals",
+    "category_mix"
+  ],
+  "file_globs": [
+    "*Menu*Sales*",
+    "*menu*sales*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

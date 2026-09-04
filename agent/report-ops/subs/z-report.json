@@ -1,0 +1,44 @@
+{
+  "name": "Z-Report / Day End Sub-Agent",
+  "title": "Never86 report sub \u2014 Sales / Product Mix / Z-Report / Day End",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-report-ops",
+  "domain_id": "sales",
+  "report_id": "z-report",
+  "parent": "sales",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Z-Report / Day End report (POS Historical Prev Day Z Report / ZReport Summary). Ingests pdf, csv, xlsx. Signals: day_net, tenders, voids, comps. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "POS Historical Prev Day Z Report / ZReport Summary",
+  "formats": [
+    "pdf",
+    "csv",
+    "xlsx"
+  ],
+  "signals": [
+    "day_net",
+    "tenders",
+    "voids",
+    "comps"
+  ],
+  "file_globs": [
+    "*Z_Report*",
+    "*ZReport*",
+    "*z-report*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}

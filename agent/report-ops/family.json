@@ -1,0 +1,180 @@
+{
+  "family": "never86-report-ops",
+  "platform": "Never86",
+  "version": "1.0.0",
+  "swarm_mode": true,
+  "purpose": "Parent / teacher / sub-agent swarm for restaurant sales, labor, and inventory reports (CSV, Excel, PDF). Holy grail: Kristen \u2192 Mike Mueller Gmail packs for The Grill + Taco Bamba; CTAP Drive indexed as live practice set.",
+  "owner": "mykemueller1-ctrl",
+  "teacher": "teacher.json",
+  "parent_count": 3,
+  "sub_count": 11,
+  "venue_scout_count": 3,
+  "agent_count": 18,
+  "shared_skills": [
+    "report-ingest",
+    "report-route",
+    "report-normalize",
+    "report-teach-batch",
+    "teach-label",
+    "recurse-learn"
+  ],
+  "parents": [
+    {
+      "id": "labor",
+      "file": "parents/labor.json",
+      "label": "Labor",
+      "sub_count": 3
+    },
+    {
+      "id": "sales",
+      "file": "parents/sales.json",
+      "label": "Sales / Product Mix",
+      "sub_count": 5
+    },
+    {
+      "id": "inventory",
+      "file": "parents/inventory.json",
+      "label": "Inventory / Par / Ordering",
+      "sub_count": 3
+    }
+  ],
+  "subs": [
+    {
+      "id": "time-entries",
+      "file": "subs/time-entries.json",
+      "parent": "labor",
+      "label": "Time Entries",
+      "formats": [
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "labor-summary",
+      "file": "subs/labor-summary.json",
+      "parent": "labor",
+      "label": "Labor Summary / Cost",
+      "formats": [
+        "csv",
+        "xlsx",
+        "pdf"
+      ]
+    },
+    {
+      "id": "bar-kitchen-schedule",
+      "file": "subs/bar-kitchen-schedule.json",
+      "parent": "labor",
+      "label": "Bar / Kitchen / Driver Schedules",
+      "formats": [
+        "xlsx",
+        "gsheet"
+      ]
+    },
+    {
+      "id": "item-selection",
+      "file": "subs/item-selection.json",
+      "parent": "sales",
+      "label": "Item Selection Details",
+      "formats": [
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "menu-sales",
+      "file": "subs/menu-sales.json",
+      "parent": "sales",
+      "label": "Menu Sales Summary",
+      "formats": [
+        "csv",
+        "xlsx",
+        "pdf"
+      ]
+    },
+    {
+      "id": "sales-category",
+      "file": "subs/sales-category.json",
+      "parent": "sales",
+      "label": "Sales Category Mix",
+      "formats": [
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "z-report",
+      "file": "subs/z-report.json",
+      "parent": "sales",
+      "label": "Z-Report / Day End",
+      "formats": [
+        "pdf",
+        "csv",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "weekly-sales-pack",
+      "file": "subs/weekly-sales-pack.json",
+      "parent": "sales",
+      "label": "Weekly Sales Pack",
+      "formats": [
+        "folder",
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "sku-depletion",
+      "file": "subs/sku-depletion.json",
+      "parent": "inventory",
+      "label": "SKU Depletion from Product Mix",
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    {
+      "id": "liquor-beer-par",
+      "file": "subs/liquor-beer-par.json",
+      "parent": "inventory",
+      "label": "Liquor / Beer Par & Ordering",
+      "formats": [
+        "xlsx",
+        "gsheet",
+        "pdf"
+      ]
+    },
+    {
+      "id": "vendor-intake",
+      "file": "subs/vendor-intake.json",
+      "parent": "inventory",
+      "label": "Vendor Intake",
+      "formats": [
+        "xlsx",
+        "gsheet"
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "id": "grill",
+      "file": "venues/grill.json",
+      "label": "The Grill",
+      "status": "awaiting_gmail_auth"
+    },
+    {
+      "id": "taco-bamba",
+      "file": "venues/taco-bamba.json",
+      "label": "Taco Bamba",
+      "status": "awaiting_gmail_auth"
+    },
+    {
+      "id": "community-pizza",
+      "file": "venues/community-pizza.json",
+      "label": "Community Pizza / CTAP",
+      "status": "drive_indexed"
+    }
+  ],
+  "parser": "scripts/parse-toast-reports.mjs",
+  "docs": "docs/TOAST-REPORTS.md"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Sales Category Mix Sub-Agent",
+  "title": "Never86 report sub \u2014 Sales / Product Mix / Sales Category Mix",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#E63946",
+  "family": "never86-report-ops",
+  "domain_id": "sales",
+  "report_id": "sales-category",
+  "parent": "sales",
+  "version": "1.0.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Sales Category Mix report (Toast \u2192 Sales \u2192 Sales Category). Ingests csv, xlsx. Signals: food_vs_liquor, category_net. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Toast \u2192 Sales \u2192 Sales Category",
+  "formats": [
+    "csv",
+    "xlsx"
+  ],
+  "signals": [
+    "food_vs_liquor",
+    "category_net"
+  ],
+  "file_globs": [
+    "*Sales*Category*",
+    "*category*mix*"
+  ],
+  "schema": null,
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true
+}
