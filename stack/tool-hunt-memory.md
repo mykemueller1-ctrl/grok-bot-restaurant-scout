@@ -467,6 +467,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Widened `first_party_pct_fee` for 7.5% / Support Local Fee; pain-scan-chownow-guest-fee.json (2 hits) → strong_keep 38; pain-to-sales-chownow-fee-* ×5; validate-chownow-fee-dogfood ≥5 (`chownow_fee_dogfoods`).
 - Ledger v1.69.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
 
+### 2026-09-04 (Slice $2–$3/order SalesLead)
+
+- Slice Online **$39/mo + $3.00/order**; Family **$399/mo + $2.00/order** (waive under $10) ([slice.com/pricing](https://slice.com/pricing/)). Pizza-vertical niche — thematic 5-market dogfood.
+- pain-to-sales-slice-fee-* ×5; validate-slice-fee-dogfood ≥5 (`slice_fee_dogfoods`); strong_keep stays **38** (pain-scan already counted).
+- Watched DirectOrders $249 flat (no per-order) + Grabull Direct guest service fee / 7–10% menu bump (exact $/order unpublished). Ledger v1.70.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+
 
 
 

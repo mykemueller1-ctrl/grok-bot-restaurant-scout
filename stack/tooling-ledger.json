@@ -1,5 +1,5 @@
 {
-  "version": "1.69.0",
+  "version": "1.70.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -116,7 +116,8 @@
     "velobite_fee_dogfood_gate": "scripts/validate-velobite-fee-dogfood.mjs (VeloBite Growth $0.75/order \u2192 SalesLead \u22655 markets)",
     "ginger_fee_dogfood_gate": "scripts/validate-ginger-fee-dogfood.mjs (Ginger $1/order guest platform fee \u2192 SalesLead \u22655 markets)",
     "ritual_fee_dogfood_gate": "scripts/validate-ritual-fee-dogfood.mjs (Ritual guest service fee $0.15\u2013$1.99 \u2192 SalesLead \u22655 markets)",
-    "chownow_fee_dogfood_gate": "scripts/validate-chownow-fee-dogfood.mjs (ChowNow $0.99 service charge + 7.5% Support Local Fee \u2192 SalesLead \u22655 markets)"
+    "chownow_fee_dogfood_gate": "scripts/validate-chownow-fee-dogfood.mjs (ChowNow $0.99 service charge + 7.5% Support Local Fee \u2192 SalesLead \u22655 markets)",
+    "slice_fee_dogfood_gate": "scripts/validate-slice-fee-dogfood.mjs (Slice Online $3/order / Family $2/order \u2192 SalesLead \u22655 markets; pizza niche)"
   },
   "competitors": [
     {
@@ -979,9 +980,38 @@
         "https://help.ritual.co/hc/en-ca/articles/16051398587283-Service-Fees",
         "https://ritual.co/faq"
       ]
+    },
+    {
+      "name": "Slice",
+      "lane": "vertical_gtm",
+      "stack": "Pizzeria OO + POS membership; Online $39/mo+$3/order; Family $399/mo+$2/order",
+      "memory": "Guest/order data on Slice rails",
+      "edge": "$2\u2013$3/order KEEP leak teach (dogfood slice_fee_dogfoods=5); pizza niche; still lose on love\u2192buy-now + IG Checkout",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://slice.com/pricing/"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Slice $2\u2013$3/order SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Slice Online $39/mo+$3/order; Family $399+$2/order (waive under $10) \u2192 SalesLead vs Shop ~6%; validate-slice-fee-dogfood \u22655; pizza niche thematic; strong_keep 38 (pain-scan already counted)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "DirectOrders $249/mo flat zero customer fees",
+      "lane": "vertical_gtm",
+      "why": "directorders.com/pricing Pro $249 founding \u2014 $0 commission, $0 customer fees. No per-order teach \u2014 watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "Grabull Direct customer service fee / 7\u201310% menu bump",
+      "lane": "vertical_gtm",
+      "why": "Customer-paid service fee plan + partner docs cite 7\u201310% menu bump; exact $/order unpublished \u2014 watch before dogfood",
+      "verdict": "watch"
+    },
     {
       "item": "ChowNow $0.99 service charge + 7.5% Support Local Fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
@@ -1135,8 +1165,8 @@
     {
       "item": "Slice pizzeria 5% / $3-per-order fee",
       "lane": "vertical_gtm",
-      "why": "Primary slice.com/pricing: Online $39/mo+$3/order; Family $399/mo+$2/order (waive under $10). Pizza niche \u2014 watch; pain-scan refreshed. Still lose on love\u2192buy-now.",
-      "verdict": "watch"
+      "why": "Promoted: primary Online $39+$3 / Family $399+$2 \u2192 5-market SalesLead dogfood (pizza niche thematic)",
+      "verdict": "adopt"
     },
     {
       "item": "Popmenu $1/order guest fee SalesLead dogfood across 5 love markets",
@@ -1898,5 +1928,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T19:25:00Z"
+  "updated_at": "2026-09-04T19:35:00Z"
 }

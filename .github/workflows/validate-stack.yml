@@ -160,6 +160,7 @@ jobs:
           test -f scripts/validate-ginger-fee-dogfood.mjs
           test -f scripts/validate-ritual-fee-dogfood.mjs
           test -f scripts/validate-chownow-fee-dogfood.mjs
+          test -f scripts/validate-slice-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
@@ -300,6 +301,11 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-chownow-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-slice-fee-rioja.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -348,6 +354,7 @@ jobs:
           node scripts/validate-ginger-fee-dogfood.mjs | grep -q '"ginger_fee_dogfoods": 5'
           node scripts/validate-ritual-fee-dogfood.mjs | grep -q '"ritual_fee_dogfoods": 5'
           node scripts/validate-chownow-fee-dogfood.mjs | grep -q '"chownow_fee_dogfoods": 5'
+          node scripts/validate-slice-fee-dogfood.mjs | grep -q '"slice_fee_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then

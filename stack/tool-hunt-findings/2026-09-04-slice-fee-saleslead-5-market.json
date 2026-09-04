@@ -1,0 +1,13 @@
+{
+  "finding_id": "slice-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Slice $2\u2013$3/order SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Slice primary pricing Online $39+$3 / Family $399+$2; pizza niche thematic dogfood; strong_keep stays 38 (pain-scan already counted).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://slice.com/pricing/",
+    "scripts/validate-slice-fee-dogfood.mjs"
+  ]
+}
