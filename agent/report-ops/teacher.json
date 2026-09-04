@@ -32,13 +32,21 @@
     "reject",
     "wrong_report",
     "wrong_venue",
+    "wrong_icp",
     "needs_research"
   ],
   "skills": [
     "teach-label",
     "report-teach-batch",
+    "icp-scale-classify",
     "recurse-learn"
   ],
+  "icp_tiers": [
+    "owner-1-5",
+    "area-leader",
+    "cfo-ceo"
+  ],
+  "docs": "docs/ICP-SCALE.md",
   "holy_grail": {
     "inbox": "mykemueller1@gmail.com (Mike Mueller Gmail)",
     "from": "Kristen",

@@ -10,3 +10,4 @@ commerce-engine-tmp/
 !.env.example
 *.pem
 .codex/auth.json
+__pycache__/

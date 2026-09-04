@@ -24,6 +24,7 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
 | `docs/TOOL-HUNT.md` | Continuous best-in-vertical tooling research |
 | `docs/DESKTOP-UNLOCKS.md` | Mem0/Context/Automation/Composio clicks |
+| `docs/CTAP-SEATS.md` | CTAP sold seats + front-door login |
 
 ## Build / validate
 

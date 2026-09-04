@@ -255,7 +255,7 @@
       "id": "community-pizza",
       "file": "venues/community-pizza.json",
       "label": "Community Pizza / CTAP",
-      "status": "drive_indexed"
+      "status": "seats_sold_demo"
     }
   ],
   "parser": "scripts/parse-toast-reports.mjs",

@@ -8,18 +8,39 @@
   "venue_id": "community-pizza",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Community Pizza / CTAP. Source: Google Drive communitypizza2026@gmail.com. Status: drive_indexed.",
+  "description": "Hunts and indexes every CSV/Excel/PDF sales+labor+inventory report for Community Pizza / CTAP. Source: Google Drive communitypizza2026@gmail.com. Front door + sold seats: fixtures/ctap-portal/. Status: seats_sold_demo.",
   "aliases": [
     "CTAP",
     "Community Pizza",
     "Community Tap"
   ],
   "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
-  "status": "drive_indexed",
+  "status": "seats_sold_demo",
   "skills": [
     "report-ingest",
     "report-route",
     "teach-label"
   ],
-  "swarm": true
+  "swarm": true,
+  "seats_ledger": "fixtures/ctap-portal/seats.json",
+  "front_door": "fixtures/ctap-portal/login.html",
+  "historical_sales": "fixtures/ctap-portal/historical-sales.json",
+  "seats_doc": "docs/CTAP-SEATS.md",
+  "sold_seats": [
+    {
+      "role": "owner",
+      "assignee": "Mychael Mueller",
+      "price": "free"
+    },
+    {
+      "role": "manager_foh",
+      "assignee": "Kenzy Thompson",
+      "price": "paid"
+    },
+    {
+      "role": "manager_boh",
+      "assignee": "Tom Dorothy",
+      "price": "paid"
+    }
+  ]
 }

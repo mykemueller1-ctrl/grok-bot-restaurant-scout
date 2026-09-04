@@ -396,7 +396,28 @@
         "Community Tap"
       ],
       "holy_grail_source": "Google Drive communitypizza2026@gmail.com",
-      "status": "drive_indexed"
+      "status": "seats_sold_demo",
+      "seats_ledger": "fixtures/ctap-portal/seats.json",
+      "front_door": "fixtures/ctap-portal/login.html",
+      "historical_sales": "fixtures/ctap-portal/historical-sales.json",
+      "seats_doc": "docs/CTAP-SEATS.md",
+      "sold_seats": [
+        {
+          "role": "owner",
+          "assignee": "Mychael Mueller",
+          "price": "free"
+        },
+        {
+          "role": "manager_foh",
+          "assignee": "Kenzy Thompson",
+          "price": "paid"
+        },
+        {
+          "role": "manager_boh",
+          "assignee": "Tom Dorothy",
+          "price": "paid"
+        }
+      ]
     }
   ],
   "icp_tiers": [
