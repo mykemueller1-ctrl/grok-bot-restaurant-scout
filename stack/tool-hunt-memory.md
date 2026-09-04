@@ -609,3 +609,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - pain-scan-addmi-guest-fee.json → strong_keep **62**; pain-to-sales-addmi-fee-* ×5; validate-addmi-fee-dogfood ≥5.
 - Watched Tenvito EU 2.9–3.9%/order (no US swarm yet). Per Diem still watch (primary $99/mo; per-order cites not on pricing page).
 - Ledger v1.91.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Tenvito 3.9%/2.9% per-order SalesLead)
+
+- Primary [tenvito.com/pricing](https://tenvito.com/pricing): Open **Free + 3.9% per order** on top of Stripe; Service **€29/mo + 2.9% per order** on top of Stripe; optional merchant-kept convenience fee.
+- Widened `first_party_pct_fee` for `3.9% per order` / `2.9% per order`.
+- pain-scan-tenvito-pct-fee.json → strong_keep **63**; pain-to-sales-tenvito-fee-* ×5; validate-tenvito-fee-dogfood ≥5. FoxiFood-class EU thematic — no US swarm expand.
+- Ledger v1.92.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

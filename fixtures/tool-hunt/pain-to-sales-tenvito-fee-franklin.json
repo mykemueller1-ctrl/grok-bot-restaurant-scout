@@ -1,0 +1,78 @@
+{
+  "dogfood_id": "pain-to-sales-tenvito-fee-franklin-2026-09-04",
+  "purpose": "Tenvito Open 3.9% / Service 2.9% per order (on top of Stripe) \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts first_party_pct_fee under free/low-monthly EU OO vs Never86 Shop ~6%. EU thematic \u2014 not US swarm expand. Not forecasting.",
+  "signals": {
+    "first_party_pct_fee": "Tenvito Open 3.9% per order / Service 2.9% per order on top of Stripe",
+    "per_order_platform_fee": "Tenvito percent-of-order platform fee on every ticket (Stripe separate)",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "tenvito_3_9_2_9_pct_order",
+    "vendor_id": "tenvito",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "Aaron Franklin cult BBQ / line UGC"
+    },
+    "complaint_summary": "Calibration: Tenvito markets free-to-start then restaurants pay 3.9% per order (Open) or \u20ac29/mo + 2.9% per order (Service) on top of Stripe. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without EU first-party percent-of-order or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "first_party_pct_fee",
+      "per_order_platform_fee",
+      "social_shop_fee",
+      "cult_chef_ugc",
+      "own_ordering_keep"
+    ],
+    "vendors_mentioned": [
+      "tenvito",
+      "doordash",
+      "tiktok_shop",
+      "foxifood"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-tenvito-pct-fee.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "tenvito_3_9_2_9_pct_order",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "Tenvito markets free-to-start / keep what you charge then restaurants pay 3.9% per order (Open) or \u20ac29 + 2.9% per order (Service) on top of Stripe \u2014 first_party_pct_fee KEEP leak on every ticket. TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Line-culture love already prints demand \u2014 close Shop buy-now, not Tenvito 3.9%/2.9% per-order rent (EU thematic).",
+    "quotes": [
+      "Tenvito Open 3.9% per order on top of Stripe",
+      "Tenvito Service \u20ac29/mo + 2.9% per order on top of Stripe",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Tenvito 3.9%/2.9% per-order OO fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "first_party_pct_fee teach: Tenvito 3.9%/2.9% still taxes every order under free/low-monthly claim; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Line-culture love already prints demand \u2014 close Shop buy-now, not Tenvito 3.9%/2.9% per-order rent (EU thematic).",
+    "sources": [
+      "https://tenvito.com/pricing",
+      "fixtures/tool-hunt/pain-scan-tenvito-pct-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Tenvito 3.9%/2.9% \u2192 SalesLead. FoxiFood-class EU thematic; not US swarm expand. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-tenvito-pct-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

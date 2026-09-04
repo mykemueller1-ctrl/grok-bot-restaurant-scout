@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Tenvito 3.9% / 2.9% per order KEEP pain",
+  "hits": [
+    {
+      "url": "https://tenvito.com/pricing",
+      "posted_at": "2026-09-04",
+      "handle": "tenvito_pricing",
+      "snippet": "Tenvito Free Open plan charges 3.9% per order on top of Stripe under free-to-start claim vs DoorDash Marketplace 25% KEEP \u2014 restaurant owners still pay first-party percent on every ticket; Service is \u20ac29/month plus 2.9% per order",
+      "pain_id": "tenvito_3_9_2_9_pct_order",
+      "score": 100,
+      "never86_angle": "Tenvito 3.9%/2.9% per order is still first_party_pct_fee KEEP leak under free/low-monthly claim \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: tenvito.com/pricing \u2014 Open Free 3.9% per order on top of Stripe; Service \u20ac29/mo + 2.9% per order on top of Stripe; optional merchant-kept convenience fee. EU-first thematic teach; NOT expanding US swarm imports. Skip forecasting."
+}

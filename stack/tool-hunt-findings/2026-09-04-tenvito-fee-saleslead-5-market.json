@@ -1,0 +1,12 @@
+{
+  "finding_id": "tenvito-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Tenvito 3.9%/2.9% per-order SalesLead dogfood across 5 love markets",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Primary tenvito.com/pricing Open 3.9% / Service \u20ac29+2.9% per order on top of Stripe \u2192 pain-to-sales-tenvito-fee-* \u00d75; strong_keep 63. EU thematic \u2014 no US swarm expand.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://tenvito.com/pricing"
+  ]
+}
