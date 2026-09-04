@@ -1,0 +1,558 @@
+{
+  "venue_id": "community-pizza",
+  "icp_tier": "owner_1_5",
+  "report_id": "vendor-invoice",
+  "source_channel": "photo",
+  "engine": "auto",
+  "engines_used": [
+    "rapid"
+  ],
+  "schema": "schemas/vendor-invoice.json",
+  "taxonomy": "agent/report-ops/taxonomy/cogs-categories.json",
+  "docs_ref": "docs/RESTAURANT-AP-OCR.md",
+  "note": "Doc-level OCR for 16 SKU teach photos. Use curated sku-invoice-pack for line-level food/beer/paper/pop coding \u2014 mixed broadline must not stay whole-doc.",
+  "documents": [
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "FT Dodge Distributing",
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
+      "cost_bucket": "beverage_costs",
+      "date": "2020-08-25",
+      "invoice_num": "W-2912264",
+      "amount": 380.0,
+      "printed_total": 380.0,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "PRICE DEPOSII\nDISC\nTOTAL\n58154\n3\nYUENGLIN",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": 0.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 95.6,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d5b2-7459-bfab-165641f2699d.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "FT DODGE DISTRIBUTING CO.,INC\nCOMMUNITY TAVERN\n2053 Highway 169 South\n2026 5TH AVE S\nFort Dodse. IA 50501\nFORT DODGE, IA 50501\n(515)573-2721\nBONNIE, 5159558202\nDATE:08/25/202\nCustomer Number50083\nINVOICE NUM:W-2912264\nCODE\nQTY\nDESCRIPTION\nPRICE DEPOSII\nDISC\nTOTAL\n58154\n3\nYUENGLING OXTOBERFEST 1/4 BBL\n$95.00 $30.00 $95.00 $375.00\n66\n1 \nFUEL SURCHARGE\n$5.00\n$5.00\n$5.00\nDelivered  3\nReturns (0)\nINVOICE DEBITS\n$380.00\nRETURN CREDITS\n$0.00\nINVOICE TOTAL\n$380.00\nPREVIOUS BALANCE$O.0O\nTOTAL DUE$380.00"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "unknown",
+      "vendor": "Community Tap",
+      "vendor_type": null,
+      "cogs_category": "beer",
+      "category_source": "line_hint",
+      "cost_bucket": "beverage_costs",
+      "date": null,
+      "invoice_num": "oicef",
+      "amount": 527.4,
+      "printed_total": 527.4,
+      "tax": null,
+      "account": "32090 Invoicef",
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": -90005.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d626-71a6-87d5-525499f06b35.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "HOAESOISTRIBTDISIKC\n400NORTHFIFTHSTREET\nFORT D00GE\uff0c1A50501\n(515)573-7271\nTueAug25,202610:22 AM\nAccount:32090\nInvoicef:200212\nPOg:\nCOMMUNITYTAP&PIZZA\nCOMMUNITY TAP&PIZZA\nLicense:LC0044947 Exp.Nov30,2026\n20265TH AVES\nTeres\n:Charge Only\nFORT D0DGE,IA 50501\nDriver:70-DEGAN KLINDT\n(515) 955-8202\nSalesrep: 66-BAHBI BRANDOW\nITEMA\nQTY\nDESCRIPTION\nU.P.C.\nPRICE\nDISC\nDEP\nAHOUNT\n02524\n1\nSELECT24/12CAN\n018200966712\n23.35\n0.00\n1.20\n24.55\n04505\n5\nMIC ULTRA 4/6 NR\n018200059896\n32.75\n0.00\n1.20\n169.7\u4e075\n05107\n4\nBU"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Sysco",
+      "vendor_type": "broadline",
+      "cogs_category": "na_beverage",
+      "category_source": "operator_teach_pop",
+      "cost_bucket": "beverage_costs",
+      "date": null,
+      "invoice_num": "OICE",
+      "amount": 42.95,
+      "printed_total": 42.95,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "PEACH\n6",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d696-72ca-bc69-c95e80ef0481.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "2026\nFORT\nCOMMUNITY TAP\n0\nQ\nDON\n5TH\nDODGE\nFORT\n2026\nSMOKEWORX LLC\n515-955-8202\n2\n1s\n1S\n\u7247\nH\n5\n4S\nSPLIT TOT.PCS\ncS\nCS\nCS\nCS\ncS\nAVE\ncS\ncS\ncS\nROVISION:THE\nDODGE\n5THAVES\nONLY5LB\nONLY5LB\nONLY3LB\nPACK\n12280Z\n1212IN\n20\n613oz\n6.5 GALKEMPS\n45LB\n86#AVG\n115DZ\n5LB\nSIZE\nIA\nGAL\nSIGNATURE:\n11\nCUBE\n50501-4308\nCOD(CASH)\nROTEL\nBONMAM\n**CANNED\nAREZIMP\n**FROZEN**\nWHLFCLS\nBBRLCLS CHEESE SWISS/AMER 120 SLI\nBBRLCLS\nWHLFCLS MILK 2% GALLON\nCASAIMP\nAREZIMP CHEESE MOZZARELLA L/M PRT\nWHLFCLS\nWHLFIMP\n**DAIRY**\nGROSS WT\n48.63"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Northern Lights Distributing",
+      "vendor_type": "specialty_food",
+      "cogs_category": "paper_goods_boxes_chemicals",
+      "category_source": "operator_teach_paper_chem",
+      "cost_bucket": "food_costs",
+      "date": "2026-08-17",
+      "invoice_num": "Fort",
+      "amount": 173.72,
+      "printed_total": 173.72,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "Pack",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d6fe-7b5a-a7b7-f610d7bf8ab9.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "699116\nNORTHERN LIGHTS DISTRIBUTING,INC.\n29498thAvenueSouth\nNORTHERN LIGHTS\nInvoice#:\nFort Dodge, IA 50501\n699091\nFoodservice\nInvoiceDate:08/17/2026\n(515) 576-2181 \u00b7 Fax: (515) 576-7704\nhttp://www.northernlightsdistributing.com/\nPage:\n1\nCustomer#:\n53168\nShip To:\nBill To:\nCOMMUNITYPIZZA,INC.\n20245THAVENUESOUTH\nCOMMUNITY PIZZA,INC.\nFORTDODGE,IA50501\n20245THAVENUESOUTH\nFORTDODGE,IA50501-\nPhone:(515) 955-8202\nCust.PO #:PU MON.8-17\nTerms:EFT/ACH\nContact: SCOTT\nSalesPerson:5-John Graham\nItem#\nUPC Code"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Northern Lights Distributing",
+      "vendor_type": "specialty_food",
+      "cogs_category": "paper_goods_boxes_chemicals",
+      "category_source": "operator_teach_paper_chem",
+      "cost_bucket": "food_costs",
+      "date": "2026-08-18",
+      "invoice_num": "oice",
+      "amount": 480.85,
+      "printed_total": 480.85,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "Pack",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": 0.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d76b-720b-9017-e8146c6f4e95.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "NORTHERNLIGHTSDISTRIBUTING,INC.\n29498thAvenueSouth\nNORTHERN LIGHTS\nInvoice#\uff1a\n699116\nFort Dodge, IA 50501\nFoodservice\nInvoice Date:\n(515)576-2181\u00b7Fax:(515) 576-7704\n08/18/2026\nhttp://www.northernlightsdistributing.com/\nPage:\n1\nCustomer #:\n53168\nShip To:\nBill To:\nCOMMUNITYPIZZA,INC.\nCOMMUNITYPIZZA,INC.\n20245THAVENUESOUTH\n20245THAVENUESOUTH\nFORTDODGE,IA50501\nFORTDODGE,IA50501-\nPhone:(515) 955-8202\nCust.PO #:Verbal\nTerms:EFT/ACH\nContact:SCOTT\nSalesPerson:5-John Graham\nItem#\n/UPC Code #\nDescription\nP"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Sysco",
+      "vendor_type": "broadline",
+      "cogs_category": "paper_goods_boxes_chemicals",
+      "category_source": "operator_teach_paper_chem",
+      "cost_bucket": "food_costs",
+      "date": "2026-08-18",
+      "invoice_num": "OICE",
+      "amount": 337.92,
+      "printed_total": 337.92,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "GROUP TOTAL",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d7d6-7f7f-a970-a21ab6cfc4b5.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "MPORTANT PACA PROVISION:\nSIGN\nDRIVER'S\nCASES\n\u53e3\n\u53e3\n2026\nFORT DODGE\n\u53e3\nCOMMUNITY TAP\n24\nPOE\n10\nORDER SUMMARY\nTYT\nMISC\nST\nSPLIT TOT.PCS\nDIS\n5TH\n1scs\nFORT\n2026\nSMOKEWORX\n9\n5\nH\nN\nCHARGES\nCS\ncS\ncS\ncS\nAVE\nARISING\nDODGE\n5THAVES\n(C)\n30\nTEE\n10\nPACK\nOF\n12500CT SYS CLS STRAW PLAS UNWRP JMBO B YSTJ77ESYS12\n10100CT\nS\nTHE\n150\n8160Z\n6#10\nOUT\n22.5\nLLC\nSIGNATURE\n10.\nCUBE\nSIZE\nIA\nTHR\nLB\nYOUR\n50501-4308\nSAA\nGROSS WT.\nCHGS FOR FUEL\nSYS CLS GLOVE NITRILE FDSRV PF BLK 304363444\n**PAPER\nSYS CLS FLOUR HI-GLUTEN BL EN M734"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Performance Foodservice",
+      "vendor_type": "broadline",
+      "cogs_category": "paper_goods_boxes_chemicals",
+      "category_source": "operator_teach_paper_chem",
+      "cost_bucket": "food_costs",
+      "date": "2026-08-18",
+      "invoice_num": "OICE",
+      "amount": 137.88,
+      "printed_total": 137.88,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d846-7d8e-97dd-8fdc54da9270.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "P.O.BOX 1267\nPERFORMANCE\n(319)396-1300\n(800)332-8170\nFOODSERVICE\nFed ID:84-0629503\nDelv Date: 08/18/26\nPerformance Foodservice-Cedar Rapids\nINVOICE\nCE\nINVOICE\nSLM\nDATE\nACCTNO\n08/18/26\n239335\n64\n6528\nCOMMUNITYTAP\n70s\nPHONE NO\nTRIP\nSTOP\nPAGE\nS\nH\n242\n010\n1\n515-269-1082\nI\n2021 5TH AVE S\nM\nP\nD\nFORT DODGE IA 50501\nTERMS:EFT 21Day\nT\nT\nSLM:64\nSCOTT SELIM\n0\n0\nQUANTITY\nPORTION\nT\nITEM\nA\nUNIT PRICE\nEXTENSION\nUNIT\nSIZE\nBRAND\nDESCRIPTION\n#OF\nRC\nNUMBER\nX\nORDER\nSHIP\nRU\nUN\nUN\nDRY GOODS\n1.318\n65.88\n131.76\n2\nCS\n1/"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Performance Foodservice",
+      "vendor_type": "broadline",
+      "cogs_category": "paper_goods_boxes_chemicals",
+      "category_source": "operator_teach_paper_chem",
+      "cost_bucket": "food_costs",
+      "date": "2026-08-18",
+      "invoice_num": "OICE",
+      "amount": 153.38,
+      "printed_total": 153.38,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d8b2-789b-8b11-f001e39d6625.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "699116\nP.O.BOX 1267\nPERFORMANCE\n(319)396-1300\n(800)332-8170\nMUNIT\nTDOD\nFOODSERVICE\n5TH\nFed ID: 84-0629503\n515\nDelv Date: 08/18/26\nSMO\n202\nFOR:\nPerformance Foodservice-Cedar Rapids\nINVOICE\nDATE\nINVOICE\nSLM\nACCT\n08/18/26\n239335\n64\nS\nCOMMUNITYTAP\n6528\nH\nSOLD\nPHONE NO\nTAIP\nSTOP\nPAC\nI\nP\n2021\n5TH AVE S\n515-269-1082\n242\n010\nFORT\nDODGE IA 50501\nT\nTERMS:EFT 21Day\nT\n0\nSLM:64\nSCOTT SELIM\nQUANTITY\nPORTION\nT\nUNIT\nSIZE\nBRAND\nITEM\nORDER\nSHIP\nNUMBER\nDESCAIPTION\nOF\nRC\nA\nUNIT PRICE\nEXTENSION\nX\nRU\nUN\nUN\n1\nCS\n4/2.5"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "wholesale_invoice_plus_receipt",
+      "vendor": "Hy-Vee Wine & Spirits",
+      "vendor_type": "wine_spirits",
+      "cogs_category": "liquor",
+      "category_source": "operator_teach_hyvee_wine",
+      "cost_bucket": "beverage_costs",
+      "date": "2026-08-17",
+      "invoice_num": "16775",
+      "amount": 216.0,
+      "printed_total": 216.0,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "10807\n0",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d921-76ff-9571-b679155715ad.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "Salesman\nCustomer\nDeliveryman\nAWerger\n31896\nAMacdonald\nDISC\nTOTAL\n$216.00\nFoft DodgeHy-VeeWine&Spirits\nDate\n8/17/\n1511 2nd Ave.North\n1D\nInvoice Num 16775\nFortDodge,IA50501\n76\nCustomerNum94016902\nPage1of2\n515-576-2333\nDelivery Date 08/17/2026\nDate:08-17-2026\n11247,62\nBill to: Community\n2026 5th Ave. South\nFort Dodge, IA 50501\nThanks For Your Order!\nyau\n955-8202\nSally Hart\nQty\nQty\nOrd\nShip\nItem #\nSize\n2\n2\nDescription\n10807\n0.750Liter\n1\nCrown Royal Regal Apple\nUnit Price\n1\n11297\nTotal Price\n1.000Li"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "unknown",
+      "vendor": "unknown",
+      "vendor_type": null,
+      "cogs_category": "unknown",
+      "category_source": "unmapped",
+      "cost_bucket": "opex",
+      "date": null,
+      "invoice_num": null,
+      "amount": 0.0,
+      "printed_total": null,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 38.6,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "low_confidence",
+        "partial",
+        "rotated",
+        "uncategorized"
+      ],
+      "source_images": [
+        "01a06db1-d986-7709-9211-ea5dae2cdbd1.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "n&Spins\nBaNory bao Unkcrin\nBioOommwnly\n20259h0 Sot\nmor RorWour Orte\n9698298\nSely Hatl"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Northern Lights Distributing",
+      "vendor_type": "specialty_food",
+      "cogs_category": "paper_goods_boxes_chemicals",
+      "category_source": "operator_teach_paper_chem",
+      "cost_bucket": "food_costs",
+      "date": "2026-08-18",
+      "invoice_num": "NORTHERN",
+      "amount": 32.74,
+      "printed_total": 32.74,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "Pack",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": 0.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 98.5,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-d9f1-71cc-b0bd-4b0ad822a079.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "NORTHERN LIGHTS DISTRIBUTING,INC.\n2949 8th Avenue South\nInvoice #:\nNORTHERN LIGHTS\n699510\nFort Dodge, IA 50501\nFoodservice\nInvoice Date:\n(515) 576-2181 \u00b7 Fax: (515) 576-7704\n08/18/2026\nhttp://www.northernlightsdistributing.com/\nPage:\n1\nCustomer #:\n53168\nShip To:\nBill To:\nCOMMUNITY PIZZA,INC.\nCOMMUNITYPIZZA,INC.\n20245THAVENUESOUTH\nFORTDODGE,IA50501\n20245THAVENUESOUTH\nFORTDODGE,IA50501-\nPhone:(515)955-8202\nCust. PO : PU TUES. 8-18\nContact: SCOTT\nTerms:EFT/ACH\nSaies Person: 5 - John Graham\nItem#\nUP"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Confluence Distribution",
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
+      "cost_bucket": "beverage_costs",
+      "date": "2026-08-17",
+      "invoice_num": "oice",
+      "amount": 216.0,
+      "printed_total": 216.0,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 91.8,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-da5b-701e-88ae-a3af4f4216e8.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "fluence\nConfluence Distribution/Brewing Company\n1235 Thomas Beck Rd\nCommunity Tap and Pizza\nDISTRIBUTION\n20265thAveS\nDesMoines,IA50315-1055\n(515)410-9991\nFort Dodge\uff0cIA 50501\nconfluence-distro.com\nMychael\nCOD\nDate\nInvoice\nLoad Sheet\n8/17/2026\nPO Number\n227930\nRoute\n26876\nCustomer\nDeliveryman\n1310Delivery Mon\nSalesman\nID\n21896\nQTY\nAMacdonald\nAWerger\nPRODUCT\nPRICE\nDEP\n764\nUPC\n2\nDesMoinesIPAKeg1/6Barrel\nNET\nDISC\n$78.00\nTOTAL\n$78.00\n$216.00\nSub Total\n$156.00\nTax\nTotal\n$216.00\nO0\nDeliveryman Signature"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "handwritten_invoice",
+      "vendor": "Sawyer's Meats of Iowa",
+      "vendor_type": "meat",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
+      "cost_bucket": "food_costs",
+      "date": null,
+      "invoice_num": null,
+      "amount": 3.29,
+      "printed_total": 3.29,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 77.3,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-dac9-77e0-b96b-8210d2793865.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "SAWYER'S MEATS OF IOWA, INC.\n414 2nd Ave. South\nPhone: 576-5331\n11712\nFort Dodge, IA 50501\nSold to\nommunh\nLAL\nItem\nPrice\n# or Ibs.\nTotal\nl0. 20\n3d78l0\nGrnlHAm\n3.29\nQS\n8225\nTurkeBreast\n3.99\n37S1\nGrndBe\n4.20\n8400\nPokbitt\n2.29\n21.1\n4832\nRibs\n3PKs\n3.29\n32.1\n/05\nSAubake\nB3.39\nV3/\nChrcken\n2.aq\nS1.1//2\n79231\n41032"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "Humes Distributing",
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
+      "cost_bucket": "beverage_costs",
+      "date": null,
+      "invoice_num": "199980",
+      "amount": 554.1,
+      "printed_total": 554.1,
+      "tax": null,
+      "account": "32090 Invoice",
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": -90011.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-db33-7baa-909f-9500213fef19.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "HUMES DISTRIBUTING INC.\n400 NORTH FIFTH STREET\nFORT D0DGE, IA 50501\n(515) 573-7271\nTue Aug 18, 2026 8:40 AM\nAccount:32090\nInvoice#: 199980\nPO#:\nCOMMUNITY TAP &PIZZA\nCOMMUNITYTAP&PIZZA\nLicense : LC0044947 Exp. Nov 30, 2026\n20265TH AVES\nTerms\n: Charge Only\nFORT D0DGE,IA 50501\nDriver\n:70 - DEGAN KLINDT\n(515) 955-8202\nSalesrep: 66 - BAMBI BRANDOW\nITEM\u5206\nQTY\nDESCRIPTION\nU.P.C.\nPRICE\nDISC\nDEP\nAMOUNT\n02524\n1\nSELECT24/12 CAN\n018200966712\n23.35\n1.10\n1.20\n23.45\n04708\n1\nMIC ULTRA ZERO\n018200204661\n32.75\n0.0"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "distributor_invoice",
+      "vendor": "FT Dodge Distributing",
+      "vendor_type": "beer_distributor",
+      "cogs_category": "beer",
+      "category_source": "vendor_directory",
+      "cost_bucket": "beverage_costs",
+      "date": "2020-08-18",
+      "invoice_num": "W-402581",
+      "amount": 651.7,
+      "printed_total": 651.7,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": "PRICE\nDEPOSIT\nDISC\nTOTAL\n8245\n1\nAO CRISP",
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": -30.0,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 100.0,
+      "rotation_deg": 90,
+      "quality_flags": [
+        "rotated"
+      ],
+      "source_images": [
+        "01a06db1-dba6-7e02-a6a8-1e324c3ecd62.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "FT DODGE DISTRIBUTING CO.,INC\nCOMMUNITY TAVERN\n2053 Highway 169 South\n2026 5TH AVE S\nFort Dodge. IA 50501\nFORT DODGE. IA 50501\n(515)573-2721\nBONNIE, 5159558202\nDATE:08/18/202\nCustomer Number50083\nINVOICE NUM:W-402581\nCODE\nQTY\nDESCRIPTION\nPRICE\nDEPOSIT\nDISC\nTOTAL\n8245\n1\nAO CRISP 6PK BTL\n$31.50\n$31.50\n$31.50\n11306\nBANQUET CO0RS 24PK CAN\n$22.55\n$22.55\n$22.55\n97156\n1\nBLUE M00N 1/6 BBL\n$68.75 $30.00 $68.75\n$98.75\n12205\n8\nCOORS LIGHT 6PK BTL\n$29.90\n$29.90\n$239.20\n1278\n(B0 5)HIGHLIFE 6PK BTL\n$26.95\n$26"
+    },
+    {
+      "source_channel": "photo",
+      "doc_kind": "handwritten_invoice",
+      "vendor": "Sawyer's Meats of Iowa",
+      "vendor_type": "meat",
+      "cogs_category": "food",
+      "category_source": "vendor_directory",
+      "cost_bucket": "food_costs",
+      "date": null,
+      "invoice_num": null,
+      "amount": 0.0,
+      "printed_total": null,
+      "tax": null,
+      "account": null,
+      "employee": null,
+      "description": null,
+      "customer": null,
+      "line_items": [],
+      "handwritten_credit": null,
+      "ocr_engine": "rapid",
+      "ocr_confidence": 69.9,
+      "rotation_deg": 0,
+      "quality_flags": [
+        "partial"
+      ],
+      "source_images": [
+        "01a06db1-dc0b-7b4b-b893-9a81757ee74e.jpg"
+      ],
+      "venue_id": "community-pizza",
+      "raw_text_excerpt": "Phone: 576-5331\nSAWYER'S MEATS OFIOWA, INC.\n41067\n41U32\nTotal\n# or Ibs.\n92-51-8\nPrice\nFort Dodge, IA 50501\n414 2nd Ave. South\nItem\nSold to"
+    }
+  ],
+  "category_rollups": {
+    "beer": 2329.2,
+    "food": 3.29,
+    "liquor": 216.0,
+    "na_beverage": 42.95,
+    "paper_goods_boxes_chemicals": 1316.49,
+    "unknown": 0.0
+  },
+  "stats": {
+    "count": 16,
+    "mean_confidence": 92.0,
+    "rotated": 15,
+    "low_confidence": 1,
+    "amounts_found": 14,
+    "categorized": 15,
+    "vendors": [
+      "Community Tap",
+      "Confluence Distribution",
+      "FT Dodge Distributing",
+      "Humes Distributing",
+      "Hy-Vee Wine & Spirits",
+      "Northern Lights Distributing",
+      "Performance Foodservice",
+      "Sawyer's Meats of Iowa",
+      "Sysco",
+      "unknown"
+    ],
+    "categories": [
+      "beer",
+      "food",
+      "liquor",
+      "na_beverage",
+      "paper_goods_boxes_chemicals",
+      "unknown"
+    ]
+  },
+  "curated_sku_pack": "fixtures/toast/ctap-physical/normalized/sku-invoice-pack-2026-08.json",
+  "sku_directory": "agent/report-ops/taxonomy/sku-directory-seed.json",
+  "known_gaps": [
+    "Doc-level OCR misroutes mixed Sysco/PFS/Northern Lights to paper or pop \u2014 use curated line pack",
+    "Hy-Vee Wine & Spirits page-2 totals OCR weak; liquor SKUs seeded from page-1 sample",
+    "Sawyer handwritten totals still partial on OCR"
+  ]
+}

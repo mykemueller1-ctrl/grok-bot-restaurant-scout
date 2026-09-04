@@ -8,11 +8,13 @@
   "domain_id": "finance",
   "version": "1.1.0",
   "owner": "mykemueller1-ctrl",
-  "description": "Parent agent for Finance / P&L / Prime Cost reports. Forensic P&L advisor \u2014 coded invoices + sales + labor \u2192 leak dollars by category. Spawns/routes sub-agents: daily-pnl, prime-cost, vendor-spend. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
+  "description": "Parent agent for Finance / P&L / Prime Cost reports. Forensic P&L advisor \u2014 coded invoices + sales + labor \u2192 leak dollars by category. Spawns/routes sub-agents: daily-pnl, prime-cost, recipe-cost, beer-cost, vendor-spend. Hands teach batches to the Report Teacher. Never posts or outreaches without approval.",
   "job_to_be_done": "Forensic P&L advisor \u2014 coded invoices + sales + labor \u2192 leak dollars by category",
   "sub_agents": [
     "daily-pnl",
     "prime-cost",
+    "recipe-cost",
+    "beer-cost",
     "vendor-spend"
   ],
   "skills": [

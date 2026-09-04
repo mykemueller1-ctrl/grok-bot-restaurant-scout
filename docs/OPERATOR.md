@@ -49,6 +49,8 @@ Photo OCR is the AP spine for small ICPs (email is bonus). Taxonomy + competitiv
 
 **Private teach locked — COGS sections:** milk / pop / juice / coffee → Pop. Paper goods, boxes, cleaning & chemicals → own section under food costs (`private-teaches/cogs-sections.json`).
 
+**SKU recipe / beer cost:** New photo packs land in `fixtures/toast/ctap-physical/normalized/sku-invoice-pack-2026-08.json` + `agent/report-ops/taxonomy/sku-directory-seed.json`. Finance subs: `recipe-cost`, `beer-cost`.
+
 ## Add vendors
 
 Edit `agent/pain-shoppers/build_swarm.py` or `vendors/catalog.json` → `python3 agent/pain-shoppers/build_swarm.py` → import new JSON.

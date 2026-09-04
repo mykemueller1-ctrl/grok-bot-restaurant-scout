@@ -1,12 +1,22 @@
 {
   "$schema_name": "VendorInvoice",
-  "description": "Normalized distributor / store invoice / payout slip from photo OCR or email PDF. Owner 1–5 dumps phone photos at scale — photo is the primary intake channel.",
+  "description": "Normalized distributor / store invoice / payout slip from photo OCR or email PDF. Owner 1\u20135 dumps phone photos at scale \u2014 photo is the primary intake channel.",
   "source_report": "vendor-invoice",
-  "required": ["source_channel", "vendor", "amount"],
+  "required": [
+    "source_channel",
+    "vendor",
+    "amount"
+  ],
   "properties": {
     "source_channel": {
       "type": "string",
-      "enum": ["photo", "email", "pdf", "csv", "manual"]
+      "enum": [
+        "photo",
+        "email",
+        "pdf",
+        "csv",
+        "manual"
+      ]
     },
     "doc_kind": {
       "type": "string",
@@ -20,13 +30,21 @@
         "unknown"
       ]
     },
-    "vendor": { "type": "string" },
+    "vendor": {
+      "type": "string"
+    },
     "vendor_type": {
-      "type": ["string", "null"],
-      "description": "broadline | beer_distributor | wine_spirits | grocery | meat | hardware | …"
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "broadline | beer_distributor | wine_spirits | grocery | meat | hardware | \u2026"
     },
     "cogs_category": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "enum": [
         "food",
         "beer",
@@ -43,12 +61,23 @@
       "description": "na_beverage = Pop (milk/pop/juice/coffee). paper_goods_boxes_chemicals reports under food costs."
     },
     "cost_bucket": {
-      "type": ["string", "null"],
-      "enum": ["food_costs", "beverage_costs", "opex", null],
-      "description": "Rollup bucket; paper_goods_boxes_chemicals → food_costs"
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "food_costs",
+        "beverage_costs",
+        "opex",
+        null
+      ],
+      "description": "Rollup bucket; paper_goods_boxes_chemicals \u2192 food_costs"
     },
     "category_source": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "enum": [
         "vendor_directory",
         "payout_account",
@@ -61,39 +90,165 @@
         null
       ]
     },
-    "date": { "type": ["string", "null"], "format": "date" },
-    "invoice_num": { "type": ["string", "null"] },
-    "amount": { "type": "number", "description": "Final payable / total after credits" },
-    "printed_total": { "type": ["number", "null"] },
-    "tax": { "type": ["number", "null"] },
-    "account": { "type": ["string", "null"], "description": "POS payout account e.g. 4312 Food" },
-    "employee": { "type": ["string", "null"] },
-    "description": { "type": ["string", "null"] },
-    "customer": { "type": ["string", "null"] },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "invoice_num": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "amount": {
+      "type": "number",
+      "description": "Final payable / total after credits"
+    },
+    "printed_total": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "tax": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "account": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "POS payout account e.g. 4312 Food"
+    },
+    "employee": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "customer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "line_items": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "sku": { "type": "string" },
-          "description": { "type": "string" },
-          "qty": { "type": "number" },
-          "unit_price": { "type": "number" },
-          "extended": { "type": "number" }
+          "sku": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "qty": {
+            "type": "number"
+          },
+          "unit_price": {
+            "type": "number"
+          },
+          "extended": {
+            "type": "number"
+          },
+          "vendor_sku": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "upc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pack_size": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "deposit": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cogs_category": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cost_bucket": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "recipe_ready": {
+            "type": "boolean"
+          }
         }
       }
     },
-    "handwritten_credit": { "type": ["number", "null"] },
-    "ocr_confidence": { "type": "number", "description": "0–100 mean word confidence" },
-    "rotation_deg": { "type": "integer" },
+    "handwritten_credit": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ocr_confidence": {
+      "type": "number",
+      "description": "0\u2013100 mean word confidence"
+    },
+    "rotation_deg": {
+      "type": "integer"
+    },
     "quality_flags": {
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["blur", "shadow", "stain", "torn", "stapled_pair", "rotated", "low_confidence", "partial"]
+        "enum": [
+          "blur",
+          "shadow",
+          "stain",
+          "torn",
+          "stapled_pair",
+          "rotated",
+          "low_confidence",
+          "partial"
+        ]
       }
     },
-    "source_images": { "type": "array", "items": { "type": "string" } },
-    "raw_text_excerpt": { "type": "string" }
+    "source_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "raw_text_excerpt": {
+      "type": "string"
+    }
   }
 }

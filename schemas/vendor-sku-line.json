@@ -1,0 +1,51 @@
+{
+  "$schema_name": "VendorSkuLine",
+  "description": "One invoice line with vendor SKU / UPC for recipe cost and beer/liquor cost. Primary grain for food recipes and pour cost.",
+  "source_report": "vendor-invoice line extract (photo OCR or email PDF)",
+  "required": ["vendor", "sku", "description", "cogs_category", "extended"],
+  "properties": {
+    "vendor": { "type": "string" },
+    "vendor_sku": {
+      "type": ["string", "null"],
+      "description": "Distributor item # (e.g. Sysco 4676280, Humes 04505)"
+    },
+    "upc": { "type": ["string", "null"] },
+    "sku": {
+      "type": "string",
+      "description": "Canonical Never86 SKU key — prefer vendor_sku, else upc, else slug(description)"
+    },
+    "description": { "type": "string" },
+    "pack_size": { "type": ["string", "null"] },
+    "qty": { "type": "number" },
+    "unit": { "type": ["string", "null"], "description": "CS | EA | LB | KEG | BTL | …" },
+    "unit_price": { "type": ["number", "null"] },
+    "deposit": { "type": ["number", "null"] },
+    "discount": { "type": ["number", "null"] },
+    "extended": { "type": "number", "description": "Line amount after disc; deposits may be included per vendor" },
+    "cogs_category": {
+      "type": "string",
+      "enum": [
+        "food",
+        "beer",
+        "wine",
+        "liquor",
+        "na_beverage",
+        "paper_goods_boxes_chemicals",
+        "misc_opex",
+        "deposit_credit",
+        "fuel_surcharge",
+        "unknown"
+      ]
+    },
+    "cost_bucket": {
+      "type": ["string", "null"],
+      "enum": ["food_costs", "beverage_costs", "opex", "contra", null]
+    },
+    "recipe_ready": {
+      "type": "boolean",
+      "description": "True when unit cost can feed recipe / pour cost math"
+    },
+    "invoice_num": { "type": ["string", "null"] },
+    "invoice_date": { "type": ["string", "null"], "format": "date" }
+  }
+}

@@ -27,7 +27,8 @@
   "file_globs": [
     "*vendor*spend*",
     "ocr-batch*.json",
-    "*invoice*"
+    "*invoice*",
+    "sku-invoice*"
   ],
   "schema": null,
   "hierarchy": null,

@@ -1,0 +1,53 @@
+{
+  "name": "Food Recipe Cost from Vendor SKUs Sub-Agent",
+  "title": "Never86 report sub \u2014 Finance / P&L / Prime Cost / Food Recipe Cost from Vendor SKUs",
+  "role": "sub",
+  "shape": "fox",
+  "color": "#1D3557",
+  "family": "never86-report-ops",
+  "domain_id": "finance",
+  "report_id": "recipe-cost",
+  "parent": "finance",
+  "version": "1.1.0",
+  "owner": "mykemueller1-ctrl",
+  "description": "Owns the Food Recipe Cost from Vendor SKUs report (Invoice SKU unit costs \u00d7 recipe BOM \u2192 plate food cost %). Ingests json, csv, xlsx. Signals: vendor_sku, unit_cost, recipe_id, portion_cost, food_cost_pct, menu_item. Routes findings up to the domain parent; teach labels via Report Teacher.",
+  "source_report": "Invoice SKU unit costs \u00d7 recipe BOM \u2192 plate food cost %",
+  "formats": [
+    "json",
+    "csv",
+    "xlsx"
+  ],
+  "signals": [
+    "vendor_sku",
+    "unit_cost",
+    "recipe_id",
+    "portion_cost",
+    "food_cost_pct",
+    "menu_item"
+  ],
+  "file_globs": [
+    "*recipe*cost*",
+    "*sku*invoice*",
+    "sku-directory*",
+    "*BOM*"
+  ],
+  "schema": "schemas/vendor-sku-line.json",
+  "hierarchy": null,
+  "skills": [
+    "report-ingest",
+    "report-normalize",
+    "teach-label",
+    "invoice-photo-ocr",
+    "sku-recipe-cost"
+  ],
+  "venues": [
+    "grill",
+    "taco-bamba",
+    "community-pizza"
+  ],
+  "swarm": true,
+  "example_packs": [
+    "ctap-physical/sku-invoice-pack-2026-08",
+    "ctap-physical/sku-ocr-batch-2026-08"
+  ]
+}
