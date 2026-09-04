@@ -65,7 +65,7 @@ Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see
 
 ## Instagram reconnect (issued this hunt)
 
-Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_WTy_pya-Ct6E) — Business/Creator only. Reply `instagram connected` when done.
+Fresh link (expires ~10 min): [Connect Instagram](https://connect.composio.dev/link/lk_0Hn7EPypFJJ6) — Business/Creator only. Reply `instagram connected` when done.
 
 **Marketplace rent contrast (not FBE):** Uber Eats [Instagram Delivery Button + Sticker](https://help.uber.com/merchants-and-restaurants/article/instagram-delivery-button-+-sticker?nodeId=92d1fcbf-1b65-4a79-9a16-690710e90046) routes Order Now / Food Orders sticker to Uber Eats menu — teach love→buy-now rent vs first-party peers; do **not** bump `meta_order_food_peer_count`.
 

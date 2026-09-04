@@ -1178,3 +1178,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_WTy_pya-Ct6E (~10 min).
 - Ledger v1.92.79. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-14 + Meta peers + WebMCP/GMaps)
+
+- Yelp pass-14 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass14.json`.
+- Adopted love rails reconfirm (Franklin preorder+Shopify; Michaels UberEats+DoorDash leak; G&TG OpenTable skew; Husk Toast gift; Rioja Flavor Dojo). Finding: `2026-09-04-love-rails-pass-yelp14.json`.
+- Reconfirmed Toast (Jul 7 2026) + Square 7778 + Bento 412673 Meta Order Food; Kyte unavailable — peer_count stays 9. Finding: `2026-09-04-toast-square-bento-kyte-meta-pass2.json`.
+- GloriaFood homepage discontinued + Sparissimo EOL Apr 30 2027 reconfirm. Finding: `2026-09-04-gloriafood-homepage-eol-sparissimo-reconfirm.json`.
+- Watched **WebMCP for restaurants** ($0-commission AI book/order) + **Google Maps Scraper MCP** Cursor leads. Findings: `2026-09-04-webmcp-restaurant-zero-commission.json`, `2026-09-04-gmaps-scraper-mcp-cursor-leads.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_0Hn7EPypFJJ6 (~10 min).
+- Ledger v1.92.80. Auth still blocked for unlock READY.
+

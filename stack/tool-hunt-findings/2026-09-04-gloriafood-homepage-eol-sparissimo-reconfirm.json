@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-gloriafood-homepage-eol-sparissimo-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood homepage discontinued + Sparissimo EOL Apr 30 2027 reconfirm",
+  "verdict": "watch",
+  "summary": "Live FETCH gloriafood.com still shows discontinued / no new signups. Sparissimo Food blog (updated Jul 28 2026) restates Oracle EOL Apr 30 2027 — widgets + Facebook ordering tabs die; no successor/migration tool. Keep GloriaFood in Meta peer_count 9 until EOL.",
+  "researched_at": "2026-09-04T22:06:00.000Z",
+  "sources": [
+    "https://www.gloriafood.com/",
+    "https://blog.sparissimofood.com/en/blog/gloriafood-shutting-down"
+  ]
+}

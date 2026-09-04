@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-webmcp-restaurant-zero-commission",
+  "lane": "cursor_agents",
+  "name": "WebMCP for restaurants zero-commission AI booking/order",
+  "verdict": "watch",
+  "summary": "NEW: web-mcp.net/for-restaurants (WebMCP / Chrome 146 early preview narrative, Feb 9 2026) positions restaurant sites as AI-agent booking+order endpoints at $0 commission vs OpenTable/DoorDash take rates. Cursor/agent-discoverable love→buy-now surface — watch; not Meta FBE; fee pause.",
+  "researched_at": "2026-09-04T22:07:00.000Z",
+  "sources": [
+    "https://web-mcp.net/for-restaurants"
+  ],
+  "memory_tags": [
+    "webmcp",
+    "zero-commission",
+    "ai-booking",
+    "cursor-agents"
+  ]
+}

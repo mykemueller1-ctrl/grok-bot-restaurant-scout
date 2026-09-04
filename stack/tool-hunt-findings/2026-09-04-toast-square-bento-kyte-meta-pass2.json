@@ -1,0 +1,15 @@
+{
+  "finding_id": "2026-09-04-toast-square-bento-kyte-meta-pass2",
+  "lane": "vertical_gtm",
+  "name": "Toast + Square + Bento Meta Order Food + Kyte unavailable pass-2",
+  "verdict": "adopt",
+  "summary": "Live FETCH: Toast Support still live (Last updated Jul 7 2026) for Order Food/eGift on IG/FB. Square article 7778 still live for Order Food buttons. Bento Help 412673 still live (edited Jan 15 2026) Meta Business Extension Order Food. Kyte Help still banners IG sticker + FB Order Food currently unavailable → Start Order. meta_order_food_peer_count stays 9.",
+  "researched_at": "2026-09-04T22:06:00.000Z",
+  "sources": [
+    "https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook",
+    "https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online",
+    "https://help.getbento.com/en/articles/412673",
+    "https://docs.kyteapp.com/en/articles/7861178-activating-the-instagram-order-food-sticker",
+    "https://docs.kyteapp.com/en/articles/7861141-setting-up-order-food-on-facebook"
+  ]
+}

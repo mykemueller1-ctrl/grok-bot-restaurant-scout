@@ -1,0 +1,16 @@
+{
+  "finding_id": "2026-09-04-gmaps-scraper-mcp-cursor-leads",
+  "lane": "cursor_agents",
+  "name": "Google Maps Scraper MCP Cursor local restaurant leads",
+  "verdict": "watch",
+  "summary": "NEW: khadinakbarlabs/google-maps-scraper-mcp — Cursor/Claude MCP for Maps business search + email/phone/reviews lead extract (OAuth / Apify actor). Pain→sales-lead enrich peer alongside PosDO/FoodNearMe; Yelp phone stays Active; auth-first.",
+  "researched_at": "2026-09-04T22:07:00.000Z",
+  "sources": [
+    "https://github.com/khadinakbarlabs/google-maps-scraper-mcp"
+  ],
+  "memory_tags": [
+    "google-maps-mcp",
+    "cursor-mcp",
+    "pain-sales-lead"
+  ]
+}

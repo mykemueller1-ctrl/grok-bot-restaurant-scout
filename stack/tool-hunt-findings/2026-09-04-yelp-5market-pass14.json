@@ -1,0 +1,25 @@
+{
+  "finding_id": "2026-09-04-yelp-5market-pass14",
+  "lane": "vertical_gtm",
+  "name": "Yelp 5-market love calibration stable pass-14",
+  "verdict": "adopt",
+  "summary": "Composio YELP_GET_BUSINESS_DETAILS pass-14 (session hunt): Girl & The Goat 10731; Franklin Barbecue 6477; Michael's Genuine 2084; Husk 1987; Rioja 2914 — all five love primaries stable vs pass-13.",
+  "researched_at": "2026-09-04T22:05:00.000Z",
+  "sources": [
+    "YELP_GET_BUSINESS_DETAILS girl-and-the-goat-chicago",
+    "YELP_GET_BUSINESS_DETAILS franklin-barbecue-austin",
+    "YELP_GET_BUSINESS_DETAILS michaels-genuine-food-and-drink-miami",
+    "YELP_GET_BUSINESS_DETAILS husk-nashville",
+    "YELP_GET_BUSINESS_DETAILS rioja-denver"
+  ],
+  "teach": {
+    "label": "yelp_love_stable",
+    "counts": {
+      "gtg": 10731,
+      "franklin": 6477,
+      "michaels": 2084,
+      "husk": 1987,
+      "rioja": 2914
+    }
+  }
+}
