@@ -1,6 +1,6 @@
 {
-  "version": "1.20.0",
-  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
+  "version": "1.21.0",
+  "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
     "pain_to_sales_lead",
@@ -16,7 +16,7 @@
   "last_brief": "2026-09-04",
   "owner": "mykemueller1-ctrl",
   "ours": {
-    "vertical_wedge": "Chef-loved / UGC-proven kitchens \u2192 Never86 TikTok/IG buy-now; vendor-pain shoppers \u2192 taught sales leads",
+    "vertical_wedge": "Chef-loved / UGC-proven kitchens → Never86 TikTok/IG buy-now; vendor-pain shoppers → taught sales leads",
     "ide_agents": {
       "primary": "Cursor Cloud Agents + desktop Cursor",
       "also": [
@@ -30,7 +30,7 @@
       "primary": "teach_memory on pain/report agents + VendorLearnedBank",
       "cursor_automation_memories": "preferred for Beyond the Hunt cross-run learning",
       "mem0_mcp": "needsAuth or MEM0_API_KEY (scripts/mem0-smoke.mjs)",
-      "context_dev": "MCP OAuth-desktop-only; headless CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs",
+      "context_dev": "MCP OAuth-desktop-only; headless CONTEXT_DEV_API_KEY → scripts/context-search.mjs",
       "pinecone": "MCP present; configure only if vector search needed for vertical knowledge",
       "posthog_scratchpad": "signals-scout scratchpad for product analytics memory"
     },
@@ -43,7 +43,7 @@
         "docs/CLOUDFLARE.md"
       ],
       "posthog_skills": "PostHog MCP skills store",
-      "personal_skills_sync": "desktop: Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents"
+      "personal_skills_sync": "desktop: Settings → Agents → Sync Skills for Cloud Agents"
     },
     "mcp_live": [
       "Bright Data",
@@ -69,7 +69,7 @@
     ],
     "research_fallback": "Composio COMPOSIO_SEARCH_WEB + COMPOSIO_SEARCH_TAVILY (Active) when Bright Data/Context unavailable",
     "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)",
-    "pain_sales_enrich": "Composio Yelp + Google Maps + SEARCH_WEB (Active) \u2014 Apollo/Clay optional",
+    "pain_sales_enrich": "Composio Yelp + Google Maps + SEARCH_WEB (Active) — Apollo/Clay optional",
     "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts",
     "mem0": {
       "mcp_file": "mcp/mem0.json",
@@ -87,9 +87,10 @@
     "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP (effective_cost_math + pos_fee_lockin)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs",
+    "brief_runner": "scripts/tool-hunt-brief.mjs --write",
     "context": {
       "mcp": "oauth_desktop_only https://mcp.context.dev/mcp",
-      "headless_rest": "CONTEXT_DEV_API_KEY \u2192 scripts/context-search.mjs POST /v1/web/search",
+      "headless_rest": "CONTEXT_DEV_API_KEY → scripts/context-search.mjs POST /v1/web/search",
       "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
     }
   },
@@ -99,7 +100,7 @@
       "lane": "vertical_gtm",
       "stack": "AI-native discovery + first-party ordering + CRM + automated marketing agents; $240M Series D (Goldman, Aug 2026)",
       "memory": "Vendor-managed marketing/content agents",
-      "edge": "Capitalized first-party OS; marketing agents skew email/SMS/push \u2014 not TikTok Shop-native",
+      "edge": "Capitalized first-party OS; marketing agents skew email/SMS/push — not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html",
@@ -110,9 +111,9 @@
     {
       "name": "Trenz",
       "lane": "vertical_gtm",
-      "stack": "Multi-agent social commerce (research \u2192 creative \u2192 publish \u2192 shop \u2192 ads); TikTok Shop partner narrative",
+      "stack": "Multi-agent social commerce (research → creative → publish → shop → ads); TikTok Shop partner narrative",
       "memory": "Agent team state across research/creative/ops",
-      "edge": "End-to-end shoppable content + TikTok Shop ops \u2014 overlaps our buy-now script path",
+      "edge": "End-to-end shoppable content + TikTok Shop ops — overlaps our buy-now script path",
       "updated": "2026-09-04",
       "sources": [
         "https://www.trenz.ai/"
@@ -121,7 +122,7 @@
     {
       "name": "Restomas",
       "lane": "vertical_gtm",
-      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp \u2014 approve then execute",
+      "stack": "Agentic restaurant OS: menu, site, campaigns, Reels/TikTok, WhatsApp — approve then execute",
       "memory": "Platform-native agent memory",
       "edge": "Full guest-facing + marketing agent suite in one subscription",
       "updated": "2026-09-04",
@@ -156,7 +157,7 @@
       "lane": "vertical_gtm",
       "stack": "TikTok Shop video generate/clone/publish via official API",
       "memory": "Prompt cloning from winning videos",
-      "edge": "High-volume shoppable video production \u2014 compare to our script-draft skill",
+      "edge": "High-volume shoppable video production — compare to our script-draft skill",
       "updated": "2026-09-04",
       "sources": [
         "https://www.creatok.ai/"
@@ -189,7 +190,7 @@
       "lane": "competitor_stacks",
       "stack": "Cursor IDE + Cloud Agents + Automations + Skills + MCP",
       "memory": "Automation memories; optional Mem0",
-      "edge": "Same build surface \u2014 race is vertical skills depth",
+      "edge": "Same build surface — race is vertical skills depth",
       "updated": "2026-09-04",
       "sources": [
         "https://cursor.com/docs/cloud-agent/automations",
@@ -201,7 +202,7 @@
       "lane": "competitor_stacks",
       "stack": "Claude Code CLI (+ optional Cursor)",
       "memory": "CLAUDE.md / Mem0 / Letta patterns",
-      "edge": "Terminal autonomy for heavy refactors \u2014 watch only",
+      "edge": "Terminal autonomy for heavy refactors — watch only",
       "updated": "2026-09-04",
       "sources": [
         "https://www.thecodew.com/2026/08/ai-coding-assistants-compared.html"
@@ -212,7 +213,7 @@
       "lane": "vertical_gtm",
       "stack": "AI dish photo/video/Reels generators for menus and social",
       "memory": "n/a (content gen)",
-      "edge": "Cheap menu/social media assets \u2014 not shoppable commerce close",
+      "edge": "Cheap menu/social media assets — not shoppable commerce close",
       "updated": "2026-09-04",
       "sources": [
         "https://getplateai.com/",
@@ -222,9 +223,9 @@
     {
       "name": "Seekadu",
       "lane": "vertical_gtm",
-      "stack": "Instagram DM / Reels comment \u2192 reservation booking agents (OpenTable/Resy/SevenRooms)",
+      "stack": "Instagram DM / Reels comment → reservation booking agents (OpenTable/Resy/SevenRooms)",
       "memory": "Conversation booking state",
-      "edge": "Social\u2192covers booked; adjacent GTM but not shoppable commerce",
+      "edge": "Social→covers booked; adjacent GTM but not shoppable commerce",
       "updated": "2026-09-04",
       "sources": [
         "https://www.seekadu.com/ai-social-media/restaurants",
@@ -234,7 +235,7 @@
     {
       "name": "TextOrder",
       "lane": "vertical_gtm",
-      "stack": "AI ordering via TikTok/IG/FB DM + SMS + WhatsApp + web chat (scroll\u2192DM\u2192paid order)",
+      "stack": "AI ordering via TikTok/IG/FB DM + SMS + WhatsApp + web chat (scroll→DM→paid order)",
       "memory": "In-thread reorder + promo retargeting",
       "edge": "Owns conversational messaging close; Never86 wedge stays shoppable buy-now / TikTok Shop rails, not DM chatbot fork",
       "updated": "2026-09-04",
@@ -248,7 +249,7 @@
       "lane": "vertical_gtm",
       "stack": "11-system restaurant agent OS + IG/WhatsApp DMs + direct Stripe ordering + open ACP Agent Protocol for machine agents",
       "memory": "Text-thread ops interface; guest data owned by restaurant",
-      "edge": "Strongest new overlap: first-party anti-marketplace + social DM + agent-to-restaurant commerce. Watch GTM only \u2014 skip their staff/labor forecast features",
+      "edge": "Strongest new overlap: first-party anti-marketplace + social DM + agent-to-restaurant commerce. Watch GTM only — skip their staff/labor forecast features",
       "updated": "2026-09-04",
       "sources": [
         "https://getmenami.com/features",
@@ -298,7 +299,7 @@
       "lane": "vertical_gtm",
       "stack": "Shoppable TikTok/IG UGC video widgets on Shopify PDPs for F&B brands",
       "memory": "n/a (Shopify widget)",
-      "edge": "Proves UGC taste-reaction \u2192 buy; closes on Shopify not restaurant TikTok Shop kitchen rails",
+      "edge": "Proves UGC taste-reaction → buy; closes on Shopify not restaurant TikTok Shop kitchen rails",
       "updated": "2026-09-04",
       "sources": [
         "https://www.moast.io/solutions/food-beverage",
@@ -331,9 +332,9 @@
     {
       "name": "Feedo AI",
       "lane": "vertical_gtm",
-      "stack": "Dish photo \u2192 week of Instagram posts/captions; multi-aggregator listing compatibility",
+      "stack": "Dish photo → week of Instagram posts/captions; multi-aggregator listing compatibility",
       "memory": "n/a (content gen)",
-      "edge": "Content-only peer (PlateAI-class); claims IG\u2192direct delivery share but no Shop close",
+      "edge": "Content-only peer (PlateAI-class); claims IG→direct delivery share but no Shop close",
       "updated": "2026-09-04",
       "sources": [
         "https://feedoai.com/"
@@ -342,9 +343,9 @@
     {
       "name": "OrderPost",
       "lane": "vertical_gtm",
-      "stack": "Upload IG/FB post or flyer \u2192 AI extracts menu \u2192 shareable order link (no catalog)",
+      "stack": "Upload IG/FB post or flyer → AI extracts menu → shareable order link (no catalog)",
       "memory": "n/a (order pages)",
-      "edge": "Closest social-post\u2192order peer; hosted link close vs Never86 in-app Shop rails",
+      "edge": "Closest social-post→order peer; hosted link close vs Never86 in-app Shop rails",
       "updated": "2026-09-04",
       "sources": [
         "https://www.orderpost.store/"
@@ -397,6 +398,18 @@
   ],
   "watchlist": [
     {
+      "item": "tool-hunt-brief.mjs headless ops brief",
+      "lane": "cursor_agents",
+      "why": "Generates stack/tool-hunt-briefs/YYYY-MM-DD.md from ledger+findings without Mem0; bumps last_brief",
+      "verdict": "adopt"
+    },
+    {
+      "item": "MEM0_API_KEY + CONTEXT_DEV_API_KEY required in secrets manifest",
+      "lane": "memory",
+      "why": "Manifest marks both optional:false for Beyond the Hunt READY",
+      "verdict": "needs_auth"
+    },
+    {
       "item": "Toast POS fee-lockin KEEP signal",
       "lane": "vertical_gtm",
       "why": "pos_fee_lockin on KEEP scorer boosts Toast leaving/fee stubs for sales forms",
@@ -439,9 +452,9 @@
       "verdict": "watch"
     },
     {
-      "item": "OrderPost IG post\u2192order pages",
+      "item": "OrderPost IG post→order pages",
       "lane": "vertical_gtm",
-      "why": "Closest social-post\u2192order rival to love\u2192buy-now; contrast hosted link vs Shop rails",
+      "why": "Closest social-post→order rival to love→buy-now; contrast hosted link vs Shop rails",
       "verdict": "watch"
     },
     {
@@ -457,9 +470,9 @@
       "verdict": "adopt"
     },
     {
-      "item": "Franklin effective-cost pain\u2192SalesLead dogfood",
+      "item": "Franklin effective-cost pain→SalesLead dogfood",
       "lane": "vertical_gtm",
-      "why": "Statement-math KEEP + Austin love brand \u2192 DRAFT without Apollo/Mem0",
+      "why": "Statement-math KEEP + Austin love brand → DRAFT without Apollo/Mem0",
       "verdict": "adopt"
     },
     {
@@ -483,7 +496,7 @@
     {
       "item": "Moast Shopify shoppable UGC (F&B)",
       "lane": "vertical_gtm",
-      "why": "UGC\u2192buy on PDPs; contrast vs Never86 in-app Shop rails",
+      "why": "UGC→buy on PDPs; contrast vs Never86 in-app Shop rails",
       "verdict": "watch"
     },
     {
@@ -571,7 +584,7 @@
       "verdict": "adopt"
     },
     {
-      "item": "Yelp + Maps public enrich for pain\u2192sales",
+      "item": "Yelp + Maps public enrich for pain→sales",
       "lane": "vertical_gtm",
       "why": "Active Composio path; adopted into lead-shop-enrich",
       "verdict": "adopt"
@@ -585,7 +598,7 @@
     {
       "item": "Desktop auth: Mem0 + Context.dev",
       "lane": "memory",
-      "why": "Cloud cannot run interactive mcp_auth \u2014 blocks durable memory + research redundancy",
+      "why": "Cloud cannot run interactive mcp_auth — blocks durable memory + research redundancy",
       "verdict": "needs_auth"
     },
     {
@@ -615,17 +628,17 @@
     {
       "item": "Zayos Restaurant Grader inbound wedge",
       "lane": "vertical_gtm",
-      "why": "Free diagnostic \u2192 OS conversion; pattern we may copy for pain/onboarding",
+      "why": "Free diagnostic → OS conversion; pattern we may copy for pain/onboarding",
       "verdict": "pilot"
     },
     {
       "item": "Zep/Graphiti / Letta",
       "lane": "memory",
-      "why": "Only if teach_memory quality plateaus \u2014 not a forecasting play",
+      "why": "Only if teach_memory quality plateaus — not a forecasting play",
       "verdict": "watch"
     },
     {
-      "item": "Seekadu Instagram\u2192reservation agents",
+      "item": "Seekadu Instagram→reservation agents",
       "lane": "vertical_gtm",
       "why": "Social conversion rival; keep Never86 on buy-now not table turns",
       "verdict": "watch"
@@ -639,25 +652,25 @@
     {
       "item": "Menami OS + ACP Agent Protocol",
       "lane": "vertical_gtm",
-      "why": "First-party ordering + IG/WhatsApp + machine-agent checkout protocol \u2014 top-priority rival watch; skip forecasting features",
+      "why": "First-party ordering + IG/WhatsApp + machine-agent checkout protocol — top-priority rival watch; skip forecasting features",
       "verdict": "watch"
     },
     {
       "item": "Klikit TikTok Shop POS (APAC)",
       "lane": "vertical_gtm",
-      "why": "Shop\u2192kitchen sync validates shoppable food ops; US GTM secondary",
+      "why": "Shop→kitchen sync validates shoppable food ops; US GTM secondary",
       "verdict": "watch"
     },
     {
       "item": "Context.dev headless REST (CONTEXT_DEV_API_KEY)",
       "lane": "mcp_connectors",
-      "why": "Cloud research path when MCP OAuth unavailable \u2014 scripts/context-search.mjs",
+      "why": "Cloud research path when MCP OAuth unavailable — scripts/context-search.mjs",
       "verdict": "needs_auth"
     },
     {
       "item": "Bright Data SERP/discover",
       "lane": "mcp_connectors",
-      "why": "Namespace ready but search_engine/discover still HTTP 401 \u2014 Composio stays primary",
+      "why": "Namespace ready but search_engine/discover still HTTP 401 — Composio stays primary",
       "verdict": "needs_auth"
     }
   ],
@@ -665,7 +678,7 @@
     {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context not verified in this environment",
-      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/unlock-beyond-the-hunt.mjs \u2192 exit 0",
+      "action": "Set MEM0_API_KEY + CONTEXT_DEV_API_KEY in cloud secrets, and/or desktop OAuth via .cursor/mcp.json. Verify: node scripts/unlock-beyond-the-hunt.mjs → exit 0",
       "priority": 1
     },
     {
@@ -677,13 +690,13 @@
     {
       "id": "skills-sync",
       "gap": "Confirm Sync Skills for Cloud Agents",
-      "action": "Desktop Settings \u2192 Agents \u2192 Sync Skills for Cloud Agents = on",
+      "action": "Desktop Settings → Agents → Sync Skills for Cloud Agents = on",
       "priority": 2
     },
     {
       "id": "vertical-grader-wedge",
       "gap": "Rivals ship free graders / diagnostics; we shop pain but lack a public self-serve wedge",
-      "action": "Pilot a Never86 fit/grader concept after teach quality is stable \u2014 do not expand import waves early",
+      "action": "Pilot a Never86 fit/grader concept after teach quality is stable — do not expand import waves early",
       "priority": 3
     },
     {
@@ -700,13 +713,13 @@
     },
     {
       "id": "apollo-clay-auth",
-      "gap": "Apollo + Clay optional \u2014 public Yelp/Maps enrich already adopted",
+      "gap": "Apollo + Clay optional — public Yelp/Maps enrich already adopted",
       "action": "Authenticate Apollo and/or Clay in Cursor desktop when ready to enrich leads",
       "priority": 4
     },
     {
       "id": "pinecone-api-key",
-      "gap": "Pinecone MCP lacks PINECONE_API_KEY \u2014 cannot store vertical knowledge vectors yet",
+      "gap": "Pinecone MCP lacks PINECONE_API_KEY — cannot store vertical knowledge vectors yet",
       "action": "Add PINECONE_API_KEY to Cursor MCP config (https://app.pinecone.io); never paste in chat",
       "priority": 3
     },

@@ -45,7 +45,14 @@ console.log("active_love: Yelp + Maps — fixtures/tool-hunt/*-love-brands.json 
 console.log("active_buy_now: fixtures/tool-hunt/script-draft-franklin-buy-now.json + catalog-sync-franklin-sandbox.json");
 console.log("active_keep_scorer: scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs");
 console.log("active_sales_dogfood: girl-goat + franklin + miami-michaels-genuine");
+console.log("active_brief: node scripts/tool-hunt-brief.mjs --write");
 console.log("next: skills in routines/tool-hunt-weekly.json → write ToolFinding JSON → update ledger");
+
+const brief = run(process.execPath, ["scripts/tool-hunt-brief.mjs"]);
+if (brief.stdout) {
+  const preview = brief.stdout.split("\n").slice(0, 8).join("\n");
+  console.log("brief_preview:\n" + preview);
+}
 if (authReady) {
   console.log("mem0_next: node scripts/unlock-beyond-the-hunt.mjs");
 }

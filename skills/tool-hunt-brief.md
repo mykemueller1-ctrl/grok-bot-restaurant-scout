@@ -29,6 +29,7 @@ WATCHING
 - …
 ```
 
-5. Never paste tokens. Link `docs/TOOL-HUNT.md`.
+5. Optionally run `node scripts/tool-hunt-brief.mjs --write` (git-backed brief under `stack/tool-hunt-briefs/` until Mem0).
+6. Never paste tokens. Link `docs/TOOL-HUNT.md`.
 
-**Done when:** brief delivered; ledger `last_brief` set.
+**Done when:** brief delivered; ledger `last_brief` set (via `--write` or manual).

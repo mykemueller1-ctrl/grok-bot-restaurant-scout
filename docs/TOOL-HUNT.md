@@ -62,11 +62,13 @@ tool-frontier-scan → memory-skills-audit → stack-vs-competitors → tool-hun
 ```
 
 ```bash
-node scripts/run-tool-hunt-week.mjs   # auth soft-check + ledger validate
+node scripts/run-tool-hunt-week.mjs   # auth soft-check + ledger validate + brief preview
+node scripts/tool-hunt-brief.mjs --write   # stack/tool-hunt-briefs/YYYY-MM-DD.md
 node scripts/validate-tooling-ledger.mjs
+node scripts/unlock-beyond-the-hunt.mjs   # exit 0 when Mem0+Context READY
 ```
 
-Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, continue with Active Composio/X/Yelp paths.
+Want `STATUS: READY` from the week gate (Mem0 + Context smokes). If blocked, continue with Active Composio/X/Yelp paths. Brief stays git-backed until Mem0 imports.
 
 ## Decision rules
 
