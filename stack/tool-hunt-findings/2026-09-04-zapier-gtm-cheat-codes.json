@@ -1,0 +1,23 @@
+{
+  "finding_id": "zapier-gtm-cheat-codes-cursor-skills-2026-09",
+  "lane": "skills_knowledge",
+  "name": "Zapier GTM Cheat Codes — Cursor/Codex agent skills",
+  "vendor_or_project": "Zapier",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Zapier open-sourced GTM agent skills (github.com/zapier/gtm-cheat-codes, MIT) installable into Cursor / Claude Code / Codex — campaign planning, lead follow-up QA, CRM context, customer proof, Zapier MCP/SDK patterns. Related: zapier/agent-skills, zapier/wade-skills. Watch as Cursor skills-stack peer for Never86 GTM agent workflows; do not vendor-lock hunt to Zapier MCP. Fee pause N/A.",
+  "what_it_does": "Source-backed, reviewable GTM skill folders + automations for coding agents with human approval gates.",
+  "how_competitors_use_it": "GTM/RevOps teams drop skills into .cursor/skills or npx skills add; wire CRM/inbox via Zapier MCP.",
+  "what_we_use_today": "Repo skills/*.md + docs/CURSOR-SYNC-SKILLS.md + Mem0/Context unlock path",
+  "gap": "Optional desktop install for operator; Sync Skills still needed; Mem0+Context still block goal",
+  "pivot_speed": "hours",
+  "operator_ask": "Optional: review github.com/zapier/gtm-cheat-codes — do not replace Never86 project skills.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://github.com/zapier/gtm-cheat-codes",
+    "https://github.com/zapier/agent-skills",
+    "https://github.com/zapier/wade-skills",
+    "https://aiengineerguide.com/til/zapier-gtm-ai-skills/"
+  ],
+  "not_this": "Not forecasting. Not a fee dogfood. Not a Mem0/Context substitute."
+}

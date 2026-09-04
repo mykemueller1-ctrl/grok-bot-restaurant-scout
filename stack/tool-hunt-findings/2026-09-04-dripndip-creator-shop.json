@@ -1,0 +1,20 @@
+{
+  "finding_id": "dripndip-fashion-food-creator-shop-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DripnDip fashion+food creator shoppable app",
+  "vendor_or_project": "DripnDip",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "dripndip.app: lifestyle social commerce — scroll fashion & food creator videos → tap tagged outfits/restaurants → one-cart in-app checkout; creators earn 10–20% commission + restaurant collabs. Waitlist / creator beta. Peer to BiteSight/Smiilen video→order discovery (broader lifestyle). Not restaurant Meta FBE. Watch only — fee pause.",
+  "what_it_does": "Creator-tagged fashion+food video feed with in-app cart checkout and creator payouts.",
+  "how_competitors_use_it": "Creators monetize meal/fit content; restaurants get paid collabs / tagged discovery.",
+  "what_we_use_today": "Never86 TikTok/IG Shop buy-now for chef-loved kitchens; video peers BiteSight/Smiilen watched",
+  "gap": "Still waitlist — no US swarm; not Shop-native restaurant OS",
+  "pivot_speed": "days",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://dripndip.app/"
+  ],
+  "not_this": "Not the Florida Drip n Dip dessert brand (dripndipusa.com). Not Meta Order Food. Not forecasting."
+}

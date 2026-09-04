@@ -897,3 +897,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopt teach: Shop migration wedge for restaurants losing free Meta-adjacent OO. **Keep meta_order_food_peer_count at 9** until shutdown — do not inflate Ressto/FoodBooking/Tablevibe CTA successors.
 - Finding: `2026-09-04-gloriafood-eol-shop-wedge.json`. Taught into COMPOSIO-SOCIAL-UNLOCKS + morning-scan pass-2 calibration.
 - Ledger v1.92.45. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Zapier GTM skills + DripnDip + chat/DM peers)
+
+- Watched **Zapier GTM Cheat Codes** (`zapier/gtm-cheat-codes`) — Cursor/Codex installable GTM skills. Finding: `2026-09-04-zapier-gtm-cheat-codes.json`.
+- Watched **DripnDip** fashion+food creator shop (waitlist). Finding: `2026-09-04-dripndip-creator-shop.json`.
+- Watched **Zippi** + **VoiceZero** + **BoostOrder** chat/DM order peers (not FBE). Finding: `2026-09-04-zippi-voicezero-boostorder-dm.json`.
+- Ledger v1.92.46. Auth still blocked for unlock READY.

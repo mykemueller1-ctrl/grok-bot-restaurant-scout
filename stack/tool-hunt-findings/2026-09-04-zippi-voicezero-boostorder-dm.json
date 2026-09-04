@@ -1,0 +1,22 @@
+{
+  "finding_id": "zippi-voicezero-boostorder-dm-peers-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Zippi + VoiceZero + BoostOrder chat/DM order peers",
+  "vendor_or_project": "Zippi / VoiceZero / BoostOrder",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Three new love→buy-now chat/DM peers (Composio FETCH 2026-09-04): (1) Zippi — SMS/IG/FB/web chat order+reserve + SmartCart; $0/mo base + usage; Zippi Eats discovery marketplace caveat. (2) VoiceZero Restaurant Mode — Phone/WhatsApp/widget/SMS AI intake → Clover/Square/Toast POS; flat monthly, no per-order fee claimed. (3) BoostOrder — WhatsApp/website/social/SMS/ChatGPT AI ordering + 0% commission delivery + influencer social. Watch alongside DirectOrders/Mirar/WaveOrder/TextOrder — not Meta FBE peers. Fee pause.",
+  "what_it_does": "Conversational order+reserve intake across SMS/IG/FB/WA/web with POS sync and first-party KEEP framing.",
+  "how_competitors_use_it": "Independents replace phone/marketplace intake with AI chat agents that own the guest relationship.",
+  "what_we_use_today": "Already watching DirectOrders, Mirar, WaveOrder, TextOrder, Palmate/DMHub, Mando/Orderlya",
+  "gap": "Not Shop-native TikTok/IG buy-now; Zippi Eats / marketplace discovery can reintroduce rent — watch carefully",
+  "pivot_speed": "days",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://zippichat.com/",
+    "https://voicezero.ai/features/restaurant-mode.html",
+    "https://boostorder.ai/"
+  ],
+  "not_this": "Do not bump meta_order_food_peer_count. Not fee dogfoods. Not forecasting."
+}

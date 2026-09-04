@@ -10,6 +10,7 @@
    - Context.dev / Pinecone / other knowledge MCPs
    - Project skills in `skills/`
    - Personal skills sync (`Settings → Agents → Sync Skills for Cloud Agents`)
+   - Optional peer: Zapier [gtm-cheat-codes](https://github.com/zapier/gtm-cheat-codes) GTM skills for Cursor (watch — do not replace project `skills/`)
    - PostHog skills store / scouts
 2. Compare to ledger `ours.memory` and `ours.skills_knowledge`.
 3. Flag `needs_auth` / `needs_sync` / `stale` / `duplicate`.

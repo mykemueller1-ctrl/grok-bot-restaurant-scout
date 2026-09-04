@@ -12,6 +12,8 @@ One desktop click so Cloud Agents inherit project + personal skills for Beyond t
 3. Confirm project skills under `skills/` are visible to cloud runs (especially `tool-frontier-scan`, `vertical-rival-watch`, `memory-skills-audit`, `morning-scan`, `script-draft`, `tool-hunt-brief`, `lead-shop-enrich`, `sales-lead-form`)
 4. Reply in the cloud agent thread: `skills sync on`
 
+Optional peer (watch only — do not replace Never86 project skills): Zapier open-source GTM agent skills — [zapier/gtm-cheat-codes](https://github.com/zapier/gtm-cheat-codes) (also `zapier/agent-skills`). Finding: `stack/tool-hunt-findings/2026-09-04-zapier-gtm-cheat-codes.json`.
+
 ## Why
 
 Without Sync Skills, Cloud Agents may miss GTM skills that desk already has. Weekly hunt (`routines/tool-hunt-weekly.json`) depends on those skill files.
