@@ -1,0 +1,11 @@
+{
+  "finding_id": "2026-09-04-instagram-reconnect-v19277",
+  "lane": "mcp_connectors",
+  "name": "Instagram Composio reconnect (v1.92.77)",
+  "verdict": "needs_auth",
+  "summary": "Fresh Instagram Composio connect link issued for hunt session: https://connect.composio.dev/link/lk_5AELl4d2rM0y (~10 min). Business/Creator only. Blocks morning-scan UGC proofs until Active.",
+  "researched_at": "2026-09-04T21:54:00.000Z",
+  "sources": [
+    "COMPOSIO_MANAGE_CONNECTIONS instagram add session hunt"
+  ]
+}

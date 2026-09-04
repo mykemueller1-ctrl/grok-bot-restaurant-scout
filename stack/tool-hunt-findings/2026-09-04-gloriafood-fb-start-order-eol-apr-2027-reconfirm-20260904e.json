@@ -1,0 +1,13 @@
+{
+  "finding_id": "2026-09-04-gloriafood-fb-start-order-eol-apr-2027-reconfirm-20260904e",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood discontinued + FBE EOL Apr 30 2027 reconfirm 2026-09-04e",
+  "verdict": "watch",
+  "summary": "Live FETCH gloriafood.com homepage still shows discontinued / no new signups banner. Secondary cites (Enacton/Menuro/Sparissimo) keep primary EOL Apr 30 2027 for FB ordering tabs. Remains one of 9 Meta Order Food FBE peers until EOL — EOL alone does not drop peer_count.",
+  "researched_at": "2026-09-04T21:56:00.000Z",
+  "sources": [
+    "https://www.gloriafood.com/",
+    "https://www.enacton.com/blog/gloriafood-shutting-down/",
+    "https://menuro.io/blog/gloriafood-shutting-down-2027/"
+  ]
+}

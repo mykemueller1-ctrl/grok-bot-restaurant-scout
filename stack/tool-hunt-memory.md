@@ -1151,3 +1151,13 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_ZcIofoskAlCk (~10 min).
 - Ledger v1.92.76. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-12 + love rails + Kyte/Toast/Square/Bento Meta)
+
+- Yelp pass-12 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass12.json`.
+- Adopted 5-market love rails: Franklin preorder+Shopify; G&TG OpenTable skew; Michaels UberEats+DoorDash leak; Husk Toast gift; Rioja Flavor Dojo. Finding: `2026-09-04-love-rails-pass-yelp12.json`.
+- Reconfirmed Kyte unavailable + Toast (Jul 7 2026) + Square 7778 + Bento 412673 — peer_count stays 9. Finding: `2026-09-04-kyte-toast-square-bento-meta-pass.json`.
+- Uber IG rent + FoodBooking CTA EOL Mar 31 2027 + GloriaFood discontinued/Apr 30 2027 + Hatch pass-2 — not FBE bumps. Findings: `2026-09-04-uber-eats-ig-delivery-rent-not-fbe-reconfirm-20260904e.json`, `2026-09-04-foodbooking-cta-eol-mar-2027-not-fbe-reconfirm-20260904e.json`, `2026-09-04-gloriafood-fb-start-order-eol-apr-2027-reconfirm-20260904e.json`, `2026-09-04-meta-hatch-bi-reconfirm-pass2.json`.
+- Watched Aerostack WA Restaurant MCP template. Finding: `2026-09-04-aerostack-wa-restaurant-mcp-cursor.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_5AELl4d2rM0y (~10 min).
+- Ledger v1.92.77. Auth still blocked for unlock READY.
+

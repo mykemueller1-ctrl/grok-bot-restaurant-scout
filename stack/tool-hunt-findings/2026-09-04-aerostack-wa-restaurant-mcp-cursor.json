@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-aerostack-wa-restaurant-mcp-cursor",
+  "lane": "cursor_agents",
+  "name": "Aerostack WhatsApp Restaurant & Delivery MCP template",
+  "verdict": "watch",
+  "summary": "aerostack.dev WhatsApp Restaurant & Delivery template deploys MCP stack (@aerostack/mcp-whatsapp + Stripe + Supabase) callable from Cursor/Claude. WA messaging-close peer for love→buy-now tooling watch; Yelp phone stays Active; auth-first; fee catalog pause.",
+  "researched_at": "2026-09-04T21:57:00.000Z",
+  "sources": [
+    "https://aerostack.dev/templates/aerostack/whatsapp-restaurant-delivery"
+  ],
+  "memory_tags": [
+    "aerostack",
+    "whatsapp",
+    "cursor-mcp",
+    "wa-ordering"
+  ]
+}

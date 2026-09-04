@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-uber-eats-ig-delivery-rent-not-fbe-reconfirm-20260904e",
+  "lane": "vertical_gtm",
+  "name": "Uber Eats Instagram Delivery rent (not FBE) reconfirm 2026-09-04e",
+  "verdict": "watch",
+  "summary": "Composio FETCH help.uber.com Instagram Delivery Button + Sticker still live: Order Now / Delivery Stories sticker → chosen delivery platform menu (Uber Eats path). Marketplace rent contrast vs first-party Meta FBE — do not inflate meta_order_food_peer_count (stays 9).",
+  "researched_at": "2026-09-04T21:56:00.000Z",
+  "sources": [
+    "https://help.uber.com/merchants-and-restaurants/article/instagram-delivery-button-+-sticker?nodeId=92d1fcbf-1b65-4a79-9a16-690710e90046",
+    "https://www.uber.com/en-LK/newsroom/uber-eats-through-instagram/"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "1.92.76",
+  "version": "1.92.77",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp pass-12 + 5-market love rails + Kyte/Toast/Square/Bento Meta",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Franklin preorder+Shopify; G&TG OpenTable skew; Michaels UberEats+DoorDash leak; Husk Toast gift; Rioja Flavor Dojo. Kyte unavailable banners + Toast Jul 7 2026 + Square 7778 + Bento 412673 \u2014 peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Uber IG rent + FoodBooking CTA EOL + GloriaFood EOL + Hatch pass-2",
+      "lane": "vertical_gtm",
+      "why": "Uber IG Delivery Button still live (rent, not FBE). FoodBooking Start Order CTA EOL Mar 31 2027 \u2014 not FBE. GloriaFood homepage discontinued + Apr 30 2027 \u2014 peer holds. Hatch BI Shop rival \u2014 not FBE",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Aerostack WA Restaurant MCP template",
+      "lane": "cursor_agents",
+      "why": "NEW Cursor/Claude WA restaurant delivery MCP template; Yelp phone stays Active; auth-first; fee pause",
+      "verdict": "watch"
+    },
     {
       "item": "Uber IG rent + GloriaFood FB Start Order + FoodBooking EOL CTA + Hatch",
       "lane": "vertical_gtm",
@@ -3373,7 +3391,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active \u2014 blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_ZcIofoskAlCk (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_5AELl4d2rM0y (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -3408,5 +3426,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T22:35:00Z"
+  "updated_at": "2026-09-04T22:50:00Z"
 }

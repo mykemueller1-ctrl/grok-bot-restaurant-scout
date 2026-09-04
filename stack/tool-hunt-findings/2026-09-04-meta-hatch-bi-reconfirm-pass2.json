@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-meta-hatch-bi-reconfirm-pass2",
+  "lane": "vertical_gtm",
+  "name": "Meta Hatch AI agent Shop rival reconfirm pass-2",
+  "verdict": "watch",
+  "summary": "Composio SEARCH reconfirm: Business Insider Aug 27 2026 memo + Enterprise DNA — Hatch orders food / books tables inside IG/WA; DoorDash+Yelp sandbox. Platform Shop rival to Never86 — not Meta Order Food FBE. peer_count stays 9.",
+  "researched_at": "2026-09-04T21:57:00.000Z",
+  "sources": [
+    "https://www.businessinsider.com/meta-hatch-personal-ai-agent-capabilities-employees-memo-2026-8",
+    "https://enterprisedna.co/resources/news/meta-hatch-consumer-ai-agent-platform-launch-2026/"
+  ]
+}

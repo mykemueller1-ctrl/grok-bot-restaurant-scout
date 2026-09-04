@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-foodbooking-cta-eol-mar-2027-not-fbe-reconfirm-20260904e",
+  "lane": "vertical_gtm",
+  "name": "FoodBooking Facebook Start Order CTA EOL Mar 31 2027 (not FBE) reconfirm 2026-09-04e",
+  "verdict": "watch",
+  "summary": "Live FETCH startfoodbooking.com/facebook-ordering + FAQ: Start Order smart link / CTA path; online ordering platform fully closes Mar 31 2027. CTA-only — not Meta native FBE. Do not inflate peer_count (stays 9). Distinct from GloriaFood FBE EOL Apr 30 2027.",
+  "researched_at": "2026-09-04T21:56:00.000Z",
+  "sources": [
+    "https://startfoodbooking.com/facebook-ordering/",
+    "https://startfoodbooking.com/faq/"
+  ]
+}
