@@ -39,3 +39,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Mem0 + Context still needsAuth (desktop-only).
 - Fresh Instagram Composio connect link issued (10 min TTL).
 - Midweek vertical-rival timer added.
+
+### 2026-09-04 (auth path + dogfood)
+
+- Filed cursor-cloud environment setup actions: Mem0 desktop, Context desktop, Automation+memories, optional MEM0_API_KEY + PINECONE_API_KEY.
+- Added `mcp/mem0.json` + `scripts/mem0-smoke.mjs` for headless Mem0 when key is set.
+- Dogfooded Yelp/Maps enrich: Girl & The Goat Chicago → phone + girlandthegoat.com (Stephanie Izard) — fixture saved. Proves pain→sales / buy-now shop path without Apollo.
+- Mem0/Context still needsAuth until Myke completes desktop/API unlocks.

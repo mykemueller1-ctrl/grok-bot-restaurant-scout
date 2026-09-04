@@ -32,6 +32,12 @@
     "approvals": {
       "file": "mcp/approvals.json",
       "path": "/mcp/approvals"
+    },
+    "mem0": {
+      "file": "mcp/mem0.json",
+      "url": "https://mcp.mem0.ai/mcp",
+      "token_env": "MEM0_API_KEY",
+      "notes": "Optional headless auth via API key; desktop OAuth also OK"
     }
   },
   "deploy": {

@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -70,7 +70,14 @@
     "research_fallback": "Composio COMPOSIO_SEARCH_WEB (Active) when Bright Data/Context unavailable",
     "hunt_memory": "stack/tool-hunt-memory.md (git-backed until Mem0/Automations)",
     "pain_sales_enrich": "Composio Yelp + Google Maps + SEARCH_WEB (Active) \u2014 Apollo/Clay optional",
-    "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts"
+    "pinecone": "MCP ready; needs PINECONE_API_KEY in MCP config before vector upserts",
+    "mem0": {
+      "mcp_file": "mcp/mem0.json",
+      "status": "needsAuth_or_MEM0_API_KEY",
+      "smoke": "scripts/mem0-smoke.mjs",
+      "docs": "docs/DESKTOP-UNLOCKS.md"
+    },
+    "pain_sales_dogfood": "fixtures/tool-hunt/yelp-enrich-girl-goat.json (Girl & The Goat Chicago verified)"
   },
   "competitors": [
     {
@@ -259,7 +266,7 @@
     {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context need Cursor desktop authentication (cloud mcp_auth unavailable)",
-      "action": "See docs/DESKTOP-UNLOCKS.md \u2014 authenticate Mem0 and Context in desktop MCP settings",
+      "action": "Desktop OAuth OR set MEM0_API_KEY (+ Context desktop auth). See docs/DESKTOP-UNLOCKS.md; env setup actions filed.",
       "priority": 1
     },
     {

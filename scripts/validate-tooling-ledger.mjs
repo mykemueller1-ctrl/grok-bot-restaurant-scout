@@ -12,6 +12,8 @@ const ledgerPath = join(root, "stack", "tooling-ledger.json");
 const findingsDir = join(root, "stack", "tool-hunt-findings");
 const agentPath = join(root, "agent", "tool-hunt", "beyond-the-hunt.json");
 const routinePath = join(root, "routines", "tool-hunt-weekly.json");
+const mem0Path = join(root, "mcp", "mem0.json");
+const unlocksPath = join(root, "docs", "DESKTOP-UNLOCKS.md");
 
 const LANES = new Set([
   "cursor_agents",

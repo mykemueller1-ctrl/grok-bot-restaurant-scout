@@ -1,35 +1,42 @@
 # Desktop unlocks — Beyond the Hunt
 
-Cloud agents **cannot** complete interactive MCP auth. Do these so we stay best-in-vertical.
+Cloud agents **cannot** complete interactive MCP OAuth. Close these so we stay best-in-vertical.
 
-## 1. Cursor MCP (Settings → Tools / MCP)
+Environment setup actions were also filed for this run (Mem0, Context, Automation, optional secrets).
 
-| Server | Why | Status from cloud |
-| --- | --- | --- |
-| **Mem0** | Durable cross-session memory | needsAuth |
-| **Context.dev** | Live research redundancy | needsAuth |
-| **Apollo** / **Clay** | Optional lead enrich | needsAuth — **not blocking** (Yelp/Maps/Composio public enrich adopted) |
-| **Pinecone** | Optional vector knowledge | MCP ready but needs `PINECONE_API_KEY` in MCP config |
+## 1. Mem0 (required for goal “close auth gaps”)
 
-Never paste tokens into chat. Mint Pinecone keys at https://app.pinecone.io
+**Option A — Desktop OAuth (easiest)**  
+Cursor Desktop → Settings → MCP → Mem0 → Authenticate
 
-## 2. Cursor Agents
+**Option B — API key (headless / cloud)**  
+1. Create key at https://app.mem0.ai/dashboard/api-keys (`m0-…`)  
+2. Put `MEM0_API_KEY` in Cursor MCP / Codex / cloud secrets (never chat)  
+3. Connector stub: `mcp/mem0.json` → `https://mcp.mem0.ai/mcp` bearer  
+4. Verify: `MEM0_API_KEY=… node scripts/mem0-smoke.mjs`
 
-- **Sync Skills for Cloud Agents** = on
-- Create **Automation** at [cursor.com/automations](https://cursor.com/automations) with **memories on**  
-  Prompt: `cursor_automation.prompt_hint` in `routines/tool-hunt-weekly.json`
+## 2. Context.dev (required)
 
-## 3. Composio social
+Cursor Desktop → Settings → MCP → Context → Authenticate
 
-- **Instagram** (Business/Creator): open the fresh Connect link from the latest agent message (~10 min TTL)
-- **TikTok**: [set up auth-config](https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true) then reconnect
+## 3. Cursor Agents
 
-## Already adopted (no click needed)
+- Sync Skills for Cloud Agents = on  
+- Automation at [cursor.com/automations](https://cursor.com/automations) with memories ON  
+  Prompt: `routines/tool-hunt-weekly.json` → `cursor_automation.prompt_hint`
 
-- Composio `COMPOSIO_SEARCH_WEB` for vertical research
-- Yelp + Google Maps via Composio for **pain→sales** public venue enrich (`lead-shop-enrich`)
-- Git-backed `stack/tool-hunt-memory.md` + weekly/midweek timers
+## 4. Optional
 
-## Done when
+| Item | Why |
+| --- | --- |
+| `PINECONE_API_KEY` | Vector knowledge (MCP ready, key missing) |
+| Instagram Composio | Fresh connect link from agent (~10 min TTL) |
+| TikTok Composio | [Auth-config](https://dashboard.composio.dev/~/org/connect/apps/tiktok?open=true) first |
+| Apollo / Clay | Optional — Yelp/Maps enrich already adopted |
 
-Ledger gaps `desktop-auth-mem0-context`, `automation-tool-hunt`, `skills-sync` verify closed on the next hunt run.
+## Already verified Active (no click)
+
+- Composio SEARCH_WEB  
+- Yelp + Google Maps enrich (dogfood: Girl & The Goat Chicago → phone + girlandthegoat.com)  
+- Weekly + midweek Beyond the Hunt timers  
+- Git memory: `stack/tool-hunt-memory.md`
