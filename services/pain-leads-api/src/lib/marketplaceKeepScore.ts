@@ -25,7 +25,7 @@ const RULES: { re: RegExp; signal: string; w: number }[] = [
   // Dual-run: keep marketplace for discovery, own channel for KEEP guests
   { re: /dual[\s-]?run|run both|marketplaces? for (new|discovery)|discovery.*(direct|first[\s-]?party)/i, signal: "dual_run_marketplace", w: 15 },
   // Website/OS per-order platform fees (BentoBox $0.99/order, UpMenu $1.90 overage) — not marketplace % but still KEEP leak
-  { re: /\$\d+(?:\.\d{2})?\s*(per[\s-]?order|\/\s*order)|per[\s-]?order (fee|charge|service fee|overage)|online order service fee/i, signal: "per_order_platform_fee", w: 15 },
+  { re: /\$\d+(?:\.\d{2})?\s*(per[\s-]?(?:fulfilled\s+)?order|\/\s*order)|per[\s-]?(?:fulfilled\s+)?order (fee|charge|service fee|overage)|online order service fee/i, signal: "per_order_platform_fee", w: 15 },
   // First-party OS still takes a % (Owner Flex 5% / IG checkout 5% / Flipdish ~2–7% direct commission)
   { re: /5%\s*(restaurant|per[\s-]?order|platform|order support|selling|checkout)|2\s*[–\-]\s*7%\s*(per[\s-]?order\s*)?(commission|fee)|restaurant fee per order|order support fee|owner\.com.*5%|\$249.*5%|\$0\.40\s*(per[\s-]?order|minimum)|flipdish.*(2|5|7)\s*%/i, signal: "first_party_pct_fee", w: 15 },
   // Marketplace vendor's own 0% direct channel (DoorDash OO / Uber Webshop / Grubhub Direct)

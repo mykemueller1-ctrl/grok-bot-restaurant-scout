@@ -1,0 +1,76 @@
+{
+  "dogfood_id": "pain-to-sales-outbites-fee-rioja-2026-09-04",
+  "purpose": "Outbites $1/fulfilled-order (Pass guest-paid default; Split/Pay options) under 0% commission claim \u2192 SalesLead DRAFT for Rioja (Denver). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Outbites $1 per fulfilled order (Pass/Split/Pay)",
+    "guest_paid_tech_fee": "Outbites Pass: guests pay $1 platform fee at checkout",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "outbites_per_order_pass_fee",
+    "vendor_id": "outbites",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Rioja",
+      "city": "Denver",
+      "market": "Denver, CO",
+      "yelp_alias": "rioja-denver",
+      "love_signal": "Chef Jennifer Jasinski / Larimer Square cult"
+    },
+    "complaint_summary": "Calibration: Outbites pitches 0% commission OO with $1 per fulfilled order (Pass = guests pay; Split/Pay = restaurant share/absorb). Rioja-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "outbites",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-outbites-per-order.json",
+      "fixtures/tool-hunt/denver-love-brands.json",
+      "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "outbites_per_order_pass_fee",
+    "account_name": "Rioja",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Denver",
+    "market": "Denver, CO",
+    "complaint_thesis": "Outbites markets 0% commission OO while charging $1 per fulfilled order \u2014 Pass defaults so guests pay the platform fee (Split/Pay shift it to the restaurant). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Larimer Square love already prints demand \u2014 close Shop buy-now, not Outbites $1 Pass diner fees on every OO ticket.",
+    "quotes": [
+      "Outbites Pass: guests pay $1 per fulfilled order",
+      "Outbites $1/fulfilled-order (no monthly platform fee)",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Outbites $1/order Pass/Split/Pay platform fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Outbites $1 Pass is still platform rent on '0% commission' OO; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Larimer Square love already prints demand \u2014 close Shop buy-now, not Outbites $1 Pass diner fees on every OO ticket.",
+    "sources": [
+      "https://outbites.com/pricing",
+      "fixtures/tool-hunt/pain-scan-outbites-per-order.json",
+      "https://www.yelp.com/biz/rioja-denver"
+    ],
+    "confidence": 74,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Outbites $1/fulfilled-order Pass guest fee \u2192 SalesLead. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-outbites-per-order.json",
+    "fixtures/tool-hunt/script-draft-rioja-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

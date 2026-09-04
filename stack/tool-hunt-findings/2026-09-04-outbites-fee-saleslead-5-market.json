@@ -1,0 +1,26 @@
+{
+  "finding_id": "outbites-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Outbites $1/fulfilled-order Pass fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain\u2192sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-outbites-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-outbites-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-outbites-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-outbites-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-outbites-fee-rioja.json",
+    "scripts/validate-outbites-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-outbites-per-order.json",
+    "https://outbites.com/pricing"
+  ],
+  "what_it_does": "Outbites $1/fulfilled-order with Pass guest-paid default (Split/Pay options) under 0% commission \u2192 SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "Outbites pitches no % commission + no monthly fee while routing a flat $1/order (often to the guest via Pass).",
+  "what_we_use_today": "validate-outbites-fee-dogfood \u22655; guest_paid + per_order signals; scorer accepts 'per fulfilled order'",
+  "gap": "Confirm live Pass default in product; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Outbites $1 Pass SalesLead dogfoods match five love markets; strong_keep 28.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

@@ -150,6 +150,7 @@ jobs:
           test -f scripts/validate-menufy-fee-dogfood.mjs
           test -f scripts/validate-zayos-fee-dogfood.mjs
           test -f scripts/validate-247waiter-fee-dogfood.mjs
+          test -f scripts/validate-outbites-fee-dogfood.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
@@ -169,6 +170,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-scan-menufy-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-zayos-guest-fee.json
           test -f fixtures/tool-hunt/pain-scan-247waiter-per-order.json
+          test -f fixtures/tool-hunt/pain-scan-outbites-per-order.json
           test -f fixtures/tool-hunt/pain-scan-upmenu-overage.json
           test -f fixtures/tool-hunt/pain-scan-doordash-online-ordering.json
           test -f fixtures/tool-hunt/pain-scan-uber-grubhub-direct.json
@@ -230,6 +232,11 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-247waiter-fee-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-franklin.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-girl-goat.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-husk.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-michaels-genuine.json
+          test -f fixtures/tool-hunt/pain-to-sales-outbites-fee-rioja.json
           test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
           test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
@@ -249,7 +256,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs 'DevourNow customers pay $2.99 per order tech fee under 0% commission — restaurant owners KEEP less vs DoorDash 25%' | grep -q guest_paid_platform_fee
           node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/validate-keep-grader-dogfood.mjs | grep -q '"keep_grader_dogfoods": 5'
-          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 27'
+          node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 28'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 5'
           node scripts/validate-market-coverage.mjs | grep -q '"markets": 5'
@@ -264,6 +271,7 @@ jobs:
           node scripts/validate-menufy-fee-dogfood.mjs | grep -q '"menufy_fee_dogfoods": 5'
           node scripts/validate-zayos-fee-dogfood.mjs | grep -q '"zayos_fee_dogfoods": 5'
           node scripts/validate-247waiter-fee-dogfood.mjs | grep -q '"waiter247_fee_dogfoods": 5'
+          node scripts/validate-outbites-fee-dogfood.mjs | grep -q '"outbites_fee_dogfoods": 5'
           node scripts/tool-hunt-brief.mjs | grep -q 'Beyond the Hunt'
           # unlock exits 2 while blocked, 0 when READY — bash -e must not abort on 2
           if node scripts/unlock-beyond-the-hunt.mjs; then

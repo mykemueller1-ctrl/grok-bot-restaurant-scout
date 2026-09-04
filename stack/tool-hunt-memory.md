@@ -406,3 +406,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-247waiter-per-order.json ($45/mo + restaurant-paid $0.25/order transmission under no-commission OO) → strong_keep 27.
 - Added pain-to-sales-247waiter-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-247waiter-fee-dogfood ≥5.
 - Ledger v1.59.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Outbites $1/fulfilled-order Pass SalesLead)
+
+- Widened per_order_platform_fee for “per fulfilled order”; pain-scan-outbites-per-order.json → strong_keep 28.
+- Added pain-to-sales-outbites-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-outbites-fee-dogfood ≥5.
+- Promoted Outbites watch→adopt. Ledger v1.60.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
