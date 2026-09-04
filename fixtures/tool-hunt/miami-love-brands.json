@@ -30,9 +30,10 @@
       },
       "buy_now_path": {
         "verified_at": "2026-09-04",
+        "reverified_at": "2026-09-04T19:38Z",
         "website": "https://michaelsgenuine.com/",
         "rails": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
-        "note": "Official site pushes UberEats/DoorDash for delivery — marketplace leak on love brand; Shop buy-now displaces rent",
+        "note": "Official site Order Delivery still lists UberEats + DoorDash — marketplace leak on love brand; Shop buy-now displaces rent",
         "sources": [
           "https://michaelsgenuine.com/"
         ]

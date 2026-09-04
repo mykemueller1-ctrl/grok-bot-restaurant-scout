@@ -1,0 +1,15 @@
+{
+  "finding_id": "michaels-brand-site-leak-reverify-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Michael's Genuine brand-site marketplace leak re-verified live",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Live re-fetch michaelsgenuine.com Order Delivery still lists UberEats + DoorDash beside takeout CTAs. Confirms brand_site_marketplace_leak teach + miami buy_now_path rails. Yelp details still 4.0★ / Design District. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://michaelsgenuine.com/",
+    "fixtures/tool-hunt/miami-love-brands.json",
+    "fixtures/tool-hunt/pain-scan-brand-site-marketplace-leak.json"
+  ],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

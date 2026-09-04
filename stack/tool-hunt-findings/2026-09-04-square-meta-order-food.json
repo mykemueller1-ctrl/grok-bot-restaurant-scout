@@ -1,0 +1,13 @@
+{
+  "finding_id": "square-online-meta-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Square Online Meta Order Food (FB/IG + Stories)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Square Support primary: Square Dashboard Channels → Facebook Food Ordering connects FB/IG business profiles; Order Food buttons auto-added; Stories Order Food stickers supported. Massive US POS/OO Meta peer beside Toast/BentoBox. Watch only — fee catalog pause (Square Online Dining already has pain-shopper).",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online"
+  ],
+  "not_this": "Not fee dogfood. Not TikTok Shop-native. Not forecasting."
+}

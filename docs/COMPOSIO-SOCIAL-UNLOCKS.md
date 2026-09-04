@@ -48,6 +48,7 @@ IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not Tik
 - **Toast Online Ordering** — Instagram Action Button Order food → select Toast as partner; Stories Food Orders sticker; Facebook Start Order ([Toast Support](https://support.toasttab.com/en/article/Posting-Your-Online-Ordering-or-E-Gift-Card-Purchase-Link-on-Instagram-and-Facebook))
 - **Flipdish** — Instagram Order Now / Food Orders sticker → Flipdish bounce URL (already in fee catalog for €0.50+%)
 - **Kyte** — Meta Business Extension Order Food on FB/IG + Stories stickers → Kyte online catalog ([Kyte FBE](https://www.kyteapp.com/apps/fbe))
+- **Square Online** — Dashboard Channels → Facebook Food Ordering; Order Food buttons + Stories stickers → Square website ([Square Support](https://squareup.com/help/us/en/article/7778-add-food-ordering-buttons-to-facebook-and-instagram-with-square-online))
 
 Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close and **RAY** commission-free Instagram delivery channel (Order Food/Reserve + DM automation — [RAY blog](https://blog.rayapp.ai/en/delivery-without-commission/instagram-delivery-channel-restaurants/)) — adjacent social intake, not Meta FBE peers.
 

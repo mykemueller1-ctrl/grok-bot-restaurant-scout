@@ -52,6 +52,20 @@ for (const f of files) {
     console.error(`validate-social-shop-dogfood: ${f} complaint_thesis must cite live buy_now_path / order-rail wedge`);
     process.exit(1);
   }
+  const marketplaceRails = rails.filter((r) => /ubereats|doordash|grubhub/i.test(String(r)));
+  if (marketplaceRails.length) {
+    const signals = data.pain_lead?.opportunity_signals || [];
+    if (!signals.includes("brand_site_marketplace_leak")) {
+      console.error(
+        `validate-social-shop-dogfood: ${f} marketplace rails ${marketplaceRails.join(",")} require opportunity_signals brand_site_marketplace_leak`
+      );
+      process.exit(1);
+    }
+    if (!/marketplace leak|brand.?site|official (site|homepage)|pushes? (ubereats|doordash)|ubereats.*doordash|doordash.*ubereats/i.test(lead.complaint_thesis)) {
+      console.error(`validate-social-shop-dogfood: ${f} complaint_thesis must name brand-site marketplace leak`);
+      process.exit(1);
+    }
+  }
   const forbidBlob = JSON.stringify([data.notes, lead.notes, data.purpose, data.never].filter(Boolean));
   if (!/forecast/i.test(forbidBlob)) {
     console.error(`validate-social-shop-dogfood: ${f} must explicitly forbid forecasting in notes/purpose`);

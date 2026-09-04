@@ -785,3 +785,11 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **RAY** (watch): IG commission-free delivery channel (Order Food/Reserve + DM automation) vs marketplace 20–35%. Finding: `2026-09-04-ray-instagram-delivery-channel.json`.
 - Status printer `keep_teach`: `strong_keep` 64 + `brand_site_marketplace_leak: true`. CI greps.
 - Instagram reconnect link refreshed (`lk_JYyUTk9S5ND5`, ~10 min). Ledger v1.92.28. Auth still blocked.
+
+### 2026-09-04 (Michaels leak re-verify + Square Meta Order Food)
+
+- Live re-fetch: michaelsgenuine.com Order Delivery still lists UberEats + DoorDash — confirms `brand_site_marketplace_leak`.
+- `validate-social-shop-dogfood.mjs` now requires `brand_site_marketplace_leak` when rails include UberEats/DoorDash.
+- **Square Online** (watch): Support primary — Facebook Food Ordering → Order Food buttons + Stories stickers. Finding: `2026-09-04-square-meta-order-food.json`.
+- **Zeew** (watch tertiary): Facebook Order Now white-label. Finding: `2026-09-04-zeew-facebook-order-now.json`.
+- Ledger v1.92.29. Auth still blocked for unlock READY.
