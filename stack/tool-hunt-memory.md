@@ -660,3 +660,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Klikit primary guide: TikTok Shop typically **5–10%** GMV vs **15–30%** delivery — KEEP-math peer to Shop ~6%; **watch only** (not fee dogfood). Finding: `2026-09-04-klikit-tiktok-shop-keep-math.json`. Ledger v1.92.7.
 - Fresh Instagram link: https://connect.composio.dev/link/lk_XmG82QNx7g4Y (~10 min).
 - Still blocked: `MEM0_API_KEY` + `CONTEXT_DEV_API_KEY` → unlock READY.
+
+### 2026-09-04 (5-market Yelp live + Deliverect watch)
+
+- Live Yelp details: Franklin ATX 6477 · Michaels MIA 2084 · Husk BNA 1987 · Rioja DEN 2914 (+ prior G&TG CHI 10731). Finding: `2026-09-04-yelp-5market-live-love-seeds.json`.
+- Deliverect Social Media Ordering = IG/FB/WA Order Food button rival (watch). Finding: `2026-09-04-deliverect-ig-order-food.json`. Klikit US Shop guide added to competitor sources.
+- Ledger v1.92.8. Fee catalog pause + Mem0/Context auth-first unchanged.

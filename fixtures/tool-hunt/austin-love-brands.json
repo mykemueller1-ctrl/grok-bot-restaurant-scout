@@ -17,9 +17,16 @@
       "yelp_alias": "franklin-barbecue-austin",
       "phone": "+15126531187",
       "rating": 4.5,
-      "review_count": 6478,
+      "review_count": 6477,
       "love_signal": "National cult BBQ / line culture / chef-driven",
-      "never86_fit": "Viral demand → buy-now / merch/SKU packs (not marketplace delivery)"
+      "never86_fit": "Viral demand → buy-now / merch/SKU packs (not marketplace delivery)",
+      "live_yelp": {
+        "verified_at": "2026-09-04",
+        "rating": 4.5,
+        "review_count": 6477,
+        "price": "$$$",
+        "transactions": ["delivery"]
+      }
     },
     {
       "name": "Intero Restaurant",
@@ -41,6 +48,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES + YELP_GET_BUSINESS_DETAILS 2026-09-04",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Franklin Barbecue 6477 reviews",
   "status": "calibration_only",
   "notes": "Yelp details responses omitted website field; use Maps/web second pass when contacting. Prefer cult/chef signal over generic high-rating food trucks."
 }

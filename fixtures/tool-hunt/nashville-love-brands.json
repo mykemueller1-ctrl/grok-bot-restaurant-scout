@@ -11,7 +11,14 @@
       "review_count": 1987,
       "transactions": ["delivery"],
       "love_signal": "Sean Brock Southern destination / high UGC volume / Rutledge St cult",
-      "never86_fit": "Chef-loved Southern brand → TikTok/IG shoppable SKUs vs marketplace delivery rent"
+      "never86_fit": "Chef-loved Southern brand → TikTok/IG shoppable SKUs vs marketplace delivery rent",
+      "live_yelp": {
+        "verified_at": "2026-09-04",
+        "rating": 3.9,
+        "review_count": 1987,
+        "price": "$$$",
+        "transactions": ["delivery"]
+      }
     },
     {
       "name": "The Catbird Seat",
@@ -45,6 +52,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES (Husk / Catbird Seat / Bastion / Henrietta Red) 2026-09-04",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Husk Nashville 1987 reviews",
   "status": "calibration_only",
   "notes": "Prefer chef/cult narrative + review volume. Bastion/Noko watched but skipped for seed (lower volume / less clear buy-now SKU path)."
 }

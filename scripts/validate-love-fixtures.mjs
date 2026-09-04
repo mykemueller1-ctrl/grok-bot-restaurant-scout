@@ -43,7 +43,22 @@ for (const f of files) {
       process.exit(1);
     }
   }
-  report.push({ file: f, market, brands: brands.length });
+  if (!data.live_proof || typeof data.live_proof !== "string") {
+    console.error(`validate-love-fixtures: ${f} missing live_proof string (Composio Yelp verify)`);
+    process.exit(1);
+  }
+  const primary = brands.find((b) => b.live_yelp);
+  if (!primary?.live_yelp?.review_count || !primary.live_yelp.verified_at) {
+    console.error(`validate-love-fixtures: ${f} needs ≥1 brand with live_yelp.review_count + verified_at`);
+    process.exit(1);
+  }
+  report.push({
+    file: f,
+    market,
+    brands: brands.length,
+    live_primary: primary.name,
+    live_reviews: primary.live_yelp.review_count,
+  });
 }
 
 console.log(JSON.stringify({ ok: true, markets: report.length, report }, null, 2));

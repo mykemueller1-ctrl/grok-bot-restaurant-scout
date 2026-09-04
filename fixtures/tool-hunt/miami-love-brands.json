@@ -20,7 +20,14 @@
       "review_count": 2084,
       "transactions": ["pickup"],
       "love_signal": "Chef Michael Schwartz / Design District cult / first-party pickup present",
-      "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard"
+      "never86_fit": "Love-proven + pickup already first-party → Shop buy-now onboard",
+      "live_yelp": {
+        "verified_at": "2026-09-04",
+        "rating": 4.0,
+        "review_count": 2084,
+        "price": "$$$",
+        "transactions": ["pickup"]
+      }
     },
     {
       "name": "Carbone",
@@ -43,6 +50,7 @@
     }
   ],
   "source": "Yelp Composio YELP_SEARCH_BUSINESSES term=chef location=Miami, FL sort=review_count 2026-09-04",
+  "live_proof": "Composio YELP_GET_BUSINESS_DETAILS 2026-09-04 — Michael's Genuine 2084 reviews",
   "status": "calibration_only",
   "notes": "Skipped closed venues and generic name-match 'chef' hits without cult signal. Prefer chef/cult narrative + review volume."
 }

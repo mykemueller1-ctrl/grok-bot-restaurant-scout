@@ -1,5 +1,5 @@
 {
-  "version": "1.92.7",
+  "version": "1.92.8",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -80,7 +80,7 @@
     },
     "pain_sales_dogfood": "multi-market KEEP→SalesLead + keep-grader CHI/ATX/MIA/BNA/DEN (girl-goat/franklin/michaels/husk/rioja)",
     "pain_scan_fallback": "COMPOSIO_SEARCH_WEB + X.search_posts_all (toast-doordash + marketplace-keep + effective-cost + menu-markup + dual-run)",
-    "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json (+ live_yelp G&TG 10731) + austin + miami + nashville + denver-love-brands.json (Yelp Active)",
+    "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
@@ -372,13 +372,14 @@
     {
       "name": "Klikit",
       "lane": "vertical_gtm",
-      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); primary guide cites TikTok Shop instant delivery typically 5–10% of GMV vs 15–30% traditional delivery",
+      "stack": "APAC restaurant POS with native TikTok Shop order/menu sync (+ Grab/Gojek/Foodpanda); primary APAC guide cites TikTok Shop typically 5–10% of GMV vs 15–30% delivery; also publishes US TikTok Shop food-delivery GTM guide (seller.tiktok.com + POS aggregation)",
       "memory": "n/a (ops middleware)",
-      "edge": "TikTok Shop F&B middleware — KEEP-math peer to Never86 Shop ~6% buy-now vs DoorDash rent; APAC-only today; watch US expansion. Not a fee-dogfood target (catalog pause).",
+      "edge": "TikTok Shop F&B middleware — KEEP-math peer to Never86 Shop ~6% buy-now vs DoorDash rent; APAC native + US GTM content; watch US expansion. Not a fee-dogfood target (catalog pause).",
       "updated": "2026-09-04",
       "sources": [
         "https://klikit.io/en/integrations/tiktok-shop",
         "https://klikit.io/en/learn/tiktok-shop-food-delivery",
+        "https://klikit.io/en/learn/tiktok-shop-food-delivery-us",
         "https://klikit.io/en/learn/tiktok-shop-integration-guide-restaurants-apac",
         "https://klikit.io/en/learn/tiktok-shop-vs-grabfood-foodpanda-restaurants",
         "https://klikit.io/en/help/how-will-you-bill-me-for-the-use-of-klikit"
@@ -465,6 +466,19 @@
       "updated": "2026-09-04",
       "sources": [
         "https://www.orderpost.store/"
+      ]
+    },
+    {
+      "name": "Deliverect",
+      "lane": "vertical_gtm",
+      "stack": "Social Media Ordering / Direct Suite — Instagram·Facebook·WhatsApp Order Food profile button + story stickers → first-party menu checkout (Deliverect Pay)",
+      "memory": "n/a (ops middleware)",
+      "edge": "Meta-native love→buy-now rival (IG Order Food); not TikTok Shop; watch GTM only — fee catalog pause",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.deliverect.com/en/social-media-ordering",
+        "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+        "https://help.instagram.com/220950502341449/?helpref=related_articles"
       ]
     },
     {
@@ -1163,6 +1177,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Live Yelp 5-market morning-scan love seeds (CHI/ATX/MIA/BNA/DEN)",
+      "lane": "vertical_gtm",
+      "why": "Primary love brands live-verified via Composio Yelp details — morning-scan unblocked without IG/TikTok",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Deliverect Social Media Ordering (IG/FB/WA Order Food)",
+      "lane": "vertical_gtm",
+      "why": "Meta Order Food button + story stickers → first-party checkout; love→buy-now rival on IG rails (not TikTok Shop); watch only — fee catalog pause",
+      "verdict": "watch"
+    },
     {
       "item": "Live Yelp CHI morning-scan love proof (G&TG 10731 reviews)",
       "lane": "vertical_gtm",
@@ -2313,5 +2339,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T18:45:00Z"
+  "updated_at": "2026-09-04T18:50:00Z"
 }

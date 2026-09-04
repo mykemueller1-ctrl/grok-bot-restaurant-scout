@@ -1,0 +1,15 @@
+{
+  "finding_id": "deliverect-ig-order-food-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Deliverect Social Media Ordering (IG Order Food button)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Deliverect Direct Suite powers Instagram/Facebook/WhatsApp Order Food profile button + story stickers → first-party menu checkout. Sharp love→buy-now rival on Meta rails (not TikTok Shop). Watch GTM only — not fee dogfood; catalog pause stands.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.deliverect.com/en/social-media-ordering",
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://help.instagram.com/220950502341449/?helpref=related_articles"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting. Not TikTok Shop-native."
+}

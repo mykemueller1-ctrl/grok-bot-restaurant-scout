@@ -1,0 +1,25 @@
+{
+  "finding_id": "yelp-5market-live-love-seeds-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Live Yelp 5-market morning-scan love seeds verified",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Composio YELP_GET_BUSINESS_DETAILS reconfirmed primary love seeds across CHI/ATX/MIA/BNA/DEN. Morning-scan love→buy-now calibration is live without Instagram/TikTok.",
+  "researched_at": "2026-09-04",
+  "live_proof": {
+    "chi": {"alias": "girl-and-the-goat-chicago", "rating": 4.4, "review_count": 10731, "phone": "+13124926262"},
+    "atx": {"alias": "franklin-barbecue-austin", "rating": 4.5, "review_count": 6477, "phone": "+15126531187"},
+    "mia": {"alias": "michaels-genuine-food-and-drink-miami", "rating": 4.0, "review_count": 2084, "phone": "+13056760894"},
+    "bna": {"alias": "husk-nashville", "rating": 3.9, "review_count": 1987, "phone": "+16152566565"},
+    "den": {"alias": "rioja-denver", "rating": 4.3, "review_count": 2914, "phone": "+13038202282"}
+  },
+  "urls": [
+    "fixtures/tool-hunt/chicago-love-brands.json",
+    "fixtures/tool-hunt/austin-love-brands.json",
+    "fixtures/tool-hunt/miami-love-brands.json",
+    "fixtures/tool-hunt/nashville-love-brands.json",
+    "fixtures/tool-hunt/denver-love-brands.json",
+    "skills/morning-scan.md"
+  ],
+  "not_this": "Not fee dogfood. Not forecasting. IG/TikTok still optional UGC upgrade."
+}
