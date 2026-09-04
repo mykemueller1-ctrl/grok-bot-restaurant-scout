@@ -813,3 +813,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Ressto + FoodBooking as Meta-adjacent Order Food / Start Order CTA linkers — **no** `meta_order_food_peer_count` bump (still 9; need FBE primary).
 - Watched TextOrder AI DM ordering as love→buy-now in-channel rival. Findings under `stack/tool-hunt-findings/2026-09-04-*`.
 - Instagram reconnect: `lk_PmzEO0vowyQV` (~10 min). Ledger v1.92.32. Auth still blocked.
+
+### 2026-09-04 (Meta FBE peer set reconfirm + Tablevibe CTA)
+
+- Reconfirmed Meta Order Food FBE-class peer set still **9** — no new primary partner. Finding: `2026-09-04-meta-fbe-peer-set-reconfirm.json`.
+- Watched Tablevibe as Order Food website-link CTA only. Finding: `2026-09-04-tablevibe-facebook-order-food.json`.
+- Ledger v1.92.33. Auth still blocked for unlock READY.

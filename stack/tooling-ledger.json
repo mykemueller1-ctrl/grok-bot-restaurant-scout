@@ -1,5 +1,5 @@
 {
-  "version": "1.92.32",
+  "version": "1.92.33",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1244,6 +1244,18 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Meta Order Food FBE peer set reconfirmed (count 9)",
+      "lane": "vertical_gtm",
+      "why": "BentoBox/Kyte/Deliverect/Zyda/ChatFood/Square/Flipdish (+ Toast OO + GloriaFood) still the FBE-class set; no new primary partner; Tablevibe CTA-only",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Tablevibe Facebook Order Food CTA (Meta-adjacent)",
+      "lane": "vertical_gtm",
+      "why": "Order Food / Start Order \u2192 Website Link to tablevibe shop \u2014 CTA not FBE; no peer_count bump",
+      "verdict": "watch"
+    },
     {
       "item": "Girl & The Goat reservation_skew rails re-verified live",
       "lane": "vertical_gtm",
