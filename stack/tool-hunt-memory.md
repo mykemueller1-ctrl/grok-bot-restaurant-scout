@@ -538,3 +538,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary [deonde.co/pricing](https://deonde.co/pricing.shtml): Express **$0.10**/order overage beyond included monthly caps (Pro 2,000 / Premium 5,000).
 - pain-scan-deonde-overage.json → strong_keep **52**; pain-to-sales-deonde-fee-* ×5; validate-deonde-fee-dogfood ≥5. UpMenu-class overage teach.
 - Ledger v1.81.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Uber Webshop 2.5%+$0.29 processing SalesLead)
+
+- Primary [merchants.ubereats.com/us/en/pricing](https://merchants.ubereats.com/us/en/pricing/): Webshop **2.5%** order processing fee + **$0.29**/order under commission-free claim.
+- Widened `first_party_pct_fee` for 2.5% order processing / 2.5%+$0.29.
+- pain-scan-uber-webshop-fee.json → strong_keep **53**; pain-to-sales-uber-webshop-fee-* ×5; validate-uber-webshop-fee-dogfood ≥5. Distinct from DoorDash OO rate-unpublished processing.
+- Ledger v1.82.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

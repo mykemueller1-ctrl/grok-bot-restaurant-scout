@@ -1,5 +1,5 @@
 {
-  "version": "1.81.0",
+  "version": "1.82.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -126,7 +126,8 @@
     "chownow_catering_fee_dogfood_gate": "scripts/validate-chownow-catering-fee-dogfood.mjs (ChowNow Catering 5% direct \u2192 SalesLead \u22655 markets)",
     "onestoporder_fee_dogfood_gate": "scripts/validate-onestoporder-fee-dogfood.mjs (1 Stop Order Free 2% / Pro 1% guest convenience fee \u2192 SalesLead \u22655 markets)",
     "ordering_tools_fee_dogfood_gate": "scripts/validate-ordering-tools-fee-dogfood.mjs (Ordering.Tools Starter 5% / Pro 3% \u2192 SalesLead \u22655 markets; EU thematic)",
-    "deonde_fee_dogfood_gate": "scripts/validate-deonde-fee-dogfood.mjs (Deonde Express $0.10/order overage \u2192 SalesLead \u22655 markets)"
+    "deonde_fee_dogfood_gate": "scripts/validate-deonde-fee-dogfood.mjs (Deonde Express $0.10/order overage \u2192 SalesLead \u22655 markets)",
+    "uber_webshop_fee_dogfood_gate": "scripts/validate-uber-webshop-fee-dogfood.mjs (Uber Webshop 2.5%+$0.29 processing \u2192 SalesLead \u22655 markets)"
   },
   "competitors": [
     {
@@ -892,11 +893,12 @@
     {
       "name": "Uber Webshop",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct OO via restaurant website/social into Uber delivery; Marketplace still ~20\u201330% (Lite raised Mar 2026)",
+      "stack": "Commission-free direct OO claim via restaurant website/social; published Webshop processing 2.5% + $0.29/order; Marketplace still ~20\u201330% (Lite raised Mar 2026)",
       "memory": "Uber Eats Manager + Webshop",
-      "edge": "Marketplace vendor 0% direct twin of DoorDash OO \u2014 dual-run KEEP teach",
+      "edge": "Marketplace vendor '0% commission' direct still takes 2.5%+$0.29 processing \u2014 first_party KEEP teach vs DoorDash OO rate-unpublished",
       "updated": "2026-09-04",
       "sources": [
+        "https://merchants.ubereats.com/us/en/pricing/",
         "https://merchants.ubereats.com/us/en/services/online-ordering"
       ]
     },
@@ -1064,6 +1066,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Uber Webshop 2.5%+$0.29 processing SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN Uber Webshop 2.5% order processing + $0.29/order (merchants.ubereats.com/us/en/pricing) under commission-free claim \u2192 SalesLead vs Shop ~6%; first_party_pct_fee widened; validate-uber-webshop-fee-dogfood \u22655; strong_keep 53",
+      "verdict": "adopt"
+    },
     {
       "item": "Deonde Express $0.10 overage SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",

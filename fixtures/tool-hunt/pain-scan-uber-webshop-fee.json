@@ -1,0 +1,20 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Uber Webshop 2.5% order processing fee + $0.29 per order KEEP pain",
+  "hits": [
+    {
+      "url": "https://merchants.ubereats.com/us/en/pricing/",
+      "posted_at": "2026-09-04",
+      "handle": "uber_webshop_pricing",
+      "snippet": "Uber Webshop markets commission-free direct OO then charges a 2.5% order processing fee + $0.29 per order vs DoorDash Marketplace 25% KEEP; restaurant owners still pay first-party platform rent on 'direct' website/social tickets",
+      "pain_id": "uber_webshop_2_5pct_029",
+      "score": 100,
+      "never86_angle": "Uber Webshop 2.5%+$0.29 processing is still first_party/per_order platform rent under a commission-free claim — Never86 Shop ~6% buy-now keeps love→buy-now math honest vs Marketplace 15–30%"
+    }
+  ],
+  "notes": "Primary: merchants.ubereats.com/us/en/pricing Webshop — 2.5% order processing fee + $0.29 per order. Distinct from marketplace_direct_zero 0% commission narrative. Skip forecasting."
+}
