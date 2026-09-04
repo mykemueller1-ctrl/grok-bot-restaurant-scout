@@ -1,0 +1,21 @@
+{
+  "finding_id": "2026-09-04-yoyumm-menuro-flipdish-gloriafood",
+  "lane": "vertical_gtm",
+  "name": "YoYumm + Menuro + Flipdish GloriaFood migrate wave",
+  "verdict": "watch",
+  "summary": "YoYumm Jul 23 2026 migration guide + Menuro May 30 2026 alternatives + Flipdish UK GloriaFood alternative all cite Apr 30 2027 shutdown. Flipdish already Meta FBE peer (count 9); YoYumm/Menuro stay GloriaFood successor watches; fee pause.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-yoyumm-menuro-flipdish-gloriafood",
+  "source_urls": [
+    "https://www.yoyumm.com/blog/gloriafood-shutting-down-alternative-migration-guide/",
+    "https://menuro.io/blog/gloriafood-shutting-down-2027/",
+    "https://www.flipdish.com/gb/resources/blog/flipdish-best-gloriafood-alternative"
+  ],
+  "memory_tags": [
+    "yoyumm",
+    "menuro",
+    "flipdish",
+    "gloriafood-migrate",
+    "eol-2027-04-30"
+  ]
+}

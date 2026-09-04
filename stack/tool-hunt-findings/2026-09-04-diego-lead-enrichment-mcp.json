@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-diego-lead-enrichment-mcp",
+  "lane": "skills_knowledge",
+  "name": "Lead Enrichment MCP (Diego-Costa-Tech)",
+  "verdict": "watch",
+  "summary": "Diego-Costa-Tech/lead-enrichment-mcp: live Workers MCP API for B2B firmographic/technographic enrich with confidence scores. Cursor skills peer; Yelp phone stays Active primary; auth-first.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-diego-lead-enrichment-mcp",
+  "source_urls": [
+    "https://github.com/Diego-Costa-Tech/lead-enrichment-mcp"
+  ],
+  "memory_tags": [
+    "lead-enrichment-mcp",
+    "cursor",
+    "b2b-enrich",
+    "workers"
+  ]
+}

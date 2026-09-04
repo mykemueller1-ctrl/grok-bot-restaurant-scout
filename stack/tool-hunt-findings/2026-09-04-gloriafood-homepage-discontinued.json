@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-gloriafood-homepage-discontinued",
+  "lane": "vertical_gtm",
+  "name": "GloriaFood homepage discontinued banner",
+  "verdict": "adopt",
+  "summary": "gloriafood.com homepage still banners: discontinued / no longer accepting new signups while supporting existing customers. Reinforces EOL primary Apr 30 2027 + Meta peer stays in set of 9 until sunset.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-gloriafood-homepage-discontinued",
+  "source_urls": [
+    "https://www.gloriafood.com/"
+  ],
+  "memory_tags": [
+    "gloriafood",
+    "eol-2027-04-30",
+    "peer-count-9"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-ontabee-facebook-ordering-reconfirm",
+  "lane": "vertical_gtm",
+  "name": "Ontabee Facebook Ordering (CTA reconfirm)",
+  "verdict": "watch",
+  "summary": "ontabee.com/facebook-ordering still pitches Facebook Order Food button integration — CTA/linker class, not Meta Order Food FBE peer. Do not bump peer_count.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-ontabee-facebook-ordering-reconfirm",
+  "source_urls": [
+    "https://www.ontabee.com/facebook-ordering"
+  ],
+  "memory_tags": [
+    "ontabee",
+    "cta-only",
+    "facebook-ordering"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-google-maps-scraper-mcp",
+  "lane": "skills_knowledge",
+  "name": "Google Maps Scraper MCP (khadinakbarlabs)",
+  "verdict": "watch",
+  "summary": "khadinakbarlabs/google-maps-scraper-mcp: Cursor/Claude MCP to search Maps businesses and extract reviews/emails/contacts for local lead gen. Venue enrich peer beside Yelp Active; auth-first before adopt.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-google-maps-scraper-mcp",
+  "source_urls": [
+    "https://github.com/khadinakbarlabs/google-maps-scraper-mcp"
+  ],
+  "memory_tags": [
+    "google-maps-scraper-mcp",
+    "cursor",
+    "venue-enrich",
+    "skills"
+  ]
+}

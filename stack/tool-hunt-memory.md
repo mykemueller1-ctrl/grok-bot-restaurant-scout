@@ -1087,3 +1087,14 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched **uEngage** WA ordering + **RevYoMe** QR→WA 0%. Findings: `2026-09-04-uengage-whatsapp-ordering.json`, `2026-09-04-revyome-whatsapp-qr.json`.
 - Watched **B2B Enrichment MCP** + **dylanottinger/gtm-mcp-server**. Findings: `2026-09-04-b2b-enrichment-mcp-cursor.json`, `2026-09-04-gtm-mcp-server-dylan.json`.
 - Ledger v1.92.70. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Michaels/G&TG love + GloriaFood EOL wave + MenuEz)
+
+- Adopted Michaels **brand_site_marketplace_leak** pass-7 — UberEats+DoorDash still on miami. Finding: `2026-09-04-michaels-leak-pass7.json`.
+- Adopted G&TG **reservation_skew** pass-6 — Make a reservation only. Finding: `2026-09-04-gtg-reservation-skew-pass6.json`.
+- Adopted GloriaFood homepage discontinued banner — EOL primary Apr 30 2027; peer_count stays 9. Finding: `2026-09-04-gloriafood-homepage-discontinued.json`.
+- Watched Enacton/YoYumm/Menuro/Flipdish GloriaFood migrate wave. Finding: `2026-09-04-enacton-gloriafood-shutdown.json`, `2026-09-04-yoyumm-menuro-flipdish-gloriafood.json`.
+- Watched **MenuEz** link hub + Ontabee FB Ordering CTA. Findings: `2026-09-04-menuez-restaurant-link-hub.json`, `2026-09-04-ontabee-facebook-ordering-reconfirm.json`.
+- Watched Maps Scraper MCP + Diego lead-enrichment MCP. Findings: `2026-09-04-google-maps-scraper-mcp.json`, `2026-09-04-diego-lead-enrichment-mcp.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_G6w_FV3BZ9D3 (~10 min).
+- Ledger v1.92.71. Auth still blocked for unlock READY.

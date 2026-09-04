@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-gtg-reservation-skew-pass6",
+  "lane": "vertical_gtm",
+  "name": "G&TG reservation_skew pass-6",
+  "verdict": "adopt",
+  "summary": "girlandthegoat.com/chicago still Make a reservation only — hours/address/contact; no first-party OO CTA. reservation_skew_no_buy_now love teach holds (Yelp 10731).",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-gtg-reservation-skew-pass6",
+  "ledger_version": "1.92.71",
+  "source_urls": [
+    "https://girlandthegoat.com/chicago"
+  ],
+  "teach": {
+    "label": "reservation_skew_no_buy_now",
+    "pass": 6
+  }
+}

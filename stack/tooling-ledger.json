@@ -1,5 +1,5 @@
 {
-  "version": "1.92.70",
+  "version": "1.92.71",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,30 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Michaels leak pass-7 + G&TG skew pass-6 + GloriaFood homepage discontinued",
+      "lane": "vertical_gtm",
+      "why": "MIA UberEats+DoorDash still on brand site; CHI reservation-only; gloriafood.com discontinued banner — love teaches + EOL hold; peer_count stays 9",
+      "verdict": "adopt"
+    },
+    {
+      "item": "YoYumm + Menuro + Flipdish + Enacton GloriaFood EOL wave",
+      "lane": "vertical_gtm",
+      "why": "Multiple Jul–Aug 2026 migrate blogs cite Apr 30 2027; Flipdish already FBE peer; YoYumm/Menuro/Enacton watches; fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "MenuEz link hub + Ontabee Facebook Ordering CTA",
+      "lane": "vertical_gtm",
+      "why": "NEW MenuEz IG/WA hub (linkboo-class); Ontabee FB Order Food CTA reconfirm — not FBE; no peer_count bump",
+      "verdict": "watch"
+    },
+    {
+      "item": "Google Maps Scraper MCP + Diego lead-enrichment MCP",
+      "lane": "cursor_agents",
+      "why": "Venue Maps MCP + Workers B2B enrich MCP — Cursor skills peers; Yelp phone stays Active; auth-first",
+      "verdict": "watch"
+    },
     {
       "item": "Yelp love pass-7 (G&TG 10731 / Rioja 2914) + Ordering.co GloriaFood 2026",
       "lane": "vertical_gtm",
@@ -3259,7 +3283,7 @@
     {
       "id": "composio-instagram",
       "gap": "Instagram Composio not Active — blocks morning-scan UGC proofs",
-      "action": "Open https://connect.composio.dev/link/lk_rv_eJnojQ9eR (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
+      "action": "Open https://connect.composio.dev/link/lk_G6w_FV3BZ9D3 (~10 min) or docs/COMPOSIO-SOCIAL-UNLOCKS.md. Yelp 5-market live_proof Active until connected.",
       "priority": 1
     },
     {
@@ -3294,5 +3318,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T21:32:08Z"
+  "updated_at": "2026-09-04T21:35:21Z"
 }

@@ -1,0 +1,18 @@
+{
+  "finding_id": "2026-09-04-enacton-gloriafood-shutdown",
+  "lane": "vertical_gtm",
+  "name": "Enacton GloriaFood shutting down (Aug 2026)",
+  "verdict": "watch",
+  "summary": "Enacton blog (updated Aug 13 2026) documents Oracle GloriaFood retirement by Apr 30 2027 and white-label/agency partner impact. Watch as GloriaFood EOL wedge for agencies; fee pause; not FBE inflate.",
+  "researched_at": "2026-09-04",
+  "id": "2026-09-04-enacton-gloriafood-shutdown",
+  "source_urls": [
+    "https://www.enacton.com/blog/gloriafood-shutting-down/"
+  ],
+  "memory_tags": [
+    "enacton",
+    "gloriafood-eol",
+    "white-label",
+    "fee-pause"
+  ]
+}
