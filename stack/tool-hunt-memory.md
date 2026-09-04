@@ -46,3 +46,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added `mcp/mem0.json` + `scripts/mem0-smoke.mjs` for headless Mem0 when key is set.
 - Dogfooded Yelp/Maps enrich: Girl & The Goat Chicago → phone + girlandthegoat.com (Stephanie Izard) — fixture saved. Proves pain→sales / buy-now shop path without Apollo.
 - Mem0/Context still needsAuth until Myke completes desktop/API unlocks.
+
+### 2026-09-04 (rival refresh)
+
+- Owner wedge clarified: email/SMS/first-party CRM — adopt differentiation in script-draft (Never86 = TikTok/IG buy-now).
+- Seekadu added: Instagram DM→reservations — watch only; not our SKU close.
+- Context confirmed OAuth-only for MCP; Mem0 still OAuth or MEM0_API_KEY.
+- Auth still blocked in this cloud run.

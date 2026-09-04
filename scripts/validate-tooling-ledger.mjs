@@ -43,6 +43,8 @@ function loadJson(path) {
 if (!existsSync(ledgerPath)) fail("missing stack/tooling-ledger.json");
 if (!existsSync(agentPath)) fail("missing agent/tool-hunt/beyond-the-hunt.json");
 if (!existsSync(routinePath)) fail("missing routines/tool-hunt-weekly.json");
+if (!existsSync(mem0Path)) fail("missing mcp/mem0.json");
+if (!existsSync(unlocksPath)) fail("missing docs/DESKTOP-UNLOCKS.md");
 
 const ledger = loadJson(ledgerPath);
 for (const key of ["version", "purpose", "last_scan", "ours", "competitors", "watchlist", "open_gaps"]) {

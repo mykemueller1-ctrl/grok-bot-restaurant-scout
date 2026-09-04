@@ -1,0 +1,20 @@
+{
+  "finding_id": "seekadu-ig-dm-booking-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Seekadu — Instagram DM → reservation agents",
+  "vendor_or_project": "Seekadu",
+  "urls": [
+    "https://www.seekadu.com/ai-social-media/restaurants",
+    "https://www.seekadu.com/ai-booking-system/restaurants"
+  ],
+  "what_it_does": "Turns Instagram Reels comments / story replies / DMs into in-thread reservation flows synced to OpenTable/Resy/SevenRooms; WhatsApp booking too.",
+  "how_competitors_use_it": "Social signal → covers booked. Adjacent to social GTM but closes on reservations, not shoppable buy-now.",
+  "what_we_use_today": "Restaurant Scout love→buy-now scripts + pain shoppers; no reservation-DM product.",
+  "gap": "Do not confuse Seekadu’s booking close with Never86 commerce close — keep scripts purchase-path.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 3,
+  "summary": "Watch as social-conversion rival; Never86 edge stays SKU buy-now / anti-marketplace, not table turns.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

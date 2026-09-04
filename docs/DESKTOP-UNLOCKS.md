@@ -15,9 +15,14 @@ Cursor Desktop → Settings → MCP → Mem0 → Authenticate
 3. Connector stub: `mcp/mem0.json` → `https://mcp.mem0.ai/mcp` bearer  
 4. Verify: `MEM0_API_KEY=… node scripts/mem0-smoke.mjs`
 
-## 2. Context.dev (required)
+## 2. Context.dev (required — OAuth only)
 
-Cursor Desktop → Settings → MCP → Context → Authenticate
+Context MCP has **no API-key auth path**. Desktop OAuth only:
+
+Cursor Desktop → Settings → Tools & MCP → Context → Authenticate/Connect  
+URL: `https://mcp.context.dev/mcp`
+
+Composio SEARCH_WEB remains the Active research fallback until Context is connected.
 
 ## 3. Cursor Agents
 

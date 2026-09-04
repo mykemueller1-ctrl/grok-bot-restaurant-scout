@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -85,7 +85,7 @@
       "lane": "vertical_gtm",
       "stack": "AI-native discovery + first-party ordering + CRM + automated marketing agents; $240M Series D (Goldman, Aug 2026)",
       "memory": "Vendor-managed marketing/content agents",
-      "edge": "Capitalized anti-DoorDash OS; first-party channels over TikTok Shop-first",
+      "edge": "Capitalized first-party OS; marketing agents skew email/SMS/push \u2014 not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
         "https://www.prnewswire.com/news-releases/owner-raises-240m-led-by-goldman-sachs-alternatives-to-build-the-ai-native-platform-for-every-local-business-302862420.html",
@@ -204,6 +204,18 @@
         "https://getplateai.com/",
         "https://www.flikai.com/restaurants"
       ]
+    },
+    {
+      "name": "Seekadu",
+      "lane": "vertical_gtm",
+      "stack": "Instagram DM / Reels comment \u2192 reservation booking agents (OpenTable/Resy/SevenRooms)",
+      "memory": "Conversation booking state",
+      "edge": "Social\u2192covers booked; adjacent GTM but not shoppable commerce",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.seekadu.com/ai-social-media/restaurants",
+        "https://www.seekadu.com/ai-booking-system/restaurants"
+      ]
     }
   ],
   "watchlist": [
@@ -260,13 +272,19 @@
       "lane": "memory",
       "why": "Only if teach_memory quality plateaus \u2014 not a forecasting play",
       "verdict": "watch"
+    },
+    {
+      "item": "Seekadu Instagram\u2192reservation agents",
+      "lane": "vertical_gtm",
+      "why": "Social conversion rival; keep Never86 on buy-now not table turns",
+      "verdict": "watch"
     }
   ],
   "open_gaps": [
     {
       "id": "desktop-auth-mem0-context",
       "gap": "Mem0 + Context need Cursor desktop authentication (cloud mcp_auth unavailable)",
-      "action": "Desktop OAuth OR set MEM0_API_KEY (+ Context desktop auth). See docs/DESKTOP-UNLOCKS.md; env setup actions filed.",
+      "action": "Mem0: desktop OAuth OR MEM0_API_KEY. Context: desktop OAuth only (https://mcp.context.dev/mcp). See docs/DESKTOP-UNLOCKS.md",
       "priority": 1
     },
     {
