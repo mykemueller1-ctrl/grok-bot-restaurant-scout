@@ -1,0 +1,23 @@
+{
+  "finding_id": "michaels-leak-pass3-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Michael's Genuine marketplace leak pass-3 re-verify",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Pass 3 (2026-09-04T20:13Z): Yelp still 2,084 / 4.0★ / pickup. Site FETCH still lists UberEats + DoorDash under Order Delivery (plus takeout CTAs). Confirms brand_site_marketplace_leak + MIA buy_now_path. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://michaelsgenuine.com/",
+    "fixtures/tool-hunt/miami-love-brands.json",
+    "fixtures/tool-hunt/pain-scan-brand-site-marketplace-leak.json"
+  ],
+  "live_yelp": {
+    "review_count": 2084,
+    "rating": 4.0,
+    "phone": "+13056760894",
+    "transactions": ["pickup"]
+  },
+  "rails_confirmed": ["ubereats", "doordash", "opentable_reservations", "takeout_cta"],
+  "tools_used": ["YELP_SEARCH_BUSINESSES", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"],
+  "not_this": "Not a new fee dogfood. Fee catalog pause holds. Not forecasting."
+}

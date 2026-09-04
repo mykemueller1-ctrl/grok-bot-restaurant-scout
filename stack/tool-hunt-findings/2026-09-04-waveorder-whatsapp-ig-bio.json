@@ -1,0 +1,21 @@
+{
+  "finding_id": "waveorder-whatsapp-ig-bio-store-2026-09",
+  "lane": "vertical_gtm",
+  "name": "WaveOrder — WhatsApp menu + Instagram bio store (0% commission)",
+  "vendor_or_project": "WaveOrder",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "waveorder.app: digital menu / Instagram bio storefront → WhatsApp checkout; $0 commission; Starter $49/mo–Business $399/mo. Anti-marketplace 30% framing + IG bio link path. DirectOrders/Mirar/LinkScale-adjacent. Watch only — Never86 wedge stays in-app Shop buy-now (avoids bio→WA handoff).",
+  "what_it_does": "Shareable QR/link catalog; orders land as structured WhatsApp messages; kitchen board + dispatch on higher tiers.",
+  "gap": "Name beside Mirar/DirectOrders/LinkScale when bio/WhatsApp rails appear on love brands.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://waveorder.app/restaurants",
+    "https://waveorder.app/instagram-sellers",
+    "https://waveorder.app/pricing"
+  ],
+  "never86_wedge": "in-app Shop buy-now vs bio→WhatsApp catalog funnel",
+  "not_this": "Not a fee dogfood. Not Meta FBE peer. Not forecasting."
+}

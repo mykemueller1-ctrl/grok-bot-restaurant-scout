@@ -55,7 +55,9 @@ Also watch Meta-adjacent **CTA linkers** (Order Food / Start Order → own menu 
 
 FBE peer set reconfirmed at **9** (2026-09-04) — finding `2026-09-04-meta-fbe-peer-set-reconfirm.json`.
 
-Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, **Mirar** IG/WhatsApp/Messenger → POS (0% commission) ([mirar.ai](https://www.mirar.ai/)), **Mando** / **Orderlya** WA/IG order+reserve (MENA thematic), **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)), **FOSA** Facebook Messenger ordering ([getfosa.ai](https://www.getfosa.ai/facebook-for-restaurant-marketing-and-ordering)), and **Palmate** / **DMHub** WhatsApp/IG order+reservation assistants — adjacent social intake, not Meta FBE peers.
+Also watch **DirectOrders** Instagram DM / WhatsApp / ChatGPT messaging close, **RAY** commission-free Instagram delivery, **Mirar** IG/WhatsApp/Messenger → POS (0% commission) ([mirar.ai](https://www.mirar.ai/)), **WaveOrder** WhatsApp menu + Instagram bio store (0% commission, $49–$399/mo) ([waveorder.app/restaurants](https://waveorder.app/restaurants)), **Mando** / **Orderlya** WA/IG order+reserve (MENA thematic), **TextOrder** AI DM ordering across IG/TikTok/FB Messenger/SMS/WhatsApp ([social-media-ordering](https://mytextorder.com/features/social-media-ordering)), **FOSA** Facebook Messenger ordering ([getfosa.ai](https://www.getfosa.ai/facebook-for-restaurant-marketing-and-ordering)), and **Palmate** / **DMHub** WhatsApp/IG order+reservation assistants — adjacent social intake, not Meta FBE peers.
+
+**Meta Shops checkout note:** Native FB/IG Shops checkout sunset (Aug 2025) + Graph API v26 commerce endpoint blocks (2026) mean product tags route to merchant websites — webview cliffs apply; Never86 in-app Shop fills the vacuum. This does **not** change `meta_order_food_peer_count` (still 9 FBE peers).
 
 **Not Meta Order Food:** **Menusso** is a branded restaurant app / 0% commission OS ([menusso.com/us](https://menusso.com/us/)) — watch separately; do not inflate `meta_order_food_peer_count`.
 

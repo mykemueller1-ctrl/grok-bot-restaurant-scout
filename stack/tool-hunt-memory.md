@@ -865,3 +865,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Watched Mando AI + Orderlya (MENA WA/IG order peers). Finding: `2026-09-04-mando-orderlya-dm-peers.json`.
 - Watched SwipeReel Shopify shoppable video (CheckIt/FeedGrid peer). Finding: `2026-09-04-swipereel-shoppable-video.json`.
 - Ledger v1.92.40. Auth still blocked.
+
+### 2026-09-04 (Michaels leak pass-3 + WaveOrder + Meta checkout sunset)
+
+- Pass-3: michaelsgenuine.com still UberEats + DoorDash Order Delivery (Yelp 2,084). Finding: `2026-09-04-michaels-leak-pass3.json`. `brand_site_marketplace_leak` holds.
+- Watched WaveOrder WA menu / IG bio store (0% commission). Finding: `2026-09-04-waveorder-whatsapp-ig-bio.json`.
+- Adopted Meta Shops native-checkout sunset → Shop wedge teach (not FBE peer inflate). Finding: `2026-09-04-meta-checkout-sunset-shop-wedge.json`.
+- Ledger v1.92.41. Auth still blocked.

@@ -1,0 +1,22 @@
+{
+  "finding_id": "meta-native-checkout-sunset-shop-wedge-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Meta native Shops checkout sunset → Shop wedge",
+  "vendor_or_project": "Meta",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Meta phased out Facebook/Instagram Shops native checkout (Aug 2025); Graph API v26.0 (Jul 2026) blocks 47 commerce order-management endpoints with no replacements (extend Oct 2026). IG shopping now tags→merchant website. Sharpens Never86 in-app Shop buy-now vs Meta handoff vacuum. Do NOT inflate meta_order_food_peer_count (Order Food FBE is separate).",
+  "what_it_does": "Documents Meta removing in-app checkout so social shoppable → off-platform site (webview cliffs apply).",
+  "gap": "GTM skills should note Meta Shops checkout sunset when pitching Shop vs IG Shopping/product tags.",
+  "pivot_speed": "hours",
+  "operator_ask": "",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://ppc.land/meta-phases-out-facebook-and-instagram-shops-checkout-by-august-2025/",
+    "https://ppc.land/meta-blocks-47-commerce-endpoints-as-graph-api-v26-0-lands-today/",
+    "https://feedonomics.com/blog/meta-removing-native-checkout/",
+    "https://creators.instagram.com/blog/new-ways-to-earn-making-reels-shoppable"
+  ],
+  "never86_wedge": "in-app Shop buy-now fills Meta native-checkout vacuum; avoids bio→webview cliffs (linkboo/NullMark)",
+  "not_this": "Not a fee dogfood. Not a new Meta Order Food FBE peer. Not forecasting."
+}

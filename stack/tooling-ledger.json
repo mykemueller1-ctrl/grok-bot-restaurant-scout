@@ -1,5 +1,5 @@
 {
-  "version": "1.92.40",
+  "version": "1.92.41",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Michaels marketplace leak pass-3 live re-verify",
+      "lane": "vertical_gtm",
+      "why": "michaelsgenuine.com still UberEats + DoorDash Order Delivery \u2014 brand_site_marketplace_leak holds; strong_keep 65",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Meta Shops native checkout sunset \u2192 Shop wedge",
+      "lane": "vertical_gtm",
+      "why": "Aug 2025 checkout sunset + Graph API v26 commerce endpoint blocks \u2014 IG tags\toff-site; Shop fills vacuum (not FBE peer inflate)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "WaveOrder WhatsApp menu + Instagram bio store",
+      "lane": "vertical_gtm",
+      "why": "0% commission WA catalog / IG bio storefront $49\u2013$399/mo \u2014 Mirar/LinkScale adjacent; Shop wedge",
+      "verdict": "watch"
+    },
     {
       "item": "G&TG reservation_skew pass-2 live re-verify",
       "lane": "vertical_gtm",
