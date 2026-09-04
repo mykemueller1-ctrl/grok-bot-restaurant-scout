@@ -1,5 +1,5 @@
 {
-  "version": "1.25.0",
+  "version": "1.26.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -93,7 +93,8 @@
       "headless_rest": "CONTEXT_DEV_API_KEY → scripts/context-search.mjs POST /v1/web/search",
       "fallback_active": "Composio COMPOSIO_SEARCH_WEB"
     },
-    "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs"
+    "buy_now_dogfood_gate": "scripts/validate-buy-now-dogfood.mjs",
+    "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + fixtures/tool-hunt/keep-channel-grader-pilot.json + skills/keep-channel-grader.md"
   },
   "competitors": [
     {
@@ -480,9 +481,33 @@
         "https://chowly.com/solutions/branded-online-ordering",
         "https://chowly.com/resources/blogs/first-party-vs-third-party-delivery-economics/"
       ]
+    },
+    {
+      "name": "Menufy",
+      "lane": "vertical_gtm",
+      "stack": "Flat-fee first-party ordering (~$149/mo, no per-order commission) + negotiated ~12.5% DoorDash/Uber dual-run",
+      "memory": "Owned guest list / email+SMS marketing",
+      "edge": "Hybrid discovery+KEEP peer — not TikTok Shop-native; swarm already has Menufy pain-shopper",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://restaurant.menufy.com/article/2026/direct-vs-third-party-ordering",
+        "https://restaurant.menufy.com/pricing"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "KEEP channel-rank grader pilot",
+      "lane": "vertical_gtm",
+      "why": "Zayos-style KEEP$ diagnostic → SalesLead teach; no swarm expansion",
+      "verdict": "pilot"
+    },
+    {
+      "item": "Menufy hybrid first-party + 12.5% marketplace",
+      "lane": "vertical_gtm",
+      "why": "Flat-fee direct + negotiated dual-run; watch only",
+      "verdict": "watch"
+    },
     {
       "item": "Rioja Denver buy-now script + catalog sandbox",
       "lane": "vertical_gtm",
@@ -865,9 +890,9 @@
     },
     {
       "id": "vertical-grader-wedge",
-      "gap": "Rivals ship free graders / diagnostics; we shop pain but lack a public self-serve wedge",
-      "action": "Pilot a Never86 fit/grader concept after teach quality is stable — do not expand import waves early",
-      "priority": 3
+      "gap": "KEEP channel-rank grader piloted (CLI); no public web UI yet",
+      "action": "Dogfood scripts/keep-channel-grader.mjs on SalesLeads; approve thin public surface later — do not expand import waves",
+      "priority": 2
     },
     {
       "id": "composio-instagram",

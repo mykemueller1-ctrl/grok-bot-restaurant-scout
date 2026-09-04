@@ -1,0 +1,21 @@
+{
+  "finding_id": "menufy-hybrid-ordering-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menufy hybrid first-party + negotiated marketplace rate",
+  "vendor_or_project": "Menufy",
+  "urls": [
+    "https://restaurant.menufy.com/article/2026/direct-vs-third-party-ordering",
+    "https://restaurant.menufy.com/pricing",
+    "https://restaurant.menufy.com/article/restaurant-delivery-app-fees"
+  ],
+  "what_it_does": "Flat ~$149/mo first-party ordering (no per-order commission) + negotiated ~12.5% DoorDash/Uber rate vs 25–30% standard — hybrid discovery+direct.",
+  "how_competitors_use_it": "Pitch dual-run: marketplaces for discovery, branded site for KEEP; pain shopper already exists in swarm.",
+  "what_we_use_today": "Menufy pain-shopper agent + KEEP grader pilot; Never86 owns social buy-now close",
+  "gap": "Watch — first-party peer next to ChowNow/Chowly; contrast in KEEP grader + sales forms. Skip forecasting.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched Menufy (flat-fee first-party + 12.5% negotiated marketplace dual-run). No forecasting research.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

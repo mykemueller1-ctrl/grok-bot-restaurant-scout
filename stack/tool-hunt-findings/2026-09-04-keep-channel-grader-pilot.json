@@ -1,0 +1,21 @@
+{
+  "finding_id": "keep-channel-grader-pilot-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Pilot Never86 KEEP channel-rank grader",
+  "vendor_or_project": "Never86 public wedge",
+  "urls": [
+    "scripts/keep-channel-grader.mjs",
+    "fixtures/tool-hunt/keep-channel-grader-pilot.json",
+    "skills/keep-channel-grader.md"
+  ],
+  "what_it_does": "Headless CLI ranks channels by KEEP$ after fees — Zayos-style diagnostic feeding SalesLead teach without expanding swarm imports.",
+  "how_competitors_use_it": "Zayos free grader → OS conversion; we pilot KEEP channel-rank → social buy-now wedge.",
+  "what_we_use_today": "score_marketplace_keep on snippets; no public self-serve grader",
+  "gap": "Piloted — vertical-grader-wedge open_gap moves to dogfood; no public web UI yet; do not expand wave-1 imports.",
+  "pivot_speed": "hours",
+  "verdict": "pilot",
+  "priority": 1,
+  "summary": "Piloted keep-channel-grader.mjs (KEEP$ not GMV). Addresses Zayos-style inbound wedge without forecasting drift.",
+  "operator_ask": "Optional later: approve a thin public grader surface once teach quality holds.",
+  "researched_at": "2026-09-04"
+}

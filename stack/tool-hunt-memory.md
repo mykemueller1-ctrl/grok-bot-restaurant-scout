@@ -187,3 +187,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted dual_run_marketplace KEEP signal + pain-scan-dual-run.json (10/10 strong).
 - Watched Chowly (commission-free ordering + marketing OS; DoorDash hybrid). Skip forecasting.
 - Ledger v1.25.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (KEEP channel grader pilot + Menufy)
+
+- Piloted scripts/keep-channel-grader.mjs (rank channels by KEEP$ after fees — Zayos-style wedge; not forecasting).
+- Fixture + skill: keep-channel-grader-pilot.json / skills/keep-channel-grader.md. vertical-grader-wedge gap updated.
+- Watched Menufy (flat-fee first-party + ~12.5% negotiated DoorDash/Uber dual-run).
+- Ledger v1.26.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

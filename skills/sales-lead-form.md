@@ -23,7 +23,8 @@ Fill and save `SalesLead`:
 | `status` | `DRAFT` → owner approve → `QUALIFIED` |
 
 Rules:
-- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-to-sales-keep-girl-goat.json`).
+- Prefer **KEEP / commission % / quit marketplace / effective cost statement-math / menu-markup pad (~20%) / own-your-ordering / dual-run discovery** language from owners when framing `complaint_thesis` (see `fixtures/tool-hunt/pain-scan-marketplace-keep.json`, `pain-scan-doordash-effective-cost.json`, `pain-scan-menu-markup.json`, `pain-scan-dual-run.json`, `pain-to-sales-keep-girl-goat.json`).
+- Optional KEEP$ channel rank: `node scripts/keep-channel-grader.mjs` (pilot — see `skills/keep-channel-grader.md`).
 - Draft outreach copy may be suggested; **sending** requires approvals MCP.
 - Same human/venue across pain agents → merge / link, don't spam duplicate leads.
 - Never pitch labor/sales **forecasting** as the Never86 product.

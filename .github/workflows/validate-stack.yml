@@ -111,12 +111,15 @@ jobs:
           test -f scripts/score-pain-fixtures.mjs
           test -f scripts/validate-love-fixtures.mjs
           test -f scripts/validate-buy-now-dogfood.mjs
+          test -f scripts/keep-channel-grader.mjs
           test -f scripts/tool-hunt-brief.mjs
           test -f scripts/unlock-beyond-the-hunt.mjs
           test -f fixtures/tool-hunt/catalog-sync-franklin-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-husk-sandbox.json
           test -f fixtures/tool-hunt/catalog-sync-rioja-sandbox.json
           test -f fixtures/tool-hunt/pain-scan-dual-run.json
+          test -f fixtures/tool-hunt/keep-channel-grader-pilot.json
+          test -f skills/keep-channel-grader.md
           test -f stack/tool-hunt-briefs/2026-09-04.md
           node scripts/score-marketplace-keep.mjs "KEEP DoorDash commission quit" | grep -q anti_marketplace_buy_now
           node scripts/score-marketplace-keep.mjs "DoorDash commission is not your cost — statement effective cost 18.75% restaurant lives on what is left" | grep -q effective_cost_math
@@ -124,6 +127,7 @@ jobs:
           node scripts/score-marketplace-keep.mjs "pad DoorDash menus 20% menu markup to offset commissions" | grep -q menu_markup_pain
           node scripts/score-marketplace-keep.mjs "Own your ordering commission-free KEEP more profit" | grep -q own_ordering_keep
           node scripts/score-marketplace-keep.mjs "dual-run DoorDash for discovery and own your ordering to KEEP" | grep -q dual_run_marketplace
+          node scripts/keep-channel-grader.mjs --dinein 12000 --doordash 9000 --doordash_fee_pct 25 --social_buy_now 2500 | grep -q anti_marketplace_buy_now
           node scripts/score-pain-fixtures.mjs | grep -q '"strong_keep": 10'
           node scripts/validate-love-fixtures.mjs | grep -q '"markets": 5'
           node scripts/validate-buy-now-dogfood.mjs | grep -q '"script_drafts": 3'
