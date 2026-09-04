@@ -1,5 +1,5 @@
 {
-  "version": "1.92.80",
+  "version": "1.92.85",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,36 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Yelp pass-19 + Deliverect Meta + Menami MCP + Ma\u00eetre d'MCP + CTA",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold. Deliverect/Zyda/ChatFood/Flipdish Meta live; Hatch Shop rival \u2014 peer_count stays 9. NEW Menami @menami/mcp-server for Cursor agents + Ma\u00eetre d'MCP Resy/OpenTable; Ressto/Ontabee CTA not FBE",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Yelp pass-18 + Toast/Square/Bento/Kyte Meta + restaurant-mcp + MENA WA 0%",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold. Toast Jul 7 2026 + Square 7778 + Bento 412673 live; Kyte unavailable; GloriaFood discontinued \u2014 peer_count stays 9. NEW aristochatti/restaurant-mcp Cursor Places carousel; Orange Club + Rakeez WA 0% MENA thematic; Klikit TikTok Shop food US reconfirm",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Yelp pass-17 + love rails + Deliverect Meta + OpenTable MCP + Bedrock WA",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold. Deliverect/Zyda/ChatFood/Flipdish Meta live; Uber IG rent contrast \u2014 peer_count stays 9. NEW AnythingMCP OpenTable\u2192Cursor (reservation-skew adjacent) + AWS Bedrock AgentCore multimodal WhatsApp ordering via MCP (Sep 4 2026)",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Yelp pass-16 + love rails + Toast/Square/Bento/Kyte Meta + Swiggy/UberEats MCP rent",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold. Toast Jul 7 2026 + Square 7778 + Bento 412673 live; Kyte unavailable \u2014 peer_count stays 9. GloriaFood discontinued + EOL Apr 30 2027. NEW Swiggy MCP + Uber Eats MCP Cursor marketplace-rent contrast (do not adopt); linkboo/plugwith webview reconfirm",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Yelp pass-15 + love rails + Deliverect/Zyda/ChatFood/Flipdish Meta + AnythingMCP/NullMark/Hatch",
+      "lane": "vertical_gtm",
+      "why": "Yelp 10731/6477/2084/1987/2914 stable. Love rails hold (Franklin preorder+Shopify; Michaels UberEats+DoorDash leak; G&TG OpenTable skew; Husk Toast gift; Rioja Flavor Dojo). Deliverect/Zyda/ChatFood/Flipdish Meta docs live; Uber IG Delivery rent contrast \u2014 peer_count stays 9. NEW AnythingMCP WA\u2192Cursor + NullMark webview Apple Pay escape; Hatch BI Shop rival reconfirm (not FBE)",
+      "verdict": "adopt"
+    },
     {
       "item": "Yelp pass-14 + love rails + Toast/Square/Bento/Kyte Meta + WebMCP/GMaps MCP",
       "lane": "vertical_gtm",
@@ -3444,5 +3474,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T23:20:00Z"
+  "updated_at": "2026-09-05T00:05:00Z"
 }

@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-bedrock-wa-ordering-mcp-watch",
+  "lane": "cursor_agents",
+  "name": "AWS Bedrock AgentCore multimodal WhatsApp ordering (MCP)",
+  "verdict": "watch",
+  "summary": "NEW (Sep 4 2026): AWS blog deploys multimodal WhatsApp ordering assistant (text/voice/call) on Bedrock AgentCore + Nova 2; restaurant backend reached via MCP. Messaging-close love\u2192buy-now peer / Cursor-adjacent pattern; not Meta FBE; fee pause.",
+  "researched_at": "2026-09-04T23:20:00.000Z",
+  "sources": [
+    "https://aws.amazon.com/blogs/machine-learning/deploy-a-multimodal-whatsapp-ordering-assistant-with-amazon-bedrock-agentcore/"
+  ],
+  "memory_tags": [
+    "bedrock",
+    "whatsapp",
+    "mcp",
+    "ordering-assistant"
+  ]
+}

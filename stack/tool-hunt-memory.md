@@ -1188,3 +1188,52 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_0Hn7EPypFJJ6 (~10 min).
 - Ledger v1.92.80. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Yelp pass-15 + Meta peers + AnythingMCP/NullMark)
+
+- Yelp pass-15 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass15.json`.
+- Adopted love rails reconfirm (Franklin preorder+Shopify; Michaels UberEats+DoorDash leak; G&TG OpenTable skew; Husk Toast gift; Rioja Flavor Dojo). Finding: `2026-09-04-love-rails-pass-yelp15.json`.
+- Reconfirmed Deliverect Direct Suite IG + FB Start Order (Jul 15 2026) + Zyda FBE + ChatFood IG + Flipdish bounce — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass2.json`.
+- Uber IG Delivery Button + Sticker rent contrast reconfirm (not FBE). Finding: `2026-09-04-uber-ig-delivery-rent-reconfirm-pass2.json`.
+- Watched **AnythingMCP** WA→Cursor MCP + **NullMark** IG webview Apple Pay escape (linkboo-class). Findings: `2026-09-04-anythingmcp-wa-cursor-watch.json`, `2026-09-04-nullmark-webview-applepay-watch.json`.
+- Meta Hatch BI memo Shop rival reconfirm pass-3 — not FBE. Finding: `2026-09-04-meta-hatch-bi-reconfirm-pass3.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_UWlxjL4Y-2uI (~10 min).
+- Ledger v1.92.81. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp pass-16 + Toast/Square/Bento/Kyte + marketplace MCP rent)
+
+- Yelp pass-16 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass16.json`.
+- Adopted love rails reconfirm (Franklin preorder+Shopify; Michaels UberEats+DoorDash leak; G&TG OpenTable skew; Husk Toast gift; Rioja Flavor Dojo). Finding: `2026-09-04-love-rails-pass-yelp16.json`.
+- Reconfirmed Toast (Jul 7 2026) + Square 7778 + Bento 412673 Meta Order Food; Kyte unavailable banners — peer_count stays 9. Finding: `2026-09-04-toast-square-bento-kyte-meta-pass3.json`.
+- GloriaFood homepage discontinued + EOL Apr 30 2027 reconfirm. Finding: `2026-09-04-gloriafood-homepage-eol-reconfirm-pass3.json`.
+- Watched **Swiggy MCP** + **Uber Eats MCP** Cursor marketplace-rent rails (do not adopt). Finding: `2026-09-04-swiggy-ubereats-mcp-marketplace-rent-watch.json`.
+- Reconfirmed linkboo + plugwith webview escape. Finding: `2026-09-04-linkboo-plugwith-webview-reconfirm-pass2.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_drx_vPpqbtJ2 (~10 min).
+- Ledger v1.92.82. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp pass-17 + Deliverect Meta + OpenTable MCP + Bedrock WA)
+
+- Yelp pass-17 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass17.json`.
+- Adopted love rails reconfirm. Finding: `2026-09-04-love-rails-pass-yelp17.json`.
+- Reconfirmed Deliverect/Zyda/ChatFood/Flipdish Meta + Uber IG rent — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass3.json`.
+- Watched **AnythingMCP OpenTable→Cursor** (reservation-skew adjacent) + **AWS Bedrock AgentCore multimodal WhatsApp ordering (MCP)** Sep 4 2026. Findings: `2026-09-04-anythingmcp-opentable-cursor-watch.json`, `2026-09-04-bedrock-wa-ordering-mcp-watch.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_LIlW3QQ6l2nJ (~10 min).
+- Ledger v1.92.83. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp pass-18 + Toast/Square/Bento/Kyte + restaurant-mcp + MENA WA)
+
+- Yelp pass-18 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass18.json`.
+- Adopted love rails reconfirm. Finding: `2026-09-04-love-rails-pass-yelp18.json`.
+- Reconfirmed Toast (Jul 7 2026) + Square 7778 + Bento 412673; Kyte unavailable; GloriaFood discontinued — peer_count stays 9. Finding: `2026-09-04-toast-square-bento-kyte-meta-pass4.json`.
+- Watched **aristochatti/restaurant-mcp** Places carousel + **Orange Club / Rakeez** WA 0% MENA + Klikit TikTok Shop food US reconfirm. Findings: `2026-09-04-aristochatti-restaurant-mcp-watch.json`, `2026-09-04-orangeclub-rakeez-wa-0pct-mena-watch.json`, `2026-09-04-klikit-tiktok-shop-food-us-reconfirm.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk__OovTZxuxr9j (~10 min).
+- Ledger v1.92.84. Auth still blocked for unlock READY.
+
+### 2026-09-04 (Yelp pass-19 + Deliverect Meta + Menami/Maître d MCP)
+
+- Yelp pass-19 stable: G&TG **10731** / Franklin **6477** / Michaels **2084** / Husk **1987** / Rioja **2914**. Finding: `2026-09-04-yelp-5market-pass19.json`.
+- Adopted love rails reconfirm. Finding: `2026-09-04-love-rails-pass-yelp19.json`.
+- Reconfirmed Deliverect/Zyda/ChatFood/Flipdish Meta + Hatch Shop rival — peer_count stays 9. Finding: `2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass4.json`.
+- Watched **Menami MCP** (@menami/mcp-server Cursor agents) + **Maître d'MCP** (Resy/OpenTable) + Ressto/Ontabee CTA (not FBE). Findings: `2026-09-04-menami-mcp-agents-watch.json`, `2026-09-04-maitre-d-mcp-resy-opentable-watch.json`, `2026-09-04-ressto-ontabee-cta-reconfirm-pass3.json`.
+- Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_h2OMNCNRLeQ9 (~10 min).
+- Ledger v1.92.85. Auth still blocked for unlock READY.
+

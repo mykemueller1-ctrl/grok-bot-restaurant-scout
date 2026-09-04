@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-anythingmcp-wa-cursor-watch",
+  "lane": "cursor_agents",
+  "name": "AnythingMCP WhatsApp Business \u2192 Cursor MCP",
+  "verdict": "watch",
+  "summary": "NEW watch: anythingmcp.com guide (May 19 2026) connects WhatsApp Business Cloud API \u2192 Cursor/Claude via MCP (text/templates/media/buttons). Messaging-close peer for love\u2192buy-now; auth-first; fee pause; not Meta FBE.",
+  "researched_at": "2026-09-04T22:40:00.000Z",
+  "sources": [
+    "https://anythingmcp.com/guides/connect-whatsapp-business-to-cursor",
+    "COMPOSIO_SEARCH_WEB AnythingMCP WhatsApp Cursor MCP"
+  ],
+  "memory_tags": [
+    "anythingmcp",
+    "whatsapp",
+    "cursor-mcp"
+  ]
+}

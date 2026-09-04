@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-linkboo-plugwith-webview-reconfirm-pass2",
+  "lane": "vertical_gtm",
+  "name": "linkboo + plugwith webview escape reconfirm pass-2",
+  "verdict": "watch",
+  "summary": "Live FETCH: link.boo/for/restaurants still cites Toast/Resy/OpenTable/Square cliffs in IG webview (Apple Pay + cookie loss). plugwith.me escape guide (2026) documents Meta instagram://extbrowser scheme. Reinforces Never86 in-app Shop wedge vs bio\u2192webview; fee pause; not Meta FBE.",
+  "researched_at": "2026-09-04T23:00:00.000Z",
+  "sources": [
+    "https://link.boo/for/restaurants",
+    "https://plugwith.me/escape-in-app-browser/"
+  ],
+  "memory_tags": [
+    "linkboo",
+    "plugwith",
+    "webview"
+  ]
+}

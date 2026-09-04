@@ -1,0 +1,13 @@
+{
+  "finding_id": "2026-09-04-ressto-ontabee-cta-reconfirm-pass3",
+  "lane": "vertical_gtm",
+  "name": "Ressto + Ontabee Facebook Order Food CTA pass-3",
+  "verdict": "watch",
+  "summary": "Live FETCH: Ressto facebook-ordering still CTAs Order Now \u2192 own menu (zero commission claim). Ontabee facebook-ordering still Order Now CTA button \u2192 menu. CTA linkers \u2014 not Meta FBE; do not bump peer_count; fee pause.",
+  "researched_at": "2026-09-05T00:00:00.000Z",
+  "sources": [
+    "https://ressto.co/facebook-ordering.shtml",
+    "https://www.ontabee.com/facebook-ordering"
+  ],
+  "notes": "no peer_count bump"
+}

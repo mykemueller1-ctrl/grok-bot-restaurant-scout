@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-deliverect-zyda-chatfood-flipdish-meta-pass2",
+  "lane": "vertical_gtm",
+  "name": "Deliverect + Zyda + ChatFood + Flipdish Meta Order Food pass-2",
+  "verdict": "adopt",
+  "summary": "Live Composio FETCH pass-2: Deliverect Direct Suite IG Order Food stickers + FB Start Order help (Jul 15 2026) still live. Zyda FBE Order Food connect + ChatFood IG Order Food button/stickers docs still live. Flipdish bounce.flipdish.com/{appid} Instagram sticker help still live. peer_count stays 9.",
+  "researched_at": "2026-09-04T22:40:00.000Z",
+  "sources": [
+    "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
+    "https://help.deliverect.com/en/articles/9197029-direct-suite-add-a-start-order-button-on-a-facebook-page",
+    "https://help.zyda.com/en/how-to-connect-order-food-button-through-meta",
+    "https://help.zyda.com/en/setting-up-facebook-business-extension-order-food-button",
+    "https://docs.chatfood.io/en/articles/4297634-how-to-activate-your-instagram-order-food-button-and-stickers",
+    "https://help.flipdish.com/en/articles/9585449-link-to-your-flipdish-online-ordering-page-directly-from-instagram-posts"
+  ],
+  "notes": "peer_count stays 9 \u2014 GloriaFood + Kyte still counted; do not inflate for CTA/rent/Hatch"
+}

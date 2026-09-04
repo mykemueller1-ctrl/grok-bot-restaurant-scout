@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-aristochatti-restaurant-mcp-watch",
+  "lane": "cursor_agents",
+  "name": "aristochatti/restaurant-mcp Google Places carousel",
+  "verdict": "watch",
+  "summary": "NEW: aristochatti/restaurant-mcp (Jul 2026) \u2014 FastMCP server searches restaurants via Google Places and returns mcp-ui carousel (Mistral Le Chat / Alpic). Cursor-adjacent discovery peer for pain\u2192sales / love venue research; Yelp Active stays primary; auth-first; fee pause.",
+  "researched_at": "2026-09-04T23:40:00.000Z",
+  "sources": [
+    "https://github.com/aristochatti/restaurant-mcp",
+    "https://glama.ai/mcp/servers/aristochatti/restaurant-mcp"
+  ],
+  "memory_tags": [
+    "restaurant-mcp",
+    "google-places",
+    "cursor-mcp"
+  ]
+}

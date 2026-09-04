@@ -1,0 +1,17 @@
+{
+  "finding_id": "2026-09-04-anythingmcp-opentable-cursor-watch",
+  "lane": "cursor_agents",
+  "name": "AnythingMCP OpenTable \u2192 Cursor MCP",
+  "verdict": "watch",
+  "summary": "NEW: anythingmcp.com guide (May 24 2026) connects OpenTable search/detail/availability \u2192 Cursor/Claude via MCP (4 tools, no auth). Reservation-skew adjacent for love calibration (G&TG OpenTable teach); not Meta FBE; auth-first; fee pause.",
+  "researched_at": "2026-09-04T23:20:00.000Z",
+  "sources": [
+    "https://anythingmcp.com/guides/connect-opentable-to-cursor"
+  ],
+  "memory_tags": [
+    "anythingmcp",
+    "opentable",
+    "cursor-mcp",
+    "reservation-skew"
+  ]
+}

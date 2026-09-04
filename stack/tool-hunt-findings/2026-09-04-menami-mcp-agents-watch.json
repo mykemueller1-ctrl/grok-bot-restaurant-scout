@@ -1,0 +1,19 @@
+{
+  "finding_id": "2026-09-04-menami-mcp-agents-watch",
+  "lane": "cursor_agents",
+  "name": "Menami MCP server for Cursor restaurant agents",
+  "verdict": "watch",
+  "summary": "NEW depth: getmenami.com/agents ships @menami/mcp-server for Cursor/Claude (7 tools: recommend/book/order/feedback/taste/restaurant/occasions) + Agent Protocol REST + Stripe ACP checkout. Agent-native love\u2192buy-now rival layer; MX-first thematic; auth-first; fee pause; not Meta FBE.",
+  "researched_at": "2026-09-05T00:00:00.000Z",
+  "sources": [
+    "https://getmenami.com/agents",
+    "https://getmenami.com/agents/protocol",
+    "https://github.com/Menami-AI/menami"
+  ],
+  "memory_tags": [
+    "menami",
+    "mcp",
+    "agent-ordering",
+    "cursor"
+  ]
+}

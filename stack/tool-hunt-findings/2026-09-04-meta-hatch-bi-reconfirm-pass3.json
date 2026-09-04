@@ -1,0 +1,12 @@
+{
+  "finding_id": "2026-09-04-meta-hatch-bi-reconfirm-pass3",
+  "lane": "vertical_gtm",
+  "name": "Meta Hatch AI agent Shop rival reconfirm pass-3",
+  "verdict": "watch",
+  "summary": "Business Insider Aug 27 2026 memo reconfirm: Meta Hatch personal AI agent can order food + book restaurant tables inside IG/WA (DoorDash/Yelp sandbox narrative). Platform Shop rival to Never86 \u2014 still NOT Meta Order Food FBE; peer_count stays 9.",
+  "researched_at": "2026-09-04T22:40:00.000Z",
+  "sources": [
+    "https://www.businessinsider.com/meta-hatch-personal-ai-agent-capabilities-employees-memo-2026-8",
+    "COMPOSIO_SEARCH_WEB Meta Hatch AI Instagram WhatsApp order food"
+  ]
+}
