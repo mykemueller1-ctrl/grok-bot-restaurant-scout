@@ -697,3 +697,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **Zyda** (watch): Meta Order Food → Zyda first-party store — Deliverect peer. Finding: `2026-09-04-zyda-meta-order-food.json`.
 - Status printer now includes `top_watch_rivals` from ledger. AGENTS.md Layout lists the status script. Ledger v1.92.13.
 - Still blocked: Mem0 + Context for unlock READY.
+
+### 2026-09-04 (Zyda into remaining GTM skills)
+
+- Wired Zyda beside Deliverect in script-draft, sales-lead-form, tool-frontier-scan.
+- COMPOSIO-SOCIAL-UNLOCKS: Meta Order Food rivals section (Deliverect/Zyda) + status printer pointer.
+- Tip CI green on Zyda watch + status rivals. Ledger v1.92.14. Auth still blocked.

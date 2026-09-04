@@ -38,7 +38,16 @@ TikTok often needs an org-level auth config before Connect works:
 
 Do **not** auto-publish. Morning-scan is read/discover; publish stays approval-gated.
 
+## Meta Order Food rivals (watch)
+
+IG/FB **Order Food** profile buttons are a parallel love→buy-now rail (not TikTok Shop):
+- **Deliverect** Social Media Ordering / Direct Suite
+- **Zyda** Meta Business Extension → first-party Zyda store
+
+Never86 wedge stays **in-app Shop buy-now** (avoids bio→webview cliffs — see linkboo watch). Fee catalog pause still applies — do not dogfood these as fee products.
+
 ## Still required for Beyond the Hunt READY
 
 Mem0 + Context — `docs/DESKTOP-UNLOCKS.md`  
 `node scripts/unlock-beyond-the-hunt.mjs` → exit 0
+`node scripts/print-beyond-the-hunt-status.mjs` — one-screen auth + love live_proof + watch rivals
