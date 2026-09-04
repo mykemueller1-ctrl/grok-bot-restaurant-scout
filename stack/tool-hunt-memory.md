@@ -685,3 +685,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - **BiteSight** (watch): YC TikTok-meets-DoorDash video marketplace — adjacent discovery UX on marketplace rent. Finding: `2026-09-04-bitesight-tiktok-doordash.json`.
 - Status printer wired into `auth-gap-check`, `docs/TOOL-HUNT.md`, weekly Automation prompt. Ledger v1.92.11.
 - Fee catalog pause + Mem0/Context auth-first unchanged.
+
+### 2026-09-04 (linkboo/BiteSight into skills + Automation pack)
+
+- Taught linkboo webview-escape + BiteSight video marketplace in `script-draft`, `tool-frontier-scan`, `sales-lead-form`.
+- Synced `docs/CURSOR-AUTOMATION-TOOL-HUNT.md` paste prompt with status printer start + new rivals (matches routine prompt_hint).
+- Ledger v1.92.12. Auth still blocked for unlock READY.
