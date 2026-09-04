@@ -1,0 +1,75 @@
+{
+  "dogfood_id": "pain-to-sales-kontactless-fee-franklin-2026-09-04",
+  "purpose": "Kontactless $0.50\u2013$1.00/order guest convenience fee \u2192 SalesLead DRAFT for Franklin Barbecue (Austin). Contrasts guest_paid + per_order_platform_fee vs Never86 Shop ~6% buy-now. Not forecasting.",
+  "signals": {
+    "per_order_platform_fee": "Kontactless Classic $0.50 / Pay-as-you-go $1.00 convenience fee per order (guest-paid; operator may absorb)",
+    "guest_paid_tech_fee": "Kontactless $0.50\u2013$1.00 per-order convenience fee paid by the customer",
+    "social_shop_fee": "TikTok Shop US unified referral ~6%",
+    "marketplace_rent": "DoorDash Marketplace 15\u201330%"
+  },
+  "pain_lead": {
+    "pain_id": "kontactless_guest_per_order_fee",
+    "vendor_id": "kontactless",
+    "category": "thematic",
+    "status": "NEEDS_TEACH",
+    "venue": {
+      "name": "Franklin Barbecue",
+      "city": "Austin",
+      "market": "Austin, TX",
+      "yelp_alias": "franklin-barbecue-austin",
+      "love_signal": "Aaron Franklin cult BBQ / line UGC"
+    },
+    "complaint_summary": "Calibration: Kontactless QR order-and-pay publishes Classic $0.50 / Pay-as-you-go $1.00 convenience fee per order (guest-paid; operator may absorb) vs $399/mo flat. Franklin Barbecue-class love should close on Never86 Shop ~6% buy-now \u2014 honest platform math without diner sticker shock or Marketplace 15\u201330% rent.",
+    "opportunity_signals": [
+      "per_order_platform_fee",
+      "guest_paid_tech_fee",
+      "social_shop_fee",
+      "cult_chef_ugc"
+    ],
+    "vendors_mentioned": [
+      "kontactless",
+      "doordash",
+      "tiktok_shop"
+    ],
+    "sources": [
+      "fixtures/tool-hunt/pain-scan-kontactless-guest-fee.json",
+      "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+    ]
+  },
+  "sales_lead_draft": {
+    "pain_id": "kontactless_guest_per_order_fee",
+    "account_name": "Franklin Barbecue",
+    "contact_name": "",
+    "role": "owner/GM (needs teach)",
+    "city": "Austin",
+    "market": "Austin, TX",
+    "complaint_thesis": "Kontactless QR order-and-pay charges guests a $0.50 (Classic) or $1.00 (Pay-as-you-go) convenience fee per order \u2014 guest-paid per_order_platform_fee KEEP leak (operator may absorb; $399/mo flat alt). TikTok Shop ~6% is honest platform take on social demand vs DoorDash Marketplace 15\u201330%. Franklin-class love already prints demand \u2014 close Shop buy-now, not Kontactless $0.50\u2013$1.00 guest fees on every QR ticket.",
+    "quotes": [
+      "Kontactless Classic $0.50 / Pay-as-you-go $1.00 convenience fee per order",
+      "TikTok Shop US unified referral ~6%",
+      "DoorDash Marketplace 15\u201330%"
+    ],
+    "vendors_to_displace": [
+      "Kontactless $0.50\u2013$1.00 guest QR fees",
+      "DoorDash Marketplace"
+    ],
+    "why_never86_now": "per_order_platform_fee + guest_paid_tech_fee + social_shop_fee teach: Kontactless $0.50\u2013$1.00 guest convenience fee is still platform rent on QR order-and-pay; Never86 Shop buy-now keeps love\u2192buy-now KEEP math transparent \u2014 not forecasting.",
+    "suggested_angle": "Draft only: Franklin-class love already prints demand \u2014 close Shop buy-now, not Kontactless $0.50\u2013$1.00 guest fees on every QR ticket.",
+    "sources": [
+      "https://www.kontactless.io/",
+      "fixtures/tool-hunt/pain-scan-kontactless-guest-fee.json",
+      "https://www.yelp.com/biz/franklin-barbecue-austin"
+    ],
+    "confidence": 76,
+    "status": "DRAFT",
+    "notes": "Calibration dogfood \u2014 Kontactless $0.50\u2013$1.00 guest convenience fee \u2192 SalesLead. Setup fees ($995/$2500) are secondary context. Not live outreach. Not forecasting."
+  },
+  "tools_used": [
+    "scripts/score-marketplace-keep.mjs",
+    "fixtures/tool-hunt/pain-scan-kontactless-guest-fee.json",
+    "fixtures/tool-hunt/script-draft-franklin-buy-now.json"
+  ],
+  "status": "dogfood_complete",
+  "auth_note": "Mem0/Context still BLOCKED_UNTIL_SECRETS_OR_DESKTOP",
+  "never": "Do not use this dogfood to research historical sales forecasting or labor forecasting."
+}

@@ -1,0 +1,21 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": [
+    "WebSearch",
+    "WebFetch",
+    "scripts/score-marketplace-keep.mjs"
+  ],
+  "query": "Kontactless $0.50 / $1.00 per-order guest convenience fee KEEP pain",
+  "hits": [
+    {
+      "url": "https://www.kontactless.io/",
+      "posted_at": "2026-09-04",
+      "handle": "kontactless",
+      "snippet": "Kontactless Classic charges a fixed $0.50 convenience fee per order \u2014 guests pay tech fee (or operator absorbs) vs DoorDash Marketplace 25% KEEP; Pay-as-you-go $1.00 per order guest fee under no-app QR ordering",
+      "pain_id": "kontactless_guest_per_order_fee",
+      "score": 100,
+      "never86_angle": "Guest-paid $0.50\u2013$1.00 Kontactless convenience fee is still platform rent on QR order-and-pay \u2014 Never86 Shop ~6% buy-now keeps love\u2192buy-now math honest vs Marketplace 15\u201330%"
+    }
+  ],
+  "notes": "Primary: kontactless.io pricing \u2014 Classic/POS Plus $0.50/txn customer-paid; Pay-as-you-go $1.00/txn; $399/mo alternative. Skip forecasting. Not expanding swarm."
+}

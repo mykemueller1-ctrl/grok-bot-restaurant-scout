@@ -1,0 +1,13 @@
+{
+  "finding_id": "sohungry-125-fee-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "SoHungry $1.25 free-plan guest convenience fee (watch)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "sohungry.net Free $1.25 / Premium $0.60 ($0.85 Clover) customer convenience fee \u2014 map-first SMB OO; watch before dogfood / swarm expand.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://sohungry.net/faqs.aspx",
+    "https://sohungry.net/plans.aspx"
+  ]
+}

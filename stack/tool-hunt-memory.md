@@ -496,3 +496,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Primary Help Center: BentoBox QR Order & Pay **$0.99 diner fee** per order (waived on follow-up from same device) — [QR FAQs](https://help.getbento.com/en/articles/421057) + [Location Settings Service Fee](https://help.getbento.com/en/articles/418369).
 - pain-scan-bentobox-guest-fee.json second hit (primary Help Center) → strong_keep **42**; pain-to-sales-bentobox-fee-* ×5; validate-bentobox-fee-dogfood ≥5 (`bentobox_fee_dogfoods`).
 - Watched 1 Stop Order guest convenience fee 1–2% (percentage; no dogfood yet). Ledger v1.74.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Kontactless $0.50–$1.00 guest convenience fee SalesLead)
+
+- Primary [kontactless.io](https://www.kontactless.io/): Classic/POS Plus **$0.50**/order guest convenience fee (operator may absorb); Pay-as-you-go **$1.00**/order; $399/mo flat alt.
+- pain-scan-kontactless-guest-fee.json → strong_keep **43**; pain-to-sales-kontactless-fee-* ×5; validate-kontactless-fee-dogfood ≥5 (`kontactless_fee_dogfoods`).
+- Watched SoHungry Free **$1.25** / Premium **$0.60** guest convenience fee + ChowNow Catering **5%** direct commission (distinct from $0.99 + 7.5% dogfood). Ledger v1.75.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
