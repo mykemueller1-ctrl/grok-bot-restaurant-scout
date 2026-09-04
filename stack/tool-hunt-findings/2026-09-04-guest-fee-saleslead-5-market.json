@@ -1,0 +1,21 @@
+{
+  "finding_id": "guest-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "DevourNow guest-paid tech fee → SalesLead across 5 love markets",
+  "vendor_or_project": "DevourNow / Never86 buy-now",
+  "urls": [
+    "https://getdevournow.com/pricing/",
+    "fixtures/tool-hunt/pain-scan-devournnow-guest-fee.json",
+    "scripts/validate-guest-fee-dogfood.mjs"
+  ],
+  "what_it_does": "Folds diner-paid OO tech fees ($2.99 / $1+%) under 0% commission claims into SalesLead DRAFT teach vs Shop ~6% and Marketplace 15–30%.",
+  "how_competitors_use_it": "DevourNow-class OO sells restaurant KEEP via guest-facing fees — conversion friction Never86 can contrast with honest Shop referral.",
+  "what_we_use_today": "5× pain-to-sales-guest-fee-*.json + validate-guest-fee-dogfood.mjs (≥5)",
+  "gap": "Mem0/Context still blocked for durable memory import",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted 5-market guest-fee → SalesLead dogfood set. Not forecasting. Auth still blocked.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}

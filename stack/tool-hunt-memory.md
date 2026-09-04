@@ -322,3 +322,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Adopted pain-scan-devournnow-guest-fee.json ($2.99 / $1+5% / $1+8% diner tech fees under 0% commission) → strong_keep 18.
 - Watched OrderOut flat-fee POS router vs Otter tablet. Skip forecasting.
 - Ledger v1.46.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (guest-fee SalesLead completes 5 love markets)
+
+- Added pain-to-sales-guest-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json.
+- validate-guest-fee-dogfood.mjs ≥5; CI wired. Contrasts diner tech fees vs Shop ~6% + Marketplace rent.
+- Ledger v1.47.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
