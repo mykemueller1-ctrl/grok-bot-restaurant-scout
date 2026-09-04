@@ -10,12 +10,12 @@
   ],
   "what_it_does": "Headless CLI ranks channels by KEEP$ after fees — Zayos-style diagnostic feeding SalesLead teach without expanding swarm imports.",
   "how_competitors_use_it": "Zayos free grader → OS conversion; we pilot KEEP channel-rank → social buy-now wedge.",
-  "what_we_use_today": "score_marketplace_keep on snippets; no public self-serve grader",
-  "gap": "Piloted — vertical-grader-wedge open_gap moves to dogfood; no public web UI yet; do not expand wave-1 imports.",
+  "what_we_use_today": "CLI keep-channel-grader.mjs + MCP keep_channel_grade + score_marketplace_keep",
+  "gap": "MCP+CLI dogfooded on Rioja SalesLead; no public web UI yet; do not expand wave-1 imports.",
   "pivot_speed": "hours",
-  "verdict": "pilot",
+  "verdict": "adopt",
   "priority": 1,
-  "summary": "Piloted keep-channel-grader.mjs (KEEP$ not GMV). Addresses Zayos-style inbound wedge without forecasting drift.",
+  "summary": "KEEP channel grader piloted then adopted via MCP keep_channel_grade + pain-to-sales-keep-grader-rioja.json.",
   "operator_ask": "Optional later: approve a thin public grader surface once teach quality holds.",
   "researched_at": "2026-09-04"
 }

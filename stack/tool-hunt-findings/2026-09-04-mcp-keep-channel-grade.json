@@ -1,0 +1,22 @@
+{
+  "finding_id": "mcp-keep-channel-grade-2026-09",
+  "lane": "mcp_connectors",
+  "name": "complaint-sources.keep_channel_grade MCP + Rioja SalesLead dogfood",
+  "vendor_or_project": "Never86 KEEP grader",
+  "urls": [
+    "services/pain-leads-api/src/lib/keepChannelGrade.ts",
+    "services/pain-leads-api/src/mcp/sources.ts",
+    "mcp/complaint-sources.json",
+    "fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json"
+  ],
+  "what_it_does": "Exposes KEEP$ channel-rank grader on /mcp/sources (Node Fastify + Cloudflare Worker) and dogfoods grader → Rioja SalesLead DRAFT.",
+  "how_competitors_use_it": "Zayos free grader → OS conversion; we ship MCP+CLI KEEP rank → social buy-now wedge.",
+  "what_we_use_today": "CLI keep-channel-grader.mjs + MCP keep_channel_grade + score_marketplace_keep snippets",
+  "gap": "No public web UI yet; vertical-grader-wedge stays open for thin surface approval — do not expand wave-1 imports.",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Adopted keep_channel_grade MCP and Rioja grader→SalesLead dogfood without forecasting drift.",
+  "operator_ask": "Optional later: approve thin public grader UI once teach quality holds. Still need MEM0_API_KEY + CONTEXT_DEV_API_KEY for Beyond the Hunt READY.",
+  "researched_at": "2026-09-04"
+}

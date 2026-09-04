@@ -36,7 +36,9 @@ jobs:
           if (!toast.signals.includes('pos_fee_lockin') || toast.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(toast));
           const b = await dispatchSourceTool('score_marketplace_keep', { snippet: 'Restaurant owner quitting DoorDash commission fees — rank by KEEP' });
           if (!b.ok || b.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(b));
-          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, b.score);
+          const g = await dispatchSourceTool('keep_channel_grade', { dinein: 12000, doordash: 9000, doordash_fee_pct: 25, social_buy_now: 2500 });
+          if (!g.ok || g.summary?.never86_wedge !== 'anti_marketplace_buy_now') throw new Error(JSON.stringify(g));
+          console.log('KEEP scorer smoke ok', a.score, eff.score, toast.score, b.score, g.summary.marketplace_fee_total);
           "
 
   wiring:
@@ -102,6 +104,7 @@ jobs:
           test -f fixtures/tool-hunt/pain-to-sales-miami-michaels-genuine.json
           test -f fixtures/tool-hunt/pain-to-sales-nashville-husk.json
           test -f fixtures/tool-hunt/pain-to-sales-denver-rioja.json
+          test -f fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json
           test -f fixtures/tool-hunt/script-draft-franklin-buy-now.json
           test -f fixtures/tool-hunt/script-draft-husk-buy-now.json
           test -f fixtures/tool-hunt/script-draft-rioja-buy-now.json

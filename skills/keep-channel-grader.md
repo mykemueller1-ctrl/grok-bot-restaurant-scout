@@ -6,7 +6,7 @@
 
 ### Steps
 1. Collect monthly GMV + fee % per channel (dine-in, takeout, DoorDash, Uber Eats, Grubhub, Never86 social buy-now).
-2. Run:
+2. Run CLI **or** MCP:
    ```bash
    node scripts/keep-channel-grader.mjs \
      --dinein 12000 --takeout 4000 \
@@ -14,10 +14,13 @@
      --uber 3500 --uber_fee_pct 30 \
      --social_buy_now 2500 --social_fee_pct 0
    ```
+   - MCP (complaint-sources): `keep_channel_grade` with the same keys (`dinein`, `doordash`, `doordash_fee_pct`, …) or a `channels[]` array.
 3. Read `ranked[]` + `summary.never86_wedge`.
 4. Fold into `SalesLead.complaint_thesis` / `suggested_angle`: biggest GMV may be worst KEEP; shift social demand to buy-now; dual-run marketplaces for discovery only.
 5. Contrast vs ChowNow/Chowly/Lunchbox web OS and Owner email/SMS — Never86 owns TikTok/IG shoppable close.
 
-**Fixture:** `fixtures/tool-hunt/keep-channel-grader-pilot.json`
+**Fixtures:** `fixtures/tool-hunt/keep-channel-grader-pilot.json` · `fixtures/tool-hunt/pain-to-sales-keep-grader-rioja.json`
+
+**Lib (keep in sync):** `services/pain-leads-api/src/lib/keepChannelGrade.ts`
 
 **Done when:** JSON rank printed; wedge noted on the lead; no secrets; no forecast pitch.

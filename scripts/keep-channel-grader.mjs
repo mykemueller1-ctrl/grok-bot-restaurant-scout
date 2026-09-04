@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Never86 KEEP channel-rank grader (pilot).
- * Rank sales channels by what the restaurant KEEPS after fees — not GMV.
+ * Keep core math in sync with services/pain-leads-api/src/lib/keepChannelGrade.ts
  * Usage:
  *   node scripts/keep-channel-grader.mjs --dinein 10000 --takeout 5000 \\
  *     --doordash 8000 --doordash_fee_pct 25 --uber 3000 --uber_fee_pct 30 \\
@@ -14,6 +14,8 @@ function arg(name, fallback = 0) {
   const v = Number(process.argv[i + 1]);
   return Number.isFinite(v) ? v : fallback;
 }
+
+const MARKETPLACE_IDS = new Set(["doordash", "uber_eats", "grubhub"]);
 
 const channels = [
   { id: "dine_in", label: "Dine-in", gmv: arg("dinein"), fee_pct: arg("dinein_fee_pct", 0) },
@@ -50,17 +52,14 @@ const ranked = channels
   })
   .sort((a, b) => b.keep_dollars - a.keep_dollars);
 
-const marketplace = ranked.filter((c) => ["doordash", "uber_eats", "grubhub"].includes(c.id));
+const marketplace = ranked.filter((c) => MARKETPLACE_IDS.has(c.id));
 const marketplace_fee = marketplace.reduce((s, c) => s + c.fee_dollars, 0);
 const best = ranked[0];
 const worst = [...ranked].sort((a, b) => a.keep_pct - b.keep_pct)[0];
 
-const never86_wedge =
-  marketplace_fee > 0
-    ? "anti_marketplace_buy_now"
-    : best?.id === "social_buy_now"
-      ? "love_to_buy_now"
-      : "channel_rank_review";
+let never86_wedge = "channel_rank_review";
+if (marketplace_fee > 0) never86_wedge = "anti_marketplace_buy_now";
+else if (best?.id === "social_buy_now") never86_wedge = "love_to_buy_now";
 
 console.log(
   JSON.stringify(

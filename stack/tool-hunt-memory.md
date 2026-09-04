@@ -194,3 +194,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fixture + skill: keep-channel-grader-pilot.json / skills/keep-channel-grader.md. vertical-grader-wedge gap updated.
 - Watched Menufy (flat-fee first-party + ~12.5% negotiated DoorDash/Uber dual-run).
 - Ledger v1.26.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (MCP keep_channel_grade + Rioja dogfood)
+
+- Wired keep_channel_grade into complaint-sources (Fastify sources.ts + Worker) via keepChannelGrade.ts.
+- Dogfood: pain-to-sales-keep-grader-rioja.json folds KEEP$ rank into SalesLead DRAFT.
+- Ledger v1.27.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
