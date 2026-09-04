@@ -1029,3 +1029,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Fresh Instagram Composio reconnect: https://connect.composio.dev/link/lk_JSmBL_WA9OGF (~10 min).
 - Ledger v1.92.63. Auth still blocked for unlock READY.
 
+### 2026-09-04 (Slerp/Meni.ge GloriaFood + mateor96/LeadMagic skills)
+
+- Watched **Slerp** UK GloriaFood free migrate (branded app + Deliveroo/Uber Direct/Just Eat Go). Finding: `2026-09-04-slerp-gloriafood-uk.json`.
+- Watched **Meni.ge** free auto-migrate + free-forever core (non-US; EOL Apr 30 2027). Finding: `2026-09-04-menige-gloriafood-free.json`.
+- Watched **mateor96/gtm-agent-skills** (venue/café lead enrich on 10k+ leads) + **LeadMagic** Cursor MCP enrich. Findings: `2026-09-04-mateor96-gtm-agent-skills.json`, `2026-09-04-leadmagic-cursor-enrich.json`.
+- Ledger v1.92.64. Auth still blocked for unlock READY.
+

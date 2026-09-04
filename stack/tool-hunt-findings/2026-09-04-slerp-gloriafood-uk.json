@@ -1,0 +1,26 @@
+{
+  "id": "2026-09-04-slerp-gloriafood-uk",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.64",
+  "sources": [
+    {
+      "url": "https://www.slerp.com/alternatives/gloriafood/",
+      "title": "GloriaFood Alternative for UK Restaurants | Slerp",
+      "fetched_via": "composio_search_fetch",
+      "note": "UK OO + branded app; free GloriaFood migrate; Deliveroo Express / Uber Direct / Just Eat Go delivery; EOL by April 2027"
+    }
+  ],
+  "verdict": "watch",
+  "category": "vertical_rival",
+  "summary": "Slerp pitches UK GloriaFood free migration (menu/hours/zones/CRM) with branded app + marketplace delivery rails. Watch beside Posso UK / Flipdish as GloriaFood successor; fee pause; not FBE until Meta Order Food primary cite. EOL window by April 2027 (keep primary Apr 30).",
+  "teach": {
+    "label": "slerp_uk_gloriafood_successor_watch",
+    "geo": "UK",
+    "eol_primary": "2027-04-30",
+    "peer_count_impact": "none until FBE primary cite"
+  },
+  "mission_lock": {
+    "yes": ["vertical rival watch", "EOL wedge", "first-party OO"],
+    "no": ["fee dogfood", "inflate meta_order_food_peer_count", "forecasting"]
+  }
+}

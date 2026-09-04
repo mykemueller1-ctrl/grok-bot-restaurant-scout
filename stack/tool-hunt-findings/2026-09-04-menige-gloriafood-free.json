@@ -1,0 +1,26 @@
+{
+  "id": "2026-09-04-menige-gloriafood-free",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.64",
+  "sources": [
+    {
+      "url": "https://meni.ge/en/gloriafood-alternative",
+      "title": "Free GloriaFood Alternative with Automatic Migration | Meni.ge",
+      "fetched_via": "composio_search_fetch",
+      "note": "Facts verified Aug 18 2026; free auto migrate + core plan free forever; EOL Apr 30 2027"
+    }
+  ],
+  "verdict": "watch",
+  "category": "vertical_rival",
+  "summary": "Meni.ge free GloriaFood auto-migration (menu/photos/hours/zones/design) with free-forever core plan — strongest free-tier successor cite beside GloriaFood EOL Apr 30 2027. Geo is non-US (.ge); watch for EOL wedge patterns, not US swarm expand; fee pause; not FBE.",
+  "teach": {
+    "label": "menige_gloriafood_free_forever_watch",
+    "geo": "non_US_GE",
+    "eol_primary": "2027-04-30",
+    "peer_count_impact": "none"
+  },
+  "mission_lock": {
+    "yes": ["EOL wedge", "0% free OO watch"],
+    "no": ["US swarm expand", "fee dogfood", "meta_order_food_peer_count"]
+  }
+}

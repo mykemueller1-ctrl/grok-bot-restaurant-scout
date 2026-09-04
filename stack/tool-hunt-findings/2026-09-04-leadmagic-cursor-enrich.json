@@ -1,0 +1,31 @@
+{
+  "id": "2026-09-04-leadmagic-cursor-enrich",
+  "date": "2026-09-04",
+  "ledger_version": "1.92.64",
+  "sources": [
+    {
+      "url": "https://github.com/LeadMagic/leadmagic-cursor-plugin",
+      "title": "LeadMagic/leadmagic-cursor-plugin — hosted MCP B2B enrichment for Cursor",
+      "fetched_via": "composio_search_fetch",
+      "note": "Hosted MCP https://mcp.leadmagic.io/mcp; OAuth; email/mobile/LinkedIn/job-change/technographics"
+    },
+    {
+      "url": "https://cursor.com/marketplace/skills/enrich-lead",
+      "title": "enrich-lead | Cursor Skill (Apollo marketplace)",
+      "fetched_via": "composio_search_fetch",
+      "note": "Marketplace enrich-lead skill pairs with Apollo MCP — peer path already partially Active via Composio Apollo"
+    }
+  ],
+  "verdict": "watch",
+  "category": "skills_knowledge",
+  "summary": "LeadMagic Cursor plugin adds hosted MCP enrichment (email/mobile/LinkedIn/job-change) beside existing Composio Apollo/Clay optional path. Watch as pain→sales-lead enrich option for Cloud Agents; do not replace Active Yelp phone enrich until Auth/credits prove out.",
+  "teach": {
+    "label": "leadmagic_cursor_mcp_enrich_watch",
+    "peers": ["apollo-composio", "clay", "mateor96-gtm-agent-skills"],
+    "status_note": "Yelp phone enrich remains Active primary for 5 love markets"
+  },
+  "mission_lock": {
+    "yes": ["pain→sales-lead enrich", "Cursor MCP"],
+    "no": ["fee catalog", "forecasting"]
+  }
+}
