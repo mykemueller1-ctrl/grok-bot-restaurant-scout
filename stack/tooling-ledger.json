@@ -1,5 +1,5 @@
 {
-  "version": "1.56.0",
+  "version": "1.57.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -103,6 +103,7 @@
     "popmenu_fee_dogfood_gate": "scripts/validate-popmenu-fee-dogfood.mjs (Popmenu $1/order guest fee → SalesLead ≥5 markets)",
     "flipdish_fee_dogfood_gate": "scripts/validate-flipdish-fee-dogfood.mjs (Flipdish 2–7% direct % → SalesLead ≥5 markets)",
     "lunchbox_fee_dogfood_gate": "scripts/validate-lunchbox-fee-dogfood.mjs (Lunchbox guest convenience fee → SalesLead ≥5 markets)",
+    "menufy_fee_dogfood_gate": "scripts/validate-menufy-fee-dogfood.mjs (Menufy guest convenience fee → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -867,6 +868,18 @@
   ],
   "watchlist": [
     {
+      "item": "Menufy guest convenience fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN guest fee on direct + optional ~12.5% hybrid → SalesLead vs Shop ~6%; validate-menufy-fee-dogfood ≥5; strong_keep 25",
+      "verdict": "adopt"
+    },
+    {
+      "item": "CloudWaitress GloriaFood successor (~$39/mo 0%)",
+      "lane": "vertical_gtm",
+      "why": "GloriaFood EOL Apr 2027 migration peer; flat OO rails — watch only",
+      "verdict": "watch"
+    },
+    {
       "item": "Lunchbox guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
       "why": "CHI/ATX/MIA/BNA/DEN free/no-commission OO with guest convenience fee → SalesLead vs Shop ~6%; validate-lunchbox-fee-dogfood ≥5; strong_keep 24",
@@ -1217,8 +1230,8 @@
     {
       "item": "Menufy hybrid first-party + 12.5% marketplace",
       "lane": "vertical_gtm",
-      "why": "Flat-fee direct + negotiated dual-run; watch only",
-      "verdict": "watch"
+      "why": "Flat-fee direct + negotiated dual-run; guest convenience fee now SalesLead-dogfooded — keep hybrid watch context",
+      "verdict": "adopt"
     },
     {
       "item": "Rioja Denver buy-now script + catalog sandbox",

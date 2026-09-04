@@ -387,3 +387,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Added pain-to-sales-lunchbox-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-lunchbox-fee-dogfood ≥5.
 - Olo App 0% + Order with Google fee → watch refresh (enterprise).
 - Ledger v1.56.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.
+
+### 2026-09-04 (Menufy guest convenience fee + CloudWaitress watch)
+
+- Adopted pain-scan-menufy-guest-fee.json (guest fee on direct + ~12.5% hybrid) → strong_keep 25.
+- Added pain-to-sales-menufy-fee-{girl-goat,franklin,michaels-genuine,husk,rioja}.json; validate-menufy-fee-dogfood ≥5.
+- Watched CloudWaitress as GloriaFood EOL successor (~$39/mo 0%).
+- Ledger v1.57.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP.

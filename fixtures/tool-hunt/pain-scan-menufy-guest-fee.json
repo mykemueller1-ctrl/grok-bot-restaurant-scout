@@ -1,0 +1,17 @@
+{
+  "scanned_at": "2026-09-04",
+  "tools": ["COMPOSIO_SEARCH_TAVILY", "scripts/score-marketplace-keep.mjs"],
+  "query": "Menufy guest convenience fee on direct OO + 12.5% hybrid marketplace KEEP pain",
+  "hits": [
+    {
+      "url": "https://restaurant.menufy.com/article/restaurant-delivery-app-fees",
+      "posted_at": "2026-09-04",
+      "handle": "menufy",
+      "snippet": "Menufy direct ordering guests pay a convenience fee at checkout under commission-free claim vs DoorDash Marketplace 25%; hybrid also negotiates ~12.5% DoorDash/Uber fulfillment",
+      "pain_id": "menufy_guest_convenience_fee",
+      "score": 100,
+      "never86_angle": "Guest convenience fee on Menufy 'commission-free' direct + 12.5% hybrid still taxes KEEP/conversion — Never86 Shop ~6% buy-now keeps love→buy-now math honest"
+    }
+  ],
+  "notes": "Sources: Menufy delivery-fees article + Chowly/Dinevate 2026 pricing via Composio. Flat $149/$179 + guest fee + optional 12.5% hybrid. Bright Data still 401. Skip forecasting. Not expanding swarm imports."
+}

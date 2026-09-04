@@ -1,0 +1,26 @@
+{
+  "finding_id": "menufy-fee-saleslead-5-market-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Menufy guest convenience fee SalesLead dogfood across 5 love markets",
+  "vendor_or_project": "Never86 pain→sales-lead",
+  "urls": [
+    "fixtures/tool-hunt/pain-to-sales-menufy-fee-girl-goat.json",
+    "fixtures/tool-hunt/pain-to-sales-menufy-fee-franklin.json",
+    "fixtures/tool-hunt/pain-to-sales-menufy-fee-michaels-genuine.json",
+    "fixtures/tool-hunt/pain-to-sales-menufy-fee-husk.json",
+    "fixtures/tool-hunt/pain-to-sales-menufy-fee-rioja.json",
+    "scripts/validate-menufy-fee-dogfood.mjs",
+    "fixtures/tool-hunt/pain-scan-menufy-guest-fee.json",
+    "https://restaurant.menufy.com/article/restaurant-delivery-app-fees"
+  ],
+  "what_it_does": "Menufy flat ~$149/$179 OO with guest convenience fee on direct + optional ~12.5% DoorDash/Uber hybrid → SalesLead DRAFT for CHI/ATX/MIA/BNA/DEN; contrasts Shop ~6%.",
+  "how_competitors_use_it": "HungerRush/Menufy sells managed website+OO rails with hybrid marketplace rate negotiation; demand gen still on the restaurant.",
+  "what_we_use_today": "validate-menufy-fee-dogfood ≥5; guest_paid_platform_fee; prior Menufy hybrid watch upgraded to SalesLead dogfood",
+  "gap": "Convenience fee $ amount not always published — teach pattern; Mem0/Context blocked",
+  "pivot_speed": "hours",
+  "verdict": "adopt",
+  "priority": 1,
+  "summary": "Menufy guest convenience-fee SalesLead dogfoods match five love markets; strong_keep 25.",
+  "operator_ask": "Add MEM0_API_KEY + CONTEXT_DEV_API_KEY so unlock exits 0.",
+  "researched_at": "2026-09-04"
+}

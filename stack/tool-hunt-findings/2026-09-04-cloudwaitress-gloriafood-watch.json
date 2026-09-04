@@ -1,0 +1,21 @@
+{
+  "finding_id": "cloudwaitress-gloriafood-watch-2026-09",
+  "lane": "vertical_gtm",
+  "name": "CloudWaitress GloriaFood successor watch (~$39/mo, 0% commission)",
+  "vendor_or_project": "CloudWaitress",
+  "urls": [
+    "https://www.cloudwaitress.com/online-ordering-systems/cloudwaitress-vs-gloriafoods/",
+    "https://www.enacton.com/blog/gloriafood-shutting-down/",
+    "https://menujo.com/compare/gloriafood-alternative"
+  ],
+  "what_it_does": "GloriaFood EOL (Apr 2027) migration peer: CloudWaitress ~$39/mo or free ≤100 orders, 0% commission rails — not Shop-native.",
+  "how_competitors_use_it": "Budget OO replacement for GloriaFood white-label partners; Ressto/Menujo also pitch successors.",
+  "what_we_use_today": "Already watching GloriaFood successors (Ressto); CloudWaitress joins watch list",
+  "gap": "Not Shop-native — watch only; no swarm expand",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched CloudWaitress as GloriaFood successor flat OO peer; reinforce Never86 Shop close.",
+  "operator_ask": "No action beyond auth unlocks.",
+  "researched_at": "2026-09-04"
+}
