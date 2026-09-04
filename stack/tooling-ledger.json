@@ -1,5 +1,5 @@
 {
-  "version": "1.22.0",
+  "version": "1.23.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -83,8 +83,8 @@
     "morning_scan_calibration": "fixtures/tool-hunt/chicago-love-brands.json + austin-love-brands.json + miami-love-brands.json + nashville-love-brands.json (Yelp Active)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
-    "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json",
-    "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json",
+    "script_draft_dogfood": "fixtures/tool-hunt/script-draft-franklin-buy-now.json + script-draft-husk-buy-now.json",
+    "catalog_sync_dogfood": "fixtures/tool-hunt/catalog-sync-franklin-sandbox.json + catalog-sync-husk-sandbox.json",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + scripts/score-pain-fixtures.mjs + complaint-sources MCP (effective_cost_math + pos_fee_lockin + menu_markup_pain + own_ordering_keep)",
     "love_fixture_gate": "scripts/validate-love-fixtures.mjs (CHI/ATX/MIA/BNA)",
     "brief_runner": "scripts/tool-hunt-brief.mjs --write",
@@ -441,9 +441,34 @@
       "sources": [
         "https://www.linkedin.com/posts/yasmin-reda-69678172_meet-ordr-our-ai-ordering-assistant-at-activity-7396258887915536384-zQh1"
       ]
+    },
+    {
+      "name": "Lunchbox",
+      "lane": "vertical_gtm",
+      "stack": "Enterprise branded web/app first-party ordering + free marketplace order aggregation into POS + marketing CRM; OPA! partner",
+      "memory": "Guest/order data for email/SMS loyalty",
+      "edge": "Chain-scale first-party KEEP + aggregation — not TikTok Shop-native; contrast in script-draft",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://lunchbox.io/",
+        "https://lunchbox.io/ordering",
+        "https://www.prnewswire.com/news-releases/restaurants-are-racing-to-launch-nick-the-greek-pei-wei-and-more-tap-lunchbox-for-fast-first-party-growth-302504843.html"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "item": "Husk Nashville buy-now script + catalog sandbox",
+      "lane": "vertical_gtm",
+      "why": "Second ContentDraft + commerce-engine sandbox after Franklin — Nashville love→buy-now",
+      "verdict": "adopt"
+    },
+    {
+      "item": "Lunchbox first-party OS + order aggregation",
+      "lane": "vertical_gtm",
+      "why": "Enterprise KEEP peer / OPA! partner; watch GTM only — skip forecasting",
+      "verdict": "watch"
+    },
     {
       "item": "Nashville Yelp love-brand calibration",
       "lane": "vertical_gtm",

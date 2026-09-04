@@ -167,3 +167,9 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Dogfood: pain-to-sales-nashville-husk.json (menu-markup KEEP → SalesLead DRAFT).
 - Watched Deonde (white-label own ordering), SWIPEBY + OPA! (first-party KEEP), Ordr (WhatsApp/IG AI orders). Skip forecasting.
 - Bright Data still 401 — Composio SEARCH_WEB/Tavily + X Active. Ledger v1.22.0. Auth still BLOCKED (Mem0 + Context).
+
+### 2026-09-04 (Husk buy-now script + Lunchbox watch)
+
+- Adopted script-draft-husk-buy-now.json + catalog-sync-husk-sandbox.json (PENDING_APPROVAL / SANDBOX).
+- Watched Lunchbox (first-party web/app + marketplace aggregation; OPA! partner). Skip forecasting.
+- Ledger v1.23.0. Auth still BLOCKED_UNTIL_SECRETS_OR_DESKTOP (Mem0 + Context).

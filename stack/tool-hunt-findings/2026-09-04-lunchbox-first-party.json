@@ -1,0 +1,22 @@
+{
+  "finding_id": "lunchbox-first-party-os-2026-09",
+  "lane": "vertical_gtm",
+  "name": "Lunchbox first-party ordering + marketplace aggregation",
+  "vendor_or_project": "Lunchbox",
+  "urls": [
+    "https://lunchbox.io/",
+    "https://lunchbox.io/ordering",
+    "https://www.prnewswire.com/news-releases/restaurants-are-racing-to-launch-nick-the-greek-pei-wei-and-more-tap-lunchbox-for-fast-first-party-growth-302504843.html",
+    "https://www.prnewswire.com/news-releases/lunchbox-and-opa-partner-to-redefine-marketplace-ordering-for-restaurants-302659934.html"
+  ],
+  "what_it_does": "Enterprise branded web/app first-party ordering + free order aggregation (DoorDash/Uber/Grubhub → POS) + marketing CRM; partners with OPA!.",
+  "how_competitors_use_it": "Pitch ditch marketplace fees / own guest data while still aggregating third-party into POS — email/SMS loyalty after capture.",
+  "what_we_use_today": "Never86 TikTok/IG buy-now + KEEP pain→sales; contrast vs Lunchbox web OS",
+  "gap": "Watch — chain/enterprise first-party peer next to OPA!/SWIPEBY; do not research their labor/ops forecasting if any.",
+  "pivot_speed": "days",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Watched Lunchbox (first-party + aggregation, OPA! partner). ChowNow noted as adjacent monthly-fee discovery OS — watch light. Skip forecasting.",
+  "operator_ask": "",
+  "researched_at": "2026-09-04"
+}
