@@ -1,5 +1,5 @@
 {
-  "version": "1.92.10",
+  "version": "1.92.11",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -83,6 +83,7 @@
     "morning_scan_calibration": "fixtures/tool-hunt/*-love-brands.json with live_yelp on CHI/ATX/MIA/BNA/DEN primaries (Yelp Active 2026-09-04)",
     "weekly_gate": "scripts/run-tool-hunt-week.mjs",
     "unlock_runner": "scripts/unlock-beyond-the-hunt.mjs",
+    "status_printer": "scripts/print-beyond-the-hunt-status.mjs",
     "script_draft_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja (5 markets)",
     "catalog_sync_dogfood": "girl-goat + franklin + michaels-genuine + husk + rioja sandboxes",
     "keep_scorer": "scripts/score-marketplace-keep.mjs + score-pain-fixtures + complaint-sources MCP (effective_cost + pos_fee_lockin + menu_markup + own_ordering + dual_run + per_order_platform_fee + first_party_pct_fee + marketplace_direct_zero + social_shop_fee + guest_paid_platform_fee)",
@@ -479,6 +480,31 @@
         "https://www.deliverect.com/en/social-media-ordering",
         "https://help.deliverect.com/en/articles/7979423-direct-suite-activate-the-order-food-button-and-use-stickers-on-instagram",
         "https://help.instagram.com/220950502341449/?helpref=related_articles"
+      ]
+    },
+    {
+      "name": "BiteSight",
+      "lane": "vertical_gtm",
+      "stack": "YC video-first food delivery marketplace — scroll short-form restaurant food video → order delivery (TikTok-meets-DoorDash UX; SF live / NYC expanding)",
+      "memory": "n/a (consumer app)",
+      "edge": "Love-discovery UX on a marketplace — sharpens Never86 first-party Shop buy-now vs another delivery aggregator; watch only",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://www.bitesight.com/",
+        "https://www.ycombinator.com/companies/bitesight",
+        "https://apps.apple.com/us/app/bitesight-food-delivery/id6476070829",
+        "https://techcrunch.com/2025/07/24/how-a-y-combinator-food-delivery-app-used-tiktok-to-soar-in-the-app-store/"
+      ]
+    },
+    {
+      "name": "linkboo",
+      "lane": "vertical_gtm",
+      "stack": "Social link wrapper / link-in-bio that escapes Instagram·TikTok·Facebook in-app browsers so Toast/Resy/Square/DoorDash destinations load with Apple Pay + cookies",
+      "memory": "n/a (link infra)",
+      "edge": "Proves viral love→order dies in webviews; Never86 in-app Shop avoids the handoff cliff — watch for GTM messaging",
+      "updated": "2026-09-04",
+      "sources": [
+        "https://link.boo/for/restaurants"
       ]
     },
     {
@@ -1177,6 +1203,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "linkboo social webview escape (IG/TikTok bio → real browser)",
+      "lane": "vertical_gtm",
+      "why": "Viral love→Toast/Resy/Apple Pay dies in social webviews; sharpens Never86 in-app Shop buy-now wedge — watch only, not fee dogfood",
+      "verdict": "watch"
+    },
+    {
+      "item": "BiteSight video-first delivery marketplace (TikTok meets DoorDash)",
+      "lane": "vertical_gtm",
+      "why": "UGC discovery UX on marketplace rent — differentiate Never86 first-party Shop; watch only",
+      "verdict": "watch"
+    },
+    {
+      "item": "Beyond the Hunt one-screen status printer",
+      "lane": "cursor_agents",
+      "why": "print-beyond-the-hunt-status.mjs surfaces auth BLOCKED/READY + 5-market love live_proof + fee pause + top gaps — operator path to Mem0/Context close",
+      "verdict": "adopt"
+    },
     {
       "item": "Deliverect wired into GTM skills (morning-scan / rival-watch / script-draft)",
       "lane": "skills_knowledge",
@@ -2345,5 +2389,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T18:52:00Z"
+  "updated_at": "2026-09-04T18:58:00Z"
 }

@@ -1,0 +1,13 @@
+{
+  "finding_id": "linkboo-social-webview-escape-2026-09",
+  "lane": "vertical_gtm",
+  "name": "linkboo — Instagram/TikTok bio links that escape in-app browser",
+  "verdict": "watch",
+  "priority": 1,
+  "summary": "linkboo wraps restaurant bio/order/reservation links so IG/TikTok/FB webviews bounce to real Safari/Chrome — fixing broken Apple Pay on Toast/Square and Resy cookie friction after viral posts. Proves social love→order handoff is a conversion cliff; Never86 in-app Shop buy-now avoids the webview trap. Watch only — not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://link.boo/for/restaurants"
+  ],
+  "not_this": "Not a fee product. Not forecasting. Complements Deliverect IG Order Food watch."
+}

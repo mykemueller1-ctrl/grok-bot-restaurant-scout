@@ -1,0 +1,16 @@
+{
+  "finding_id": "bitesight-tiktok-doordash-2026-09",
+  "lane": "vertical_gtm",
+  "name": "BiteSight — video-first food delivery (TikTok meets DoorDash)",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "YC BiteSight is a consumer marketplace: scroll short-form restaurant food video → order delivery (SF live, NYC expanding). Adjacent love-discovery threat but marketplace rent thesis — sharpens Never86 first-party TikTok/IG Shop buy-now vs another delivery aggregator with UGC UX. Not fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.bitesight.com/",
+    "https://www.ycombinator.com/companies/bitesight",
+    "https://apps.apple.com/us/app/bitesight-food-delivery/id6476070829",
+    "https://techcrunch.com/2025/07/24/how-a-y-combinator-food-delivery-app-used-tiktok-to-soar-in-the-app-store/"
+  ],
+  "not_this": "Not first-party Shop. Not fee dogfood. Not forecasting."
+}
