@@ -1,5 +1,5 @@
 {
-  "version": "1.92.50",
+  "version": "1.92.51",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain\u2192sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -1280,6 +1280,24 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "TikTok Dining SaaS / TTGo APIs (US merchants)",
+      "lane": "vertical_gtm",
+      "why": "Official docs (2026-08-04) expose Shop/Product/Voucher APIs for US dining — first-party Shop food ops surface beyond Klikit; grader stays 6",
+      "verdict": "adopt"
+    },
+    {
+      "item": "ChatOrder + OrderZ + MyFojo WA/own-channel OO peers",
+      "lane": "vertical_gtm",
+      "why": "UK ChatOrder WA AI (30p–99p/order PAYG, 0% commission claim); SG OrderZ 0% + PayNow POS; IN MyFojo WA 0% + Petpooja — Zippi-class peers; fee pause",
+      "verdict": "watch"
+    },
+    {
+      "item": "Yelp love spot-check G&TG 10731 / Franklin 6477 stable",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX love calibration unchanged on live Yelp lookup — reservation_skew / buy_now_path fixtures hold",
+      "verdict": "adopt"
+    },
     {
       "item": "Platesready 5% + MenuDirect 0% CA OO peers",
       "lane": "vertical_gtm",
@@ -2964,5 +2982,5 @@
     "skip": "Forecasting/labor-research, overlaps without edge, or forbidden surfaces",
     "needs_auth": "Tool already wired; blocked only on desktop operator auth"
   },
-  "updated_at": "2026-09-04T20:50:00Z"
+  "updated_at": "2026-09-04T20:55:00Z"
 }

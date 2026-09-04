@@ -931,3 +931,10 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 - Reconfirmed Instagram Food Orders sticker partner path (Uber/BentoBox/Deliverect/Kyte). peer_count stays 9. Finding: `2026-09-04-meta-food-orders-sticker-reconfirm.json`.
 - Orphan Vercel statuses now include both `never86-venue-portal` and `never86-venue-portals` — still non-required.
 - Ledger v1.92.50. Auth still blocked for unlock READY.
+
+### 2026-09-04 (ChatOrder/OrderZ/MyFojo + TikTok Dining SaaS)
+
+- Watched **ChatOrder** (UK WA AI, 30p–99p/order PAYG) + **OrderZ** (SG 0% + PayNow) + **MyFojo** (IN WA 0% + Petpooja) — fee pause; not FBE. Finding: `2026-09-04-chatorder-orderz-myfojo-wa.json`.
+- Adopted cite: TikTok **Dining SaaS / TTGo** developer APIs for US merchants (updated 2026-08-04) — Shop/Product/Voucher. Finding: `2026-09-04-tiktok-dining-saas-api.json`.
+- Yelp spot-check: Girl & The Goat **10731**, Franklin **6477** still stable.
+- Ledger v1.92.51. Auth still blocked for unlock READY.

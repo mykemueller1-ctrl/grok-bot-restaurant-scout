@@ -1,0 +1,21 @@
+{
+  "finding_id": "tiktok-dining-saas-api-us-2026-09",
+  "lane": "vertical_gtm",
+  "name": "TikTok Dining SaaS / TTGo APIs for US merchants",
+  "vendor_or_project": "TikTok for Developers (Dining SaaS)",
+  "verdict": "adopt",
+  "priority": 2,
+  "summary": "TikTok developer docs (last updated **2026-08-04**) publish **Integrate With Dining SaaS** for **US merchants** (and Indonesia): Shop Management (POI claim, certifications, decor sheets, tax), Product Management (create/update/delist/webhooks), Voucher Management (redeem — API-only vs Merchant Portal). Positions TikTok GO dining as a first-party integration surface for Shop food ops — sharpens Never86 Shop love→buy-now wedge beyond Klikit middleware alone. Grader Shop fee stays 6 pending Food&Bev table change. Not Meta FBE; not fee dogfood.",
+  "what_it_does": "Official APIs so dining SaaS / POS middleware can sync shops, menus, vouchers into TikTok GO / Shop dining flows.",
+  "how_competitors_use_it": "Klikit and similar middleware sit on these rails for US/APAC restaurant Shop order→kitchen sync.",
+  "what_we_use_today": "Klikit US Shop food guide watch; TikTok Shop fee carve-out watch; grader default 6%",
+  "gap": "API surface confirms platform intent for restaurant Shop — operator Shop GTM can cite first-party docs, not only reseller blogs",
+  "pivot_speed": "hours",
+  "operator_ask": "Auth unlocks still priority. No fee dogfood.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://developers.tiktok.com/docs/en/integrate-with-dining-saas",
+    "https://klikit.io/en/learn/tiktok-shop-food-delivery-usa"
+  ],
+  "not_this": "Not a peer_count change. Not fee dogfood. Not forecasting. Does not change grader Shop % alone."
+}

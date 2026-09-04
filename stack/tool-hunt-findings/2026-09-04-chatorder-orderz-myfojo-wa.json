@@ -1,0 +1,23 @@
+{
+  "finding_id": "chatorder-orderz-myfojo-wa-peers-2026-09",
+  "lane": "vertical_gtm",
+  "name": "ChatOrder + OrderZ + MyFojo WhatsApp/own-channel OO peers",
+  "vendor_or_project": "ChatOrder / OrderZ / MyFojo",
+  "verdict": "watch",
+  "priority": 2,
+  "summary": "Three regional commission-free own-channel peers (Composio FETCH 2026-09-04): (1) **ChatOrder** (UK) — WhatsApp-first AI ordering; markets 0% commission but charges **30p–99p per order** PAYG (capped 99p; first 10 free); Stripe Connect; QR→WA; CRM. Flat per-order fee ≠ % KEEP class — watch only under fee pause. (2) **OrderZ** (Singapore) — zero-commission own-channel takeaway/delivery + PayNow + live POS/KDS; anti-GrabFood/Foodpanda 25–30% pitch. (3) **MyFojo** (India) — WhatsApp native OO 0% vs Zomato/Swiggy; Petpooja POS sync; UPI; claims 1000+ restaurants. Watch with Zippi/VoiceZero/BoostOrder/WaveOrder; not Meta FBE.",
+  "what_it_does": "WhatsApp / own-channel restaurant ordering that keeps marketplace commissions off the ticket and routes orders to kitchen/POS.",
+  "how_competitors_use_it": "UK takeaways QR→WhatsApp AI cart; SG independents replace Grab tablets with branded OO; IN restaurants migrate Swiggy/Zomato volume to WA.",
+  "what_we_use_today": "Zippi/VoiceZero/BoostOrder/WaveOrder/Orderlya DM+WA watches; Never86 Shop love→buy-now",
+  "gap": "Regional (UK/SG/IN) — sharpens anti-marketplace chat OO set; ChatOrder per-order fee is teachable but fee pause blocks dogfood",
+  "pivot_speed": "days",
+  "operator_ask": "No fee dogfood. Auth unlocks still priority.",
+  "researched_at": "2026-09-04",
+  "urls": [
+    "https://www.chatorder.co.uk/",
+    "https://www.orderz.dev/solutions/online-ordering-system",
+    "https://whatsapp.myfojo.com/"
+  ],
+  "keep_signals": [],
+  "not_this": "Not Meta FBE. Not fee dogfood. Not forecasting. ChatOrder 30p–99p is flat per-order — do not label as first_party_pct_fee."
+}
