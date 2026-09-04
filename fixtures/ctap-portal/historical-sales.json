@@ -1,15 +1,40 @@
 {
   "venue_id": "community-pizza",
   "venue_name": "Community Tap & Pizza",
-  "note": "Historical PDQ Z rollups for CTAP demo seats. Parallel OCR agent owns invoice photos; this file is the sales spine for sold seats.",
+  "as_of": "2026-09-04",
+  "note": "As of Fri 2026-09-04 only. Live book is the Sun\u2013Sat week that contains today. Do not treat the Sep 2025 Drive pack as this week.",
   "sources": [
     "fixtures/toast/drive-ctap-index.json",
-    "Drive: Ctap Weekly sales 9-14-25 to 9-20-25",
-    "Drive: ZReport_Summary Community Pizza (7-15 + 7-16-2026)"
+    "Drive: ZReport_Summary Community Pizza (7-15 + 7-16-2026)",
+    "Drive archive: Ctap Weekly sales 9-14-25 to 9-20-25 (prior year \u2014 not live)"
   ],
-  "invoiceWeekStart": "2026-08-23",
-  "invoiceWeekEnd": "2026-08-29",
-  "invoiceWeekHasZ": false,
+  "live_book": {
+    "start": "2026-08-31",
+    "end": "2026-09-06",
+    "contains_today": "2026-09-04",
+    "status": "in_progress",
+    "days_elapsed": [
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04"
+    ],
+    "days_remaining": [
+      "2026-09-05",
+      "2026-09-06"
+    ],
+    "invoiceWeekHasZ": false,
+    "week_grand_total": null,
+    "week_labor_total": null,
+    "note": "Only through Fri 9/4. Do not invent Sat/Sun closes or pad missing Zs as $0."
+  },
+  "prior_invoice_week": {
+    "start": "2026-08-23",
+    "end": "2026-08-29",
+    "invoiceWeekHasZ": false,
+    "note": "Last complete Sun\u2013Sat before the live book (ended Sat 8/29)."
+  },
   "recentZ": [
     {
       "date": "2026-07-15",
@@ -74,7 +99,7 @@
       ]
     }
   ],
-  "lastCompleteWeek": {
+  "archive_week_2025_09": {
     "folder": "Ctap Weekly sales 9-14-25 to 9-20-25",
     "start": "2025-09-14",
     "end": "2025-09-20",
@@ -179,6 +204,8 @@
       }
     ],
     "week_grand_total": 40274.06,
-    "week_labor_total": 11242.06
+    "week_labor_total": 11242.06,
+    "kind": "archive",
+    "note": "Prior-year Drive pack (Sep 2025). Not the live book \u2014 today is only 2026-09-04."
   }
 }

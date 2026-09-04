@@ -471,8 +471,14 @@
     </main>
 
     <script>
-      const money = (n) =>
-        n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+      const money = (n) => {
+        if (n == null || Number.isNaN(n)) return "—";
+        return n.toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+          maximumFractionDigits: 0,
+        });
+      };
 
       let seatsDoc = null;
       let salesDoc = null;
@@ -503,8 +509,10 @@
         const active = seatsDoc.seats.find((s) => s.login_id === loginId);
         if (!active) return;
         activeLogin = active;
-        const week = salesDoc.lastCompleteWeek;
+        const live = salesDoc.live_book;
+        const archive = salesDoc.archive_week_2025_09;
         const recent = salesDoc.recentZ || [];
+        const asOf = salesDoc.as_of || "2026-09-04";
         document.getElementById("door").classList.add("off");
         const desk = document.getElementById("desk");
         desk.classList.add("on");
@@ -512,7 +520,7 @@
           <div class="top">
             <div>
               <div class="mark">Never 86<em>'d</em></div>
-              <div class="meta">${seatsDoc.venue_name} · Fort Dodge · three seats sold</div>
+              <div class="meta">${seatsDoc.venue_name} · Fort Dodge · three seats sold · as of ${asOf}</div>
             </div>
             <button class="signout" type="button" id="signout">Sign out</button>
           </div>
@@ -534,13 +542,14 @@
               .join("")}
           </div>
           <section class="sales">
-            <h3>Historical sales spine</h3>
-            <p>${week.folder} · ${week.start} → ${week.end}. OCR for invoices is wiring in parallel; these Z nights are already on the book.</p>
+            <h3>Live book · through Fri 9/4 only</h3>
+            <p>${live.start} → ${live.end} (contains today ${live.contains_today}). Week still open — ${live.days_elapsed.length} nights in, ${live.days_remaining.length} left. No invented Sat/Sun closes. OCR for invoices is wiring in parallel.</p>
             <div class="stats">
-              <div class="stat"><b>${money(week.week_grand_total)}</b><span>Week net (7 nights)</span></div>
-              <div class="stat"><b>${money(week.week_labor_total)}</b><span>Week labor</span></div>
+              <div class="stat"><b>${money(live.week_grand_total)}</b><span>Week net so far (Z hole)</span></div>
+              <div class="stat"><b>${money(live.week_labor_total)}</b><span>Week labor so far</span></div>
               <div class="stat"><b>${recent.length ? money(recent[0].grandTotal) : "—"}</b><span>Latest sample Z ${recent[0]?.label || ""}</span></div>
             </div>
+            <p style="margin:14px 0 0;font-size:12px;color:rgba(243,230,212,0.55)">Archive only (not this week): ${archive.folder} · ${archive.start} → ${archive.end} · ${money(archive.week_grand_total)} prior-year pack.</p>
           </section>
         `;
         document.getElementById("signout").onclick = () => {

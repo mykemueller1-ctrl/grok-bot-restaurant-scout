@@ -87,8 +87,8 @@
     }
   ],
   "cockpit_rooms": [
-    { "id": "shift", "label": "Shift", "state": "Paper schedule 8/30–9/5" },
-    { "id": "sales", "label": "Sales", "state": "Historical Z spine loaded" },
+    { "id": "shift", "label": "Shift", "state": "Paper week through Fri 9/4 (live book ends Sat 9/6)" },
+    { "id": "sales", "label": "Sales", "state": "Live book 8/31–9/6 · as of Fri 9/4 only" },
     { "id": "buy", "label": "Buy", "state": "Kenzy one-tap · Tom food vendors" },
     { "id": "invoices", "label": "Invoices", "state": "OCR in flight (parallel agent)" },
     { "id": "calendar", "label": "Calendar", "state": "Smash $11.99 · Thu pizza $17.99" }
