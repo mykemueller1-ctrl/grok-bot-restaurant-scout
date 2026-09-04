@@ -1,5 +1,5 @@
 {
-  "version": "1.57.0",
+  "version": "1.58.0",
   "purpose": "Canonical ledger: Never86 best-in-vertical tooling (social commerce GTM + pain→sales-lead + Cursor memory/skills) vs competitors. Beyond the Hunt updates this. Never invent claims. Never use this ledger to chase sales/labor forecasting products.",
   "mission_yes": [
     "love_to_buy_now",
@@ -104,6 +104,7 @@
     "flipdish_fee_dogfood_gate": "scripts/validate-flipdish-fee-dogfood.mjs (Flipdish 2–7% direct % → SalesLead ≥5 markets)",
     "lunchbox_fee_dogfood_gate": "scripts/validate-lunchbox-fee-dogfood.mjs (Lunchbox guest convenience fee → SalesLead ≥5 markets)",
     "menufy_fee_dogfood_gate": "scripts/validate-menufy-fee-dogfood.mjs (Menufy guest convenience fee → SalesLead ≥5 markets)",
+    "zayos_fee_dogfood_gate": "scripts/validate-zayos-fee-dogfood.mjs (Zay-OS guest $1.99–$3.99/order → SalesLead ≥5 markets)",
     "keep_channel_grader_pilot": "scripts/keep-channel-grader.mjs + keepChannelGrade.ts + MCP keep_channel_grade (default social_fee_pct=6 Shop) + 5 keep-grader dogfoods + validate-keep-grader-dogfood.mjs"
   },
   "competitors": [
@@ -190,12 +191,13 @@
     {
       "name": "Zayos / Zay-OS",
       "lane": "vertical_gtm",
-      "stack": "Commission-free direct ordering OS + grader + CRM assistant on Claude",
+      "stack": "Commission-free direct ordering OS (~$399–$599/mo) that shifts platform cost to diner per-order fees (~$1.99–$3.99) + grader + CRM assistant on Claude",
       "memory": "Ask Zay CRM assistant",
-      "edge": "Same anti-marketplace thesis; grader is a sharp inbound wedge",
+      "edge": "Same anti-marketplace thesis with guest-paid OO fees; grader is a sharp inbound wedge — not TikTok Shop-native",
       "updated": "2026-09-04",
       "sources": [
-        "https://www.zayrev.com/zayos"
+        "https://www.zayrev.com/zayos",
+        "https://zay-os.com/commission-free-online-ordering-guide"
       ]
     },
     {
@@ -868,6 +870,12 @@
     }
   ],
   "watchlist": [
+    {
+      "item": "Zay-OS guest $1.99–$3.99 per-order fee SalesLead dogfood across 5 love markets",
+      "lane": "vertical_gtm",
+      "why": "CHI/ATX/MIA/BNA/DEN commission-free OO with diner per-order fees → SalesLead vs Shop ~6%; validate-zayos-fee-dogfood ≥5; strong_keep 26",
+      "verdict": "adopt"
+    },
     {
       "item": "Menufy guest convenience fee SalesLead dogfood across 5 love markets",
       "lane": "vertical_gtm",
