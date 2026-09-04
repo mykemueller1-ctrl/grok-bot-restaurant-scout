@@ -74,6 +74,13 @@ const out = {
     tiktok: social?.social_unlocks?.tiktok?.status || "unknown",
     docs: "docs/COMPOSIO-SOCIAL-UNLOCKS.md",
   },
+  pain_sales_enrich: {
+    active: true,
+    path: ledger.ours?.pain_sales_enrich || "Composio Yelp + Maps + SEARCH_WEB",
+    phone_enrich_markets: 5,
+    skill: "skills/lead-shop-enrich.md",
+    note: "YELP_SEARCH_BY_PHONE resolves all 5 love-seed phones — Apollo/Clay optional",
+  },
   fee_catalog_pause: feePause,
   top_watch_rivals: (ledger.watchlist || [])
     .filter((w) => w.verdict === "watch" && w.lane === "vertical_gtm")

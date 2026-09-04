@@ -725,3 +725,8 @@ Agents: append dated bullets; never delete history without operator OK; no secre
 
 - Phone enrich now covers all 5 primaries: G&TG CHI 10732 · Franklin ATX · Michaels MIA · Husk BNA · Rioja DEN. Finding: `2026-09-04-yelp-phone-enrich-5market.json`.
 - Ledger v1.92.18. Still blocked on Mem0/Context for unlock READY.
+
+### 2026-09-04 (status printer phone enrich)
+
+- `print-beyond-the-hunt-status.mjs` now includes `pain_sales_enrich.phone_enrich_markets: 5`. CI greps it. Tip CI green on 5-market phone enrich. Ledger v1.92.19.
+- Still blocked: Mem0 + Context for unlock READY.
