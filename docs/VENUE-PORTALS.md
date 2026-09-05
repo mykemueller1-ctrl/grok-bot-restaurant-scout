@@ -22,6 +22,19 @@ node services/portal-gateway/src/server.mjs
 # http://127.0.0.1:5174/
 ```
 
+### Public phone URL (Vercel)
+
+Self-contained pack lives in `services/portal-gateway/portals/` (sync with `bash scripts/sync-portal-bundle.sh`).
+
+```bash
+cd services/portal-gateway
+npx vercel deploy --temporary --yes --prod   # or claim into your Vercel team for a lasting URL
+```
+
+- Community login path: `/community-pizza/login.html`
+- House code: `ctap-fort-dodge`
+- Seats: **myke** (owner) · **kenzy** (FOH) · **tom** (BOH)
+
 Do **not** use raw `python3 -m http.server` for real trials — that bypasses auth, cookies, and server-side boundaries.
 
 ## Isolation + cyber controls

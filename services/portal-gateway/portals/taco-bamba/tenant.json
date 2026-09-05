@@ -1,18 +1,17 @@
 {
-  "venue_id": "community-pizza",
-  "venue_name": "Community Tap & Pizza",
+  "venue_id": "taco-bamba",
+  "venue_name": "Taco Bamba",
   "aliases": [
-    "CTAP",
-    "Community Pizza",
-    "Community Tap"
+    "Taco Bomb",
+    "Bamba"
   ],
-  "icp": "owner-1-5",
+  "icp": "area-leader",
   "security": "secure",
   "status": "live_demo",
   "location": {
-    "id": "loc-fort-dodge",
-    "name": "Fort Dodge",
-    "plan": "owner_1_5"
+    "id": "loc-bamba-multi",
+    "name": "Multi-unit system",
+    "plan": "area_leader"
   },
   "access_gate": {
     "kind": "server_verified",
@@ -25,15 +24,13 @@
     "allowed_paths": [
       "./tenant.json",
       "./seats.json",
-      "./data/historical-sales.json",
-      "./data/drive-library.json",
-      "./data/owner-operator-artifacts.json"
+      "./data/multi-unit-board.json"
     ],
     "forbidden_venue_ids": [
-      "taco-bamba",
+      "community-pizza",
       "grill"
     ]
   },
-  "session_key": "never86.portal.community-pizza",
-  "product": "Never 86'd · CTAP Beta R&D"
+  "session_key": "never86.portal.taco-bamba",
+  "product": "Never 86'd Action Shift"
 }

@@ -9,7 +9,7 @@ export function securityHeaders({ csp = true } = {}) {
     "Cross-Origin-Resource-Policy": "same-origin",
     "Cache-Control": "no-store",
   };
-  if (process.env.PORTAL_HSTS === "1") {
+  if (process.env.PORTAL_HSTS === "1" || process.env.VERCEL === "1") {
     h["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains; preload";
   }
   if (csp) {

@@ -1,0 +1,27 @@
+{
+  "venue_id": "grill",
+  "venue_name": "The New American Grill",
+  "source_label": "Kristen packs via Courser",
+  "status": "staged_for_community_pattern",
+  "handoff": "When Community portal is proven, drop these Kristen packs into Grill the same way Community holds historical-sales \u2014 same door, same seat rails, Grill data only.",
+  "as_of": "2026-08-31",
+  "labor": {
+    "date": "2026-08-31",
+    "net_sales": 3408.15,
+    "labor_cost": 1211.85,
+    "labor_pct_net": 35.56,
+    "splh_net": 35.17
+  },
+  "sales": {
+    "date": "2026-08-31",
+    "net_sales": 3408.15,
+    "gross_sales": 3570.5,
+    "tips": 560.38,
+    "guests": 119.0
+  },
+  "courser_files": [
+    "normalized/grill-labor-breakdown-2026-08-31.json",
+    "normalized/grill-sales-summary-2026-08-31.json",
+    "normalized/grill-labor-sales-mix.json"
+  ]
+}

@@ -13,18 +13,32 @@ const HASH_PATH = join(__dirname, "../hashes/house-codes.json");
 const SESSION_TTL_SEC = Number(process.env.PORTAL_SESSION_TTL_SEC || 60 * 60 * 8);
 const COOKIE_NAME = "never86_portal_session";
 
+/** Public-hosting bootstrap only — replace via PORTAL_SESSION_SECRET ASAP. */
+const PUBLIC_DEMO_SECRET =
+  "never86-ctap-phone-demo-session-hmac-rotate-via-portal-session-secret";
+
 function requireSecret() {
   const secret = process.env.PORTAL_SESSION_SECRET;
-  if (!secret || secret.length < 32) {
-    throw new Error(
-      "PORTAL_SESSION_SECRET must be set (≥32 chars). Generate: openssl rand -base64 48"
-    );
+  if (secret && secret.length >= 32) return secret;
+  // Vercel / explicit public demo: allow boot so phone HTTPS works before secrets UI.
+  if (process.env.VERCEL === "1" || process.env.PORTAL_DEMO_PUBLIC === "1") {
+    return PUBLIC_DEMO_SECRET;
   }
-  return secret;
+  throw new Error(
+    "PORTAL_SESSION_SECRET must be set (≥32 chars). Generate: openssl rand -base64 48"
+  );
 }
 
 export function loadHouseCodeHashes() {
   return JSON.parse(readFileSync(HASH_PATH, "utf8"));
+}
+
+/** Normalize typed codes so phone keyboards don't soft-lock the door. */
+export function normalizeHouseCode(code) {
+  return String(code || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[\s_]+/g, "-");
 }
 
 export function verifyHouseCode(venueId, code, store = loadHouseCodeHashes()) {
@@ -32,18 +46,26 @@ export function verifyHouseCode(venueId, code, store = loadHouseCodeHashes()) {
   if (!entry || entry.algo !== "scrypt") return false;
   const salt = Buffer.from(entry.salt, "base64");
   const expected = Buffer.from(entry.hash, "base64");
-  let actual;
-  try {
-    actual = crypto.scryptSync(String(code || ""), salt, entry.dkLen || 64, {
-      N: entry.N || 16384,
-      r: entry.r || 8,
-      p: entry.p || 1,
-    });
-  } catch {
-    return false;
+  const candidates = new Set([
+    String(code || ""),
+    normalizeHouseCode(code),
+  ]);
+  for (const candidate of candidates) {
+    let actual;
+    try {
+      actual = crypto.scryptSync(candidate, salt, entry.dkLen || 64, {
+        N: entry.N || 16384,
+        r: entry.r || 8,
+        p: entry.p || 1,
+      });
+    } catch {
+      continue;
+    }
+    if (actual.length === expected.length && crypto.timingSafeEqual(actual, expected)) {
+      return true;
+    }
   }
-  if (actual.length !== expected.length) return false;
-  return crypto.timingSafeEqual(actual, expected);
+  return false;
 }
 
 function b64url(buf) {

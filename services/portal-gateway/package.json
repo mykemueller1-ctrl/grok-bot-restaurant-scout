@@ -7,9 +7,11 @@
   "scripts": {
     "start": "node src/server.mjs",
     "test": "node --test test/*.test.mjs",
-    "hash-code": "node ../../scripts/hash-house-code.mjs"
+    "hash-code": "node ../../scripts/hash-house-code.mjs",
+    "sync-portals": "bash ../../scripts/sync-portal-bundle.sh"
   },
+  "main": "api/index.mjs",
   "engines": {
-    "node": ">=20"
+    "node": "22.x"
   }
 }
