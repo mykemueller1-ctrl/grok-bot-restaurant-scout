@@ -133,12 +133,20 @@
     }
     try {
       await Never86Portal.api.login(VENUE, code, id);
-      await loadProtected(id);
     } catch (err) {
       errEl().textContent =
         err.status === 429
           ? "Too many attempts — wait a minute."
-          : "Invalid credentials for this house.";
+          : "House code or seat didn’t match. Use ctap-fort-dodge + myke / kenzy / tom.";
+      return;
+    }
+    try {
+      await loadProtected(id);
+    } catch (err) {
+      errEl().textContent =
+        "Signed in, but the desk pack failed to load (" +
+        (err.message || "data error") +
+        "). Refresh once.";
     }
   });
 

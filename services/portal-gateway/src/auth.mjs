@@ -33,23 +33,39 @@ export function loadHouseCodeHashes() {
   return JSON.parse(readFileSync(HASH_PATH, "utf8"));
 }
 
+/** Normalize typed codes so phone keyboards don't soft-lock the door. */
+export function normalizeHouseCode(code) {
+  return String(code || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[\s_]+/g, "-");
+}
+
 export function verifyHouseCode(venueId, code, store = loadHouseCodeHashes()) {
   const entry = store.codes?.[venueId];
   if (!entry || entry.algo !== "scrypt") return false;
   const salt = Buffer.from(entry.salt, "base64");
   const expected = Buffer.from(entry.hash, "base64");
-  let actual;
-  try {
-    actual = crypto.scryptSync(String(code || ""), salt, entry.dkLen || 64, {
-      N: entry.N || 16384,
-      r: entry.r || 8,
-      p: entry.p || 1,
-    });
-  } catch {
-    return false;
+  const candidates = new Set([
+    String(code || ""),
+    normalizeHouseCode(code),
+  ]);
+  for (const candidate of candidates) {
+    let actual;
+    try {
+      actual = crypto.scryptSync(candidate, salt, entry.dkLen || 64, {
+        N: entry.N || 16384,
+        r: entry.r || 8,
+        p: entry.p || 1,
+      });
+    } catch {
+      continue;
+    }
+    if (actual.length === expected.length && crypto.timingSafeEqual(actual, expected)) {
+      return true;
+    }
   }
-  if (actual.length !== expected.length) return false;
-  return crypto.timingSafeEqual(actual, expected);
+  return false;
 }
 
 function b64url(buf) {
