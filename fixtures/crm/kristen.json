@@ -1,0 +1,97 @@
+{
+  "crm": "kristen-grill",
+  "as_of": "2026-09-09T03:22:00Z",
+  "owner": {
+    "name": "Myke Mueller",
+    "email": "myke@n86.app",
+    "gmail_holy_grail": "mykemueller1@gmail.com",
+    "x": "@myke86d",
+    "linkedin": "https://www.linkedin.com/in/myke-mueller-341b1b2a8/"
+  },
+  "account": {
+    "id": "acct-new-american-grill",
+    "name": "The New American Grill",
+    "aliases": ["Grill", "the grill"],
+    "venue_id": "grill",
+    "icp": "owner-1-5",
+    "product": "Never 86'd Action Shift",
+    "status": "ready_after_community",
+    "location": "single-unit",
+    "portal": {
+      "path": "fixtures/portals/grill/login.html",
+      "handoff": "When Community portal is proven, drop Kristen packs into Grill with the same door rails. Grill data only."
+    }
+  },
+  "contact": {
+    "id": "contact-kristen",
+    "name": "Kristin Aduna",
+    "aliases": ["Kristen", "Kristin"],
+    "role": "Operator — The New American Grill",
+    "venues": ["grill", "taco-bamba"],
+    "source": "Courser packs + Gmail attachments to mykemueller1@gmail.com",
+    "email": "ktmaduna@gmail.com",
+    "phone": null,
+    "operator_id": "kristin-grill",
+    "schema": "tenant_kristin_grill",
+    "notes": "Full name Kristin Aduna. Sends Toast Time Entries, Item Selection, and vendor invoices. Tenant data lake already coded on branch copilot/build-kristin-aduna-data-lake. Last staged Courser pack is 2026-08-31. Known Gmail threads: Toast Reports 2026-09-01, Invoice for Week 10 2026-09-04."
+  },
+  "pipeline": {
+    "stage": "packs_staged",
+    "stages": [
+      "lead",
+      "packs_received",
+      "packs_staged",
+      "community_pattern_proven",
+      "grill_portal_live",
+      "owner_seat_active",
+      "teach_batches_running"
+    ],
+    "next_actions": [
+      "Connect Gmail so Report Teacher can ingest Kristen attachments",
+      "Connect Google Drive Courser folder for grill packs",
+      "Confirm Kristin phone (email is ktmaduna@gmail.com)",
+      "Merge or finish PR 22 tenant data lake once Gmail attachments are imported",
+      "Keep Grill portal behind Community — do not skip the handoff",
+      "Open teach batch on 2026-08-31 labor/sales once Gmail or Drive is live"
+    ]
+  },
+  "latest_pack": {
+    "date": "2026-08-31",
+    "source_label": "Kristen packs via Courser",
+    "status": "staged_for_community_pattern",
+    "labor": {
+      "net_sales": 3408.15,
+      "labor_cost": 1211.85,
+      "labor_pct_net": 35.56,
+      "splh_net": 35.17
+    },
+    "sales": {
+      "net_sales": 3408.15,
+      "gross_sales": 3570.5,
+      "tips": 560.38,
+      "guests": 119.0
+    },
+    "files": [
+      "normalized/grill-labor-breakdown-2026-08-31.json",
+      "normalized/grill-sales-summary-2026-08-31.json",
+      "normalized/grill-labor-sales-mix.json"
+    ]
+  },
+  "related_accounts": [
+    {
+      "id": "acct-taco-bamba",
+      "name": "Taco Bamba",
+      "icp": "area-leader",
+      "status": "live_secure_demo",
+      "kristen_sends": true,
+      "note": "Kristen also sends Taco Bamba Excel/CSV. Multi-unit seats: System + John / Red / Travis / Yas."
+    },
+    {
+      "id": "acct-community-tap",
+      "name": "Community Tap & Pizza",
+      "status": "live_secure_demo",
+      "kristen_sends": false,
+      "note": "Pattern house. Seats: Myke / Kenzy / Tom. Jessica Gailey is FOH bartender, not Kristen. Social desk for Jessica + Fellers is a different repo (ctap-social-desk)."
+    }
+  ]
+}
