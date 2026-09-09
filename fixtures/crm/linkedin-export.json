@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-09-09T04:55:00Z",
+  "source": "gmail_linkedin_notifications + public_profile",
+  "linkedin_api_limit": "member_lite_no_inbox_no_comments_no_connections",
+  "profile": {
+    "name": "Myke Mueller",
+    "vanity": "myke-mueller-341b1b2a8",
+    "person_id": "opdKurpm9w",
+    "url": "https://www.linkedin.com/in/myke-mueller-341b1b2a8/",
+    "connections": 500,
+    "followers": 1594
+  },
+  "kayla_land": {
+    "post": "https://www.linkedin.com/posts/kayla-edidin_reddoorbrands-restaurantleadership-restaurantindustry-activity-7501067455730020352-lecq",
+    "posted": "2026-09-03",
+    "path": ["myke_comment", "kayla_reply", "myke_points_to_victor", "spencer_dm", "kayla_week_after_next"],
+    "gmail_comment_mail": false,
+    "api_post_read": "403"
+  },
+  "shipday": [
+    {
+      "name": "Dylan Phillips",
+      "role": "Founding Regional Sales Manager",
+      "linkedin": "https://www.linkedin.com/in/dylan-phillips-352662a1",
+      "email": "dylan.phillips@shipday.com",
+      "status": "warm_unsent_followup",
+      "call": "2026-08-27T14:00:00-05:00",
+      "meet": "https://meet.google.com/mcj-ksom-ttb",
+      "followup_draft_id": "1a04bda1f5ce05f3"
+    },
+    {
+      "name": "Justin Brandon",
+      "role": "Founding Senior Account Executive",
+      "linkedin": "https://www.linkedin.com/in/justin-brandon-03888383",
+      "email": null,
+      "status": "linkedin_only_no_gmail",
+      "note": "Loop onto Dylan thread. Not an OTL guest."
+    },
+    {
+      "name": "Erik Scholl",
+      "role": "Bolt Deliveries",
+      "email": "erik4scholl@gmail.com",
+      "status": "call_done_aug_27"
+    }
+  ],
+  "dm_index_keep": [
+    "Spencer Amadon",
+    "Victor Hatungimana",
+    "Noah Glass",
+    "Christopher Sebes",
+    "Erik Scholl",
+    "Scott Storick",
+    "David W. Carr",
+    "David Brown",
+    "Steve Carran",
+    "Steve Grand",
+    "Dana Flanagan",
+    "Patrick Wilbur",
+    "Brad Wolfe",
+    "Iva Bontrager",
+    "Carla Cutter",
+    "Margaret Arias",
+    "George Hayes",
+    "Paul Mullens",
+    "Teri Sue Miles",
+    "Zachary Jarecki"
+  ]
+}

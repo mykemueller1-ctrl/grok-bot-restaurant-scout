@@ -1,0 +1,103 @@
+{
+  "desk": "on-the-line-515",
+  "as_of": "2026-09-09T04:50:00Z",
+  "host": {
+    "name": "Victor Hatungimana",
+    "instagram": "@ontheline515",
+    "x": "@Ontheline515",
+    "site": "https://ontheline515.com/",
+    "linkedin": "https://www.linkedin.com/in/victor-hatungimana-686551274"
+  },
+  "booker": {
+    "name": "Spencer Amadon",
+    "role": "LinkedIn booker — national + inbound yeses"
+  },
+  "format": {
+    "minutes": "20-30",
+    "where": "in their room",
+    "rules": ["no script", "no pitch", "owner on the floor"]
+  },
+  "landed": [
+    {
+      "id": "kayla-edidin",
+      "name": "Kayla Edidin",
+      "house": "Red Door Brands",
+      "city": "Knoxville, TN",
+      "status": "verbal_yes",
+      "window": "2026-09-21/2026-09-27",
+      "offer": ["2026-09-23", "2026-09-25"],
+      "path": "Myke commented on her 2026-09-03 QSR LinkedIn post, she replied, Myke pointed her at Victor, Spencer DMed, Kayla said week after next.",
+      "post": "https://www.linkedin.com/posts/kayla-edidin_reddoorbrands-restaurantleadership-restaurantindustry-activity-7501067455730020352-lecq",
+      "exception": "national_operator_not_iowa"
+    },
+    {
+      "id": "dominic-iannarelli",
+      "name": "Dominic Iannarelli",
+      "house": "Prime + Providence",
+      "city": "West Des Moines, IA",
+      "status": "teased_not_filmed",
+      "announced": "https://x.com/Ontheline515/status/2084252019884253487",
+      "announced_at": "2026-08-03"
+    },
+    {
+      "id": "myke-ctap",
+      "name": "Myke Mueller",
+      "house": "Community Tap & Pizza",
+      "city": "Fort Dodge, IA",
+      "status": "filmed_not_numbered",
+      "clips": [
+        "https://x.com/myke86d/status/2091285192535326936",
+        "https://x.com/myke86d/status/2091285762155434098"
+      ]
+    }
+  ],
+  "aired": [
+    {"ep": 1, "name": "Jamie Powers", "house": "DeLuxe Cakes & Pastries", "city": "Iowa City, IA"},
+    {"ep": 2, "name": "Chris Diebel / Bubba", "house": "Bubba", "city": "Iowa"},
+    {"ep": 3, "name": "Scott", "house": "T12 Distillery", "city": "Valley Junction, IA"},
+    {"ep": 4, "name": "RJ Tursi", "house": "Exile Brewing", "city": "Des Moines, IA"},
+    {"ep": 5, "name": "Melanie Abu Nameh", "house": "Feedwell Kitchen & Bakery", "city": "Cedar Rapids, IA"}
+  ],
+  "iowa_next": [
+    {"priority": 1, "name": "Dominic Iannarelli", "house": "Prime + Providence", "city": "West Des Moines"},
+    {"priority": 2, "name": "Myke Mueller", "house": "Community Tap episode cut", "city": "Fort Dodge"},
+    {"priority": 3, "name": "peer via RJ Tursi", "house": "TBD", "city": "Des Moines"},
+    {"priority": 4, "name": "peer via Jamie Powers", "house": "TBD", "city": "Iowa City"},
+    {"priority": 5, "name": "peer via Melanie Abu Nameh", "house": "TBD", "city": "Cedar Rapids"},
+    {"priority": 6, "name": "Dawn Budd", "house": "The Dot", "city": "Ames"},
+    {"priority": 7, "name": "Cyndi Gryte", "house": "Juniper & Olive", "city": "Jewell"},
+    {"priority": 8, "name": "Shawn Birdsall", "house": "Nite Hawk Bar & Grill", "city": "Slater"},
+    {"priority": 9, "name": "Mark & Penny Greenwood", "house": "Ferinheit Wood Oven", "city": "Norwalk"},
+    {"priority": 10, "name": "Matt & Amanda Grems", "house": "Grems Pit Happens", "city": "De Soto"},
+    {"priority": 11, "name": "Fellers via Jessica desk", "house": "Fellers", "city": "CTAP adjacency"},
+    {"priority": 12, "name": "Bhavin + Sonali Patel", "house": "Tom Thumb Drive-In", "city": "Fort Dodge"}
+  ],
+  "this_week": [
+    "Spencer locks Kayla on Sep 23 or Sep 25",
+    "Victor texts Dominic Iannarelli a date",
+    "Cut CTAP as a numbered episode",
+    "Victor asks RJ, Jamie, Melanie for one intro each",
+    "Book Dawn Budd at The Dot so Ames is no longer empty",
+    "Myke says send on Dylan/Erik Shipday follow-up and add Justin Brandon"
+  ],
+  "partners_not_guests": [
+    {
+      "name": "Dylan Phillips",
+      "house": "Shipday",
+      "email": "dylan.phillips@shipday.com",
+      "status": "warm_unsent_followup"
+    },
+    {
+      "name": "Justin Brandon",
+      "house": "Shipday",
+      "linkedin": "https://www.linkedin.com/in/justin-brandon-03888383",
+      "status": "linkedin_only"
+    },
+    {
+      "name": "Erik Scholl",
+      "house": "Bolt Deliveries",
+      "email": "erik4scholl@gmail.com",
+      "status": "call_done_aug_27"
+    }
+  ]
+}
