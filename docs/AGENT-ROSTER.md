@@ -12,6 +12,9 @@ Cursor Cloud Agents take the Grok Bot desk. xAI Grok bots stay parked until cred
 | LinkedIn | Same agent via Composio (`myke-linkedin`) | Profile live. DM index via Gmail. Cannot read inbox/comments (403). | Official data export zip, or Myke pastes comment/DM text |
 | Gmail organize + Kristen ingest | Same agent via Composio (`myke-gmail`) | Live. 56k messages. Used for LinkedIn + Shipday dump. | — |
 | Drive Courser packs | Same agent via Composio (`myke-drive`) | Live. Lead packets + LinkedIn drafts in Drive. | — |
+| Google Calendar | Same agent via native Calendar MCP | Live on `mykemueller1@gmail.com`. Aug–Oct dumped. | Composio Calendar still needs a click |
+| Microsoft Teams | Same agent via Composio (`microsoft_teams`) | Rooms recovered from Gmail .ics only | Click Teams auth, then dump chats |
+| n86.app / Never 86'd | Same agent via Gmail alias `myke@n86.app` | Live. 201 threads. Product mailer `hello@never86.ai`. | Teams API + n86.app login scrape |
 
 ## Already running (and burning Grok)
 

@@ -1,0 +1,144 @@
+{
+  "pulled_at": "2026-09-09T05:00:00Z",
+  "timezone": "America/Chicago",
+  "sources": {
+    "google_calendar": "native_mcp_ready",
+    "composio_googlecalendar": "initiated_not_active",
+    "microsoft_teams_api": "initiated_not_active",
+    "teams_from_gmail": true,
+    "n86_from_gmail_drive": true
+  },
+  "calendars": [
+    {
+      "id": "mykemueller1@gmail.com",
+      "summary": "mykemueller1@gmail.com",
+      "accessRole": "owner"
+    }
+  ],
+  "n86_identities": {
+    "product": "https://n86.app",
+    "linkedin_company": "https://linkedin.com/company/n86",
+    "alias_live": "myke@n86.app",
+    "alias_drafts": "myke@never86.ai",
+    "product_mailer": "hello@never86.ai",
+    "gmail_n86_thread_estimate": 201
+  },
+  "upcoming_real_meetings": [
+    {
+      "start": "2026-09-09T15:00:00-05:00",
+      "summary": "Myke Mueller 2026 5th Ave S Fort Dodge Iowa",
+      "attendees": ["jlewis@warnermountainbookkeeping.com"]
+    },
+    {
+      "start": "2026-09-10T08:00:00-05:00",
+      "summary": "Tom · driver board · lunch 11–1",
+      "attendees": ["thomasdorothy4873@gmail.com"]
+    },
+    {
+      "start": "2026-09-10T09:00:00-05:00",
+      "summary": "Henry Chidi Opara + Myke Mueller Intro",
+      "attendees": ["henry@resk.ai", "boardy@boardy.ai"],
+      "meet": "https://meet.google.com/mce-hgfb-pty"
+    },
+    {
+      "start": "2026-09-11T10:00:00-05:00",
+      "summary": "Foodfluence <> Influencer Ordering / Rev Share model",
+      "attendees": ["bran@joinfoodfluence.com", "gauravt@virtuoso.cafe", "spencer@spenceramadon.com"],
+      "meet": "https://meet.google.com/fjp-xurr-hea"
+    },
+    {
+      "start": "2026-09-11T12:00:00-05:00",
+      "summary": "Myke mueller and Juan Pablo Mayoral",
+      "attendees": ["jmayoral@nectao.com"]
+    },
+    {
+      "start": "2026-09-11T15:30:00-05:00",
+      "summary": "Myke/Rik/Kristin 1:1",
+      "attendees": ["myke@n86.app", "ktmaduna@gmail.com", "rik@bearheartconsulting.com"]
+    },
+    {
+      "start": "2026-09-16T09:00:00-05:00",
+      "summary": "Grant Wycliff & Myke Mueller: QSR Partnerships",
+      "attendees": ["grant.wycliff@cgsvideo.com", "boardy@boardy.ai"],
+      "meet": "https://meet.google.com/wzo-hofq-tfd"
+    }
+  ],
+  "holds_missing": {
+    "kayla_edidin": {
+      "promised_window": "2026-09-21/2026-09-27",
+      "offer_days": ["2026-09-23", "2026-09-25"],
+      "on_calendar": false
+    },
+    "justin_brandon_shipday": { "on_calendar": false }
+  },
+  "past_proof": {
+    "shipday_partnership_exploration": {
+      "start": "2026-08-27T14:00:00-05:00",
+      "attendees": ["dylan.phillips@shipday.com", "erik4scholl@gmail.com"],
+      "meet": "https://meet.google.com/mcj-ksom-ttb"
+    },
+    "otl": [
+      { "start": "2026-08-24T14:00:00-05:00", "summary": "Victor <> Spencer" },
+      { "start": "2026-08-31T13:20:00-05:00", "summary": "On the Line 515 Huddle" },
+      { "start": "2026-09-02T10:00:00-05:00", "summary": "Tracy <> Myke ( On the Line 515 )" },
+      { "start": "2026-09-06T15:15:00-05:00", "summary": "Dash Tax / On The Line 515 Working Call" }
+    ],
+    "kristen_toast_review": {
+      "start": "2026-09-04T10:00:00-05:00",
+      "summary": "Toast Data Review",
+      "attendees": ["ktmaduna@gmail.com", "vadimkozak14@gmail.com"],
+      "meet": "https://meet.google.com/tmh-ppfv-tiv"
+    },
+    "stratosfy_intro": {
+      "start": "2026-08-31T09:00:00-05:00",
+      "summary": "Greg Maloney + Myke Mueller Intro",
+      "follow_up_unread": "1a082eda3bcc6829"
+    }
+  },
+  "teams_from_gmail": [
+    {
+      "when": "2026-09-03T15:00:00-05:00",
+      "subject": "Patrick/Rik/Myke Intros",
+      "attendees": ["patrick.wilbur@solugenix.com", "rik@bearheartconsulting.com", "myke@n86.app"],
+      "gmail_id": "1a05d4a02ffe8f31",
+      "join_hint": "teams.microsoft.com/meet/294325839510584"
+    },
+    {
+      "when": "2026-08-20T16:00:00-05:00",
+      "subject": "TB Dashboard Request",
+      "attendees": ["rik@bearheartconsulting.com"],
+      "join_hint": "teams.microsoft.com/meet/26717659086135"
+    },
+    {
+      "when": "2026-03-22",
+      "subject": "Daniel an Myke our contracts",
+      "from": "Myke@n86.app",
+      "join_hint": "teams.microsoft.com/meet/24395702480731"
+    }
+  ],
+  "n86_hot_threads": [
+    {
+      "id": "1a021461f41ca9ae",
+      "subject": "Taco Bamba | N86 Engagment Framework",
+      "status": "Myke signed; Rik waiting TB leadership then Docusign",
+      "latest": "2026-09-08T20:34:41Z"
+    },
+    {
+      "id": "1a0828da6e2f3753",
+      "subject": "Myke/Rik/Kristin 1:1",
+      "status": "recurring agenda on n86.app alias"
+    },
+    {
+      "id": "1a082eda3bcc6829",
+      "subject": "Never 86'd <> Stratosfy - Meeting Follow-up - Case Studies",
+      "status": "unread; do not reply until Myke says send"
+    }
+  ],
+  "recurring_noise": [
+    "Action Shift · one ping (Grok already ran it) 06:15 CT daily",
+    "Kristin daily loop · draft with Grok 20:00 CT daily",
+    "Vadym 3-day loop · draft with Grok",
+    "Coaching Call (Wholesale Launchpad) Tue evenings",
+    "Tom · driver board Thursday 08:00 CT"
+  ]
+}
