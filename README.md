@@ -106,6 +106,12 @@ node services/portal-gateway/src/server.mjs
 
 CTAP seats detail: `docs/CTAP-SEATS.md`. Security: `docs/PORTAL-SECURITY.md`. Isolation CI: `python3 scripts/validate-portal-isolation.py`.
 
+### Tenant data lake (Neon Postgres)
+
+Kristin Aduna's Toast reports + vendor invoices land in her own tenant-scoped Neon schema.
+Details, schema, and query cookbook: `docs/TENANT-DATA-LAKE.md`. Code + migration:
+`services/tenant-data-lake/`.
+
 ## Setup
 
 See `SETUP.md`.

@@ -1,0 +1,19 @@
+{
+  "name": "@never86/tenant-data-lake",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tenant-scoped data lake importer for Never86 operators (first tenant: Kristin Aduna / kristin-grill) — parses Toast + vendor invoice Excel exports into Neon Postgres.",
+  "scripts": {
+    "import": "node src/import-tenant-workbook.mjs",
+    "migrate:kristin-grill": "psql \"$DATABASE_URL\" -f migrations/0001_kristin_grill.sql",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pg": "^8.13.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
