@@ -1,0 +1,14 @@
+Scout Complaint Scan - 2026-11-17 13:21 CST
+Window: last ~7 days
+
+Top signals:
+1. @NotNotARealBot (X, Nov 17): Small restaurant owner can't afford higher wages when already losing money every month.
+Fits: labor drift vs margin leaks. Reply angle: Math doesn't work if you're already red. Track the drift and the sales it attaches to so you see the exact dollars leaving before the wage talk starts.
+
+2. @lisacusack_ca (X, Nov 17): Immigrant restaurant owner says street vendors take ~30% of profits while he pays taxes, fees, health codes; can't fund living-wage jobs.
+Fits: margin leaks, fee pressure. Reply angle: Untracked outside volume is still a leak on the books. Know the true cost on every channel that is supposed to cover fixed costs.
+
+3. r/ToastPOS (recent): Ongoing Toast integration / DoorDash outages losing sales with no compensation; FTC action on hidden fees, unauthorized add-ons, hard cancel.
+Fits: POS pain, 3P fees, margin leaks. Reply angle: Outages and fee surprises are the same problem as any other leak — you need the receipt that shows what actually hit the bank versus what the POS recorded.
+
+Quiet overall. No high-volume fresh operator threads matching the wedge exactly in the last 48h. No sign-off needed for replies; none staged.
