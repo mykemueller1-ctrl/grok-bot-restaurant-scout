@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "dev:worker": "wrangler dev",
-    "build": "prisma generate && tsc",
+    "build": "prisma generate && tsc --project ./tsconfig.json",
     "start": "node dist/server.js",
     "db:push": "prisma db push",
     "deploy:cloudflare": "bash ../../scripts/cloudflare-deploy.sh",
