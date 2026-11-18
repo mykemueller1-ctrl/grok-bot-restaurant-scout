@@ -22,6 +22,8 @@ Wire and operate Never86 restaurant GTM agents. Operator (Myke) gives direction 
 | `docs/TOAST-REPORTS.md` | Toast labor + product-mix → SKU map |
 | `docs/CTAP-SEATS.md` | CTAP sold seats + front-door login |
 | `docs/RESTAURANT-AP-OCR.md` | Restaurant AP/OCR/COGS leaders + Never86 taxonomy |
+| `services/tenant-data-lake/` | Per-tenant Neon Postgres import (Toast reports + invoices → schema) |
+| `docs/TENANT-DATA-LAKE.md` | Tenant data lake schema, query cookbook, and onboarding future tenants |
 
 ## Build / validate
 
