@@ -1,0 +1,9 @@
+Nightly Grok Bot research 2026-11-18. Top 3 shipping patterns that fit Never 86'd ops intelligence and restaurant vertical.
+
+1. Restaurant owner Anthony Battaglia runs a chief of staff plus specialists for reservations, outreach, purchasing, bookkeeping, finance, and ops at Suite 200 Grille and Whiskey & Water. Team caught up 8 months of books, found about $28k in errors, cut bookkeeper costs $1500/month, and uses standing rules so he only sees real decisions while covering floor shifts. Sources: https://aibusinessplays.com/plays/grok-bot-restaurant-books-caught-up-28k-errors/ and https://x.com/SayItStraightAB/status/2109371167383375905
+
+2. Sabre is shipping the first global travel plug-in in the Grok Bot marketplace with end-to-end conversational booking plus proactive event-driven APIs that spot disruptions and price drops and act without a prompt. Fits hospitality vertical and MCP-style connectors. Source: https://www.sabre.com/resources/newsroom/sabre-accelerates-agentic-travel-leadership-with-first-mover-travel-experience-within-grok-bot-and-next-gen-proactive-travel-apis/
+
+3. Operators are shipping multi-bot fleets on shared computers with one CoS router: farm/restaurant/butcher with 16 bots, Series A startups with named specialists including chef bots, and public CoS patterns that route asks, send morning briefs, and hand off work. Sources: X posts by George Page and Allo workshop https://www.youtube.com/watch?v=qCFUktiL0NU
+
+New capability that changes orchestration: Proactive event-driven APIs and marketplace plug-ins mean bots can act on signals without waiting for a routine or prompt. Add event triggers and proof gates for margin/ops alerts instead of pure scheduled digests.
